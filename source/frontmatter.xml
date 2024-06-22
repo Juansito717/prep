@@ -19,25 +19,21 @@
 
   <acknowledgement>
     <p>
-      This text began as my sabbatical project in the fall semester of 2018,
-      during which I wrote most of the material.
-      For the sabbatical leave, I express my deep gratitude to Grand Valley State University for its support of the project,
-      as well as to my colleagues in the Department of Mathematics and the College of Liberal Arts and Sciences for their endorsement of the project.  
-
+      Este texto comenzó como mi proyecto sabático en el semestre de otoño de 2018, 
+      durante el cual escribí la mayor parte del material. Expreso mi profundo agradecimiento a Grand Valley State University 
+      por su apoyo al proyecto durante mi licencia sabática, así como a mis colegas del Departamento de 
+      Matemáticas y del Colegio de Artes Liberales y Ciencias por su respaldo al proyecto.
       <!--I'm also grateful to the American Institute of Mathematics
       for their <url href="https://aimath.org/textbooks/">support of free and open textbooks in general</url>, and their support of this one in particular.-->
     </p>
 
     <p>
-      The beautiful full-color .eps graphics, as well as the occasional interactive JavaScript graphics, use David Austin's Python library that employs Bill Casselman's <url href="http://gvsu.edu/s/bi">PiScript</url>.  
-      The .html version of the text is the result Rob Beezer's amazing work to develop the publishing language <pretext /> (formerly known as Mathbook XML); learn more at <url href="pretextbook.org">pretextbook.org</url>.
-      I'm grateful to the American Institute of Mathematics for hosting and funding
-      a weeklong workshop in Mathbook XML in San Jose, CA, in April 2016, which enabled me to get started in <pretext />.  The ongoing support of the <url href="https://groups.google.com/forum/#!forum/pretext-support">user group</url> is invaluable, and David Farmer of AIM is has also been a source of major support and advocacy.
-      Mitch Keller of Morningside College is the production editor of both <url href="https://activecalculus.org/single/">Active Calculus: Single Variable</url> and this text; his technical expertise is a gift. 
-    </p>
-
+      Las fantásticas gráficas a todo color .eps, así como las ocasionales gráficas interactivas en JavaScript, utilizan la biblioteca de Python de David Austin que emplea <url href="http://gvsu.edu/s/bi">PiScript</url> de Bill Casselman.
+      La versión .html del texto es el resultado del increíble trabajo de Rob Beezer para desarrollar el lenguaje de publicación <pretext /> (anteriormente conocido como Mathbook XML); conozca más en <url href="pretextbook.org">pretextbook.org</url>.
+      Estoy agradecido al Instituto Americano de Matemáticas por organizar y financiar un taller de una semana en Mathbook XML en San José, CA, en abril de 2016, lo que me permitió comenzar en <pretext />. El apoyo continuo del <url href="https://groups.google.com/forum/#!forum/pretext-support">grupo de usuarios</url> es invaluable, y David Farmer de AIM también ha sido una fuente importante de apoyo y promoción.
+      Mitch Keller de Morningside College es el editor de producción tanto de <url href="https://activecalculus.org/single/">Active Calculus: Single Variable</url> como de este texto; su experiencia técnica es un regalo.    </p>
     <p>
-      This first public offering of the text in 2019 will benefit immensely from user feedback and suggestions.  I welcome hearing from you.
+      Esta primera oferta pública del texto en 2019 se beneficiará enormemente de la retroalimentación y las sugerencias de los usuarios. Sus comentarios serán bienvenidos.
     </p>
 
 <!--  <attribution>
@@ -52,13 +48,13 @@
   </acknowledgement>
 
 <preface>
-    <title>Contributors</title>
+    <title>Contribuciones</title>
     <p>
-      Users of the text contribute important insight:  they find errors, suggest improvements, and offer feedback and impressions.  I'm grateful for all of it.  As you use the text, I hope you'll contact me to share anything you think could make the book better.
+      Los usuarios del texto contribuyen con conocimientos importantes: encuentran errores, sugieren mejoras y ofrecen comentarios e impresiones. Estoy agradecido por todo ello. A medida que utilice el texto, espero que se ponga en contacto conmigo para compartir cualquier cosa que crea que pueda mejorar el libro.  
     </p>
 
     <p>
-      The following contributing editors have offered feedback that includes information about typographical errors or suggestions to improve the exposition.
+      Los siguientes editores contribuyentes han ofrecido comentarios que incluyen información sobre errores tipográficos o sugerencias para mejorar la exposición.
     </p>
 
     <contributors>
@@ -87,60 +83,59 @@
   </preface>
 
   <preface xml:id="preface-our-goals">
-    <title>Our Goals</title>
+    <title>Nuestros Objetivos</title>
     <p>
-      This text is designed for college students who aspire to take calculus and who either need to take a course to prepare them for calculus or want to do some additional self-study.  Many of the core topics of the course will be familiar to students who have completed high school.  At the same time, we take a perspective on every topic that emphasizes how it is important in calculus.  This text is  written in the spirit of <url href="https://activecalculus.org/single/"><em>Active Calculus</em></url> and is especially ideal for students who will eventually study calculus from that text.  The reader will find that the text requires them to engage actively with the material, to view topics from multiple perspectives, and to develop deep conceptual undersanding of ideas.
+      Este texto está diseñado para estudiantes universitarios que aspiran a tomar cálculo y que necesitan tomar un curso para prepararse para cálculo o desean hacer un estudio adicional por su cuenta. Muchos de los temas centrales del curso serán familiares para los estudiantes que han completado la escuela secundaria. Al mismo tiempo, tomamos una perspectiva sobre cada tema que enfatiza su importancia en el cálculo. Este texto está escrito en el espíritu de <url href="https://activecalculus.org/single/"><em>Active Calculus</em></url> y es especialmente ideal para los estudiantes que eventualmente estudiarán cálculo con ese texto. El lector encontrará que el texto requiere que se involucre activamente con el material, que vea los temas desde múltiples perspectivas y que desarrolle una comprensión conceptual profunda de las ideas.
     </p>
-
     <p>
-      Many courses at the high school and college level with titles such as <q>college algebra</q>, <q>precalculus</q>, and <q>trigonometry</q> serve other disciplines and courses other than calculus.  As such, these prerequisite classes frequently contain wide-ranging material that, while mathematically interesting and important, isn't necessary for calculus.  Perhaps because of these additional topics, certain ideas that are essential in calculus are under-emphasized or ignored.  In <pubtitle>Active Prelude to Calculus</pubtitle>, one of our top goals is to keep the focus narrow on the following most important ideas.  
+      Muchos cursos a nivel de escuela secundaria y universidad con títulos como <q>álgebra universitaria</q>, <q>precálculo</q> y <q>trigonometría</q> sirven a otras disciplinas y cursos distintos al cálculo. Como tal, estas clases frecuentemente contienen material variado que, aunque matemáticamente interesante e importante, no es necesario para el cálculo. Tal vez debido a estos temas adicionales, ciertas ideas que son esenciales en cálculo están subestimadas o ignoradas. En <pubtitle>Preludio Activo al Cálculo</pubtitle>, uno de nuestros principales objetivos es mantener el enfoque en las siguientes ideas más importantes.
     </p>
 
     <p>
       <ul>
         <li>
           <p>
-            <em>Functions as processes</em>.  The mathematical concept of function is sophisticated.  Understanding how a function is a special mathematical process that converts a collection of inputs to a collection of outputs is crucial for success in calculus, as calculus is the study of how functions change.
+            <em>Funciones como procesos</em>. El concepto matemático de función es sofisticado. Comprender cómo una función es un proceso matemático especial que convierte una colección de entradas en una colección de salidas es crucial para el éxito en cálculo, ya que el cálculo es el estudio de cómo cambian las funciones.          
           </p> 
         </li>
         <li>
           <p>
-            <em>Average rate of change</em>.  The central idea in differential calculus is the instantaneous rate of change of a function, which measures how fast a function's output changes with respect to changes in the input at a particular location.  Because instantaneous rate of change is defined in terms of average rate of change, it's essential that students are comfortable and familiar with the idea, meaning, and applications of average rate of change.
+            <em>Tasa de cambio promedio</em>. La idea central en el cálculo diferencial es la tasa de cambio instantánea de una función, que mide qué tan rápido cambia la salida de una función con respecto a los cambios en la entrada en una ubicación particular. Dado que la tasa de cambio instantánea se define en términos de la tasa de cambio promedio, es esencial que los estudiantes se sientan cómodos y familiarizados con la idea, el significado y las aplicaciones de la tasa de cambio promedio.          
           </p>
         </li>        
         <li>
           <p>
-            <em>Library of basic functions</em>.  The vast majority of functions in calculus come from an algebraic combination of a collection of familiar basic functions that include power, circular, exponential, and logarithmic functions.  By developing understanding of a relatively small family of basic functions and using these along with transformations to consider larger collections of functions, we work to make the central objects of calculus more intuitive and accessible. 
+            <em>Biblioteca de funciones básicas</em>. La gran mayoría de las funciones en cálculo provienen de una combinación algebraica de una colección de funciones básicas familiares que incluyen funciones de potencia, circulares, exponenciales y logarítmicas. Al desarrollar la comprensión de una familia relativamente pequeña de funciones básicas y usar estas junto con transformaciones para considerar colecciones más grandes de funciones, trabajamos para hacer que los objetos centrales del cálculo sean más intuitivos y accesibles.          
           </p>
         </li>
         <li>
           <p>
-            <em>Families of functions that model important phenomena</em>.  Mathematics is the language of science, and it's remarkable how effective mathematics is at representing observable physical phenomena.  From quadratic functions that model how an object falls under the influence of gravity, to shifted exponential functions that model how coffee cools, to sinusoidal functions that model how a spring-mass system oscillates, familiar basic functions find many important applications in the world around us.  We regularly use these physical situations to help us see the importance of functions and to understand how families of functions that depend on different parameters are needed to represent these situations.
+            <em>Familias de funciones que modelan fenómenos importantes</em>. Las matemáticas son el lenguaje de la ciencia, y es notable lo efectivas que son las matemáticas para representar fenómenos físicos observables. Desde funciones cuadráticas que modelan cómo un objeto cae bajo la influencia de la gravedad, hasta funciones exponenciales desplazadas que modelan cómo se enfría el café, pasando por funciones sinusoidales que modelan cómo oscila un sistema de masa-resorte, las funciones básicas familiares encuentran muchas aplicaciones importantes en el mundo que nos rodea. Utilizamos regularmente estas situaciones físicas para ayudarnos a ver la importancia de las funciones y a entender cómo se necesitan familias de funciones que dependen de diferentes parámetros para representar estas situaciones.          
           </p>
         </li>
         <li>
           <p>
-            <em>The sine and cosine are circular functions</em>.  Many students are first introduced to the sine and cosine functions through right triangles.  While this perspective is important, it is more important in calculus and other advanced courses to understand how the sine and cosine functions arise from a point traversing a circle.  We take this circular function perspective early and first, and do so in order to develop deep understanding of how the familiar sine and cosine waves are generated.
+            <em>El seno y el coseno son funciones circulares</em>. Muchos estudiantes son introducidos por primera vez a las funciones seno y coseno a través de triángulos rectángulos. Aunque esta perspectiva es importante, es más importante en cálculo y otros cursos avanzados entender cómo las funciones seno y coseno surgen de un punto que recorre una circunferencia. Adoptamos esta perspectiva de funciones circulares desde el principio para desarrollar una comprensión profunda de cómo se generan las conocidas ondas de seno y coseno.          
           </p>
         </li>
         <li>
           <p>
-            <em>Inverses of functions</em>.  When a function has an inverse function, the inverse function affords us the opportunity to view an idea from a new perspective.  Inverses also play a crucial role in solving algebraic equations and in determining unknown parameters in models.  We emphasize the perspective that an inverse function is a process that reverses the process of the original function, as well as important basic functions that arise as inverses of other functions, especially logarithms and inverse trigonometric functions.
+            <em>Inversas de funciones</em>. Cuando una función tiene una función inversa, la función inversa nos brinda la oportunidad de ver una idea desde una nueva perspectiva. Las inversas también juegan un papel crucial en la resolución de ecuaciones algebraicas y en la determinación de parámetros desconocidos en modelos. Enfatizamos la perspectiva de que una función inversa es un proceso que invierte el proceso de la función original, así como las importantes funciones básicas que surgen como inversas de otras funciones, especialmente los logaritmos y las funciones trigonométricas inversas.          
           </p>
         </li>
         <li>
           <p>
-            <em>Exact values versus approximate ones</em>.  The ability to represent numbers exactly is a powerful tool in mathematics.  We regularly and consistently distinguish between a number's exact value, such as <m>\sqrt{2}</m>, and its approximation, say <m>1.414</m>.  This idea is also closely tied to functions and function notation:  <m>e^{-1}</m>, <m>\cos(2)</m>, and <m>\ln(7)</m> are all symbolic representations of exact numbers that can only be approximated by a computer.
+            <em>Valores exactos versus aproximados</em>. La capacidad de representar números exactamente es una herramienta poderosa en matemáticas. Regularmente y de manera consistente distinguimos entre el valor exacto de un número, como <m>\sqrt{2}</m>, y su aproximación, digamos <m>1.414</m>. Esta idea también está estrechamente relacionada con las funciones y la notación funcional: <m>e^{-1}</m>, <m>\cos(2)</m> y <m>\ln(7)</m> son todas representaciones simbólicas de números exactos que solo pueden ser aproximados por una computadora.          
           </p>
         </li>
         <li>
           <p>
-            <em>Finding function formulas in applied settings</em>.  In applied settings with unknown variables, it's especially useful to be able to represent relationships among variables, since such relationships often lead to functions whose behavior we can study.  We work throughout <em>Active Prelude to Calculus</em> to ready students for problems in calculus that ask them to develop function formulas by observing relationships.
+            <em>Encontrar fórmulas de funciones en contextos aplicados</em>. En contextos aplicados con variables desconocidas, es especialmente útil poder representar relaciones entre variables, ya que tales relaciones a menudo conducen a funciones cuyo comportamiento podemos estudiar. Trabajamos a lo largo de <em>Preludio Activo al Cálculo</em> para preparar a los estudiantes para problemas en cálculo que les piden desarrollar fórmulas de funciones mediante la observación de relaciones.          
           </p>
         </li>
         <li>
           <p>
-            <em>Long-term trends, unbounded behavior, and limits</em>.  By working to study functions as objects themselves, we often focus on trends and overall behavior.  In addition to introducing the ideas of a function being increasing or decreasing, or concave up or concave down, we also focus on using algebraic approaces to comprehend function behavior where the input and/or output increase without bound.  In anticipation of calculus, we use limit notation and work to understand how this shorthand summarizes key features of functions.
+            <em>Tendencias a largo plazo, comportamiento ilimitado y límites</em>. Al trabajar para estudiar las funciones como objetos en sí mismos, a menudo nos centramos en las tendencias y el comportamiento general. Además de introducir las ideas de una función que crece o decrece, o que es cóncava hacia arriba o hacia abajo, también nos enfocamos en utilizar enfoques algebraicos para comprender el comportamiento de las funciones cuando la entrada y/o la salida aumentan sin límite. En anticipación al cálculo, usamos la notación de límites y trabajamos para entender cómo esta abreviatura resume características clave de las funciones.
           </p>
         </li>
       </ul>
@@ -149,89 +144,56 @@
   </preface>
 
   <preface>
-    <title>Features of the Text</title>
+    <title>Características del Texto</title>
     <p>
-      Instructors and students alike will find several consistent features in the presentation,
-      including:
+      Tanto los instructores como los estudiantes encontrarán varias características consistentes en la presentación, incluyendo:
       <dl width="narrow">
         <li>
-          <title>Motivating Questions</title>
+          <title>Preguntas Motivadoras</title>
           <p>
-            At the start of each section,
-            we list 2<ndash />3 <em>motivating questions</em>
-            that provide motivation for why the following material is of interest to us.
-            One goal of each section is to answer each of the motivating questions.
+            Al inicio de cada sección, enumeramos 2<ndash />3 <em>preguntas motivadoras</em> que proporcionan la motivación de por qué el material siguiente es de nuestro interés. Uno de los objetivos de cada sección es responder a cada una de las preguntas motivadoras.
           </p>
         </li>
 
         <li>
-          <title>Preview Activities</title>
+          <title>Actividades de Preparación</title>
           <p>
-            Each section of the text begins with a short introduction,
-            followed by a <em>preview activity</em>.
-            This brief reading and preview activity are designed to foreshadow the upcoming ideas in the remainder of the section;
-            both the reading and preview activity are intended to be accessible to students
-            <em>in advance</em> of class,
-            and indeed to be completed by students before the particular section is to be considered
-            in class.
+            Cada sección del texto comienza con una breve introducción, seguida de una <em>actividad de preparación</em>. Esta breve lectura y actividad de preparación están diseñadas para anticipar las ideas que se presentarán en el resto de la sección; tanto la lectura como la actividad de preparación están destinadas a ser accesibles para los estudiantes <em>con antelación</em> a la clase, y de hecho deben ser completadas por los estudiantes antes de que la sección particular sea considerada en clase.
           </p>
         </li>
 
         <li>
-          <title>Activities</title>
+          <title>Actividades</title>
           <p>
-            A typical section in the text has at least three <em>activities</em>.
-            These are designed to engage students in an inquiry-based style that encourages them to construct solutions to key examples on their own,
-            working in small groups or individually.
+            Una sección típica del texto tiene al menos tres <em>actividades</em>. Estas están diseñadas para involucrar a los estudiantes en un estilo basado en la indagación que los anima a construir soluciones a ejemplos clave por sí mismos, trabajando en pequeños grupos o individualmente.
           </p>
         </li>
 
         <li>
-          <title>Exercises</title>
+          <title>Ejercicios</title>
           <p>
-            There are dozens of college algebra and trignometry texts with (collectively) tens of thousands of exercises.
-            Rather than repeat standard and routine exercises in this text,
-            we recommend the use of
-            <webwork />
-            with its access to the Open Problem Library (OPL) and many thousands of relevant problems.
-            In this text,
-            each section includes a small collection of anonymous <webwork /> exercises that offer
-            students immediate feedback without penalty,
-            as well as 3<ndash />4 additional challenging exercises per section.
-            Each of the non-<webwork /> exercises has multiple parts,
-            requires the student to connect several key ideas,
-            and expects that the student will do at least a modest amount of writing to answer the questions and explain their findings.
+            Existen docenas de textos de álgebra universitaria y trigonometría con (colectivamente) decenas de miles de ejercicios. En lugar de repetir ejercicios estándar y rutinarios en este texto, recomendamos el uso de <webwork /> con su acceso a la Open Problem Library (OPL) y sus muchos miles de problemas relevantes. En este texto, cada sección incluye una pequeña colección de ejercicios anónimos de <webwork /> que ofrecen a los estudiantes retroalimentación inmediata sin penalización, así como 3<ndash />4 ejercicios adicionales desafiantes por sección. Cada uno de los ejercicios que no son de <webwork /> tiene múltiples partes, requiere que el estudiante conecte varias ideas clave y espera que el estudiante haga al menos una cantidad modesta de escritura para responder las preguntas y explicar sus hallazgos.
           </p>
         </li>
 
         <li>
-          <title>Graphics</title>
+          <title>Gráficos</title>
           <p>
-            As much as possible,
-            we strive to demonstrate key fundamental ideas visually,
-            and to encourage students to do the same.
-            Throughout the text, we use full-color<fn>To keep cost low,
-            the graphics in the print-on-demand version are in black and white.
-            When the text itself refers to color in images,
-            one needs to view the .html or .pdf electronically.</fn> graphics to exemplify and magnify key ideas,
-            and to use this graphical perspective alongside both numerical and algebraic representations of calculus.
+            En la medida de lo posible, nos esforzamos por demostrar visualmente las ideas fundamentales clave y por animar a los estudiantes a hacer lo mismo. A lo largo del texto, utilizamos gráficos en color<fn>Para mantener el costo bajo, los gráficos en la versión de impresión bajo demanda están en blanco y negro. Cuando el texto mismo se refiere a colores en las imágenes, es necesario ver el .html o .pdf electrónicamente.</fn> para ejemplificar y magnificar ideas clave, y para usar esta perspectiva gráfica junto con representaciones numéricas y algebraicas del cálculo.
           </p>
         </li>
 
         <li>
-          <title>Interactive graphics</title>
+          <title>Gráficos interactivos</title>
           <p>
-            Many of the ideas of how functions behave are best understood dynamically;
-            applets offer an often ideal format for investigations and demonstrations.
-            <em>Desmos</em> provides a free and easy-to-use online graphing utility that we occasionally link to and often direct students to use.  Thanks to David Austin, there are also select interactive javascript figures within the text itself.
+            Muchas de las ideas sobre cómo se comportan las funciones se entienden mejor de manera dinámica; los applets ofrecen un formato a menudo ideal para investigaciones y demostraciones. <em>Desmos</em> proporciona una utilidad de graficación en línea gratuita y fácil de usar a la que ocasionalmente enlazamos y a menudo dirigimos a los estudiantes a usar. Gracias a David Austin, también hay figuras interactivas en javascript dentro del propio texto.
           </p>
         </li>
 
         <li>
-          <title>Summary of Key Ideas</title>
+          <title>Resumen de Ideas Clave</title>
           <p>
-            Each section concludes with a summary of the key ideas encountered in the preceding section;
-            this summary normally reflects responses to the motivating questions that began the section.
+            Cada sección concluye con un resumen de las ideas clave encontradas en la sección anterior; este resumen normalmente refleja las respuestas a las preguntas motivadoras que iniciaron la sección.
           </p>
         </li>
       </dl>
@@ -240,29 +202,29 @@
 
 
   <preface xml:id="preface-for-students">
-    <title>Students!  Read this!</title>
+    <title>Estudiantes!  Lean esto!</title>
     <p>
-      This book is different.  
-    </p>  
+      Este libro es diferente.
+    </p> 
 
     <p>
-      The text is available in three different formats:  HTML, PDF, and print, each of which is available via links on the landing page at <url href="https://activecalculus.org/">https://activecalculus.org/</url>.  The first two formats are free.  If you are going to use the book electronically, the best mode is the <url href="https://activecalculus.org/prelude/">HTML</url>.  The HTML version looks great in any browser, including on a smartphone, and the links are much easier to navigate in HTML than in PDF.  Some particular direct suggestions about using the HTML follow among the next few paragraphs; alternatively, you can <url href="http://gvsu.edu/s/14i">watch this short video from the author</url> (based on using the text <pubtitle>Active Calculus</pubtitle>, which is similar).  It is also wise to download and save the PDF, since you can use the PDF offline, while the HTML version requires an internet connection.  An inexpensive print copy is available on <url href="http://gvsu.edu/s/15y">Amazon</url>.
+      El texto está disponible en dos formatos diferentes: HTML y PDF, cada uno está disponible a través de enlaces en la página de inicio en <url href="https://activecalculus.org/">https://activecalculus.org/</url>. Los dos formatos son gratuitos. Si vas a usar el libro electrónicamente, el mejor modo es el <url href="https://activecalculus.org/prelude/">HTML</url>. La versión HTML se ve genial en cualquier navegador, incluyendo en un smartphone, y los enlaces son mucho más fáciles de navegar en HTML que en PDF. Algunas sugerencias directas sobre el uso del HTML se encuentran en los siguientes párrafos; alternativamente, puedes <url href="http://gvsu.edu/s/14i">ver este breve video del autor</url> (basado en el uso del texto <pubtitle>Active Calculus</pubtitle>, que es similar). También es prudente descargar y guardar el PDF, ya que puedes usar el PDF sin conexión, mientras que la versión HTML requiere una conexión a Internet. Una copia impresa (en inglés) económica está disponible en <url href="http://gvsu.edu/s/15y">Amazon</url>.
     </p>
 
     <p>
-      This book is intended to be read sequentially and engaged with, much more than to be used as a lookup reference.  For example, each section begins with a short introduction and a Preview Activity; you should read the short introduction and complete the Preview Activity prior to class.  Your instructor may require you to do this.  Most Preview Activities can be completed in 15-20 minutes and are intended to be accessible based on the understanding you have from preceding sections. <!-- There are not answers provided to Preview Activities because ... -->    
+      Este libro está destinado a ser leído secuencialmente y a ser utilizado de manera interactiva, más que como una referencia de consulta. Por ejemplo, cada sección comienza con una breve introducción y una Actividad de Preparación; deberías leer la breve introducción y completar la Actividad de Preparación antes de la clase. Tu instructor podría solicitar que hagas esto. La mayoría de las Actividades de Preparación pueden completarse en 15-20 minutos y están destinadas a ser accesibles en base a la comprensión que tiene de las secciones anteriores.
     </p>
 
     <p>
-      As you use the book, think of it as a workbook, not a worked-book.  There is a great deal of scholarship that shows people learn better when they interactively engage and struggle with ideas themselves, rather than passively watch others.  Thus, instead of reading worked examples or watching an instructor complete examples, you will engage with Activities that prompt you to grapple with concepts and develop deep understanding.  You should expect to spend time in class working with peers on Activities and getting feedback from them and from your instructor.  You can ask your instructor for a copy of the PDF file that has only the activities along with room to record your work.  Your goal should be to do all of the activities in the relevant sections of the text and keep a careful record of your work.  <!-- You can find answers to the activities <xref ref="activities-answers">in the back matter</xref>.-->
+      Al usar el libro, piensa en él como un libro para hacer, no un libro hecho. Hay una gran cantidad de estudios que muestran que las personas aprenden mejor cuando se involucran de manera interactiva y abordan las ideas por su cuenta, en lugar de observar pasivamente a otros. Por lo tanto, en lugar de leer ejemplos resueltos o ver a un instructor completar ejemplos, te involucrarás con Actividades que te invitan a lidiar con conceptos y desarrollar una comprensión profunda. Debes esperar pasar tiempo en clase trabajando con compañeros en Actividades y recibiendo retroalimentación de ellos y de tu instructor. Puedes pedirle a tu instructor una copia del archivo PDF que solo tiene las actividades junto con espacio para registrar tu trabajo. Tu objetivo debe ser hacer todas las actividades en las secciones relevantes del texto y llevar un registro cuidadoso de tu trabajo.
     </p>
 
     <p>
-      Each section concludes with a Summary.  Reading the Summary after you have read the section and worked the Activities is a good way to find a short list of key ideas that are most essential to take from the section.  A good study habit is to write similar summaries in your own words.
+      Cada sección concluye con un Resumen. Leer el Resumen después de haber leído la sección y trabajado en las Actividades es una buena manera de encontrar una lista breve de ideas clave para llevarse de la sección. Un buen hábito de estudio es escribir resúmenes similares con tus propias palabras.
     </p>
 
     <p>
-      At the end of each section, you'll find two types of Exercises.  First, there are several anonymous <webwork /> exercises.  These are online, interactive exercises that allow you to submit answers for immediate feedback with unlimited attempts without penalty; to submit answers, you have to be using the HTML version of the text (see <url href="http://gvsu.edu/s/14i">this short video on the HTML version that includes a <webwork /> demonstration</url>).  You should use these exercises as a way to test your understanding of basic ideas in the preceding section.  If your institution uses <webwork />, you may also need to log in to a server as directed by your instructor to complete assigned <webwork /> sets as part of your course grade.  The <webwork /> exercises included in this text are ungraded and not connected to any individual account.  Following the <webwork /> exercises there are 3-4 additional challenging exercises that are designed to encourage you to connect ideas, investigate new situations, and write about your understanding. <!-- There are answers to most of the non-<webwork /> exercises <xref ref="exercises-answers">in the back matter</xref>.-->
+      Al final de cada sección, encontrarás dos tipos de Ejercicios. Primero, hay varios ejercicios anónimos de <webwork />. Estos son ejercicios en línea, interactivos, que te permiten enviar respuestas para recibir retroalimentación inmediata con intentos ilimitados sin penalización; para enviar respuestas, debes estar usando la versión HTML del texto (ver <url href="http://gvsu.edu/s/14i">este breve video sobre la versión HTML que incluye una demostración de <webwork /></url>). Debes usar estos ejercicios como una forma de probar tu comprensión de las ideas básicas en la sección anterior. Si tu institución utiliza <webwork />, es posible que también necesites iniciar sesión en un servidor según las indicaciones de tu instructor para completar conjuntos de <webwork /> asignados como parte de tu calificación del curso. Los ejercicios de <webwork /> incluidos en este texto no tienen calificación y no están conectados a ninguna cuenta individual. Después de los ejercicios de <webwork />, hay 3-4 ejercicios desafiantes adicionales que están diseñados para animarte a conectar ideas, investigar nuevas situaciones y escribir sobre tu comprensión.
     </p>
 
 <!--
@@ -272,59 +234,59 @@
 -->    
 
     <p>
-      The best way to be successful in mathematics generally and calculus specifically is to strive to make sense of the main ideas.  We make sense of ideas by asking questions, interacting with others, attempting to solve problems, making mistakes, revising attempts, and writing and speaking about our understanding.  This text has been designed to help you make sense of key ideas that are needed in calculus and to help you be well-prepared for success in calculus; we wish you the very best as you undertake the large and challenging task of doing so.
+      La mejor manera de tener éxito en matemáticas en general y en cálculo en particular es esforzarse por comprender las ideas principales. Entendemos las ideas haciendo preguntas, interactuando con otros, intentando resolver problemas, cometiendo errores, revisando intentos y escribiendo y hablando sobre nuestra comprensión. Este texto ha sido diseñado para ayudarte a comprender las ideas clave que se necesitan en cálculo y para ayudarte a estar bien preparado para tener éxito en cálculo; te deseamos lo mejor mientras emprendes la gran y desafiante tarea de hacerlo.
     </p>
 
   </preface>
 
   <preface xml:id="preface-for-instructors">
-    <title>Instructors!  Read this!</title>
+    <title>Instructores!  Lean esto!</title>
     <p>
-      This book is different.  Before you read further, first read <xref ref="preface-for-students" text="custom"><q>Students! Read this!</q></xref> as well as <xref ref="preface-our-goals" text="custom"><q>Our Goals</q></xref>.
+      Este libro es diferente. Antes de seguir leyendo, primero lee <xref ref="preface-for-students" text="custom"><q>¡Estudiantes! ¡Lean esto!</q></xref> así como <xref ref="preface-our-goals" text="custom"><q>Nuestros Objetivos</q></xref>.
     </p>
 
     <p>
-      Among the three formats (HTML, PDF, print), the HTML is optimal for display in class if you have a suitable projector.  The HTML is also best for navigation, as links to internal and external references are much more obvious.  We recommend saving a downloaded version of the PDF format as a backup in the event you don't have internet access.  It's a good idea for each student to have a printed version of the Activities Workbook, which you can acquire as a PDF document by direct request to the author (boelkinm at gvsu dot edu); many instructors use the PDF to have coursepacks printed for students to purchase from their local bookstore.
+      Entre los tres formatos (HTML, PDF, impreso), el HTML es el óptimo para mostrar en clase si tienes un proyector adecuado. El HTML también es el mejor para la navegación, ya que los enlaces a referencias internas y externas son mucho más evidentes. Recomendamos guardar una versión descargada del formato PDF como respaldo en caso de que no tengas acceso a Internet. Es una buena idea que cada estudiante tenga una versión impresa del Libro de Actividades, que puedes adquirir como un documento PDF solicitándolo directamente al autor (boelkinm en gvsu punto edu); muchos instructores usan el PDF para hacer paquetes de curso que los estudiantes pueden comprar en su librería local.
     </p>
 
     <p>
-      The text is written so that, on average, one section corresponds to two hours of class meeting time.  A typical instructional sequence when starting a new section might look like the following:
+      El texto está escrito de manera que, en promedio, una sección corresponde a dos horas de tiempo de clase. Una secuencia de instrucción típica al comenzar una nueva sección podría verse de la siguiente manera:
       <ul>
         <li>
           <p>
-             Students complete a Preview Activity in advance of class.  Class begins with a short debrief among peers followed by all class discussion.  (5-10 minutes) 
+             Los estudiantes completan una Actividad de Preparación antes de la clase. La clase comienza con un breve análisis entre compañeros seguido de una discusión con toda la clase. (5-10 minutos)
           </p>
         </li>
         <li>
           <p>
-             Brief lecture and discussion to build on the preview activity and set the stage for the next activity. (5-10 minutes)
+             Breve explicación y discusión para desarrollar la actividad de preparación y preparar el escenario para la siguiente actividad. (5-10 minutos)
           </p>
         </li>
         <li>
           <p>
-             Students engage with peers to work on and discuss the first activity in the section. (15-20 minutes)
+             Los estudiantes se involucran con sus compañeros para trabajar y discutir la primera actividad de la sección. (15-20 minutos)
           </p>
         </li>
         <li>
           <p>
-             Brief discussion and possibly lecture to reach closure on the preceding activity, followed by transition to new ideas.  (Varies, but 5-15 minutes)
+             Breve discusión y posiblemente una explicación para concluir la actividad anterior, seguida de una transición a nuevas ideas. (Varía, pero de 5 a 15 minutos)
           </p>
         </li>
         <li>
           <p>
-            Possibly begin next activity.
+            Posiblemente comenzar la siguiente actividad.
           </p>
         </li>
       </ul>
-      The next hour of class would be similar, but without the Preview Activity to complete prior to class: the principal focus of class will be completing 2 activities.  Then rinse and repeat.
+      La siguiente hora de clase sería similar, pero sin la Actividad de Preparación para completar antes de la clase: el enfoque principal de la clase será completar 2 actividades. Luego, enjuaga y repite.
     </p>
 
     <p>
-      We recommend that instructors use appropriate incentives to encourage students to complete Preview Activities prior to class.  Having these be part of completion-based assignments that count 5% of the semester grade usually results in the vast majority of students completing the vast majority of the previews.  If you'd like to see a sample syllabus for how to organize a course and weight various assignments, you can request one via email to the author.
+      Recomendamos que los instructores utilicen incentivos apropiados para animar a los estudiantes a completar las Actividades de Preparación antes de la clase. Hacer que estas sean parte de tareas basadas en la finalización que cuentan un 5% de la calificación del semestre generalmente resulta en que la gran mayoría de los estudiantes completen la gran mayoría de las actividades de preparación. Si deseas ver un ejemplo de plan de estudios sobre cómo organizar un curso y ponderar varias tareas, puedes solicitar uno por correo electrónico al autor.
     </p>
 
     <p>
-      Note that the <webwork /> exercises in the HTML version are anonymous and there's not a way to track students' engagement with them.  These are intended to be formative for students and provide them with immediate feedback without penalty.  If your institution is a <webwork /> user, in the near future we will have sets of .def files that correspond to the sections in the text; these will be available upon request to the author.
+      Ten en cuenta que los ejercicios de <webwork /> en la versión HTML son anónimos y no hay forma de rastrear el compromiso de los estudiantes con ellos. Estos están destinados a ser formativos para los estudiantes y proporcionarles retroalimentación inmediata sin penalización. Si tu institución es usuaria de <webwork />, en un futuro próximo tendremos conjuntos de archivos .def que corresponden a las secciones del texto; estos estarán disponibles previa solicitud al autor.
     </p>
 
 <!--
@@ -340,13 +302,12 @@
 -->
 
     <p>
-      The <pretext /> source code for the text can be found on <url href="https://github.com/active-calculus/prep">GitHub</url>.  If you find errors in the text or have other suggestions, you can file an issue on GitHub <!--use the <url href="http://gvsu.edu/s/0vK">Feedback link</url> in the HTML version (found at the bottom left in the main menu),--> or email the author directly.  To engage with instructors who use the text, we maintain both an email list and the <url href="https://opencalculus.wordpress.com/">Open Calculus blog</url>; you can request that your address be added to the email list by contacting the author.  Finally, if you're interested in a video presentation on using the similar <pubtitle>Active Calculus</pubtitle> text, you can see this <url href="http://math.mit.edu/seminars/esme/videos/2018-10-02_Boelkins.mp4">online video presentation</url> to the <url href="http://math.mit.edu/seminars/esme/">MIT Electronic Seminar on Mathematics Education</url>; at about the 17-minute mark, the portion begins where we demonstrate features of and how to use the text. 
+      El código fuente de <pretext /> para el texto se puede encontrar en <url href="https://github.com/active-calculus/prep">GitHub</url>. Si encuentras errores en el texto o tienes otras sugerencias, puedes presentar un problema en GitHub o enviar un correo electrónico directamente al autor. Para interactuar con instructores que usan el texto, mantenemos tanto una lista de correo electrónico como el <url href="https://opencalculus.wordpress.com/">blog Open Calculus</url>; puedes solicitar que tu dirección sea añadida a la lista de correo contactando al autor. Finalmente, si estás interesado en una presentación en video sobre el uso del texto similar <pubtitle>Active Calculus</pubtitle>, puedes ver esta <url href="http://math.mit.edu/seminars/esme/videos/2018-10-02_Boelkins.mp4">presentación en video en línea</url> en el <url href="http://math.mit.edu/seminars/esme/">Seminario Electrónico de Educación Matemática del MIT</url>; aproximadamente en el minuto 17 comienza la parte donde demostramos las características y cómo usar el texto.
     </p>
 
     <p>
-      Thank you for considering <pubtitle>Active Prelude to Calculus</pubtitle> as a resource to help your students develop deep understanding of the subject.  I wish you the very best in your work and hope to hear from you.
+      Gracias por considerar <pubtitle>Preludio Activo al Cálculo</pubtitle> como un recurso para ayudar a tus estudiantes a desarrollar una comprensión profunda del tema. Te deseo lo mejor en tu trabajo y espero tener noticias tuyas.
     </p>
   </preface>
   
 </frontmatter>
-
