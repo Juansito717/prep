@@ -16,16 +16,16 @@
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-changing-aquarium">
 	<statement>
 		<p>
-			Suppose that a rectangular aquarium is being filled with water.  The tank is <m>4</m> feet long by <m>2</m> feet wide by <m>3</m> feet high, and the hose that is filling the tank is delivering water at a rate of <m>0.5</m> cubic feet per minute.
+			Supongamos que un acuario rectangular se está llenando con agua. El tanque mide <m>4</m> metros de largo por <m>2</m> metros de ancho por <m>3</m> metros de alto, y la manguera que está llenando el tanque está entregando agua a una velocidad de <m>0.5</m> metros cúbicos por minuto.
 		</p>
 
 		<sidebyside width="50%">
 			<figure>
-				<caption>The empty aquarium.</caption>
+				<caption>El acuario vacío</caption>
 				<image source="images/tandem-empty-aquarium" />
 			</figure>
 			<figure>
-				<caption>The aquarium, partially filled.</caption>
+				<caption>El acuario, parcialmente lleno.</caption>
 				<image source="images/tandem-filled-aquarium" />
 			</figure>			
 		</sidebyside>
@@ -33,22 +33,22 @@
 		<ol marker="a.">
 			<li>
 				<p>
-					What are some different quantities that are changing in this scenario?
+					¿Qué cantidades diferentes están cambiando en este escenario?
 				</p>
 			</li>
 			<li>
 				<p>
-					After <m>1</m> minute has elapsed, how much water is in the tank?  At this moment, how deep is the water?
+					Después de <m>1</m> minuto, ¿cuánta agua hay en el tanque? En este momento, ¿qué profundidad tiene el agua?
 				</p>
 			</li>
 			<li>
 				<p>
-					How much water is in the tank and how deep is the water after <m>2</m> minutes?  After <m>3</m> minutes?
+					¿Cuánta agua hay en el tanque y qué profundidad tiene el agua después de <m>2</m> minutos? ¿Después de <m>3</m> minutos?
 				</p>
 			</li>
 			<li>
 				<p>
-					How long will it take for the tank to be completely full?  Why?
+					¿Cuánto tiempo tomará para que el tanque esté completamente lleno? ¿Por qué?
 				</p>
 			</li>
 		</ol>

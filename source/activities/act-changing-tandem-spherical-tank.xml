@@ -17,38 +17,38 @@
 
 	<statement>
 		<p>
-			Consider a tank in the shape of a sphere where the tank's radius is <m>3</m> feet.  Suppose that the tank is initially completely full and that it is being drained by a pump at a constant rate of <m>1.2</m> cubic feet per minute.
+			Considera un tanque en forma de esfera donde el radio del tanque es de <m>3</m> pies. Supón que el tanque está inicialmente completamente lleno y que se está vaciando mediante una bomba a una tasa constante de <m>1.2</m> pies cúbicos por minuto.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Sketch a labeled picture of the tank, including a snapshot of some water remaining in the tank prior to the tank being completely empty.
+						Dibuja un esquema etiquetado del tanque, incluyendo una imagen del tanque con algo de agua antes de que esté completamente vacío.
 					</p>
 				</li>
 				<li>
 					<p>
-						What are some quantities that are changing in this scenario?  What are some quantities that are not changing?
+						¿Cuáles son algunas de las cantidades que están cambiando en este escenario? ¿Cuáles son algunas de las cantidades que no están cambiando?
 					</p>
 				</li>
 				<li>
 					<p>
-						Recall that the volume of a sphere of radius <m>r</m> is <m>V = \frac{4}{3} \pi r^3</m>.  When the tank is completely full at time <m>t = 0</m> right before it starts being drained, how much water is present?
+						Recuerda que el volumen de una esfera de radio <m>r</m> es <m>V = \frac{4}{3} \pi r^3</m>. Cuando el tanque está completamente lleno en el momento <m>t = 0</m>, justo antes de empezar a vaciarse, ¿cuánta agua hay presente?
 					</p>
 				</li>
 				<li>
 					<p>
-						How long will it take for the tank to drain completely?
+						¿Cuánto tiempo tomará para que el tanque se vacíe completamente?
 					</p>
 				</li>
 				<li>
 					<p>
-						Fill in the following table of values to determine how much water, <m>V</m>, is in the tank at a given time in minutes, <m>t</m>, and thus generate a graph of the relationship between volume and time.  Write a sentence to explain why the data's graph appears the way that it does.
+						Complete la siguiente tabla de valores para determinar cuánta agua, <m>V</m>, hay en el tanque en un momento dado en minutos, <m>t</m>, y así generar un gráfico de la relación entre el volumen y el tiempo. Escribe una oración para explicar por qué el gráfico de los datos aparece de la manera en que lo hace.
 					</p>
 					<sidebyside width="50%" valign="middle">
 						<table xml:id="T-tandem-act-sphere-V-t">
-							<title>Data for how volume and time change together.</title>
+							<title>Datos sobre cómo cambian juntos el volumen y el tiempo.</title>							
 							<tabular>
 								<row bottom="minor">
 									<cell><m>t</m></cell>
@@ -81,14 +81,14 @@
 							</tabular>
 						</table>
 						<figure xml:id="F-tandem-act-sphere-V-t">
-							<caption>A plot of how volume and time change in tandem in a draining spherical tank.</caption>
+							<caption>Un gráfico de cómo cambian el volumen y el tiempo en conjunto en un tanque esférico que se está drenando.</caption>							
 							<image source="images/tandem-sphere-V-t" />	
 						</figure>
 					</sidebyside>
 				</li>
 				<li>
 					<p>
-						Finally, think about how the height of the water changes in tandem with time. What is the height of the water when <m>t = 0</m>?  What is the height when the tank is empty?  How would you expect the data for the relationship between <m>h</m> and <m>t</m> to appear?  Use the provided axes to sketch at least two possibilities; write at least one sentence to explain how you think the graph should appear.
+						Finalmente, piensa en cómo cambia la altura del agua junto con el tiempo. ¿Cuál es la altura del agua cuando <m>t = 0</m>? ¿Cuál es la altura cuando el tanque está vacío? ¿Cómo esperarías que aparezcan los datos de la relación entre <m>h</m> y <m>t</m>? Utiliza los ejes proporcionados para esbozar al menos dos posibilidades; escribe al menos una oración para explicar cómo crees que debería aparecer el gráfico.
 					</p>
 					<sidebyside width="50%">
 			              <image source="images/tandem-h-t-blank-axes" /> <image source="images/tandem-h-t-blank-axes" />
