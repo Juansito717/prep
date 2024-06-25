@@ -16,62 +16,60 @@
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-changing-aroc">
 
     <p>
-      Let the height function for a ball tossed vertically be given by <m>s(t) = 64 - 16(t-1)^2</m>,
-      where <m>t</m> is measured in seconds and <m>s</m> is measured in feet above the ground.
-	</p>
+      Sea la función de altura para una pelota lanzada verticalmente dada por <m>s(t) = 64 - 16(t-1)^2</m>, donde <m>t</m> se mide en segundos y <m>s</m> se mide en pies sobre el suelo.
+  </p>
 
 	<p>
       <ol marker="a.">
         <li>
           <p>
-            Compute the value of <m>AV_{[1.5,2.5]}</m>.
+            Calcula el valor de <m>AV_{[1.5,2.5]}</m>.            
           </p>
         </li>
 
         <li>
           <p>
-            What are the units on the quantity <m>AV_{[1.5,2.5]}</m>?
-            What is the meaning of this number in the context of the rising/falling ball?
+            ¿Cuáles son las unidades de la cantidad <m>AV_{[1.5,2.5]}</m>? ¿Cuál es el significado de este número en el contexto de la pelota que sube y baja?
           </p>
         </li>
 
         <li>
           <p>
-            In <em>Desmos</em>, plot the function
-            <m>s(t) = 64 - 16(t-1)^2</m> along with the points
-            <m>(1.5,s(1.5))</m> and <m>(2.5, s(2.5))</m>.
-            Make a copy of your plot on the axes in <xref ref="F-changing-aroc-PA-pos">Figure</xref>,
-            labeling key points as well as the scale on your axes.
-            What is the domain of the model?
-            The range?
-            Why?
+            En <em>Desmos</em>, grafica la función
+            <m>s(t) = 64 - 16(t-1)^2</m> junto con los puntos
+            <m>(1.5,s(1.5))</m> y <m>(2.5, s(2.5))</m>.
+            Haz una copia de tu gráfico en los ejes en <xref ref="F-changing-aroc-PA-pos">Figura</xref>,
+            etiquetando puntos clave así como la escala en tus ejes.
+            ¿Cuál es el dominio del modelo?
+            ¿El rango?
+            ¿Por qué?
           </p>
             <figure xml:id="F-changing-aroc-PA-pos">
-            	<caption>Axes for plotting the position function.</caption>
+              <caption>Ejes para graficar la función de posición.</caption>              
               <image width="50%" source="images/aroc-s-t-blank-axes" />
             </figure>
         </li>
 
         <li>
           <p>
-            Work by hand to find the equation of the line through the points
-            <m>(1.5,s(1.5))</m> and <m>(2.5, s(2.5))</m>.
-            Write the line in the form
-            <m>y = mt + b</m> and plot the line in <em>Desmos</em>,
-            as well as on the axes above.
+            Trabaja a mano para encontrar la ecuación de la línea que pasa por los puntos
+            <m>(1.5,s(1.5))</m> y <m>(2.5, s(2.5))</m>.
+            Escribe la línea en la forma
+            <m>y = mt + b</m> y grafica la línea en <em>Desmos</em>,
+            así como en los ejes anteriores.
           </p>
         </li>
 
         <li>
           <p>
-            What is a geometric interpretation of the value
-            <m>AV_{[1.5,2.5]}</m> in light of your work in the preceding questions?
+            ¿Cuál es una interpretación geométrica del valor
+            <m>AV_{[1.5,2.5]}</m> a la luz de tu trabajo en las preguntas anteriores?
           </p>
         </li>
 
         <li>
           <p>
-            How do your answers in the preceding questions change if we instead consider the interval
+            ¿Cómo cambian tus respuestas en las preguntas anteriores si en lugar de eso consideramos el intervalo
             <m>[0.25, 0.75]</m>? <m>[0.5, 1.5]</m>? <m>[1,3]</m>?
           </p>
         </li>
