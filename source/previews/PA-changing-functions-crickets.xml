@@ -17,34 +17,34 @@
 
 	<statement>
 		<p>
-			Use <xref ref="eq-functions-Dolbear">Equation</xref> to respond to the questions below.
+			Usa la <xref ref="eq-functions-Dolbear">Ecuación</xref> para responder a las preguntas a continuación.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						If we hear snowy tree crickets chirping at a rate of <m>92</m> chirps per minute, what does Dolbear's model suggest should be the outside temperature?
+						Si escuchamos grillos de árbol nevados cantando a una tasa de <m>92</m> chirridos por minuto, ¿qué sugiere el modelo de Dolbear que debería ser la temperatura exterior?
 					</p>
 				</li>
 				<li>
 					<p>
-						If the outside temperature is <m>77^\circ</m> F, how many chirps per minute should we expect to hear?
+						Si la temperatura exterior es de <m>77^\circ</m> F, ¿cuántos chirridos por minuto deberíamos esperar escuchar?
 					</p>
 				</li>
 				<li>
 					<p>
-						Is the model valid for determining the number of chirps one should hear when the outside temperature is <m>35^\circ</m> F?  Why or why not?
+						¿Es válido el modelo para determinar el número de chirridos que uno debería escuchar cuando la temperatura exterior es de <m>35^\circ</m> F? ¿Por qué o por qué no?
 					</p>
 				</li>
 				<li>
 					<p>
-						Suppose that in the morning an observer hears <m>65</m> chirps per minute, and several hours later hears <m>75</m> chirps per minute.  How much has the temperature risen between observations?
+						Supongamos que por la mañana un observador escucha <m>65</m> chirridos por minuto, y varias horas más tarde escucha <m>75</m> chirridos por minuto. ¿Cuánto ha subido la temperatura entre las observaciones?
 					</p>
 				</li>
 				<li>
 					<p>
-						Dolbear's Law is known to be accurate for temperatures from <m>50^\circ</m> to <m>85^\circ</m>.  What is the fewest number of chirps per minute an observer could expect to hear?  the greatest number of chirps per minute?
+						Se sabe que la Ley de Dolbear es precisa para temperaturas de <m>50^\circ</m> a <m>85^\circ</m>. ¿Cuál es el menor número de chirridos por minuto que un observador podría esperar escuchar? ¿El mayor número de chirridos por minuto?
 					</p>
 				</li>
 			</ol>

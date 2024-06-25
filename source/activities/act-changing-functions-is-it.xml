@@ -17,43 +17,43 @@
 
 	<statement>
 		<p>
-			Each of the following prompts describes a relationship between two quantities.  For each, your task is to decide whether or not the relationship can be thought of as a function.  If not, explain why.  If so, state the domain and codomain of the function and write at least one sentence to explain the process that leads from the collection of inputs to the collection of outputs.  
+			Cada uno de los siguientes enunciados describe una relación entre dos cantidades. Para cada uno, tu tarea es decidir si la relación puede considerarse como una función o no. Si no es así, explica por qué. Si lo es, indica el dominio y el codominio de la función y escribe al menos una oración para explicar el proceso que lleva desde la colección de entradas hasta la colección de salidas.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						The relationship between <m>x</m> and <m>y</m> in each of the graphs below (address each graph separately as a potential situation where <m>y</m> is a function of <m>x</m>).  In <xref ref="F-functions-act-is-it-1">Figure</xref>, any point on the circle relates <m>x</m> and <m>y</m>.  For instance, the <m>y</m>-value <m>\sqrt{7}</m> is related to the <m>x</m>-value <m>-3</m>.  In <xref ref="F-functions-act-is-it-2">Figure</xref>, any point on the blue curve relates <m>x</m> and <m>y</m>.  For instance, when <m>x = -1</m>, the corresponding <m>y</m>-value is <m>y = 3</m>.  An unfilled circle indicates that there is not a point on the graph at that specific location.
+						La relación entre <m>x</m> e <m>y</m> en cada uno de los gráficos a continuación (aborda cada gráfico por separado como una situación potencial donde <m>y</m> es una función de <m>x</m>). En la <xref ref="F-functions-act-is-it-1">Figura</xref>, cualquier punto en el círculo relaciona <m>x</m> e <m>y</m>. Por ejemplo, el valor <m>y</m> <m>\sqrt{7}</m> está relacionado con el valor <m>x</m> <m>-3</m>. En la <xref ref="F-functions-act-is-it-2">Figura</xref>, cualquier punto en la curva azul relaciona <m>x</m> y <m>y</m>. Por ejemplo, cuando <m>x = -1</m>, el valor correspondiente de <m>y</m> es <m>y = 3</m>. Un círculo sin rellenar indica que no hay un punto en el gráfico en esa ubicación específica.
 					</p>
 					<sidebyside width="50%">
 						<figure xml:id="F-functions-act-is-it-1">
-							<caption>A circle of radius <m>4</m> centered at <m>(0,0)</m>.</caption>
+							<caption>Un círculo de radio <m>4</m> centrado en <m>(0,0)</m>.</caption>
 							<image source="images/functions-act-is-it-1" />	
 						</figure>	
 						<figure xml:id="F-functions-act-is-it-2">
-							<caption>A graph of a possible function <m>g</m>.</caption>
+							<caption>Gráfico de una posible función <m>g</m>.</caption>
 							<image source="images/functions-act-is-it-2" />
 						</figure>						
 					</sidebyside>
 				</li>	
 				<li>								
 					<p>
-						The relationship between the day of the year and the value of the S&amp;P500 stock index (at the close of trading on a given day), where we attempt to consider the index's value (at the close of trading) as a function of the day of the year.
+						La relación entre el día del año y el valor del índice bursátil S&amp;P500 (al cierre de la negociación en un día determinado), donde intentamos considerar el valor del índice (al cierre de la negociación) como una función del día del año.
 					</p>
 				</li>
 				<li>
 					<p>
-						The relationship between a car's velocity and its odometer, where we attempt to view the car's odometer reading as a function of its velocity.
+						La relación entre la velocidad de un automóvil y su odómetro, donde intentamos ver la lectura del odómetro del automóvil como una función de su velocidad.
 					</p>
 				</li>
 				<li>
 					<p>
-						The relationship between <m>x</m> and <m>y</m> that is given in the following table where we attempt to view <m>y</m> as depending on <m>x</m>.
+						La relación entre <m>x</m> e <m>y</m> que se da en la siguiente tabla donde intentamos ver <m>y</m> como dependiente de <m>x</m>.
 					</p>
 
 					<table xml:id="T-act-functions-is-it-2">
-						<title>A table that relates <m>x</m> and <m>y</m> values.</title>
+						<title>Tabla que relaciona los valores de <m>x</m> e <m>y</m>.</title>
 							<tabular>
 								<row bottom="minor">
 									<cell><m>x</m></cell>
@@ -90,4 +90,3 @@
 	</solution>
 
 </activity>
-

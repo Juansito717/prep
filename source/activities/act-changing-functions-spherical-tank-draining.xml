@@ -17,50 +17,50 @@
 
 	<statement>
 		<p>
-			Consider a spherical tank of radius <m>4</m> m that is completely full of water.  Suppose that the tank is being drained by regulating an exit valve in such a way that the height of the water in the tank is always decreasing at a rate of <m>0.5</m> meters per minute.  Let 
-			<m>V</m> be the volume of water in the tank (in cubic meters) at a given time <m>t</m> (in minutes), and
-			<m>h</m> the depth of the water (in meters) at the same time.  It can be shown using calculus 
-			that <m>V</m> is a function of <m>t</m> according to the model
-      		<me>
-        		V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)
-      		</me>.
-      		In addition, let <m>h = q(t)</m> be the function whose output is the depth of the water in the tank at time <m>t</m>. 
+			Considera un tanque esférico de radio <m>4</m> m que está completamente lleno de agua. Supongamos que el tanque se está vaciando regulando una válvula de salida de tal manera que la altura del agua en el tanque siempre disminuye a una tasa de <m>0.5</m> metros por minuto. Sea 
+			<m>V</m> el volumen de agua en el tanque (en metros cúbicos) en un tiempo dado <m>t</m> (en minutos), y 
+			<m>h</m> la profundidad del agua (en metros) al mismo tiempo. Se puede demostrar usando cálculo 
+			que <m>V</m> es una función de <m>t</m> de acuerdo con el modelo
+			<me>
+				V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)
+			</me>.
+			Además, sea <m>h = q(t)</m> la función cuyo resultado es la profundidad del agua en el tanque en el tiempo <m>t</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the height of the water when <m>t = 0</m>?  When <m>t = 1</m>? When <m>t = 2</m>?  How long will it take the tank to completely drain?  Why?
+						¿Cuál es la altura del agua cuando <m>t = 0</m>? ¿Cuando <m>t = 1</m>? ¿Cuando <m>t = 2</m>? ¿Cuánto tiempo tomará vaciar completamente el tanque? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the domain of the model <m>h = q(t)</m>?  What is the domain of the model <m>V = p(t)</m>?
+						¿Cuál es el dominio del modelo <m>h = q(t)</m>? ¿Cuál es el dominio del modelo <m>V = p(t)</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						How much water is in the tank when the tank is full?  What is the range of the model <m>h = q(t)</m>?  What is the range of the model <m>V = p(t)</m>?
+						¿Cuánta agua hay en el tanque cuando el tanque está lleno? ¿Cuál es el rango del modelo <m>h = q(t)</m>? ¿Cuál es el rango del modelo <m>V = p(t)</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						We will frequently use a graphing utility to help us understand function behavior, and strongly recommend <url href="https://www.desmos.com/"><em>Desmos</em></url> because it is intuitive, online, and free.<fn>To learn more about <em>Desmos</em>, see their <url href="http://learn.desmos.com/">outstanding online tutorials</url>.</fn>
+						Usaremos con frecuencia una utilidad de gráficos para ayudarnos a entender el comportamiento de las funciones, y recomendamos encarecidamente <url href="https://www.desmos.com/"><em>Desmos</em></url> porque es intuitiva, en línea y gratuita.<fn>Para aprender más sobre <em>Desmos</em>, consulte sus <url href="http://learn.desmos.com/">excelentes tutoriales en línea</url>.</fn>
 					</p>
 
 					<p>
-						In <url href="https://www.desmos.com/calculator/btlyyxsdr4">this prepared <em>Desmos</em> worksheet</url>, you can see how we enter the (abstract) function <m>V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)</m>, as well as the corresponding graph the program generates.  Make as many observations as you can about the model <m>V = p(t)</m>.  You should discuss its shape and overall behavior, its domain, its range, and more. 
+						En <url href="https://www.desmos.com/calculator/btlyyxsdr4">esta hoja de trabajo preparada en <em>Desmos</em></url>, puedes ver cómo ingresamos la función (abstracta) <m>V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)</m>, así como el gráfico correspondiente que genera el programa. Haz tantas observaciones como puedas sobre el modelo <m>V = p(t)</m>. Debes discutir su forma y comportamiento general, su dominio, su rango y más.
 					</p>
 				</li>
 				<li>
 					<p>
-			            How does the model <m>V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)</m> differ from the abstract function <m>y = r(x) = \frac{256\pi}{3} - \frac{\pi}{24} x^2(24-x)</m>?  In particular, how do the domain and range of the model differ from those of the abstract function, if at all?
+						¿En qué se diferencia el modelo <m>V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)</m> de la función abstracta <m>y = r(x) = \frac{256\pi}{3} - \frac{\pi}{24} x^2(24-x)</m>? En particular, ¿en qué se diferencian el dominio y el rango del modelo de los de la función abstracta, si es que se diferencian?
 					</p>
 				</li>
 				<li>
 					<p>
-						How should the graph of the height function <m>h = q(t)</m> appear?  Can you determine a formula for <m>q</m>?  Explain your thinking.
+						¿Cómo debería aparecer el gráfico de la función de altura <m>h = q(t)</m>? ¿Puedes determinar una fórmula para <m>q</m>? Explica tu razonamiento.
 					</p>
 				</li>
 			</ol>
@@ -78,4 +78,3 @@
 	</solution>
 
 </activity>
-

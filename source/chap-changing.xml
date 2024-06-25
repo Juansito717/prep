@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C-changing">
-  	<title>Relating Changing Quantities</title>
+  	<title>Relacionando Cantidades Cambiantes</title>
   
   	<xi:include  href="./sec-changing-in-tandem.xml" />
    	<xi:include  href="./sec-changing-functions-models.xml" />
@@ -27,4 +27,3 @@
 	<xi:include  href="./sec-changing-combining.xml" />
 
 </chapter>
-

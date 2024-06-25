@@ -17,10 +17,10 @@
 
 	<statement>
 		<p>
-			Consider a spherical tank of radius <m>4</m> m that is filling with water.  Let 
-			<m>V</m> be the volume of water in the tank (in cubic meters) at a given time, and
-			<m>h</m> the depth of the water (in meters) at the same time.  It can be shown using calculus 
-			that <m>V</m> is a function of <m>h</m> according to the rule
+			Considera un tanque esférico de radio <m>4</m> m que se está llenando de agua. Sea 
+			<m>V</m> el volumen de agua en el tanque (en metros cúbicos) en un momento dado, y
+			<m>h</m> la profundidad del agua (en metros) al mismo tiempo. Se puede demostrar usando cálculo
+			que <m>V</m> es una función de <m>h</m> según la regla
       		<me>
         		V = f(h) = \frac{\pi}{3} h^2(12-h)
       		</me>.
@@ -30,28 +30,27 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						What values of <m>h</m> make sense to consider in the context of this function?  What values of <m>V</m> make sense in the same context?
+						¿Qué valores de <m>h</m> tienen sentido considerar en el contexto de esta función? ¿Qué valores de <m>V</m> tienen sentido en el mismo contexto?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the domain of the function <m>f</m> in the context of the spherical tank?  Why?  What is the corresponding codomain?  Why?
+						¿Cuál es el dominio de la función <m>f</m> en el contexto del tanque esférico? ¿Por qué? ¿Cuál es el codominio correspondiente? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine and interpret (with appropriate units) the values
-            			<m>f(2)</m>, <m>f(4)</m>, and <m>f(8)</m>.  What is important about the value of <m>f(8)</m>?
+						Determine e interprete (con las unidades apropiadas) los valores <m>f(2)</m>, <m>f(4)</m>, y <m>f(8)</m>. ¿Qué es importante sobre el valor de <m>f(8)</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Consider the claim: <q>since <m>f(9) = \frac{\pi}{3} 9^2(12-9) = 81\pi \approx 254.47</m>, when the water is <m>9</m> meters deep, there is about <m>254.47</m> cubic meters of water in the tank</q>.  Is this claim valid? Why or why not?  Further, does it make sense to observe that <q><m>f(13) = -\frac{169\pi}{3}</m></q>?  Why or why not?
+						Considera la afirmación: <q>dado que <m>f(9) = \frac{\pi}{3} 9^2(12-9) = 81\pi \approx 254.47</m>, cuando el agua tiene <m>9</m> metros de profundidad, hay aproximadamente <m>254.47</m> metros cúbicos de agua en el tanque</q>. ¿Es válida esta afirmación? ¿Por qué o por qué no? Además, ¿tiene sentido observar que <q><m>f(13) = -\frac{169\pi}{3}</m></q>? ¿Por qué o por qué no?
 					</p>
 				</li>
 				<li>
 					<p>
-			            Can you determine a value of <m>h</m> for which <m>f(h) = 300</m> cubic meters?
+						¿Puedes determinar un valor de <m>h</m> para el cual <m>f(h) = 300</m> metros cúbicos?
 					</p>
 				</li>
 			</ol>
@@ -69,4 +68,3 @@
 	</solution>
 
 </activity>
-
