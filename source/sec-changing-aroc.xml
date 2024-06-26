@@ -144,11 +144,11 @@
 		<xi:include href="./activities/act-changing-aroc-trends.xml" />
 
 		<p>
-			It is helpful be able to connect information about a function's average rate of change and its graph.  For instance, if we have determined that <m>AV_{[-3,2]} = 1.75</m> for some function <m>f</m>, this tells us that, on average, the function rises between the points <m>x = -3</m> and <m>x = 2</m> and does so at an average rate of <m>1.75</m> vertical units for every horizontal unit.  Moreover, we can even determine that the difference between <m>f(2)</m> and <m>f(-3)</m> is
+			Es útil poder conectar información sobre la tasa de cambio promedio de una función y su gráfico. Por ejemplo, si hemos determinado que <m>AV_{[-3,2]} = 1.75</m> para alguna función <m>f</m>, esto nos dice que, en promedio, la función sube entre los puntos <m>x = -3</m> y <m>x = 2</m> y lo hace a una tasa promedio de <m>1.75</m> unidades verticales por cada unidad horizontal. Además, podemos incluso determinar que la diferencia entre <m>f(2)</m> y <m>f(-3)</m> es
 			<me>
 				f(2)-f(-3) = 1.75 \cdot 5 = 8.75
 			</me>
-			since <m>\frac{f(2)-f(-3)}{2-(-3)} = 1.75</m>.
+			ya que <m>\frac{f(2)-f(-3)}{2-(-3)} = 1.75</m>.
 		</p>
 
 		<xi:include href="./activities/act-changing-aroc-graphs.xml" />
