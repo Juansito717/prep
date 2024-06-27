@@ -21,17 +21,17 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Let <m>y = f(x) = 7 - 3x</m>.  Determine <m>AV_{[-3,-1]}</m>, <m>AV_{[2,5]}</m>, and <m>AV_{[4,10]}</m> for the function <m>f</m>.
+						Sea <m>y = f(x) = 7 - 3x</m>. Determina <m>AV_{[-3,-1]}</m>, <m>AV_{[2,5]}</m>, y <m>AV_{[4,10]}</m> para la función <m>f</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Let <m>y = g(x)</m> be given by the data in <xref ref="T-PA-changing-linear-3-ex-2">Table</xref>.
+						Sea <m>y = g(x)</m> dado por los datos en <xref ref="T-PA-changing-linear-3-ex-2">Table</xref>.
 					</p>
 
 					<table xml:id="T-PA-changing-linear-3-ex-2">
-						<title>A table that defines the function <m>y = g(x)</m>.</title>
-							<tabular>
+						<title>Una tabla que define la función <m>y = g(x)</m>.</title>							
+						<tabular>
 								<row bottom="minor" halign="center">
 									<cell><m>x</m></cell>
 									<cell><m>-5</m></cell>
@@ -64,35 +64,35 @@
 					</table>
 
 					<p>
-						Determine <m>AV_{[-5,-2]}</m>, <m>AV_{[-1,1]}</m>, and <m>AV_{[0,4]}</m> for the function <m>g</m>.
+						Determina <m>AV_{[-5,-2]}</m>, <m>AV_{[-1,1]}</m>, y <m>AV_{[0,4]}</m> para la función <m>g</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Consider the function <m>y = h(x)</m> defined by the graph in <xref ref="F-PA-changing-linear-3-ex-3">Figure</xref>.
+						Considera la función <m>y = h(x)</m> definida por la gráfica en <xref ref="F-PA-changing-linear-3-ex-3">Figure</xref>.
 					</p>
 
 					<figure xml:id="F-PA-changing-linear-3-ex-3">
-						<caption>The graph of <m>y = h(x)</m>.</caption>
+						<caption>La gráfica de <m>y = h(x)</m>.</caption>						
 						<image width="45%" source="images/linear-PA-ex-3" />
 					</figure>
 
 					<p>
-						Determine <m>AV_{[-5,-2]}</m>, <m>AV_{[-1,1]}</m>, and <m>AV_{[0,4]}</m> for the function <m>h</m>.
+						Determina <m>AV_{[-5,-2]}</m>, <m>AV_{[-1,1]}</m>, y <m>AV_{[0,4]}</m> para la función <m>h</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						What do all three examples above have in common?  How do they differ?
+						¿Qué tienen en común los tres ejemplos anteriores? ¿En qué se diferencian?
 					</p>
 				</li>
 				<li>
 					<p>
-						For the function <m>y = f(x) = 7 - 3x</m> from (a), find the simplest expression you can for 
+						Para la función <m>y = f(x) = 7 - 3x</m> de (a), encuentra la expresión más simple que puedas para 
 						<me>
 							AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
 						</me>
-						where <m>a \ne b</m>.
+						donde <m>a \ne b</m>.
 					</p>
 				</li>
 			</ol>

@@ -17,36 +17,35 @@
 
 	<statement>
 		<p>
-			Find an equation for the line that is determined by the following conditions;
-      		write your answer in point-slope form wherever possible.
-      	</p>
+			Encuentra una ecuación para la línea que está determinada por las siguientes condiciones; escribe tu respuesta en la forma punto-pendiente siempre que sea posible.
+		</p>
       	<p>
 	      <ol marker="a.">
 	        <li>
-	          <p>
-	            The line with slope <m>\frac{3}{7}</m> that passes through <m>(-11, -17)</m>.
-	          </p>
+				<p>
+					La línea con pendiente <m>\frac{3}{7}</m> que pasa por <m>(-11, -17)</m>.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            The line passing through the points <m>(-2,5)</m> and <m>(3,-1)</m>.
-	          </p>
+				<p>
+					La línea que pasa por los puntos <m>(-2,5)</m> y <m>(3,-1)</m>.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            The line passing through <m>(4,9)</m> that is parallel to the line <m>2x - 3y = 5</m>.
-	          </p>
+				<p>
+					La línea que pasa por <m>(4,9)</m> y es paralela a la línea <m>2x - 3y = 5</m>.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            Explain why the function <m>f</m> given by <xref ref="T-act-changing-linear-finding-eqs">Table</xref> appears to be linear and find a formula for <m>f(x)</m>.
-                  </p>
+				<p>
+					Explica por qué la función <m>f</m> dada por la <xref ref="T-act-changing-linear-finding-eqs">Tabla</xref> parece ser lineal y encuentra una fórmula para <m>f(x)</m>.
+				</p>
 				<sidebyside width="50%" valign="middle">
 					<table xml:id="T-act-changing-linear-finding-eqs">
-						<title>Data for a linear function <m>f</m>.</title>
+						<title>Datos para una función lineal <m>f</m>.</title>						
 			            <tabular halign="center">
 			              <row bottom="minor">
 			                <cell><m>x</m></cell>
@@ -72,15 +71,15 @@
 					</table>
 
 					<figure xml:id="F-act-changing-linear-finding-eqs">
-						<caption>Plot of a linear function <m>h</m>.</caption>
+						<caption>Gráfica de una función lineal <m>h</m>.</caption>						
 						<image source="images/linear-PA-ex-3" />
 					</figure>
 				</sidebyside>
 	        </li>
 	        <li>
 	        	<p>
-	        		Find a formula for the linear function shown in <xref ref="F-act-changing-linear-finding-eqs">Figure</xref>.
-	        	</p>
+					Encuentra una fórmula para la función lineal mostrada en la <xref ref="F-act-changing-linear-finding-eqs">Figura</xref>.
+				</p>
 	        </li>
 	      </ol>      		
       	</p>
@@ -99,4 +98,3 @@
 	</solution>
 
 </activity>
-

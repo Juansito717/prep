@@ -14,36 +14,36 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-changing-linear">
-  <title>Linear Functions</title>
+  <title>Funciones Lineales</title>
 
   <objectives>
   	<ul>
+		<li>
+			<p>
+				¿Qué comportamiento de una función hace que su gráfica sea una línea recta?
+			</p>
+	  </li>
+	  <li>
+			<p>
+				Para una función cuya gráfica es una línea recta, ¿qué estructura tiene su fórmula?
+			</p>
+	  </li>
   		<li>
-  			<p>
-  				What behavior of a function makes its graph a straight line?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				For a function whose graph is a straight line, what structure does its formula have?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How can we interpret the slope of a linear function in applied contexts?
-  			</p>
+			<p>
+				¿Cómo podemos interpretar la pendiente de una función lineal en contextos aplicados?
+		  	</p>
   		</li>
   	</ul>
   </objectives>
 
   <introduction>
-  	<p>
-  		Functions whose graphs are straight lines are both the simplest and the most important functions in mathematics.
-    	Lines often model important phenomena,
-    	and even when they don't directly model phenomena,
-    	lines can often approximate other functions that do.
-    	Whether a function's graph is a straight line or not is connected directly to its average rate of change.
-  	</p>
+	<p>
+		Las funciones cuyas gráficas son líneas rectas son tanto las más simples como las más importantes en matemáticas.
+		Las líneas a menudo modelan fenómenos importantes,
+		y aun cuando no modelen directamente fenómenos,
+		las líneas a menudo pueden aproximar otras funciones que sí lo hacen.
+		Si la gráfica de una función es una línea recta o no, está directamente relacionado con su tasa de cambio promedio.
+ 	 </p>
 
 	<xi:include href="./previews/PA-changing-linear-3-ex.xml" />
 
@@ -51,19 +51,19 @@
 
 
   <subsection xml:id="subsec-changing-linear-properties">
-  	<title>Properties of linear functions</title>
+	<title>Propiedades de las funciones lineales</title>	
 
 	<p>
-		In <xref ref="PA-changing-linear-3-ex">Preview Activity</xref>, we considered three different functions for which the average rate of change of each appeared to always be constant.  For the first function in the preview activity, <m>y = f(x) = 7 - 3x</m>, we can compute its average rate of change on an arbitrary interval <m>[a,b]</m>.  Doing so, we notice that
-		<md>
-			<mrow>AV_{[a,b]} &amp;= \frac{f(b)-f(a)}{b-a}</mrow>
-			<mrow> 		&amp;= \frac{(7-3b) - (7-3a)}{b-a}</mrow>
-			<mrow> 		&amp;= \frac{7-3b - 7+3a}{b-a}</mrow>
-			<mrow> 		&amp;= \frac{-3b + 3a}{b-a}</mrow>
-			<mrow> 		&amp;= \frac{-3(b - a)}{b-a}</mrow>	
-			<mrow> 		&amp;= -3</mrow>		
-		</md>.
-		This result shows us that for the function <m>y = f(x) = 7 - 3x</m>, its average rate of change is always <m>-3</m>, regardless of the interval we choose.  We will use the property of having constant rate of change as the defining property of a linear function.
+	En <xref ref="PA-changing-linear-3-ex">Preview Activity</xref>, consideramos tres funciones diferentes para las cuales la tasa de cambio promedio parecía ser siempre constante. Para la primera función en la actividad preliminar, <m>y = f(x) = 7 - 3x</m>, podemos calcular su tasa de cambio promedio en un intervalo arbitrario <m>[a,b]</m>. Haciendo esto, notamos que
+	<md>
+		<mrow>AV_{[a,b]} &amp;= \frac{f(b)-f(a)}{b-a}</mrow>
+		<mrow> 		&amp;= \frac{(7-3b) - (7-3a)}{b-a}</mrow>
+		<mrow> 		&amp;= \frac{7-3b - 7+3a}{b-a}</mrow>
+		<mrow> 		&amp;= \frac{-3b + 3a}{b-a}</mrow>
+		<mrow> 		&amp;= \frac{-3(b - a)}{b-a}</mrow>	
+		<mrow> 		&amp;= -3</mrow>		
+	</md>.
+	Este resultado nos muestra que para la función <m>y = f(x) = 7 - 3x</m>, su tasa de cambio promedio es siempre <m>-3</m>, sin importar el intervalo que elijamos. Usaremos la propiedad de tener una tasa de cambio constante como la propiedad definitoria de una función lineal.
 	</p>
 
 	<definition xml:id="D-linear-function">
@@ -71,43 +71,43 @@
 		<idx><h>linear function</h><h>slope</h></idx>
 		<statement>
 			<p>
-				A function <m>f</m> is <term>linear</term> provided that its average rate of change is constant on every choice of interval in its domain<fn>Here we are considering functions whose domain is the set of all real numbers.</fn>.  That is, for any inputs <m>a</m> and <m>b</m> for which <m>a \ne b</m>, it follows that 
+				Una función <m>f</m> es <term>lineal</term> siempre que su tasa de cambio promedio sea constante en cualquier elección de intervalo en su dominio<fn>Aquí estamos considerando funciones cuyo dominio es el conjunto de todos los números reales.</fn>. Es decir, para cualquier entrada <m>a</m> y <m>b</m> para las cuales <m>a \ne b</m>, se sigue que
 				<me>
 					\frac{f(b) - f(a)}{b-a} = m
 				</me>
-				for some fixed constant <m>m</m>.  We call <m>m</m> the <term>slope</term> of the linear function <m>f</m>.
+				para alguna constante fija <m>m</m>. Llamamos a <m>m</m> la <term>pendiente</term> de la función lineal <m>f</m>.
 			</p>
 		</statement>
 	</definition>
 
 	<p>
-		From prior study, we already know a lot about linear functions.  In this section, we work to understand some familiar properties in light of the new perspective of <xref ref="D-linear-function">Definition</xref>.
+		Por estudios previos, ya sabemos mucho sobre las funciones lineales. En esta sección, trabajamos para entender algunas propiedades familiares a la luz de la nueva perspectiva de la <xref ref="D-linear-function">Definición</xref>.
 	</p>
 
 	<p>
-		Let's suppose we know that a function <m>f</m> is linear with average rate of change <m>AV_{[a,b]} = m</m> and that we also know the function value is <m>y_0</m> at some fixed input <m>x_0</m>.  That is, we know that <m>f(x_0) = y_0</m>.  From this information, we can find the formula for <m>y = f(x)</m> for <em>any</em> input <m>x</m>.  Working with the known point <m>(x_0, f(x_0))</m> and any other point <m>(x,f(x))</m> on the function's graph, we know that the average rate of change between these two points must be the constant <m>m</m>.  This tells us that 
+		Supongamos que sabemos que una función <m>f</m> es lineal con una tasa de cambio promedio <m>AV_{[a,b]} = m</m> y que también sabemos que el valor de la función es <m>y_0</m> en alguna entrada fija <m>x_0</m>. Es decir, sabemos que <m>f(x_0) = y_0</m>. A partir de esta información, podemos encontrar la fórmula para <m>y = f(x)</m> para <em>cualquier</em> entrada <m>x</m>. Trabajando con el punto conocido <m>(x_0, f(x_0))</m> y cualquier otro punto <m>(x, f(x))</m> en la gráfica de la función, sabemos que la tasa de cambio promedio entre estos dos puntos debe ser la constante <m>m</m>. Esto nos dice que
 		<me>
 			\frac{f(x) - f(x_0)}{x-x_0} = m
 		</me>.
-		Since we are interested in finding a formula for <m>y = f(x)</m>, we solve this most recent equation for <m>f(x)</m>.  Multiplying both sides by <m>(x-x_0)</m>, we see that
+		Como estamos interesados en encontrar una fórmula para <m>y = f(x)</m>, resolvemos esta ecuación más reciente para <m>f(x)</m>. Multiplicando ambos lados por <m>(x-x_0)</m>, vemos que
 		<me>
 			f(x) - f(x_0) = m(x-x_0)
 		</me>.
-		Adding <m>f(x_0)</m> to each side, it follows
+		Sumando <m>f(x_0)</m> a cada lado, se sigue que
 		<men xml:id="E-linear-point-slope-first-take">
 			f(x) = f(x_0) + m(x-x_0)
 		</men>.
-		This shows that to determine the formula for a linear function, all we need to know is its average rate of change (or slope) and a single point the function passes through.
+		Esto muestra que para determinar la fórmula de una función lineal, todo lo que necesitamos saber es su tasa de cambio promedio (o pendiente) y un solo punto por el cual pasa la función.
 	</p>
 
 	<example>
 		<statement>
 			<p>
-				Find a formula for a linear function <m>f</m> whose average rate of change is <m>m = -\frac{1}{4}</m> and passes through the point <m>(-7,-5)</m>.
+				Encuentra una fórmula para una función lineal <m>f</m> cuya tasa de cambio promedio es <m>m = -\frac{1}{4}</m> y pasa por el punto <m>(-7,-5)</m>.
 			</p>
 
 			<p>
-				<em>Solution</em>.  Using <xref ref="E-linear-point-slope-first-take">Equation</xref> and the facts that <m>m = -\frac{1}{4}</m> and <m>f(-7) = -5</m> (that is, <m>x_0 = -7</m> and <m>f(x_0) = -5</m>), we have
+				<em>Solución</em>. Usando la <xref ref="E-linear-point-slope-first-take">Ecuación</xref> y los hechos de que <m>m = -\frac{1}{4}</m> y <m>f(-7) = -5</m> (es decir, <m>x_0 = -7</m> y <m>f(x_0) = -5</m>), tenemos
 				<me>
 					f(x) = -5 -\frac{1}{4}(x - (-7)) = -5 - \frac{1}{4}(x+7)
 				</me>.
@@ -116,14 +116,14 @@
 	</example>
 
 	<p>
-		Replacing <m>f(x)</m> with <m>y</m> and <m>f(x_0)</m> with <m>y_0</m>, we call <xref ref="E-linear-point-slope-first-take">Equation</xref> the <em>point-slope form</em> <idx>point-slope form</idx> of a line.
+		Reemplazando <m>f(x)</m> con <m>y</m> y <m>f(x_0)</m> con <m>y_0</m>, llamamos a la <xref ref="E-linear-point-slope-first-take">Ecuación</xref> la <em>forma punto-pendiente</em> <idx>forma punto-pendiente</idx> de una línea.
 	</p>
 
 	<assemblage xml:id="asm-linear-point-slope-form">
-		<title>Point-slope form of a line</title>
+		<title>Forma punto-pendiente de una línea</title>		
 		<idx><h>line</h><h>point-slope form</h></idx>
 		<p>
-			A line with slope <m>m</m> (equivalently, average rate of change <m>m</m>) that passes through the point <m>(x_0,y_0)</m> has equation
+			Una línea con pendiente <m>m</m> (equivalente a una tasa de cambio promedio <m>m</m>) que pasa por el punto <m>(x_0, y_0)</m> tiene la ecuación
 			<me>
 				y = y_0 + m(x-x_0)
 			</me>.
@@ -133,37 +133,37 @@
 	<xi:include href="./activities/act-changing-linear-finding-eqs.xml" />
 
 	<p>
-		Visualizing the various components of point-slope form is important.  For a line through <m>(x_0,y_0)</m> with slope <m>m</m>, we know its equation is <m>y = y_0 + m(x-x_0)</m>.  In <xref ref="F-linear-point-slope">Figure</xref>, we see that the line passes through <m>(x_0,y_0)</m> along with an arbitary point <m>(x,y)</m>, which makes the vertical change between the two points given by <m>y - y_0</m> and the horizontal change between the points <m>x - x_0</m>. This is consistent with the fact that
+		Visualizar los diversos componentes de la forma punto-pendiente es importante. Para una línea que pasa por <m>(x_0, y_0)</m> con pendiente <m>m</m>, sabemos que su ecuación es <m>y = y_0 + m(x-x_0)</m>. En la <xref ref="F-linear-point-slope">Figura</xref>, vemos que la línea pasa por <m>(x_0, y_0)</m> junto con un punto arbitrario <m>(x, y)</m>, lo que hace que el cambio vertical entre los dos puntos esté dado por <m>y - y_0</m> y el cambio horizontal entre los puntos <m>x - x_0</m>. Esto es consistente con el hecho de que
 		<me>
 			AV_{[x_0,x]} = m = \frac{y-y_0}{x-x_0}
 		</me>.
-		Indeed, writing <m>m = \frac{y-y_0}{x-x_0}</m> is a rearrangement of the point-slope form of the line, <m>y = y_0 + m(x-x_0)</m>.	
+		De hecho, escribir <m>m = \frac{y-y_0}{x-x_0}</m> es una reorganización de la forma punto-pendiente de la línea, <m>y = y_0 + m(x-x_0)</m>.
 	</p>
 
 	<p>
-		We naturally use the terms <q>increasing</q> and <q>decreasing</q> as from <xref ref="D-aroc-increasing-decreasing">Definition</xref> to describe lines based on whether their slope is positive or negative.  A line with positive slope, such as the one in <xref ref="F-linear-slope-intercept">Figure</xref>, is increasing because its constant rate of change is positive, while a line with negative slope, such as in <xref ref="F-linear-point-slope">Figure</xref> is decreasing because of its negative rate of change.  We say that a horizontal line (one whose slope is <m>m = 0</m>) is neither increasing nor decreasing.
+		Usamos naturalmente los términos <q>creciente</q> y <q>decreciente</q> como en la <xref ref="D-aroc-increasing-decreasing">Definición</xref> para describir las líneas según si su pendiente es positiva o negativa. Una línea con pendiente positiva, como la que se muestra en la <xref ref="F-linear-slope-intercept">Figura</xref>, es creciente porque su tasa de cambio constante es positiva, mientras que una línea con pendiente negativa, como en la <xref ref="F-linear-point-slope">Figura</xref>, es decreciente debido a su tasa de cambio negativa. Decimos que una línea horizontal (una cuya pendiente es <m>m = 0</m>) no es ni creciente ni decreciente.
 	</p>
 
 	<sidebyside width="50%">
 		<figure xml:id="F-linear-point-slope">
-			<caption>The point-slope form of a line's equation.</caption>
+			<caption>La forma punto-pendiente de la ecuación de una línea.</caption>			
 			<image source="images/linear-point-slope" width="50%" />
 		</figure>
 		<figure xml:id="F-linear-slope-intercept">
-			<caption>The slope-intercept form of a line's equation.</caption>
+			<caption>La forma pendiente-intercepto de la ecuación de una línea.</caption>			
 			<image source="images/linear-slope-intercept" width="50%"/>
 		</figure>		
 	</sidebyside>
 
-	<p>	
-		A special case arises when the known point on a line satisfies <m>x_0 = 0</m>.  In this situation, the known point lies on the <m>y</m>-axis, and thus we call the point the <q><m>y</m>-intercept</q> of the line. <idx><h>line</h><h><m>y</m>-intercept</h></idx>  The resulting form of the line's equation is called <em>slope-intercept form</em>, which is also demonstrated in <xref ref="F-linear-slope-intercept">Figure</xref>.
+	<p>
+		Un caso especial surge cuando el punto conocido en una línea satisface <m>x_0 = 0</m>. En esta situación, el punto conocido se encuentra en el eje <m>y</m>, y por lo tanto llamamos a este punto el <q><m>y</m>-intercepto</q> de la línea. <idx><h>línea</h><h><m>y</m>-intercepto</h></idx> La forma resultante de la ecuación de la línea se llama <em>forma pendiente-intercepto</em>, que también se demuestra en la <xref ref="F-linear-slope-intercept">Figura</xref>.
 	</p>
 
 	<assemblage xml:id="asm-linear-slope-intercept-form">
 		<title>Slope-intercept form</title>
 		<idx><h>line</h><h>slope-intercept form</h></idx>
 		<p>
-			For the line with slope <m>m</m> and passing through <m>(0,y_0)</m>, its equation is 
+			Para la línea con pendiente <m>m</m> y que pasa por <m>(0, y_0)</m>, su ecuación es
 			<me>
 				y = y_0 + mx
 			</me>.
@@ -171,21 +171,21 @@
 	</assemblage>
 
 	<p>
-		Slope-intercept form follows from point-slope form from the fact that replacing <m>x_0</m> with <m>0</m> gives us <m>y = y_0 + m(x-0) = y_0 + mx</m>.  In many textbooks, the slope-intercept form of a line (often written <m>y = mx + b</m>) is treated as if it is the most useful form of a line.  Point-slope form is actually more important and valuable since we can easily write down the equation of a line as soon as we know its slope and <em>any</em> point that lies on it, as opposed to needing to find the <m>y</m>-intercept, which is needed for slope-intercept form.  Moreover, point-slope form plays a prominent role in calculus.
+		La forma pendiente-intercepto se deriva de la forma punto-pendiente por el hecho de que al reemplazar <m>x_0</m> con <m>0</m> obtenemos <m>y = y_0 + m(x-0) = y_0 + mx</m>. En muchos libros de texto, la forma pendiente-intercepto de una línea (a menudo escrita <m>y = mx + b</m>) se trata como si fuera la forma más útil de una línea. La forma punto-pendiente es en realidad más importante y valiosa, ya que podemos escribir fácilmente la ecuación de una línea tan pronto como sepamos su pendiente y <em>cualquier</em> punto que se encuentre en ella, en lugar de necesitar encontrar el <m>y</m>-intercepto, que se necesita para la forma pendiente-intercepto. Además, la forma punto-pendiente juega un papel prominente en el cálculo.
 	</p>
-
+	
 	<p>
-		If a line is in slope-intercept or point-slope form, it is useful to be able to quickly interpret key information about the line from the form of its equation.
+		Si una línea está en forma pendiente-intercepto o punto-pendiente, es útil poder interpretar rápidamente información clave sobre la línea a partir de la forma de su ecuación.
 	</p>
 
 	<example>
 		<statement>
 			<p>
-				For the line given by <m>y = -3 - 2.5(x-5)</m>, determine its slope and a point that lies on the line.
+				Para la línea dada por <m>y = -3 - 2.5(x-5)</m>, determina su pendiente y un punto que se encuentra en la línea.
 			</p>
-
+			
 			<p>
-				<em>Solution</em>.  This line is in point-slope form.  Its slope is <m>m = -2.5</m> and a point on the line is <m>(5,-3)</m>.
+				<em>Solución</em>. Esta línea está en forma punto-pendiente. Su pendiente es <m>m = -2.5</m> y un punto en la línea es <m>(5, -3)</m>.
 			</p>
 		</statement>
 	</example>
@@ -193,11 +193,11 @@
 	<example>
 		<statement>
 			<p>
-				For the line given by <m>y = 6 + 0.25x</m>, determine its slope and a point that lies on the line.
+				Para la línea dada por <m>y = 6 + 0.25x</m>, determina su pendiente y un punto que se encuentra en la línea.
 			</p>
-
+			
 			<p>
-				<em>Solution</em>.  This line is in slope-intercept form.  Its slope is <m>m = 0.25</m> and a point on the line is <m>(0,6)</m>, which is also the line's <m>y</m>-intercept.
+				<em>Solución</em>. Esta línea está en forma pendiente-intercepto. Su pendiente es <m>m = 0.25</m> y un punto en la línea es <m>(0, 6)</m>, que también es el <m>y</m>-intercepto de la línea.
 			</p>
 		</statement>
 	</example>
@@ -205,71 +205,70 @@
   </subsection>
 
   <subsection xml:id="subsec-changing-linear-context">
-  	<title>Interpreting linear functions in context</title>
+	<title>Interpretación de funciones lineales en contexto</title>	
 
-  	<p>
-  		Since linear functions are defined by the property that their average rate of change is constant, linear functions perfectly model quantities that change at a constant rate.  In context, we can often think of slope as a rate of change; analyzing units carefully often yields significant insight.
-  	</p>
+	<p>
+		Dado que las funciones lineales se definen por la propiedad de que su tasa de cambio promedio es constante, las funciones lineales modelan perfectamente cantidades que cambian a una tasa constante. En contexto, a menudo podemos pensar en la pendiente como una tasa de cambio; analizar las unidades cuidadosamente a menudo produce una visión significativa.
+	</p>
   	
   	<example xml:id="ex-linear-Dolbear">
   		<statement>
-  			<p>
-  				The Dolbear function <m>T = D(N) = 40 + 0.25N</m> from <xref ref="sec-changing-functions-models">Section</xref> is a linear function whose slope is <m>m = 0.25</m>.  What is the meaning of the slope in this context?
-  			</p>
+			<p>
+				La función de Dolbear <m>T = D(N) = 40 + 0.25N</m> de la <xref ref="sec-changing-functions-models">Sección</xref> es una función lineal cuya pendiente es <m>m = 0.25</m>. ¿Cuál es el significado de la pendiente en este contexto?
+			</p>
   		</statement>
   		<solution>
-  			<p>
-  				Recall that <m>T</m> is measured in degrees Fahrenheit and <m>N</m> in chirps per minute.  We know that <m>m = AV_{[a,b]} = 0.25</m> is the constant average rate of change of <m>D</m>.  Its units are <q>units of output per unit of input</q>, and thus <q>degrees Fahrenheit per chirp per minute</q>.  This tells us that the average rate of change of the temperature function is <m>0.25</m> degrees Fahrenheit per chirp per minute, which means that for each additional chirp per minute observed, we expect the temperature to rise by <m>0.25</m> degrees Fahrenheit.
-  			</p>
+			<p>
+				Recuerda que <m>T</m> se mide en grados Fahrenheit y <m>N</m> en chirridos por minuto. Sabemos que <m>m = AV_{[a,b]} = 0.25</m> es la tasa de cambio promedio constante de <m>D</m>. Sus unidades son <q>unidades de salida por unidad de entrada</q>, y por lo tanto <q>grados Fahrenheit por chirrido por minuto</q>. Esto nos dice que la tasa de cambio promedio de la función de temperatura es <m>0.25</m> grados Fahrenheit por chirrido por minuto, lo que significa que por cada chirrido adicional por minuto observado, esperamos que la temperatura aumente en <m>0.25</m> grados Fahrenheit.
+			</p>
 
 			<sidebyside width="50%">
 				<p>
-					Indeed, we can observe this through function values.  We note that <m>T(60) = 55</m> and <m>T(61) = 55.25</m>:  one additional observed chirp per minute corresponds to a <m>0.25</m> degree increase in temperature.  We also see this in the graph of the line, as seen in <xref ref="F-linear-ex-Dolbear-slope">Figure</xref>:
-					the slope between the points <m>(40,50)</m> and <m>(120,70)</m> is
-	  				<md>
-	  					<mrow>m &amp;= \frac{70-50}{120-40}</mrow>
-	  					<mrow> &amp;= \frac{20}{80}</mrow>
-	  					<mrow> &amp;= 0.25 \frac{\text{degrees F}}{\text{chirp per minute}}</mrow>
-	  				</md>.
+					De hecho, podemos observar esto a través de los valores de la función. Notamos que <m>T(60) = 55</m> y <m>T(61) = 55.25</m>: un chirrido adicional observado por minuto corresponde a un aumento de <m>0.25</m> grados en la temperatura. También vemos esto en la gráfica de la línea, como se ve en la <xref ref="F-linear-ex-Dolbear-slope">Figura</xref>: la pendiente entre los puntos <m>(40, 50)</m> y <m>(120, 70)</m> es
+					<md>
+						<mrow>m &amp;= \frac{70-50}{120-40}</mrow>
+						<mrow> &amp;= \frac{20}{80}</mrow>
+						<mrow> &amp;= 0.25 \frac{\text{grados F}}{\text{chirrido por minuto}}</mrow>
+					</md>.
 				</p>
 				
 				<figure xml:id="F-linear-ex-Dolbear-slope">
-  					<caption>The linear Dolbear function with slope <m>m = 0.25</m> degrees Fahrenheit per chirp per minute.</caption>
-  					<image width="45%" source="images/linear-Dolbears-Law-slope" />
+					<caption>La función lineal de Dolbear con pendiente <m>m = 0.25</m> grados Fahrenheit por chirrido por minuto.</caption>  					
+					<image width="45%" source="images/linear-Dolbears-Law-slope" />
   				</figure>
 			</sidebyside>
 
   		</solution>
   	</example>	
 
-	<p>
-		Like with the Dolbear function, it is often useful to write a linear function (whose output is called <m>y</m>) that models a quantity changing at a constant rate (as a function of some input <m>t</m>) by writing the function relationship in the form
+	  <p>
+		Al igual que con la función de Dolbear, a menudo es útil escribir una función lineal (cuyo resultado se llama <m>y</m>) que modela una cantidad que cambia a una tasa constante (como una función de alguna entrada <m>t</m>) escribiendo la relación de la función en la forma
 		<me>
 			y = b + mt
 		</me>
-		where <m>b</m> and <m>m</m> are constants.  We may think of the four quantities involved in the following way:
+		donde <m>b</m> y <m>m</m> son constantes. Podemos pensar en las cuatro cantidades involucradas de la siguiente manera:
 	</p>
 
 	<p>
 		<ul>
 			<li>
 				<p>
-					The constant <m>b</m> is the <q>starting value</q> of the output that corresponds to an input of <m>t = 0</m>;
+					La constante <m>b</m> es el <q>valor inicial</q> del resultado que corresponde a una entrada de <m>t = 0</m>;
 				</p>
 			</li>
 			<li>
 				<p>
-					The constant <m>m</m> is the rate at which the output changes with respect to changes in the input:  for each additional <m>1</m>-unit change in input, the output will change by <m>m</m> units.
+					La constante <m>m</m> es la tasa a la que cambia el resultado con respecto a los cambios en la entrada: por cada cambio adicional de <m>1</m> unidad en la entrada, el resultado cambiará en <m>m</m> unidades.
 				</p>
 			</li>
 			<li>
 				<p>
-					The variable <m>t</m> is the independent (input) variable.  A nonzero value for <m>t</m> corresponds to how much the input variable has changed from an initial value of <m>0</m>.
+					La variable <m>t</m> es la variable independiente (entrada). Un valor distinto de cero para <m>t</m> corresponde a cuánto ha cambiado la variable de entrada desde un valor inicial de <m>0</m>.
 				</p>
 			</li>
 			<li>
 				<p>
-					The variable <m>y</m> is the dependent (output) variable.  The value of <m>y</m> results from a particular choice of <m>t</m>, and can be thought of as the starting output value (<m>b</m>) plus the change in output that results from the corresponding change in input <m>t</m>.
+					La variable <m>y</m> es la variable dependiente (salida). El valor de <m>y</m> resulta de una elección particular de <m>t</m>, y se puede pensar como el valor inicial de salida (<m>b</m>) más el cambio en la salida que resulta del correspondiente cambio en la entrada <m>t</m>.
 				</p>
 			</li>
 		</ul>
@@ -282,23 +281,23 @@
   </subsection>
 
   <subsection xml:id="subsec-changing-linear-summary">
-      <title>Summary</title>
+      <title>Resumen</title>
       <p>
 	  	<ul>
 	  		<li>
-	  			<p>
-	  				Any function <m>f</m> with domain all real numbers that has a constant average rate of change on every interval <m>[a,b]</m> will have a straight line graph.  We call such functions <em>linear</em> functions.
-	  			</p>
+				<p>
+					Cualquier función <m>f</m> con dominio en todos los números reales que tenga una tasa de cambio promedio constante en cada intervalo <m>[a, b]</m> tendrá una gráfica en línea recta. Llamamos a tales funciones <em>funciones lineales</em>.
+				</p>
 	  		</li>
 	  		<li>
-	  			<p>
-	  				A linear function <m>y = f(x)</m> can be written in the form <m>y = f(x) = y_0 + m(x-x_0)</m>, where <m>m</m> is the slope of the line and <m>(x_0,y_0)</m> is a point that lies on the line.  In particular, <m>f(x_0) = y_0</m>.
-	  			</p>
+				<p>
+					Una función lineal <m>y = f(x)</m> puede escribirse en la forma <m>y = f(x) = y_0 + m(x-x_0)</m>, donde <m>m</m> es la pendiente de la línea y <m>(x_0, y_0)</m> es un punto que se encuentra en la línea. En particular, <m>f(x_0) = y_0</m>.
+				</p>
 	  		</li>
 	  		<li>
-	  			<p>
-	  				In an applied context where we have a linear function that models a phenomenon in the world around us, the slope tells us the function's (constant) average rate of change.  The units on the slope, <m>m</m>, are always <q>units of output per unit of input</q> and this enables us to articulate how the output changes in response to a <m>1</m>-unit change in input.
-	  			</p>
+				<p>
+					En un contexto aplicado donde tenemos una función lineal que modela un fenómeno en el mundo que nos rodea, la pendiente nos indica la tasa de cambio promedio (constante) de la función. Las unidades de la pendiente, <m>m</m>, son siempre <q>unidades de salida por unidad de entrada</q> y esto nos permite articular cómo cambia la salida en respuesta a un cambio de <m>1</m> unidad en la entrada.
+				</p>
 	  		</li>
 	  	</ul>
       </p>
@@ -309,4 +308,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

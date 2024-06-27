@@ -17,35 +17,34 @@
 
 	<statement>
 		<p>
-			In each of the following prompts, we investigate linear functions in context.
+			En cada uno de los siguientes ejercicios, investigamos funciones lineales en contexto.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						A town's population initially has <m>28750</m> people present and then grows at a constant rate of <m>825</m> people per year.
-            			Find a linear model <m>P = f(t)</m> for the number of people in the town in year <m>t</m>.
+						La población de una ciudad inicialmente tiene <m>28750</m> personas presentes y luego crece a una tasa constante de <m>825</m> personas por año. Encuentra un modelo lineal <m>P = f(t)</m> para el número de personas en la ciudad en el año <m>t</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						A different town's population <m>Q</m> is given by the function <m>Q = g(t) = 42505 - 465t</m>.  What is the slope of this function and what is its meaning in the model?  Write a complete sentence to explain.
+						La población de otra ciudad <m>Q</m> está dada por la función <m>Q = g(t) = 42505 - 465t</m>. ¿Cuál es la pendiente de esta función y qué significa en el modelo? Escribe una oración completa para explicar.
 					</p>
 				</li>
 				<li>
 					<p>
-						A spherical tank is being drained with a pump.  Initially the tank is full with <m>\frac{32\pi}{3}</m> cubic feet of water.  Assume the tank is drained at a constant rate of <m>1.2</m> cubic feet per minute.  Find a linear model <m>V = p(t)</m> for the total amount of water in the tank at time <m>t</m>.  In addition, what is a reasonable approximate domain for the model?
+						Un tanque esférico se está drenando con una bomba. Inicialmente el tanque está lleno con <m>\frac{32\pi}{3}</m> pies cúbicos de agua. Supón que el tanque se drena a una tasa constante de <m>1.2</m> pies cúbicos por minuto. Encuentra un modelo lineal <m>V = p(t)</m> para la cantidad total de agua en el tanque en el tiempo <m>t</m>. Además, ¿cuál es un dominio aproximado razonable para el modelo?
 					</p>
 				</li>
 				<li>
 					<p>
-						A conical tank is being filled in such a way that the height of the water in the tank, <m>h</m> (in feet), at time <m>t</m> (in minutes) is given by the function <m>h = q(t) = 0.65t</m>.  What can you say about how the water level is rising?  Write at least one careful sentence to explain.
+						Un tanque cónico se está llenando de tal manera que la altura del agua en el tanque, <m>h</m> (en pies), en el tiempo <m>t</m> (en minutos) está dada por la función <m>h = q(t) = 0.65t</m>. ¿Qué puedes decir sobre cómo está subiendo el nivel del agua? Escribe al menos una oración cuidadosa para explicar.
 					</p>
 				</li>
 				<li>
 					<p>
-						Suppose we know that a <m>5</m>-year old car's value is $<m>10200</m>, and that after <m>10</m> years its value is $<m>4600</m>.  Assuming that the car's value depreciates linearly, find a  function <m>C = L(t)</m> whose output is the value of the car in year <m>t</m>.  What is a reasonable domain for the model?  What is the value and meaning of the slope of the line?  Write at least one careful sentence to explain.
+						Supongamos que sabemos que el valor de un coche de <m>5</m> años es $<m>10200</m>, y que después de <m>10</m> años su valor es $<m>4600</m>. Suponiendo que el valor del coche se deprecia linealmente, encuentra una función <m>C = L(t)</m> cuyo resultado sea el valor del coche en el año <m>t</m>. ¿Cuál es un dominio razonable para el modelo? ¿Cuál es el valor y el significado de la pendiente de la línea? Escribe al menos una oración cuidadosa para explicar.
 					</p>
 				</li>
 			</ol>
@@ -63,4 +62,3 @@
 	</solution>
 
 </activity>
-

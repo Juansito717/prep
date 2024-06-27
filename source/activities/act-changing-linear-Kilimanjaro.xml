@@ -17,55 +17,44 @@
 
 	<statement>
 		<p>
-	      The summit of Africa's largest peak, Mt.
-	      Kilimanjaro<fn>
-	      The main context of this problem comes from Exercise 30 on p.<nbsp />27 of Connally's
-	      <em>Functions Modeling Change</em>, 5th ed.
-	      </fn>, has two main ice fields and a glacier at its peak.
-	      Geologists measured the ice cover in the year 2000 (<m>t = 0</m>) to be approximately <m>1951</m> m<m>^2</m>;
-	      in the year 2007, the ice cover measured <m>1555</m> m<m>^2</m>.
-	  	</p>
+			La cumbre del pico más alto de África, el Monte Kilimanjaro<fn>
+			El contexto principal de este problema proviene del Ejercicio 30 en la página 27 del libro de Connally
+			<em>Functions Modeling Change</em>, 5ta edición.
+			</fn>, tiene dos campos de hielo principales y un glaciar en su pico. 
+			Los geólogos midieron la cobertura de hielo en el año 2000 (<m>t = 0</m>) en aproximadamente <m>1951</m> m<m>^2</m>; 
+			en el año 2007, la cobertura de hielo se midió en <m>1555</m> m<m>^2</m>.
+		</p>
 
 		<p>		
 		  <ol marker="a.">
 	        <li>
-	          <p>
-	            Suppose that the amount of ice cover at the peak of Mt.
-	            Kilimanjaro is changing at a constant average rate from year to year.
-	            Find a linear model <m>A = f(t)</m> whose output is the area of the ice cover,
-	            <m>A</m>,
-	            in square meters in year <m>t</m>
-	            (where <m>t</m> is the number of years after 2000).
-	          </p>
+				<p>
+					Supongamos que la cantidad de cobertura de hielo en la cumbre del Monte Kilimanjaro está cambiando a una tasa promedio constante de un año a otro. Encuentra un modelo lineal <m>A = f(t)</m> cuyo resultado sea el área de la cobertura de hielo, <m>A</m>, en metros cuadrados en el año <m>t</m> (donde <m>t</m> es el número de años después del 2000).
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            What do the slope and <m>A</m>-intercept mean in the model you found in (a)?  In particular, what are the units on the slope?
-	          </p>
+				<p>
+					¿Qué significan la pendiente y la intersección <m>A</m> en el modelo que encontraste en (a)? En particular, ¿cuáles son las unidades de la pendiente?
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            Compute <m>f(17)</m>.
-	            What does this quantity measure?
-	            Write a complete sentence to explain.
-	          </p>
+				<p>
+					Calcula <m>f(17)</m>. ¿Qué mide esta cantidad? Escribe una oración completa para explicar.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            If the model holds further into the future,
-	            when do we predict the ice cover will vanish?
-	          </p>
+				<p>
+					Si el modelo se mantiene en el futuro, ¿cuándo predicimos que desaparecerá la cobertura de hielo?
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            In light of your work above,
-	            what is a reasonable domain to use for the model <m>A = f(t)</m>?
-	            What is the corresponding range?
-	          </p>
+				<p>
+					A la luz de tu trabajo anterior, ¿cuál es un dominio razonable para usar en el modelo <m>A = f(t)</m>? ¿Cuál es el rango correspondiente?
+				</p>
 	        </li>
 	      </ol>
 		</p>
@@ -83,4 +72,3 @@
 	</solution>
 
 </activity>
-
