@@ -17,34 +17,34 @@
 
 	<statement>
 		<p>
-			Reason algebraically using appropriate properties of quadratic functions to answer the following questions.  Use <em>Desmos</em> to check your results graphically.
+			Razona algebraicamente usando las propiedades apropiadas de las funciones cuadráticas para responder a las siguientes preguntas. Usa <em>Desmos</em> para verificar tus resultados gráficamente.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						How many quadratic functions have <m>x</m>-intercepts at <m>(-5,0)</m> and <m>(10,0)</m> and a <m>y</m>-intercept at <m>(0,-1)</m>?  Can you determine an exact formula for such a function?  If yes, do so.  If not, explain why.
+						¿Cuántas funciones cuadráticas tienen intersecciones con el eje <m>x</m> en <m>(-5,0)</m> y <m>(10,0)</m> y una intersección con el eje <m>y</m> en <m>(0,-1)</m>? ¿Puedes determinar una fórmula exacta para dicha función? Si es así, hazlo. Si no, explica por qué.
 					</p>
 				</li>
 				<li>
 					<p>
-						Suppose that a quadratic function <m>q</m> has vertex <m>(-3,-4)</m> and opens upward.  How many <m>x</m>-intercepts can you guarantee the function has?  Why?
+						Supón que una función cuadrática <m>q</m> tiene vértice en <m>(-3,-4)</m> y se abre hacia arriba. ¿Cuántas intersecciones con el eje <m>x</m> puedes garantizar que tiene la función? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						In addition to the information in (b), suppose you know that <m>q(-1) = -3</m>.  Can you determine an exact formula for <m>q</m>?  If yes, do so.  If not, explain why.
+						Además de la información en (b), supón que sabes que <m>q(-1) = -3</m>. ¿Puedes determinar una fórmula exacta para <m>q</m>? Si es así, hazlo. Si no, explica por qué.
 					</p>
 				</li>
 				<li>
 					<p>
-						Does the quadratic function <m>p(x) = -3(x+1)^2 + 9</m> have <m>0</m>, <m>1</m>, or <m>2</m> <m>x</m>-intercepts?  Reason algebraically to determine the exact values of any such intercepts or explain why none exist.
+						¿La función cuadrática <m>p(x) = -3(x+1)^2 + 9</m> tiene <m>0</m>, <m>1</m> o <m>2</m> intersecciones con el eje <m>x</m>? Razonando algebraicamente, determina los valores exactos de dichas intersecciones o explica por qué no existen.
 					</p>
 				</li>
 				<li>
 					<p>
-						Does the quadratic function <m>w(x) = -2x^2 + 10x - 20</m> have <m>0</m>, <m>1</m>, or <m>2</m> <m>x</m>-intercepts?  Reason algebraically to determine the exact values of any such intercepts or explain why none exist.
+						¿La función cuadrática <m>w(x) = -2x^2 + 10x - 20</m> tiene <m>0</m>, <m>1</m> o <m>2</m> intersecciones con el eje <m>x</m>? Razonando algebraicamente, determina los valores exactos de dichas intersecciones o explica por qué no existen.
 					</p>
 				</li>
 			</ol>
@@ -62,4 +62,3 @@
 	</solution>
 
 </activity>
-

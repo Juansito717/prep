@@ -17,51 +17,50 @@
 
 	  <statement>
 	    <p>
-	      A water balloon is tossed vertically from a window at an initial height of 37 feet and with an initial velocity of 41 feet per second.
+			Un globo de agua es lanzado verticalmente desde una ventana a una altura inicial de 37 pies y con una velocidad inicial de 41 pies por segundo.
 		</p>
 
 		<p>
 	      <ol marker="a.">
 	        <li>
-	          <p>
-	            Determine a formula, <m>s(t)</m>,
-	            for the function that models the height of the water balloon at time <m>t</m>.
-	          </p>
+				<p>
+					Determina una fórmula, <m>s(t)</m>,
+					para la función que modela la altura del globo de agua en el tiempo <m>t</m>.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            Plot the function in <em>Desmos</em>
-	            in an appropriate window.
-	          </p>
+				<p>
+					Grafica la función en <em>Desmos</em>
+					en una ventana apropiada.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            Use the graph to estimate the time the water balloon lands.
-	          </p>
+				<p>
+					Usa la gráfica para estimar el tiempo en que el globo de agua aterriza.
+				</p>
 	        </li>
 
 	        <li>
-	          <p>
-	            Use algebra to find the exact
-	            time the water balloon lands.
-	          </p>
-	        </li>
+				<p>
+				  Usa álgebra para encontrar el tiempo exacto en que el globo de agua aterriza.
+				</p>
+			</li>
 
 	        <li>
-	          <p>
-	            Determine the exact time the water balloon reaches its highest point and its height at that time.
-	          </p>
-	        </li>
+				<p>
+				  Determina el tiempo exacto en que el globo de agua alcanza su punto más alto y su altura en ese momento.
+				</p>
+			</li>
 
 	        <li>
-	          <p>
-	            Compute the average rate of change of <m>s</m> on the intervals <m>[1.5, 2]</m>,
-	            <m>[2, 2.5]</m>, <m>[2.5,3]</m>.
-	            Include units on your answers and write one sentence to explain the meaning of the values you found.
-	            Sketch appropriate lines on the graph of <m>s</m> whose respective slopes are the values of these average rates of change.
-	          </p>
+				<p>
+					Calcula la tasa de cambio promedio de <m>s</m> en los intervalos <m>[1.5, 2]</m>,
+					<m>[2, 2.5]</m>, <m>[2.5,3]</m>.
+					Incluye unidades en tus respuestas y escribe una oración para explicar el significado de los valores que encontraste.
+					Dibuja líneas apropiadas en la gráfica de <m>s</m> cuyas pendientes respectivas sean los valores de estas tasas de cambio promedio.
+				</p>
 	        </li>
 	      </ol>
 	  	</p>
@@ -79,4 +78,3 @@
 	</solution>
 
 </activity>
-

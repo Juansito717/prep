@@ -14,40 +14,40 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-changing-quadratic">
-  <title>Quadratic Functions</title>
+  <title>Funciones Cuadráticas</title>
 
   <objectives>
   	<ul>
-  		<li>
-  			<p>
-  				What patterns can we observe in how a quadratic function changes?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What are familiar and important properties of quadratic functions?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How can quadratic functions be used to model objects falling under the influence of gravity?
-  			</p>
-  		</li>
+		<li>
+			<p>
+			  ¿Qué patrones podemos observar en cómo cambia una función cuadrática?
+			</p>
+		</li>
+		<li>
+			<p>
+			  ¿Cuáles son las propiedades familiares e importantes de las funciones cuadráticas?
+			</p>
+		</li>
+		<li>
+			<p>
+			  ¿Cómo se pueden utilizar las funciones cuadráticas para modelar objetos que caen bajo la influencia de la gravedad?
+			</p>
+		</li>
   	</ul>
   </objectives>
 
   <introduction>
   	
-  	<p>
-  		After linear functions,
-    	quadratic functions are arguably the next simplest functions in mathematics.
-    	A <em>quadratic function</em> <idx><h>quadratic function</h></idx> is one that may be written in the form
-    	<me>
-      		q(x) = ax^2 + bx + c
-    	</me>,
-    	where <m>a</m>,
-    	<m>b</m>, and <m>c</m> are real numbers with <m>a \ne 0</m>.  One of the reasons that quadratic functions are especially important is that they model the height of an object falling under the force of gravity.
-  	</p>
+	<p>
+		Después de las funciones lineales,
+		las funciones cuadráticas son posiblemente las funciones más simples en matemáticas.
+		Una <em>función cuadrática</em> <idx><h>quadratic function</h></idx> es aquella que puede escribirse en la forma
+		<me>
+		  q(x) = ax^2 + bx + c
+		</me>,
+		donde <m>a</m>,
+		<m>b</m> y <m>c</m> son números reales con <m>a \ne 0</m>. Una de las razones por las que las funciones cuadráticas son especialmente importantes es que modelan la altura de un objeto que cae bajo la fuerza de la gravedad.
+	  </p>
 
   	<xi:include href="./previews/PA-changing-quadratic.xml" />
 
@@ -55,127 +55,127 @@
   </introduction>
 
   <subsection xml:id="subsec-changing-quadratic-properties">
-  	<title>Properties of Quadratic Functions</title>
+	<title>Propiedades de las Funciones Cuadráticas</title>
 
-  	<p>
-  		Quadratic functions are likely familiar to you from experience in previous courses.  Throughout, we let <m>y = q(x) = ax^2 + bx + c</m> where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers with <m>a \ne 0</m>.  From the outset, it is important to note that when we write <m>q(x) = ax^2 + bx + c</m> we are thinking of an <em>infinite family of functions</em> where each member depends on the three paramaters <m>a</m>, <m>b</m>, and <m>c</m>.
-  	</p>
+	<p>
+		Es probable que las funciones cuadráticas te resulten familiares por experiencias en cursos anteriores. A lo largo del texto, dejamos <m>y = q(x) = ax^2 + bx + c</m> donde <m>a</m>, <m>b</m> y <m>c</m> son números reales con <m>a \ne 0</m>. Desde el principio, es importante notar que cuando escribimos <m>q(x) = ax^2 + bx + c</m> estamos pensando en una <em>familia infinita de funciones</em> donde cada miembro depende de los tres parámetros <m>a</m>, <m>b</m> y <m>c</m>.
+	</p>
 
 	<xi:include href="./activities/act-changing-quadratic-parameters.xml" />
 
 	<p>
-		Because quadratic functions are familiar to us, we will quickly restate some of their important known properties.  
+		Debido a que las funciones cuadráticas nos son familiares, repetiremos rápidamente algunas de sus propiedades importantes conocidas.
 	</p>
 
 	<assemblage xml:id="asm-quadratic-x-intercepts">
-		<title>Solutions to <m>q(x) = 0</m></title>
+		<title>Soluciones para <m>q(x) = 0</m></title>		
 		<idx>quadratic formula</idx>
 		<p>
-			Let <m>a</m>, <m>b</m>, and <m>c</m> be real numbers with <m>a \ne 0</m>.  The equation <m>ax^2 + bx + c = 0</m> can have <m>0</m>, <m>1</m>, or <m>2</m> real solutions.   These real solutions are given by the quadratic formula,
+			Sean <m>a</m>, <m>b</m> y <m>c</m> números reales con <m>a \ne 0</m>. La ecuación <m>ax^2 + bx + c = 0</m> puede tener <m>0</m>, <m>1</m> o <m>2</m> soluciones reales. Estas soluciones reales están dadas por la fórmula cuadrática,
 			<me>
-				x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+			  x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
 			</me>,
-			provided that <m>b^2 - 4ac \ge 0</m>.
+			siempre que <m>b^2 - 4ac \ge 0</m>.
 		</p>
 	</assemblage>
 
 	<p>
-		As we can see in <xref ref="F-quadratic-3-CCU">Figure</xref>, by shifting the graph of a quadratic function vertically, we can make its graph cross the <m>x</m>-axis <m>0</m> times (as in the graph of <m>p</m>), exactly <m>1</m> time (<m>q</m>), or twice (<m>r</m>).  These points are the <m>x</m>-intercepts of the graph.
+		Como podemos ver en <xref ref="F-quadratic-3-CCU">Figura</xref>, al desplazar la gráfica de una función cuadrática verticalmente, podemos hacer que su gráfica cruce el eje <m>x</m> <m>0</m> veces (como en la gráfica de <m>p</m>), exactamente <m>1</m> vez (<m>q</m>), o dos veces (<m>r</m>). Estos puntos son las intersecciones con el eje <m>x</m> de la gráfica.
 	</p>
 
 	<sidebyside width="50%">
 		<figure xml:id="F-quadratic-3-CCU">
-			<caption>Three examples of quadratic functions that open up.</caption>
+			<caption>Tres ejemplos de funciones cuadráticas que se abren hacia arriba.</caption>			
 			<image source="images/quadratic-3-CCU" />
 		</figure>
 		<figure xml:id="F-quadratic-1-CCD">
-			<caption>One example of a quadratic function that opens down.</caption>
+			<caption>Un ejemplo de una función cuadrática que se abre hacia abajo.</caption>			
 			<image source="images/quadratic-1-CCD" />
 		</figure>
 	</sidebyside>
 
 	<p>
-		While the quadratic formula will always provide any real solutions to <m>q(x) = 0</m>, in practice it is often easier to attempt to factor before using the formula.  For instance, given <m>q(x) = x^2 - 5x + 6</m>, we can find its <m>x</m>-intercepts quickly by factoring.  Since
+		Aunque la fórmula cuadrática siempre proporcionará cualquier solución real a <m>q(x) = 0</m>, en la práctica a menudo es más fácil intentar factorizar antes de usar la fórmula. Por ejemplo, dado <m>q(x) = x^2 - 5x + 6</m>, podemos encontrar sus intersecciones con el eje <m>x</m> rápidamente mediante factorización. Dado que
 		<me>
-			x^2 - 5x + 6 = (x-2)(x-3)
+		  x^2 - 5x + 6 = (x-2)(x-3)
 		</me>,
-		it follows that <m>(2,0)</m> and <m>(3,0)</m> are the <m>x</m>-intercepts of <m>q</m>.  Note more generally that if we know the <m>x</m>-intercepts <idx><h>quadratic function</h> <h>x-intercepts</h></idx> of a quadratic function are <m>(r,0)</m> and <m>(s,0)</m>, it follows that we can write the quadratic function in the form <m>q(x) = a(x-r)(x-s)</m>.
+		se sigue que <m>(2,0)</m> y <m>(3,0)</m> son las intersecciones con el eje <m>x</m> de <m>q</m>. Note en términos más generales que si conocemos las intersecciones con el eje <m>x</m> <idx><h>quadratic function</h> <h>x-intercepts</h></idx> de una función cuadrática que son <m>(r,0)</m> y <m>(s,0)</m>, se sigue que podemos escribir la función cuadrática en la forma <m>q(x) = a(x-r)(x-s)</m>.
 	</p>
 
 	<p>
-		Every quadratic function has a <m>y</m>-intercept; <idx><h>quadratic function</h> <h>y-intercept</h></idx> for a function of form <m>y = q(x) = ax^2 + bx + c</m>, the <m>y</m>-intercept is the point <m>(0,c)</m>, as demonstrated in <xref ref="F-quadratic-1-CCD">Figure</xref>.  
+		Toda función cuadrática tiene una intersección con el eje <m>y</m>; <idx><h>quadratic function</h> <h>y-intercept</h></idx> para una función de la forma <m>y = q(x) = ax^2 + bx + c</m>, la intersección con el eje <m>y</m> es el punto <m>(0,c)</m>, como se demuestra en <xref ref="F-quadratic-1-CCD">Figura</xref>.
 	</p>
-	<p>	
-		In addition, every quadratic function has a symmetric graph that either always curves upward or always curves downward.  The graph opens upward if and only if <m>a \gt 0</m> and opens downward if and only if <m>a \lt 0</m>.  We often call the graph of a quadratic function a <em>parabola</em>.  <idx><h>parabola</h></idx>  Every parabola is symmetric about a vertical line that runs through its lowest or highest point.
+	<p>
+		Además, toda función cuadrática tiene una gráfica simétrica que siempre se curva hacia arriba o siempre se curva hacia abajo. La gráfica se abre hacia arriba si y solo si <m>a \gt 0</m> y se abre hacia abajo si y solo si <m>a \lt 0</m>. A menudo llamamos a la gráfica de una función cuadrática una <em>parábola</em>. <idx><h>parabola</h></idx> Toda parábola es simétrica respecto a una línea vertical que pasa por su punto más bajo o más alto.
 	</p>
 
 	<assemblage xml:id="asm-quadratic-vertex">
-		<title>The vertex of a parabola</title> <idx><h>parabola</h><h>vertex</h></idx> <idx><h>quadratic function</h><h>vertex</h></idx>
+		<title>El vértice de una parábola</title> <idx><h>parabola</h><h>vertex</h></idx> <idx><h>quadratic function</h><h>vertex</h></idx>		
 		<p>
-			The quadratic function <m>y = q(x) = ax^2 + bx + c</m> has its vertex at the point <m>\left( -\frac{b}{2a}, q\left( -\frac{b}{2a} \right) \right)</m>.  When <m>a \gt 0</m>, the vertex is the lowest point on the graph of <m>q</m>, while if <m>a \lt 0</m>, the vertex is the highest point.  Moreover, the graph of <m>q</m> is symmetric about the vertical line <m>x = -\frac{b}{2a}</m>.    
+			La función cuadrática <m>y = q(x) = ax^2 + bx + c</m> tiene su vértice en el punto <m>\left( -\frac{b}{2a}, q\left( -\frac{b}{2a} \right) \right)</m>. Cuando <m>a \gt 0</m>, el vértice es el punto más bajo en la gráfica de <m>q</m>, mientras que si <m>a \lt 0</m>, el vértice es el punto más alto. Además, la gráfica de <m>q</m> es simétrica respecto a la línea vertical <m>x = -\frac{b}{2a}</m>.
 		</p>
 	</assemblage>
 
 	<sidebyside width="50%">
 		<figure xml:id="F-quadratic-vertex-CCU">
-			<caption>The vertex of a quadratic function that opens up.</caption>
+			<caption>El vértice de una función cuadrática que se abre hacia arriba.</caption>			
 			<image source="images/quadratic-vertex-CCU" />
 		</figure>
 		<figure xml:id="F-quadratic-vertex-CCD">
-			<caption>The vertex of a quadratic function that opens down.</caption>
+			<caption>El vértice de una función cuadrática que se abre hacia abajo.</caption>			
 			<image source="images/quadratic-vertex-CCD" />
 		</figure>
 	</sidebyside>
 
 	<p>
-		Note particularly that due to symmetry, the vertex of a quadratic function lies halfway between its <m>x</m>-intercepts (provided the function has <m>x</m>-intercepts).  In both <xref ref="F-quadratic-vertex-CCU">Figures</xref> and <xref ref="F-quadratic-vertex-CCD"/>, we see how the parabola is symmetric about the vertical line that passes through the vertex.  One way to understand this symmetry can be seen by writing a given quadratic function in a different algebraic form.  
+		Nota en particular que, debido a la simetría, el vértice de una función cuadrática se encuentra a medio camino entre sus intersecciones con el eje <m>x</m> (siempre que la función tenga intersecciones con el eje <m>x</m>). En ambas <xref ref="F-quadratic-vertex-CCU">Figuras</xref> y <xref ref="F-quadratic-vertex-CCD"/>, vemos cómo la parábola es simétrica respecto a la línea vertical que pasa por el vértice. Una forma de entender esta simetría puede verse escribiendo una función cuadrática dada en una forma algebraica diferente.
 	</p>
 
 	<example xml:id="ex-quadratic-vertex-form">
 		<statement>
 			<p>
-				Consider the quadratic function in standard form given by <m>y = q(x) = 0.25x^2 - x + 3.5</m>.  Determine constants <m>a</m>, <m>h</m>, and <m>k</m> so that <m>q(x) = a(x-h)^2 + k</m>, and hence determine the vertex of <m>q</m>.  How does this alternate form of <m>q</m> explain the symmetry in its graph?
+				Considera la función cuadrática en forma estándar dada por <m>y = q(x) = 0.25x^2 - x + 3.5</m>. Determina las constantes <m>a</m>, <m>h</m> y <m>k</m> para que <m>q(x) = a(x-h)^2 + k</m>, y así determina el vértice de <m>q</m>. ¿Cómo explica esta forma alternativa de <m>q</m> la simetría en su gráfica?
 			</p>
 		</statement>
 		<solution>
 			<p>
-				We first observe that we can write <m>q(x) = 0.25x^2 - x + 3.5</m> in a form closer to <m>q(x) = a(x-h)^2 + k</m> by factoring <m>0.25</m> from the first two terms to get
+				Primero observamos que podemos escribir <m>q(x) = 0.25x^2 - x + 3.5</m> en una forma más cercana a <m>q(x) = a(x-h)^2 + k</m> factorizando <m>0.25</m> de los dos primeros términos para obtener
 				<me>
-					q(x) = 0.25(x^2 - 4x) + 3.5
+				  q(x) = 0.25(x^2 - 4x) + 3.5
 				</me>.
-				Next, we want to add a constant inside the parentheses to form a perfect square.  Noting that <m>(x-2)^2 = x^2 - 4x + 4</m>, we need to add <m>4</m>.  Since we are adding <m>4</m> inside the parentheses, the <m>4</m> is being multiplied by <m>0.25</m>, which has the net effect of adding <m>1</m> to the function.  To keep the function as given, we must also subtract <m>1</m>, and thus we have
+				A continuación, queremos agregar una constante dentro del paréntesis para formar un cuadrado perfecto. Observando que <m>(x-2)^2 = x^2 - 4x + 4</m>, necesitamos agregar <m>4</m>. Dado que estamos agregando <m>4</m> dentro del paréntesis, el <m>4</m> se está multiplicando por <m>0.25</m>, lo que tiene el efecto neto de agregar <m>1</m> a la función. Para mantener la función tal como está, también debemos restar <m>1</m>, y así tenemos
 				<me>
-					q(x) = 0.25(x^2 - 4x + 4) + 3.5 - 1
+				  q(x) = 0.25(x^2 - 4x + 4) + 3.5 - 1
 				</me>.
-				It follows that 
+				Se sigue que
 				<me>
-					q(x) = 0.25(x-2)^2 + 2.5
+				  q(x) = 0.25(x-2)^2 + 2.5
 				</me>.
 			</p>
-			<p>	
-				Next, observe that the vertex of <m>q</m> is <m>(2,2.5)</m>.  This holds because <m>(x-2)^2</m> is always greater than or equal to <m>0</m>, and thus its smallest possible value is <m>0</m> when <m>x = 2</m>.  Moreover, when <m>x = 2</m>, <m>q(2) = 2.5</m>.<fn>We can also verify this point is the vertex using standard form.  From <m>q(x) = 0.25x^2 - x + 3.5</m>, we see that <m>a = 0.25</m> and <m>b = -1</m>, so <m>x = -\frac{b}{2a} = \frac{1}{0.5} = 2</m>.  In addition, <m>q(2) = 2.5</m>.</fn>  
+			<p>
+				A continuación, observa que el vértice de <m>q</m> es <m>(2,2.5)</m>. Esto se cumple porque <m>(x-2)^2</m> es siempre mayor o igual a <m>0</m>, y por lo tanto su valor más pequeño posible es <m>0</m> cuando <m>x = 2</m>. Además, cuando <m>x = 2</m>, <m>q(2) = 2.5</m>.<fn>También podemos verificar que este punto es el vértice usando la forma estándar. De <m>q(x) = 0.25x^2 - x + 3.5</m>, vemos que <m>a = 0.25</m> y <m>b = -1</m>, por lo que <m>x = -\frac{b}{2a} = \frac{1}{0.5} = 2</m>. Además, <m>q(2) = 2.5</m>.</fn>
 			</p>
 
 			<p>
-				Finally, the form <m>q(x) = 0.25(x-2)^2 + 2.5</m> explains the symmetry of <m>q</m> about the line <m>x = 2</m>.  Consider the two points that lie equidistant from <m>x = 2</m> on the <m>x</m>-axis, <m>z</m> units away:  <m>x = 2-z</m> and <m>x = 2 + z</m>.  Observe that for these values, 
-						<md>
-							<mrow>q(2-z) &amp;= 0.25(2-z-2)^2 + 2.5&amp; q(2+z) &amp;= 0.25(2+z-2)^2 + 2.5</mrow>
-							<mrow>  &amp;= 0.25(-z)^2 + 2.5 &amp; &amp;= 0.25(z)^2 + 2.5</mrow>
-							<mrow>  &amp;= 0.25z^2 + 2.5   &amp; &amp;= 0.25z^2 + 2.5</mrow>
-						</md>
-				Since <m>q(2-z) = q(2+z)</m> for any choice of <m>z</m>, this shows the parabola is symmetric about the vertical line through its vertex.
+				Finalmente, la forma <m>q(x) = 0.25(x-2)^2 + 2.5</m> explica la simetría de <m>q</m> respecto a la línea <m>x = 2</m>. Considera los dos puntos que se encuentran equidistantes de <m>x = 2</m> en el eje <m>x</m>, a una distancia de <m>z</m> unidades: <m>x = 2-z</m> y <m>x = 2 + z</m>. Observa que para estos valores,
+				<md>
+				  <mrow>q(2-z) &amp;= 0.25(2-z-2)^2 + 2.5&amp; q(2+z) &amp;= 0.25(2+z-2)^2 + 2.5</mrow>
+				  <mrow>  &amp;= 0.25(-z)^2 + 2.5 &amp; &amp;= 0.25(z)^2 + 2.5</mrow>
+				  <mrow>  &amp;= 0.25z^2 + 2.5   &amp; &amp;= 0.25z^2 + 2.5</mrow>
+				</md>
+				Dado que <m>q(2-z) = q(2+z)</m> para cualquier elección de <m>z</m>, esto muestra que la parábola es simétrica respecto a la línea vertical que pasa por su vértice.
 			</p>
 		</solution>
 	</example>
 
 	<p>
-		In <xref ref="ex-quadratic-vertex-form">Example</xref>, we saw some of the advantages of writing a quadratic function in the form <m>q(x) = a(x-h)^2 + k</m>.  We call this the <em>vertex form</em> of a quadratic function.
+		En <xref ref="ex-quadratic-vertex-form">Example</xref>, vimos algunas de las ventajas de escribir una función cuadrática en la forma <m>q(x) = a(x-h)^2 + k</m>. Llamamos a esta la <em>forma de vértice</em> de una función cuadrática.
 	</p>
 
 	<assemblage xml:id="asm-quadratic-vertex-form">
-		<title>Vertex form of a quadratic function</title> <idx><h>quadratic function</h><h>vertex form</h></idx>
+		<title>Forma de vértice de una función cuadrática</title> <idx><h>quadratic function</h><h>vertex form</h></idx>
 		<p>
-			A quadratic function with vertex <m>(h,k)</m> may be written in the form <m>y = a(x-h)^2 + k</m>.  The constant <m>a</m> may be determined from one other function value for an input <m>x \ne h</m>.
+			Una función cuadrática con vértice <m>(h,k)</m> puede escribirse en la forma <m>y = a(x-h)^2 + k</m>. La constante <m>a</m> puede determinarse a partir de otro valor de la función para una entrada <m>x \ne h</m>.
 		</p>
 	</assemblage>
 
@@ -183,63 +183,63 @@
 
   </subsection>
   <subsection xml:id="subsec-changing-quadratic-falling-gravity">
-  	<title>
-  		Modeling falling objects
-  	</title>
-	  <p>
-	    One of the reasons that quadratic functions are so important is because of a physical fact of the universe we inhabit:
-	    for an object only being influenced by gravity, <idx><h>gravity</h></idx>
-	    <em>acceleration due to gravity is constant</em>.
-	    If we measure time in seconds and a rising or falling object's height in feet,
-	    the gravitational constant is <m>g = 32</m> feet per second per second.
+	<title>
+		Modelando objetos en caída
+	</title>
+	<p>
+	    Una de las razones por las que las funciones cuadráticas son tan importantes es debido a un hecho físico del universo que habitamos:
+	    para un objeto influenciado solo por la gravedad, <idx><h>gravity</h></idx>
+	    <em>la aceleración debido a la gravedad es constante</em>.
+	    Si medimos el tiempo en segundos y la altura de un objeto que sube o cae en pies,
+	    la constante gravitacional es <m>g = 32</m> pies por segundo por segundo.
 	  </p>
 
 	  <p>
-	    One of the fantastic consequences of calculus <mdash /> which,
-	    like the realization that acceleration due to gravity is constant,
-	    is largely due to Sir Isaac Newton in the late 1600s <mdash /> is that the height of a falling object at time <m>t</m> is modeled by a quadratic function.
+	    Una de las fantásticas consecuencias del cálculo <mdash /> que,
+	    al igual que la realización de que la aceleración debido a la gravedad es constante,
+	    se debe en gran parte a Sir Isaac Newton a finales de los años 1600 <mdash /> es que la altura de un objeto en caída en el tiempo <m>t</m> se modela mediante una función cuadrática.
 	  </p>
 
 	  <assemblage xml:id="asm-quadratic-falling-ball-model">
-	  	<title>Height of an object falling under the force of gravity</title>
-	  	<idx><h>gravity</h><h>falling object</h></idx>
-	  	<p>
-	  	For an object tossed vertically from an initial height of <m>s_0</m> feet with a velocity of <m>v_0</m> feet per second,
-	    the object's height at time <m>t</m> (in seconds) is given by the formula
-	    <me>
-	    	h(t) = -16t^2 + v_0t + s_0
-	    </me>
-	  	</p>
+		<title>Altura de un objeto en caída bajo la fuerza de la gravedad</title>	  	
+		<idx><h>gravity</h><h>falling object</h></idx>
+		<p>
+			Para un objeto lanzado verticalmente desde una altura inicial de <m>s_0</m> pies con una velocidad de <m>v_0</m> pies por segundo,
+		  la altura del objeto en el tiempo <m>t</m> (en segundos) está dada por la fórmula
+		  <me>
+			  h(t) = -16t^2 + v_0t + s_0
+		  </me>
+		</p>
 	  </assemblage>
 
 	  <p>
-	  	If height is measured instead in meters and velocity in meters per second, the gravitational constant is <m>g = 9.8</m> and the function <m>h</m> has form <m>h(t) = -4.9t^2 + v_0t + s_0</m>. <idx><h>gravity</h><h>gravitational constant</h></idx>  (When height is measured in feet, the gravitational constant is <m>g = 32</m>.)
-	  </p>
+		Si la altura se mide en metros y la velocidad en metros por segundo, la constante gravitacional es <m>g = 9.8</m> y la función <m>h</m> tiene la forma <m>h(t) = -4.9t^2 + v_0t + s_0</m>. <idx><h>gravity</h><h>gravitational constant</h></idx> (Cuando la altura se mide en pies, la constante gravitacional es <m>g = 32</m>.)
+		</p>
 
 	  <xi:include href="./activities/act-changing-quadratic-falling-ball.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-changing-quadratic-change-patterns">
-  	<title>
-  		How quadratic functions change
-  	</title>
+	<title>
+		Cómo cambian las funciones cuadráticas
+	</title>
 
 	<p>
-		So far, we've seen that quadratic functions have many interesting properties.  In <xref ref="PA-changing-quadratic">Preview Activity</xref>, we discovered an additional pattern that is particularly noteworthy.
+		Hasta ahora, hemos visto que las funciones cuadráticas tienen muchas propiedades interesantes. En <xref ref="PA-changing-quadratic">Preview Activity</xref>, descubrimos un patrón adicional que es particularmente notable.
 	</p>
 
 	<p>
-		Recall that we considered a water balloon tossed vertically from a fifth story window whose height, <m>h</m>, in meters, at time <m>t</m>, in seconds, is modeled<fn>Here we are using <m>a = -5</m> rather than <m>a = -4.9</m> for simplicity.</fn> by the function
+		Recuerda que consideramos un globo de agua lanzado verticalmente desde la ventana de un quinto piso cuya altura, <m>h</m>, en metros, en el tiempo <m>t</m>, en segundos, se modela<fn>Aquí estamos usando <m>a = -5</m> en lugar de <m>a = -4.9</m> por simplicidad.</fn> mediante la función
 		<me>
 			h = q(t) = -5t^2 + 20t + 25
 		</me>.
-		We then completed <xref ref="T-PA-changing-quadratic-heights-complete">Table</xref> and <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref> to investigate how both function values and averages rates of change varied as we changed the input to the function.
+		Luego completamos <xref ref="T-PA-changing-quadratic-heights-complete">Table</xref> y <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref> para investigar cómo variaban tanto los valores de la función como las tasas de cambio promedio a medida que cambiábamos la entrada a la función.
 	</p>
 
 				<sidebyside widths="48% 48%" margins="0%" valign="bottom">
 					<table xml:id="T-PA-changing-quadratic-heights-complete">
-						<title>Function values for <m>h</m> at select inputs.</title>
+						<title>Valores de la función para <m>h</m> en entradas seleccionadas.</title>						
 						<tabular>
 							<row bottom="minor">
 								<cell><m>t</m></cell>
@@ -272,7 +272,7 @@
 						</tabular>
 					</table>	
 					<table xml:id="T-PA-changing-quadratic-AVs-complete">
-						<title>Average rates of change for <m>h</m> on select intervals <m>[a,b]</m>.</title>
+						<title>Tasas de cambio promedio para <m>h</m> en intervalos seleccionados <m>[a,b]</m>.</title>						
 						<tabular>
 							<row bottom="minor">
 								<cell><m>[a,b]</m></cell>
@@ -305,14 +305,14 @@
 					</table>
 				</sidebyside>
 	
-	<p>		
-		In <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref>, we see an interesting pattern in the average velocities of the ball.  Indeed, if we remove the <q><m>AV</m></q> notation and focus on the starting value of each interval, viewing the resulting average rate of change, <m>r</m>, as a function of the starting value, we may consider the related table seen in <xref ref="T-quadratic-linear">Table</xref>, where it is apparent that <m>r</m> is a linear function of <m>a</m>.
-	</p>
+		<p>		
+			En la <xref ref="T-PA-changing-quadratic-AVs-complete">Tabla</xref>, vemos un patrón interesante en las velocidades promedio de la pelota. De hecho, si eliminamos la notación <q><m>AV</m></q> y nos centramos en el valor inicial de cada intervalo, viendo la tasa de cambio promedio resultante, <m>r</m>, como una función del valor inicial, podemos considerar la tabla relacionada vista en <xref ref="T-quadratic-linear">Table</xref>, donde es evidente que <m>r</m> es una función lineal de <m>a</m>.
+		</p>
 
 		<sidebyside width="50%" valign="middle">
 			
 					<table xml:id="T-quadratic-linear">
-						<title>Data from <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref>, slightly recast.</title>
+						<title>Datos de <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref>, ligeramente reformulados.</title>						
 						<tabular>
 							<row bottom="minor">
 								<cell><m>a</m></cell>
@@ -342,64 +342,64 @@
 					</table>
 
 					<figure xml:id="F-quadratic-linear">
-						<caption>Plot of <m>h(t) = -5t^2 + 20t + 25</m> along with line segments whose slopes correspond to average rates of change.</caption>
+						<caption>Gráfica de <m>h(t) = -5t^2 + 20t + 25</m> junto con segmentos de línea cuyas pendientes corresponden a tasas de cambio promedio.</caption>						
 						<image source="images/quadratic-change-linear" />
 					</figure>
 
 	</sidebyside>
 
 	<p>
-		Indeed, viewing this data graphically as in <xref ref="F-quadratic-linear">Figure</xref>, we observe that the average rate of change of <m>h</m> is itself changing in a way that seems to be represented by a linear function.  While it takes key ideas from calculus to formalize this observation, for now we will simply note that for a quadratic function there seems to be a related linear function that tells us something about how the quadratic function changes.  Moreover, we can also say that on the downward-opening quadratic function <m>h</m> that its average rate of change appears to be decreasing as we move from left to right<fn>Provided that we consider the average rate of change on intervals of the same length.  Again, it takes ideas from calculus to make this observation completely precise.</fn>.
+		De hecho, al ver estos datos gráficamente como en <xref ref="F-quadratic-linear">Figure</xref>, observamos que la tasa de cambio promedio de <m>h</m> está cambiando de una manera que parece estar representada por una función lineal. Aunque se necesitan ideas clave del cálculo para formalizar esta observación, por ahora simplemente notaremos que para una función cuadrática parece haber una función lineal relacionada que nos dice algo sobre cómo cambia la función cuadrática. Además, también podemos decir que en la función cuadrática <m>h</m> que se abre hacia abajo, su tasa de cambio promedio parece estar disminuyendo a medida que nos movemos de izquierda a derecha<fn>Siempre y cuando consideremos la tasa de cambio promedio en intervalos de la misma longitud. Nuevamente, se necesitan ideas del cálculo para hacer esta observación completamente precisa.</fn>.
 	</p>
 
 	<p>
-		A key closing observation here is that the fact the parabola <q>bends down</q> is apparently connected to the fact that its average rate of change decreases as we move left to right.  By contrast, for a quadratic function that <q>bends up</q>, we can show that its average rate of change increases as we move left to right (see <xref ref="ez-quadratic-aroc-patterns">Exercise</xref>).  Moreover, we also see that it's possible to view the average rate of change of a function on <m>1</m>-unit intervals as <em>itself</em> being a function: a process that relates an input (the starting value of the interval) to a corresponding output (the average rate of change of the original function on the resulting <m>1</m>-unit interval).  
+		Una observación clave para concluir aquí es que el hecho de que la parábola <q>se doble hacia abajo</q> está aparentemente conectado con el hecho de que su tasa de cambio promedio disminuye a medida que nos movemos de izquierda a derecha. Por el contrario, para una función cuadrática que <q>se dobla hacia arriba</q>, podemos mostrar que su tasa de cambio promedio aumenta a medida que nos movemos de izquierda a derecha (ver <xref ref="ez-quadratic-aroc-patterns">Exercise</xref>). Además, también vemos que es posible ver la tasa de cambio promedio de una función en intervalos de <m>1</m> unidad como una función en sí misma: un proceso que relaciona una entrada (el valor inicial del intervalo) con una salida correspondiente (la tasa de cambio promedio de la función original en el intervalo resultante de <m>1</m> unidad).
 	</p>
 
 	<p>
-		For any function that consistently bends either exclusively upward or exclusively downward on a given interval <m>(a,b)</m>, we use the following formal language<fn>Calculus is needed to make <xref ref="def-quadratic-concave">Definition</xref> rigorous and precise.</fn> to describe it.
+		Para cualquier función que se doble consistentemente hacia arriba exclusivamente o hacia abajo exclusivamente en un intervalo dado <m>(a,b)</m>, usamos el siguiente lenguaje formal<fn>Se necesita cálculo para hacer <xref ref="def-quadratic-concave">Definition</xref> riguroso y preciso.</fn> para describirla.
 	</p>
 
 	<definition xml:id="def-quadratic-concave">
 		<idx><h>function trends</h><h>concave up</h></idx> <idx><h>function trends</h><h>concave down</h></idx>
 		<statement>
 			<p>
-				If a function <m>f</m> always bends upward on an interval <m>(a,b)</m>, we say that <m>f</m> is <term>concave up on <m>(a,b)</m></term>.  Similarly, if <m>f</m> always bends downward on an interval <m>(a,b)</m>, we say that <m>f</m> is <term>concave down on <m>(a,b)</m></term>.
+				Si una función <m>f</m> siempre se dobla hacia arriba en un intervalo <m>(a,b)</m>, decimos que <m>f</m> es <term>cóncava hacia arriba en <m>(a,b)</m></term>. De manera similar, si <m>f</m> siempre se dobla hacia abajo en un intervalo <m>(a,b)</m>, decimos que <m>f</m> es <term>cóncava hacia abajo en <m>(a,b)</m></term>.
 			</p>
 		</statement>
 	</definition>
 
 	<p>
-		Thus, we now call a quadratic function <m>q(x) = ax^2 + bx + c</m> with <m>a \gt 0</m> <q>concave up</q>, while if <m>a \lt 0</m> we say <m>q</m> is <q>concave down</q>.
+		Así, ahora llamamos a una función cuadrática <m>q(x) = ax^2 + bx + c</m> con <m>a \gt 0</m> <q>cóncava hacia arriba</q>, mientras que si <m>a \lt 0</m> decimos que <m>q</m> es <q>cóncava hacia abajo</q>.
 	</p>
 
   </subsection>
 
   <subsection>
-  	<title>Summary</title>
+  	<title>Resumen</title>
         <p>
   	<ul>
   		<li>
-  			<p>
-  				Quadratic functions (of the form <m>q(x) = ax^2 + bx + c</m> with <m>a \ne 0</m>) are emphatically not linear:  their average rate of change is not constant, but rather depends on the interval chosen.  At the same time, quadratic functions appear to change in a very regimented way:  if we compute the average rate of change on several consecutive <m>1</m>-unit intervals, it appears that the average rate of change itself changes at a constant rate.  Quadratic functions either bend upward (<m>a \gt 0</m>) or bend downward (<m>a \lt 0</m>) and these shapes are connected to whether the average rate of change on consecutive <m>1</m>-unit intervals decreases or increases as we move left to right.
-  			</p>
+			<p>
+				Las funciones cuadráticas (de la forma <m>q(x) = ax^2 + bx + c</m> con <m>a \ne 0</m>) no son lineales en absoluto: su tasa de cambio promedio no es constante, sino que depende del intervalo elegido. Al mismo tiempo, las funciones cuadráticas parecen cambiar de una manera muy regimentada: si calculamos la tasa de cambio promedio en varios intervalos consecutivos de <m>1</m> unidad, parece que la tasa de cambio promedio en sí misma cambia a una tasa constante. Las funciones cuadráticas se doblan hacia arriba (<m>a \gt 0</m>) o se doblan hacia abajo (<m>a \lt 0</m>) y estas formas están conectadas a si la tasa de cambio promedio en intervalos consecutivos de <m>1</m> unidad disminuye o aumenta a medida que nos movemos de izquierda a derecha.
+			</p>
   		</li>
   		<li>
-  			<p>
-  				For an object with height <m>h</m> measured in feet at time <m>t</m> in seconds, if the object was launched vertically at an initial velocity of <m>v_0</m> feet per second and from an initial height of <m>s_0</m> feet, the object's height is given by
-  				<me>
-  					h = q(t) = -16t^2 + v_0t + s_0
-  				</me>.
-  				That is, the object's height is completely determined by the initial height and initial velocity from which it was launched.  The model is valid for the entire time until the object lands.  If <m>h</m> is instead measured in meters and <m>v_0</m> in meters per second, <m>-16</m> is replaced with <m>-4.9</m>.
-  			</p>
+			<p>
+				Para un objeto con altura <m>h</m> medida en pies en el tiempo <m>t</m> en segundos, si el objeto fue lanzado verticalmente a una velocidad inicial de <m>v_0</m> pies por segundo y desde una altura inicial de <m>s_0</m> pies, la altura del objeto está dada por
+				<me>
+					h = q(t) = -16t^2 + v_0t + s_0
+				</me>.
+				Es decir, la altura del objeto está completamente determinada por la altura inicial y la velocidad inicial desde la cual fue lanzado. El modelo es válido durante todo el tiempo hasta que el objeto aterriza. Si <m>h</m> se mide en metros y <m>v_0</m> en metros por segundo, <m>-16</m> se reemplaza por <m>-4.9</m>.
+			</p>
   		</li>
   		<li>
-  			<p>
-  				A quadratic function <m>q</m> can be written in one of three familiar forms:  standard, vertex, or factored<fn>It's not always possible to write a quadratic function in factored form involving only real numbers; this can only be done if it has <m>1</m> or <m>2</m> <m>x</m>-intercepts.</fn>.  <xref ref="T-quadratic-summary-quad-props">Table</xref> shows how, depending on the algebraic form of the function, various properties may be (easily) read from the formula.  In every case, the sign of <m>a</m> determines whether the function opens up or opens down.
-  			</p>
+			<p>
+				Una función cuadrática <m>q</m> puede escribirse en una de tres formas familiares: estándar, de vértice o factorizada<fn>No siempre es posible escribir una función cuadrática en forma factorizada involucrando solo números reales; esto solo puede hacerse si tiene <m>1</m> o <m>2</m> intersecciones con el eje <m>x</m>.</fn>. <xref ref="T-quadratic-summary-quad-props">Table</xref> muestra cómo, dependiendo de la forma algebraica de la función, se pueden leer (fácilmente) varias propiedades de la fórmula. En todos los casos, el signo de <m>a</m> determina si la función se abre hacia arriba o hacia abajo.
+			</p>
   			<table xml:id="T-quadratic-summary-quad-props">
-  				<title>A summary of the information that can be read from the various algebraic forms of a quadratic function</title>
-  				<tabular>
+				<title>Un resumen de la información que se puede leer de las diversas formas algebraicas de una función cuadrática</title>  				
+				<tabular>
   					<row bottom="minor">
   						<cell></cell>
   						<cell>standard</cell>
@@ -443,4 +443,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

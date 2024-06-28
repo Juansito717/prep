@@ -17,46 +17,46 @@
 
 	<statement>
 		<p>
-	      Open a browser and point it to <url href="https://www.desmos.com/calculator"><em>Desmos</em></url>.
-	      In <em>Desmos</em>, enter <c>q(x) = ax^2 + bx + c</c>;
-	      you will be prompted to add sliders for <m>a</m>, <m>b</m>,
-	      and <m>c</m>.  Do so.
-	      Then begin exploring with the sliders and respond to the following questions.			
+			Abre un navegador y dirígete a <url href="https://www.desmos.com/calculator"><em>Desmos</em></url>.
+			En <em>Desmos</em>, ingresa <c>q(x) = ax^2 + bx + c</c>;
+			se te pedirá que agregues deslizadores para <m>a</m>, <m>b</m>,
+			y <m>c</m>. Hazlo.
+			Luego comienza a explorar con los deslizadores y responde a las siguientes preguntas.
 		</p>
 
 		<p>
 			<ol marker="a.">
 		        <li>
-		          <p>
-		            Describe how changing the value of <m>a</m> affects the graph of <m>q</m>.
-		          </p>
-		        </li>
+					<p>
+					  Describe cómo el cambio en el valor de <m>a</m> afecta la gráfica de <m>q</m>.
+					</p>
+				</li>
+				  
+				<li>
+					<p>
+					  Describe cómo el cambio en el valor de <m>b</m> afecta la gráfica de <m>q</m>.
+					</p>
+				</li>
 
 		        <li>
-		          <p>
-		            Describe how changing the value of <m>b</m> affects the graph of <m>q</m>.
-		          </p>
-		        </li>
+					<p>
+					  Describe cómo el cambio en el valor de <m>c</m> afecta la gráfica de <m>q</m>.
+					</p>
+				</li>
+				  
+				<li>
+					<p>
+					  ¿Cuál parámetro parece tener el efecto más simple?
+					  ¿Cuál parámetro parece tener el efecto más complicado?
+					  ¿Por qué?
+					</p>
+				</li>
 
 		        <li>
-		          <p>
-		            Describe how changing the value of <m>c</m> affects the graph of <m>q</m>.
-		          </p>
-		        </li>
-
-		        <li>
-		          <p>
-		            Which parameter seems to have the simplest effect?
-		            Which parameter seems to have the most complicated effect?
-		            Why?
-		          </p>
-		        </li>
-
-		        <li>
-		          <p>
-		            Is it possible to find a formula for a quadratic function that passes through the points <m>(0,8)</m>,
-		            <m>(1,12)</m>, <m>(2,12)</m>?  If yes, do so; if not, explain why not.
-		          </p>
+					<p>
+						¿Es posible encontrar una fórmula para una función cuadrática que pase por los puntos <m>(0,8)</m>,
+						<m>(1,12)</m>, <m>(2,12)</m>? Si es así, hazlo; si no, explica por qué no.
+					</p>
 		        </li>
 			</ol>
 		</p>
@@ -73,4 +73,3 @@
 	</solution>
 
 </activity>
-

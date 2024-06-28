@@ -17,21 +17,21 @@
 
 <statement>
 	<p>
-		A water balloon is tossed vertically from a fifth story window.  Its height, <m>h</m>, in meters, at time <m>t</m>, in seconds, is modeled by the function
+		Un globo de agua es lanzado verticalmente desde la ventana de un quinto piso. Su altura, <m>h</m>, en metros, en el tiempo <m>t</m>, en segundos, está modelada por la función
 		<me>
-			h = q(t) = -5t^2 + 20t + 25
+		  h = q(t) = -5t^2 + 20t + 25
 		</me>.
-	</p>
+	  </p>
 
 	<p>
 		<ol marker="a.">
 			<li>
 				<p>
-					Execute appropriate computations to complete both of the following tables.  
-				</p>
+					Realiza los cálculos apropiados para completar ambas tablas siguientes.
+				  </p>
 				<sidebyside widths="48% 48%" margins="0%" valign="bottom">
 					<table xml:id="T-PA-changing-quadratic-heights">
-						<title>Function values for <m>h</m> at select inputs.</title>
+						<title>Valores de la función para <m>h</m> en entradas seleccionadas.</title>						
 						<tabular>
 							<row bottom="minor">
 								<cell><m>t</m></cell>
@@ -64,7 +64,7 @@
 						</tabular>
 					</table>	
 					<table xml:id="T-PA-changing-quadratic-AVs">
-						<title>Average rates of change for <m>h</m> on select intervals.</title>
+						<title>Tasas de cambio promedio para <m>h</m> en intervalos seleccionados.</title>						
 						<tabular>
 							<row bottom="minor">
 								<cell><m>[a,b]</m></cell>
@@ -99,17 +99,17 @@
 			</li>
 			<li>
 				<p>
-					What pattern(s) do you observe in <xref ref="T-PA-changing-quadratic-heights">Tables</xref> and <xref ref="T-PA-changing-quadratic-AVs"/>?
+				  ¿Qué patrón(es) observas en <xref ref="T-PA-changing-quadratic-heights">Tablas</xref> y <xref ref="T-PA-changing-quadratic-AVs"/>?
 				</p>
 			</li>
 			<li>
 				<p>
-					Explain why <m>h = q(t)</m> is not a linear function.  Use <xref ref="D-linear-function">Definition</xref> in your response.
+				  Explica por qué <m>h = q(t)</m> no es una función lineal. Usa <xref ref="D-linear-function">Definición</xref> en tu respuesta.
 				</p>
 			</li>
 			<li>
 				<p>
-					What is the average velocity of the water balloon in the final second before it lands?  How does this value compare to the average velocity on the time interval <m>[4.9, 5]</m>?
+				  ¿Cuál es la velocidad promedio del globo de agua en el último segundo antes de que aterrice? ¿Cómo se compara este valor con la velocidad promedio en el intervalo de tiempo <m>[4.9, 5]</m>?
 				</p>
 			</li>
 		</ol>
