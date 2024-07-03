@@ -17,40 +17,40 @@
 
 	<statement>
 		<p>
-			Let <m>F = D(N) = 40 + 0.25N</m> be Dolbear's function that converts an input of number of chirps per minute to degrees Fahrenheit, and let <m>C = G(F) = \frac{5}{9}(F-32)</m> be the function that converts an input of degrees Fahrenheit to an output of degrees Celsius.
+			Sea <m>F = D(N) = 40 + 0.25N</m> la función de Dolbear que convierte un input de número de chirridos por minuto a grados Fahrenheit, y sea <m>C = G(F) = \frac{5}{9}(F-32)</m> la función que convierte un input de grados Fahrenheit a un output de grados Celsius.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Determine a formula for the new function <m>H = (G \circ D)</m> that depends only on the variable <m>N</m>.
+						Determina una fórmula para la nueva función <m>H = (G \circ D)</m> que dependa solo de la variable <m>N</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the meaning of the function you found in (a)?
+						¿Cuál es el significado de la función que encontraste en (a)?
 					</p>
 				</li>
 				<li>
 					<p>
-						How does a plot of the function <m>H = (G \circ D)</m> compare to that of Dolbear's function?  Sketch a plot of <m>y = H(N) = (G \circ D)(N)</m> on the blank axes to the right of the plot of Dolbear's function, and discuss the similarities and differences between them.  Be sure to label the vertical scale on your axes.
+						¿Cómo se compara un gráfico de la función <m>H = (G \circ D)</m> con el de la función de Dolbear? Dibuja un gráfico de <m>y = H(N) = (G \circ D)(N)</m> en los ejes en blanco a la derecha del gráfico de la función de Dolbear, y discute las similitudes y diferencias entre ellos. Asegúrate de etiquetar la escala vertical en tus ejes.
 					</p>
 
 					<sidebyside width="50%">
 						<figure xml:id="F-act-changing-composite-Dolbear-revisited">
-							<caption>Dolbear's function.</caption>
+							<caption>Función de Dolbear</caption>
 							<image source="images/functions-Dolbears-Law" />
 						</figure>
 						<figure xml:id="F-act-changing-composite-Dolbear-celcius">
-							<caption>Blank axes to plot <m>H = (G \circ D)(N)</m>.</caption>
+							<caption>Ejes en blanco para graficar <m>H = (G \circ D)(N)</m>.</caption>							
 							<image source="images/composite-Dolbears-Law-celcius-blank" />
 						</figure>
 					</sidebyside>
 				</li>
 				<li>
 					<p>
-						What is the domain of the function <m>H = G \circ D</m>?  What is its range?
+						¿Cuál es el dominio de la función <m>H = G \circ D</m>? ¿Cuál es su rango?
 					</p>
 				</li>
 			</ol>
@@ -68,4 +68,3 @@
 	</solution>
 
 </activity>
-

@@ -17,15 +17,15 @@
 
 	<statement>
 		<p>
-			Let functions <m>p</m> and <m>q</m> be given by the graphs in <xref ref="F-act-changing-composite-tables-graphs">Figure</xref>
-      		(which are each piecewise linear - that is, parts that look like straight lines are straight lines)
-      		and let <m>f</m> and <m>g</m> be given by <xref ref="T-act-changing-composite-tables-graphs">Table</xref>.
+			Sean las funciones <m>p</m> y <m>q</m> dadas por los gráficos en <xref ref="F-act-changing-composite-tables-graphs">Figura</xref>
+      		(los cuales son cada uno lineales a trozos, es decir, partes que parecen líneas rectas son líneas rectas)
+      		y las funciones <m>f</m> y <m>g</m> dadas por la <xref ref="T-act-changing-composite-tables-graphs">Tabla</xref>.
 		</p>
 
 		<sidebyside width="50%" valign="middle">
 			<table xml:id="T-act-changing-composite-tables-graphs">
-				<title>Table that defines <m>f</m> and <m>g</m>.</title>
-			    <tabular>
+				<title>Tabla que define <m>f</m> y <m>g</m>.</title>			   
+				<tabular>
 			      <row  bottom="minor">
 			        <cell><m>x</m></cell>
 			        <cell>0</cell>
@@ -54,13 +54,13 @@
 			</table>
 			
 			<figure xml:id="F-act-changing-composite-tables-graphs">
-				<caption>The graphs of <m>p</m> and <m>q</m>.</caption>
+				<caption>Los gráficos de <m>p</m> y <m>q</m>.</caption>				
 				<image source="images/composite-act-graphs"/>
 			</figure>    
 		</sidebyside>
 
 		<p>
-			Compute each of the following quantities or explain why they are not defined.
+			Calcula cada una de las siguientes cantidades o explica por qué no están definidas.
 		</p>
 
 		<p>
@@ -100,15 +100,15 @@
 		        </li>
 
 		        <li>
-		          <p>
-		            For what value(s) of <m>x</m> is <m>f(g(x)) = 4</m>?
-		          </p>
+					<p>
+						¿Para qué valor(es) de <m>x</m> se cumple que <m>f(g(x)) = 4</m>?
+					</p>
 		        </li>
 
 		        <li>
-		          <p>
-		            For what value(s) of <m>x</m> is <m>q(p(x)) = 1</m>?
-		          </p>
+					<p>
+						¿Para qué valor(es) de <m>x</m> se cumple que <m>q(p(x)) = 1</m>?
+					</p>
 		        </li>
 			</ol>
 		</p>
@@ -125,4 +125,3 @@
 	</solution>
 
 </activity>
-

@@ -17,29 +17,29 @@
 
 	<statement>
 		<p>
-			Let <m>y = p(x) = 3x - 4</m> and <m>x = q(t) = t^2 - 1</m>.
+			Sea <m>y = p(x) = 3x - 4</m> y <m>x = q(t) = t^2 - 1</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Let <m>r(t) = p(q(t))</m>. Determine a formula for <m>r</m> that depends only on <m>t</m> and not on <m>p</m> or <m>q</m>.
+					  Sea <m>r(t) = p(q(t))</m>. Determina una fórmula para <m>r</m> que dependa solo de <m>t</m> y no de <m>p</m> o <m>q</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Recall <xref ref="ex-composite-introduction">Example</xref>, which involved functions similar to <m>p</m> and <m>q</m>.  What is the biggest difference between your work in (a) above and in <xref ref="ex-composite-introduction">Example</xref>?
+					  Recuerda el <xref ref="ex-composite-introduction">Ejemplo</xref>, que involucraba funciones similares a <m>p</m> y <m>q</m>. ¿Cuál es la mayor diferencia entre su trabajo en (a) anterior y en <xref ref="ex-composite-introduction">Example</xref>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Let <m>t = s(z) = \frac{1}{z+4}</m> and recall that <m>x = q(t) = t^2 - 1</m>.  Determine a formula for <m>x = q(s(z))</m> that depends only on <m>z</m>.
+					  Sea <m>t = s(z) = \frac{1}{z+4}</m> y recuerda que <m>x = q(t) = t^2 - 1</m>. Determina una fórmula para <m>x = q(s(z))</m> que dependa solo de <m>z</m>.
 					</p>
 				</li>				
 				<li>
 					<p>
-						Suppose that <m>h(t) = \sqrt{2t^2 + 5}</m>.  Determine formulas for two related functions, <m>y = f(x)</m> and <m>x = g(t)</m>, so that <m>h(t) = f(g(t))</m>.
+					  Supón que <m>h(t) = \sqrt{2t^2 + 5}</m>. Determina fórmulas para dos funciones relacionadas, <m>y = f(x)</m> y <m>x = g(t)</m>, de modo que <m>h(t) = f(g(t))</m>.
 					</p>
 				</li>
 			</ol>

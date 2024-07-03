@@ -14,67 +14,67 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-changing-composite">
-  <title>Composite Functions</title>
+  <title>Funciones Compuestas</title>
 
   <objectives>
   	<ul>
+		<li>
+			<p>
+			  ¿Cómo produce el proceso de composición de funciones una nueva función a partir de otras dos funciones?
+			</p>
+		</li>
+		<li>
+			<p>
+			  En la función compuesta <m>h(x) = f(g(x))</m>, ¿qué queremos decir con la función <q>interna</q> y la función <q>externa</q>? ¿Qué papel juegan el dominio y el codominio de <m>f</m> y <m>g</m> en la determinación del dominio y el codominio de <m>h</m>?
+			</p>
+		</li>
   		<li>
-  			<p>
-  				How does the process of function composition produce a new function from two other functions?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				In the composite function <m>h(x) = f(g(x))</m>, what do we mean by the <q>inner</q> and <q>outer</q> function?  What role do the domain and codomain of <m>f</m> and <m>g</m> play in determining the domain and codomain of <m>h</m>?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How does the expression for <m>AV_{[a,a+h]}</m> involve a composite function?
-  			</p>
+			<p>
+				¿Cómo implica una función compuesta la expresión para <m>AV_{[a,a+h]}</m>?
+			</p>
   		</li>
   	</ul>
   </objectives>
 
   <introduction>
 	<p>
-		Recall that a function, by definition, is a process that takes a collection of inputs and produces a corresponding collection of outputs in such a way that the process produces one and only one output value for any single input value.  Because every function is a process, it makes sense to think that it may be possible to take two function processes and do one of the processes first, and then apply the second process to the result.
+		Recuerda que una función, por definición, es un proceso que toma una colección de entradas y produce una colección correspondiente de salidas de tal manera que el proceso produce un único valor de salida para cualquier valor de entrada. Dado que cada función es un proceso, tiene sentido pensar que puede ser posible tomar dos procesos de funciones y hacer uno de los procesos primero, y luego aplicar el segundo proceso al resultado.
 	</p>
 
 	<example xml:id="ex-composite-introduction">
 		<statement>
 			<p>
-				Suppose we know that <m>y</m> is a function of <m>x</m> according to the process defined by <m>y = f(x) = x^2 - 1</m> and, in turn, <m>x</m> is a function of <m>t</m> via <m>x = g(t) = 3t-4</m>.  Is it possible to combine these processes to generate a new function so that <m>y</m> is a function of <m>t</m>?
+				Supongamos que sabemos que <m>y</m> es una función de <m>x</m> según el proceso definido por <m>y = f(x) = x^2 - 1</m> y, a su vez, <m>x</m> es una función de <m>t</m> a través de <m>x = g(t) = 3t - 4</m>. ¿Es posible combinar estos procesos para generar una nueva función de modo que <m>y</m> sea una función de <m>t</m>?
 			</p>
 		</statement>
 		<solution>
 			<p>
-				Since <m>y</m> depends on <m>x</m> and <m>x</m> depends on <m>t</m>, it follows that we can also think of <m>y</m> depending directly on <m>t</m>.  We can use substitution and the notation of functions to determine this relationship.
+				Dado que <m>y</m> depende de <m>x</m> y <m>x</m> depende de <m>t</m>, se deduce que también podemos pensar que <m>y</m> depende directamente de <m>t</m>. Podemos usar la sustitución y la notación de funciones para determinar esta relación.
+			</p>
+			  
+			<p>
+				Primero, es importante darse cuenta de lo que nos dice la regla para <m>f</m>. En palabras, <m>f</m> dice <q>para generar la salida que corresponde a una entrada, tome la entrada, elévela al cuadrado y luego reste <m>1</m>.</q> En símbolos, podríamos expresar <m>f</m> más generalmente escribiendo <q><m>f(\Box) = \Box^2 - 1</m>.</q>
 			</p>
 
 			<p>
-				First, it's important to realize what the rule for <m>f</m> tells us.  In words, <m>f</m> says <q>to generate the output that corresponds to an input, take the input and square it, and then subtract <m>1</m>.</q>  In symbols, we might express <m>f</m> more generally by writing <q><m>f(\Box) = \Box^2 - 1</m>.</q>
-			</p>
-
-			<p>
-				Now, observing that <m>y = f(x) = x^2 - 1</m> and that <m>x = g(t) = 3t - 4</m>, we can substitute the expression <m>g(t)</m> for <m>x</m> in <m>f</m>.  Doing so,
+				Ahora, observando que <m>y = f(x) = x^2 - 1</m> y que <m>x = g(t) = 3t - 4</m>, podemos sustituir la expresión <m>g(t)</m> por <m>x</m> en <m>f</m>. Haciendo esto,
 				<md>
-					<mrow>y &amp;= f(x)</mrow>
-					<mrow>  &amp;= f(g(t))</mrow>
-					<mrow>  &amp;= f(3t-4)</mrow>
+				  <mrow>y &amp;= f(x)</mrow>
+				  <mrow>  &amp;= f(g(t))</mrow>
+				  <mrow>  &amp;= f(3t-4)</mrow>
 				</md>.
-				Applying the process defined by the function <m>f</m> to the input <m>3t-4</m>, we see that
+				Aplicando el proceso definido por la función <m>f</m> a la entrada <m>3t-4</m>, vemos que
 				<me>
-					y = (3t-4)^2 - 1
+				  y = (3t-4)^2 - 1
 				</me>,
-				which defines <m>y</m> as a function of <m>t</m>.
+				lo cual define <m>y</m> como una función de <m>t</m>.
 			</p>
 
 		</solution>
 	</example>
 
 	<p>
-		When we have a situation such as in <xref ref="ex-composite-introduction">Example</xref> where we use the output of one function as the input of another, we often say that we have <q>composed two functions</q>.  In addition, we use the notation <m>h(t) = f(g(t))</m> to denote that a new function, <m>h</m>, results from composing the two functions <m>f</m> and <m>g</m>.
+		Cuando tenemos una situación como en <xref ref="ex-composite-introduction">Example</xref> donde usamos la salida de una función como la entrada de otra, a menudo decimos que hemos <q>compuesto dos funciones</q>. Además, utilizamos la notación <m>h(t) = f(g(t))</m> para denotar que una nueva función, <m>h</m>, resulta de componer las dos funciones <m>f</m> y <m>g</m>.
 	</p>
 
 	<xi:include href="./previews/PA-changing-composite.xml" />
@@ -82,33 +82,33 @@
   </introduction>
 
   <subsection xml:id="subsec-changing-composite-composing">
-  	<title>Composing two functions</title>
+  	<title>Componiendo dos funciones</title>
   	<p>
-  		Whenever we have two functions, say <m>g : A \to B</m> and <m>f : B \to C</m>, where the codomain of <m>g</m> matches the domain of <m>f</m>, it is possible to link the two processes together to create a new process that we call the <em>composition</em> of <m>f</m> and <m>g</m>.
-  	</p>
+		Cuando tenemos dos funciones, digamos <m>g : A \to B</m> y <m>f : B \to C</m>, donde el codominio de <m>g</m> coincide con el dominio de <m>f</m>, es posible enlazar los dos procesos para crear un nuevo proceso que llamamos la <em>composición</em> de <m>f</m> y <m>g</m>.
+	</p>
 
   	<definition xml:id="D-composite-compose-functions"> <idx>composite function</idx>
   		<statement>
-  			<p>
-  				If <m>f</m> and <m>g</m> are functions such that <m>g : A \to B</m> and <m>f : B \to C</m>, we define the <term>composition of <m>f</m> and <m>g</m></term> to be the new function <m>h: A \to C</m> given by 
-  				<me>
-  					h(t) = f(g(t))
-  				</me>.
-  				We also sometimes use the notation <m>h = f \circ g</m>, where <m>f \circ g</m> is the single function defined by <m>(f \circ g)(t) = f(g(t))</m>.
-  			</p>
+			<p>
+				Si <m>f</m> y <m>g</m> son funciones tales que <m>g : A \to B</m> y <m>f : B \to C</m>, definimos la <term>composición de <m>f</m> y <m>g</m></term> como la nueva función <m>h: A \to C</m> dada por 
+				<me>
+					h(t) = f(g(t))
+				</me>.
+				A veces también usamos la notación <m>h = f \circ g</m>, donde <m>f \circ g</m> es la función única definida por <m>(f \circ g)(t) = f(g(t))</m>.
+			</p>
   		</statement>
   	</definition>
 
   	<p>
-  		We sometimes call <m>g</m> the <q>inner function</q> and <m>f</m> the <q>outer function</q>.  It is important to note that the inner function is actually the first function that gets applied to a given input, and then outer function is applied to the output of the inner function.  In addition, in order for a composite function to make sense, we need to ensure that the range of the inner function lies within the domain of the outer function so that the resulting composite function is defined at every possible input.
-  	</p>
+		A veces llamamos a <m>g</m> la <q>función interna</q> y a <m>f</m> la <q>función externa</q>. Es importante notar que la función interna es realmente la primera función que se aplica a un input dado, y luego la función externa se aplica al output de la función interna. Además, para que una función compuesta tenga sentido, necesitamos asegurarnos de que el rango de la función interna esté dentro del dominio de la función externa para que la función compuesta resultante esté definida en cada input posible.
+	</p>
 
-	  <p>
-	    In addition to the possibility that functions are given by formulas,
-	    functions can be given by tables or graphs.
-	    We can think about composite functions in these settings as well,
-	    and the following activities prompt us to consider functions given in this way.
-	  </p>
+	<p>
+	    Además de la posibilidad de que las funciones se den mediante fórmulas,
+	    las funciones pueden darse mediante tablas o gráficos.
+	    También podemos pensar en funciones compuestas en estos contextos,
+	    y las siguientes actividades nos invitan a considerar funciones dadas de esta manera.
+	</p>
 
   <xi:include href="./activities/act-changing-composite-tables-graphs.xml" />
 
@@ -116,15 +116,15 @@
   <subsection xml:id="subsec-changing-composite-in-context">
   	<title>Composing functions in context</title>
 	<p>
-		Recall Dolbear's function, <m>T = D(N) = 40 + 0.25N</m>, that relates the number of chirps per minute from a snowy cricket to the Fahrenheit temperature, <m>T</m>.  We earlier established that <m>D</m> has a domain of <m>[40,160]</m> and a corresponding range of <m>[50,85]</m>.  In what follows, we replace <m>T</m> with <m>F</m> to emphasize that temperature is measured in Fahrenheit degrees.
+		Recuerda la función de Dolbear, <m>T = D(N) = 40 + 0.25N</m>, que relaciona el número de chirridos por minuto de un grillo de nieve con la temperatura en Fahrenheit, <m>T</m>. Anteriormente establecimos que <m>D</m> tiene un dominio de <m>[40,160]</m> y un rango correspondiente de <m>[50,85]</m>. En lo que sigue, reemplazamos <m>T</m> con <m>F</m> para enfatizar que la temperatura se mide en grados Fahrenheit.
 	</p>
 
 	<p>
-		The Celsius and Fahrenheit temperature scales are connected by a linear function.  Indeed, the function that converts Fahrenheit to Celsius is
+		Las escalas de temperatura Celsius y Fahrenheit están conectadas por una función lineal. De hecho, la función que convierte Fahrenheit a Celsius es
         <me>
         	C = G(F) = \frac{5}{9}(F-32)
         </me>.
-        For instance, a Fahrenheit temperature of <m>32</m> degrees corresponds to <m>C = G(32) = 0</m> degrees Celsius.
+        Por ejemplo, una temperatura de <m>32</m> grados Fahrenheit corresponde a <m>C = G(32) = 0</m> grados Celsius.
 	</p>
 
 	<xi:include href="./activities/act-changing-composite-crickets-celsius.xml" />
@@ -132,14 +132,14 @@
   </subsection>
 
   <subsection xml:id="subsec-changing-composite-aroc">
-  	<title>Function composition and average rate of change</title>
+	<title>Composición de funciones y tasa de cambio promedio</title>
 
-	  <p>
-	    Recall that the average rate of change of a function <m>f</m> on the interval <m>[a,b]</m> is given by
+	<p>
+	    Recuerda que la tasa de cambio promedio de una función <m>f</m> en el intervalo <m>[a,b]</m> se da por
 	    <me>
 	      AV_{[a,b]} = \frac{f(b) - f(a)}{b-a}
 	    </me>.
-	    In <xref ref="F-composite-aroc-a-b">Figure</xref>, we see the familiar representation of <m>AV_{[a,b]}</m> as the slope of the line joining the points <m>(a,f(a))</m> and <m>(b,f(b))</m> on the graph of <m>f</m>.  In the study of calculus, we progress from the <em>average rate of change on an interval</em> to the <em>instantaneous rate of change of a function at a single value</em>; the core idea that allows us to move from an <em>average</em> rate to an <em>instantaneous</em> one is letting the interval <m>[a,b]</m> shrink in size.
+	    En la <xref ref="F-composite-aroc-a-b">Figura</xref>, vemos la representación familiar de <m>AV_{[a,b]}</m> como la pendiente de la línea que une los puntos <m>(a,f(a))</m> y <m>(b,f(b))</m> en el gráfico de <m>f</m>. En el estudio del cálculo, progresamos de la <em>tasa de cambio promedio en un intervalo</em> a la <em>tasa de cambio instantánea de una función en un solo valor</em>; la idea central que nos permite pasar de una tasa <em>promedio</em> a una <em>instantánea</em> es dejar que el intervalo <m>[a,b]</m> se reduzca en tamaño.
 	  </p>
 
 	  <sidebyside width="50%">
@@ -148,94 +148,94 @@
 	  		<image source="images/composite-aroc-a-b"/>
 	  	</figure>
 	  	<figure xml:id="F-composite-aroc-a-h">
-	  		<caption><m>AV_{[a,a+h]}</m> is the slope of the line joining the points <m>(a,f(a))</m> and <m>(a,f(a+h))</m> on the graph of <m>f</m>.</caption>
-	  		<image source="images/composite-aroc-a-h"/>
+			<caption><m>AV_{[a,b]}</m> es la pendiente de la línea que une los puntos <m>(a,f(a))</m> y <m>(b,f(b))</m> en el gráfico de <m>f</m>.</caption>	  		
+			<image source="images/composite-aroc-a-h"/>
 	  	</figure>
 	  </sidebyside>
 
 	  <p>
-	    To think about the interval <m>[a,b]</m> shrinking while <m>a</m> stays fixed, we often change our perspective and think of <m>b</m> as <m>b = a + h</m>, where <m>h</m> measures the horizontal difference from <m>b</m> to <m>a</m>.  This allows us to eventually think about <m>h</m> getting closer and closer to <m>0</m> (without every actually equalling <m>0</m>), and in that context we consider the equivalent expression
+	    Para pensar en el intervalo <m>[a,b]</m> reduciéndose mientras <m>a</m> permanece fijo, a menudo cambiamos nuestra perspectiva y pensamos en <m>b</m> como <m>b = a + h</m>, donde <m>h</m> mide la diferencia horizontal de <m>b</m> a <m>a</m>. Esto nos permite eventualmente pensar en <m>h</m> acercándose cada vez más a <m>0</m> (sin llegar a ser igual a <m>0</m>), y en ese contexto consideramos la expresión equivalente
 	    <me>
 	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{a+h-a} = \frac{f(a+h) - f(a)}{h} 
 	    </me>
-	    for the average rate of change of <m>f</m> on	<m>[a,a+h]</m>.
+	    para la tasa de cambio promedio de <m>f</m> en <m>[a,a+h]</m>.
 	  </p>
 
 	  <p>
-	    In this most recent expression for <m>AV_{[a,a+h]}</m>,
-	    we see the important role that the composite function
-	    <q><m>f(a+h)</m></q> plays.  In particular, to understand the expression for <m>AV_{[a,a+h]}</m> we need to evaluate <m>f</m> at the quantity <m>(a+h)</m>.
-	  </p> 
+	    En esta expresión más reciente para <m>AV_{[a,a+h]}</m>,
+	    vemos el papel importante que juega la función compuesta
+	    <q><m>f(a+h)</m></q>. En particular, para entender la expresión para <m>AV_{[a,a+h]}</m> necesitamos evaluar <m>f</m> en la cantidad <m>(a+h)</m>.
+	  </p>
 
 	  <example xml:id="ex-composite-aroc-simplify">
 	  	<statement>
-	  		<p>
-	  			Suppose that <m>f(x) = x^2</m>.  Determine the simplest possible expression you can find for <m>AV_{[3,3+h]}</m>, the average rate of change of <m>f</m> on the interval <m>[3,3+h]</m>.
-	  		</p>
+			<p>
+				Supón que <m>f(x) = x^2</m>. Determina la expresión más simple posible que puedas encontrar para <m>AV_{[3,3+h]}</m>, la tasa de cambio promedio de <m>f</m> en el intervalo <m>[3,3+h]</m>.
+			</p>
 	  	</statement>
 	  	<solution>
-	  		<p>
-	  			By definition, we know that 
-	  			<me>
-	  				AV_{[3,3+h]} = \frac{f(3+h)-f(3)}{h}.
-	  			</me>
-	  			Using the formula for <m>f</m>, we see that
-	  			<me>
-	  				AV_{[3,3+h]} = \frac{(3+h)^2-(3)^2}{h}.
-	  			</me>
-	  			Expanding the numerator and combining like terms, it follows that
-				<md>
-					<mrow>AV_{[3,3+h]} &amp;= \frac{(9+6h+h^2)-9}{h}</mrow>
-					<mrow>   &amp;= \frac{6h + h^2}{h}</mrow>
-				</md>.
-				Removing a factor of <m>h</m> in the numerator and observing that <m>h \ne 0</m>, we can simplify and find that
-				<md>
-					<mrow>AV_{[3,3+h]} &amp;= \frac{h(6 + h)}{h}</mrow>
-					<mrow>   &amp;= 6+h</mrow>
-				</md>.
-				Hence, <m>AV_{[3,3+h]} = 6+h</m>, which is the average rate of change of <m>f(x) = x^2</m> on the interval <m>[3,3+h]</m>.<fn>Note that <m>6 + h</m> is a <em>linear</em> function of <m>h</m>.  This computation is connected to the observation we made in <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref> regarding how there's a linear aspect to how the average rate of change of a quadratic function changes as we modify the interval.</fn>
-	  		</p>
+			<p>
+				Por definición, sabemos que 
+				<me>
+					AV_{[3,3+h]} = \frac{f(3+h)-f(3)}{h}.
+				</me>
+				Usando la fórmula para <m>f</m>, vemos que
+				<me>
+					AV_{[3,3+h]} = \frac{(3+h)^2-(3)^2}{h}.
+				</me>
+				Expandiendo el numerador y combinando términos semejantes, se sigue que
+			  <md>
+				  <mrow>AV_{[3,3+h]} &amp;= \frac{(9+6h+h^2)-9}{h}</mrow>
+				  <mrow>   &amp;= \frac{6h + h^2}{h}</mrow>
+			  </md>.
+			  Eliminando un factor de <m>h</m> en el numerador y observando que <m>h \ne 0</m>, podemos simplificar y encontrar que
+			  <md>
+				  <mrow>AV_{[3,3+h]} &amp;= \frac{h(6 + h)}{h}</mrow>
+				  <mrow>   &amp;= 6+h</mrow>
+			  </md>.
+			  Por lo tanto, <m>AV_{[3,3+h]} = 6+h</m>, que es la tasa de cambio promedio de <m>f(x) = x^2</m> en el intervalo <m>[3,3+h]</m>.<fn>Nota que <m>6 + h</m> es una función <em>lineal</em> de <m>h</m>. Este cálculo está relacionado con la observación que hicimos en la <xref ref="T-PA-changing-quadratic-AVs-complete">Tabla</xref> sobre cómo hay un aspecto lineal en cómo la tasa de cambio promedio de una función cuadrática cambia a medida que modificamos el intervalo.</fn>
+			</p>
 	  	</solution>
 	  </example> 
 
 	<xi:include href="./activities/act-changing-composite-aroc.xml" />
 
 	<p>
-		In <xref ref="act-changing-composite-aroc">Activity</xref>, we see an important setting where algebraic simplification plays a crucial role in calculus.  Because the expresssion 
+		En la <xref ref="act-changing-composite-aroc">Actividad</xref>, vemos un escenario importante donde la simplificación algebraica juega un papel crucial en el cálculo. Porque la expresión 
 		<me>
 	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
 	    </me>
-	    always begins with an <m>h</m> in the denominator, in order to precisely understand how this quantity behaves when <m>h</m> gets close to <m>0</m>, a simplified version of this expression is needed.  For instance, as we found in part (b) of <xref ref="act-changing-composite-aroc">Activity</xref>, it's possible to show that for <m>f(x) = 2x^2 - 3x + 1</m>,
+	    siempre comienza con un <m>h</m> en el denominador, para entender con precisión cómo se comporta esta cantidad cuando <m>h</m> se acerca a <m>0</m>, se necesita una versión simplificada de esta expresión. Por ejemplo, como encontramos en la parte (b) de la <xref ref="act-changing-composite-aroc">Actividad</xref>, es posible mostrar que para <m>f(x) = 2x^2 - 3x + 1</m>,
 	    <me>
 	    	AV_{[1,1+h]} = 2h + 1
 	    </me>,
-	    which is a much simpler expression to investigate.
+	    lo cual es una expresión mucho más simple de investigar.
 	</p>
 
   </subsection>
   <subsection xml:id="subsec-changing-composite-summary">
 
-  	<title>Summary</title>
+  	<title>Resumen</title>
         <p>
   	<ul>
   		<li>
-  			<p>
-  				When defined, the composition of two functions <m>f</m> and <m>g</m> produces a single new function <m>f \circ g</m> according to the rule <m>(f \circ g)(x) = f(g(x))</m>.  We note that <m>g</m> is applied first to the input <m>x</m>, and then <m>f</m> is applied to the output <m>g(x)</m> that results from <m>g</m>.
-  			</p>
+			<p>
+				Cuando está definida, la composición de dos funciones <m>f</m> y <m>g</m> produce una nueva función <m>f \circ g</m> según la regla <m>(f \circ g)(x) = f(g(x))</m>. Observamos que <m>g</m> se aplica primero al input <m>x</m>, y luego <m>f</m> se aplica al output <m>g(x)</m> que resulta de <m>g</m>.
+			</p>
   		</li>
   		<li>
-  			<p>
-  				In the composite function <m>h(x) = f(g(x))</m>, the <q>inner</q> function is <m>g</m> and the <q>outer</q> function is <m>f</m>.  Note that the inner function gets applied to <m>x</m> first, even though the outer function appears first when we read from left to right.  The composite function is only defined provided that the codomain of <m>g</m> matches the domain of <m>f</m>: that is, we need any possible outputs of <m>g</m> to be among the allowed inputs for <m>f</m>.  In particular, we can say that if <m>g : A \to B</m> and <m>f : B \to C</m>, then <m>f \circ g : A \to C</m>.  Thus, the domain of the composite function is the domain of the inner function, and the codomain of the composite function is the codomain of the outer function.
-  			</p>
+			<p>
+				En la función compuesta <m>h(x) = f(g(x))</m>, la función <q>interna</q> es <m>g</m> y la función <q>externa</q> es <m>f</m>. Nota que la función interna se aplica a <m>x</m> primero, aunque la función externa aparezca primero cuando leemos de izquierda a derecha. La función compuesta solo está definida siempre que el codominio de <m>g</m> coincida con el dominio de <m>f</m>: es decir, necesitamos que cualquier output posible de <m>g</m> esté entre los inputs permitidos para <m>f</m>. En particular, podemos decir que si <m>g : A \to B</m> y <m>f : B \to C</m>, entonces <m>f \circ g : A \to C</m>. Así, el dominio de la función compuesta es el dominio de la función interna, y el codominio de la función compuesta es el codominio de la función externa.
+			</p>
   		</li>
   		<li>
-  			<p>
-  				Because the expression <m>AV_{[a,a+h]}</m> is defined by
-  				<me>
-	      			AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
-	    		</me>
-	    		and this includes the quantity <m>f(a+h)</m>, the average rate of change of a function on the interval <m>[a,a+h]</m> always involves the evaluation of a composite function expression.  This idea plays a crucial role in the study of calculus.
-  			</p>
+			<p>
+				Porque la expresión <m>AV_{[a,a+h]}</m> se define por
+				<me>
+					AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
+				</me>
+				y esto incluye la cantidad <m>f(a+h)</m>, la tasa de cambio promedio de una función en el intervalo <m>[a,a+h]</m> siempre implica la evaluación de una expresión de función compuesta. Esta idea juega un papel crucial en el estudio del cálculo.
+			</p>
   		</li>
   	</ul>
         </p>
@@ -246,4 +246,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-
