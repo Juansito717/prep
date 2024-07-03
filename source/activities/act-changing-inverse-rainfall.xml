@@ -17,7 +17,7 @@
 
 	<statement>
 		<p>
-			During a major rainstorm, the rainfall at Gerald R. Ford Airport is measured on a frequent basis for a <m>10</m>-hour period of time.  The following function <m>g</m> models the <em>rate</em>, <m>R</m>, at which the rain falls (in cm/hr) on the time interval <m>t = 0</m> to <m>t = 10</m>:
+			Durante una gran tormenta, la lluvia en el Aeropuerto Gerald R. Ford se mide con frecuencia durante un período de <m>10</m> horas. La siguiente función <m>g</m> modela la <em>tasa</em>, <m>R</m>, a la que cae la lluvia (en cm/hr) en el intervalo de tiempo <m>t = 0</m> a <m>t = 10</m>:
 			<me>
 				R = g(t) = \frac{4}{t+2} + 1
 			</me>.
@@ -27,27 +27,27 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Compute <m>g(3)</m> and write a complete sentence to explain its meaning in the given context, including units.
+						Calcula <m>g(3)</m> y escribe una oración completa para explicar su significado en el contexto dado, incluyendo unidades.
 					</p>
 				</li>
 				<li>
 					<p>
-						Compute the average rate of change of <m>g</m> on the time interval <m>[3,5]</m> and write two careful complete sentences to explain the meaning of this value in the context of the problem, including units.  Explicitly address what the value you compute tells you about how rain is falling over a certain time interval, and what you should expect as time goes on.
+						Calcula la tasa de cambio promedio de <m>g</m> en el intervalo de tiempo <m>[3,5]</m> y escribe dos oraciones completas y cuidadosas para explicar el significado de este valor en el contexto del problema, incluyendo unidades. Aborda explícitamente lo que el valor que calculas te dice sobre cómo está cayendo la lluvia en un cierto intervalo de tiempo, y lo que deberías esperar a medida que pasa el tiempo.
 					</p>
 				</li>
 				<li>
 					<p>
-						Plot the function <m>y = g(t)</m> using a computational device.  On the domain <m>[0,10]</m>, what is the corresponding range of <m>g</m>?  Why does the function <m>g</m> have an inverse function?
+						Grafica la función <m>y = g(t)</m> usando un dispositivo computacional. En el dominio <m>[0,10]</m>, ¿cuál es el rango correspondiente de <m>g</m>? ¿Por qué la función <m>g</m> tiene una función inversa?
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine <m>g^{-1} \left( \frac{9}{5} \right)</m> and write a complete sentence to explain its meaning in the given context.
+						Determina <m>g^{-1} \left( \frac{9}{5} \right)</m> y escribe una oración completa para explicar su significado en el contexto dado.
 					</p>
 				</li>
 				<li>
 					<p>
-						According to the model <m>g</m>, is there ever a time during the storm that the rain falls at a rate of exactly <m>1</m> centimeter per hour?  Why or why not?  Provide an algebraic justification for your answer.
+						Según el modelo <m>g</m>, ¿hay algún momento durante la tormenta en que la lluvia caiga a una tasa de exactamente <m>1</m> centímetro por hora? ¿Por qué o por qué no? Proporciona una justificación algebraica para tu respuesta.
 					</p>
 				</li>
 			</ol>
@@ -65,4 +65,3 @@
 	</solution>
 
 </activity>
-

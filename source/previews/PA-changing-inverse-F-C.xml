@@ -17,36 +17,36 @@
 
 <statement>
 	<p>
-		Recall that <m>F = g(C) = \frac{9}{5}C + 32</m> is the function that takes Celsius temperature inputs and produces the corresponding Fahrenheit temperature outputs.
+		Recuerda que <m>F = g(C) = \frac{9}{5}C + 32</m> es la función que toma entradas de temperatura en Celsius y produce las salidas correspondientes en Fahrenheit.
 	</p>
 
 	<p>
 		<ol marker="a.">
 			<li>
 				<p>
-					Show that it is possible to solve the equation <m>F = \frac{9}{5}C + 32</m> for <m>C</m> in terms of <m>F</m> and that doing so results in the equation <m>C = \frac{5}{9}(F-32)</m>.
+					Muestra que es posible resolver la ecuación <m>F = \frac{9}{5}C + 32</m> para <m>C</m> en términos de <m>F</m> y que al hacerlo se obtiene la ecuación <m>C = \frac{5}{9}(F-32)</m>.
 				</p>
 			</li>
 				
 			<li>
 				<p>
-					Note that the equation <m>C = \frac{5}{9}(F-32)</m> expresses <m>C</m> as a function of <m>F</m>.  Call this function <m>h</m> so that <m>C = h(F) = \frac{5}{9}(F-32)</m>.
+					Nota que la ecuación <m>C = \frac{5}{9}(F-32)</m> expresa <m>C</m> como una función de <m>F</m>. Llama a esta función <m>h</m> de modo que <m>C = h(F) = \frac{5}{9}(F-32)</m>.
 				</p>
 
 				<p>
-					Find the simplest expression that you can for the composite function <m>j(C) = h(g(C))</m>.  
-				</p>
-			</li>
-
-			<li>
-				<p>
-					Find the simplest expression that you can for the composite function <m>k(F) = g(h(F))</m>. 
+					Encuentra la expresión más simple que puedas para la función compuesta <m>j(C) = h(g(C))</m>.
 				</p>
 			</li>
 
 			<li>
 				<p>
-					Why are the functions <m>j</m> and <m>k</m> so simple?  Explain by discussing how the functions <m>g</m> and <m>h</m> process inputs to generate outputs and what happens when we first execute one followed by the other.
+					Encuentra la expresión más simple que puedas para la función compuesta <m>k(F) = g(h(F))</m>.
+				</p>
+			</li>
+
+			<li>
+				<p>
+					¿Por qué son tan simples las funciones <m>j</m> y <m>k</m>? Explica discutiendo cómo las funciones <m>g</m> y <m>h</m> procesan entradas para generar salidas y qué sucede cuando ejecutamos primero una y luego la otra.
 				</p>
 			</li>
 		</ol>

@@ -17,18 +17,18 @@
 
 	<statement>
 		<p>
-			Determine, with justification, whether each of the following functions has an inverse function.  For each function that has an inverse function, give two examples of values of the inverse function by writing statements such as <q><m>s^{-1}(3) = 1</m></q>.
+			Determina, con justificación, si cada una de las siguientes funciones tiene una función inversa. Para cada función que tenga una función inversa, da dos ejemplos de valores de la función inversa escribiendo declaraciones como <q><m>s^{-1}(3) = 1</m></q>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-				      The function <m>f : S \to S</m> given by <xref ref="T-act-changing-inverse-does-it-1">Table</xref>, where <m>S = \{0, 1, 2, 3, 4 \}</m>.
-    				</p>
+						La función <m>f : S \to S</m> dada por <xref ref="T-act-changing-inverse-does-it-1">Tabla</xref>, donde <m>S = \{0, 1, 2, 3, 4 \}</m>.
+					</p>
 	
 					<table xml:id="T-act-changing-inverse-does-it-1">
-						<title>Values of <m>y = f(x)</m>.</title>
+						<title>Valores de <m>y = f(x)</m>.</title>
 					    <tabular>
 					      <row bottom="minor">
 					        <cell><m>x</m></cell>
@@ -52,8 +52,8 @@
 				</li>
 				<li>
 					<p>
-				      The function <m>g : S \to S</m> given by <xref ref="T-act-changing-inverse-does-it-2">Table</xref>, where <m>S = \{0, 1, 2, 3, 4 \}</m>.
-    				</p>
+						La función <m>g : S \to S</m> dada por <xref ref="T-act-changing-inverse-does-it-2">Tabla</xref>, donde <m>S = \{0, 1, 2, 3, 4 \}</m>.
+					</p>
 	
 					<table xml:id="T-act-changing-inverse-does-it-2">
 						<title>Values of <m>y = g(x)</m>.</title>
@@ -79,26 +79,26 @@
 				</li>
 				<li>
 					<p>
-						The function <m>p</m> given by <m>p(t) = 7 - \frac{3}{5}t</m>.  Assume that the domain and codomain of <m>p</m> are both <q>all real numbers</q>.
+						La función <m>p</m> dada por <m>p(t) = 7 - \frac{3}{5}t</m>. Supón que el dominio y el codominio de <m>p</m> son ambos <q>todos los números reales</q>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The function <m>q</m> given by <m>q(t) = 7 - \frac{3}{5}t^4</m>.  Assume that the domain and codomain of <m>q</m> are both <q>all real numbers</q>.
+						La función <m>q</m> dada por <m>q(t) = 7 - \frac{3}{5}t^4</m>. Supón que el dominio y el codominio de <m>q</m> son ambos <q>todos los números reales</q>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The functions <m>r</m> and <m>s</m> given by the graphs in <xref ref="F-act-inverse-does-it-1">Figure</xref> and <xref ref="F-act-inverse-does-it-2">Figure</xref>.  Assume that the graphs show all of the important behavior of the functions and that the apparent trends continue beyond what is pictured.
+						Las funciones <m>r</m> y <m>s</m> dadas por las gráficas en <xref ref="F-act-inverse-does-it-1">Figura</xref> y <xref ref="F-act-inverse-does-it-2">Figura</xref>. Supón que las gráficas muestran todo el comportamiento importante de las funciones y que las tendencias aparentes continúan más allá de lo que está ilustrado.
 					</p>
 
 					<sidebyside width="50%">
 						<figure xml:id="F-act-inverse-does-it-1">
-							<caption>The graph of <m>y = r(t)</m>.</caption>
+							<caption>La gráfica de <m>y = r(t)</m>.</caption>
 							<image source="images/inverse-act-does-it-1" />
 						</figure>
 						<figure xml:id="F-act-inverse-does-it-2">
-							<caption>The graph of <m>y = s(t)</m>.</caption>
+							<caption>La gráfica de <m>y = s(t)</m>.</caption>
 							<image source="images/inverse-act-does-it-2" />
 						</figure>
 					</sidebyside>
@@ -119,4 +119,3 @@
 	</solution>
 
 </activity>
-
