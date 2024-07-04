@@ -17,16 +17,16 @@
 
 	<statement>
 		<p>
-			Consider the functions <m>f</m> and <m>g</m> defined by <xref ref="F-act-combining-f">Figure</xref> and <xref ref="F-act-combining-g">Figure</xref>.  Assume that the given lines and curves pass through intersection points on the grid when it looks plausible.  For instance, <m>(0,2.5)</m> and <m>(3,-0.5)</m> lie on the graph of <m>f</m>, and <m>(-1,3)</m> and <m>(1.5, 1.5)</m> lie on the graph of <m>g</m>.
+			Considera las funciones <m>f</m> y <m>g</m> definidas por <xref ref="F-act-combining-f">Figure</xref> y <xref ref="F-act-combining-g">Figure</xref>. Supón que las líneas y curvas dadas pasan por puntos de intersección en la cuadrícula cuando parece plausible. Por ejemplo, <m>(0,2.5)</m> y <m>(3,-0.5)</m> están en el gráfico de <m>f</m>, y <m>(-1,3)</m> y <m>(1.5, 1.5)</m> están en el gráfico de <m>g</m>.
 		</p>
 
 		<sidebyside>
 			<figure xml:id="F-act-combining-f">
-				<caption>The function <m>f</m>.</caption>
+				<caption>La función <m>f</m>.</caption>
 				<image source="images/combining-act-f" />
 			</figure>
 			<figure xml:id="F-act-combining-g">
-				<caption>The function <m>g</m>.</caption>
+				<caption>La función <m>g</m>.</caption>
 				<image source="images/composite-ez-g" />
 			</figure>
 		</sidebyside>
@@ -35,32 +35,32 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Determine the exact value of <m>(f+g)(0)</m>.
+						Determina el valor exacto de <m>(f+g)(0)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine the exact value of <m>(g-f)(1)</m>.
+						Determina el valor exacto de <m>(g-f)(1)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine the exact value of <m>(f \cdot g)(-1)</m>.
+						Determina el valor exacto de <m>(f \cdot g)(-1)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Are there any values of <m>x</m> for which <m>\left( \frac{f}{g} \right)(x)</m> is undefined?  If not, explain why.  If so, determine the values and justify your answer.
+						¿Hay algún valor de <m>x</m> para el cual <m>\left( \frac{f}{g} \right)(x)</m> no esté definido? Si no, explica por qué. Si es así, determina los valores y justifica tu respuesta.
 					</p>
 				</li>
 				<li>
 					<p>
-						For what values of <m>x</m> is <m>(f \cdot g)(x) = 0</m>?  Why?
+						¿Para qué valores de <m>x</m> es <m>(f \cdot g)(x) = 0</m>? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						Are there any values of <m>x</m> for which <m>(f-g)(x) = 0</m>?  Why or why not?  
+						¿Hay algún valor de <m>x</m> para el cual <m>(f-g)(x) = 0</m>? ¿Por qué o por qué no?
 					</p>
 				</li>
 			</ol>
@@ -78,4 +78,3 @@
 	</solution>
 
 </activity>
-

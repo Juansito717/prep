@@ -17,49 +17,47 @@
 
 	<statement>
 		<p>
-		      In what follows,
-      		  we work to understand two different piecewise functions entirely by hand based on familiar properties of linear and quadratic functions.
+			En lo que sigue, trabajamos para entender dos funciones por tramos diferentes completamente a mano basándonos en propiedades familiares de funciones lineales y cuadráticas.
 		</p>
-
+	
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Consider the function <m>p</m> defined by the following rule:
-					      <me>
-					        p(x) = 
-					        \begin{cases}
-					        	-(x+2)^2 + 2, \amp  x \lt  0 \\
-					        	\frac{1}{2}(x-2)^2 + 1, \amp  x \ge 0
-					        \end{cases}
-					      </me>
-
-					    What are the values of <m>p(-4)</m>, <m>p(-2)</m>, <m>p(0)</m>, <m>p(2)</m>, and <m>p(4)</m>?  
+						Considera la función <m>p</m> definida por la siguiente regla:
+						<me>
+							p(x) = 
+							\begin{cases}
+								-(x+2)^2 + 2, \amp  x \lt  0 \\
+								\frac{1}{2}(x-2)^2 + 1, \amp  x \ge 0
+							\end{cases}
+						</me>
+			
+						¿Cuáles son los valores de <m>p(-4)</m>, <m>p(-2)</m>, <m>p(0)</m>, <m>p(2)</m>, y <m>p(4)</m>?  
 					</p>
 				</li>
 				<li>
 					<p>
-						What point is the vertex of the quadratic part of <m>p</m> that is valid for <m>x \lt 0</m>?  What point is the vertex of the quadratic part of <m>p</m> that is valid for <m>x \ge 0</m>? 
+						¿Qué punto es el vértice de la parte cuadrática de <m>p</m> que es válida para <m>x \lt 0</m>? ¿Qué punto es el vértice de la parte cuadrática de <m>p</m> que es válida para <m>x \ge 0</m>? 
 					</p>
 				</li>
-
+			
 				<li>
 					<p>
-						For what values of <m>x</m> is <m>p(x) = 0</m>?  In addition, what is the <m>y</m>-intercept of <m>p</m>?
+						¿Para qué valores de <m>x</m> es <m>p(x) = 0</m>? Además, ¿cuál es la intersección con el eje <m>y</m> de <m>p</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Sketch an accurate, labeled graph of <m>y = p(x)</m> on the axes provided in <xref ref="F-combining-act-piecewise-axes">Figure</xref>.
+						Dibuja un gráfico preciso y etiquetado de <m>y = p(x)</m> en los ejes proporcionados en <xref ref="F-combining-act-piecewise-axes">Figura</xref>.
 					</p>
-
-					<sidebyside width="50%">
+												<sidebyside width="50%">
 						<figure xml:id="F-combining-act-piecewise-axes">
-							<caption>Axes to plot <m>y = p(x)</m>.</caption>
+							<caption>Ejes para graficar <m>y = p(x)</m>.</caption>
 							<image source="images/functions-y-x-blank-axes-centered-2"/>
 						</figure>
 						<figure xml:id="F-combining-act-piecewise-graph">
-							<caption>Graph of <m>y = f(x)</m>.</caption>
+							<caption>Gráfico de <m>y = f(x)</m>.</caption>
 							<image source="images/combining-act-f"/>
 						</figure>
 					</sidebyside>
@@ -67,7 +65,7 @@
 				</li>
 				<li>
 					<p>
-						For the function <m>f</m> defined by <xref ref="F-combining-act-piecewise-graph">Figure</xref>, determine a piecewise-defined formula for <m>f</m> that is expressed in bracket notation similar to the definition of <m>y = p(x)</m> above.
+						Para la función <m>f</m> definida por <xref ref="F-combining-act-piecewise-graph">Figura</xref>, determina una fórmula definida por tramos para <m>f</m> que esté expresada en notación de corchetes similar a la definición de <m>y = p(x)</m> anterior.
 					</p>
 				</li>
 			</ol>
@@ -85,4 +83,3 @@
 	</solution>
 
 </activity>
-

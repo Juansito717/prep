@@ -14,35 +14,35 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-changing-combining">
-  <title>Combining Functions</title>
+  <title>Combinando Funciones</title>
 
   <objectives>
   		<ul>
-  			<li>
-  				<p>
-  					How can we create new functions by adding, subtracting, multiplying, or dividing given functions? 
-  				</p>
-  			</li>
-  			<li>
-  				<p>
-  					What are piecewise functions and what are different ways we can represent them?
-  				</p>
-  			</li>
+			<li>
+                <p>
+                    ¿Cómo podemos crear nuevas funciones sumando, restando, multiplicando o dividiendo funciones dadas?
+                </p>
+			</li>
+			<li>
+                <p>
+                    ¿Qué son las funciones por partes y cuáles son las diferentes formas en que podemos representarlas?
+                </p>
+			</li>
   		</ul>
   </objectives>
 
   <introduction>
 
 	<p>
-		In arithmetic, we execute processes where we take two numbers to generate a new number.  For example, <m>2 + 3 = 5</m>:  the number <m>5</m> results from adding <m>2</m> and <m>3</m>.  Similarly, we can multiply two numbers to generate a new one:  <m>2 \cdot 3 = 6</m>.
+		En aritmética, ejecutamos procesos donde tomamos dos números para generar un nuevo número. Por ejemplo, <m>2 + 3 = 5</m>: el número <m>5</m> resulta de sumar <m>2</m> y <m>3</m>. De manera similar, podemos multiplicar dos números para generar uno nuevo: <m>2 \cdot 3 = 6</m>.
 	</p>
 
 	<p>
-		We can work similarly with functions.  Indeed, we have already seen a sophisticated way to combine two functions to generate a new, related function through composition.  If <m>g : A \to B</m> and <m>f : B \to C</m>, then we know there's a new, related function <m>f \circ g : A \to C</m> defined by the process <m>(f \circ g)(x) = f(g(x))</m>.  Said differently, the new function <m>f \circ g</m> results from executing <m>g</m> first, followed by <m>f</m>. 
+		Podemos trabajar de manera similar con funciones. De hecho, ya hemos visto una forma sofisticada de combinar dos funciones para generar una nueva función relacionada a través de la composición. Si <m>g : A \to B</m> y <m>f : B \to C</m>, entonces sabemos que hay una nueva función relacionada <m>f \circ g : A \to C</m> definida por el proceso <m>(f \circ g)(x) = f(g(x))</m>. Dicho de otra manera, la nueva función <m>f \circ g</m> resulta de ejecutar <m>g</m> primero, seguido de <m>f</m>.
 	</p>
 
 	<p>
-		Just as we can add, subtract, multiply, and divide numbers, we can also add, subtract, multiply, and divide functions to create a new function from two or more given functions.
+		Así como podemos sumar, restar, multiplicar y dividir números, también podemos sumar, restar, multiplicar y dividir funciones para crear una nueva función a partir de dos o más funciones dadas. 
 	</p>
 
 	<xi:include href="./previews/PA-changing-combining.xml" />
@@ -50,84 +50,84 @@
   </introduction>
 
   <subsection xml:id="subsec-changing-combining-functions-algebra">
-  	  <title>Arithmetic with functions</title>
-	  <p>
-	    In most mathematics up until calculus,
-	    the main object we study is <em>numbers</em>.
-	    We ask questions such as
-	    <ul>
-	    	<li>
-	    		<p>
-	    			<q>what number(s) form solutions to the equation <m>x^2 - 4x - 5 = 0</m>?</q>
-	    		</p>
-	    	</li>
-	    	<li>
-	    		<p>
-	    			<q>what number is the slope of the line <m>3x - 4y = 7</m>?</q>
-	    		</p>
-	    	</li>
-	    	<li>
-	    		<p>
-	    			<q>what number is generated as output by the function
-	    			<m>f(x) = \sqrt{x^2 + 1}</m> by the input <m>x = -2</m>?</q>
-	    		</p>
-	    	</li>
-	    </ul> 
-	    Certainly we also study overall patterns as seen in functions and equations,
-	    but this usually occurs through an examination of numbers themselves,
-	    and we think of numbers as the main objects being acted upon.
-	  </p>
+		<title>Aritmética con funciones</title>
+		<p>
+		En la mayoría de las matemáticas hasta el cálculo,
+		el objeto principal que estudiamos son los <em>números</em>.
+		Hacemos preguntas como
+		<ul>
+			<li>
+				<p>
+					<q>¿qué número(s) forman soluciones a la ecuación <m>x^2 - 4x - 5 = 0</m>?</q>
+				</p>
+			</li>
+			<li>
+				<p>
+					<q>¿qué número es la pendiente de la línea <m>3x - 4y = 7</m>?</q>
+				</p>
+			</li>
+			<li>
+				<p>
+					<q>¿qué número se genera como salida por la función
+					<m>f(x) = \sqrt{x^2 + 1}</m> con la entrada <m>x = -2</m>?</q>
+				</p>
+			</li>
+		</ul> 
+		Ciertamente también estudiamos patrones generales como se ven en funciones y ecuaciones,
+		pero esto usualmente ocurre a través de un examen de los números mismos,
+		y pensamos en los números como los objetos principales sobre los que se actúa.
+		</p>
+	
+		<p>
+		Esto cambia en el cálculo. En el cálculo, los objetos fundamentales que se estudian son
+		las funciones mismas. Una función es un objeto matemático mucho más sofisticado que un número,
+		en parte porque una función puede pensarse en términos de su gráfica, que es una colección infinita de pares ordenados de la forma <m>(x,f(x))</m>.
+		</p>
+	
+		<p>
+			A menudo es útil mirar la fórmula de una función y observar la estructura algebraica. Por ejemplo, dada la función cuadrática
+			<me>
+				q(x) = -3x^2 + 5x - 7
+			</me>
+			podríamos beneficiarnos de pensar en esto como la suma de tres funciones más simples: la función constante <m>c(x) = -7</m>, la función lineal <m>s(x) = 5x</m> que pasa por <m>(0,0)</m> con pendiente <m>m = 5</m>, y la función cuadrática básica cóncava hacia abajo <m>w(x) = -3x^2</m>. De hecho, cada una de las funciones más simples <m>c</m>, <m>s</m>, y <m>w</m> contribuyen a hacer que <m>q</m> sea la función que es. De igual manera, si estuviéramos interesados en la función <m>p(x) = (3x^2 + 4)(9 - 2x^2)</m>, podría ser natural pensar en las dos funciones más simples <m>f(x) = 3x^2 + 4</m> y <m>g(x) = 9 - 2x^2</m> que se están multiplicando para producir <m>p</m>.
+		</p>
 
-	  <p>
-	    This changes in calculus.  In calculus, the fundamental objects being studied are
-	    functions themselves.  A function is a much more sophisticated mathematical object than a number,
-	    in part because a function can be thought of in terms of its graph, which is an infinite collection of ordered pairs of the form <m>(x,f(x))</m>.
-	  </p>
-
-	  <p>
-	  	It is often helpful to look at a function's formula and observe algebraic structure.  For instance, given the quadratic function
-	  	<me>
-	  		q(x) = -3x^2 + 5x - 7
-	  	</me>
-	  	we might benefit from thinking of this as the sum of three simpler functions:  the constant function <m>c(x) = -7</m>, the linear function <m>s(x) = 5x</m> that passes through <m>(0,0)</m> with slope <m>m = 5</m>, and the concave down basic quadratic function <m>w(x) = -3x^2</m>.  Indeed, each of the simpler functions <m>c</m>, <m>s</m>, and <m>w</m> contribute to making <m>q</m> be the function that it is.  Likewise, if we were interested in the function <m>p(x) = (3x^2 + 4)(9 - 2x^2)</m>, it might be natural to think about the two simpler functions <m>f(x) = 3x^2 + 4</m> and <m>g(x) = 9 - 2x^2</m> that are being multiplied to produce <m>p</m>.
-	  </p>
-
-	  <p>
-	  	We thus naturally arrive at the ideas of adding, subtracting, multiplying, or dividing two or more functions, and hence introduce the following definitions and notation.
-	  </p>
-
+		<p>
+			Así llegamos naturalmente a las ideas de sumar, restar, multiplicar o dividir dos o más funciones, y por lo tanto introducimos las siguientes definiciones y notación.
+		</p>
+  
 	  <definition>
 	  	<idx><h>function arithmetic</h><h>sum of</h></idx>
 	  	<idx><h>function arithmetic</h><h>difference of</h></idx>	  	
 	  	<idx><h>function arithmetic</h><h>product of</h></idx>
 	  	<idx><h>function arithmetic</h><h>quotient of</h></idx>
 	  	<statement>
-	  		<p>
-	  			Let <m>f</m> and <m>g</m> be functions that share the same domain.  Then,
-		  		<ul>
-		  			<li>
-		  				<p>
-		  					The <term>sum of <m>f</m> and <m>g</m></term> is the function <m>f + g</m> defined by <m>(f+g)(x) = f(x) + g(x)</m>.
-		  				</p>
-		  			</li>
-		  			<li>
-		  				<p>
-		  					The <term>difference of <m>f</m> and <m>g</m></term> is the function <m>f - g</m> defined by <m>(f-g)(x) = f(x) - g(x)</m>.
-		  				</p>
-		  			</li>
-		  			<li>
-		  				<p>
-		  					The <term>product of <m>f</m> and <m>g</m></term> is the function <m>f \cdot g</m> defined by <m>(f \cdot g)(x) = f(x) \cdot g(x)</m>.
-		  				</p>
-		  			</li>
-		  			<li>
-		  				<p>
-		  					The <term>quotient of <m>f</m> and <m>g</m></term> is the function <m>\frac{f}{g}</m> defined by <m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)}</m> for all <m>x</m> such that <m>g(x) \ne 0</m>.
-		  				</p>
-		  			</li>
-		  		</ul>
-	  		</p>	  			
-	  	</statement>
+			<p>
+				Sean <m>f</m> y <m>g</m> funciones que comparten el mismo dominio. Entonces,
+				<ul>
+					<li>
+						<p>
+							La <term>suma de <m>f</m> y <m>g</m></term> es la función <m>f + g</m> definida por <m>(f+g)(x) = f(x) + g(x)</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							La <term>diferencia de <m>f</m> y <m>g</m></term> es la función <m>f - g</m> definida por <m>(f-g)(x) = f(x) - g(x)</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							El <term>producto de <m>f</m> y <m>g</m></term> es la función <m>f \cdot g</m> definida por <m>(f \cdot g)(x) = f(x) \cdot g(x)</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							El <term>cociente de <m>f</m> y <m>g</m></term> es la función <m>\frac{f}{g}</m> definida por <m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)}</m> para todo <m>x</m> tal que <m>g(x) \ne 0</m>.
+						</p>
+					</li>
+				</ul>
+			</p>	  			
+		</statement>
 	  </definition>
 
 	  <xi:include href="./activities/act-changing-combining-arithmetic.xml" />
@@ -135,36 +135,36 @@
   </subsection>		  
 
   <subsection xml:id="subsec-changing-combining-functions-context">
-  	<title>Combining functions in context</title>
-  	<p>
-	    When we work in applied settings with functions that model phenomena in the world around us,
-	    it is often useful to think carefully about the units of various quantities.
-	    Analyzing units can help us both understand the algebraic structure of functions and the variables involved,
-	    as well as assist us in assigning meaning to quantities we compute.
-	    We have already seen this with the notion of average rate of change:
-	    if a function <m>P(t)</m> measures the population in a city in year <m>t</m> and we compute <m>AV_{[5, 11]}</m>,
-	    then the units on <m>AV_{[5, 11]}</m> are
-	    <q>people per year,</q>
-	    and the value of <m>AV_{[5, 11]}</m> is telling us the average rate at which the population changes in people per year on the time interval from year <m>5</m> to year <m>11</m>.
+	<title>Combinando funciones en contexto</title>
+	<p>
+	    Cuando trabajamos en entornos aplicados con funciones que modelan fenómenos en el mundo que nos rodea,
+	    a menudo es útil pensar cuidadosamente sobre las unidades de varias cantidades.
+	    Analizar las unidades puede ayudarnos tanto a entender la estructura algebraica de las funciones y las variables involucradas,
+	    como a asignar significado a las cantidades que calculamos.
+	    Ya hemos visto esto con la noción de tasa de cambio promedio:
+	    si una función <m>P(t)</m> mide la población en una ciudad en el año <m>t</m> y calculamos <m>AV_{[5, 11]}</m>,
+	    entonces las unidades en <m>AV_{[5, 11]}</m> son
+	    <q>personas por año,</q>
+	    y el valor de <m>AV_{[5, 11]}</m> nos está diciendo la tasa promedio a la que cambia la población en personas por año en el intervalo de tiempo desde el año <m>5</m> hasta el año <m>11</m>.
   	</p>
 
 	<example xml:id="ex-combining-stock-value">
 		<statement>
 			<p>
-		      Say that an investor is regularly purchasing stock in a particular company.<fn>This example is taken from <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html">Section 2.3</url> of <url href="https://activecalculus.org/single/">Active Calculus</url>.</fn>
-		      Let <m>N(t)</m> represent the number of shares owned on day <m>t</m>,
-		      where <m>t = 0</m> represents the first day on which shares were purchased.
-		      Let <m>S(t)</m> give the value of one share of the stock on day <m>t</m>;
-		      note that the units on <m>S(t)</m> are dollars per share.
-		      How is the total value, <m>V(t)</m>, of the held stock on day <m>t</m> determined?
-		    </p>
+				Supón que un inversor está comprando regularmente acciones en una empresa en particular.<fn>Este ejemplo está tomado de <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html">Section 2.3</url> de <url href="https://activecalculus.org/single/">Active Calculus</url>.</fn>
+				Sea <m>N(t)</m> el número de acciones poseídas en el día <m>t</m>,
+				donde <m>t = 0</m> representa el primer día en que se compraron acciones.
+				Sea <m>S(t)</m> el valor de una acción de la empresa en el día <m>t</m>;
+				nota que las unidades en <m>S(t)</m> son dólares por acción.
+				¿Cómo se determina el valor total, <m>V(t)</m>, de las acciones poseídas en el día <m>t</m>?
+			</p>
 
 		    <p>
-		    	<em>Solution</em>.  Observe that the units on <m>N(t)</m> are <q>shares</q> and the units on <m>S(t)</m> are <q>dollars per share</q>.  Thus when we compute the product
+		    	<em>Solución</em>. Observa que las unidades en <m>N(t)</m> son <q>acciones</q> y las unidades en <m>S(t)</m> son <q>dólares por acción</q>. Así que cuando calculamos el producto
 		    	<me>
-		        	N(t) \, \text{shares}  \cdot S(t) \, \text{dollars per share}
+		        	N(t) \, \text{acciones}  \cdot S(t) \, \text{dólares por acción}
 		      	</me>,
-		      	it follows that the resulting units are <q>dollars</q>, which is the total value of held stock.  Hence,
+		      	se sigue que las unidades resultantes son <q>dólares</q>, que es el valor total de las acciones poseídas. Por lo tanto,
 		      	<me>
 		      		V(t) = N(t) \cdot S(t)
 		      	</me>.
@@ -177,50 +177,50 @@
   </subsection>
 
   <subsection xml:id="subsec-changing-combining-piecewise">
-  	<title>Piecewise functions</title>
+	<title>Funciones por tramos</title>
 
-  	<p>
-  		In both abstract and applied settings,
-	    we sometimes have to use different formulas on different intervals in order to define a function of interest.
-  	</p>
-
+	<p>
+		En contextos tanto abstractos como aplicados,
+		a veces tenemos que usar diferentes fórmulas en diferentes intervalos para definir una función de interés.
+	</p>
+	
   	<sidebyside widths="48% 48%" margins="0%">
             <stack>
 			<p>
-				A familiar and important function that is defined <em>piecewise</em>
-			    is the absolute value function: <m>A(x) = |x|</m>.
-			    We know that if <m>x \ge 0</m>, <m>|x| = x</m>, whereas if <m>x \lt 0</m>, <m>|x| = -x</m>.  
+				Una función familiar e importante que se define <em>por tramos</em>
+				es la función valor absoluto: <m>A(x) = |x|</m>.
+				Sabemos que si <m>x \ge 0</m>, <m>|x| = x</m>, mientras que si <m>x \lt 0</m>, <m>|x| = -x</m>.  
 			</p>
 			<p>
 	  		<definition xml:id="def-combining-abs-val">
 	  				<idx><h>absolute value function</h></idx>
 					<statement>
 						<p>
-							The absolute value of a real number, denoted by <m>A(x) = |x|</m>, is defined by the rule
-			  				<me>
-			        			A(x) = 
-			        			\begin{cases}
-			        				-x, \amp  x \lt  0 \\
-			        				x, \amp x \ge 0
-			        			\end{cases}
-			  				</me>
+							El valor absoluto de un número real, denotado por <m>A(x) = |x|</m>, se define por la regla
+							  <me>
+								A(x) = 
+								\begin{cases}
+									-x, \amp  x \lt  0 \\
+									x, \amp x \ge 0
+								\end{cases}
+							  </me>
 						</p>
 					</statement>
 	  		</definition>
                         </p>
             </stack>
   		<figure xml:id="F-combining-defn-abs-val">
-  			<caption>A plot of the absolute value function, <m>A(x) = |x|</m>.</caption>
-  			<image source="images/combining-piecewise-abs-val" />
+			<caption>Un gráfico de la función valor absoluto, <m>A(x) = |x|</m>.</caption>
+			<image source="images/combining-piecewise-abs-val" />
   		</figure>
   	</sidebyside>
 
 	<p>
-		The absolute value function is one example of a piecewise-defined function.  The <q>bracket</q> notation in <xref ref="def-combining-abs-val">Definition</xref> is how we express which piece of the function applies on which interval.  As we can see in <xref ref="F-combining-defn-abs-val">Figure</xref>, for <m>x</m> values less than <m>0</m>, the function <m>y = -x</m> applies, whereas for <m>x</m> greater than or equal to <m>0</m>, the rule is determined by <m>y = x</m>.
+		La función valor absoluto es un ejemplo de una función definida por tramos. La notación de <q>corchete</q> en <xref ref="def-combining-abs-val">Definición</xref> es cómo expresamos qué tramo de la función se aplica en qué intervalo. Como podemos ver en <xref ref="F-combining-defn-abs-val">Figura</xref>, para valores de <m>x</m> menores que <m>0</m>, se aplica la función <m>y = -x</m>, mientras que para <m>x</m> mayores o iguales a <m>0</m>, la regla está determinada por <m>y = x</m>.
 	</p>
-
+    
 	<p>
-		As long as we are careful to make sure that each potential input has one and only one corresponding output, we can define a piecewise function using as many different functions on different intervals as we desire.
+		Mientras tengamos cuidado de asegurarnos de que cada entrada potencial tenga una y solo una salida correspondiente, podemos definir una función por tramos usando tantas funciones diferentes en diferentes intervalos como deseemos.
 	</p>
 
 	<xi:include href="./activities/act-changing-combining-piecewise.xml" />
@@ -228,28 +228,28 @@
   </subsection>
 
   <subsection xml:id="subsec-changing-combining-summary">
-  	<title>Summary</title>
+  	<title>Resumen</title>
   	<p>
   		<ul>
-  			<li>
-  				<p>
-  					Just as we can generate a new number by adding, subtracting, multiplying, or dividing two given numbers, we can generate a new function by adding, subtracting, multiplying, or dividing two given functions.  For instance, if we know formulas, graphs, or tables for functions <m>f</m> and <m>g</m> that share the same domain, we can create their product <m>p</m> according to the rule <m>p(x) = (f \cdot g)(x) = f(x) \cdot g(x)</m>. 
-  				</p>
-  			</li>
-  			<li>
-  				<p>
-  					A piecewise function is a function whose formula consists of at least two different formulas in such a way that which formula applies depends on where the input falls in the domain.  For example, given two functions <m>f</m> and <m>g</m> each defined on all real numbers, we can define a new piecewise function <m>P</m> according to the rule
-  					<me>
-  						P(x) = 
-	        			\begin{cases}
-	        				f(x), \amp  x \lt  a \\
-	        				g(x), \amp x \ge a
-	        			\end{cases}
-  					</me>
-  					This tells us that for any <m>x</m> to the left of <m>a</m>, we use the rule for <m>f</m>, whereas for any <m>x</m> to the right of or equal to <m>a</m>, we use the rule for <m>g</m>.  We can use as many different functions as we want on different intervals, provided the intervals don't overlap.
-  				</p>
-  			</li>
-  		</ul>
+			<li>
+				<p>
+					Así como podemos generar un nuevo número sumando, restando, multiplicando o dividiendo dos números dados, podemos generar una nueva función sumando, restando, multiplicando o dividiendo dos funciones dadas. Por ejemplo, si conocemos fórmulas, gráficos o tablas para las funciones <m>f</m> y <m>g</m> que comparten el mismo dominio, podemos crear su producto <m>p</m> según la regla <m>p(x) = (f \cdot g)(x) = f(x) \cdot g(x)</m>. 
+				</p>
+			</li>
+			<li>
+				<p>
+					Una función por tramos es una función cuya fórmula consiste en al menos dos fórmulas diferentes de tal manera que cuál fórmula se aplica depende de dónde cae la entrada en el dominio. Por ejemplo, dadas dos funciones <m>f</m> y <m>g</m> cada una definida en todos los números reales, podemos definir una nueva función por tramos <m>P</m> según la regla
+					<me>
+						P(x) = 
+						\begin{cases}
+							f(x), \amp  x \lt  a \\
+							g(x), \amp x \ge a
+						\end{cases}
+					</me>
+					Esto nos dice que para cualquier <m>x</m> a la izquierda de <m>a</m>, usamos la regla para <m>f</m>, mientras que para cualquier <m>x</m> a la derecha de o igual a <m>a</m>, usamos la regla para <m>g</m>. Podemos usar tantas funciones diferentes como queramos en diferentes intervalos, siempre que los intervalos no se superpongan.
+				</p>
+			</li>
+		</ul>
   	</p>
   </subsection>
 	
@@ -258,4 +258,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

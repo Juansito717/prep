@@ -16,59 +16,59 @@
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-changing-combining-context">
 
 	<statement>
-	    <p>
-	      Let <m>f</m> be a function that measures a car's fuel economy in the following way.
-	      Given an input velocity <m>v</m> in miles per hour,
-	      <m>f(v)</m> is the number of gallons of fuel that the car consumes per mile (i.e., <q>gallons per mile</q>).
-	      We know that <m>f(60) = 0.04</m>.
-	    </p>
-
+		<p>
+			Sea <m>f</m> una función que mide la economía de combustible de un coche de la siguiente manera.
+			Dada una velocidad de entrada <m>v</m> en millas por hora,
+			<m>f(v)</m> es el número de galones de combustible que el coche consume por milla (es decir, <q>galones por milla</q>).
+			Sabemos que <m>f(60) = 0.04</m>.
+		</p>
+	  
 	    <p>
 	      <ol marker="a.">
-	        <li>
-	          <p>
-	            What is the meaning of the statement
-	            <q><m>f(60) = 0.04</m></q>
-	            in the context of the problem?
-	            That is, what does this say about the car's fuel economy?
-	            Write a complete sentence to explain.
-	          </p>
-	        </li>
-
-	        <li>
-	          <p>
-	            Consider the function <m>g(v) = \frac{1}{f(v)}</m>.
-	            What is the value of <m>g(60)</m>?
-	            What are the units on <m>g</m>?
-	            What does <m>g</m> measure?
-	          </p>
-	        </li>
-
-	        <li>
-	          <p>
-	            Consider the function <m>h(v) = v \cdot f(v)</m>.
-	            What is the value of <m>h(60)</m>?
-	            What are the units on <m>h</m>?
-	            What does <m>h</m> measure?
-	          </p>
-	        </li>
-
-	        <li>
-	        	<p>
-	        		Do <m>f(60)</m>, <m>g(60)</m>, and <m>h(60)</m> tell us fundamentally different information, or are they all essentially saying the same thing?  Explain.
-	        	</p>
-	        </li>
-
-	        <li>
-	          <p>
-	            Suppose we also know that <m>f(70) = 0.045</m>.
-	            Find the average rate of change of <m>f</m> on the interval <m>[60,70]</m>.
-	            What are the units on the average rate of change of <m>f</m>?
-	            What does this quantity measure?
-	            Write a complete sentence to explain.
-	          </p>
-	        </li>
-	      </ol>
+				<li>
+				<p>
+				  ¿Cuál es el significado de la afirmación
+				  <q><m>f(60) = 0.04</m></q>
+				  en el contexto del problema?
+				  Es decir, ¿qué dice esto sobre la economía de combustible del coche?
+				  Escribe una oración completa para explicar.
+				</p>
+			  </li>
+	  
+			  <li>
+				<p>
+				  Considera la función <m>g(v) = \frac{1}{f(v)}</m>.
+				  ¿Cuál es el valor de <m>g(60)</m>?
+				  ¿Cuáles son las unidades de <m>g</m>?
+				  ¿Qué mide <m>g</m>?
+				</p>
+			  </li>
+	  
+			  <li>
+				<p>
+				  Considera la función <m>h(v) = v \cdot f(v)</m>.
+				  ¿Cuál es el valor de <m>h(60)</m>?
+				  ¿Cuáles son las unidades de <m>h</m>?
+				  ¿Qué mide <m>h</m>?
+				</p>
+			  </li>
+	  
+			  <li>
+				  <p>
+					  ¿Nos dicen <m>f(60)</m>, <m>g(60)</m> y <m>h(60)</m> información fundamentalmente diferente, o esencialmente están diciendo lo mismo? Explica.
+				  </p>
+			  </li>
+	  
+			  <li>
+				<p>
+				  Supón que también sabemos que <m>f(70) = 0.045</m>.
+				  Encuentra la tasa de cambio promedio de <m>f</m> en el intervalo <m>[60,70]</m>.
+				  ¿Cuáles son las unidades de la tasa de cambio promedio de <m>f</m>?
+				  ¿Qué mide esta cantidad?
+				  Escribe una oración completa para explicar.
+				</p>
+			  </li>
+			</ol>
    	 	</p>
 	</statement>
 	<answer>
@@ -83,4 +83,3 @@
 	</solution>
 
 </activity>
-
