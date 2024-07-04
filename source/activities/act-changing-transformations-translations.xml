@@ -17,16 +17,16 @@
 
 	<statement>
 		<p>
-			Consider the functions <m>r</m> and <m>s</m> given in <xref ref="F-act-transformations-r">Figure</xref> and <xref ref="F-act-transformations-s">Figure</xref>.
+			Considera las funciones <m>r</m> y <m>s</m> dadas en <xref ref="F-act-transformations-r">Figure</xref> y <xref ref="F-act-transformations-s">Figure</xref>.
 		</p>
 
 		<sidebyside width="50%">
 			<figure xml:id="F-act-transformations-r">
-				<caption>A parent function <m>r</m>.</caption>
+				<caption>Una función madre <m>r</m>.</caption>				
 				<image source="images/transformations-act-r-translation" />
 			</figure>
 			<figure xml:id="F-act-transformations-s">
-				<caption>A parent function <m>s</m>.</caption>
+				<caption>Una función madre <m>s</m>.</caption>
 				<image source="images/transformations-act-s-translation" />
 			</figure>
 		</sidebyside>
@@ -35,7 +35,7 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						 On the same axes as the plot of <m>y = r(x)</m>, sketch the following graphs:  <m>y = g(x) = r(x) + 2</m>, <m>y = h(x) = r(x+1)</m>, and <m>y = f(x) = r(x+1) + 2</m>.  Be sure to label the point on each of <m>g</m>, <m>h</m>, and <m>f</m> that corresponds to <m>(-2,-1)</m> on the original graph of <m>r</m>.  In addition, write one sentence to explain the overall transformations that have resulted in <m>g</m>, <m>h</m>, and <m>f</m>.
+						En los mismos ejes que la gráfica de <m>y = r(x)</m>, dibuja los siguientes gráficos: <m>y = g(x) = r(x) + 2</m>, <m>y = h(x) = r(x+1)</m>, y <m>y = f(x) = r(x+1) + 2</m>. Asegúrate de etiquetar el punto en cada una de <m>g</m>, <m>h</m>, y <m>f</m> que corresponde a <m>(-2,-1)</m> en la gráfica original de <m>r</m>. Además, escribe una oración para explicar las transformaciones generales que han resultado en <m>g</m>, <m>h</m>, y <m>f</m>.
 					</p>
 				</li>
 <!--				<li>
@@ -45,12 +45,12 @@
 				</li> -->
 				<li>
 					<p>
-						On the same axes as the plot of <m>y = s(x)</m>, sketch the following graphs:  <m>y = k(x) = s(x) - 1</m>, <m>y = j(x) = s(x-2)</m>, and <m>y = m(x) = s(x-2) - 1</m>.  Be sure to label the point on each of <m>k</m>, <m>j</m>, and <m>m</m> that corresponds to <m>(-2,-3)</m> on the original graph of <m>s</m>.  In addition, write one sentence to explain the overall transformations that have resulted in <m>k</m>, <m>j</m>, and <m>m</m>.
+						En los mismos ejes que la gráfica de <m>y = s(x)</m>, dibuja los siguientes gráficos: <m>y = k(x) = s(x) - 1</m>, <m>y = j(x) = s(x-2)</m>, y <m>y = m(x) = s(x-2) - 1</m>. Asegúrate de etiquetar el punto en cada una de <m>k</m>, <m>j</m>, y <m>m</m> que corresponde a <m>(-2,-3)</m> en la gráfica original de <m>s</m>. Además, escribe una oración para explicar las transformaciones generales que han resultado en <m>k</m>, <m>j</m>, y <m>m</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Now consider the function <m>q(x) = x^2</m>.  Determine a formula for the function that is given by <m>p(x) = q(x+3) - 4</m>.  How is <m>p</m> a transformation of <m>q</m>?
+						Ahora considera la función <m>q(x) = x^2</m>. Determina una fórmula para la función que se da por <m>p(x) = q(x+3) - 4</m>. ¿Cómo es <m>p</m> una transformación de <m>q</m>?
 					</p>
 				</li>
 			</ol>
@@ -68,4 +68,3 @@
 	</solution>
 
 </activity>
-

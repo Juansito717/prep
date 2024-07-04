@@ -17,61 +17,42 @@
 
 	<statement>
 		<p>
-			Open a new <em>Desmos</em> graph and define the function <m>f(x) = x^2</m>.
-            Adjust the window so that the range is for <m>-4 \le x \le 4</m> and <m>-10 \le y \le 10</m>.
+			Abre un nuevo gráfico en <em>Desmos</em> y define la función <m>f(x) = x^2</m>.
+			Ajusta la ventana para que el rango sea <m>-4 \le x \le 4</m> y <m>-10 \le y \le 10</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						In <em>Desmos</em>,
-            			define the function <m>g(x) = f(x) + a</m>. (That is,
-            			in <em>Desmos</em> on line 2, enter
-            			<c>g(x) = f(x) + a</c>.) You will get prompted to add a slider for <m>a</m>.
-            			Do so.
+						En <em>Desmos</em>, define la función <m>g(x) = f(x) + a</m>. (Es decir, en <em>Desmos</em> en la línea 2, introduce <c>g(x) = f(x) + a</c>.) Te aparecerá una opción para añadir un control deslizante para <m>a</m>. Hazlo.
 					</p>
-
+					  
 					<p>
-						Explore by moving the slider for <m>a</m> and write at least one sentence to describe
-            			the effect that changing the value of <m>a</m> has on the graph of <m>g</m>.  
+						Explora moviendo el control deslizante para <m>a</m> y escribe al menos una oración para describir el efecto que tiene cambiar el valor de <m>a</m> en el gráfico de <m>g</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Next,
-            			define the function <m>h(x) = f(x-b)</m>. (That is,
-            			in <em>Desmos</em> on line 4, enter
-            			<c>h(x) = f(x-b)</c> and add the slider for <m>b</m>.)
+						Ahora, define la función <m>h(x) = f(x-b)</m>. (Es decir, en <em>Desmos</em> en la línea 4, introduce <c>h(x) = f(x-b)</c> y añade el control deslizante para <m>b</m>.)
 					</p>
-
+					  
 					<p>
-						Move the slider for <m>b</m> and write at least one sentence to describe
-            			the effect that changing the value of <m>b</m> has on the graph of <m>h</m>.
+						Mueve el control deslizante para <m>b</m> y escribe al menos una oración para describir el efecto que tiene cambiar el valor de <m>b</m> en el gráfico de <m>h</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Now define the function <m>p(x) = cf(x)</m>. (That is,
-            			in <em>Desmos</em> on line 6, enter
-            			<c>p(x) = cf(x)</c> and add the slider for <m>c</m>.)
+						Ahora define la función <m>p(x) = cf(x)</m>. (Es decir, en <em>Desmos</em> en la línea 6, introduce <c>p(x) = cf(x)</c> y añade el control deslizante para <m>c</m>.)
 					</p>
-
+					  
 					<p>
-						Move the slider for <m>c</m> and write at least one sentence to describe
-            			the effect that changing the value of <m>c</m> has on the graph of <m>p</m>.
-            			In particular, when <m>c = -1</m>,
-            			how is the graph of <m>p</m> related to the graph of <m>f</m>?
+						Mueve el control deslizante para <m>c</m> y escribe al menos una oración para describir el efecto que tiene cambiar el valor de <m>c</m> en el gráfico de <m>p</m>. En particular, cuando <m>c = -1</m>, ¿cómo se relaciona el gráfico de <m>p</m> con el gráfico de <m>f</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Finally, click on the icons next to <m>g</m>, <m>h</m>, and <m>p</m> to temporarily hide them, and go back to Line 1 and change your formula for <m>f</m>.
-            			You can make it whatever you'd like,
-            			but try something like <m>f(x) = x^2 + 2x + 3</m> or <m>f(x) = x^3 - 1</m>.
-            			Then, investigate with the sliders <m>a</m>, <m>b</m>,
-            			and <m>c</m> to see the effects on <m>g</m>, <m>h</m>, and <m>p</m> (unhiding them appropriately).
-            			Write a couple of sentences to describe your observations of your explorations.
+						Finalmente, haz clic en los íconos junto a <m>g</m>, <m>h</m> y <m>p</m> para ocultarlos temporalmente, y vuelve a la Línea 1 y cambia tu fórmula para <m>f</m>. Puedes hacerla como quieras, pero prueba algo como <m>f(x) = x^2 + 2x + 3</m> o <m>f(x) = x^3 - 1</m>. Luego, investiga con los controles deslizantes <m>a</m>, <m>b</m> y <m>c</m> para ver los efectos en <m>g</m>, <m>h</m> y <m>p</m> (mostrándolos nuevamente según corresponda). Escribe un par de oraciones para describir tus observaciones de tus exploraciones.
 					</p>
 				</li>
 			</ol>

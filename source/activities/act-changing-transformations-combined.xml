@@ -17,16 +17,16 @@
 
 	<statement>
 		<p>
-			Consider the functions <m>f</m> and <m>g</m> given in <xref ref="F-act-transformations-f">Figure</xref> and <xref ref="F-act-transformations-g">Figure</xref>.
+			Considera las funciones <m>f</m> y <m>g</m> dadas en <xref ref="F-act-transformations-f">Figure</xref> y <xref ref="F-act-transformations-g">Figure</xref>.
 		</p>
 
 		<sidebyside width="50%">
 			<figure xml:id="F-act-transformations-f">
-				<caption>A parent function <m>f</m>.</caption>
+				<caption>Una función madre <m>f</m>.</caption>
 				<image source="images/transformations-act-f-combined" />
 			</figure>
 			<figure xml:id="F-act-transformations-g">
-				<caption>A parent function <m>g</m>.</caption>
+				<caption>Una función madre <m>g</m>.</caption>
 				<image source="images/transformations-act-g-combined" />
 			</figure>
 		</sidebyside>
@@ -35,22 +35,22 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Sketch an accurate graph of the transformation <m>y = p(x) = -\frac{1}{2}f(x-1)+2</m>.  Write at least one sentence to explain how you developed the graph of <m>p</m>, and identify the point on <m>p</m> that corresponds to the original point <m>(-2,2)</m> on the graph of <m>f</m>.
+						Dibuja una gráfica precisa de la transformación <m>y = p(x) = -\frac{1}{2}f(x-1)+2</m>. Escribe al menos una oración para explicar cómo desarrollaste la gráfica de <m>p</m>, e identifica el punto en <m>p</m> que corresponde al punto original <m>(-2,2)</m> en la gráfica de <m>f</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Sketch an accurate graph of the transformation <m>y = q(x) = 2g(x+0.5)-0.75</m>.  Write at least one sentence to explain how you developed the graph of <m>q</m>, and identify the point on <m>q</m> that corresponds to the original point <m>(1.5,1.5)</m> on the graph of <m>g</m>.
+						Dibuja una gráfica precisa de la transformación <m>y = q(x) = 2g(x+0.5)-0.75</m>. Escribe al menos una oración para explicar cómo desarrollaste la gráfica de <m>q</m>, e identifica el punto en <m>q</m> que corresponde al punto original <m>(1.5,1.5)</m> en la gráfica de <m>g</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Is the function <m>y = r(x) = \frac{1}{2}(-f(x-1) - 4)</m> the same function as <m>p</m> or different?  Why?  Explain in two different ways:  discuss the algebraic similarities and differences between <m>p</m> and <m>r</m>, and also discuss how each is a transformation of <m>f</m>.
+						¿Es la función <m>y = r(x) = \frac{1}{2}(-f(x-1) - 4)</m> la misma función que <m>p</m> o diferente? ¿Por qué? Explica de dos maneras diferentes: discute las similitudes y diferencias algebraicas entre <m>p</m> y <m>r</m>, y también discute cómo cada una es una transformación de <m>f</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Find a formula for a function <m>y = s(x)</m> (in terms of <m>g</m>) that represents this transformation of <m>g</m>: a horizontal shift of <m>1.25</m> units left, followed by a reflection across the <m>x</m>-axis and a vertical stretch by a factor of <m>2.5</m> units, followed by a vertical shift of <m>1.75</m> units.  Sketch an accurate, labeled graph of <m>s</m> on the following axes along with the given parent function <m>g</m>.
+						Encuentra una fórmula para una función <m>y = s(x)</m> (en términos de <m>g</m>) que represente esta transformación de <m>g</m>: un desplazamiento horizontal de <m>1.25</m> unidades a la izquierda, seguido de una reflexión a través del eje <m>x</m> y un estiramiento vertical por un factor de <m>2.5</m> unidades, seguido de un desplazamiento vertical de <m>1.75</m> unidades. Dibuja una gráfica precisa y etiquetada de <m>s</m> en los siguientes ejes junto con la función madre dada <m>g</m>.
 					</p>
 
 					<sidebyside width="50%">
@@ -73,4 +73,3 @@
 	</solution>
 
 </activity>
-
