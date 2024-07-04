@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>APC Transformación de Funciones</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://activecalculus.org/prelude/external/images/APC-cover.jpg">
+<meta property="book:title" content="Preludio Activo al Cálculo">
+<meta property="book:author" content="Matthew Boelkins">
+<link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://activecalculus.org"><img src="external/images/APC-cover.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Preludio Activo al Cálculo</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-changing-inverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C-changing.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-changing-combining.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Contribuciones</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="frontmatter-4.html#frontmatter-4-4" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-our-goals.html" class="internal"><span class="title">Nuestros Objetivos</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Características del Texto</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-students.html" class="internal"><span class="title">Estudiantes!  Lean esto!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructores!  Lean esto!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="C-changing.html" class="internal"><span class="codenumber">1</span> <span class="title">Relacionando Cantidades que Cambian</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-in-tandem.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Cambiando en Simultáneo</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#subsec-changing-tandem-graphs" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Usando Gráficos para Representar Relaciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#subsec-changing-algebra-perspective" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Usando el Álgebra para Agregar Perspectiva</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#subsec-changing-tandem-summary" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#ez-changing-tandem" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-functions-models.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Funciones:  Modelando Relaciones</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-functions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-models" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Comparando modelos y funciones abstractas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-is-it" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Determinando si una relación es una función o no</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-summary" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-functions-models.html#ez-changing-functions" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-aroc.html" class="internal"><span class="codenumber">1.3</span> <span class="title">La Tasa de Cambio Promedio de una Función</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-aroc.html#subsec-changing-aroc-defn" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Definiendo e interpretando la tasa de cambio promedio de una función</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-aroc.html#subsec-changing-aroc-behavior-trends" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Cómo la tasa de cambio promedio indica tendencias en la función</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-aroc.html#subsec-changing-aroc-summary" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-aroc.html#ez-changing-aroc" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-linear.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Funciones Lineales</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-linear.html#subsec-changing-linear-properties" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Propiedades de las funciones lineales</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-linear.html#subsec-changing-linear-context" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Interpretación de funciones lineales en contexto</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-linear.html#subsec-changing-linear-summary" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-linear.html#ez-changing-linear" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-quadratic.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Funciones Cuadráticas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#subsec-changing-quadratic-properties" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Propiedades de las Funciones Cuadráticas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#subsec-changing-quadratic-falling-gravity" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Modelando objetos en caída</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#subsec-changing-quadratic-change-patterns" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Cómo cambian las funciones cuadráticas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#sec-changing-quadratic-7" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-quadratic.html#ez-changing-quadratic" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-composite.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Funciones Compuestas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-composing" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Componiendo dos funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-in-context" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Composing functions in context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-aroc" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Composición de funciones y tasa de cambio promedio</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-summary" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-composite.html#ez-changing-composite" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-inverse.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Funciones Inversas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#changing-inverse-definition" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Cuando una función tiene una función inversa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#changing-inverse-does-it" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Determinando si una función tiene una función inversa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#changing-inverse-properties" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Propiedades de una función inversa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#subsec-changing-inverse-summary" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-inverse.html#ez-changing-inverse" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-changing-transformations.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Transformación de Funciones</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-translation" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Traslación de Funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-vert-stretch" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Estiramientos verticales y reflexiones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-combining" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Combinando desplazamientos y estiramientos: por qué el orden a veces importa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-summary" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-transformations.html#ez-changing-transformations" class="internal"><span class="codenumber">1.8.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-combining.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Combinando Funciones</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-functions-algebra" class="internal"><span class="codenumber">1.9.1</span> <span class="title">Aritmética con funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-functions-context" class="internal"><span class="codenumber">1.9.2</span> <span class="title">Combinando funciones en contexto</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-piecewise" class="internal"><span class="codenumber">1.9.3</span> <span class="title">Funciones por tramos</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-summary" class="internal"><span class="codenumber">1.9.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-combining.html#ez-changing-combining" class="internal"><span class="codenumber">1.9.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-circular.html" class="internal"><span class="codenumber">2</span> <span class="title">Circular Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-traversing.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Traversing Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-functions" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Circular Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-function-properties" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Properties of Circular Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-aroc" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The average rate of change of a circular function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-summary" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-traversing.html#ez-circular-traversing" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-unit-circle.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Unit Circle</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#subsec-circular-unit-circle-radians-degrees" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Radians and degrees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#subsec-circular-unit-circle-special-points" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Special points on the unit circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#subsec-circular-unit-circle-non-unit-circles" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Special points and arc length in non-unit circles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#sec-circular-unit-circle-7" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#ez-circular-unit-circle" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-sine-cosine.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Sine and Cosine Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-defn" class="internal"><span class="codenumber">2.3.1</span> <span class="title">The definition of the sine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-cosine-defn" class="internal"><span class="codenumber">2.3.2</span> <span class="title">The definition of the cosine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-cosine-properties" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Properties of the sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-cosine-computing" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Using computing technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-summary" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#ez-circular-sine-cosine" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-sinusoidal.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Sinusoidal Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#subsec-circular-sinusoidal-shifts-stretches" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Shifts and vertical stretches of the sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#subsec-circular-sinusoidal-horiz-scaling" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Horizontal scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#sec-circular-sinusoidal-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Circular functions with different periods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#subsec-circular-sinusoidal-summary" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#ez-circular-sinusoidal" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-exp.html" class="internal"><span class="codenumber">3</span> <span class="title">Exponential and Logarithmic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-growth.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#subsec-exp-growth-functions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Exponential functions of form <span class="process-math">\(f(t) = ab^t\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#subsec-exp-growth-find-a-b" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Determining formulas for exponential functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#subsec-exp-growth-trends" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Trends in the behavior of exponential functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#sec-exp-growth-7" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-growth.html#ez-exp-growth" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-modeling.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Modeling with exponential functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-long-term" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Long-term behavior of exponential functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-transformations" class="internal"><span class="codenumber">3.2.2</span> <span class="title">The role of <span class="process-math">\(c\)</span> in <span class="process-math">\(g(t) = ab^t + c\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-temperature" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Modeling temperature data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-summary" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-modeling.html#ez-exp-modeling" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-e.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The special number <span class="process-math">\(e\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-e.html#subsec-exp-e-definition" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The natural base <span class="process-math">\(e\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-e.html#subsec-exp-e-inverse" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Why any exponential function can be written in terms of <span class="process-math">\(e\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-e.html#subsec-exp-e-summary" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-e.html#ez-exp-e" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-log.html" class="internal"><span class="codenumber">3.4</span> <span class="title">What a logarithm is</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#subsec-exp-log-base-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">The base-<span class="process-math">\(10\)</span> logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#subsec-exp-log-base-e" class="internal"><span class="codenumber">3.4.2</span> <span class="title">The natural logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#sec-exp-log-6" class="internal"><span class="codenumber">3.4.3</span> <span class="title"><span class="process-math">\(f(t) = b^t\)</span> revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#subsec-exp-log-summary" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-log.html#ez-exp-log" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-log-properties.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Properties and applications of logarithmic functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-key-properties" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Key properties of logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-properties-graph" class="internal"><span class="codenumber">3.5.2</span> <span class="title">The graph of the natural logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-properties-applications" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Putting logarithms to work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-properties-summary" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-log-properties.html#ez-exp-log-properties" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-temp-pop.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Modeling temperature and population</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#subsec-exp-temp-pop-Newton" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Newton’s Law of Cooling revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#subsec-exp-temp-pop-logistic" class="internal"><span class="codenumber">3.6.2</span> <span class="title">A more realistic model for population growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#subsec-exp-temp-pop-summary" class="internal"><span class="codenumber">3.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#ez-exp-temp-pop" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-trig.html" class="internal"><span class="codenumber">4</span> <span class="title">Trigonometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-right.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Right triangles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#subsec-trig-right-similar" class="internal"><span class="codenumber">4.1.1</span> <span class="title">The geometry of triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#subsec-trig-right-ratios" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Ratios of sides in right triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#subsec-trig-right-ratios-sin-cos" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Using a ratio involving sine and cosine</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#sec-trig-right-7" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-right.html#ez-trig-right" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-tangent.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Tangent Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-two-persp" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Two perspectives on the tangent function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-properties" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Properties of the tangent function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-applications" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Using the tangent function in right triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-summary" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-tangent.html#ez-trig-tangent" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-inverse.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Inverses of trigonometric functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-arccos" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The arccosine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-arcsin" class="internal"><span class="codenumber">4.3.2</span> <span class="title">The arcsine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-arctan" class="internal"><span class="codenumber">4.3.3</span> <span class="title">The arctangent function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-summary" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-inverse.html#ez-trig-inverse" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-finding-angles.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Finding Angles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#subsec-trig-finding-angles-evaluating" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Evaluating inverse trigonometric functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#subsec-trig-finding-angles-applied" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Finding angles in applied contexts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#subsec-trig-finding-angles-summary" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#ez-trig-finding-angles" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-other.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Other Trigonometric Functions and Identities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-triangles" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Ratios in right triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-properties" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Properties of the secant, cosecant, and cotangent functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-identities" class="internal"><span class="codenumber">4.5.3</span> <span class="title">A few important identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-summary" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-other.html#ez-trig-other" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-poly.html" class="internal"><span class="codenumber">5</span> <span class="title">Polynomial and Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-infty.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Infinity, limits, and power functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-infty.html#subsec-poly-infty-limit" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Limit notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-infty.html#subsec-poly-infty-power" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Power functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-infty.html#subsec-poly-infty-summary" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-infty.html#ez-poly-infty" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-polynomials.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Polynomials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-results" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Key results about polynomial functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-zeros-signs" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using zeros and signs to understand polynomial behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-multiplicity" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Multiplicity of polynomial zeros</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-summary" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-polynomials.html#ez-poly-polynomials" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-polynomial-applications.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Modeling with polynomial functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#subsec-poly-polynomial-applications-volume" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Volume, surface area, and constraints</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#subsec-poly-polynomial-applications-other" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Other applications of polynomial functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#subsec-poly-polynomial-applications-summary" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#ez-poly-polynomial-applications" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-rational.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-long-term" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long-range behavior of rational functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-domain" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The domain of a rational function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-applications" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Applications of rational functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-summary" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-rational.html#ez-poly-rational" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-rational-features.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Key features of rational functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational-features.html#subsec-poly-rational-features-hole" class="internal"><span class="codenumber">5.5.1</span> <span class="title">When a rational function has a “hole”</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational-features.html#subsec-poly-rational-features-signs" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Sign charts and finding formulas for rational functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational-features.html#subsec-poly-rational-features-summary" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-rational-features.html#ez-poly-rational-features" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-changing-transformations"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.8</span><span class="space"> </span><span class="title">Transformación de Funciones</span>
+</h2>
+<article class="objectives goal-like" id="sec-changing-transformations-2"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="sec-changing-transformations-2-1-1"><div class="para" id="sec-changing-transformations-2-1-1-1">¿Cómo se relaciona el gráfico de <span class="process-math">\(y = g(x) = af(x-b) + c\)</span> con el gráfico de <span class="process-math">\(y = f(x)\text{?}\)</span>
+</div></li>
+<li id="sec-changing-transformations-2-1-2"><div class="para" id="sec-changing-transformations-2-1-2-1">¿Qué queremos decir con “transformaciones” de una función dada <span class="process-math">\(f\text{?}\)</span> ¿Cómo son ejemplos de transformaciones las traslaciones y los estiramientos verticales de una función?</div></li>
+</ul></article><section class="introduction" id="sec-changing-transformations-3"><div class="para" id="sec-changing-transformations-3-1">En nuestra preparación para el cálculo, aspiramos a entender las funciones desde una amplia gama de perspectivas y familiarizarnos con una biblioteca de funciones básicas. Hasta ahora, dos familias básicas de funciones que hemos considerado son las funciones lineales y las funciones cuadráticas, las más simples de las cuales son <span class="process-math">\(L(x) = x\)</span> y <span class="process-math">\(Q(x) = x^2\text{.}\)</span> A medida que avancemos, nos esforzaremos por entender una función “madre” como el miembro más fundamental de una familia de funciones, así como cómo otras funciones similares pero más complicadas son el resultado de transformar la función madre.</div> <div class="para" id="sec-changing-transformations-3-2">Informalmente, una transformación  de una función dada es un proceso algebraico por el cual cambiamos la función a una función relacionada que tiene la misma forma fundamental, pero que puede estar desplazada, reflejada y/o estirada de manera sistemática. Por ejemplo, entre todas las funciones cuadráticas, la más simple es la función madre <span class="process-math">\(Q(x) = x^2\text{,}\)</span> pero cualquier otra función cuadrática, como <span class="process-math">\(g(x) = -3(x-5)^2 + 4\text{,}\)</span> también puede entenderse en relación con la función madre. Decimos que “<span class="process-math">\(g\)</span> es una transformación de <span class="process-math">\(Q\text{.}\)</span>”</div> <div class="para" id="sec-changing-transformations-3-3">En <a href="sec-changing-transformations.html#PA-changing-transformations-quadratic" class="xref" data-knowl="./knowl/xref/PA-changing-transformations-quadratic.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 1.8.1">Preview Activity 1.8.1</a>, investigamos los efectos de las constantes <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> y <span class="process-math">\(c\)</span> en la generación de la función <span class="process-math">\(g(x) = af(x-b) + c\)</span> en el contexto de ya conocer la función <span class="process-math">\(f\text{.}\)</span>
+</div> <article class="exploration project-like" id="PA-changing-transformations-quadratic"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.8.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="PA-changing-transformations-quadratic-1-1">Abre un nuevo gráfico en <em class="emphasis">Desmos</em> y define la función <span class="process-math">\(f(x) = x^2\text{.}\)</span> Ajusta la ventana para que el rango sea <span class="process-math">\(-4 \le x \le 4\)</span> y <span class="process-math">\(-10 \le y \le 10\text{.}\)</span>
+</div> <div class="para logical" id="PA-changing-transformations-quadratic-1-2"><ol class="lower-alpha">
+<li id="PA-changing-transformations-quadratic-1-2-1-1">
+<div class="para" id="PA-changing-transformations-quadratic-1-2-1-1-1">En <em class="emphasis">Desmos</em>, define la función <span class="process-math">\(g(x) = f(x) + a\text{.}\)</span> (Es decir, en <em class="emphasis">Desmos</em> en la línea 2, introduce <code class="code-inline tex2jax_ignore">g(x) = f(x) + a</code>.) Te aparecerá una opción para añadir un control deslizante para <span class="process-math">\(a\text{.}\)</span> Hazlo.</div>
+<div class="para" id="PA-changing-transformations-quadratic-1-2-1-1-2">Explora moviendo el control deslizante para <span class="process-math">\(a\)</span> y escribe al menos una oración para describir el efecto que tiene cambiar el valor de <span class="process-math">\(a\)</span> en el gráfico de <span class="process-math">\(g\text{.}\)</span>
+</div>
+</li>
+<li id="PA-changing-transformations-quadratic-1-2-1-2">
+<div class="para" id="PA-changing-transformations-quadratic-1-2-1-2-1">Ahora, define la función <span class="process-math">\(h(x) = f(x-b)\text{.}\)</span> (Es decir, en <em class="emphasis">Desmos</em> en la línea 4, introduce <code class="code-inline tex2jax_ignore">h(x) = f(x-b)</code> y añade el control deslizante para <span class="process-math">\(b\text{.}\)</span>)</div>
+<div class="para" id="PA-changing-transformations-quadratic-1-2-1-2-2">Mueve el control deslizante para <span class="process-math">\(b\)</span> y escribe al menos una oración para describir el efecto que tiene cambiar el valor de <span class="process-math">\(b\)</span> en el gráfico de <span class="process-math">\(h\text{.}\)</span>
+</div>
+</li>
+<li id="PA-changing-transformations-quadratic-1-2-1-3">
+<div class="para" id="PA-changing-transformations-quadratic-1-2-1-3-1">Ahora define la función <span class="process-math">\(p(x) = cf(x)\text{.}\)</span> (Es decir, en <em class="emphasis">Desmos</em> en la línea 6, introduce <code class="code-inline tex2jax_ignore">p(x) = cf(x)</code> y añade el control deslizante para <span class="process-math">\(c\text{.}\)</span>)</div>
+<div class="para" id="PA-changing-transformations-quadratic-1-2-1-3-2">Mueve el control deslizante para <span class="process-math">\(c\)</span> y escribe al menos una oración para describir el efecto que tiene cambiar el valor de <span class="process-math">\(c\)</span> en el gráfico de <span class="process-math">\(p\text{.}\)</span> En particular, cuando <span class="process-math">\(c = -1\text{,}\)</span> ¿cómo se relaciona el gráfico de <span class="process-math">\(p\)</span> con el gráfico de <span class="process-math">\(f\text{?}\)</span>
+</div>
+</li>
+<li id="PA-changing-transformations-quadratic-1-2-1-4"><div class="para" id="PA-changing-transformations-quadratic-1-2-1-4-1">Finalmente, haz clic en los íconos junto a <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(h\)</span> y <span class="process-math">\(p\)</span> para ocultarlos temporalmente, y vuelve a la Línea 1 y cambia tu fórmula para <span class="process-math">\(f\text{.}\)</span> Puedes hacerla como quieras, pero prueba algo como <span class="process-math">\(f(x) = x^2 + 2x + 3\)</span> o <span class="process-math">\(f(x) = x^3 - 1\text{.}\)</span> Luego, investiga con los controles deslizantes <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span> y <span class="process-math">\(c\)</span> para ver los efectos en <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(h\)</span> y <span class="process-math">\(p\)</span> (mostrándolos nuevamente según corresponda). Escribe un par de oraciones para describir tus observaciones de tus exploraciones.</div></li>
+</ol></div></article></section><section class="subsection" id="subsec-changing-transformations-translation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.1</span><span class="space"> </span><span class="title">Traslación de Funciones</span>
+</h3>
+<div class="para" id="subsec-changing-transformations-translation-2">Comenzamos resumiendo dos de nuestros hallazgos en <a href="sec-changing-transformations.html#PA-changing-transformations-quadratic" class="xref" data-knowl="./knowl/xref/PA-changing-transformations-quadratic.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 1.8.1">Preview Activity 1.8.1</a>.</div>
+<article class="assemblage assemblage-like" id="asm-transformations-vertical"><h4 class="heading"><span class="title">Vertical Translation of a Function.</span></h4>
+<div class="para" id="asm-transformations-vertical-3">Dada una función <span class="process-math">\(y = f(x)\)</span> y un número real <span class="process-math">\(a\text{,}\)</span> la función transformada <span class="process-math">\(y = g(x) = f(x) + a\)</span> es una <em class="emphasis">traslación vertical</em> del gráfico de <span class="process-math">\(f\text{.}\)</span> Es decir, cada punto <span class="process-math">\((x,f(x))\)</span> en el gráfico de <span class="process-math">\(f\)</span> se desplaza verticalmente al punto correspondiente <span class="process-math">\((x,f(x)+a)\)</span> en el gráfico de <span class="process-math">\(g\text{.}\)</span>
+</div></article><div class="para" id="subsec-changing-transformations-translation-4">Como encontramos en nuestras exploraciones de <em class="emphasis">Desmos</em> en la actividad previa, es especialmente útil ver los efectos de la traslación vertical dinámicamente.</div>
+<figure class="figure figure-like" id="F-transformations-vertical-translation"><iframe id="I-transformations-vertical-translation" width="450" height="563" src="I-transformations-vertical-translation-if.html"></iframe><div class="instructions"><details id="I-transformations-vertical-translation-3" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Instructions<span class="period">.</span></span></h4></summary><div class="solution-like knowl__content"><div class="para" id="I-transformations-vertical-translation-3-1">Mueve el deslizador<details class="ptx-footnote" aria-live="polite" id="I-transformations-vertical-translation-3-1-1"><summary class="ptx-footnote__number" title="Footnote 1.8.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="I-transformations-vertical-translation-3-1-1">Muchísimas gracias al increíble <a class="external" href="http://merganser.math.gvsu.edu/david/" target="_blank">David Austin</a> por hacer estos gráficos interactivos en javascript para el texto.</div></details> haciendo clic y arrastrando el punto rojo para ver cómo cambiar <span class="process-math">\(a\)</span> afecta el gráfico de <span class="process-math">\(y = f(x) + a\text{,}\)</span> que aparece en azul. El gráfico de <span class="process-math">\(y = f(x)\)</span> aparecerá en gris y permanecerá fijo.</div></div></details></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.1<span class="period">.</span></span><span class="space"> </span>Demostración interactiva de traslaciones verticales (solo en la versión HTML).</figcaption></figure><div class="para" id="subsec-changing-transformations-translation-6">En una traslación vertical, el gráfico de <span class="process-math">\(g\)</span> se encuentra por encima del gráfico de <span class="process-math">\(f\)</span> siempre que <span class="process-math">\(a \gt 0\text{,}\)</span> mientras que el gráfico de <span class="process-math">\(g\)</span> se encuentra por debajo del gráfico de <span class="process-math">\(f\)</span> siempre que <span class="process-math">\(a \lt 0\text{.}\)</span> En <a href="sec-changing-transformations.html#F-transformations-vert" class="xref" data-knowl="./knowl/xref/F-transformations-vert.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.2">Figure 1.8.2</a>, vemos la función original <span class="process-math">\(f(x) = |x|\)</span> junto con la transformación resultante <span class="process-math">\(g(x) = f(x)-3\text{,}\)</span> que es un desplazamiento vertical hacia abajo de <span class="process-math">\(3\)</span> unidades. Nota particularmente que cada punto en el gráfico original de <span class="process-math">\(f\)</span> se mueve <span class="process-math">\(3\)</span> unidades hacia abajo; a menudo indicamos esto con una flecha y etiquetando al menos un punto clave en cada gráfico.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-vert"><img src="external/images/transformations-vert.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.2<span class="period">.</span></span><span class="space"> </span>A vertical translation, <span class="process-math">\(g\text{,}\)</span> of the function <span class="process-math">\(y = f(x) = |x|\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-horiz"><img src="external/images/transformations-horiz.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.3<span class="period">.</span></span><span class="space"> </span>A horizontal translation, <span class="process-math">\(h\text{,}\)</span> of a different function <span class="process-math">\(y = f(x)\text{.}\)</span></figcaption></figure></div>
+</div></div>
+<div class="para" id="subsec-changing-transformations-translation-8">En <a href="sec-changing-transformations.html#F-transformations-horiz" class="xref" data-knowl="./knowl/xref/F-transformations-horiz.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.3">Figura 1.8.3</a>, vemos una traslación horizontal de la función original <span class="process-math">\(f\)</span> que desplaza su gráfica <span class="process-math">\(2\)</span> unidades a la derecha para formar la función <span class="process-math">\(h\text{.}\)</span> Observa que <span class="process-math">\(f\)</span> no es una función básica familiar; las transformaciones pueden aplicarse a cualquier función original que deseemos.</div>
+<div class="para logical" id="subsec-changing-transformations-translation-9">
+<div class="para">Desde un punto de vista algebraico, las traslaciones horizontales son un poco más complicadas que las verticales. Dado <span class="process-math">\(y = f(x)\text{,}\)</span> si definimos la función transformada <span class="process-math">\(y = h(x) = f(x-b)\text{,}\)</span> observa que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/F-transformations-horiz.html">
+\begin{equation*}
+h(x+b) = f( (x+b) - b ) = f(x)\text{.}
+\end{equation*}
+</div>
+<div class="para">Esto muestra que para una entrada de <span class="process-math">\(x+b\)</span> en <span class="process-math">\(h\text{,}\)</span> la salida de <span class="process-math">\(h\)</span> es la misma que la salida de <span class="process-math">\(f\)</span> que corresponde a una entrada de simplemente <span class="process-math">\(x\text{.}\)</span> Por lo tanto, en <a href="sec-changing-transformations.html#F-transformations-horiz" class="xref" data-knowl="./knowl/xref/F-transformations-horiz.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.3">Figure 1.8.3</a>, la fórmula para <span class="process-math">\(h\)</span> en términos de <span class="process-math">\(f\)</span> es <span class="process-math">\(h(x) = f(x-2)\text{,}\)</span> ya que una entrada de <span class="process-math">\(x+2\)</span> en <span class="process-math">\(h\)</span> resultará en la misma salida que una entrada de <span class="process-math">\(x\)</span> en <span class="process-math">\(f\text{.}\)</span> Por ejemplo, <span class="process-math">\(h(2) = f(0)\text{,}\)</span> lo cual se alinea con la gráfica de <span class="process-math">\(h\)</span> siendo un desplazamiento de la gráfica de <span class="process-math">\(f\)</span> a la derecha por <span class="process-math">\(2\)</span> unidades.</div>
+</div>
+<div class="para" id="subsec-changing-transformations-translation-10">Nuevamente, es instructivo ver los efectos de la traslación horizontal de manera dinámica.</div>
+<figure class="figure figure-like" id="F-transformations-horizontal-translation"><iframe id="I-transformations-horizontal-translation" width="450" height="563" src="I-transformations-horizontal-translation-if.html"></iframe><div class="instructions"><details id="I-transformations-horizontal-translation-3" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Instructions<span class="period">.</span></span></h4></summary><div class="solution-like knowl__content"><div class="para" id="I-transformations-horizontal-translation-3-1">Mueve el deslizador haciendo clic y arrastrando el punto rojo para ver cómo cambiar <span class="process-math">\(b\)</span> afecta la gráfica de <span class="process-math">\(y = f(x-b)\text{,}\)</span> que aparece en azul. La gráfica de <span class="process-math">\(y = f(x)\)</span> aparecerá en gris y permanecerá fija.</div></div></details></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.4<span class="period">.</span></span><span class="space"> </span>Demostración interactiva de traslaciones horizontales (solo en la versión HTML).</figcaption></figure><div class="para" id="subsec-changing-transformations-translation-12">En general, tenemos el siguiente principio general.</div>
+<article class="assemblage assemblage-like" id="asm-transformations-horizontal"><h4 class="heading"><span class="title">Horizontal Translation of a Function.</span></h4>
+<div class="para" id="asm-transformations-horizontal-3">Dada una función <span class="process-math">\(y = f(x)\)</span> y un número real <span class="process-math">\(b\text{,}\)</span> la función transformada <span class="process-math">\(y = h(x) = f(x-b)\)</span> es una <em class="emphasis">traslación horizontal</em> del gráfico de <span class="process-math">\(f\text{.}\)</span> Es decir, cada punto <span class="process-math">\((x,f(x))\)</span> en el gráfico de <span class="process-math">\(f\)</span> se desplaza horizontalmente al punto correspondiente <span class="process-math">\((x+b,f(x))\)</span> en el gráfico de <span class="process-math">\(g\text{.}\)</span>
+</div></article><div class="para" id="subsec-changing-transformations-translation-14">Enfatizamos que en la traslación horizontal <span class="process-math">\(h(x) = f(x-b)\text{,}\)</span> si <span class="process-math">\(b \gt 0\)</span> el gráfico de <span class="process-math">\(h\)</span> se encuentra <span class="process-math">\(b\)</span> unidades a la derecha de <span class="process-math">\(f\text{,}\)</span> mientras que si <span class="process-math">\(b \lt 0\text{,}\)</span> <span class="process-math">\(h\)</span> se encuentra <span class="process-math">\(b\)</span> unidades a la izquierda de <span class="process-math">\(f\text{.}\)</span>
+</div>
+<article class="activity project-like" id="act-changing-transformations-translations"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-changing-transformations-translations-1-1">Considera las funciones <span class="process-math">\(r\)</span> y <span class="process-math">\(s\)</span> dadas en <a href="sec-changing-transformations.html#F-act-transformations-r" class="xref" data-knowl="./knowl/xref/F-act-transformations-r.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.5">Figure 1.8.5</a> y <a href="sec-changing-transformations.html#F-act-transformations-s" class="xref" data-knowl="./knowl/xref/F-act-transformations-s.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.6">Figure 1.8.6</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-act-transformations-r"><img src="external/images/transformations-act-r-translation.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.5<span class="period">.</span></span><span class="space"> </span>Una función madre <span class="process-math">\(r\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-act-transformations-s"><img src="external/images/transformations-act-s-translation.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.6<span class="period">.</span></span><span class="space"> </span>Una función madre <span class="process-math">\(s\text{.}\)</span></figcaption></figure></div>
+</div></div> <div class="para logical" id="act-changing-transformations-translations-1-3"><ol class="lower-alpha">
+<li id="act-changing-transformations-translations-1-3-1-1"><div class="para" id="act-changing-transformations-translations-1-3-1-1-1">En los mismos ejes que la gráfica de <span class="process-math">\(y = r(x)\text{,}\)</span> dibuja los siguientes gráficos: <span class="process-math">\(y = g(x) = r(x) + 2\text{,}\)</span> <span class="process-math">\(y = h(x) = r(x+1)\text{,}\)</span> y <span class="process-math">\(y = f(x) = r(x+1) + 2\text{.}\)</span> Asegúrate de etiquetar el punto en cada una de <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> y <span class="process-math">\(f\)</span> que corresponde a <span class="process-math">\((-2,-1)\)</span> en la gráfica original de <span class="process-math">\(r\text{.}\)</span> Además, escribe una oración para explicar las transformaciones generales que han resultado en <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> y <span class="process-math">\(f\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-translations-1-3-1-2"><div class="para" id="act-changing-transformations-translations-1-3-1-2-1">En los mismos ejes que la gráfica de <span class="process-math">\(y = s(x)\text{,}\)</span> dibuja los siguientes gráficos: <span class="process-math">\(y = k(x) = s(x) - 1\text{,}\)</span> <span class="process-math">\(y = j(x) = s(x-2)\text{,}\)</span> y <span class="process-math">\(y = m(x) = s(x-2) - 1\text{.}\)</span> Asegúrate de etiquetar el punto en cada una de <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(j\text{,}\)</span> y <span class="process-math">\(m\)</span> que corresponde a <span class="process-math">\((-2,-3)\)</span> en la gráfica original de <span class="process-math">\(s\text{.}\)</span> Además, escribe una oración para explicar las transformaciones generales que han resultado en <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(j\text{,}\)</span> y <span class="process-math">\(m\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-translations-1-3-1-3"><div class="para" id="act-changing-transformations-translations-1-3-1-3-1">Ahora considera la función <span class="process-math">\(q(x) = x^2\text{.}\)</span> Determina una fórmula para la función que se da por <span class="process-math">\(p(x) = q(x+3) - 4\text{.}\)</span> ¿Cómo es <span class="process-math">\(p\)</span> una transformación de <span class="process-math">\(q\text{?}\)</span>
+</div></li>
+</ol></div></article></section><section class="subsection" id="subsec-changing-transformations-vert-stretch"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.2</span><span class="space"> </span><span class="title">Estiramientos verticales y reflexiones</span>
+</h3>
+<div class="para" id="subsec-changing-transformations-vert-stretch-2">Hasta ahora, hemos visto los posibles efectos de añadir un valor constante a la salida de una función (es decir, la nueva expresión <span class="process-math">\(f(x)+a\)</span> si se nos da <span class="process-math">\(f(x)\)</span>) y de añadir un valor constante a la entrada de una función (es decir, la nueva expresión <span class="process-math">\(f(x+b)\text{,}\)</span> dada <span class="process-math">\(f(x)\)</span>). Cada una de estas acciones resulta en una traslación del gráfico de la función (ya sea vertical u horizontalmente), pero dejando el gráfico igual en otros aspectos. A continuación, investigamos los efectos de multiplicar la salida de la función por una constante.</div>
+<article class="example example-like" id="ex-transformations-vert-stretch"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="ex-transformations-vert-stretch-1-1">Dada la función madre <span class="process-math">\(y = f(x)\)</span> representada en <a href="sec-changing-transformations.html#F-transformations-vert-stretch-1" class="xref" data-knowl="./knowl/xref/F-transformations-vert-stretch-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.8">Figure 1.8.8</a>, ¿cuáles son los efectos de la transformación <span class="process-math">\(y = v(x) = cf(x)\)</span> para varios valores de <span class="process-math">\(c\text{?}\)</span>
+</div>
+<div class="solutions"><details id="ex-transformations-vert-stretch-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-transformations-vert-stretch-2-1">Primero investigamos los efectos de <span class="process-math">\(c = 2\)</span> y <span class="process-math">\(c = \frac{1}{2}\text{.}\)</span> Para <span class="process-math">\(v(x) = 2f(x)\text{,}\)</span> el impacto algebraico de esta transformación es que cada salida de <span class="process-math">\(f\)</span> se multiplica por <span class="process-math">\(2\text{.}\)</span> Esto significa que la única salida que no cambia es cuando <span class="process-math">\(f(x) = 0\text{,}\)</span> mientras que cualquier otro punto en el gráfico de la función original <span class="process-math">\(f\)</span> se estirará verticalmente alejándose del eje <span class="process-math">\(x\)</span> por un factor de <span class="process-math">\(2\text{.}\)</span> Podemos ver esto en <a href="sec-changing-transformations.html#F-transformations-vert-stretch-1" class="xref" data-knowl="./knowl/xref/F-transformations-vert-stretch-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.8">Figure 1.8.8</a>, donde cada punto en el gráfico azul oscuro original se transforma en un punto correspondiente cuyo <span class="process-math">\(y\)</span>-coordenada es dos veces más grande, como se indica parcialmente por las flechas rojas.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-vert-stretch-1"><img src="external/images/transformations-vert-stretch-1.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.8<span class="period">.</span></span><span class="space"> </span>La función madre <span class="process-math">\(y = f(x)\)</span> junto con dos estiramientos verticales diferentes, <span class="process-math">\(v\)</span> y <span class="process-math">\(u\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-vert-stretch-2"><img src="external/images/transformations-vert-stretch-2.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.9<span class="period">.</span></span><span class="space"> </span>La función madre <span class="process-math">\(y = f(x)\)</span> junto con una reflexión vertical, <span class="process-math">\(z\text{,}\)</span> y un estiramiento correspondiente, <span class="process-math">\(w\text{.}\)</span></figcaption></figure></div>
+</div></div> <div class="para" id="ex-transformations-vert-stretch-2-3">En contraste, la transformación <span class="process-math">\(u(x) = \frac{1}{2}f(x)\)</span> se estira verticalmente por un factor de <span class="process-math">\(\frac{1}{2}\text{,}\)</span> lo que tiene el efecto de comprimir el gráfico de <span class="process-math">\(f\)</span> hacia el eje <span class="process-math">\(x\text{,}\)</span> ya que todas las salidas de la función <span class="process-math">\(f\)</span> se multiplican por <span class="process-math">\(\frac{1}{2}\text{.}\)</span> Por ejemplo, el punto <span class="process-math">\((0,-2)\)</span> en el gráfico de <span class="process-math">\(f\)</span> se transforma en el punto <span class="process-math">\((0,-1)\)</span> en el gráfico de <span class="process-math">\(u\text{,}\)</span> y otros se transforman como se indica con las flechas moradas.</div> <div class="para" id="ex-transformations-vert-stretch-2-4">Para considerar la situación donde <span class="process-math">\(c \lt 0\text{,}\)</span> primero consideramos el caso más simple donde <span class="process-math">\(c = -1\)</span> en la transformación <span class="process-math">\(z(x) = -f(x)\text{.}\)</span> Aquí el impacto de la transformación es multiplicar cada salida de la función madre <span class="process-math">\(f\)</span> por <span class="process-math">\(-1\text{;}\)</span> esto toma cualquier punto de la forma <span class="process-math">\((x,y)\)</span> y lo transforma en <span class="process-math">\((x,-y)\text{,}\)</span> lo que significa que estamos reflejando cada punto en el gráfico de la función original a través del eje <span class="process-math">\(x\)</span> para generar el gráfico de la función resultante. Esto se demuestra en <a href="sec-changing-transformations.html#F-transformations-vert-stretch-2" class="xref" data-knowl="./knowl/xref/F-transformations-vert-stretch-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.9">Figure 1.8.9</a> donde <span class="process-math">\(y = z(x)\)</span> es la reflexión de <span class="process-math">\(y = f(x)\)</span> a través del eje <span class="process-math">\(x\text{.}\)</span>
+</div> <div class="para" id="ex-transformations-vert-stretch-2-5">Finalmente, también investigamos el caso donde <span class="process-math">\(c = -2\text{,}\)</span> lo que genera <span class="process-math">\(y = w(x) = -2f(x)\text{.}\)</span> Aquí podemos pensar en <span class="process-math">\(-2\)</span> como <span class="process-math">\(-2 = 2(-1)\text{:}\)</span> el efecto de multiplicar por <span class="process-math">\(-1\)</span> primero refleja el gráfico de <span class="process-math">\(f\)</span> a través del eje <span class="process-math">\(x\)</span> (resultando en <span class="process-math">\(z\)</span>), y luego multiplicar por <span class="process-math">\(2\)</span> estira el gráfico de <span class="process-math">\(z\)</span> verticalmente para resultar en <span class="process-math">\(w\text{,}\)</span> como se muestra en <a href="sec-changing-transformations.html#F-transformations-vert-stretch-2" class="xref" data-knowl="./knowl/xref/F-transformations-vert-stretch-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.9">Figure 1.8.9</a>.</div>
+</div></details></div></article><div class="para" id="subsec-changing-transformations-vert-stretch-4">Al igual que con la traslación vertical y horizontal, es particularmente instructivo ver los efectos del escalado vertical de manera dinámica.</div>
+<figure class="figure figure-like" id="F-transformations-vertical-scaling"><iframe id="I-transformations-vertical-scaling" width="450" height="563" src="I-transformations-vertical-scaling-if.html"></iframe><div class="instructions"><details id="I-transformations-vertical-scaling-3" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Instructions<span class="period">.</span></span></h4></summary><div class="solution-like knowl__content"><div class="para" id="I-transformations-vertical-scaling-3-1">Mueve el control deslizante haciendo clic y arrastrando el punto rojo para ver cómo cambiar <span class="process-math">\(c\)</span> afecta el gráfico de <span class="process-math">\(y = cf(x)\text{,}\)</span> que se muestra en azul. El gráfico de <span class="process-math">\(y = f(x)\)</span> aparecerá en gris y permanecerá fijo.</div></div></details></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.10<span class="period">.</span></span><span class="space"> </span>Demostración interactiva del escalado vertical (solo en la versión HTML).</figcaption></figure><div class="para" id="subsec-changing-transformations-vert-stretch-6">Resumimos y generalizamos nuestras observaciones de <a href="sec-changing-transformations.html#ex-transformations-vert-stretch" class="xref" data-knowl="./knowl/xref/ex-transformations-vert-stretch.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.8.7">Example 1.8.7</a> y <a href="sec-changing-transformations.html#F-transformations-vertical-scaling" class="xref" data-knowl="./knowl/xref/F-transformations-vertical-scaling.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.10">Figure 1.8.10</a> de la siguiente manera.</div>
+<article class="assemblage assemblage-like" id="asm-transformations-vertical-stretch"><h4 class="heading"><span class="title">Escalado Vertical de una Función.</span></h4>
+<div class="para" id="asm-transformations-vertical-stretch-3">Dada una función <span class="process-math">\(y = f(x)\)</span> y un número real <span class="process-math">\(c \gt 0\text{,}\)</span> la función transformada <span class="process-math">\(y = v(x) = cf(x)\)</span> es un <em class="emphasis">estiramiento vertical</em> del gráfico de <span class="process-math">\(f\text{.}\)</span> Cada punto <span class="process-math">\((x,f(x))\)</span> en el gráfico de <span class="process-math">\(f\)</span> se estira verticalmente al punto correspondiente <span class="process-math">\((x,cf(x))\)</span> en el gráfico de <span class="process-math">\(v\text{.}\)</span> Si <span class="process-math">\(0 \lt c \lt 1\text{,}\)</span> el gráfico de <span class="process-math">\(v\)</span> es una compresión de <span class="process-math">\(f\)</span> hacia el eje <span class="process-math">\(x\text{;}\)</span> si <span class="process-math">\(c \gt 1\text{,}\)</span> el gráfico de <span class="process-math">\(v\)</span> es un estiramiento de <span class="process-math">\(f\)</span> alejándose del eje <span class="process-math">\(x\text{.}\)</span> Los puntos donde <span class="process-math">\(f(x) = 0\)</span> no se ven afectados por la transformación.</div>
+<div class="para" id="asm-transformations-vertical-stretch-4">Dada una función <span class="process-math">\(y = f(x)\)</span> y un número real <span class="process-math">\(c \lt 0\text{,}\)</span> la función transformada <span class="process-math">\(y = v(x) = cf(x)\)</span> es una reflexión del gráfico de <span class="process-math">\(f\)</span> a través del eje <span class="process-math">\(x\)</span> seguida de un estiramiento vertical por un factor de <span class="process-math">\(|c|\text{.}\)</span>
+</div></article><article class="activity project-like" id="act-changing-transformations-vert-stretch"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-changing-transformations-vert-stretch-1-1">Considera las funciones <span class="process-math">\(r\)</span> y <span class="process-math">\(s\)</span> dadas en <a href="sec-changing-transformations.html#F-act-transformations-r-2" class="xref" data-knowl="./knowl/xref/F-act-transformations-r-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.11">Figure 1.8.11</a> y <a href="sec-changing-transformations.html#F-act-transformations-s-2" class="xref" data-knowl="./knowl/xref/F-act-transformations-s-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.12">Figure 1.8.12</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-act-transformations-r-2"><img src="external/images/transformations-act-r-translation.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.11<span class="period">.</span></span><span class="space"> </span>Una función madre <span class="process-math">\(r\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-act-transformations-s-2"><img src="external/images/transformations-act-s-translation.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.12<span class="period">.</span></span><span class="space"> </span>Una función madre <span class="process-math">\(s\text{.}\)</span></figcaption></figure></div>
+</div></div> <div class="para logical" id="act-changing-transformations-vert-stretch-1-3"><ol class="lower-alpha">
+<li id="act-changing-transformations-vert-stretch-1-3-1-1"><div class="para" id="act-changing-transformations-vert-stretch-1-3-1-1-1">En los mismos ejes que el gráfico de <span class="process-math">\(y = r(x)\text{,}\)</span> dibuja los siguientes gráficos: <span class="process-math">\(y = g(x) = 3r(x)\)</span> y <span class="process-math">\(y = h(x) = \frac{1}{3}r(x)\text{.}\)</span> Asegúrate de etiquetar el punto en <span class="process-math">\(g\)</span> y <span class="process-math">\(h\)</span> que corresponde al punto <span class="process-math">\((-2,-1)\)</span> en el gráfico original de <span class="process-math">\(r\text{.}\)</span> Además, escribe una oración para explicar las transformaciones generales que han resultado en <span class="process-math">\(g\)</span> y <span class="process-math">\(h\)</span> a partir de <span class="process-math">\(r\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-vert-stretch-1-3-1-2"><div class="para" id="act-changing-transformations-vert-stretch-1-3-1-2-1">En los mismos ejes que el gráfico de <span class="process-math">\(y = s(x)\text{,}\)</span> dibuja los siguientes gráficos: <span class="process-math">\(y = k(x) = -s(x)\)</span> y <span class="process-math">\(y = j(x) = -\frac{1}{2}s(x)\text{.}\)</span> Asegúrate de etiquetar el punto en <span class="process-math">\(k\)</span> y <span class="process-math">\(j\)</span> que corresponde al punto <span class="process-math">\((-2,-3)\)</span> en el gráfico original de <span class="process-math">\(s\text{.}\)</span> Además, escribe una oración para explicar las transformaciones generales que han resultado en <span class="process-math">\(k\)</span> y <span class="process-math">\(j\)</span> a partir de <span class="process-math">\(s\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-vert-stretch-1-3-1-3">
+<div class="para" id="act-changing-transformations-vert-stretch-1-3-1-3-1">En las copias adicionales de las dos figuras a continuación, dibuja los gráficos de las siguientes funciones transformadas: <span class="process-math">\(y = m(x) = 2r(x+1)-1\)</span> (a la izquierda) y <span class="process-math">\(y = n(x) = \frac{1}{2}s(x-2)+2\text{.}\)</span> Como antes, asegúrate de etiquetar un punto clave en cada gráfico que corresponda al punto etiquetado en la función madre original.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="external/images/transformations-act-r-translation.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/images/transformations-act-s-translation.svg" role="img" class="contained"></div>
+</div></div>
+</li>
+<li id="act-changing-transformations-vert-stretch-1-3-1-4"><div class="para" id="act-changing-transformations-vert-stretch-1-3-1-4-1">Describe con palabras cómo la función <span class="process-math">\(y = m(x) = 2r(x+1)-1\)</span> es el resultado de tres transformaciones elementales de <span class="process-math">\(y = r(x)\text{.}\)</span> ¿Importa el orden en el que ocurren estas transformaciones? ¿Por qué o por qué no?</div></li>
+</ol></div></article></section><section class="subsection" id="subsec-changing-transformations-combining"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="space"> </span><span class="title">Combinando desplazamientos y estiramientos: por qué el orden a veces importa</span>
+</h3>
+<div class="para" id="subsec-changing-transformations-combining-2">En la pregunta final de <a href="sec-changing-transformations.html#act-changing-transformations-vert-stretch" class="xref" data-knowl="./knowl/xref/act-changing-transformations-vert-stretch.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.8.3">Activity 1.8.3</a>, consideramos la transformación <span class="process-math">\(y = m(x) = 2r(x+1)-1\)</span> de la función original <span class="process-math">\(r\text{.}\)</span> Hay tres transformaciones básicas diferentes involucradas: un desplazamiento vertical de <span class="process-math">\(1\)</span> unidad hacia abajo, un desplazamiento horizontal de <span class="process-math">\(1\)</span> unidad hacia la izquierda y un estiramiento vertical por un factor de <span class="process-math">\(2\text{.}\)</span> Para entender el orden en que se aplican estas transformaciones, es esencial recordar que una función es un <em class="emphasis">proceso</em> que convierte entradas en salidas.</div>
+<div class="para logical" id="subsec-changing-transformations-combining-3">
+<div class="para">Por la regla algebraica para <span class="process-math">\(m\text{,}\)</span> <span class="process-math">\(m(x) = 2r(x+1)-1\text{.}\)</span> En palabras, esto significa que dado un valor de entrada <span class="process-math">\(x\)</span> para <span class="process-math">\(m\text{,}\)</span> hacemos los siguientes procesos en este orden particular:</div>
+<ol class="decimal">
+<li id="subsec-changing-transformations-combining-3-5-1"><div class="para" id="subsec-changing-transformations-combining-3-5-1-1">sumar <span class="process-math">\(1\)</span> a <span class="process-math">\(x\)</span> y luego aplicar la función <span class="process-math">\(r\)</span> a la cantidad <span class="process-math">\(x+1\text{;}\)</span>
+</div></li>
+<li id="subsec-changing-transformations-combining-3-5-2"><div class="para" id="subsec-changing-transformations-combining-3-5-2-1">multiplicar el resultado de <span class="process-math">\(r(x+1)\)</span> por <span class="process-math">\(2\text{;}\)</span>
+</div></li>
+<li id="subsec-changing-transformations-combining-3-5-3"><div class="para" id="subsec-changing-transformations-combining-3-5-3-1">restar <span class="process-math">\(1\)</span> del resultado de <span class="process-math">\(2r(x+1)\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para">Estos tres pasos corresponden a tres transformaciones básicas: (1) desplazar la gráfica de <span class="process-math">\(r\)</span> a la izquierda por <span class="process-math">\(1\)</span> unidad; (2) estirar la gráfica resultante verticalmente por un factor de <span class="process-math">\(2\text{;}\)</span> (3) desplazar la gráfica resultante verticalmente por <span class="process-math">\(-1\)</span> unidades. Podemos ver el impacto gráfico de estos pasos algebraicos tomándolos uno a la vez. En <a href="sec-changing-transformations.html#F-transformations-combined-order-2" class="xref" data-knowl="./knowl/xref/F-transformations-combined-order-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.14">Figure 1.8.14</a>, vemos la función <span class="process-math">\(p\)</span> que resulta de un desplazamiento de <span class="process-math">\(1\)</span> unidad a la izquierda de la función principal en <a href="sec-changing-transformations.html#F-transformations-combined-order-1" class="xref" data-knowl="./knowl/xref/F-transformations-combined-order-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.13">Figure 1.8.13</a>. (Cada vez que tomamos un paso adicional, desatenderemos la función anterior haciéndola aparecer en un color más claro y con líneas discontinuas.)</div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-combined-order-1"><img src="external/images/transformations-combined-order-1.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.13<span class="period">.</span></span><span class="space"> </span>La función madre <span class="process-math">\(y = r(x)\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-combined-order-2"><img src="external/images/transformations-combined-order-2.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.14<span class="period">.</span></span><span class="space"> </span>La función madre <span class="process-math">\(y = r(x)\)</span> junto con el desplazamiento horizontal <span class="process-math">\(y = p(x) = r(x+1)\text{.}\)</span></figcaption></figure></div>
+</div></div>
+<div class="para" id="subsec-changing-transformations-combining-5">Continuando, ahora consideramos la función <span class="process-math">\(q(x) = 2p(x) = 2r(x+1)\text{,}\)</span> lo que resulta en un estiramiento vertical de <span class="process-math">\(p\)</span> alejándose del eje <span class="process-math">\(x\)</span> por un factor de <span class="process-math">\(2\text{,}\)</span> como se ve en <a href="sec-changing-transformations.html#F-transformations-combined-order-3" class="xref" data-knowl="./knowl/xref/F-transformations-combined-order-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.15">Figure 1.8.15</a>.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-combined-order-3"><img src="external/images/transformations-combined-order-3.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.15<span class="period">.</span></span><span class="space"> </span>La función <span class="process-math">\(y = q(x) = 2p(x) = 2r(x+1)\)</span> junto con las gráficas de <span class="process-math">\(p\)</span> y <span class="process-math">\(r\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-transformations-combined-order-4"><img src="external/images/transformations-combined-order-4.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.16<span class="period">.</span></span><span class="space"> </span>La función <span class="process-math">\(y = m(x) = q(x)-1 = 2r(x+1) - 1\)</span> junto con las gráficas de <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(p\)</span> y <span class="process-math">\(r\text{.}\)</span></figcaption></figure></div>
+</div></div>
+<div class="para" id="subsec-changing-transformations-combining-7">Finalmente, llegamos a <span class="process-math">\(y = m(x) = 2r(x+1) - 1\)</span> restando <span class="process-math">\(1\)</span> de <span class="process-math">\(q(x) = 2r(x+1)\text{;}\)</span> esto, por supuesto, es un desplazamiento vertical de <span class="process-math">\(-1\)</span> unidades, y produce la gráfica de <span class="process-math">\(m\)</span> mostrada en rojo en <a href="sec-changing-transformations.html#F-transformations-combined-order-4" class="xref" data-knowl="./knowl/xref/F-transformations-combined-order-4.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.16">Figure 1.8.16</a>. También podemos rastrear el punto <span class="process-math">\((2,-1)\)</span> en la función madre original: primero se mueve a la izquierda <span class="process-math">\(1\)</span> unidad a <span class="process-math">\((1,-1)\text{,}\)</span> luego se estira verticalmente por un factor de <span class="process-math">\(2\)</span> alejándose del eje <span class="process-math">\(x\)</span> a <span class="process-math">\((1,-2)\text{,}\)</span> y finalmente se desplaza <span class="process-math">\(1\)</span> unidad hacia abajo al punto <span class="process-math">\((1,-3)\text{,}\)</span> que vemos en la gráfica de <span class="process-math">\(m\text{.}\)</span>
+</div>
+<div class="para logical" id="subsec-changing-transformations-combining-8">
+<div class="para">Mientras que hay algunas transformaciones que se pueden ejecutar en cualquier orden (como una combinación de una traslación horizontal y una traslación vertical, como se ve en la parte (b) de <a href="sec-changing-transformations.html#act-changing-transformations-translations" class="xref" data-knowl="./knowl/xref/act-changing-transformations-translations.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.8.2">Activity 1.8.2</a>), en otras situaciones el orden importa. Por ejemplo, en nuestra discusión anterior, tenemos que aplicar el estiramiento vertical <em class="emphasis">antes</em> de aplicar el desplazamiento vertical. Algebraicamente, esto es porque</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-changing-transformations-translations.html">
+\begin{equation*}
+2r(x+1) - 1 \ne 2[r(x+1)-1]\text{.}
+\end{equation*}
+</div>
+<div class="para">La cantidad <span class="process-math">\(2r(x+1) - 1\)</span> multiplica la función <span class="process-math">\(r(x+1)\)</span> por <span class="process-math">\(2\)</span> primero (el estiramiento) y luego sigue el desplazamiento vertical; la cantidad <span class="process-math">\(2[r(x+1) - 1]\)</span> desplaza la función <span class="process-math">\(r(x+1)\)</span> hacia abajo <span class="process-math">\(1\)</span> unidad primero, y luego ejecuta un estiramiento vertical por un factor de <span class="process-math">\(2\text{.}\)</span> En el último escenario, el punto <span class="process-math">\((1,-1)\)</span> que se encuentra en <span class="process-math">\(r(x+1)\)</span> se transforma primero a <span class="process-math">\((1,-2)\)</span> y luego a <span class="process-math">\((1,-4)\text{,}\)</span> lo cual no es lo mismo que el punto <span class="process-math">\((1,-3)\)</span> que se encuentra en <span class="process-math">\(m(x) = 2r(x+1) - 1\text{.}\)</span>
+</div>
+</div>
+<article class="activity project-like" id="act-changing-transformations-combined"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-changing-transformations-combined-1-1">Considera las funciones <span class="process-math">\(f\)</span> y <span class="process-math">\(g\)</span> dadas en <a href="sec-changing-transformations.html#F-act-transformations-f" class="xref" data-knowl="./knowl/xref/F-act-transformations-f.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.17">Figure 1.8.17</a> y <a href="sec-changing-transformations.html#F-act-transformations-g" class="xref" data-knowl="./knowl/xref/F-act-transformations-g.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.18">Figure 1.8.18</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-act-transformations-f"><img src="external/images/transformations-act-f-combined.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.17<span class="period">.</span></span><span class="space"> </span>Una función madre <span class="process-math">\(f\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-act-transformations-g"><img src="external/images/transformations-act-g-combined.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.18<span class="period">.</span></span><span class="space"> </span>Una función madre <span class="process-math">\(g\text{.}\)</span></figcaption></figure></div>
+</div></div> <div class="para logical" id="act-changing-transformations-combined-1-3"><ol class="lower-alpha">
+<li id="act-changing-transformations-combined-1-3-1-1"><div class="para" id="act-changing-transformations-combined-1-3-1-1-1">Dibuja una gráfica precisa de la transformación <span class="process-math">\(y = p(x) = -\frac{1}{2}f(x-1)+2\text{.}\)</span> Escribe al menos una oración para explicar cómo desarrollaste la gráfica de <span class="process-math">\(p\text{,}\)</span> e identifica el punto en <span class="process-math">\(p\)</span> que corresponde al punto original <span class="process-math">\((-2,2)\)</span> en la gráfica de <span class="process-math">\(f\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-combined-1-3-1-2"><div class="para" id="act-changing-transformations-combined-1-3-1-2-1">Dibuja una gráfica precisa de la transformación <span class="process-math">\(y = q(x) = 2g(x+0.5)-0.75\text{.}\)</span> Escribe al menos una oración para explicar cómo desarrollaste la gráfica de <span class="process-math">\(q\text{,}\)</span> e identifica el punto en <span class="process-math">\(q\)</span> que corresponde al punto original <span class="process-math">\((1.5,1.5)\)</span> en la gráfica de <span class="process-math">\(g\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-combined-1-3-1-3"><div class="para" id="act-changing-transformations-combined-1-3-1-3-1">¿Es la función <span class="process-math">\(y = r(x) = \frac{1}{2}(-f(x-1) - 4)\)</span> la misma función que <span class="process-math">\(p\)</span> o diferente? ¿Por qué? Explica de dos maneras diferentes: discute las similitudes y diferencias algebraicas entre <span class="process-math">\(p\)</span> y <span class="process-math">\(r\text{,}\)</span> y también discute cómo cada una es una transformación de <span class="process-math">\(f\text{.}\)</span>
+</div></li>
+<li id="act-changing-transformations-combined-1-3-1-4">
+<div class="para" id="act-changing-transformations-combined-1-3-1-4-1">Encuentra una fórmula para una función <span class="process-math">\(y = s(x)\)</span> (en términos de <span class="process-math">\(g\)</span>) que represente esta transformación de <span class="process-math">\(g\text{:}\)</span> un desplazamiento horizontal de <span class="process-math">\(1.25\)</span> unidades a la izquierda, seguido de una reflexión a través del eje <span class="process-math">\(x\)</span> y un estiramiento vertical por un factor de <span class="process-math">\(2.5\)</span> unidades, seguido de un desplazamiento vertical de <span class="process-math">\(1.75\)</span> unidades. Dibuja una gráfica precisa y etiquetada de <span class="process-math">\(s\)</span> en los siguientes ejes junto con la función madre dada <span class="process-math">\(g\text{.}\)</span>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/transformations-act-g-combined.svg" role="img" class="contained"></div></div></div>
+</li>
+</ol></div></article></section><section class="subsection" id="subsec-changing-transformations-summary"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.4</span><span class="space"> </span><span class="title">Resumen</span>
+</h3>
+<div class="para logical" id="subsec-changing-transformations-summary-2"><ul class="disc">
+<li id="subsec-changing-transformations-summary-2-1-1"><div class="para" id="subsec-changing-transformations-summary-2-1-1-1">El gráfico de <span class="process-math">\(y = g(x) = af(x-b) + c\)</span> está relacionado con el gráfico de <span class="process-math">\(y = f(x)\)</span> por una secuencia de transformaciones. Primero, hay un desplazamiento horizontal de <span class="process-math">\(|b|\)</span> unidades a la derecha (<span class="process-math">\(b \gt 0\)</span>) o a la izquierda (<span class="process-math">\(b \lt 0\)</span>). Luego, hay un estiramiento vertical por un factor de <span class="process-math">\(|a|\)</span> (junto con una reflexión a través de <span class="process-math">\(y = 0\)</span> en el caso donde <span class="process-math">\(a \lt 0\)</span>). Finalmente, hay un desplazamiento vertical de <span class="process-math">\(c\)</span> unidades.</div></li>
+<li id="subsec-changing-transformations-summary-2-1-2"><div class="para" id="subsec-changing-transformations-summary-2-1-2-1">Una transformación de una función dada <span class="process-math">\(f\)</span> es un proceso por el cual el gráfico puede ser desplazado o estirado para generar una nueva función relacionada con la misma forma fundamental. En esta sección consideramos cuatro formas diferentes en que esto puede ocurrir: a través de una traslación horizontal (desplazamiento), a través de una reflexión a través de la línea <span class="process-math">\(y = 0\)</span> (el eje <span class="process-math">\(x\)</span>), a través de un escalado vertical (estiramiento) que multiplica cada salida de una función por la misma constante, y a través de una traslación vertical (desplazamiento). Cada uno de estos procesos individuales es en sí mismo una transformación, y pueden combinarse de varias maneras para crear transformaciones más complicadas.</div></li>
+</ul></div></section><section class="exercises" id="ez-changing-transformations"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.8.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="ez-changing-transformations-WW1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div id="webwork-50" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="50" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setAlgebra19FunTransforms/p1.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-50')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-50-1-1-1">The graph of <span class="process-math">\(y= x^2\)</span> is given below:</div> <div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-50-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-50-1-1-3">Find a formula for each of the transformations whose graphs are given below.</div> <div class="para" id="extracted-webwork-50-1-1-4">a)</div> <div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-50-image-2.png" class="contained"></div> <div class="para" id="extracted-webwork-50-1-1-6">
+<span class="process-math">\(y =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>
+</div> <div class="para" id="extracted-webwork-50-1-1-7">b)</div> <div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-50-image-3.png" class="contained"></div> <div class="para" id="extracted-webwork-50-1-1-9">
+<span class="process-math">\(y =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-transformations-WW2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div id="webwork-51" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="51" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setAlgebra19FunTransforms/ptransf2.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-51')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-51-1-1-1">
+<div class="para">To obtain a new graph, stretch the graph of a function <span class="process-math">\(f(x)\)</span> vertically by a factor of 6.  Then shift the new graph 4 units to the right and 2 units up.  The result is the graph of a function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(x) = A f(x+B) +C
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\)</span> are certain numbers.  What are <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{?}\)</span>
+</div>
+</div> <div class="para" id="extracted-webwork-51-1-1-2">
+<span class="process-math">\(A =\)</span> <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span>,  <span class="process-math">\(B =\)</span> <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span>, <span class="process-math">\(C =\)</span> <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-transformations-WW3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div id="webwork-52" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="52" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setAlgebra20QuadraticFun/lh3-1_1-3.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-52')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-52-1-1-1">
+<em class="alert">Attention:</em> you are allowed to submit your answer two times only for this problem!</div> <div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-52-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-52-1-1-3">Identify the graphs A (blue), B (red) and C (green):</div> <div class="para" id="extracted-webwork-52-1-1-4">
+<span class="fillin underline" role="img" aria-label="4-character blank" style="width: 1.818181818181818em;"></span> is the graph of the function <span class="process-math">\(f(x)=(x-6)^2\)</span>
+</div> <div class="para" id="extracted-webwork-52-1-1-5">
+<span class="fillin underline" role="img" aria-label="4-character blank" style="width: 1.818181818181818em;"></span> is the graph of the function <span class="process-math">\(g(x)=(x+3)^2\)</span>
+</div> <div class="para" id="extracted-webwork-52-1-1-6">
+<span class="fillin underline" role="img" aria-label="4-character blank" style="width: 1.818181818181818em;"></span> is the graph of the function <span class="process-math">\(h(x)=x^2-5\)</span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-transformations-WW4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div id="webwork-53" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="53" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap1Sec3/Q05.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-53')">Activate</button></div>
+<div class="problem-contents">
+<div class="image-box" style="width: 41.6666666666667%; margin-left: 29.1666666666667%; margin-right: 29.1666666666667%;"><img src="generated/webwork/images/webwork-53-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-53-1-1-2">The figure above is the graph of the function <span class="process-math">\(m(t)\text{.}\)</span> Let <span class="process-math">\(n(t)=m(t)+2\text{,}\)</span> <span class="process-math">\(k(t)=m(t+1.5)\text{,}\)</span><span class="process-math">\(w(t)=m(t-0.5)-2.5\)</span> and <span class="process-math">\(p(t)=m(t-1)\text{.}\)</span> Find the values of the following:</div> <div class="para" id="extracted-webwork-53-1-1-3">
+<em class="alert">1.</em> <span class="process-math">\(n(-3)\)</span>= <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</div> <div class="para" id="extracted-webwork-53-1-1-4">
+<em class="alert">2.</em> <span class="process-math">\(n(1)\)</span>= <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</div> <div class="para" id="extracted-webwork-53-1-1-5">
+<em class="alert">3.</em> <span class="process-math">\(k(2)\)</span>= <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</div> <div class="para" id="extracted-webwork-53-1-1-6">
+<em class="alert">4.</em> <span class="process-math">\(w(1.5)\)</span>= <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</div> <div class="para" id="extracted-webwork-53-1-1-7">
+<em class="alert">5.</em> <span class="process-math">\(w(-1.5)\)</span>= <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</div> <div class="para" id="extracted-webwork-53-1-1-8">
+<em class="alert">6.</em> <span class="process-math">\(p(2)\)</span>= <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-transformations-WW6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div id="webwork-54" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="54" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/LoyolaChicago/Precalc/Chap5Sec1/Q09.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-54')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-54-1-1-1">The graph of <span class="process-math">\(f(x)\)</span> contains the point <span class="process-math">\((9, 4)\text{.}\)</span>  What point must be on each of the following transformed graphs?  Enter points as <span class="process-math">\((a,b)\)</span> including the parentheses.</div> <div class="para" id="extracted-webwork-54-1-1-2">(a) The graph of <span class="process-math">\(f(x - 6 )\)</span> must contain the point <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div> <div class="para" id="extracted-webwork-54-1-1-3">(b) The graph of <span class="process-math">\(f(x) - 5\)</span> must contain the point <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div> <div class="para" id="extracted-webwork-54-1-1-4">(c) The graph of <span class="process-math">\(f(x + 2 ) + 7\)</span> must contain the point <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-transformations-aroc"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="ez-changing-transformations-aroc-1-1">Let <span class="process-math">\(f(x) = x^2\text{.}\)</span>
+</div> <div class="para logical" id="ez-changing-transformations-aroc-1-2"><ol class="lower-alpha">
+<li id="ez-changing-transformations-aroc-1-2-1-1"><div class="para" id="ez-changing-transformations-aroc-1-2-1-1-1">Let <span class="process-math">\(g(x) = f(x) + 5\text{.}\)</span>  Determine <span class="process-math">\(AV_{[-3,-1]}\)</span> and <span class="process-math">\(AV_{[2,5]}\)</span> for both <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span>  What do you observe?  Why does this phenomenon occur?</div></li>
+<li id="ez-changing-transformations-aroc-1-2-1-2"><div class="para" id="ez-changing-transformations-aroc-1-2-1-2-1">Let <span class="process-math">\(h(x) = f(x-2)\text{.}\)</span>  For <span class="process-math">\(f\text{,}\)</span> recall that you determined <span class="process-math">\(AV_{[-3,-1]}\)</span> and <span class="process-math">\(AV_{[2,5]}\)</span> in (a).  In addition, determine <span class="process-math">\(AV_{[-1,1]}\)</span> and <span class="process-math">\(AV_{[4,7]}\)</span> for <span class="process-math">\(h\text{.}\)</span>  What do you observe?  Why does this phenomenon occur?</div></li>
+<li id="ez-changing-transformations-aroc-1-2-1-3"><div class="para" id="ez-changing-transformations-aroc-1-2-1-3-1">Let <span class="process-math">\(k(x) = 3f(x)\text{.}\)</span>  Determine <span class="process-math">\(AV_{[-3,-1]}\)</span> and <span class="process-math">\(AV_{[2,5]}\)</span> for <span class="process-math">\(k\text{,}\)</span> and compare the results to your earlier computations of <span class="process-math">\(AV_{[-3,-1]}\)</span> and <span class="process-math">\(AV_{[2,5]}\)</span> for <span class="process-math">\(f\text{.}\)</span>  What do you observe?  Why does this phenomenon occur?</div></li>
+<li id="ez-changing-transformations-aroc-1-2-1-4"><div class="para" id="ez-changing-transformations-aroc-1-2-1-4-1">Finally, let <span class="process-math">\(m(x) = 3f(x-2) + 5\text{.}\)</span>  Without doing any computations, what do you think will be true about the relationship between <span class="process-math">\(AV_{[-3,-1]}\)</span> for <span class="process-math">\(f\)</span> and <span class="process-math">\(AV_{[-1,1]}\)</span> for <span class="process-math">\(m\text{?}\)</span>  Why?  After making your conjecture, execute appropriate computations to see if your intuition is correct.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="ez-changing-transformations-linear"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="ez-changing-transformations-linear-1-1">Consider the parent function <span class="process-math">\(y = f(x) = x\text{.}\)</span>
+</div> <div class="para logical" id="ez-changing-transformations-linear-1-2"><ol class="lower-alpha">
+<li id="ez-changing-transformations-linear-1-2-1-1"><div class="para" id="ez-changing-transformations-linear-1-2-1-1-1">Consider the linear function in point-slope form given by <span class="process-math">\(y = L(x) = -4(x-3) + 5\text{.}\)</span>  What is the slope of this line?  What is the most obvious point that lies on the line?</div></li>
+<li id="ez-changing-transformations-linear-1-2-1-2"><div class="para" id="ez-changing-transformations-linear-1-2-1-2-1">How can the function <span class="process-math">\(L\)</span> given in (a) be viewed as a transformation of the parent function <span class="process-math">\(f\text{?}\)</span>  Explain the roles of <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(-4\text{,}\)</span> and <span class="process-math">\(5\text{,}\)</span> respectively.</div></li>
+<li id="ez-changing-transformations-linear-1-2-1-3"><div class="para" id="ez-changing-transformations-linear-1-2-1-3-1">Explain why any non-vertical line of the form <span class="process-math">\(P(x) = m(x-x_0) + y_0\)</span> can be thought of as a transformation of the parent function <span class="process-math">\(f(x) = x\text{.}\)</span>  Specifically discuss the transformation(s) involved.</div></li>
+<li id="ez-changing-transformations-linear-1-2-1-4"><div class="para" id="ez-changing-transformations-linear-1-2-1-4-1">Find a formula for the transformation of <span class="process-math">\(f(x) = x\)</span> that corresponds to a horizontal shift of <span class="process-math">\(7\)</span> units left, a reflection across <span class="process-math">\(y = 0\)</span> and vertical stretch of <span class="process-math">\(3\)</span> units away from the <span class="process-math">\(x\)</span>-axis, and a vertical shift of <span class="process-math">\(-11\)</span> units.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="ez-changing-transformations-horiz-scaling"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="ez-changing-transformations-horiz-scaling-1-1">We have explored the effects of adding a constant to the output of a function, <span class="process-math">\(y = f(x) + a\text{,}\)</span> adding a constant to the input, <span class="process-math">\(y = f(x+a)\text{,}\)</span> and multiplying the output of a function by a constant, <span class="process-math">\(y = af(x)\text{.}\)</span>  There is one remaining natural transformation to explore:  multiplying the input to a function by a constant.  In this exercise, we consider the effects of the constant <span class="process-math">\(a\)</span> in transforming a parent function <span class="process-math">\(f\)</span> by the rule <span class="process-math">\(y = f(ax)\text{.}\)</span>
+</div> <div class="para" id="ez-changing-transformations-horiz-scaling-1-2">Let <span class="process-math">\(f(x) = (x-2)^2 + 1\text{.}\)</span>
+</div> <div class="para logical" id="ez-changing-transformations-horiz-scaling-1-3"><ol class="lower-alpha">
+<li id="ez-changing-transformations-horiz-scaling-1-3-1-1">
+<div class="para" id="ez-changing-transformations-horiz-scaling-1-3-1-1-1">Let <span class="process-math">\(g(x) = f(4x)\text{,}\)</span> <span class="process-math">\(h(x) = f(2x)\text{,}\)</span> <span class="process-math">\(k(x) = f(0.5x)\text{,}\)</span> and <span class="process-math">\(m(x) = f(0.25x)\text{.}\)</span>  Use <em class="emphasis">Desmos</em> to plot these functions.  Then, sketch and label <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(m\)</span> on the provided axes in <a href="sec-changing-transformations.html#F-ez-transformations-blank-axes" class="xref" data-knowl="./knowl/xref/F-ez-transformations-blank-axes.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.19">Figure 1.8.19</a> along with the graph of <span class="process-math">\(f\text{.}\)</span>  For each of the functions, label and identify its vertex, its <span class="process-math">\(y\)</span>-intercept, and its <span class="process-math">\(x\)</span>-intercepts.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-ez-transformations-blank-axes"><img src="external/images/functions-y-x-blank-axes.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.19<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(m\)</span> in part (a).</figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-ez-transformations-blank-axes-2"><img src="external/images/functions-y-x-blank-axes-centered-low.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.20<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(r\text{,}\)</span> and <span class="process-math">\(s\)</span> from parts (c) and (d).</figcaption></figure></div>
+</div></div>
+</li>
+<li id="ez-changing-transformations-horiz-scaling-1-3-1-2"><div class="para" id="ez-changing-transformations-horiz-scaling-1-3-1-2-1">Based on your work in (a), how would you describe the effect(s) of the transformation <span class="process-math">\(y = f(ax)\)</span> where <span class="process-math">\(a \gt 0\text{?}\)</span>  What is the impact on the graph of <span class="process-math">\(f\text{?}\)</span>  Are any parts of the graph of <span class="process-math">\(f\)</span> unchanged?</div></li>
+<li id="ez-changing-transformations-horiz-scaling-1-3-1-3"><div class="para" id="ez-changing-transformations-horiz-scaling-1-3-1-3-1">Now consider the function <span class="process-math">\(r(x) = f(-x)\text{.}\)</span>  Observe that <span class="process-math">\(r(-1) = f(1)\text{,}\)</span> <span class="process-math">\(r(2) = f(-2)\text{,}\)</span> and so on.  Without using a graphing utility, how do you expect the graph of <span class="process-math">\(y = r(x)\)</span> to compare to the graph of <span class="process-math">\(y = f(x)\text{?}\)</span>  Explain.  Then test your conjecture by using a graphing utility and record the plots of <span class="process-math">\(f\)</span> and <span class="process-math">\(r\)</span> on the axes in <a href="sec-changing-transformations.html#F-ez-transformations-blank-axes-2" class="xref" data-knowl="./knowl/xref/F-ez-transformations-blank-axes-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.20">Figure 1.8.20</a>.</div></li>
+<li id="ez-changing-transformations-horiz-scaling-1-3-1-4"><div class="para" id="ez-changing-transformations-horiz-scaling-1-3-1-4-1">How do you expect the graph of <span class="process-math">\(s(x) = f(-2x)\)</span> to appear?  Why?  More generally, how does the graph of <span class="process-math">\(y = f(ax)\)</span> compare to the graph of <span class="process-math">\(y = f(x)\)</span> in the situation where <span class="process-math">\(a \lt 0\text{?}\)</span>
+</div></li>
+</ol></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-changing-inverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-changing-combining.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

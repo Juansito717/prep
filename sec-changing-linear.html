@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>APC Funciones Lineales</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://activecalculus.org/prelude/external/images/APC-cover.jpg">
+<meta property="book:title" content="Preludio Activo al Cálculo">
+<meta property="book:author" content="Matthew Boelkins">
+<link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://activecalculus.org"><img src="external/images/APC-cover.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Preludio Activo al Cálculo</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-changing-aroc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C-changing.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-changing-quadratic.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Contribuciones</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="frontmatter-4.html#frontmatter-4-4" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-our-goals.html" class="internal"><span class="title">Nuestros Objetivos</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Características del Texto</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-students.html" class="internal"><span class="title">Estudiantes!  Lean esto!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructores!  Lean esto!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="C-changing.html" class="internal"><span class="codenumber">1</span> <span class="title">Relacionando Cantidades que Cambian</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-in-tandem.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Cambiando en Simultáneo</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#subsec-changing-tandem-graphs" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Usando Gráficos para Representar Relaciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#subsec-changing-algebra-perspective" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Usando el Álgebra para Agregar Perspectiva</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#subsec-changing-tandem-summary" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-in-tandem.html#ez-changing-tandem" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-functions-models.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Funciones:  Modelando Relaciones</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-functions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-models" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Comparando modelos y funciones abstractas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-is-it" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Determinando si una relación es una función o no</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-functions-models.html#subsec-changing-functions-models-summary" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-functions-models.html#ez-changing-functions" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-aroc.html" class="internal"><span class="codenumber">1.3</span> <span class="title">La Tasa de Cambio Promedio de una Función</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-aroc.html#subsec-changing-aroc-defn" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Definiendo e interpretando la tasa de cambio promedio de una función</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-aroc.html#subsec-changing-aroc-behavior-trends" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Cómo la tasa de cambio promedio indica tendencias en la función</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-aroc.html#subsec-changing-aroc-summary" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-aroc.html#ez-changing-aroc" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-changing-linear.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Funciones Lineales</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-linear.html#subsec-changing-linear-properties" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Propiedades de las funciones lineales</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-linear.html#subsec-changing-linear-context" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Interpretación de funciones lineales en contexto</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-linear.html#subsec-changing-linear-summary" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-linear.html#ez-changing-linear" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-quadratic.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Funciones Cuadráticas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#subsec-changing-quadratic-properties" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Propiedades de las Funciones Cuadráticas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#subsec-changing-quadratic-falling-gravity" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Modelando objetos en caída</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#subsec-changing-quadratic-change-patterns" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Cómo cambian las funciones cuadráticas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-quadratic.html#sec-changing-quadratic-7" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-quadratic.html#ez-changing-quadratic" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-composite.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Funciones Compuestas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-composing" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Componiendo dos funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-in-context" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Composing functions in context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-aroc" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Composición de funciones y tasa de cambio promedio</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-composite.html#subsec-changing-composite-summary" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-composite.html#ez-changing-composite" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-inverse.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Funciones Inversas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#changing-inverse-definition" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Cuando una función tiene una función inversa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#changing-inverse-does-it" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Determinando si una función tiene una función inversa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#changing-inverse-properties" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Propiedades de una función inversa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-inverse.html#subsec-changing-inverse-summary" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-inverse.html#ez-changing-inverse" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-transformations.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Transformación de Funciones</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-translation" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Traslación de Funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-vert-stretch" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Estiramientos verticales y reflexiones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-combining" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Combinando desplazamientos y estiramientos: por qué el orden a veces importa</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-transformations.html#subsec-changing-transformations-summary" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-transformations.html#ez-changing-transformations" class="internal"><span class="codenumber">1.8.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-changing-combining.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Combinando Funciones</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-functions-algebra" class="internal"><span class="codenumber">1.9.1</span> <span class="title">Aritmética con funciones</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-functions-context" class="internal"><span class="codenumber">1.9.2</span> <span class="title">Combinando funciones en contexto</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-piecewise" class="internal"><span class="codenumber">1.9.3</span> <span class="title">Funciones por tramos</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-changing-combining.html#subsec-changing-combining-summary" class="internal"><span class="codenumber">1.9.4</span> <span class="title">Resumen</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-changing-combining.html#ez-changing-combining" class="internal"><span class="codenumber">1.9.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-circular.html" class="internal"><span class="codenumber">2</span> <span class="title">Circular Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-traversing.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Traversing Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-functions" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Circular Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-function-properties" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Properties of Circular Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-aroc" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The average rate of change of a circular function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-traversing.html#subsec-circular-traversing-summary" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-traversing.html#ez-circular-traversing" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-unit-circle.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Unit Circle</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#subsec-circular-unit-circle-radians-degrees" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Radians and degrees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#subsec-circular-unit-circle-special-points" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Special points on the unit circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#subsec-circular-unit-circle-non-unit-circles" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Special points and arc length in non-unit circles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#sec-circular-unit-circle-7" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-unit-circle.html#ez-circular-unit-circle" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-sine-cosine.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Sine and Cosine Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-defn" class="internal"><span class="codenumber">2.3.1</span> <span class="title">The definition of the sine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-cosine-defn" class="internal"><span class="codenumber">2.3.2</span> <span class="title">The definition of the cosine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-cosine-properties" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Properties of the sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-cosine-computing" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Using computing technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#subsec-circular-sine-summary" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-sine-cosine.html#ez-circular-sine-cosine" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circular-sinusoidal.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Sinusoidal Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#subsec-circular-sinusoidal-shifts-stretches" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Shifts and vertical stretches of the sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#subsec-circular-sinusoidal-horiz-scaling" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Horizontal scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#sec-circular-sinusoidal-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Circular functions with different periods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#subsec-circular-sinusoidal-summary" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circular-sinusoidal.html#ez-circular-sinusoidal" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-exp.html" class="internal"><span class="codenumber">3</span> <span class="title">Exponential and Logarithmic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-growth.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#subsec-exp-growth-functions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Exponential functions of form <span class="process-math">\(f(t) = ab^t\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#subsec-exp-growth-find-a-b" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Determining formulas for exponential functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#subsec-exp-growth-trends" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Trends in the behavior of exponential functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-growth.html#sec-exp-growth-7" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-growth.html#ez-exp-growth" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-modeling.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Modeling with exponential functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-long-term" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Long-term behavior of exponential functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-transformations" class="internal"><span class="codenumber">3.2.2</span> <span class="title">The role of <span class="process-math">\(c\)</span> in <span class="process-math">\(g(t) = ab^t + c\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-temperature" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Modeling temperature data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-modeling.html#subsec-exp-modeling-summary" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-modeling.html#ez-exp-modeling" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-e.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The special number <span class="process-math">\(e\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-e.html#subsec-exp-e-definition" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The natural base <span class="process-math">\(e\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-e.html#subsec-exp-e-inverse" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Why any exponential function can be written in terms of <span class="process-math">\(e\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-e.html#subsec-exp-e-summary" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-e.html#ez-exp-e" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-log.html" class="internal"><span class="codenumber">3.4</span> <span class="title">What a logarithm is</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#subsec-exp-log-base-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">The base-<span class="process-math">\(10\)</span> logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#subsec-exp-log-base-e" class="internal"><span class="codenumber">3.4.2</span> <span class="title">The natural logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#sec-exp-log-6" class="internal"><span class="codenumber">3.4.3</span> <span class="title"><span class="process-math">\(f(t) = b^t\)</span> revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log.html#subsec-exp-log-summary" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-log.html#ez-exp-log" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-log-properties.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Properties and applications of logarithmic functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-key-properties" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Key properties of logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-properties-graph" class="internal"><span class="codenumber">3.5.2</span> <span class="title">The graph of the natural logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-properties-applications" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Putting logarithms to work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-log-properties.html#subsec-exp-log-properties-summary" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-log-properties.html#ez-exp-log-properties" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exp-temp-pop.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Modeling temperature and population</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#subsec-exp-temp-pop-Newton" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Newton’s Law of Cooling revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#subsec-exp-temp-pop-logistic" class="internal"><span class="codenumber">3.6.2</span> <span class="title">A more realistic model for population growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#subsec-exp-temp-pop-summary" class="internal"><span class="codenumber">3.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-exp-temp-pop.html#ez-exp-temp-pop" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-trig.html" class="internal"><span class="codenumber">4</span> <span class="title">Trigonometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-right.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Right triangles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#subsec-trig-right-similar" class="internal"><span class="codenumber">4.1.1</span> <span class="title">The geometry of triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#subsec-trig-right-ratios" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Ratios of sides in right triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#subsec-trig-right-ratios-sin-cos" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Using a ratio involving sine and cosine</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-right.html#sec-trig-right-7" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-right.html#ez-trig-right" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-tangent.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Tangent Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-two-persp" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Two perspectives on the tangent function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-properties" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Properties of the tangent function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-applications" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Using the tangent function in right triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-tangent.html#subsec-trig-tangent-summary" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-tangent.html#ez-trig-tangent" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-inverse.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Inverses of trigonometric functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-arccos" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The arccosine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-arcsin" class="internal"><span class="codenumber">4.3.2</span> <span class="title">The arcsine function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-arctan" class="internal"><span class="codenumber">4.3.3</span> <span class="title">The arctangent function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-inverse.html#subsec-trig-inverse-summary" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-inverse.html#ez-trig-inverse" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-finding-angles.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Finding Angles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#subsec-trig-finding-angles-evaluating" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Evaluating inverse trigonometric functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#subsec-trig-finding-angles-applied" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Finding angles in applied contexts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#subsec-trig-finding-angles-summary" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-finding-angles.html#ez-trig-finding-angles" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trig-other.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Other Trigonometric Functions and Identities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-triangles" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Ratios in right triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-properties" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Properties of the secant, cosecant, and cotangent functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-identities" class="internal"><span class="codenumber">4.5.3</span> <span class="title">A few important identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trig-other.html#subsec-trig-other-summary" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-trig-other.html#ez-trig-other" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-poly.html" class="internal"><span class="codenumber">5</span> <span class="title">Polynomial and Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-infty.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Infinity, limits, and power functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-infty.html#subsec-poly-infty-limit" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Limit notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-infty.html#subsec-poly-infty-power" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Power functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-infty.html#subsec-poly-infty-summary" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-infty.html#ez-poly-infty" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-polynomials.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Polynomials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-results" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Key results about polynomial functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-zeros-signs" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using zeros and signs to understand polynomial behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-multiplicity" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Multiplicity of polynomial zeros</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomials.html#subsec-poly-polynomials-summary" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-polynomials.html#ez-poly-polynomials" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-polynomial-applications.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Modeling with polynomial functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#subsec-poly-polynomial-applications-volume" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Volume, surface area, and constraints</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#subsec-poly-polynomial-applications-other" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Other applications of polynomial functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#subsec-poly-polynomial-applications-summary" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-polynomial-applications.html#ez-poly-polynomial-applications" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-rational.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-long-term" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long-range behavior of rational functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-domain" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The domain of a rational function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-applications" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Applications of rational functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational.html#subsec-poly-rational-summary" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-rational.html#ez-poly-rational" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-poly-rational-features.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Key features of rational functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational-features.html#subsec-poly-rational-features-hole" class="internal"><span class="codenumber">5.5.1</span> <span class="title">When a rational function has a “hole”</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational-features.html#subsec-poly-rational-features-signs" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Sign charts and finding formulas for rational functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-poly-rational-features.html#subsec-poly-rational-features-summary" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-poly-rational-features.html#ez-poly-rational-features" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-changing-linear"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Funciones Lineales</span>
+</h2>
+<article class="objectives goal-like" id="sec-changing-linear-2"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="sec-changing-linear-2-1-1"><div class="para" id="sec-changing-linear-2-1-1-1">¿Qué comportamiento de una función hace que su gráfica sea una línea recta?</div></li>
+<li id="sec-changing-linear-2-1-2"><div class="para" id="sec-changing-linear-2-1-2-1">Para una función cuya gráfica es una línea recta, ¿qué estructura tiene su fórmula?</div></li>
+<li id="sec-changing-linear-2-1-3"><div class="para" id="sec-changing-linear-2-1-3-1">¿Cómo podemos interpretar la pendiente de una función lineal en contextos aplicados?</div></li>
+</ul></article><section class="introduction" id="sec-changing-linear-3"><div class="para" id="sec-changing-linear-3-1">Las funciones cuyas gráficas son líneas rectas son tanto las más simples como las más importantes en matemáticas. Las líneas a menudo modelan fenómenos importantes, y aun cuando no modelen directamente fenómenos, las líneas a menudo pueden aproximar otras funciones que sí lo hacen. Si la gráfica de una función es una línea recta o no, está directamente relacionado con su tasa de cambio promedio.</div> <article class="exploration project-like" id="PA-changing-linear-3-ex"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="PA-changing-linear-3-ex-1-1"><ol class="lower-alpha">
+<li id="PA-changing-linear-3-ex-1-1-1-1"><div class="para" id="PA-changing-linear-3-ex-1-1-1-1-1">Sea <span class="process-math">\(y = f(x) = 7 - 3x\text{.}\)</span> Determina <span class="process-math">\(AV_{[-3,-1]}\text{,}\)</span> <span class="process-math">\(AV_{[2,5]}\text{,}\)</span> y <span class="process-math">\(AV_{[4,10]}\)</span> para la función <span class="process-math">\(f\text{.}\)</span>
+</div></li>
+<li id="PA-changing-linear-3-ex-1-1-1-2">
+<div class="para" id="PA-changing-linear-3-ex-1-1-1-2-1">Sea <span class="process-math">\(y = g(x)\)</span> dado por los datos en <a href="sec-changing-linear.html#T-PA-changing-linear-3-ex-2" class="xref" data-knowl="./knowl/xref/T-PA-changing-linear-3-ex-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.4.1: Una tabla que define la función y = g(x)">Table 1.4.1</a>.</div>
+<figure class="table table-like" id="T-PA-changing-linear-3-ex-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.4.1<span class="period">.</span></span><span class="space"> </span>Una tabla que define la función <span class="process-math">\(y = g(x)\text{.}\)</span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-5\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-4\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-3\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g(x)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-2.75\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-2.25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-1.75\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-1.25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.75\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.75\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.75\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2.25\)</span></td>
+</tr>
+</table></div></figure><div class="para" id="PA-changing-linear-3-ex-1-1-1-2-3">Determina <span class="process-math">\(AV_{[-5,-2]}\text{,}\)</span> <span class="process-math">\(AV_{[-1,1]}\text{,}\)</span> y <span class="process-math">\(AV_{[0,4]}\)</span> para la función <span class="process-math">\(g\text{.}\)</span>
+</div>
+</li>
+<li id="PA-changing-linear-3-ex-1-1-1-3">
+<div class="para" id="PA-changing-linear-3-ex-1-1-1-3-1">Considera la función <span class="process-math">\(y = h(x)\)</span> definida por la gráfica en <a href="sec-changing-linear.html#F-PA-changing-linear-3-ex-3" class="xref" data-knowl="./knowl/xref/F-PA-changing-linear-3-ex-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.2">Figure 1.4.2</a>.</div>
+<figure class="figure figure-like" id="F-PA-changing-linear-3-ex-3"><div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/images/linear-PA-ex-3.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.2<span class="period">.</span></span><span class="space"> </span>La gráfica de <span class="process-math">\(y = h(x)\text{.}\)</span></figcaption></figure><div class="para" id="PA-changing-linear-3-ex-1-1-1-3-3">Determina <span class="process-math">\(AV_{[-5,-2]}\text{,}\)</span> <span class="process-math">\(AV_{[-1,1]}\text{,}\)</span> y <span class="process-math">\(AV_{[0,4]}\)</span> para la función <span class="process-math">\(h\text{.}\)</span>
+</div>
+</li>
+<li id="PA-changing-linear-3-ex-1-1-1-4"><div class="para" id="PA-changing-linear-3-ex-1-1-1-4-1">¿Qué tienen en común los tres ejemplos anteriores? ¿En qué se diferencian?</div></li>
+<li id="PA-changing-linear-3-ex-1-1-1-5"><div class="para logical" id="PA-changing-linear-3-ex-1-1-1-5-1">
+<div class="para">Para la función <span class="process-math">\(y = f(x) = 7 - 3x\)</span> de (a), encuentra la expresión más simple que puedas para</div>
+<div class="displaymath process-math">
+\begin{equation*}
+AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(a \ne b\text{.}\)</span>
+</div>
+</div></li>
+</ol></div></article></section><section class="subsection" id="subsec-changing-linear-properties"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">Propiedades de las funciones lineales</span>
+</h3>
+<div class="para logical" id="subsec-changing-linear-properties-2">
+<div class="para">En <a href="sec-changing-linear.html#PA-changing-linear-3-ex" class="xref" data-knowl="./knowl/xref/PA-changing-linear-3-ex.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 1.4.1">Preview Activity 1.4.1</a>, consideramos tres funciones diferentes para las cuales la tasa de cambio promedio parecía ser siempre constante. Para la primera función en la actividad preliminar, <span class="process-math">\(y = f(x) = 7 - 3x\text{,}\)</span> podemos calcular su tasa de cambio promedio en un intervalo arbitrario <span class="process-math">\([a,b]\text{.}\)</span> Haciendo esto, notamos que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-changing-linear-3-ex.html" id="subsec-changing-linear-properties-2-4">
+\begin{align*}
+AV_{[a,b]} &amp;= \frac{f(b)-f(a)}{b-a}\\
+&amp;= \frac{(7-3b) - (7-3a)}{b-a}\\
+&amp;= \frac{7-3b - 7+3a}{b-a}\\
+&amp;= \frac{-3b + 3a}{b-a}\\
+&amp;= \frac{-3(b - a)}{b-a}\\
+&amp;= -3\text{.}
+\end{align*}
+</div>
+<div class="para">Este resultado nos muestra que para la función <span class="process-math">\(y = f(x) = 7 - 3x\text{,}\)</span> su tasa de cambio promedio es siempre <span class="process-math">\(-3\text{,}\)</span> sin importar el intervalo que elijamos. Usaremos la propiedad de tener una tasa de cambio constante como la propiedad definitoria de una función lineal.</div>
+</div>
+<article class="definition definition-like" id="D-linear-function"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+</h4> <div class="para logical" id="D-linear-function-3-1">
+<div class="para">Una función <span class="process-math">\(f\)</span> es <dfn class="terminology">lineal</dfn> siempre que su tasa de cambio promedio sea constante en cualquier elección de intervalo en su dominio<details class="ptx-footnote" aria-live="polite" id="D-linear-function-3-1-3"><summary class="ptx-footnote__number" title="Footnote 1.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="D-linear-function-3-1-3">Aquí estamos considerando funciones cuyo dominio es el conjunto de todos los números reales.</div></details>. Es decir, para cualquier entrada <span class="process-math">\(a\)</span> y <span class="process-math">\(b\)</span> para las cuales <span class="process-math">\(a \ne b\text{,}\)</span> se sigue que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{f(b) - f(a)}{b-a} = m
+\end{equation*}
+</div>
+<div class="para">para alguna constante fija <span class="process-math">\(m\text{.}\)</span> Llamamos a <span class="process-math">\(m\)</span> la <dfn class="terminology">pendiente</dfn> de la función lineal <span class="process-math">\(f\text{.}\)</span>
+</div>
+</div></article><div class="para" id="subsec-changing-linear-properties-4">Por estudios previos, ya sabemos mucho sobre las funciones lineales. En esta sección, trabajamos para entender algunas propiedades familiares a la luz de la nueva perspectiva de la <a href="sec-changing-linear.html#D-linear-function" class="xref" data-knowl="./knowl/xref/D-linear-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.4.3">Definición 1.4.3</a>.</div>
+<div class="para logical" id="subsec-changing-linear-properties-5">
+<div class="para">Supongamos que sabemos que una función <span class="process-math">\(f\)</span> es lineal con una tasa de cambio promedio <span class="process-math">\(AV_{[a,b]} = m\)</span> y que también sabemos que el valor de la función es <span class="process-math">\(y_0\)</span> en alguna entrada fija <span class="process-math">\(x_0\text{.}\)</span> Es decir, sabemos que <span class="process-math">\(f(x_0) = y_0\text{.}\)</span> A partir de esta información, podemos encontrar la fórmula para <span class="process-math">\(y = f(x)\)</span> para <em class="emphasis">cualquier</em> entrada <span class="process-math">\(x\text{.}\)</span> Trabajando con el punto conocido <span class="process-math">\((x_0, f(x_0))\)</span> y cualquier otro punto <span class="process-math">\((x, f(x))\)</span> en la gráfica de la función, sabemos que la tasa de cambio promedio entre estos dos puntos debe ser la constante <span class="process-math">\(m\text{.}\)</span> Esto nos dice que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{f(x) - f(x_0)}{x-x_0} = m\text{.}
+\end{equation*}
+</div>
+<div class="para">Como estamos interesados en encontrar una fórmula para <span class="process-math">\(y = f(x)\text{,}\)</span> resolvemos esta ecuación más reciente para <span class="process-math">\(f(x)\text{.}\)</span> Multiplicando ambos lados por <span class="process-math">\((x-x_0)\text{,}\)</span> vemos que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) - f(x_0) = m(x-x_0)\text{.}
+\end{equation*}
+</div>
+<div class="para">Sumando <span class="process-math">\(f(x_0)\)</span> a cada lado, se sigue que</div>
+<div class="displaymath process-math" id="E-linear-point-slope-first-take">
+\begin{equation}
+f(x) = f(x_0) + m(x-x_0)\text{.}\tag{1.4.1}
+\end{equation}
+</div>
+<div class="para">Esto muestra que para determinar la fórmula de una función lineal, todo lo que necesitamos saber es su tasa de cambio promedio (o pendiente) y un solo punto por el cual pasa la función.</div>
+</div>
+<article class="example example-like" id="subsec-changing-linear-properties-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-changing-linear-properties-6-1-1">Encuentra una fórmula para una función lineal <span class="process-math">\(f\)</span> cuya tasa de cambio promedio es <span class="process-math">\(m = -\frac{1}{4}\)</span> y pasa por el punto <span class="process-math">\((-7,-5)\text{.}\)</span>
+</div> <div class="para logical" id="subsec-changing-linear-properties-6-1-2">
+<div class="para">
+<em class="emphasis">Solución</em>. Usando la <a href="sec-changing-linear.html#E-linear-point-slope-first-take" class="xref" data-knowl="./knowl/xref/E-linear-point-slope-first-take.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.1">Ecuación (1.4.1)</a> y los hechos de que <span class="process-math">\(m = -\frac{1}{4}\)</span> y <span class="process-math">\(f(-7) = -5\)</span> (es decir, <span class="process-math">\(x_0 = -7\)</span> y <span class="process-math">\(f(x_0) = -5\)</span>), tenemos</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/E-linear-point-slope-first-take.html">
+\begin{equation*}
+f(x) = -5 -\frac{1}{4}(x - (-7)) = -5 - \frac{1}{4}(x+7)\text{.}
+\end{equation*}
+</div>
+</div></article><div class="para" id="subsec-changing-linear-properties-7">Reemplazando <span class="process-math">\(f(x)\)</span> con <span class="process-math">\(y\)</span> y <span class="process-math">\(f(x_0)\)</span> con <span class="process-math">\(y_0\text{,}\)</span> llamamos a la <a href="sec-changing-linear.html#E-linear-point-slope-first-take" class="xref" data-knowl="./knowl/xref/E-linear-point-slope-first-take.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.1">Ecuación (1.4.1)</a> la <em class="emphasis">forma punto-pendiente</em>  de una línea.</div>
+<article class="assemblage assemblage-like" id="asm-linear-point-slope-form"><h4 class="heading"><span class="title">Forma punto-pendiente de una línea.</span></h4>
+<div class="para logical" id="asm-linear-point-slope-form-3">
+<div class="para">Una línea con pendiente <span class="process-math">\(m\)</span> (equivalente a una tasa de cambio promedio <span class="process-math">\(m\)</span>) que pasa por el punto <span class="process-math">\((x_0, y_0)\)</span> tiene la ecuación</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = y_0 + m(x-x_0)\text{.}
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="act-changing-linear-finding-eqs"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-changing-linear-finding-eqs-1-1">Encuentra una ecuación para la línea que está determinada por las siguientes condiciones; escribe tu respuesta en la forma punto-pendiente siempre que sea posible.</div> <div class="para logical" id="act-changing-linear-finding-eqs-1-2"><ol class="lower-alpha">
+<li id="act-changing-linear-finding-eqs-1-2-1-1"><div class="para" id="act-changing-linear-finding-eqs-1-2-1-1-1">La línea con pendiente <span class="process-math">\(\frac{3}{7}\)</span> que pasa por <span class="process-math">\((-11, -17)\text{.}\)</span>
+</div></li>
+<li id="act-changing-linear-finding-eqs-1-2-1-2"><div class="para" id="act-changing-linear-finding-eqs-1-2-1-2-1">La línea que pasa por los puntos <span class="process-math">\((-2,5)\)</span> y <span class="process-math">\((3,-1)\text{.}\)</span>
+</div></li>
+<li id="act-changing-linear-finding-eqs-1-2-1-3"><div class="para" id="act-changing-linear-finding-eqs-1-2-1-3-1">La línea que pasa por <span class="process-math">\((4,9)\)</span> y es paralela a la línea <span class="process-math">\(2x - 3y = 5\text{.}\)</span>
+</div></li>
+<li id="act-changing-linear-finding-eqs-1-2-1-4">
+<div class="para" id="act-changing-linear-finding-eqs-1-2-1-4-1">Explica por qué la función <span class="process-math">\(f\)</span> dada por la <a href="sec-changing-linear.html#T-act-changing-linear-finding-eqs" class="xref" data-knowl="./knowl/xref/T-act-changing-linear-finding-eqs.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.4.5: Datos para una función lineal f">Tabla 1.4.5</a> parece ser lineal y encuentra una fórmula para <span class="process-math">\(f(x)\text{.}\)</span>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width middle" style="width:50%;"><figure class="table table-like" id="T-act-changing-linear-finding-eqs"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-5\)</span></td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.4.5<span class="period">.</span></span><span class="space"> </span>Datos para una función lineal <span class="process-math">\(f\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel middle" style="width:50%;"><figure class="figure figure-like" id="F-act-changing-linear-finding-eqs"><img src="external/images/linear-PA-ex-3.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.6<span class="period">.</span></span><span class="space"> </span>Gráfica de una función lineal <span class="process-math">\(h\text{.}\)</span></figcaption></figure></div>
+</div></div>
+</li>
+<li id="act-changing-linear-finding-eqs-1-2-1-5"><div class="para" id="act-changing-linear-finding-eqs-1-2-1-5-1">Encuentra una fórmula para la función lineal mostrada en la <a href="sec-changing-linear.html#F-act-changing-linear-finding-eqs" class="xref" data-knowl="./knowl/xref/F-act-changing-linear-finding-eqs.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.6">Figura 1.4.6</a>.</div></li>
+</ol></div></article><div class="para logical" id="subsec-changing-linear-properties-10">
+<div class="para">Visualizar los diversos componentes de la forma punto-pendiente es importante. Para una línea que pasa por <span class="process-math">\((x_0, y_0)\)</span> con pendiente <span class="process-math">\(m\text{,}\)</span> sabemos que su ecuación es <span class="process-math">\(y = y_0 + m(x-x_0)\text{.}\)</span> En la <a href="sec-changing-linear.html#F-linear-point-slope" class="xref" data-knowl="./knowl/xref/F-linear-point-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.7">Figura 1.4.7</a>, vemos que la línea pasa por <span class="process-math">\((x_0, y_0)\)</span> junto con un punto arbitrario <span class="process-math">\((x, y)\text{,}\)</span> lo que hace que el cambio vertical entre los dos puntos esté dado por <span class="process-math">\(y - y_0\)</span> y el cambio horizontal entre los puntos <span class="process-math">\(x - x_0\text{.}\)</span> Esto es consistente con el hecho de que</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/F-linear-point-slope.html">
+\begin{equation*}
+AV_{[x_0,x]} = m = \frac{y-y_0}{x-x_0}\text{.}
+\end{equation*}
+</div>
+<div class="para">De hecho, escribir <span class="process-math">\(m = \frac{y-y_0}{x-x_0}\)</span> es una reorganización de la forma punto-pendiente de la línea, <span class="process-math">\(y = y_0 + m(x-x_0)\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="subsec-changing-linear-properties-11">Usamos naturalmente los términos “creciente” y “decreciente” como en la <a href="sec-changing-aroc.html#D-aroc-increasing-decreasing" class="xref" data-knowl="./knowl/xref/D-aroc-increasing-decreasing.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.3.7">Definición 1.3.7</a> para describir las líneas según si su pendiente es positiva o negativa. Una línea con pendiente positiva, como la que se muestra en la <a href="sec-changing-linear.html#F-linear-slope-intercept" class="xref" data-knowl="./knowl/xref/F-linear-slope-intercept.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.8">Figura 1.4.8</a>, es creciente porque su tasa de cambio constante es positiva, mientras que una línea con pendiente negativa, como en la <a href="sec-changing-linear.html#F-linear-point-slope" class="xref" data-knowl="./knowl/xref/F-linear-point-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.7">Figura 1.4.7</a>, es decreciente debido a su tasa de cambio negativa. Decimos que una línea horizontal (una cuya pendiente es <span class="process-math">\(m = 0\)</span>) no es ni creciente ni decreciente.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-linear-point-slope"><img src="external/images/linear-point-slope.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.7<span class="period">.</span></span><span class="space"> </span>La forma punto-pendiente de la ecuación de una línea.</figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-linear-slope-intercept"><img src="external/images/linear-slope-intercept.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.8<span class="period">.</span></span><span class="space"> </span>La forma pendiente-intercepto de la ecuación de una línea.</figcaption></figure></div>
+</div></div>
+<div class="para" id="subsec-changing-linear-properties-13">Un caso especial surge cuando el punto conocido en una línea satisface <span class="process-math">\(x_0 = 0\text{.}\)</span> En esta situación, el punto conocido se encuentra en el eje <span class="process-math">\(y\text{,}\)</span> y por lo tanto llamamos a este punto el “<span class="process-math">\(y\)</span>-intercepto” de la línea.  La forma resultante de la ecuación de la línea se llama <em class="emphasis">forma pendiente-intercepto</em>, que también se demuestra en la <a href="sec-changing-linear.html#F-linear-slope-intercept" class="xref" data-knowl="./knowl/xref/F-linear-slope-intercept.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.8">Figura 1.4.8</a>.</div>
+<article class="assemblage assemblage-like" id="asm-linear-slope-intercept-form"><h4 class="heading"><span class="title">Slope-intercept form.</span></h4>
+<div class="para logical" id="asm-linear-slope-intercept-form-3">
+<div class="para">Para la línea con pendiente <span class="process-math">\(m\)</span> y que pasa por <span class="process-math">\((0, y_0)\text{,}\)</span> su ecuación es</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = y_0 + mx\text{.}
+\end{equation*}
+</div>
+</div></article><div class="para" id="subsec-changing-linear-properties-15">La forma pendiente-intercepto se deriva de la forma punto-pendiente por el hecho de que al reemplazar <span class="process-math">\(x_0\)</span> con <span class="process-math">\(0\)</span> obtenemos <span class="process-math">\(y = y_0 + m(x-0) = y_0 + mx\text{.}\)</span> En muchos libros de texto, la forma pendiente-intercepto de una línea (a menudo escrita <span class="process-math">\(y = mx + b\)</span>) se trata como si fuera la forma más útil de una línea. La forma punto-pendiente es en realidad más importante y valiosa, ya que podemos escribir fácilmente la ecuación de una línea tan pronto como sepamos su pendiente y <em class="emphasis">cualquier</em> punto que se encuentre en ella, en lugar de necesitar encontrar el <span class="process-math">\(y\)</span>-intercepto, que se necesita para la forma pendiente-intercepto. Además, la forma punto-pendiente juega un papel prominente en el cálculo.</div>
+<div class="para" id="subsec-changing-linear-properties-16">Si una línea está en forma pendiente-intercepto o punto-pendiente, es útil poder interpretar rápidamente información clave sobre la línea a partir de la forma de su ecuación.</div>
+<article class="example example-like" id="subsec-changing-linear-properties-17"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-changing-linear-properties-17-1-1">Para la línea dada por <span class="process-math">\(y = -3 - 2.5(x-5)\text{,}\)</span> determina su pendiente y un punto que se encuentra en la línea.</div> <div class="para" id="subsec-changing-linear-properties-17-1-2">
+<em class="emphasis">Solución</em>. Esta línea está en forma punto-pendiente. Su pendiente es <span class="process-math">\(m = -2.5\)</span> y un punto en la línea es <span class="process-math">\((5, -3)\text{.}\)</span>
+</div></article><article class="example example-like" id="subsec-changing-linear-properties-18"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-changing-linear-properties-18-1-1">Para la línea dada por <span class="process-math">\(y = 6 + 0.25x\text{,}\)</span> determina su pendiente y un punto que se encuentra en la línea.</div> <div class="para" id="subsec-changing-linear-properties-18-1-2">
+<em class="emphasis">Solución</em>. Esta línea está en forma pendiente-intercepto. Su pendiente es <span class="process-math">\(m = 0.25\)</span> y un punto en la línea es <span class="process-math">\((0, 6)\text{,}\)</span> que también es el <span class="process-math">\(y\)</span>-intercepto de la línea.</div></article></section><section class="subsection" id="subsec-changing-linear-context"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">Interpretación de funciones lineales en contexto</span>
+</h3>
+<div class="para" id="subsec-changing-linear-context-2">Dado que las funciones lineales se definen por la propiedad de que su tasa de cambio promedio es constante, las funciones lineales modelan perfectamente cantidades que cambian a una tasa constante. En contexto, a menudo podemos pensar en la pendiente como una tasa de cambio; analizar las unidades cuidadosamente a menudo produce una visión significativa.</div>
+<article class="example example-like" id="ex-linear-Dolbear"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="ex-linear-Dolbear-1-1">La función de Dolbear <span class="process-math">\(T = D(N) = 40 + 0.25N\)</span> de la <a href="sec-changing-functions-models.html" class="internal" title="Section 1.2: Funciones:  Modelando Relaciones">Sección 1.2</a> es una función lineal cuya pendiente es <span class="process-math">\(m = 0.25\text{.}\)</span> ¿Cuál es el significado de la pendiente en este contexto?</div>
+<div class="solutions"><details id="ex-linear-Dolbear-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-linear-Dolbear-2-1">Recuerda que <span class="process-math">\(T\)</span> se mide en grados Fahrenheit y <span class="process-math">\(N\)</span> en chirridos por minuto. Sabemos que <span class="process-math">\(m = AV_{[a,b]} = 0.25\)</span> es la tasa de cambio promedio constante de <span class="process-math">\(D\text{.}\)</span> Sus unidades son “unidades de salida por unidad de entrada”, y por lo tanto “grados Fahrenheit por chirrido por minuto”. Esto nos dice que la tasa de cambio promedio de la función de temperatura es <span class="process-math">\(0.25\)</span> grados Fahrenheit por chirrido por minuto, lo que significa que por cada chirrido adicional por minuto observado, esperamos que la temperatura aumente en <span class="process-math">\(0.25\)</span> grados Fahrenheit.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="ex-linear-Dolbear-2-2-1">
+<div class="para">De hecho, podemos observar esto a través de los valores de la función. Notamos que <span class="process-math">\(T(60) = 55\)</span> y <span class="process-math">\(T(61) = 55.25\text{:}\)</span> un chirrido adicional observado por minuto corresponde a un aumento de <span class="process-math">\(0.25\)</span> grados en la temperatura. También vemos esto en la gráfica de la línea, como se ve en la <a href="sec-changing-linear.html#F-linear-ex-Dolbear-slope" class="xref" data-knowl="./knowl/xref/F-linear-ex-Dolbear-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.12">Figura 1.4.12</a>: la pendiente entre los puntos <span class="process-math">\((40, 50)\)</span> y <span class="process-math">\((120, 70)\)</span> es</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/F-linear-ex-Dolbear-slope.html" id="ex-linear-Dolbear-2-2-1-7">
+\begin{align*}
+m &amp;= \frac{70-50}{120-40}\\
+&amp;= \frac{20}{80}\\
+&amp;= 0.25 \frac{\text{grados F}}{\text{chirrido por minuto}}\text{.}
+\end{align*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="F-linear-ex-Dolbear-slope"><img src="external/images/linear-Dolbears-Law-slope.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.12<span class="period">.</span></span><span class="space"> </span>La función lineal de Dolbear con pendiente <span class="process-math">\(m = 0.25\)</span> grados Fahrenheit por chirrido por minuto.</figcaption></figure></div>
+</div></div>
+</div></details></div></article><div class="para logical" id="subsec-changing-linear-context-4">
+<div class="para">Al igual que con la función de Dolbear, a menudo es útil escribir una función lineal (cuyo resultado se llama <span class="process-math">\(y\)</span>) que modela una cantidad que cambia a una tasa constante (como una función de alguna entrada <span class="process-math">\(t\)</span>) escribiendo la relación de la función en la forma</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = b + mt
+\end{equation*}
+</div>
+<div class="para">donde <span class="process-math">\(b\)</span> y <span class="process-math">\(m\)</span> son constantes. Podemos pensar en las cuatro cantidades involucradas de la siguiente manera:</div>
+</div>
+<div class="para logical" id="subsec-changing-linear-context-5"><ul class="disc">
+<li id="subsec-changing-linear-context-5-1-1"><div class="para" id="subsec-changing-linear-context-5-1-1-1">La constante <span class="process-math">\(b\)</span> es el “valor inicial” del resultado que corresponde a una entrada de <span class="process-math">\(t = 0\text{;}\)</span>
+</div></li>
+<li id="subsec-changing-linear-context-5-1-2"><div class="para" id="subsec-changing-linear-context-5-1-2-1">La constante <span class="process-math">\(m\)</span> es la tasa a la que cambia el resultado con respecto a los cambios en la entrada: por cada cambio adicional de <span class="process-math">\(1\)</span> unidad en la entrada, el resultado cambiará en <span class="process-math">\(m\)</span> unidades.</div></li>
+<li id="subsec-changing-linear-context-5-1-3"><div class="para" id="subsec-changing-linear-context-5-1-3-1">La variable <span class="process-math">\(t\)</span> es la variable independiente (entrada). Un valor distinto de cero para <span class="process-math">\(t\)</span> corresponde a cuánto ha cambiado la variable de entrada desde un valor inicial de <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="subsec-changing-linear-context-5-1-4"><div class="para" id="subsec-changing-linear-context-5-1-4-1">La variable <span class="process-math">\(y\)</span> es la variable dependiente (salida). El valor de <span class="process-math">\(y\)</span> resulta de una elección particular de <span class="process-math">\(t\text{,}\)</span> y se puede pensar como el valor inicial de salida (<span class="process-math">\(b\)</span>) más el cambio en la salida que resulta del correspondiente cambio en la entrada <span class="process-math">\(t\text{.}\)</span>
+</div></li>
+</ul></div>
+<article class="activity project-like" id="act-changing-linear-Kilimanjaro"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-changing-linear-Kilimanjaro-1-1">La cumbre del pico más alto de África, el Monte Kilimanjaro<details class="ptx-footnote" aria-live="polite" id="act-changing-linear-Kilimanjaro-1-1-1"><summary class="ptx-footnote__number" title="Footnote 1.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="act-changing-linear-Kilimanjaro-1-1-1">El contexto principal de este problema proviene del Ejercicio 30 en la página 27 del libro de Connally <em class="emphasis">Functions Modeling Change</em>, 5ta edición.</div></details>, tiene dos campos de hielo principales y un glaciar en su pico. Los geólogos midieron la cobertura de hielo en el año 2000 (<span class="process-math">\(t = 0\)</span>) en aproximadamente <span class="process-math">\(1951\)</span> m<span class="process-math">\(^2\text{;}\)</span> en el año 2007, la cobertura de hielo se midió en <span class="process-math">\(1555\)</span> m<span class="process-math">\(^2\text{.}\)</span>
+</div> <div class="para logical" id="act-changing-linear-Kilimanjaro-1-2"><ol class="lower-alpha">
+<li id="act-changing-linear-Kilimanjaro-1-2-1-1"><div class="para" id="act-changing-linear-Kilimanjaro-1-2-1-1-1">Supongamos que la cantidad de cobertura de hielo en la cumbre del Monte Kilimanjaro está cambiando a una tasa promedio constante de un año a otro. Encuentra un modelo lineal <span class="process-math">\(A = f(t)\)</span> cuyo resultado sea el área de la cobertura de hielo, <span class="process-math">\(A\text{,}\)</span> en metros cuadrados en el año <span class="process-math">\(t\)</span> (donde <span class="process-math">\(t\)</span> es el número de años después del 2000).</div></li>
+<li id="act-changing-linear-Kilimanjaro-1-2-1-2"><div class="para" id="act-changing-linear-Kilimanjaro-1-2-1-2-1">¿Qué significan la pendiente y la intersección <span class="process-math">\(A\)</span> en el modelo que encontraste en (a)? En particular, ¿cuáles son las unidades de la pendiente?</div></li>
+<li id="act-changing-linear-Kilimanjaro-1-2-1-3"><div class="para" id="act-changing-linear-Kilimanjaro-1-2-1-3-1">Calcula <span class="process-math">\(f(17)\text{.}\)</span> ¿Qué mide esta cantidad? Escribe una oración completa para explicar.</div></li>
+<li id="act-changing-linear-Kilimanjaro-1-2-1-4"><div class="para" id="act-changing-linear-Kilimanjaro-1-2-1-4-1">Si el modelo se mantiene en el futuro, ¿cuándo predicimos que desaparecerá la cobertura de hielo?</div></li>
+<li id="act-changing-linear-Kilimanjaro-1-2-1-5"><div class="para" id="act-changing-linear-Kilimanjaro-1-2-1-5-1">A la luz de tu trabajo anterior, ¿cuál es un dominio razonable para usar en el modelo <span class="process-math">\(A = f(t)\text{?}\)</span> ¿Cuál es el rango correspondiente?</div></li>
+</ol></div></article><article class="activity project-like" id="act-changing-linear-in-context"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-changing-linear-in-context-1-1">En cada uno de los siguientes ejercicios, investigamos funciones lineales en contexto.</div> <div class="para logical" id="act-changing-linear-in-context-1-2"><ol class="lower-alpha">
+<li id="act-changing-linear-in-context-1-2-1-1"><div class="para" id="act-changing-linear-in-context-1-2-1-1-1">La población de una ciudad inicialmente tiene <span class="process-math">\(28750\)</span> personas presentes y luego crece a una tasa constante de <span class="process-math">\(825\)</span> personas por año. Encuentra un modelo lineal <span class="process-math">\(P = f(t)\)</span> para el número de personas en la ciudad en el año <span class="process-math">\(t\text{.}\)</span>
+</div></li>
+<li id="act-changing-linear-in-context-1-2-1-2"><div class="para" id="act-changing-linear-in-context-1-2-1-2-1">La población de otra ciudad <span class="process-math">\(Q\)</span> está dada por la función <span class="process-math">\(Q = g(t) = 42505 - 465t\text{.}\)</span> ¿Cuál es la pendiente de esta función y qué significa en el modelo? Escribe una oración completa para explicar.</div></li>
+<li id="act-changing-linear-in-context-1-2-1-3"><div class="para" id="act-changing-linear-in-context-1-2-1-3-1">Un tanque esférico se está drenando con una bomba. Inicialmente el tanque está lleno con <span class="process-math">\(\frac{32\pi}{3}\)</span> pies cúbicos de agua. Supón que el tanque se drena a una tasa constante de <span class="process-math">\(1.2\)</span> pies cúbicos por minuto. Encuentra un modelo lineal <span class="process-math">\(V = p(t)\)</span> para la cantidad total de agua en el tanque en el tiempo <span class="process-math">\(t\text{.}\)</span> Además, ¿cuál es un dominio aproximado razonable para el modelo?</div></li>
+<li id="act-changing-linear-in-context-1-2-1-4"><div class="para" id="act-changing-linear-in-context-1-2-1-4-1">Un tanque cónico se está llenando de tal manera que la altura del agua en el tanque, <span class="process-math">\(h\)</span> (en pies), en el tiempo <span class="process-math">\(t\)</span> (en minutos) está dada por la función <span class="process-math">\(h = q(t) = 0.65t\text{.}\)</span> ¿Qué puedes decir sobre cómo está subiendo el nivel del agua? Escribe al menos una oración cuidadosa para explicar.</div></li>
+<li id="act-changing-linear-in-context-1-2-1-5"><div class="para" id="act-changing-linear-in-context-1-2-1-5-1">Supongamos que sabemos que el valor de un coche de <span class="process-math">\(5\)</span> años es $<span class="process-math">\(10200\text{,}\)</span> y que después de <span class="process-math">\(10\)</span> años su valor es $<span class="process-math">\(4600\text{.}\)</span> Suponiendo que el valor del coche se deprecia linealmente, encuentra una función <span class="process-math">\(C = L(t)\)</span> cuyo resultado sea el valor del coche en el año <span class="process-math">\(t\text{.}\)</span> ¿Cuál es un dominio razonable para el modelo? ¿Cuál es el valor y el significado de la pendiente de la línea? Escribe al menos una oración cuidadosa para explicar.</div></li>
+</ol></div></article></section><section class="subsection" id="subsec-changing-linear-summary"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="space"> </span><span class="title">Resumen</span>
+</h3>
+<div class="para logical" id="subsec-changing-linear-summary-2"><ul class="disc">
+<li id="subsec-changing-linear-summary-2-1-1"><div class="para" id="subsec-changing-linear-summary-2-1-1-1">Cualquier función <span class="process-math">\(f\)</span> con dominio en todos los números reales que tenga una tasa de cambio promedio constante en cada intervalo <span class="process-math">\([a, b]\)</span> tendrá una gráfica en línea recta. Llamamos a tales funciones <em class="emphasis">funciones lineales</em>.</div></li>
+<li id="subsec-changing-linear-summary-2-1-2"><div class="para" id="subsec-changing-linear-summary-2-1-2-1">Una función lineal <span class="process-math">\(y = f(x)\)</span> puede escribirse en la forma <span class="process-math">\(y = f(x) = y_0 + m(x-x_0)\text{,}\)</span> donde <span class="process-math">\(m\)</span> es la pendiente de la línea y <span class="process-math">\((x_0, y_0)\)</span> es un punto que se encuentra en la línea. En particular, <span class="process-math">\(f(x_0) = y_0\text{.}\)</span>
+</div></li>
+<li id="subsec-changing-linear-summary-2-1-3"><div class="para" id="subsec-changing-linear-summary-2-1-3-1">En un contexto aplicado donde tenemos una función lineal que modela un fenómeno en el mundo que nos rodea, la pendiente nos indica la tasa de cambio promedio (constante) de la función. Las unidades de la pendiente, <span class="process-math">\(m\text{,}\)</span> son siempre “unidades de salida por unidad de entrada” y esto nos permite articular cómo cambia la salida en respuesta a un cambio de <span class="process-math">\(1\)</span> unidad en la entrada.</div></li>
+</ul></div></section><section class="exercises" id="ez-changing-linear"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="ez-changing-linear-WW1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div id="webwork-27" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="27" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap1Sec2/Q05.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-27')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-27-1-1-1">A town has a population of <span class="process-math">\(2000\)</span> people at time <span class="process-math">\(t=0\text{.}\)</span> In each of the following cases, write a formula for the population <span class="process-math">\(P\text{,}\)</span> of the town as a function of year <span class="process-math">\(t\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-27-1-1-2">
+<em class="alert">(a)</em> The population increases by <span class="process-math">\(90\)</span> people per year.</div> <div class="para" id="extracted-webwork-27-1-1-3">
+<span class="process-math">\(P=\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span> people</div> <div class="para" id="extracted-webwork-27-1-1-4">
+<em class="alert">(b)</em> The population increases by <span class="process-math">\(1\)</span> percent a year.</div> <div class="para" id="extracted-webwork-27-1-1-5">
+<span class="process-math">\(P=\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span> people</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-linear-WW2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div id="webwork-28" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="28" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/LoyolaChicago/Precalc/Chap2Review/Q36.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-28')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-28-1-1-1">
+<div class="para">Let <span class="process-math">\(t\)</span> be time in seconds and let <span class="process-math">\(r(t)\)</span> be the rate, in gallons per second, that water enters a reservoir:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r(t)=600 - 30 t.
+\end{equation*}
+</div>
+</div> <div class="para" id="extracted-webwork-28-1-1-2">(a) Evaluate the expression <span class="process-math">\(\ r(5) =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>
+</div> <div class="para logical" id="extracted-webwork-28-1-1-3">
+<div class="para">(b) Which one of the statements below best describes the physical meaning of the value of <span class="process-math">\(r(5)\)</span> ?</div>
+<ul class="circle">
+<li id="extracted-webwork-28-1-1-3-2-1"><div class="para" id="extracted-webwork-28-1-1-3-2-1-1">How many seconds until the water is entering to reservoir at a rate of 5 gallons per second.</div></li>
+<li id="extracted-webwork-28-1-1-3-2-2"><div class="para" id="extracted-webwork-28-1-1-3-2-2-1">The rate at which the rate of the water entering the reservoir is decreasing when 5 gallons remain in the reservoir.</div></li>
+<li id="extracted-webwork-28-1-1-3-2-3"><div class="para" id="extracted-webwork-28-1-1-3-2-3-1">The total amount, in gallons, of water in the reservoir after 5 seconds.</div></li>
+<li id="extracted-webwork-28-1-1-3-2-4"><div class="para" id="extracted-webwork-28-1-1-3-2-4-1">The rate, in gallons per second, at which the water is entering reservoir after 5 seconds.</div></li>
+<li id="extracted-webwork-28-1-1-3-2-5"><div class="para" id="extracted-webwork-28-1-1-3-2-5-1">None of the above</div></li>
+</ul>
+</div> <div class="para" id="extracted-webwork-28-1-1-4">(c) For each of the mathematical expressions below, match one of the statements A - E below which best explains its meaning in practical terms.</div> <div class="para logical" id="extracted-webwork-28-1-1-5">
+<ol class="lower-alpha">
+<li id="extracted-webwork-28-1-1-5-1-1"><div class="para" id="extracted-webwork-28-1-1-5-1-1-1">The slope of the graph of <span class="process-math">\(r(t)\text{.}\)</span>
+</div></li>
+<li id="extracted-webwork-28-1-1-5-1-2"><div class="para" id="extracted-webwork-28-1-1-5-1-2-1">The vertical intercept of the graph of <span class="process-math">\(r(t)\text{.}\)</span>
+</div></li>
+</ol>
+<ol class="upper-alpha">
+<li id="extracted-webwork-28-1-1-5-2-1"><div class="para" id="extracted-webwork-28-1-1-5-2-1-1">The rate, in gallons per second, at which the water is initially entering the reservoir.</div></li>
+<li id="extracted-webwork-28-1-1-5-2-2"><div class="para" id="extracted-webwork-28-1-1-5-2-2-1">After how many seconds the water stops flowing into the reservoir and starts to drain out.</div></li>
+<li id="extracted-webwork-28-1-1-5-2-3"><div class="para" id="extracted-webwork-28-1-1-5-2-3-1">The average rate, in gallons per second, at which water is flowing out of the reservoir.</div></li>
+<li id="extracted-webwork-28-1-1-5-2-4"><div class="para" id="extracted-webwork-28-1-1-5-2-4-1">The initial amount of water, in gallons, in the reservoir.</div></li>
+<li id="extracted-webwork-28-1-1-5-2-5"><div class="para" id="extracted-webwork-28-1-1-5-2-5-1">The rate at which the rate of water entering the reservoir is decreasing in gallons per second squared.</div></li>
+</ol>
+</div> <div class="para" id="extracted-webwork-28-1-1-6">(d) For <span class="process-math">\(0 \leq t \leq 30\text{,}\)</span> when does the reservoir have the most water?</div> <div class="para" id="extracted-webwork-28-1-1-7">When <span class="process-math">\(t =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> sec.</div> <div class="para" id="extracted-webwork-28-1-1-8">(e) For <span class="process-math">\(0 \leq t \leq 30\text{,}\)</span> when does the reservoir have the least water?</div> <div class="para" id="extracted-webwork-28-1-1-9">When <span class="process-math">\(t =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> sec.</div> <div class="para" id="extracted-webwork-28-1-1-10">(f) If the domain of <span class="process-math">\(r(t)\)</span> is <span class="process-math">\(0 \leq t \leq 30\text{,}\)</span> what is the range of <span class="process-math">\(r(t)\text{?}\)</span>
+</div> <div class="para" id="extracted-webwork-28-1-1-11">range = <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span> (enter your answer in interval notation, or an inequality in <span class="process-math">\(r\text{:}\)</span> )</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-linear-WW3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div id="webwork-29" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="29" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/LoyolaChicago/Precalc/Chap1Sec3/Q25.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-29')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-29-1-1-1">A report by the US Geological Survey indicates that glaciers in Glacier National Park, Montana, are shrinking.  Recent estimates indicate the area covered by glaciers has decreased from over <span class="process-math">\(25.5 \ \mbox{km}^2\)</span> in 1850 to about <span class="process-math">\(16.5 \ \mbox{km}^2\)</span> in 1995.  Let <span class="process-math">\(A = f(t)\)</span> give the area (in square km) <span class="process-math">\(t\)</span> years after 2000, and assume <span class="process-math">\(f(t) = 16.2 - 0.062t\text{.}\)</span>
+</div> <div class="para logical" id="extracted-webwork-29-1-1-2">
+<div class="para">a) Find and explain the meaning of the slope.  Which statement best explains its significance?</div>
+<ul class="circle">
+<li id="extracted-webwork-29-1-1-2-1-1"><div class="para" id="extracted-webwork-29-1-1-2-1-1-1">The area covered by glaciers is decreasing by <span class="process-math">\(62,000 \ \mbox{m}^2\)</span> every year.</div></li>
+<li id="extracted-webwork-29-1-1-2-1-2"><div class="para" id="extracted-webwork-29-1-1-2-1-2-1">The total area covered by glaciers decreased by <span class="process-math">\(16.2 \ \mbox{km}^2\)</span> from 1850 to 2000.</div></li>
+<li id="extracted-webwork-29-1-1-2-1-3"><div class="para" id="extracted-webwork-29-1-1-2-1-3-1">The area covered by glaciers is decreasing by <span class="process-math">\(62 \ \mbox{m}^2\)</span>   every year.</div></li>
+<li id="extracted-webwork-29-1-1-2-1-4"><div class="para" id="extracted-webwork-29-1-1-2-1-4-1">The total area covered by glaciers is increasing by <span class="process-math">\(0.062 \ \mbox{km}^2\)</span> every year.</div></li>
+<li id="extracted-webwork-29-1-1-2-1-5"><div class="para" id="extracted-webwork-29-1-1-2-1-5-1">The area covered by glaciers is decreasing by <span class="process-math">\(16.2 \ \mbox{km}^2\)</span> every year.</div></li>
+<li id="extracted-webwork-29-1-1-2-1-6"><div class="para" id="extracted-webwork-29-1-1-2-1-6-1">None of the above</div></li>
+</ul>
+</div> <div class="para logical" id="extracted-webwork-29-1-1-3">
+<div class="para">b) Find and explain the meaning of the <span class="process-math">\(A\)</span>-intercept. Which statement best explains its significance?</div>
+<ul class="circle">
+<li id="extracted-webwork-29-1-1-3-2-1"><div class="para" id="extracted-webwork-29-1-1-3-2-1-1">The total area covered by glaciers decreased by <span class="process-math">\(16.2 \ \mbox{km}^2\)</span> from 1850 to 2000.</div></li>
+<li id="extracted-webwork-29-1-1-3-2-2"><div class="para" id="extracted-webwork-29-1-1-3-2-2-1">The area covered by glaciers in 2000 was <span class="process-math">\(16.2 \ \mbox{km}^2\text{.}\)</span>
+</div></li>
+<li id="extracted-webwork-29-1-1-3-2-3"><div class="para" id="extracted-webwork-29-1-1-3-2-3-1">The total area covered by glaciers will decrease by <span class="process-math">\(0.062 \ \mbox{km}^2\)</span>   from 2000 to 2001.</div></li>
+<li id="extracted-webwork-29-1-1-3-2-4"><div class="para" id="extracted-webwork-29-1-1-3-2-4-1">The area covered by glaciers is decreasing by <span class="process-math">\(16.2 \ \mbox{km}^2\)</span> every year.</div></li>
+<li id="extracted-webwork-29-1-1-3-2-5"><div class="para" id="extracted-webwork-29-1-1-3-2-5-1">The area covered by glaciers in 2000 was <span class="process-math">\(0.062 \ \mbox{km}^2\)</span> .</div></li>
+<li id="extracted-webwork-29-1-1-3-2-6"><div class="para" id="extracted-webwork-29-1-1-3-2-6-1">None of the above</div></li>
+</ul>
+</div> <div class="para logical" id="extracted-webwork-29-1-1-4">
+<div class="para">c) For both expressions listed below, enter the letter A-E of the statement which best explains their practical meaning.  There are extra, unused statements.</div>
+<ol class="lower-alpha">
+<li id="extracted-webwork-29-1-1-4-1-1"><div class="para" id="extracted-webwork-29-1-1-4-1-1-1">If <span class="process-math">\(f(t) = 9\text{,}\)</span> then <span class="process-math">\(t\)</span> is</div></li>
+<li id="extracted-webwork-29-1-1-4-1-2"><div class="para" id="extracted-webwork-29-1-1-4-1-2-1">
+<span class="process-math">\(f( 9 )\)</span> is</div></li>
+</ol>
+<ol class="upper-alpha">
+<li id="extracted-webwork-29-1-1-4-2-1"><div class="para" id="extracted-webwork-29-1-1-4-2-1-1">How much area (in <span class="process-math">\(\mbox{km}^2\)</span>) will be covered by glaciers in 9 years.</div></li>
+<li id="extracted-webwork-29-1-1-4-2-2"><div class="para" id="extracted-webwork-29-1-1-4-2-2-1">The number of years after 2000 that the amount of glacier area that has disappeared is <span class="process-math">\(9 \ \mbox{km}^2\text{.}\)</span>
+</div></li>
+<li id="extracted-webwork-29-1-1-4-2-3"><div class="para" id="extracted-webwork-29-1-1-4-2-3-1">The amount of glacier area (in <span class="process-math">\(\mbox{km}^2\)</span>) that disappears in 9 years.</div></li>
+<li id="extracted-webwork-29-1-1-4-2-4"><div class="para" id="extracted-webwork-29-1-1-4-2-4-1">The number of years after 2000 that the total area covered by glaciers will be <span class="process-math">\(9 \ \mbox{km}^2\text{.}\)</span>
+</div></li>
+<li id="extracted-webwork-29-1-1-4-2-5"><div class="para" id="extracted-webwork-29-1-1-4-2-5-1">How much area (in <span class="process-math">\(\mbox{km}^2\)</span>) will be covered by glaciers in  2009.</div></li>
+</ol>
+</div> <div class="para" id="extracted-webwork-29-1-1-5">d) Evaluate <span class="process-math">\(f( 9 ) =\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div> <div class="para" id="extracted-webwork-29-1-1-6">e) How much glacier area disappears in 9 years? <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> <span class="process-math">\(\mbox{km}^2\)</span>
+</div> <div class="para" id="extracted-webwork-29-1-1-7">f) Solve <span class="process-math">\(f(t) = 9\)</span> . <span class="process-math">\(t =\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> (round your answer to one decimal place)</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-linear-WW4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div id="webwork-30" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="30" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/LoyolaChicago/Precalc/Chap1Sec4/Q28.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-30')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-30-1-1-1">Find a formula for the linear equation graphed below. You can enlarge the graph by clicking on it.</div> <div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-30-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-30-1-1-3"><em class="emphasis">(click on the image to enlarge)</em></div> <div class="para" id="extracted-webwork-30-1-1-4">
+<span class="process-math">\(p = f(h) =\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-changing-linear-WW5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div id="webwork-31" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="31" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/LoyolaChicago/Precalc/Chap1Sec4/Q35.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-31')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-31-1-1-1">Find the equation for the line <span class="process-math">\(L\)</span> (graphed in red) in the figure below.  Note the <span class="process-math">\(x\)</span>-coordinate of the point <span class="process-math">\(Q\)</span> is 2, <span class="process-math">\(y\)</span>-coordinate of the point <span class="process-math">\(P\)</span> is 13, and the parabola (graphed in blue) has equation <span class="process-math">\(y = x^2 + 2\text{.}\)</span>
+</div> <div class="image-box" style="width: 33.3333333333333%; margin-left: 33.3333333333333%; margin-right: 33.3333333333333%;"><img src="generated/webwork/images/webwork-31-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-31-1-1-3"><em class="emphasis">(click on the image to enlarge)</em></div> <div class="para" id="extracted-webwork-31-1-1-4">
+<span class="process-math">\(y =\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="ez-linear-apartment"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="ez-linear-apartment-1-1">An apartment manager keeps careful record of how the rent charged per unit corresponds to the number of occupied units in a large complex.  The collected data is shown in <a href="sec-changing-linear.html#T-ez-linear-apartment" class="xref" data-knowl="./knowl/xref/T-ez-linear-apartment.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.4.13: Data relating occupied apartments to monthly rent.">Table 1.4.13</a>.<details class="ptx-footnote" aria-live="polite" id="ez-linear-apartment-1-1-2"><summary class="ptx-footnote__number" title="Footnote 1.4.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="ez-linear-apartment-1-1-2">This problem is a slightly modified version of one found in <a class="external" href="http://mathquest.carroll.edu/CarrollActiveCalculus/C_0.html" target="_blank">Carroll College’s Chapter Zero resource for Active Calculus</a>.</div></details>
+</div> <figure class="table table-like" id="T-ez-linear-apartment"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.4.13<span class="period">.</span></span><span class="space"> </span>Data relating occupied apartments to monthly rent.</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines">Monthly Rent</td>
+<td class="l m b1 r0 l0 t0 lines">$650</td>
+<td class="l m b1 r0 l0 t0 lines">$700</td>
+<td class="l m b1 r0 l0 t0 lines">$750</td>
+<td class="l m b1 r0 l0 t0 lines">$800</td>
+<td class="l m b1 r0 l0 t0 lines">$850</td>
+<td class="l m b1 r0 l0 t0 lines">$900</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Occupied Apartments</td>
+<td class="l m b0 r0 l0 t0 lines">203</td>
+<td class="l m b0 r0 l0 t0 lines">196</td>
+<td class="l m b0 r0 l0 t0 lines">189</td>
+<td class="l m b0 r0 l0 t0 lines">182</td>
+<td class="l m b0 r0 l0 t0 lines">175</td>
+<td class="l m b0 r0 l0 t0 lines">168</td>
+</tr>
+</table></div></figure> <div class="para logical" id="ez-linear-apartment-1-3"><ol class="lower-alpha">
+<li id="ez-linear-apartment-1-3-1-1"><div class="para" id="ez-linear-apartment-1-3-1-1-1">Why is it reasonable to say that the number of occupied apartments is a linear function of rent?</div></li>
+<li id="ez-linear-apartment-1-3-1-2"><div class="para" id="ez-linear-apartment-1-3-1-2-1">Let <span class="process-math">\(A\)</span> be the number of occupied apartments and <span class="process-math">\(R\)</span> the monthly rent charged (in dollars).  If we let <span class="process-math">\(A = f(R)\text{,}\)</span> what is the slope of the linear function <span class="process-math">\(f\text{?}\)</span>  What is the meaning of the slope in the context of this question?</div></li>
+<li id="ez-linear-apartment-1-3-1-3"><div class="para" id="ez-linear-apartment-1-3-1-3-1">Determine a formula for <span class="process-math">\(A = f(R)\text{.}\)</span>  What do you think is a reasonable domain for the function?  Why?</div></li>
+<li id="ez-linear-apartment-1-3-1-4"><div class="para" id="ez-linear-apartment-1-3-1-4-1">If the rent were to be increased to $1000, how many occupied apartments should the apartment manager expect?  How much total revenue would the manager collect in a given month when rent is set at $1000?</div></li>
+<li id="ez-linear-apartment-1-3-1-5"><div class="para" id="ez-linear-apartment-1-3-1-5-1">Why do you think the apartment manager is interested in the data that has been collected?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="ez-linear-walkers"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="ez-linear-walkers-1-1">Alicia and Dexter are each walking on a straight path.  For a particular <span class="process-math">\(10\)</span>-second window of time, each has their velocity (in feet per second) measured and recorded as a function of time.  Their respective velocity functions are plotted in <a href="sec-changing-linear.html#F-ez-linear-walkers" class="xref" data-knowl="./knowl/xref/F-ez-linear-walkers.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.4.14">Figure 1.4.14</a>.</div> <figure class="figure figure-like" id="F-ez-linear-walkers"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/linear-ez-walkers.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.14<span class="period">.</span></span><span class="space"> </span>The velocity functions <span class="process-math">\(A = f(t)\)</span> and <span class="process-math">\(D = g(t)\)</span> for Alicia and Damon, respectively.</figcaption></figure> <div class="para logical" id="ez-linear-walkers-1-3"><ol class="lower-alpha">
+<li id="ez-linear-walkers-1-3-1-1"><div class="para" id="ez-linear-walkers-1-3-1-1-1">Determine formulas for both <span class="process-math">\(A = f(t)\)</span> and <span class="process-math">\(D = g(t)\text{.}\)</span>
+</div></li>
+<li id="ez-linear-walkers-1-3-1-2"><div class="para" id="ez-linear-walkers-1-3-1-2-1">What is the value and meaning of the slope of <span class="process-math">\(A\text{?}\)</span>  Write a complete sentence to explain and be sure to include units in your response.</div></li>
+<li id="ez-linear-walkers-1-3-1-3"><div class="para" id="ez-linear-walkers-1-3-1-3-1">What is the value and meaning of the average rate of change of <span class="process-math">\(D\)</span> on the interval <span class="process-math">\([4,8]\text{?}\)</span>  Write a complete sentence to explain and be sure to include units in your response.</div></li>
+<li id="ez-linear-walkers-1-3-1-4"><div class="para" id="ez-linear-walkers-1-3-1-4-1">Is there ever a time when Alicia and Damon are walking at the same velocity?  If yes, determine both the time and velocity; if not, explain why.</div></li>
+<li id="ez-linear-walkers-1-3-1-5"><div class="para" id="ez-linear-walkers-1-3-1-5-1">Is is possible to determine if there is ever a time when Alicia and Damon are located at the same place on the path?  If yes, determine the time and location; if not, explain why not enough information is provided.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="ez-linear-draining-conical-tank"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="ez-linear-draining-conical-tank-1-1">An inverted conical tank with depth <span class="process-math">\(4\)</span> feet and radius <span class="process-math">\(2\)</span> feet is completely full of water.  The tank is being drained by a pump in such a way that the amount of water in the tank is decreasing at a constant rate of <span class="process-math">\(1.5\)</span> cubic feet per minute.  Let <span class="process-math">\(V = f(t)\)</span> denote the volume of water in the tank at time <span class="process-math">\(t\)</span> and <span class="process-math">\(h = g(t)\)</span> the depth of the water in the tank at time <span class="process-math">\(t\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in minutes.</div> <figure class="figure figure-like" id="ez-linear-draining-conical-tank-1-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/tandem-filled-conical-tank.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.15<span class="period">.</span></span><span class="space"> </span>The inverted conical tank.</figcaption></figure> <div class="para logical" id="ez-linear-draining-conical-tank-1-3"><ol class="lower-alpha">
+<li id="ez-linear-draining-conical-tank-1-3-1-1"><div class="para" id="ez-linear-draining-conical-tank-1-3-1-1-1">How much water is in the tank at <span class="process-math">\(t = 0\)</span> when the tank is completely full?</div></li>
+<li id="ez-linear-draining-conical-tank-1-3-1-2"><div class="para" id="ez-linear-draining-conical-tank-1-3-1-2-1">Explain why volume, <span class="process-math">\(V\text{,}\)</span> when viewed as a function of time, <span class="process-math">\(t\text{,}\)</span> is a linear function.</div></li>
+<li id="ez-linear-draining-conical-tank-1-3-1-3"><div class="para" id="ez-linear-draining-conical-tank-1-3-1-3-1">Determine a formula for <span class="process-math">\(V = f(t)\text{.}\)</span>
+</div></li>
+<li id="ez-linear-draining-conical-tank-1-3-1-4"><div class="para" id="ez-linear-draining-conical-tank-1-3-1-4-1">At what exact time will the tank be empty?</div></li>
+<li id="ez-linear-draining-conical-tank-1-3-1-5"><div class="para" id="ez-linear-draining-conical-tank-1-3-1-5-1">What is a reasonable domain to use for the model <span class="process-math">\(f\text{?}\)</span>  What is its corresponding range?</div></li>
+</ol></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-changing-aroc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-changing-quadratic.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
