@@ -17,13 +17,13 @@
 
 	<statement>
 		<p>
-			In <xref ref="F-PA-big-unit-circle">Figure</xref> there are 24 equally spaced points on the unit circle.  Since the circumference of the unit circle is <m>2\pi</m>, each of the points is <m>\frac{1}{24} \cdot 2\pi = \frac{\pi}{12}</m> units apart (traveled along the circle). Thus, 
-    		the first point counterclockwise from <m>(1,0)</m> corresponds to the distance
-    		<m>t = \frac{\pi}{12}</m> traveled along the unit circle.  The second point is twice as far, and thus <m>t = 2 \cdot \frac{\pi}{12} = \frac{\pi}{6}</m> units along the circle away from <m>(1,0)</m>.
+			En <xref ref="F-PA-big-unit-circle">Figure</xref> hay 24 puntos equidistantes en el círculo unitario. Dado que la circunferencia del círculo unitario es <m>2\pi</m>, cada uno de los puntos está <m>\frac{1}{24} \cdot 2\pi = \frac{\pi}{12}</m> unidades de distancia (recorridas a lo largo del círculo). Así, 
+    		el primer punto en sentido antihorario desde <m>(1,0)</m> corresponde a la distancia
+    		<m>t = \frac{\pi}{12}</m> recorrida a lo largo del círculo unitario. El segundo punto está el doble de lejos, y por lo tanto <m>t = 2 \cdot \frac{\pi}{12} = \frac{\pi}{6}</m> unidades a lo largo del círculo desde <m>(1,0)</m>.
 		</p>
 
 		<figure xml:id="F-PA-big-unit-circle">
-			<caption>The unit circle with <m>24</m> equally-spaced points.</caption>
+			<caption>El círculo unitario con <m>24</m> puntos equidistantes.</caption>
 			<image source="images/unit-circle-24-PA" />
 		</figure>
 
@@ -31,35 +31,35 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Label each of the subsequent points on the unit circle with the exact distance they lie counter-clockwise away from <m>(1,0)</m>; write each fraction in lowest terms.
+						Etiqueta cada uno de los puntos subsecuentes en el círculo unitario con la distancia exacta que se encuentran en sentido antihorario desde <m>(1,0)</m>; escribe cada fracción en su forma más simple.
 					</p>
 				</li>
 				<li>
 					<p>
-						Which distance along the unit circle corresponds to <m>\frac{1}{4}</m> of a full rotation around?  to <m>\frac{5}{8}</m> of a full rotation?
+						¿Qué distancia a lo largo del círculo unitario corresponde a <m>\frac{1}{4}</m> de una rotación completa? ¿a <m>\frac{5}{8}</m> de una rotación completa?
 					</p>
 				</li>
 				<li>
 						<sidebyside widths="48% 48%" margins="0%">
 							<p>
-								One way to measure angles is connected to the arc length along a circle.  For an angle whose vertex is at <m>(0,0)</m> in the unit circle, we say the angle's measure is <term><m>1</m> radian</term> <idx><h>radian</h></idx> provided that the angle intercepts an arc of the circle that is <m>1</m> unit in length, as pictured in <xref ref="F-PA-unit-circle-defining-radian">Figure</xref>.  Note particularly that an angle measuring <m>1</m> radian intercepts an arc of the same length as the circle's radius.
+								Una forma de medir ángulos está conectada con la longitud del arco a lo largo de un círculo. Para un ángulo cuyo vértice está en <m>(0,0)</m> en el círculo unitario, decimos que la medida del ángulo es <term><m>1</m> radián</term> <idx><h>radian</h></idx> siempre que el ángulo intercepte un arco del círculo que tenga una longitud de <m>1</m> unidad, como se muestra en <xref ref="F-PA-unit-circle-defining-radian">Figure</xref>. Nota particularmente que un ángulo que mide <m>1</m> radián intercepta un arco de la misma longitud que el radio del círculo.
 							</p>
 
 							<figure xml:id="F-PA-unit-circle-defining-radian">
 								<caption>
-									An angle <m>\theta</m> of measure <m>1</m> radian.
+									Un ángulo <m>\theta</m> de medida <m>1</m> radián.
 								</caption>
 								<image source="images/unit-circle-radian" />
 							</figure>
 						</sidebyside>
 
 					<p>
-						Suppose that <m>\alpha</m> and <m>\beta</m> are angles with respective radian measures <m>\alpha = \frac{\pi}{3}</m> and <m>\beta = \frac{3\pi}{4}</m>.  Assuming that we view <m>\alpha</m> and <m>\beta</m> as having their vertex at <m>(0,0)</m> and one side along the positive <m>x</m>-axis, sketch the angles <m>\alpha</m> and <m>\beta</m> on the unit circle in <xref ref="F-PA-big-unit-circle">Figure</xref>.
+						Supón que <m>\alpha</m> y <m>\beta</m> son ángulos con medidas en radianes respectivas <m>\alpha = \frac{\pi}{3}</m> y <m>\beta = \frac{3\pi}{4}</m>. Asumiendo que vemos <m>\alpha</m> y <m>\beta</m> como teniendo su vértice en <m>(0,0)</m> y un lado a lo largo del eje <m>x</m> positivo, dibuja los ángulos <m>\alpha</m> y <m>\beta</m> en el círculo unitario en <xref ref="F-PA-big-unit-circle">Figure</xref>.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the radian measure that corresponds to a <m>90^\circ</m> angle?
+						¿Cuál es la medida en radianes que corresponde a un ángulo de <m>90^\circ</m>?
 					</p>
 				</li>
 			</ol>

@@ -15,7 +15,7 @@
 
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-changing-aroc">
 
-    <p>
+  <p>
       Sea la función de altura para una pelota lanzada verticalmente dada por <m>s(t) = 64 - 16(t-1)^2</m>, donde <m>t</m> se mide en segundos y <m>s</m> se mide en pies sobre el suelo.
   </p>
 

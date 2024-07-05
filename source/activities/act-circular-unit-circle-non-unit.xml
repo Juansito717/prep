@@ -17,33 +17,33 @@
 
 	<statement>
 		<p>
-			Determine each of the following values or points exactly.
+			Determina cada uno de los siguientes valores o puntos exactamente.
 		</p>
 
 		<p>
 			<ol marker="a.">
 		        <li>
 		          <p>
-		            In a circle of radius <m>11</m>, the arc length intercepted by a central angle of <m>\frac{5\pi}{3}</m>.
+		            En un círculo de radio <m>11</m>, la longitud del arco interceptado por un ángulo central de <m>\frac{5\pi}{3}</m>.
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            In a circle of radius <m>3</m>, the central angle measure that intercepts an arc of length <m>\frac{\pi}{4}</m>.
+		            En un círculo de radio <m>3</m>, la medida del ángulo central que intercepta un arco de longitud <m>\frac{\pi}{4}</m>.
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            The radius of the circle in which an angle of
-		            <m>\frac{7\pi}{6}</m> intercepts an arc of length <m>\frac{\pi}{2}</m>.
+		            El radio del círculo en el que un ángulo de
+		            <m>\frac{7\pi}{6}</m> intercepta un arco de longitud <m>\frac{\pi}{2}</m>.
 		          </p>
 		        </li>
 
 		        <li>
 		        	<p>
-		        		The exact coordinates of the point on the circle of radius <m>5</m> that lies <m>\frac{25\pi}{6}</m> units counterclockwise along the circle from <m>(5,0)</m>.
+		        		Las coordenadas exactas del punto en el círculo de radio <m>5</m> que se encuentra a <m>\frac{25\pi}{6}</m> unidades en sentido antihorario a lo largo del círculo desde <m>(5,0)</m>.
 		        	</p>
 		        </li>
 			</ol>
@@ -61,4 +61,3 @@
 	</solution>
 
 </activity>
-

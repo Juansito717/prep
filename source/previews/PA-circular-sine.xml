@@ -17,11 +17,11 @@
 
 	<statement>
 		<p>
-			If we consider the unit circle in <xref ref="F-circular-sine-all-16">Figure</xref>, start at <m>t = 0</m>, and traverse the circle counterclockwise, we may view the height, <m>h</m>, of the traversing point as a function of the angle, <m>t</m>, in radians.  From there, we can plot the resulting <m>(t,h)</m> ordered pairs and connect them to generate the circular function pictured in <xref ref="F-circular-sine-first-graph">Figure</xref>.
+			Si consideramos el círculo unitario en <xref ref="F-circular-sine-all-16">Figura</xref>, comenzamos en <m>t = 0</m>, y recorremos el círculo en sentido antihorario, podemos ver la altura, <m>h</m>, del punto que recorre como una función del ángulo, <m>t</m>, en radianes. Desde allí, podemos trazar los pares ordenados resultantes <m>(t,h)</m> y conectarlos para generar la función circular representada en <xref ref="F-circular-sine-first-graph">Figura</xref>.
 		</p>
 
 		<figure xml:id="F-circular-sine-first-graph">
-			<caption>Plot of the circular function that tracks the height of a point traversing the unit circle.</caption>
+			<caption>Gráfico de la función circular que sigue la altura de un punto que recorre el círculo unitario.</caption>
 			<image source="images/sine-labeling-graph" />
 		</figure>
 
@@ -29,15 +29,15 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the exact value of <m>f( \frac{\pi}{4} )</m>? of <m>f( \frac{\pi}{3} )</m>?
+						¿Cuál es el valor exacto de <m>f( \frac{\pi}{4} )</m>? ¿de <m>f( \frac{\pi}{3} )</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Complete the following table with the exact values of <m>h</m> that correspond to the stated inputs.
+						Completa la siguiente tabla con los valores exactos de <m>h</m> que corresponden a las entradas indicadas.
 					</p>
 					<table xml:id="T-circular-sine-first-values">
-						<title>Exact values of <m>h</m> as a function of <m>t</m>.</title>
+						<title>Valores exactos de <m>h</m> como función de <m>t</m>.</title>
 						<tabular>
 							<row bottom="minor">
 								<cell><m>t</m></cell>
@@ -95,12 +95,12 @@
 				</li>
 				<li>
 					<p>
-						What is the exact value of <m>f( \frac{11\pi}{4} )</m>? of <m>f( \frac{14\pi}{3} )</m>?
+						¿Cuál es el valor exacto de <m>f( \frac{11\pi}{4} )</m>? ¿de <m>f( \frac{14\pi}{3} )</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Give four different values of <m>t</m> for which <m>f(t) = -\frac{\sqrt{3}}{2}</m>.
+						Da cuatro valores diferentes de <m>t</m> para los cuales <m>f(t) = -\frac{\sqrt{3}}{2}</m>.
 					</p>
 				</li>
 			</ol>

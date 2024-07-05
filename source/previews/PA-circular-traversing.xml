@@ -17,43 +17,43 @@
 
 	<statement>
 		<p>
-			In the context of the ferris wheel pictured in <xref ref="F-traversing-ferris-wheel-animation">Figure</xref>, assume that the height, <m>h</m>, of the moving point (the cab in which you are riding), and the distance, <m>d</m>, that the point has traveled around the circumference of the ferris wheel are both measured in meters.  
+			En el contexto de la rueda de la fortuna mostrada en <xref ref="F-traversing-ferris-wheel-animation">Figura</xref>, asume que la altura, <m>h</m>, del punto en movimiento (la cabina en la que estás) y la distancia, <m>d</m>, que el punto ha recorrido alrededor de la circunferencia de la rueda de la fortuna se miden en metros.  
 		</p>
 			
 		<p>	
-			Further, assume that the circumference of the ferris wheel is <m>150</m> meters.  In addition, suppose that after getting in your cab at the lowest point on the wheel, you traverse the full circle several times.
+			Además, asume que la circunferencia de la rueda de la fortuna es de <m>150</m> metros. Además, supón que después de subirte a tu cabina en el punto más bajo de la rueda, recorres el círculo completo varias veces.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Recall that the circumference, <m>C</m>, of a circle is connected to the circle's radius, <m>r</m>, by the formula <m>C = 2\pi r</m>.  What is the radius of the ferris wheel?  How high is the highest point on the ferris wheel?
+						Recuerda que la circunferencia, <m>C</m>, de un círculo está conectada al radio del círculo, <m>r</m>, por la fórmula <m>C = 2\pi r</m>. ¿Cuál es el radio de la rueda de la fortuna? ¿Qué tan alto es el punto más alto de la rueda de la fortuna?
 					</p>
 				</li>
 				<li>
 					<p>
-						How high is the cab after it has traveled <m>1/4</m> of the circumference of the circle?  
+						¿Qué tan alta está la cabina después de haber recorrido <m>1/4</m> de la circunferencia del círculo?  
 					</p>
 				</li>
 				<li>
 					<p>
-						How much distance along the circle has the cab traversed at the moment it first reaches a height of <m>\frac{150}{\pi} \approx 47.75</m> meters?
+						¿Cuánta distancia a lo largo del círculo ha recorrido la cabina en el momento en que alcanza por primera vez una altura de <m>\frac{150}{\pi} \approx 47.75</m> metros?
 					</p>
 				</li>
 				<li>
 					<p>
-						Can <m>h</m> be thought of as a function of <m>d</m>?  Why or why not?
+						¿Se puede pensar en <m>h</m> como una función de <m>d</m>? ¿Por qué o por qué no?
 					</p>
 				</li>
 				<li>
 					<p>
-						Can <m>d</m> be thought of as a function of <m>h</m>?  Why or why not?
+						¿Se puede pensar en <m>d</m> como una función de <m>h</m>? ¿Por qué o por qué no?
 					</p>
 				</li>
 				<li>
 					<p>
-						Why do you think the curve shown at right in <xref ref="F-traversing-ferris-wheel-animation">Figure</xref> has the shape that it does?  Write several sentences to explain.
+						¿Por qué crees que la curva mostrada a la derecha en <xref ref="F-traversing-ferris-wheel-animation">Figura</xref> tiene la forma que tiene? Escribe varias oraciones para explicar.
 					</p>
 				</li>
 			</ol>

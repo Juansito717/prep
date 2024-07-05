@@ -17,29 +17,28 @@
 
 	<statement>
 		<p>
-			Let <m>f(t) = \cos(t)</m>.  First, answer all of the questions below <em>without</em> using <em>Desmos</em>;
-      		then use <em>Desmos</em> to confirm your conjectures.  For each prompt, describe the graphs of <m>g</m> and <m>h</m> as transformations of <m>f</m> and, in addition, state the amplitude, midline, and period of both <m>g</m> and <m>h</m>.
+			Sea <m>f(t) = \cos(t)</m>. Primero, responde todas las preguntas a continuación <em>sin</em> usar <em>Desmos</em>; luego usa <em>Desmos</em> para confirmar tus conjeturas. Para cada indicación, describe los gráficos de <m>g</m> y <m>h</m> como transformaciones de <m>f</m> y, además, indica la amplitud, línea media y período de ambos <m>g</m> y <m>h</m>.
 		</p>
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						<m>g(t) = 3\cos(t)</m> and <m>h(t) = -\frac{1}{4}\cos(t)</m>
+						<m>g(t) = 3\cos(t)</m> y <m>h(t) = -\frac{1}{4}\cos(t)</m>
 					</p>
 				</li>
 				<li>
 					<p>
-						<m>g(t) = \cos(t-\pi)</m> and <m>h(t) = \cos\left(t+ \frac{\pi}{2}\right)</m>
+						<m>g(t) = \cos(t-\pi)</m> y <m>h(t) = \cos\left(t+ \frac{\pi}{2}\right)</m>
 					</p>
 				</li>
 				<li>
 					<p>
-						<m>g(t) = \cos(t)+4</m> and <m>h(t) = \cos\left(t\right)-2</m>
+						<m>g(t) = \cos(t)+4</m> y <m>h(t) = \cos\left(t\right)-2</m>
 					</p>
 				</li>
 				<li>
 					<p>
-						<m>g(t) = 3\cos(t-\pi)+4</m> and <m>h(t) = -\frac{1}{4}\cos\left(t+ \frac{\pi}{2}\right)-2</m>
+						<m>g(t) = 3\cos(t-\pi)+4</m> y <m>h(t) = -\frac{1}{4}\cos\left(t+ \frac{\pi}{2}\right)-2</m>
 					</p>
 				</li>
 			</ol>

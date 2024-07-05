@@ -14,40 +14,40 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-circular-sine-cosine">
-  <title>The Sine and Cosine Functions</title>
+	<title>Las Funciones Seno y Coseno</title>
 
   <objectives>
   	<ul>
-  		<li>
-  			<p>
-  				What are the sine and cosine functions and how do they arise from a point traversing the unit circle?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What important properties do the sine and cosine functions share?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How do we compute values of <m>\sin(t)</m> and <m>\cos(t)</m>, either exactly or approximately?
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				¿Qué son las funciones seno y coseno y cómo surgen de un punto que recorre el círculo unitario?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Qué propiedades importantes comparten las funciones seno y coseno?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cómo calculamos los valores de <m>\sin(t)</m> y <m>\cos(t)</m>, ya sea exactamente o aproximadamente?
+			</p>
+		</li>
+	</ul>
   </objectives>
 
   <introduction>
-  	<p>
-  		In <xref ref="sec-circular-traversing">Section</xref>, we saw how tracking the height of a point that is traversing a cirle generates a periodic function, such as in <xref ref="F-act-circular-functions-properties-graph">Figure</xref>.  Then, in <xref ref="sec-circular-unit-circle">Section</xref>, we identified a collection of <m>16</m> special points on the unit circle, as seen in <xref ref="F-circular-sine-all-16">Figure</xref>.
-  	</p>
+	<p>
+		En <xref ref="sec-circular-traversing">Sección</xref>, vimos cómo el seguimiento de la altura de un punto que recorre un círculo genera una función periódica, como en <xref ref="F-act-circular-functions-properties-graph">Figura</xref>. Luego, en <xref ref="sec-circular-unit-circle">Sección</xref>, identificamos una colección de <m>16</m> puntos especiales en el círculo unitario, como se ve en <xref ref="F-circular-sine-all-16">Figura</xref>.
+	</p>
 
 	<figure xml:id="F-circular-sine-all-16">
-		<caption>The unit circle with <m>16</m> labeled special points.</caption>
+		<caption>El círculo unitario con <m>16</m> puntos especiales etiquetados.</caption>
 		<image source="images/unit-circle-16-all-labeled" width="80%"/>
 	</figure>
   	
 	<p>
-		You can also use the <em>Desmos</em> file at <url href="https://www.desmos.com/calculator/jgddn7tzxg">http://gvsu.edu/s/0xt</url> to review and study the special points on the unit circle.
+		También puedes usar el archivo de <em>Desmos</em> en <url href="https://www.desmos.com/calculator/jgddn7tzxg">http://gvsu.edu/s/0xt</url> para revisar y estudiar los puntos especiales en el círculo unitario.
 	</p>
 
 	<xi:include href="./previews/PA-circular-sine.xml" />
@@ -55,10 +55,10 @@
   </introduction>
 
   <subsection xml:id="subsec-circular-sine-defn">
-  	<title>The definition of the sine function</title>
-  	<p>
-  		The circular function that tracks the height of a point on the unit circle traversing counterclockwise from <m>(1,0)</m> as a function of the corresponding central angle (in radians) is one of the most important functions in mathematics.  As such, we give the function a name:  the <term>sine</term> function.
-  	</p>
+	<title>La definición de la función seno</title>
+	<p>
+		La función circular que rastrea la altura de un punto en el círculo unitario que recorre en sentido antihorario desde <m>(1,0)</m> como una función del ángulo central correspondiente (en radianes) es una de las funciones más importantes en matemáticas. Por lo tanto, le damos un nombre a la función: la función <term>seno</term>.
+	</p>
 
 	<sidebyside widths="48% 48%" valign="middle" margins="0%">
 	    <p>
@@ -66,7 +66,7 @@
 				<idx><h>sine function</h></idx>
 				<statement>
 					<p>
-						Given a central angle in the unit circle that measures <m>t</m> radians and that intersects the circle at both <m>(1,0)</m> and <m>(a,b)</m>, as shown in <xref ref="F-def-sine">Figure</xref>, we define the <term>sine of <m>t</m></term>, denoted <m>\sin(t)</m>, by the rule 
+						Dado un ángulo central en el círculo unitario que mide <m>t</m> radianes y que intersecta el círculo en <m>(1,0)</m> y <m>(a,b)</m>, como se muestra en <xref ref="F-def-sine">Figura</xref>, definimos el <term>seno de <m>t</m></term>, denotado <m>\sin(t)</m>, por la regla 
 						<me>
 							\sin(t) = b
 						</me>.
@@ -75,22 +75,22 @@
 		</definition>
             </p>
 		<figure xml:id="F-def-sine">
-			<caption>The definition of the sine of an angle <m>t</m>.</caption>
+			<caption>La definición del seno de un ángulo <m>t</m>.</caption>
 			<image source="images/sine-defn" />
 		</figure>
 		
 	</sidebyside>
 
-		<p>
-			Because of the correspondence between radian angle measure and distance traversed on the unit circle, we can also think of <m>\sin(t)</m> as identifying the <m>y</m>-coordinate of the point after it has traveled <m>t</m> units counterclockwise along the circle from <m>(1,0)</m>.  Note particularly that we can consider the sine of negative inputs:  for instance, <m>\sin(-\frac{\pi}{2}) = -1</m>.
-		</p>
+	<p>
+		Debido a la correspondencia entre la medida del ángulo en radianes y la distancia recorrida en el círculo unitario, también podemos pensar en <m>\sin(t)</m> como la coordenada <m>y</m> del punto después de haber recorrido <m>t</m> unidades en sentido antihorario a lo largo del círculo desde <m>(1,0)</m>. Nota particularmente que podemos considerar el seno de entradas negativas: por ejemplo, <m>\sin(-\frac{\pi}{2}) = -1</m>.
+	</p>
 
 	<p>
-		Based on our earlier work with the unit circle, we know many different exact values of the sine function, and summarize these in <xref ref="T-circular-sine-values">Table</xref>.
+		Basándonos en nuestro trabajo anterior con el círculo unitario, conocemos muchos valores exactos diferentes de la función seno, y los resumimos en <xref ref="T-circular-sine-values">Tabla</xref>.
 	</p>
 
   					<table xml:id="T-circular-sine-values">
-						<title>Values of <m>h(t) = \sin(t)</m> at special points on the unit circle.</title>
+						<title>Valores de <m>h(t) = \sin(t)</m> en puntos especiales del círculo unitario.</title>
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>
@@ -147,22 +147,22 @@
 						</tabular>
 					</table>
 
-	<p>
-		Moreover, if we now plot these points in the usual way, as we did in <xref ref="PA-circular-sine">Preview Activity</xref>, we get the familiar circular wave function that comes from tracking the height of a point traversing a circle.  We often call the graph in <xref ref="F-circular-sine-graph">Figure</xref> the <em>sine wave</em>.
-	</p>
-
+		<p>
+			Además, si ahora graficamos estos puntos de la manera habitual, como lo hicimos en <xref ref="PA-circular-sine">Actividad de Vista Previa</xref>, obtenemos la familiar función de onda circular que proviene de rastrear la altura de un punto que recorre un círculo. A menudo llamamos a la gráfica en <xref ref="F-circular-sine-graph">Figura</xref> la <em>onda seno</em>.
+		</p>
+				
   	<figure xml:id="F-circular-sine-graph">
-  		<caption>Plot of the sine function on the interval <m>[-\frac{\pi}{4}, \frac{7\pi}{4}]</m>.</caption>
-  		<image source="images/sine-definition-graph" />
+		<caption>Gráfica de la función seno en el intervalo <m>[-\frac{\pi}{4}, \frac{7\pi}{4}]</m>.</caption>
+		<image source="images/sine-definition-graph" />
   	</figure>
 
   </subsection>
 
   <subsection xml:id="subsec-circular-cosine-defn">
-  	<title>The definition of the cosine function</title>
-  	<p>
-  		Given any central angle of radian measure <m>t</m> in the unit circle with one side passing through the point <m>(1,0)</m>, the angle generates a unique point <m>(a,b)</m> that lies on the circle.  Just as we can view the <m>y</m>-coordinate as a function of <m>t</m>, the <m>x</m>-coordinate is likewise a function of <m>t</m>.  We therefore make the following definition.
-  	</p>
+	<title>La definición de la función coseno</title>
+	<p>
+		Dado cualquier ángulo central de medida en radianes <m>t</m> en el círculo unitario con un lado pasando por el punto <m>(1,0)</m>, el ángulo genera un punto único <m>(a,b)</m> que se encuentra en el círculo. Así como podemos ver la coordenada <m>y</m> como una función de <m>t</m>, la coordenada <m>x</m> también es una función de <m>t</m>. Por lo tanto, hacemos la siguiente definición.
+	</p>
 
 	<sidebyside widths="48% 48%" margins="0%" valign="middle">
             <p>
@@ -170,7 +170,7 @@
 				<idx><h>cosine function</h></idx>
 				<statement>
 					<p>
-						Given a central angle in the unit circle that measures <m>t</m> radians and that intersects the circle at both <m>(1,0)</m> and <m>(a,b)</m>, as shown in <xref ref="F-def-cosine">Figure</xref>, we define the <term>cosine of <m>t</m></term>, denoted <m>\cos(t)</m>, by the rule 
+						Dado un ángulo central en el círculo unitario que mide <m>t</m> radianes y que intersecta el círculo en <m>(1,0)</m> y <m>(a,b)</m>, como se muestra en <xref ref="F-def-cosine">Figura</xref>, definimos el <term>coseno de <m>t</m></term>, denotado <m>\cos(t)</m>, por la regla 
 						<me>
 							\cos(t) = a
 						</me>.
@@ -179,22 +179,22 @@
 			</definition>
             </p>
 		<figure xml:id="F-def-cosine">
-			<caption>The definition of the cosine of an angle <m>t</m>.</caption>
+			<caption>La definición del coseno de un ángulo <m>t</m>.</caption>
 			<image source="images/sine-defn-cosine" />
 		</figure>
 		
 	</sidebyside>
 
 	<p>
-		Again because of the correspondence between the radian measure of an angle and arc length along the unit circle, we can view the value of <m>\cos(t)</m> as tracking the <m>x</m>-coordinate of a point traversing the unit circle clockwise a distance of <m>t</m> units along the circle from <m>(1,0)</m>.  We now use the data and information we have developed about the unit circle to build a table of values of <m>\cos(t)</m> as well as a graph of the curve it generates.
+		Nuevamente, debido a la correspondencia entre la medida en radianes de un ángulo y la longitud del arco a lo largo del círculo unitario, podemos ver el valor de <m>\cos(t)</m> como el seguimiento de la coordenada <m>x</m> de un punto que recorre el círculo unitario en sentido horario una distancia de <m>t</m> unidades a lo largo del círculo desde <m>(1,0)</m>. Ahora usamos los datos y la información que hemos desarrollado sobre el círculo unitario para construir una tabla de valores de <m>\cos(t)</m> así como una gráfica de la curva que genera.
 	</p>
 
 	<xi:include href="./activities/act-circular-sine-cosine.xml" />
 
-  	<p>
-  		As we work with the sine and cosine functions, it's always helpful to remember their definitions in terms of the unit circle and the motion of a point traversing the circle.  At <url href="http://gvsu.edu/s/0xe">http://gvsu.edu/s/0xe</url> you can explore and investigate a helpful <em>Desmos</em> animation that shows how this motion around the circle generates each of the respective graphs.
-  	</p>
-  </subsection>
+	<p>
+		Mientras trabajamos con las funciones seno y coseno, siempre es útil recordar sus definiciones en términos del círculo unitario y el movimiento de un punto que recorre el círculo. En <url href="http://gvsu.edu/s/0xe">http://gvsu.edu/s/0xe</url> puedes explorar e investigar una animación útil de <em>Desmos</em> que muestra cómo este movimiento alrededor del círculo genera cada uno de los gráficos respectivos.
+	</p>
+	</subsection>
 
   <subsection xml:id="subsec-circular-sine-cosine-properties">
   	<title>Properties of the sine and cosine functions</title>
@@ -204,73 +204,71 @@
 
 
 	<assemblage xml:id="asm-sine-cosine-properties">
-		<title>
-			Properties of the sine and cosine functions
-		</title>
+		<title>Propiedades de las funciones seno y coseno</title>
 		<p>
-			For both <m>f(t) = \sin(t)</m> and <m>g(t) = \cos(t)</m>,
+			Dado que la función seno resulta de seguir la coordenada <m>y</m> de un punto que recorre el círculo unitario y la función coseno de la coordenada <m>x</m>, las dos funciones comparten varias propiedades de las funciones circulares.
 		</p>
-
+  
 	  	<p>
 	  		<ul>
 	  			<li>
-	  				<p>
-	  					the domain of the function is all real numbers;
-	  				</p>
-	  			</li>
-	  			<li>
-	  				<p>
-	  					the range of the function is <m>[-1,1]</m>;
-	  				</p>
-	  			</li>
-	  			<li>
-	  				<p>
-	  					the midline of the function is <m>y = 0</m>;
-	  				</p>
-	  			</li>
-	  			<li>
-	  				<p>
-	  					the amplitude of the function is <m>a = 1</m>;
-	  				</p>
-	  			</li>
-	  			<li>
-	  				<p>
-	  					the period of the function is <m>p = 2\pi</m>.
-	  				</p>
-	  			</li>
-	  		</ul>	
+					<p>
+						el dominio de la función son todos los números reales;
+					</p>
+				</li>
+				<li>
+					<p>
+						el rango de la función es <m>[-1,1]</m>;
+					</p>
+				</li>
+				<li>
+					<p>
+						la línea media de la función es <m>y = 0</m>;
+					</p>
+				</li>
+				<li>
+					<p>
+						la amplitud de la función es <m>a = 1</m>;
+					</p>
+				</li>
+				<li>
+					<p>
+						el período de la función es <m>p = 2\pi</m>.
+					</p>
+				</li>
+			</ul>	
 	  	</p>		
 	</assemblage>
 
 	<p>
-		It is also insightful to juxtapose the sine and cosine functions' graphs on the same coordinate axes.  When we do, as seen in <xref ref="F-sine-cosine-both">Figure</xref>, we see that the curves can be viewed as horizontal translations of one another.
+		También es revelador yuxtaponer los gráficos de las funciones seno y coseno en los mismos ejes de coordenadas. Cuando lo hacemos, como se ve en <xref ref="F-sine-cosine-both">Figura</xref>, vemos que las curvas pueden ser vistas como traslaciones horizontales una de la otra.
 	</p>
 
 	<figure xml:id="F-sine-cosine-both">
-		<caption>Graphs of the sine and cosine functions.</caption>
+		<caption>Gráficos de las funciones seno y coseno.</caption>
 		<image source="images/sine-and-cosine-graphs" width="80%" />
 	</figure>
 
 	<p>
-		In particular, since the sine graph can be viewed as the cosine graph shifted <m>\frac{\pi}{2}</m> units to the right, it follows that for any value of <m>t</m>,
+		En particular, dado que el gráfico del seno puede ser visto como el gráfico del coseno desplazado <m>\frac{\pi}{2}</m> unidades a la derecha, se sigue que para cualquier valor de <m>t</m>,
 		<me>
 			\sin(t) = \cos(t-\frac{\pi}{2})
 		</me>.
-		Similarly, since the cosine graph can be viewed as the sine graph shifted left,
+		De manera similar, dado que el gráfico del coseno puede ser visto como el gráfico del seno desplazado a la izquierda,
 		<me>
 			\cos(t) = \sin(t + \frac{\pi}{2})
 		</me>.
-		Because each of the two preceding equations hold for every value of <m>t</m>, they are often referred to as <em>identities</em>.
+		Dado que cada una de las dos ecuaciones anteriores se cumple para cada valor de <m>t</m>, a menudo se les llama <em>identidades</em>.
 	</p>
 
 	<p>
-		In light of the definitions of the sine and cosine functions, we can now view any point <m>(x,y)</m> on the unit circle as being of the form <m>(\cos(t),\sin(t))</m>, where <m>t</m> is the measure of the angle whose vertices are <m>(1,0)</m>, <m>(0,0)</m>, and <m>(x,y)</m>.  Note particularly that since <m>x^2 + y^2 = 1</m>, it is also true that <m>\cos^2(t) + \sin^2(t) = 1</m>.  We call this fact the Fundamental Trigonometric Identity.
+		A la luz de las definiciones de las funciones seno y coseno, ahora podemos ver cualquier punto <m>(x,y)</m> en el círculo unitario como de la forma <m>(\cos(t),\sin(t))</m>, donde <m>t</m> es la medida del ángulo cuyos vértices son <m>(1,0)</m>, <m>(0,0)</m> y <m>(x,y)</m>. Nota particularmente que dado que <m>x^2 + y^2 = 1</m>, también es cierto que <m>\cos^2(t) + \sin^2(t) = 1</m>. Llamamos a este hecho la Identidad Trigonométrica Fundamental.
 	</p>
 
 	<assemblage xml:id="asm-sine-cosine-fund-trid-identity">
-		<title>The Fundamental Trigonometric Identity</title>
+		<title>La Identidad Trigonométrica Fundamental</title>
 		<p>
-			For any real number <m>t</m>,
+			Para cualquier número real <m>t</m>,
 			<me>
 				\cos^2(t) + \sin^2(t) = 1
 			</me>.
@@ -278,7 +276,7 @@
 	</assemblage>
 
 	<p>	
-		There are additional trends and patterns in the two functions' graphs that we explore further in the following activity.
+		Hay tendencias y patrones adicionales en los gráficos de las dos funciones que exploramos más a fondo en la siguiente actividad.
 	</p>
 	
 	<xi:include href="./activities/act-circular-sine-cosine-incr-CCU.xml" />
@@ -286,44 +284,44 @@
   </subsection>
 
   <subsection xml:id="subsec-circular-sine-cosine-computing">
-  	<title>Using computing technology</title>
-  	<p>
-  		We have established that we know the exact value of <m>\sin(t)</m> and <m>\cos(t)</m> for any of the <m>t</m>-values in <xref ref="T-circular-sine-values">Table</xref>, as well as for any such <m>t \pm 2j\pi</m>, where <m>j</m> is a whole number, due to the periodicity of the functions.  But what if we want to know <m>\sin(1.35)</m> or <m>\cos(\frac{\pi}{5})</m> or values for other inputs not in the table?
-  	</p>
+	<title>Usando tecnología informática</title>
+	<p>
+		Hemos establecido que conocemos el valor exacto de <m>\sin(t)</m> y <m>\cos(t)</m> para cualquiera de los valores de <m>t</m> en <xref ref="T-circular-sine-values">Table</xref>, así como para cualquier <m>t \pm 2j\pi</m>, donde <m>j</m> es un número entero, debido a la periodicidad de las funciones. Pero, ¿qué pasa si queremos saber <m>\sin(1.35)</m> o <m>\cos(\frac{\pi}{5})</m> o valores para otras entradas que no están en la tabla?
+	</p>
 
-  	<p>
-  		Any standard computing device such as a scientific calculator, <em>Desmos</em>, <em>Geogebra</em>, or <em>WolframAlpha</em>, has the ability to evaluate the sine and cosine functions at any input we desire.  Because the input is viewed as an angle, each computing device has the option to consider the angle in radians or degrees.  <em>It is always essential that you are sure which type of input your device is expecting.</em>  Our computational device of choice is <em>Desmos</em>.  In <em>Desmos</em>, you can change the input type between radians and degrees by clicking the wrench icon in the upper right and choosing the desired units.  Radian measure is the default.
-  	</p>
+	<p>
+		Cualquier dispositivo informático estándar, como una calculadora científica, <em>Desmos</em>, <em>Geogebra</em> o <em>WolframAlpha</em>, tiene la capacidad de evaluar las funciones seno y coseno en cualquier entrada que deseemos. Debido a que la entrada se ve como un ángulo, cada dispositivo informático tiene la opción de considerar el ángulo en radianes o grados. <em>Es siempre esencial que estés seguro de qué tipo de entrada espera tu dispositivo.</em> Nuestro dispositivo de cálculo preferido es <em>Desmos</em>. En <em>Desmos</em>, puedes cambiar el tipo de entrada entre radianes y grados haciendo clic en el ícono de la llave inglesa en la parte superior derecha y eligiendo las unidades deseadas. La medida en radianes es la predeterminada.
+	</p>
 
-  	<p>
-  		It takes substantial and sophisticated mathematics to enable a computational device to evaluate the sine and cosine functions at any value we want; the algorithms involve an idea from calculus known as an infinite series.  While your computational device is powerful, it's both helpful and important to understand the meaning of these values on the unit circle and to remember the special points for which we know the outputs of the sine and cosine functions exactly.
-  	</p>
+	<p>
+		Se necesita una matemática sustancial y sofisticada para permitir que un dispositivo informático evalúe las funciones seno y coseno en cualquier valor que queramos; los algoritmos involucran una idea del cálculo conocida como una serie infinita. Aunque tu dispositivo de cálculo es poderoso, es tanto útil como importante entender el significado de estos valores en el círculo unitario y recordar los puntos especiales para los cuales conocemos exactamente los resultados de las funciones seno y coseno.
+	</p>
 
   	<xi:include href="./activities/act-circular-sine-cosine-computing.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-circular-sine-summary">
-  	<title>Summary</title>
-        <p>
-  	<ul>
-  		<li>
-  			<p>
-  				The sine and cosine functions result from tracking the <m>y</m>- and <m>x</m>-coordinates of a point traversing the unit circle counterclockwise from <m>(1,0)</m>.  The value of <m>\sin(t)</m> is the <m>y</m>-coordinate of a point that has traversed <m>t</m> units along the circle from <m>(1,0)</m> (or equivalently that corresponds to an angle of <m>t</m> radians), while the value of <m>\cos(t)</m> is the <m>x</m>-coordinate of the same point.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				The sine and cosine functions are both periodic functions that share the same domain (the set of all real numbers), range (the interval <m>[-1,1]</m>), midline (<m>y = 0</m>), amplitude (<m>a = 1</m>), and period (<m>P = 2\pi</m>).  In addition, the sine function is horizontal shift of the cosine function by <m>\frac{\pi}{2}</m> units to the right, so <m>\sin(t) = \cos(t-\frac{\pi}{2})</m> for any value of <m>t</m>.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				If <m>t</m> corresponds to one of the special angles that we know on the unit circle (as in <xref ref="F-circular-sine-all-16">Figure</xref>), we can compute the values of <m>\sin(t)</m> and <m>\cos(t)</m>exactly.  For other values of <m>t</m>, we can use a computational device to estimate the value of either function at a given input; when we do so, we must take care to know whether we are computing in terms of radians or degrees.
-  			</p>
-  		</li>
-  	</ul>
-        </p>
+	<title>Resumen</title>
+	<p>
+		<ul>
+			<li>
+				<p>
+					Las funciones seno y coseno resultan de rastrear las coordenadas <m>y</m> y <m>x</m> de un punto que recorre el círculo unitario en sentido antihorario desde <m>(1,0)</m>. El valor de <m>\sin(t)</m> es la coordenada <m>y</m> de un punto que ha recorrido <m>t</m> unidades a lo largo del círculo desde <m>(1,0)</m> (o, de manera equivalente, que corresponde a un ángulo de <m>t</m> radianes), mientras que el valor de <m>\cos(t)</m> es la coordenada <m>x</m> del mismo punto.
+				</p>
+			</li>
+			<li>
+				<p>
+					Las funciones seno y coseno son ambas funciones periódicas que comparten el mismo dominio (el conjunto de todos los números reales), rango (el intervalo <m>[-1,1]</m>), línea media (<m>y = 0</m>), amplitud (<m>a = 1</m>) y período (<m>P = 2\pi</m>). Además, la función seno es un desplazamiento horizontal de la función coseno por <m>\frac{\pi}{2}</m> unidades a la derecha, por lo que <m>\sin(t) = \cos(t-\frac{\pi}{2})</m> para cualquier valor de <m>t</m>.
+				</p>
+			</li>
+			<li>
+				<p>
+					Si <m>t</m> corresponde a uno de los ángulos especiales que conocemos en el círculo unitario (como en <xref ref="F-circular-sine-all-16">Figure</xref>), podemos calcular los valores de <m>\sin(t)</m> y <m>\cos(t)</m> exactamente. Para otros valores de <m>t</m>, podemos usar un dispositivo de cálculo para estimar el valor de cualquiera de las funciones en una entrada dada; cuando lo hagamos, debemos tener cuidado de saber si estamos calculando en términos de radianes o grados.
+				</p>
+			</li>
+		</ul>
+	</p>
   </subsection>
 
   <xi:include href="./exercises/ez-circular-sine-cosine.xml" />
@@ -331,4 +329,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

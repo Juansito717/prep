@@ -17,22 +17,22 @@
 
 	<statement>
 		<p>
-			Let <m>k = g(t)</m> be the function that tracks the <m>x</m>-coordinate of a point traversing the unit circle counterclockwise from <m>(1,0)</m>.  That is, <m>g(t) = \cos(t)</m>.  Use the information we know about the unit circle that is summarized in <xref ref="F-circular-sine-all-16">Figure</xref> to respond to the following questions.
+			Supón que <m>k = g(t)</m> es la función que sigue la coordenada <m>x</m> de un punto que recorre el círculo unitario en sentido antihorario desde <m>(1,0)</m>. Es decir, <m>g(t) = \cos(t)</m>. Usa la información que conocemos sobre el círculo unitario que se resume en <xref ref="F-circular-sine-all-16">Figure</xref> para responder a las siguientes preguntas.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the exact value of <m>\cos(\frac{\pi}{6})</m>?  of <m>\cos(\frac{5\pi}{6})</m>? <m>\cos(-\frac{\pi}{3})</m>?
+						¿Cuál es el valor exacto de <m>\cos(\frac{\pi}{6})</m>? ¿de <m>\cos(\frac{5\pi}{6})</m>? ¿<m>\cos(-\frac{\pi}{3})</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Complete the following table with the exact values of <m>k</m> that correspond to the stated inputs.
+						Completa la siguiente tabla con los valores exactos de <m>k</m> que corresponden a las entradas indicadas.
 					</p>
 					<table xml:id="T-circular-cosine-first-values">
-						<title>Exact values of <m>k = g(t) = \cos(t)</m>.</title>
+						<title>Valores exactos de <m>k = g(t) = \cos(t)</m>.</title>
 						<tabular>
 							<row bottom="minor">
 								<cell><m>t</m></cell>
@@ -90,27 +90,27 @@
 				</li>
 				<li>
 					<p>
-						On the axes provided in <xref ref="F-circular-sine-cosine-axes">Figure</xref>, sketch an accurate graph of <m>k = \cos(t)</m>.  Label the exact location of several key points on the curve.
+						En los ejes proporcionados en <xref ref="F-circular-sine-cosine-axes">Figure</xref>, dibuja un gráfico preciso de <m>k = \cos(t)</m>. Etiqueta la ubicación exacta de varios puntos clave en la curva.
 					</p>
 
 					<figure xml:id="F-circular-sine-cosine-axes">
-						<caption>Axes for plotting <m>k = \cos(t)</m>.</caption>
+						<caption>Ejes para trazar <m>k = \cos(t)</m>.</caption>
 						<image source="images/sine-cosine-definition-axes" />
 					</figure>
 				</li>
 				<li>
 					<p>
-						What is the exact value of <m>\cos( \frac{11\pi}{4} )</m>? of <m>\cos( \frac{14\pi}{3} )</m>?
+						¿Cuál es el valor exacto de <m>\cos( \frac{11\pi}{4} )</m>? ¿de <m>\cos( \frac{14\pi}{3} )</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Give four different values of <m>t</m> for which <m>\cos(t) = -\frac{\sqrt{3}}{2}</m>.
+						Da cuatro valores diferentes de <m>t</m> para los cuales <m>\cos(t) = -\frac{\sqrt{3}}{2}</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						How is the graph of <m>k = \cos(t)</m> different from the graph of <m>h = \sin(t)</m>?  How are the graphs similar?
+						¿Cómo es diferente el gráfico de <m>k = \cos(t)</m> del gráfico de <m>h = \sin(t)</m>? ¿Cómo son similares los gráficos?
 					</p>
 				</li>
 			</ol>
@@ -128,4 +128,3 @@
 	</solution>
 
 </activity>
-

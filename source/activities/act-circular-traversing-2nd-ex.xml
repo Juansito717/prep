@@ -17,16 +17,16 @@
 
 	<statement>
 		<p>
-			Consider the circle pictured in <xref ref="F-act-circular-traversing-circle">Figure</xref> that is centered at the point <m>(2,2)</m> and that has circumference <m>8</m>.  Assume that we track the <m>y</m>-coordinate (that is, the height, <m>h</m>) of a point that is traversing the circle counterclockwise and that it starts at <m>P_0</m> as pictured.
+			Considera el círculo representado en <xref ref="F-act-circular-traversing-circle">Figura</xref> que está centrado en el punto <m>(2,2)</m> y que tiene una circunferencia de <m>8</m>. Supón que rastreamos la coordenada <m>y</m> (es decir, la altura, <m>h</m>) de un punto que está recorriendo el círculo en sentido antihorario y que comienza en <m>P_0</m> como se muestra.
 		</p>
 
 		<sidebyside widths="33% 66%">
 			<figure xml:id="F-act-circular-traversing-circle">
-				<caption>A point traversing the circle.</caption>
+				<caption>Un punto recorriendo el círculo.</caption>
 				<image source="images/traversing-act-circle"/>
 			</figure>
 			<figure xml:id="F-act-circular-traversing-grid">
-				<caption>Axes for plotting <m>h</m> as a function of <m>d</m>.</caption>
+				<caption>Ejes para graficar <m>h</m> como una función de <m>d</m>.</caption>
 				<image source="images/traversing-act-circular-grid"/>
 			</figure>
 		</sidebyside>
@@ -35,17 +35,17 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						How far along the circle is the point <m>P_1</m> from <m>P_0</m>?  Why?
+						¿Qué tan lejos está el punto <m>P_1</m> de <m>P_0</m> a lo largo del círculo? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						Label the subsequent points in the figure <m>P_2</m>, <m>P_3</m>, <m>\ldots</m> as we move counterclockwise around the circle.  What is the exact <m>y</m>-coordinate of the point <m>P_2</m>?  of <m>P_4</m>?  Why?
+						Etiqueta los puntos subsecuentes en la figura como <m>P_2</m>, <m>P_3</m>, <m>\ldots</m> a medida que nos movemos en sentido antihorario alrededor del círculo. ¿Cuál es la coordenada <m>y</m> exacta del punto <m>P_2</m>? ¿y del <m>P_4</m>? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine the <m>y</m>-coordinates of the remaining points on the circle (exactly where possible, otherwise approximately) and hence complete the entries in <xref ref="T-act-circular-traversing-2nd-ex">Table</xref> that track the height, <m>h</m>, of the point traversing the circle as a function of distance traveled, <m>d</m>.  Note that the <m>d</m>-values in the table correspond to the point traversing the circle more than once.
+						Determina las coordenadas <m>y</m> de los puntos restantes en el círculo (exactamente donde sea posible, de lo contrario aproximadamente) y completa las entradas en <xref ref="T-act-circular-traversing-2nd-ex">Tabla</xref> que rastrean la altura, <m>h</m>, del punto que recorre el círculo como una función de la distancia recorrida, <m>d</m>. Nota que los valores de <m>d</m> en la tabla corresponden al punto recorriendo el círculo más de una vez.
 					</p>
 
 					<table xml:id="T-act-circular-traversing-2nd-ex">
@@ -96,17 +96,17 @@
 				</li>
 				<li>
 					<p>
-						By plotting the points in <xref ref="T-act-circular-traversing-2nd-ex">Table</xref> and connecting them in an intuitive way, sketch a graph of <m>h</m> as a function of <m>d</m> on the axes provided in <xref ref="F-act-circular-traversing-grid">Figure</xref> over the interval <m>0 \le d \le 16</m>.  Clearly label the scale of your axes and the coordinates of several important points on the curve.
+						Al graficar los puntos en <xref ref="T-act-circular-traversing-2nd-ex">Tabla</xref> y conectarlos de una manera intuitiva, dibuja un gráfico de <m>h</m> como una función de <m>d</m> en los ejes proporcionados en <xref ref="F-act-circular-traversing-grid">Figura</xref> sobre el intervalo <m>0 \le d \le 16</m>. Etiqueta claramente la escala de tus ejes y las coordenadas de varios puntos importantes en la curva.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is similar about your graph in comparison to the one in <xref ref="F-traversing-first-example-graph">Figure</xref>?  What is different?
+						¿Qué es similar en tu gráfico en comparación con el de <xref ref="F-traversing-first-example-graph">Figura</xref>? ¿Qué es diferente?
 					</p>
 				</li>
 				<li>
 					<p>
-						What will be the value of <m>h</m> when <m>d = 51</m>?  How about when <m>d = 102</m>?
+						¿Cuál será el valor de <m>h</m> cuando <m>d = 51</m>? ¿Y cuando <m>d = 102</m>?
 					</p>
 				</li>
 			</ol>
@@ -124,4 +124,3 @@
 	</solution>
 
 </activity>
-

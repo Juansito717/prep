@@ -14,177 +14,178 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-circular-sinusoidal">
-  <title>Sinusoidal Functions</title>
-  <objectives>
+	<title>Funciones Sinusoidales</title>
+	<objectives>
   	<ul>
-  		<li>
-  			<p>
-  				How do the three standard transformations (vertical translation, horizontal translation, and vertical scaling) affect the midline, amplitude, range, and period of sine and cosine curves?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What algebraic transformation results in horizontal stretching or scaling of a function?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How can we determine a formula involving sine or cosine that models any circular periodic function for which the midline, amplitude, period, and an anchor point are known?
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				¿Cómo afectan las tres transformaciones estándar (traslación vertical, traslación horizontal y escalado vertical) a la línea media, amplitud, rango y período de las curvas de seno y coseno?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Qué transformación algebraica resulta en el estiramiento o escalado horizontal de una función?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cómo podemos determinar una fórmula que involucre seno o coseno que modele cualquier función periódica circular para la cual se conocen la línea media, amplitud, período y un punto de anclaje?
+			</p>
+		</li>
+	</ul>
   </objectives>
   <introduction>
-  	<p>
-  		Recall our work in <xref ref="sec-changing-transformations">Section</xref>, where we studied how the graph of the function <m>g</m> defined by <m>g(x) = af(x-b) + c</m> is related to the graph of <m>f</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers with <m>a \ne 0</m>.  Because such transformations can shift and stretch a function, we are interested in understanding how we can use transformations of the sine and cosine functions to fit formulas to circular functions.
-  	</p>
+	<p>
+		Recuerda nuestro trabajo en <xref ref="sec-changing-transformations">Section</xref>, donde estudiamos cómo el gráfico de la función <m>g</m> definida por <m>g(x) = af(x-b) + c</m> se relaciona con el gráfico de <m>f</m>, donde <m>a</m>, <m>b</m> y <m>c</m> son números reales con <m>a \ne 0</m>. Debido a que tales transformaciones pueden desplazar y estirar una función, nos interesa entender cómo podemos usar transformaciones de las funciones seno y coseno para ajustar fórmulas a funciones circulares.
+	</p>
 
   	<xi:include href="./previews/PA-circular-sinusoidal.xml" />
 
   </introduction>
   <subsection xml:id="subsec-circular-sinusoidal-shifts-stretches">
-  	<title>Shifts and vertical stretches of the sine and cosine functions</title>
-  	<p>
-  		We know that the standard functions <m>f(t) = \sin(t)</m> and <m>g(t) = \cos(t)</m> are circular functions that each have midline <m>y = 0</m>, amplitude <m>a = 1</m>, period <m>p = 2\pi</m>, and range <m>[-1,1]</m>.  Our work in <xref ref="PA-circular-sinusoidal">Preview Activity</xref> suggests the following general principles.
-  	</p>
-
+	<title>Desplazamientos y estiramientos verticales de las funciones seno y coseno</title>
+	<p>
+		Sabemos que las funciones estándar <m>f(t) = \sin(t)</m> y <m>g(t) = \cos(t)</m> son funciones circulares que tienen cada una una línea media <m>y = 0</m>, amplitud <m>a = 1</m>, periodo <m>p = 2\pi</m> y rango <m>[-1,1]</m>. Nuestro trabajo en <xref ref="PA-circular-sinusoidal">Preview Activity</xref> sugiere los siguientes principios generales.
+	</p>
+	
   	<assemblage xml:id="asm-sinusoidal-first-transformations">
-  		<title>Transformations of sine and cosine</title>
-  		<p>
-  			Given real numbers <m>a</m>, <m>b</m>, and <m>c</m> with <m>a \ne 0</m>, the functions
-  			<me>
-  				k(t) = a\cos(t-b)+c \ \text{ and } \ h(t) = a\sin(t-b) + c
-  			</me>
-  			each represent a horizontal shift by <m>b</m> units to the right, followed by a vertical stretch by <m>|a|</m> units (if <m>a \lt 0</m>, there is also a reflection across the <m>x</m>-axis), followed by a vertical shift of <m>c</m> units, applied to the parent function (<m>\cos(t)</m> or <m>\sin(t)</m>, respectively).  The resulting circular functions have midline <m>y = c</m>, amplitude <m>|a|</m>, range <m>[c-|a|,c+|a|]</m>, and period <m>p = 2\pi</m>.  In addition, the point <m>(b,a+c)</m> lies on the graph of <m>k</m> and the point <m>(b,c)</m> lies on the graph of <m>h</m>.
-  		</p>
-  	</assemblage>
+		<title>Transformaciones del seno y coseno</title>
+		<p>
+			Dados los números reales <m>a</m>, <m>b</m> y <m>c</m> con <m>a \ne 0</m>, las funciones
+			<me>
+			  k(t) = a\cos(t-b)+c \ \text{ y } \ h(t) = a\sin(t-b) + c
+			</me>
+			representan cada una un desplazamiento horizontal de <m>b</m> unidades a la derecha, seguido de un estiramiento vertical de <m>|a|</m> unidades (si <m>a \lt 0</m>, también hay una reflexión a través del eje <m>x</m>), seguido de un desplazamiento vertical de <m>c</m> unidades, aplicado a la función madre (<m>\cos(t)</m> o <m>\sin(t)</m>, respectivamente). Las funciones circulares resultantes tienen línea media <m>y = c</m>, amplitud <m>|a|</m>, rango <m>[c-|a|,c+|a|]</m> y periodo <m>p = 2\pi</m>. Además, el punto <m>(b,a+c)</m> se encuentra en la gráfica de <m>k</m> y el punto <m>(b,c)</m> se encuentra en la gráfica de <m>h</m>.
+		  </p>
+	</assemblage>
 
-  	<p>
-  		In <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, we see how the overall transformation <m>k(t) = a\cos(t-b)+c</m> comes from executing a sequence of simpler ones.  The original parent function <m>y = \cos(t)</m> (in dark gray) is first shifted <m>b</m> units right to generate the light red graph of <m>y = \cos(t - b)</m>.  In turn, that graph is then scaled vertically by <m>a</m> to generate the purple graph of <m>y = a\cos(t-b)</m>.  Finally, the purple graph is shifted <m>c</m> units vertically to result in the final graph of <m>y = a\cos(t-b) + c</m> in blue.
-  	</p>
-
+	<p>
+		En <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, vemos cómo la transformación general <m>k(t) = a\cos(t-b)+c</m> proviene de ejecutar una secuencia de transformaciones más simples. La función madre original <m>y = \cos(t)</m> (en gris oscuro) se desplaza primero <m>b</m> unidades a la derecha para generar la gráfica en rojo claro de <m>y = \cos(t - b)</m>. A su vez, esa gráfica se escala verticalmente por <m>a</m> para generar la gráfica púrpura de <m>y = a\cos(t-b)</m>. Finalmente, la gráfica púrpura se desplaza <m>c</m> unidades verticalmente para resultar en la gráfica final de <m>y = a\cos(t-b) + c</m> en azul.
+	</p>
+	
   	<figure xml:id="F-sinusoidal-cosine-transf">
-  		<caption>A sequence of transformations of <m>y = \cos(t)</m>.</caption>
-  		<image width="80%" source="images/sinusoidal-transformed-cosine" />
+		<caption>Una secuencia de transformaciones de <m>y = \cos(t)</m>.</caption>
+		<image width="80%" source="images/sinusoidal-transformed-cosine" />
   	</figure>
 
-  	<p>
-  		It is often useful to follow one particular point through a sequence of transformations.  In <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, we see the red point that is located at <m>(0,1)</m> on the original function <m>y = \cos(t)</m>, as well as the point <m>(b, a+c)</m> that is the corresponding point on <m>k(t) = a\cos(t-b) + c</m> under the overall transformation.  Note that the point <m>(b,a+c)</m> results from the input, <m>t = b</m>, that makes the argument of the cosine function zero:  <m>k(b) = a\cos(b-b) + c = a\cos(0) + c</m>.  
-  	</p>
+	<p>
+		A menudo es útil seguir un punto particular a través de una secuencia de transformaciones. En <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, vemos el punto rojo que se encuentra en <m>(0,1)</m> en la función original <m>y = \cos(t)</m>, así como el punto <m>(b, a+c)</m> que es el punto correspondiente en <m>k(t) = a\cos(t-b) + c</m> bajo la transformación general. Nota que el punto <m>(b,a+c)</m> resulta de la entrada, <m>t = b</m>, que hace que el argumento de la función coseno sea cero: <m>k(b) = a\cos(b-b) + c = a\cos(0) + c</m>.
+	</p>
 
-  	<p>
-  		While the sine and cosine functions extend infinitely in either direction, it's natural to think of the point <m>(0,1)</m> as the <q>starting point</q> of the cosine function, and similarly the point <m>(0,0)</m> as the starting point of the sine function.  We will refer to the corresponding point <m>(b,a+c)</m> on <m>k(t) = a\cos(t-b) + c</m>, and <m>(b,c)</m> on <m>h(t) = a\sin(t-b) + c</m>, respectively, as the <term>anchor point</term>. <idx><h>sinusoidal function</h><h>anchor point</h></idx>  The anchor point, along with other information about a circular function's amplitude, midline, and period help us to determine a formula for a function that fits a given situation.
-  	</p>
+	<p>
+		Aunque las funciones seno y coseno se extienden infinitamente en ambas direcciones, es natural pensar en el punto <m>(0,1)</m> como el <q>punto de inicio</q> de la función coseno, y de manera similar el punto <m>(0,0)</m> como el punto de inicio de la función seno. Nos referiremos al punto correspondiente <m>(b,a+c)</m> en <m>k(t) = a\cos(t-b) + c</m>, y <m>(b,c)</m> en <m>h(t) = a\sin(t-b) + c</m>, respectivamente, como el <term>punto de anclaje</term>. <idx><h>función sinusoidal</h><h>punto de anclaje</h></idx> El punto de anclaje, junto con otra información sobre la amplitud, línea media y periodo de una función circular, nos ayuda a determinar una fórmula para una función que se ajuste a una situación dada.
+	</p>
 
-    <p>
-      For example, in <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, the anchor point <m>(b,a+c)</m> on <m>y = a\cos(t-b)+c</m> corresponds to the <q>starting point</q> <m>(0,1)</m> on <m>y = \cos(t)</m>.
-    </p>
-
+	<p>
+		Por ejemplo, en <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, el punto de anclaje <m>(b,a+c)</m> en <m>y = a\cos(t-b)+c</m> corresponde al <q>punto de inicio</q> <m>(0,1)</m> en <m>y = \cos(t)</m>.
+	</p>
+	
   	<xi:include href="./activities/act-circular-sinusoidal-oscillator.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-circular-sinusoidal-horiz-scaling">
-  	<title>Horizontal scaling</title>
+	<title>Escalado horizontal</title>
 
 	<p>
-		There is one more very important transformation of a function that we've not yet explored.  Given a function <m>y = f(x)</m>, we want to understand the related function <m>g(x) = f(kx)</m>, where <m>k</m> is a positive real number.  The sine and cosine functions are ideal functions with which to explore these effects; moreover, this transformation is crucial for being able to use the sine and cosine functions to model phenomena that oscillate at different frequencies.
+		Hay una transformación muy importante de una función que aún no hemos explorado. Dada una función <m>y = f(x)</m>, queremos entender la función relacionada <m>g(x) = f(kx)</m>, donde <m>k</m> es un número real positivo. Las funciones seno y coseno son funciones ideales con las cuales explorar estos efectos; además, esta transformación es crucial para poder usar las funciones seno y coseno para modelar fenómenos que oscilan a diferentes frecuencias.
 	</p>
 
 	<p>
-		In the interactive <xref ref="F-transformations-horizontal-scaling">Figure</xref>,  we can explore the effect of the transformation <m>g(t) = f(kt)</m>, where <m>f(t) = \sin(t)</m>.
+		En el <xref ref="F-transformations-horizontal-scaling">Figura</xref> interactivo, podemos explorar el efecto de la transformación <m>g(t) = f(kt)</m>, donde <m>f(t) = \sin(t)</m>.
 	</p>
 
 	<figure xml:id="F-transformations-horizontal-scaling">
-		<caption>Interactive horizontal scaling demonstration (in the HTML version only).</caption>
+		<caption>Demostración interactiva de escalado horizontal (solo en la versión HTML).</caption>
 
 		<interactive xml:id="I-transformations-horizontal-scaling" platform="javascript" width="75%" aspect="4:5" source = "interactives/figures.js interactives/transformationsC.js" preview="images/transformations-interactive-C-static.png">
 			<slate xml:id="cslider" aspect="4:1" surface="canvas" />
 			<slate xml:id="compressing" aspect="4:4" surface="canvas" />
 			<instructions>
 				<p>
-					Move the slider by clicking and dragging on the red point to see how changing <m>k</m> affects the graph of <m>y = f(kt)</m>.  The graph of <m>y = f(t)</m> will appear in grey and remain fixed. 
+					Mueve el deslizador haciendo clic y arrastrando el punto rojo para ver cómo cambiar <m>k</m> afecta la gráfica de <m>y = f(kt)</m>. La gráfica de <m>y = f(t)</m> aparecerá en gris y permanecerá fija.
 				</p>
 			</instructions>
 		</interactive>
 	</figure> 
 
 	<p>
-		By experimenting with the slider, we gain an intuitive sense for how the value of <m>k</m> affects the graph of <m>h(t) = f(kt)</m> in comparision to the graph of <m>f(t)</m>.  When <m>k = 2</m>, we see that the graph of <m>h</m> is oscillating twice as fast as the graph of <m>f</m> since <m>h(t) = f(2t)</m> completes two full cycles over an interval in which <m>f</m> completes one full cycle.  In contrast, when <m>k = \frac{1}{2}</m>, the graph of <m>h</m> oscillates half as fast as the graph of <m>f</m>, as <m>h(t) = f(\frac{1}{2}t)</m> completes only half of one cycle over an interval where <m>f(t)</m> completes a full one.
+		Experimentando con el deslizador, obtenemos una sensación intuitiva de cómo el valor de <m>k</m> afecta la gráfica de <m>h(t) = f(kt)</m> en comparación con la gráfica de <m>f(t)</m>. Cuando <m>k = 2</m>, vemos que la gráfica de <m>h</m> oscila el doble de rápido que la gráfica de <m>f</m> ya que <m>h(t) = f(2t)</m> completa dos ciclos completos en un intervalo en el que <m>f</m> completa un ciclo completo. En contraste, cuando <m>k = \frac{1}{2}</m>, la gráfica de <m>h</m> oscila la mitad de rápido que la gráfica de <m>f</m>, ya que <m>h(t) = f(\frac{1}{2}t)</m> completa solo la mitad de un ciclo en un intervalo donde <m>f(t)</m> completa uno completo.
 	</p>
 
 	<p>
-		We can also understand this from the perspective of function composition.  To evaluate <m>h(t) = f(2t)</m>, at a given value of <m>t</m>, we first multiply the input <m>t</m> by a factor of <m>2</m>, and then evaluate the function <m>f</m> at the result.  An important observation is that 
+		También podemos entender esto desde la perspectiva de la composición de funciones. Para evaluar <m>h(t) = f(2t)</m>, en un valor dado de <m>t</m>, primero multiplicamos la entrada <m>t</m> por un factor de <m>2</m>, y luego evaluamos la función <m>f</m> en el resultado. Una observación importante es que 
 		<me>
 			h\left( \frac{1}{2}t \right) = f\left( 2 \cdot \frac{1}{2}t \right) = f(t)
 		</me>.
-		This tells us that the point <m>(\frac{1}{2}t, f(t))</m> lies on the graph of <m>h</m> since an input of <m>\frac{1}{2}t</m> in <m>h</m> results in the value <m>f(t)</m>.  At the same time, the point <m>(t,f(t))</m> lies on the graph of <m>f</m>.  Thus we see that the correlation between points on the graphs of <m>f</m> and <m>h</m> (where <m>h(t) = f(2t)</m>) is
+		Esto nos dice que el punto <m>(\frac{1}{2}t, f(t))</m> se encuentra en la gráfica de <m>h</m> ya que una entrada de <m>\frac{1}{2}t</m> en <m>h</m> resulta en el valor <m>f(t)</m>. Al mismo tiempo, el punto <m>(t,f(t))</m> se encuentra en la gráfica de <m>f</m>. Así vemos que la correlación entre puntos en las gráficas de <m>f</m> y <m>h</m> (donde <m>h(t) = f(2t)</m>) es
 		<me>
 			(t, f(t)) \rightarrow \left( \frac{1}{2}t, f(t) \right)
 		</me>.
-		We can therefore think of the transformation <m>h(t) = f(2t)</m> as achieving the output values of <m>f</m> twice as fast as the original function <m>f(t)</m> does.  Analogously, the transformation <m>h(t) = f(\frac{1}{2}t)</m> will achieve the output values of <m>f</m> only half as quickly as the original function.
+		Por lo tanto, podemos pensar en la transformación <m>h(t) = f(2t)</m> como lograr los valores de salida de <m>f</m> el doble de rápido que la función original <m>f(t)</m>. De manera análoga, la transformación <m>h(t) = f(\frac{1}{2}t)</m> logrará los valores de salida de <m>f</m> solo la mitad de rápido que la función original.
 	</p>
 
   	<assemblage xml:id="asm-transformations-horizontal-stretch">
-  		<title>Horizontal scaling</title>
-  		<idx><h>horizontal scaling</h></idx>
-  		<p>
-  			Given a function <m>y = f(t)</m> and a real number <m>k \gt 0</m>, the transformed function <m>y = h(t) = f(kt)</m> is a <em>horizontal stretch</em> of the graph of <m>f</m>.  Every point <m>(t,f(t))</m> on the graph of <m>f</m> gets stretched horizontally to the corresponding point <m>(\frac{1}{k}t,f(t))</m> on the graph of <m>h</m>.  If <m>0 \lt k \lt 1</m>, the graph of <m>h</m> is a stretch of <m>f</m> away from the <m>y</m>-axis by a factor of <m>\frac{1}{k}</m>; if <m>k \gt 1</m>, the graph of <m>h</m> is a compression of <m>f</m> toward the <m>y</m>-axis by a factor of <m>\frac{1}{k}</m>.  The only point on the graph of <m>f</m> that is unchanged by the transformation is <m>(0,f(0))</m>.
-  		</p>
-  	</assemblage>
+		<title>Escalado horizontal</title>
+		<idx><h>horizontal scaling</h></idx>
+		<p>
+			Dada una función <m>y = f(t)</m> y un número real <m>k \gt 0</m>, la función transformada <m>y = h(t) = f(kt)</m> es un <em>estiramiento horizontal</em> de la gráfica de <m>f</m>. Cada punto <m>(t,f(t))</m> en la gráfica de <m>f</m> se estira horizontalmente al punto correspondiente <m>(\frac{1}{k}t,f(t))</m> en la gráfica de <m>h</m>. Si <m>0 \lt k \lt 1</m>, la gráfica de <m>h</m> es un estiramiento de <m>f</m> alejándose del eje <m>y</m> por un factor de <m>\frac{1}{k}</m>; si <m>k \gt 1</m>, la gráfica de <m>h</m> es una compresión de <m>f</m> hacia el eje <m>y</m> por un factor de <m>\frac{1}{k}</m>. El único punto en la gráfica de <m>f</m> que no cambia con la transformación es <m>(0,f(0))</m>.
+		</p>
+	</assemblage>
 
-  	<p>
-  		While we will soon focus on horizontal stretches of the sine and cosine functions for the remainder of this section, it's important to note that horizontal scaling follows the same principles for any function we choose.
-  	</p>
+	<p>
+		Aunque pronto nos enfocaremos en los estiramientos horizontales de las funciones seno y coseno para el resto de esta sección, es importante notar que el escalado horizontal sigue los mismos principios para cualquier función que elijamos.
+	</p>
 
 	<xi:include href="./activities/act-circular-sinusoidal-horiz-stretch.xml" />
 
   </subsection>
 
   <subsection>
-  	<title>Circular functions with different periods</title>
-  	<p>
-  		Because the circumference of the unit circle is <m>2\pi</m>, the sine and cosine functions each have period <m>2\pi</m>.  Of course, as we think about using transformations of the sine and cosine functions to model different phenomena, it is apparent that we will need to generate functions with different periods than <m>2\pi</m>.  For instance, if a ferris wheel makes one revolution every <m>5</m> minutes, we'd want the period of the function that models the height of one car as a function of time to be <m>P = 5</m>.  Horizontal scaling of functions enables us to generate circular functions with any period we desire.
-  	</p>
+	<title>Funciones circulares con diferentes períodos</title>
+	<p>
+		Dado que la circunferencia del círculo unitario es <m>2\pi</m>, las funciones seno y coseno tienen un período de <m>2\pi</m>. Por supuesto, al pensar en usar transformaciones de las funciones seno y coseno para modelar diferentes fenómenos, es evidente que necesitaremos generar funciones con períodos diferentes a <m>2\pi</m>. Por ejemplo, si una rueda de la fortuna da una vuelta completa cada <m>5</m> minutos, querríamos que el período de la función que modela la altura de un carro en función del tiempo sea <m>P = 5</m>. El escalado horizontal de funciones nos permite generar funciones circulares con cualquier período que deseemos.
+	</p>
 
-  	<p>
-  		We begin by considering two basic examples.  First, let <m>f(t) = \sin(t)</m> and <m>g(t) = f(2t) = \sin(2t)</m>.  We know from our most recent work that this transformation results in a horizontal compression of the graph of <m>\sin(t)</m> by a factor of <m>\frac{1}{2}</m> toward the <m>y</m>-axis.  If we plot the two functions on the same axes as seen in <xref ref="F-sinusoidal-sine-compressed">Figure</xref>, it becomes apparent how this transformation affects the period of <m>f</m>.
-  	</p>
+	<p>
+		Comenzamos considerando dos ejemplos básicos. Primero, sea <m>f(t) = \sin(t)</m> y <m>g(t) = f(2t) = \sin(2t)</m>. Sabemos por nuestro trabajo más reciente que esta transformación resulta en una compresión horizontal del gráfico de <m>\sin(t)</m> por un factor de <m>\frac{1}{2}</m> hacia el eje <m>y</m>. Si graficamos las dos funciones en los mismos ejes como se ve en <xref ref="F-sinusoidal-sine-compressed">Figura</xref>, se hace evidente cómo esta transformación afecta el período de <m>f</m>.
+	</p>
+
 
   	<figure xml:id="F-sinusoidal-sine-compressed">
-  		<caption>A plot of the parent function, <m>f(t) = \sin(t)</m> (dashed, in gray), and the transformed function <m>g(t) = f(2t) = \sin(2t)</m> (in blue).</caption>
+		<caption>Un gráfico de la función madre, <m>f(t) = \sin(t)</m> (discontinua, en gris), y la función transformada <m>g(t) = f(2t) = \sin(2t)</m> (en azul).</caption>
   		<image source="images/sinusoidal-sine-horiz-scaling" width="75%" />
   	</figure>
 
-  	<p>
-  		From the graph, we see that <m>g(t) = \sin(2t)</m> oscillates twice as frequently as <m>f(t) = \sin(t)</m>, and that <m>g</m> completes a full cycle on the interval <m>[0,\pi]</m>, which is half the length of the period of <m>f</m>.  Thus, the  <q><m>2</m></q> in <m>f(2t)</m> causes the period of <m>f</m> to be <m>\frac{1}{2}</m> as long; specifially, the period of <m>g</m> is <m>P = \frac{1}{2} (2\pi) = \pi</m>.
-  	</p>
+	<p>
+		Desde el gráfico, vemos que <m>g(t) = \sin(2t)</m> oscila el doble de frecuentemente que <m>f(t) = \sin(t)</m>, y que <m>g</m> completa un ciclo completo en el intervalo <m>[0,\pi]</m>, que es la mitad de la longitud del período de <m>f</m>. Así, el <q><m>2</m></q> en <m>f(2t)</m> hace que el período de <m>f</m> sea <m>\frac{1}{2}</m> de largo; específicamente, el período de <m>g</m> es <m>P = \frac{1}{2} (2\pi) = \pi</m>.
+	</p>
 
   	<figure xml:id="F-sinusoidal-sine-stretched">
-  		<caption>A plot of the parent function, <m>f(t) = \sin(t)</m> (dashed, in gray), and the transformed function <m>h(t) = f(\frac{1}{2}t) = \sin(\frac{1}{2}t)</m> (in blue).</caption>
+		<caption>Un gráfico de la función madre, <m>f(t) = \sin(t)</m> (discontinua, en gris), y la función transformada <m>h(t) = f(\frac{1}{2}t) = \sin(\frac{1}{2}t)</m> (en azul).</caption>
   		<image source="images/sinusoidal-sine-horiz-scaling-2" width="75%" />
   	</figure>
 
-    <p>
-      On the other hand, if we let <m>h(t) = f(\frac{1}{2}t) = \sin(\frac{1}{2}t)</m>, the transformed graph <m>h</m> is stretched away from the <m>y</m>-axis by a factor of <m>2</m>.  This has the effect of doubling the period of <m>f</m>, so that the period of <m>h</m> is <m>P = 2 \cdot 2\pi = 4\pi</m>, as seen in <xref ref="F-sinusoidal-sine-stretched">Figure</xref>.
-    </p>
-
-  <p>
-  	Our observations generalize for any positive constant <m>k \gt 0</m>.  In the case where <m>k = 2</m>, we saw that the period of <m>g(t) = \sin(2t)</m> is <m>P = \frac{1}{2} \cdot 2\pi</m>, whereas in the case where <m>k = \frac{1}{2}</m>, the period of <m>h(t) = \sin(\frac{1}{2}t)</m> is <m>P = 2 \cdot 2\pi = \frac{1}{\frac{1}{2}} \cdot 2\pi</m>.  Identical reasoning holds if we are instead working with the cosine function.  In general, we can say the following.
-  </p>
-
-  <assemblage xml:id="asm-sinusoidal-period">
-  	<title>The period of a circular function</title>
-  	<p>
-  		For any constant <m>k \gt 0</m>, the period of the functions <m>\sin(kt)</m> and <m>\cos(kt)</m> is
-  		<me>
-  			P = \frac{2\pi}{k}
-  		</me>.
-  	</p>
-  </assemblage>
+	<p>
+		Por otro lado, si dejamos que <m>h(t) = f(\frac{1}{2}t) = \sin(\frac{1}{2}t)</m>, el gráfico transformado <m>h</m> se estira alejándose del eje <m>y</m> por un factor de <m>2</m>. Esto tiene el efecto de duplicar el período de <m>f</m>, de modo que el período de <m>h</m> es <m>P = 2 \cdot 2\pi = 4\pi</m>, como se ve en <xref ref="F-sinusoidal-sine-stretched">Figura</xref>.
+	</p>
 
 	<p>
-		Thus, if we know the <m>k</m>-value from the given function, we can deduce the period.  If instead we know the desired period, we can determine <m>k</m> by the rule <m>k = \frac{2\pi}{P}</m>.
+		Nuestras observaciones se generalizan para cualquier constante positiva <m>k \gt 0</m>. En el caso donde <m>k = 2</m>, vimos que el período de <m>g(t) = \sin(2t)</m> es <m>P = \frac{1}{2} \cdot 2\pi</m>, mientras que en el caso donde <m>k = \frac{1}{2}</m>, el período de <m>h(t) = \sin(\frac{1}{2}t)</m> es <m>P = 2 \cdot 2\pi = \frac{1}{\frac{1}{2}} \cdot 2\pi</m>. El mismo razonamiento se aplica si estamos trabajando con la función coseno. En general, podemos decir lo siguiente.
+	</p>
+
+  <assemblage xml:id="asm-sinusoidal-period">
+	<title>El período de una función circular</title>
+	<p>
+		Para cualquier constante <m>k \gt 0</m>, el período de las funciones <m>\sin(kt)</m> y <m>\cos(kt)</m> es
+		<me>
+			P = \frac{2\pi}{k}
+		</me>.
+	</p>
+</assemblage>
+
+	<p>
+		Así, si conocemos el valor de <m>k</m> de la función dada, podemos deducir el período. Si en cambio conocemos el período deseado, podemos determinar <m>k</m> mediante la regla <m>k = \frac{2\pi}{P}</m>.
 	</p>
 
 	<xi:include href="./activities/act-circular-sinusoidal-period.xml" />
@@ -194,33 +195,33 @@
   </subsection>
 
   <subsection xml:id="subsec-circular-sinusoidal-summary">
-  	<title>Summary</title>
+	<title>Resumen</title>
 	<p>
 	<ul>
-  		<li>
-  			<p>
-  				Given real numbers <m>a</m>, <m>b</m>, and <m>c</m> with <m>a \ne 0</m>, the functions
-	  			<me>
-	  				k(t) = a\cos(t-b)+c \text{ and } h(t) = a\sin(t-b) + c
-	  			</me>
-	  			each represent a horizontal shift by <m>b</m> units to the right, followed by a vertical stretch by <m>|a|</m> units (with a reflection across the <m>x</m>-axis if <m>a \lt 0</m>), followed by a vertical shift of <m>c</m> units, applied to the parent function (<m>\cos(t)</m> or <m>\sin(t)</m>, respectively).  The resulting circular functions have midline <m>y = c</m>, amplitude <m>|a|</m>, range <m>[c-|a|,c+|a|]</m>, and period <m>p = 2\pi</m>.  In addition, the anchor point <m>(b,a+c)</m> lies on the graph of <m>k</m> and the anchor point <m>(b,c)</m> lies on the graph of <m>h</m>.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Given a function <m>f</m> and a constant <m>k \gt 0</m>, the algebraic transformation <m>h(t) = f(kt)</m> results in horizontal scaling of <m>f</m> by a factor of <m>\frac{1}{k}</m>.  In particular, when <m>k \gt 1</m>, the graph of <m>f</m> is compressed toward the <m>y</m>-axis by a factor of <m>\frac{1}{k}</m> to create the graph of <m>h</m>, while when <m>0 \lt k \lt 1</m>, the graph of <m>f</m> is stretched away from the <m>y</m>-axis by a factor of <m>\frac{1}{k}</m> to create the graph of <m>h</m>.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Given any circular periodic function for which the midline, amplitude, period, and an anchor point are known, we can find a corresponding formula for the function of the form 
-  				<me>
-  					k(t) = a\cos(k(t-b))+c \text{ or } h(t) = a\sin(k(t-b)) + c
-  				</me>.
-  				Each of these functions has midline <m>y = c</m>, amplitude <m>|a|</m>, and period <m>P = \frac{2\pi}{k}</m>.  The point <m>(b,a+c)</m> lies on <m>k</m> and the point <m>(b,c)</m> lies on <m>h</m>.
-  			</p>
-  		</li>
-  	</ul>
+	<li>
+		<p>
+			Dados los números reales <m>a</m>, <m>b</m>, y <m>c</m> con <m>a \ne 0</m>, las funciones
+			<me>
+					k(t) = a\cos(t-b)+c \text{ and } h(t) = a\sin(t-b) + c
+			</me>
+			representan cada una un desplazamiento horizontal de <m>b</m> unidades a la derecha, seguido de un estiramiento vertical de <m>|a|</m> unidades (con una reflexión a través del eje <m>x</m> si <m>a \lt 0</m>), seguido de un desplazamiento vertical de <m>c</m> unidades, aplicado a la función principal (<m>\cos(t)</m> o <m>\sin(t)</m>, respectivamente). Las funciones circulares resultantes tienen línea media <m>y = c</m>, amplitud <m>|a|</m>, rango <m>[c-|a|,c+|a|]</m>, y periodo <m>p = 2\pi</m>. Además, el punto de anclaje <m>(b,a+c)</m> se encuentra en el gráfico de <m>k</m> y el punto de anclaje <m>(b,c)</m> se encuentra en el gráfico de <m>h</m>.
+		</p>
+	</li>
+	<li>
+		<p>
+			Dada una función <m>f</m> y una constante <m>k \gt 0</m>, la transformación algebraica <m>h(t) = f(kt)</m> resulta en un escalado horizontal de <m>f</m> por un factor de <m>\frac{1}{k}</m>. En particular, cuando <m>k \gt 1</m>, el gráfico de <m>f</m> se comprime hacia el eje <m>y</m> por un factor de <m>\frac{1}{k}</m> para crear el gráfico de <m>h</m>, mientras que cuando <m>0 \lt k \lt 1</m>, el gráfico de <m>f</m> se estira alejándose del eje <m>y</m> por un factor de <m>\frac{1}{k}</m> para crear el gráfico de <m>h</m>.
+		</p>
+	</li>
+	<li>
+		<p>
+			Dada cualquier función periódica circular para la cual se conocen la línea media, la amplitud, el periodo y un punto de anclaje, podemos encontrar una fórmula correspondiente para la función de la forma
+			<me>
+					k(t) = a\cos(k(t-b))+c \text{ or } h(t) = a\sin(k(t-b)) + c
+			</me>.
+			Cada una de estas funciones tiene línea media <m>y = c</m>, amplitud <m>|a|</m>, y periodo <m>P = \frac{2\pi}{k}</m>. El punto <m>(b,a+c)</m> se encuentra en <m>k</m> y el punto <m>(b,c)</m> se encuentra en <m>h</m>.
+		</p>
+	</li>
+	</ul>
 	</p>
   </subsection>
 
@@ -229,4 +230,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-
