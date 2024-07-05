@@ -17,34 +17,34 @@
 
 	<statement>
 		<p>
-			Open a new <em>Desmos</em> worksheet and define the following functions: <m>f(t) = 2^t</m>, <m>g(t) = 3^t</m>, <m>h(t) = (\frac{1}{3})^t</m>, and <m>p(t) = f(kt)</m>.  After you define <m>p</m>, accept the slider for <m>k</m>, and set the range of the slider to be <m>-2 \le k \le 2</m>.
+			Abre una nueva hoja de trabajo en <em>Desmos</em> y define las siguientes funciones: <m>f(t) = 2^t</m>, <m>g(t) = 3^t</m>, <m>h(t) = (\frac{1}{3})^t</m> y <m>p(t) = f(kt)</m>. Después de definir <m>p</m>, acepta el deslizador para <m>k</m> y establece el rango del deslizador en <m>-2 \le k \le 2</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						By experimenting with the value of <m>k</m>, find a value of <m>k</m> so that the graph of <m>p(t) = f(kt) = 2^{kt}</m> appears to align with the graph of <m>g(t) = 3^t</m>.   What is the value of <m>k</m>?  
+						Experimentando con el valor de <m>k</m>, encuentra un valor de <m>k</m> de modo que el gráfico de <m>p(t) = f(kt) = 2^{kt}</m> parezca alinearse con el gráfico de <m>g(t) = 3^t</m>. ¿Cuál es el valor de <m>k</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Similarly, experiment to find a value of <m>k</m> so that the graph of <m>p(t) = f(kt) = 2^{kt}</m> appears to align with the graph of <m>h(t) = (\frac{1}{3})^t</m>.   What is the value of <m>k</m>?  
+						De manera similar, experimenta para encontrar un valor de <m>k</m> de modo que el gráfico de <m>p(t) = f(kt) = 2^{kt}</m> parezca alinearse con el gráfico de <m>h(t) = (\frac{1}{3})^t</m>. ¿Cuál es el valor de <m>k</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						For the value of <m>k</m> you determined in (a), compute <m>2^k</m>.  What do you observe?
+						Para el valor de <m>k</m> que determinaste en (a), calcula <m>2^k</m>. ¿Qué observas?
 					</p>
 				</li>
 				<li>
 					<p>
-						For the value of <m>k</m> you determined in (b), compute <m>2^k</m>.  What do you observe?
+						Para el valor de <m>k</m> que determinaste en (b), calcula <m>2^k</m>. ¿Qué observas?
 					</p>
 				</li>
 				<li>
 					<p>
-						Given any exponential function of the form <m>b^t</m>, do you think it's possible to find a value of <m>k</m> to that <m>p(t) = f(kt) = 2^{kt}</m> is the same function as <m>b^t</m>?  Why or why not?
+						Dada cualquier función exponencial de la forma <m>b^t</m>, ¿crees que es posible encontrar un valor de <m>k</m> para que <m>p(t) = f(kt) = 2^{kt}</m> sea la misma función que <m>b^t</m>? ¿Por qué o por qué no?
 					</p>
 				</li>
 			</ol>

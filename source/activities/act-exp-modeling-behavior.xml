@@ -17,25 +17,25 @@
 
 	<statement>
 		<p>
-			For each of the following functions, <em>without</em> using graphing technology, determine whether the function is
+			Para cada una de las siguientes funciones, <em>sin</em> usar tecnología de graficación, determina si la función es
 			<ol marker="i.">
 				<li>
 					<p>
-						always increasing or always decreasing;						
+						siempre creciente o siempre decreciente;
 					</p>
 				</li>
 				<li>
 					<p>
-						always concave up or always concave down; and
+						siempre cóncava hacia arriba o siempre cóncava hacia abajo; y
 					</p>
 				</li>
 				<li>
 					<p>
-						increasing without bound, decreasing without bound, or increasing/decreasing toward a finite value.
+						creciente sin límite, decreciente sin límite, o creciente/decreciente hacia un valor finito.
 					</p>
 				</li>
 			</ol> 
-			In addition, state the <m>y</m>-intercept and the range of the function.  For each function, write a sentence that explains your thinking and sketch a rough graph of how the function appears.
+			Además, indica la intersección con el eje <m>y</m> y el rango de la función. Para cada función, escribe una oración que explique tu razonamiento y haz un boceto aproximado de cómo se ve la función.
 		</p>
 
 		<p>
@@ -85,4 +85,3 @@
 	</solution>
 
 </activity>
-

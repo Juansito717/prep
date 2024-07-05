@@ -17,34 +17,33 @@
 
 	<statement>
 		<p>
-			In the questions that follow, we compare and contrast the properties and behaviors of exponential and logarithmic functions. 
+			En las preguntas que siguen, comparamos y contrastamos las propiedades y comportamientos de las funciones exponenciales y logarítmicas.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Let <m>f(t) = 1 - e^{-(t-1)}</m> and <m>g(t) = \ln(t)</m>.  Plot each function on the same set of coordinate axes.  What properties do the two functions have in common?  For what properties do the two functions differ?  Consider each function's domain, range, <m>t</m>-intercept, <m>y</m>-intercept, increasing/decreasing behavior, concavity, and long-term behavior.
+						Sea <m>f(t) = 1 - e^{-(t-1)}</m> y <m>g(t) = \ln(t)</m>. Grafica cada función en el mismo conjunto de ejes de coordenadas. ¿Qué propiedades tienen en común las dos funciones? ¿En qué propiedades difieren las dos funciones? Considera el dominio, rango, intersección con el eje <m>t</m>, intersección con el eje <m>y</m>, comportamiento creciente/decreciente, concavidad y comportamiento a largo plazo de cada función.
 					</p>
 				</li>
 				<li>
 					<p>
-						Let <m>h(t) = a - be^{-k(t-c)}</m>, where <m>a</m>, <m>b</m>, <m>c</m>, and <m>k</m> are positive constants.  Describe <m>h</m> as a transformation of the function <m>E(t) = e^t</m>.
+						Sea <m>h(t) = a - be^{-k(t-c)}</m>, donde <m>a</m>, <m>b</m>, <m>c</m> y <m>k</m> son constantes positivas. Describe <m>h</m> como una transformación de la función <m>E(t) = e^t</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Let <m>r(t) = a + b\ln(t-c)</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are positive constants.  Describe <m>r</m> as a transformation of the function <m>L(t) = \ln(t)</m>.
+						Sea <m>r(t) = a + b\ln(t-c)</m>, donde <m>a</m>, <m>b</m> y <m>c</m> son constantes positivas. Describe <m>r</m> como una transformación de la función <m>L(t) = \ln(t)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-				      Data for the height of a tree is given in the <xref ref="T-log-act-tree">Table</xref>;
-				      time <m>t</m> is measured in years and height is given in feet.  At <url href="http://gvsu.edu/s/0yy">http://gvsu.edu/s/0yy</url>, you can find a <em>Desmos</em> worksheet with this data already input.
+				      Los datos de la altura de un árbol se dan en la <xref ref="T-log-act-tree">Tabla</xref>; el tiempo <m>t</m> se mide en años y la altura se da en pies. En <url href="http://gvsu.edu/s/0yy">http://gvsu.edu/s/0yy</url>, puedes encontrar una hoja de trabajo de <em>Desmos</em> con estos datos ya ingresados.
 				    </p>
 
 				    <table xml:id="T-log-act-tree">
-				    	<title>The height of a tree as a function of time <m>t</m> in years.</title>
+				    	<title>La altura de un árbol como función del tiempo <m>t</m> en años.</title>
 					    <tabular>
 					      <row bottom="minor">
 					        <cell><m>t</m></cell>
@@ -78,7 +77,7 @@
 					</table>
 
 					<p>
-						Do you think this data is better modeled by a logarithmic function of form <m>p(t) = a + b\ln(t-c)</m> or by an exponential function of form <m>q(t) = m + ne^{-rt}</m>.  Provide reasons based in how the data appears and how you think a tree grows, as well as by experimenting with sliders appropriately in <em>Desmos</em>.  (Note: you may need to adjust the upper and lower bounds of several of the sliders in order to match the data well.)
+						¿Crees que estos datos se modelan mejor con una función logarítmica de la forma <m>p(t) = a + b\ln(t-c)</m> o con una función exponencial de la forma <m>q(t) = m + ne^{-rt}</m>? Proporciona razones basadas en cómo aparecen los datos y cómo crees que crece un árbol, así como experimentando con los deslizadores apropiadamente en <em>Desmos</em>. (Nota: puede que necesites ajustar los límites superior e inferior de varios de los deslizadores para que coincidan bien con los datos.)
 					</p>
 				</li>
 			</ol>
@@ -96,4 +95,3 @@
 	</solution>
 
 </activity>
-

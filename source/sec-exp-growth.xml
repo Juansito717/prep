@@ -14,108 +14,108 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-exp-growth">
-  <title>Exponential Growth and Decay</title>
+	<title>Crecimiento y Decrecimiento Exponencial</title>
 
   <objectives>
   	<ul>
-  		<li>
-  			<p>
-  				What does it mean to say that a function is <q>exponential</q>?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How much data do we need to know in order to determine the formula for an exponential function?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Are there important trends that all exponential functions exhibit?
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				¿Qué significa decir que una función es <q>exponencial</q>?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cuántos datos necesitamos saber para determinar la fórmula de una función exponencial?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Hay tendencias importantes que todas las funciones exponenciales exhiben?
+			</p>
+		</li>
+	</ul>
   </objectives>
 
   <introduction>
-  	<p>
-  		Linear functions have constant average rate of change and model many important phenomena.  In other settings, it is natural for a quantity to change at a rate that is proportional to the amount of the quantity present.  For instance, whether you put $<m>100</m> or $<m>100000</m> or any other amount in a mutual fund, the investment's value changes at a rate proportional the amount present.  We often measure that rate in terms of the annual percentage rate of return. 
-  	</p>
+	<p>
+		Las funciones lineales tienen una tasa de cambio promedio constante y modelan muchos fenómenos importantes. En otros contextos, es natural que una cantidad cambie a una tasa que es proporcional a la cantidad presente. Por ejemplo, ya sea que pongas $<m>100</m> o $<m>100000</m> o cualquier otra cantidad en un fondo mutuo, el valor de la inversión cambia a una tasa proporcional a la cantidad presente. A menudo medimos esa tasa en términos de la tasa de porcentaje anual de retorno.
+	</p>
 
-  	<p>
-  		Suppose that a certain mutual fund has a <m>10</m>% annual return.  If we invest $<m>100</m>, after <m>1</m> year we still have the original $<m>100</m>, plus we gain <m>10</m>% of $<m>100</m>, so
-  		<me>
-  			100 \overset{\text{year } 1}{\longrightarrow} 100 + 0.1(100) = 1.1(100)
-  		</me>.
-  		If we instead invested $<m>100000</m>, after <m>1</m> year we again have the original $<m>100000</m>, but now we gain <m>10</m>% of $<m>100000</m>, and thus
-  		<me>
-  			100000 \overset{\text{year } 1}{\longrightarrow}  100000 + 0.1(100000) = 1.1(100000)
-  		</me>.
-  		We therefore see that regardless of the amount of money originally invested, say <m>P</m>, the amount of money we have after <m>1</m> year is <m>1.1P</m>.
-  	</p>
+	<p>
+		Supón que un cierto fondo mutuo tiene un retorno anual del <m>10</m>%. Si invertimos $<m>100</m>, después de <m>1</m> año todavía tenemos los $<m>100</m> originales, más ganamos el <m>10</m>% de $<m>100</m>, así que
+		<me>
+			100 \overset{\text{year } 1}{\longrightarrow} 100 + 0.1(100) = 1.1(100)
+		</me>.
+		Si en cambio invertimos $<m>100000</m>, después de <m>1</m> año nuevamente tenemos los $<m>100000</m> originales, pero ahora ganamos el <m>10</m>% de $<m>100000</m>, y así
+		<me>
+			100000 \overset{\text{year } 1}{\longrightarrow}  100000 + 0.1(100000) = 1.1(100000)
+		</me>.
+		Por lo tanto, vemos que independientemente de la cantidad de dinero originalmente invertida, digamos <m>P</m>, la cantidad de dinero que tenemos después de <m>1</m> año es <m>1.1P</m>.
+	</p>
 
-  	<p>
-  		If we repeat our computations for the second year, we observe that 
-  		<me>
-  			1.1(100) \overset{\text{year } 2}{\longrightarrow}  1.1(100) + 0.1(1.1(100)) = 1.1(1.1(100)) = 1.1^2 (100)
-  		</me>.
-  		The ideas are identical with the larger dollar value, so
-  		<me>
-  			1.1(100000) \overset{\text{year } 2}{\longrightarrow}  1.1(100000) + 0.1(1.1(100000)) = 1.1(1.1(100000)) = 1.1^2 (100000)
-  		</me>,
-  		and we see that if we invest <m>P</m> dollars, in <m>2</m> years our investment will grow to <m>1.1^2 P</m>.
-  	</p>
+	<p>
+		Si repetimos nuestros cálculos para el segundo año, observamos que 
+		<me>
+			1.1(100) \overset{\text{year } 2}{\longrightarrow}  1.1(100) + 0.1(1.1(100)) = 1.1(1.1(100)) = 1.1^2 (100)
+		</me>.
+		Las ideas son idénticas con el valor en dólares más grande, así que
+		<me>
+			1.1(100000) \overset{\text{year } 2}{\longrightarrow}  1.1(100000) + 0.1(1.1(100000)) = 1.1(1.1(100000)) = 1.1^2 (100000)
+		</me>,
+		y vemos que si invertimos <m>P</m> dólares, en <m>2</m> años nuestra inversión crecerá a <m>1.1^2 P</m>.
+	</p>
 
-  	<p>
-  		Of course, in <m>3</m> years at <m>10</m>%, the original investment <m>P</m> will have grown to <m>1.1^3 P</m>.  Here we see a new kind of pattern developing:  annual growth of <m>10</m>% is leading to <em>powers</em> of the base <m>1.1</m>, where the power to which we raise <m>1.1</m> corresponds to the number of years the investment has grown.  We often call this phenomenon <em>exponential growth</em>. <idx><h>exponential growth</h><h>introduction</h></idx>
-  	</p>
+	<p>
+		Por supuesto, en <m>3</m> años al <m>10</m>%, la inversión original <m>P</m> habrá crecido a <m>1.1^3 P</m>. Aquí vemos un nuevo tipo de patrón desarrollándose: el crecimiento anual del <m>10</m>% está llevando a <em>potencias</em> de la base <m>1.1</m>, donde la potencia a la que elevamos <m>1.1</m> corresponde al número de años que la inversión ha crecido. A menudo llamamos a este fenómeno <em>crecimiento exponencial</em>. <idx><h>exponential growth</h><h>introduction</h></idx>
+	</p>
 
   	<xi:include href="./previews/PA-exp-growth.xml" />
   </introduction>
 
   <subsection xml:id="subsec-exp-growth-functions">
-  	<title>Exponential functions of form <m>f(t) = ab^t</m></title>
-  	<p>
-  		In <xref ref="PA-exp-growth">Preview Activity</xref>, we encountered the functions <m>I(t)</m> and <m>V(t)</m> that had the same basic structure.  Each can be written in the form <m>g(t) = ab^t</m> where <m>a</m> and <m>b</m> are positive constants and <m>b \ne 1</m>.  Based on our earlier work with transformations, we know that the constant <m>a</m> is a vertical scaling factor, and thus the main behavior of the function comes from <m>b^t</m>, which we call an <q>exponential function</q>.
-  	</p>
+	<title>Funciones exponenciales de la forma <m>f(t) = ab^t</m></title>
+	<p>
+		En <xref ref="PA-exp-growth">Preview Activity</xref>, encontramos las funciones <m>I(t)</m> y <m>V(t)</m> que tenían la misma estructura básica. Cada una puede escribirse en la forma <m>g(t) = ab^t</m> donde <m>a</m> y <m>b</m> son constantes positivas y <m>b \ne 1</m>. Basándonos en nuestro trabajo anterior con transformaciones, sabemos que la constante <m>a</m> es un factor de escala vertical, y por lo tanto, el comportamiento principal de la función proviene de <m>b^t</m>, a la que llamamos una <q>función exponencial</q>.
+	</p>
 
   	<definition xml:id="D-growth-exponential-function">
   		<idx><h>function</h><h>exponential</h></idx>
   		<idx><h>exponential function</h><h>base</h></idx>
   		<statement>
-  			<p>
-  				Let <m>b</m> be a real number such that <m>b \gt 0</m> and <m>b \ne 1</m>.  We call the function defined by
-  				<me>f(t) = b^t</me>
-  				an <term>exponential function</term> with <term>base</term> <m>b</m>.
-  			</p>
-  		</statement>
+			<p>
+				Sea <m>b</m> un número real tal que <m>b \gt 0</m> y <m>b \ne 1</m>. Llamamos a la función definida por
+				<me>f(t) = b^t</me>
+				una <term>función exponencial</term> con <term>base</term> <m>b</m>.
+			</p>
+		</statement>
   	</definition>
 
   	<p>
-  		For an exponential function <m>f(t) = b^t</m>, we note that <m>f(0) = b^0 = 1</m>, so an exponential function of this form always passes through <m>(0,1)</m>.  In addition, because a positive number raised to any power is always positive (for instance, <m>2^{10} = 1024</m> and <m>2^{-10} = \frac{1}{2^{10}} = \frac{1}{1024}</m>), the output of an exponential function is also always positive.  In particular, <m>f(t) = b^t</m> is never zero and thus has no <m>x</m>-intercepts.
-  	</p>
+		Para una función exponencial <m>f(t) = b^t</m>, notamos que <m>f(0) = b^0 = 1</m>, por lo que una función exponencial de esta forma siempre pasa por <m>(0,1)</m>. Además, debido a que un número positivo elevado a cualquier potencia siempre es positivo (por ejemplo, <m>2^{10} = 1024</m> y <m>2^{-10} = \frac{1}{2^{10}} = \frac{1}{1024}</m>), el resultado de una función exponencial también es siempre positivo. En particular, <m>f(t) = b^t</m> nunca es cero y por lo tanto no tiene intersecciones con el eje <m>x</m>.
+	</p>
 
-  	<p>
-  		Because we will be frequently interested in functions such as <m>I(t)</m> and <m>V(t)</m> with the form <m>ab^t</m>, we will also refer to functions of this form as <q>exponential</q>, understanding that technically these are vertical stretches of exponential functions according to <xref ref="D-growth-exponential-function">Definition</xref>.  In <xref ref="PA-exp-growth">Preview Activity</xref>, we found that <m>I(t) = 20000(1.08)^t</m> and <m>V(t) = 20000(0.88)^t</m>.  It is natural to call <m>1.08</m> the <q>growth factor</q>  of <m>I</m> and similarly <m>0.88</m> the growth factor of <m>V</m>.  In addition, we note that these values stem from the actual growth rates:  <m>0.08</m> for <m>I</m> and <m>-0.12</m> for <m>V</m>, the latter being negative because value is depreciating.  In general, for a function of form <m>f(t) = ab^t</m>, we call <m>b</m> the <term>growth factor</term>. <idx><h>exponential function</h><h>growth factor</h></idx>  Moreover, if <m>b = 1+r</m>, we call <m>r</m> the <term>growth rate</term>. <idx><h>exponential function</h><h>growth rate</h></idx>  Whenever <m>b \gt 1</m>, we often say that the function <m>f</m> is exhibiting <q>exponential growth</q>, wherease if <m>0 \lt b \lt 1</m>, we say <m>f</m> exhibits <q>exponential decay</q>. <idx><h>exponential function</h><h>exponential decay</h></idx>
-  	</p>
-  	
 	<p>
-  		We explore the properties of functions of form <m>f(t) = ab^t</m> further in <xref ref="act-exp-growth-a-b-t">Activity</xref>.
-  	</p>
+		Dado que frecuentemente nos interesarán funciones como <m>I(t)</m> y <m>V(t)</m> con la forma <m>ab^t</m>, también nos referiremos a funciones de esta forma como <q>exponenciales</q>, entendiendo que técnicamente estas son estiramientos verticales de funciones exponenciales según la <xref ref="D-growth-exponential-function">Definición</xref>. En <xref ref="PA-exp-growth">Preview Activity</xref>, encontramos que <m>I(t) = 20000(1.08)^t</m> y <m>V(t) = 20000(0.88)^t</m>. Es natural llamar a <m>1.08</m> el <q>factor de crecimiento</q> de <m>I</m> y de manera similar a <m>0.88</m> el factor de crecimiento de <m>V</m>. Además, notamos que estos valores provienen de las tasas de crecimiento reales: <m>0.08</m> para <m>I</m> y <m>-0.12</m> para <m>V</m>, siendo esta última negativa porque el valor está depreciándose. En general, para una función de la forma <m>f(t) = ab^t</m>, llamamos a <m>b</m> el <term>factor de crecimiento</term>. <idx><h>función exponencial</h><h>factor de crecimiento</h></idx> Además, si <m>b = 1+r</m>, llamamos a <m>r</m> la <term>tasa de crecimiento</term>. <idx><h>función exponencial</h><h>tasa de crecimiento</h></idx> Siempre que <m>b \gt 1</m>, a menudo decimos que la función <m>f</m> está exhibiendo <q>crecimiento exponencial</q>, mientras que si <m>0 \lt b \lt 1</m>, decimos que <m>f</m> exhibe <q>decrecimiento exponencial</q>. <idx><h>función exponencial</h><h>decrecimiento exponencial</h></idx>
+	</p>
+	
+  <p>
+		Exploramos las propiedades de las funciones de la forma <m>f(t) = ab^t</m> más a fondo en <xref ref="act-exp-growth-a-b-t">Activity</xref>.
+	</p>
 
 	<xi:include href="./activities/act-exp-growth-a-b-t.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-exp-growth-find-a-b">
-  	<title>Determining formulas for exponential functions</title>
-  	<p>
-  		To better understand the roles that <m>a</m> and <m>b</m> play in an exponential function, let's compare exponential and linear functions.  In <xref ref="T-exp-linear-decay">Table</xref> and <xref ref="T-exp-exponential-decay">Table</xref>, we see output for two different functions <m>r</m> and <m>s</m> that correspond to equally spaced input.
-  	</p>
+	<title>Determinando fórmulas para funciones exponenciales</title>
+	<p>
+		Para entender mejor los roles que <m>a</m> y <m>b</m> juegan en una función exponencial, comparemos funciones exponenciales y lineales. En <xref ref="T-exp-linear-decay">Table</xref> y <xref ref="T-exp-exponential-decay">Table</xref>, vemos la salida para dos funciones diferentes <m>r</m> y <m>s</m> que corresponden a entradas igualmente espaciadas.
+	</p>
 
   	<sidebyside>
   		<table xml:id="T-exp-linear-decay">
-  			<title>Data for the function <m>r</m>.</title>
-  			<tabular halign="center">
+			<title>Datos para la función <m>r</m>.</title>
+			<tabular halign="center">
   				<row bottom="minor">
   					<cell><m>t</m></cell>
   					<cell><m>0</m></cell>
@@ -133,8 +133,8 @@
   			</tabular>
   		</table>
   		<table xml:id="T-exp-exponential-decay">
-  			<title>Data for the function <m>s</m>.</title>
-  			<tabular halign="center">
+			<title>Datos para la función <m>s</m>.</title>
+			<tabular halign="center">
   				<row bottom="minor">
   					<cell><m>t</m></cell>
   					<cell><m>0</m></cell>
@@ -154,57 +154,57 @@
   	</sidebyside>
 
 	<p>
-		In <xref ref="T-exp-linear-decay">Table</xref>, we see a function that exhibits constant average rate of change since the change in output is always <m>\triangle r = -2</m> for any change in input of <m>\triangle t = 3</m>.  Said differently, <m>r</m> is a linear function with slope <m>m = -\frac{2}{3}</m>.  Since its <m>y</m>-intercept is <m>(0,12)</m>, the function's formula is <m>y = r(t) = 12 - \frac{2}{3}t</m>.
+		En <xref ref="T-exp-linear-decay">Table</xref>, vemos una función que exhibe una tasa de cambio promedio constante ya que el cambio en la salida es siempre <m>\triangle r = -2</m> para cualquier cambio en la entrada de <m>\triangle t = 3</m>. Dicho de otra manera, <m>r</m> es una función lineal con pendiente <m>m = -\frac{2}{3}</m>. Dado que su intersección con el eje <m>y</m> es <m>(0,12)</m>, la fórmula de la función es <m>y = r(t) = 12 - \frac{2}{3}t</m>.
 	</p>
 
 	<p>
-		In contrast, the function <m>s</m> given by <xref ref="T-exp-exponential-decay">Table</xref> does not exhibit constant average rate of change.  Instead, another pattern is present.  Observe that if we consider the ratios of consecutive outputs in the table, we see that
+		En contraste, la función <m>s</m> dada por <xref ref="T-exp-exponential-decay">Table</xref> no exhibe una tasa de cambio promedio constante. En su lugar, está presente otro patrón. Observa que si consideramos las razones de las salidas consecutivas en la tabla, vemos que
 		<me>
-			\frac{9} {12}= \frac{3}{4}, \frac{6.75}{9} = 0.75 = \frac{3}{4}, \text{ and } \frac{5.0625}{6.75} = 0.75 = \frac{3}{4}
+			\frac{9} {12}= \frac{3}{4}, \frac{6.75}{9} = 0.75 = \frac{3}{4}, \text{ y } \frac{5.0625}{6.75} = 0.75 = \frac{3}{4}
 		</me>.
-		So, where the <em>differences</em> in the outputs in <xref ref="T-exp-linear-decay">Table</xref> are constant, the <em>ratios</em> in the outputs in <xref ref="T-exp-exponential-decay">Table</xref> are constant.  The latter is a hallmark of exponential functions and may be used to help us determine the formula of a function for which we have certain information.
+		Así que, donde las <em>diferencias</em> en las salidas en <xref ref="T-exp-linear-decay">Table</xref> son constantes, las <em>razones</em> en las salidas en <xref ref="T-exp-exponential-decay">Table</xref> son constantes. Esto último es una característica distintiva de las funciones exponenciales y puede usarse para ayudarnos a determinar la fórmula de una función para la cual tenemos cierta información.
 	</p>
 
   	<p>
-  		If we know that a certain function is linear, it suffices to know two points that lie on the line to determine the function's formula.  It turns out that exponential functions are similar:  knowing two points on the graph of a function known to be exponential is enough information to determine the function's formula.  In the following example, we show how knowing two values of an exponential function enables us to find both <m>a</m> and <m>b</m> exactly.
+  		Si sabemos que una cierta función es lineal, basta con conocer dos puntos que se encuentran en la línea para determinar la fórmula de la función. Resulta que las funciones exponenciales son similares: conocer dos puntos en el gráfico de una función que se sabe que es exponencial es suficiente información para determinar la fórmula de la función. En el siguiente ejemplo, mostramos cómo conocer dos valores de una función exponencial nos permite encontrar tanto <m>a</m> como <m>b</m> exactamente.
   	</p>
 
 	<example xml:id="ex-growth-find-a-b">
 		<statement>
 			<p>
-				Suppose that <m>p</m> is an exponential function and we know that <m>p(2) = 11</m> and <m>p(5) = 18</m>.  Determine the exact values of <m>a</m> and <m>b</m> for which <m>p(t) = ab^t</m>.
+				Supón que <m>p</m> es una función exponencial y sabemos que <m>p(2) = 11</m> y <m>p(5) = 18</m>. Determina los valores exactos de <m>a</m> y <m>b</m> para los cuales <m>p(t) = ab^t</m>.
 			</p>
 		</statement>
 
 		<solution>
 			<p>
-				Since we know that <m>p(t) = ab^t</m>, the two data points give us two equations in the unknowns <m>a</m> and <m>b</m>.  First, using <m>t = 2</m>,
+				Dado que sabemos que <m>p(t) = ab^t</m>, los dos puntos de datos nos dan dos ecuaciones en las incógnitas <m>a</m> y <m>b</m>. Primero, usando <m>t = 2</m>,
 				<men xml:id="eq-growth-p-2">
 					ab^2 = 11
 				</men>,
-				and using <m>t = 5</m> we also have
+				y usando <m>t = 5</m> también tenemos
 				<men xml:id="eq-growth-p-5">
 					ab^5 = 18
 				</men>.
-				Because we know that the quotient of outputs of an exponential function corresponding to equally-spaced inputs must be constant, we thus naturally consider the quotient <m>\frac{18}{11}</m>.  Using <xref ref="eq-growth-p-2">Equation</xref> and <xref ref="eq-growth-p-5">Equation</xref>, it follows that
+				Porque sabemos que el cociente de las salidas de una función exponencial correspondiente a entradas igualmente espaciadas debe ser constante, consideramos naturalmente el cociente <m>\frac{18}{11}</m>. Usando <xref ref="eq-growth-p-2">Equation</xref> y <xref ref="eq-growth-p-5">Equation</xref>, se sigue que
 				<me>
 					\frac{18}{11} = \frac{ab^5}{ab^2}
 				</me>.
-				Simplifying the fraction on the right, we see that 
+				Simplificando la fracción a la derecha, vemos que 
 				<m>
 					\frac{18}{11} = b^3
 				</m>.
-				Solving for <m>b</m>, we find that <m>b = \sqrt[3]{\frac{18}{11}}</m> is the exact value of <m>b</m>.  Substituting this value for <m>b</m> in <xref ref="eq-growth-p-2">Equation</xref>, it then follows that <m>a \left( \sqrt[3]{\frac{18}{11}} \right)^2 = 11</m>, so 
+				Resolviendo para <m>b</m>, encontramos que <m>b = \sqrt[3]{\frac{18}{11}}</m> es el valor exacto de <m>b</m>. Sustituyendo este valor de <m>b</m> en <xref ref="eq-growth-p-2">Equation</xref>, se sigue que <m>a \left( \sqrt[3]{\frac{18}{11}} \right)^2 = 11</m>, así que 
 				<m>
 					a = \frac{11}{\left( \frac{18}{11} \right)^{2/3}}
-				</m>.  Therefore,
+				</m>. Por lo tanto,
 				<me>
 					p(t) = \frac{11}{\left( \frac{18}{11} \right)^{2/3}} \left( \sqrt[3]{\frac{18}{11}} \right)^t \approx 7.9215 \cdot 1.1784^t
-				</me>, and a plot of <m>y = p(t)</m> confirms that the function indeed passes through <m>(2,11)</m> and <m>(5,18)</m> as shown in <xref ref="F-ex-growth-find-a-b">Figure</xref>.
+				</me>, y un gráfico de <m>y = p(t)</m> confirma que la función efectivamente pasa por <m>(2,11)</m> y <m>(5,18)</m> como se muestra en <xref ref="F-ex-growth-find-a-b">Figure</xref>.
 			</p>
 
 			<figure xml:id="F-ex-growth-find-a-b">
-				<caption>Plot of <m>p(t) = ab^t</m> that passes through <m>(2,11)</m> and <m>(5,18)</m>.</caption>
+				<caption>Gráfico de <m>p(t) = ab^t</m> que pasa por <m>(2,11)</m> y <m>(5,18)</m>.</caption>
 				<image source="images/growth-find-a-b" width="45%" />
 			</figure>
 		</solution>
@@ -215,37 +215,37 @@
   </subsection>
 
   <subsection xml:id="subsec-exp-growth-trends">
-  	<title>Trends in the behavior of exponential functions</title>
+	<title>Tendencias en el comportamiento de las funciones exponenciales</title>
 
-  	<p>
-  		Recall that a function is increasing on an interval if its value always increases as we move from left to right.  Similarly, a function is decreasing on an interval provided that its value always decreases as we move from left to right.  
-  	</p>
+	<p>
+		Recuerda que una función está aumentando en un intervalo si su valor siempre aumenta a medida que nos movemos de izquierda a derecha. De manera similar, una función está disminuyendo en un intervalo siempre que su valor siempre disminuya a medida que nos movemos de izquierda a derecha.
+	</p>
 
   	<sidebyside>
   		<figure xml:id="F-growth-incr-CCU">
-  			<caption>The exponential function <m>f</m>.</caption>
-  			<image source="images/growth-incr-CCU"/>
+			<caption>La función exponencial <m>f</m>.</caption>
+			<image source="images/growth-incr-CCU"/>
   		</figure>
   		<figure xml:id="F-growth-decr-CCU">
-  			<caption>The exponential function <m>g</m>.</caption>
-  			<image source="images/growth-decr-CCU"/>
+			<caption>La función exponencial <m>g</m>.</caption>
+			<image source="images/growth-decr-CCU"/>
   		</figure>
   	</sidebyside>
 
   	<p>
-  		If we consider an exponential function <m>f</m> with a growth factor <m>b > 1</m>, such as the function pictured in <xref ref="F-growth-incr-CCU">Figure</xref>, then the function is always increasing because higher powers of <m>b</m> are greater than lesser powers (for example, <m>(1.2)^3 \gt (1.2)^2</m>).  On the other hand, if <m>0 \lt b \lt 1</m>, then the exponential function will be decreasing because higher powers of positive numbers less than <m>1</m> get smaller (e.g., <m>(0.9)^3 \lt (0.9)^2</m>), as seen for the exponential function in <xref ref="F-growth-decr-CCU">Figure</xref>.   
-  	</p>
+		Si consideramos una función exponencial <m>f</m> con un factor de crecimiento <m>b > 1</m>, como la función mostrada en <xref ref="F-growth-incr-CCU">Figura</xref>, entonces la función siempre está aumentando porque las potencias más altas de <m>b</m> son mayores que las potencias menores (por ejemplo, <m>(1.2)^3 \gt (1.2)^2</m>). Por otro lado, si <m>0 \lt b \lt 1</m>, entonces la función exponencial estará disminuyendo porque las potencias más altas de números positivos menores que <m>1</m> se hacen más pequeñas (por ejemplo, <m>(0.9)^3 \lt (0.9)^2</m>), como se ve en la función exponencial en <xref ref="F-growth-decr-CCU">Figura</xref>.
+	</p>
 
 	<p>
-		An additional trend is apparent in the graphs in <xref ref="F-growth-incr-CCU">Figure</xref> and <xref ref="F-growth-decr-CCU">Figure</xref>.  Each graph bends upward and is therefore concave up.  We can better understand why this is so by considering the average rate of change of both <m>f</m> and <m>g</m> on consecutive intervals of the same width.  We choose adjacent intervals of length <m>1</m> and note particularly that as we compute the average rate of change of each function on such intervals,
+		Una tendencia adicional es evidente en los gráficos en <xref ref="F-growth-incr-CCU">Figura</xref> y <xref ref="F-growth-decr-CCU">Figura</xref>. Cada gráfico se curva hacia arriba y, por lo tanto, es cóncavo hacia arriba. Podemos entender mejor por qué es así considerando la tasa de cambio promedio de <m>f</m> y <m>g</m> en intervalos consecutivos del mismo ancho. Elegimos intervalos adyacentes de longitud <m>1</m> y notamos particularmente que al calcular la tasa de cambio promedio de cada función en tales intervalos,
 		<me>
 			AV_{[t,t+1]} = \frac{f(t+1) - f(t)}{t+1-t} = f(t+1) - f(t)
-		</me>.  Thus, these average rates of change are also measuring the total change in the function across an interval that is <m>1</m>-unit wide. We now assume that <m>f(t) = 2 (1.25)^t</m> and <m>g(t) = 8(0.75)^t</m> and compute the rate of change of each function on several consecutive intervals.  
+		</me>. Por lo tanto, estas tasas de cambio promedio también están midiendo el cambio total en la función a lo largo de un intervalo de <m>1</m> unidad de ancho. Ahora asumimos que <m>f(t) = 2 (1.25)^t</m> y <m>g(t) = 8(0.75)^t</m> y calculamos la tasa de cambio de cada función en varios intervalos consecutivos.
 	</p>
 
 	<sidebyside>
 		<table xml:id="T-growth-incr-CCU">
-			<title>The average rate of change of <m>f(t) = 2(1.25)^t</m>.</title>
+			<title>La tasa de cambio promedio de <m>f(t) = 2(1.25)^t</m>.</title>
 			<tabular halign="center">
 				<row bottom="minor">
 					<cell><m>t</m></cell>
@@ -275,7 +275,7 @@
 			</tabular>
 		</table>
 		<table xml:id="T-growth-decr-CCU">
-			<title>The average rate of change of <m>g(t) = 8(0.75)^t</m>.</title>
+			<title>La tasa de cambio promedio de <m>g(t) = 8(0.75)^t</m>.</title>
 			<tabular halign="center">
 				<row bottom="minor">
 					<cell><m>t</m></cell>
@@ -307,87 +307,87 @@
 	</sidebyside>
 
 	<p>
-		From the data in <xref ref="T-growth-incr-CCU">Table</xref>, we see that the average rate of change is increasing as we increase the value of <m>t</m>.  We naturally say that <m>f</m> appears to be <q>increasing at an increasing rate</q>.  For the function <m>g</m>, we first notice that its average rate of change is always negative, but also that the average rate of change gets <em>less negative</em> as we increase the value of <m>t</m>. Said differently, the average rate of change of <m>g</m> is also increasing as we increase the value of <m>t</m>.  Since <m>g</m> is always decreasing but its average rate of change is increasing, we say that <m>g</m> appears to be <q>decreasing at an increasing rate</q>.  These trends hold for exponential functions generally<fn>It takes calculus to justify this claim fully and rigorously.</fn> according to the following conditions.
+		De los datos en <xref ref="T-growth-incr-CCU">Tabla</xref>, vemos que la tasa de cambio promedio está aumentando a medida que aumentamos el valor de <m>t</m>. Naturalmente decimos que <m>f</m> parece estar <q>aumentando a una tasa creciente</q>. Para la función <m>g</m>, primero notamos que su tasa de cambio promedio es siempre negativa, pero también que la tasa de cambio promedio se vuelve <em>menos negativa</em> a medida que aumentamos el valor de <m>t</m>. Dicho de otra manera, la tasa de cambio promedio de <m>g</m> también está aumentando a medida que aumentamos el valor de <m>t</m>. Dado que <m>g</m> siempre está disminuyendo pero su tasa de cambio promedio está aumentando, decimos que <m>g</m> parece estar <q>disminuyendo a una tasa creciente</q>. Estas tendencias se mantienen para las funciones exponenciales en general<fn>Se necesita cálculo para justificar esta afirmación de manera completa y rigurosa.</fn> según las siguientes condiciones.
 	</p>
 
   	<assemblage xml:id="asm-growth-exponential-trends">
-  		<title>Trends in exponential function behavior</title>
-  		<p>
-  			For an exponential function of the form <m>f(t) = ab^t</m> where <m>a</m> and <m>b</m> are both positive with <m>b \ne 1</m>, 
-  			<ul>
-  				<li>
-  					<p>
-  						if <m>b \gt 1</m>, then <m>f</m> is always increasing and always increases at an increasing rate;
-  					</p>
-  				</li>
-  				<li>
-  					<p>
-  						if <m>0 \lt b \lt 1</m>, then <m>f</m> is always decreasing and always decreases at an increasing rate.
-  					</p>
-  				</li>
-  			</ul>
-  		</p>
-  	</assemblage>
+		<title>Tendencias en el comportamiento de las funciones exponenciales</title>
+		<p>
+			Para una función exponencial de la forma <m>f(t) = ab^t</m> donde <m>a</m> y <m>b</m> son ambos positivos con <m>b \ne 1</m>,
+			<ul>
+				<li>
+					<p>
+						si <m>b \gt 1</m>, entonces <m>f</m> siempre está aumentando y siempre aumenta a una tasa creciente;
+					</p>
+				</li>
+				<li>
+					<p>
+						si <m>0 \lt b \lt 1</m>, entonces <m>f</m> siempre está disminuyendo y siempre disminuye a una tasa creciente.
+					</p>
+				</li>
+			</ul>
+		</p>
+	</assemblage>
 
-  	<p>
-  		Observe how a function's average rate of change helps us classify the function's behavior on an interval:  whether the average rate of change is always positive or always negative on the interval enables us to say if the function is always increasing or always decreasing, and then how the average rate of change itself changes enables us to potentially say <em>how</em> the function is increasing or decreasing through phrases such as <q>decreasing at an increasing rate</q>.
-  	</p>
+	<p>
+		Observa cómo la tasa de cambio promedio de una función nos ayuda a clasificar el comportamiento de la función en un intervalo: si la tasa de cambio promedio es siempre positiva o siempre negativa en el intervalo nos permite decir si la función siempre está aumentando o siempre está disminuyendo, y luego cómo cambia la tasa de cambio promedio en sí misma nos permite potencialmente decir <em>cómo</em> la función está aumentando o disminuyendo a través de frases como <q>disminuyendo a una tasa creciente</q>.
+	</p>
 
 	<xi:include href="./activities/act-exp-growth-rates.xml" />
 
   </subsection>
 
   <subsection>
-  	<title>Summary</title>
+	<title>Resumen</title>
 	<p>
   	<ul>
-  		<li>
-  			<p>
-  				We say that a function is exponential whenever its algebraic form is <m>f(t) = ab^t</m> for some positive constants <m>a</m> and <m>b</m> where <m>b \ne 1</m>.  (Technically, the formal definition of an exponential function is one of form <m>f(t) = b^t</m>, but in our everyday usage of the term <q>exponential</q> we include vertical stretches of these functions and thus allow <m>a</m> to be any positive constant, not just <m>a = 1</m>.)
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				To determine the formula for an exponential function of form <m>f(t) = ab^t</m>, we need to know two pieces of information.  Typically this information is presented in one of two ways.
-  				<ul>
-  					<li>
-  						<p>
-  							If we know the amount, <m>a</m>, of a quantity at time <m>t = 0</m> and the rate, <m>r</m>, at which the quantity grows or decays per unit time, then it follows <m>f(t) = a(1+r)^t</m>.  In this setting, <m>r</m> is often given as a percentage that we convert to a decimal (e.g., if the quantity grows at a rate of <m>7</m>% per year, we set <m>r = 0.07</m>, so <m>b = 1.07</m>).
-  						</p>
-  					</li>
-  					<li>
-  						<p>
-  							If we know any two points on the exponential function's graph, then we can set up a system of two equations in two unknowns and solve for both <m>a</m> and <m>b</m> exactly.  In this situation, it is useful to consider the quotient of the two known outputs, as demonstrated in <xref ref="ex-growth-find-a-b">Example</xref>.
-  						</p>
-  					</li>
-  				</ul>
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Exponential functions of the form <m>f(t) = ab^t</m> (where <m>a</m> and <m>b</m> are both positive and <m>b \ne 1</m>) exhibit the following important characteristics:
-  			</p>
-  			<p>
-  				<ul>
-  					<li>
-  						<p>
-  							The domain of any exponential function is the set of all real numbers and the range of any exponential function is the set of all positive real numbers.
-  						</p>
-  					</li>
-  					<li>
-  						<p>
-  							The <m>y</m>-intercept of the exponential function <m>f(t) = ab^t</m> is <m>(0,a)</m> and the function has no <m>x</m>-intercepts.
-  						</p>
-  					</li>
-  					<li>
-  						<p>
-  							If <m>b \gt 1</m>, then the exponential function is always increasing and always increases at an increasing rate.  If <m>0 \lt b \lt 1</m>, then the exponential function is always decreasing and always decreases at an increasing rate.
-  						</p>
-  					</li>
-  				</ul>
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				Decimos que una función es exponencial siempre que su forma algebraica sea <m>f(t) = ab^t</m> para algunas constantes positivas <m>a</m> y <m>b</m> donde <m>b \ne 1</m>. (Técnicamente, la definición formal de una función exponencial es una de la forma <m>f(t) = b^t</m>, pero en nuestro uso cotidiano del término <q>exponencial</q> incluimos estiramientos verticales de estas funciones y, por lo tanto, permitimos que <m>a</m> sea cualquier constante positiva, no solo <m>a = 1</m>).
+			</p>
+		</li>
+		<li>
+			<p>
+				Para determinar la fórmula de una función exponencial de la forma <m>f(t) = ab^t</m>, necesitamos saber dos piezas de información. Típicamente, esta información se presenta de una de dos maneras.
+				<ul>
+					<li>
+						<p>
+							Si sabemos la cantidad, <m>a</m>, de una cantidad en el tiempo <m>t = 0</m> y la tasa, <m>r</m>, a la que la cantidad crece o decae por unidad de tiempo, entonces se sigue que <m>f(t) = a(1+r)^t</m>. En este contexto, <m>r</m> a menudo se da como un porcentaje que convertimos a un decimal (por ejemplo, si la cantidad crece a una tasa de <m>7</m>% por año, establecemos <m>r = 0.07</m>, por lo que <m>b = 1.07</m>).
+						</p>
+					</li>
+					<li>
+						<p>
+							Si conocemos dos puntos en el gráfico de la función exponencial, entonces podemos establecer un sistema de dos ecuaciones con dos incógnitas y resolver tanto para <m>a</m> como para <m>b</m> exactamente. En esta situación, es útil considerar el cociente de las dos salidas conocidas, como se demuestra en <xref ref="ex-growth-find-a-b">Ejemplo</xref>.
+						</p>
+					</li>
+				</ul>
+			</p>
+		</li>
+		<li>
+			<p>
+				Las funciones exponenciales de la forma <m>f(t) = ab^t</m> (donde <m>a</m> y <m>b</m> son ambos positivos y <m>b \ne 1</m>) exhiben las siguientes características importantes:
+			</p>
+			<p>
+				<ul>
+					<li>
+						<p>
+							El dominio de cualquier función exponencial es el conjunto de todos los números reales y el rango de cualquier función exponencial es el conjunto de todos los números reales positivos.
+						</p>
+					</li>
+					<li>
+						<p>
+							La intersección con el eje <m>y</m> de la función exponencial <m>f(t) = ab^t</m> es <m>(0,a)</m> y la función no tiene intersecciones con el eje <m>x</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							Si <m>b \gt 1</m>, entonces la función exponencial siempre está aumentando y siempre aumenta a una tasa creciente. Si <m>0 \lt b \lt 1</m>, entonces la función exponencial siempre está disminuyendo y siempre disminuye a una tasa creciente.
+						</p>
+					</li>
+				</ul>
+			</p>
+		</li>
+	</ul>
 	</p>
   </subsection>
 
@@ -396,4 +396,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

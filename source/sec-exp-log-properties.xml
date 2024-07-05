@@ -14,82 +14,82 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-exp-log-properties">
-  <title>Properties and applications of logarithmic functions</title>
+  <title>Propiedades y aplicaciones de las funciones logarítmicas</title>
   <objectives>
   	<ul>
   		<li>
   			<p>
-  				What structural rules do logarithms obey that are similar to rules for exponents?
+  				¿Qué reglas estructurales obedecen los logaritmos que son similares a las reglas para exponentes?
   			</p>
   		</li>
   		<li>
   			<p>
-  				What are the key properties of the graph of the natural logarithm function?
+  				¿Cuáles son las propiedades clave del gráfico de la función del logaritmo natural?
   			</p>
   		</li>
   		<li>
   			<p>
-  				How do logarithms enable us to solve exponential equations?
+  				¿Cómo nos permiten los logaritmos resolver ecuaciones exponenciales?
   			</p>
   		</li>
   	</ul>
   </objectives>
 
   <introduction>
-  	<p>
-  		Logarithms arise as inverses of exponential functions.  In addition, we have motivated their development by our desire to solve exponential equations such as <m>e^k = 3</m> for <m>k</m>.  Because of the inverse relationship between exponential and logarithmic functions, there are several important properties logarithms have that are analogous to ones held by exponential functions.  We will work to develop these properties and then show how they are useful in applied settings.
-  	</p>
+	<p>
+		Los logaritmos surgen como inversos de las funciones exponenciales. Además, hemos motivado su desarrollo por nuestro deseo de resolver ecuaciones exponenciales como <m>e^k = 3</m> para <m>k</m>. Debido a la relación inversa entre las funciones exponenciales y logarítmicas, hay varias propiedades importantes que tienen los logaritmos que son análogas a las que tienen las funciones exponenciales. Trabajaremos para desarrollar estas propiedades y luego mostraremos cómo son útiles en entornos aplicados.
+	</p>
 
 	<xi:include href="./previews/PA-exp-log-properties.xml" />
 
   </introduction>
 
   <subsection xml:id="subsec-exp-log-key-properties">
-  	<title>Key properties of logarithms</title>
-  	<p>
-  		In <xref ref="PA-exp-log-properties">Preview Activity</xref>, we considered an argument for why <m>\log_{10}(ab) = \log_{10}(a) + \log_{10}(b)</m> for any choice of positive numbers <m>a</m> and <m>b</m>.  In what follows, we develop this and other properties of the natural logarithm function; similar reasoning shows the same properties hold for logarithms of any base.
+	<title>Propiedades clave de los logaritmos</title>
+	<p>
+		En <xref ref="PA-exp-log-properties">Preview Activity</xref>, consideramos un argumento de por qué <m>\log_{10}(ab) = \log_{10}(a) + \log_{10}(b)</m> para cualquier elección de números positivos <m>a</m> y <m>b</m>. En lo que sigue, desarrollamos esta y otras propiedades de la función del logaritmo natural; un razonamiento similar muestra que las mismas propiedades se mantienen para logaritmos de cualquier base.
+  </p>
+
+  <p>
+	  Sea <m>a</m> y <m>b</m> cualquier número real positivo de modo que <m>x = \ln(a)</m> y <m>y = \ln(b)</m> estén ambos definidos. Observa que podemos reescribir estas dos ecuaciones usando la definición del logaritmo natural de modo que
+	  <me>
+		  a = e^x \ \text{ y } \ b = e^y
+	  </me>.
+	  Usando la sustitución, ahora podemos decir que
+	  <me>
+		  \ln(a \cdot b) = \ln(e^x \cdot e^y)
+	  </me>.
+	  Por las reglas de los exponentes, sabemos que <m>\ln(e^x \cdot e^y) = \ln(e^{x+y})</m>, y porque el logaritmo natural y la función exponencial natural son inversos, <m>\ln(e^{x+y}) = x+y</m>. Combinando las tres ecuaciones más recientes,
+	  <me>
+		  \ln(a \cdot b) = x + y
+	  </me>.
+	  Finalmente, recordando que <m>x = \ln(a)</m> y <m>y = \ln(b)</m>, hemos demostrado que
+	  <me>
+		  \ln(a \cdot b) = \ln(a) + \ln(b)
+	  </me>
+	  para cualquier elección de números reales positivos <m>a</m> y <m>b</m>.
 	</p>
 
 	<p>
-		Let <m>a</m> and <m>b</m> be any positive real numbers so that <m>x = \ln(a)</m> and <m>y = \ln(b)</m> are both defined.  Observe that we can rewrite these two equations using the definition of the natural logarithm so that
-		<me>
-			a = e^x \ \text{ and } \ b = e^y
-		</me>.
-		Using substitution, we can now say that
-		<me>
-			\ln(a \cdot b) = \ln(e^x \cdot e^y)
-		</me>.
-		By exponent rules, we know that <m>\ln(e^x \cdot e^y) = \ln(e^{x+y})</m>, and because the natural logarithm and natural exponential function are inverses, <m>\ln(e^{x+y}) = x+y</m>.  Combining the three most recent equations,
-		<me>
-			\ln(a \cdot b) = x + y
-		</me>.
-		Finally, recalling that <m>x = \ln(a)</m> and <m>y = \ln(b)</m>, we have shown that
-		<me>
-			\ln(a \cdot b) = \ln(a) + \ln(b)
-		</me>
-		for any choice of positive real numbers <m>a</m> and <m>b</m>.
-  	</p>
-
-  	<p>
-  		A similar property holds for <m>\ln(\frac{a}{b})</m>.  By nearly the same argument, we can say that
-  		<md>
-  			<mrow>\ln\left( \frac{a}{b} \right) &amp;= \ln\left( \frac{e^x}{e^y} \right)</mrow>
-  			<mrow> 		&amp;= \ln \left( e^{x-y} \right)</mrow>
-  			<mrow> 		&amp;= x-y</mrow>
-  			<mrow> 		&amp;= \ln(a) - \ln(b)</mrow>
-  		</md>.
-  	</p>
+		Una propiedad similar se mantiene para <m>\ln(\frac{a}{b})</m>. Por un argumento casi idéntico, podemos decir que
+		<md>
+			<mrow>\ln\left( \frac{a}{b} \right) &amp;= \ln\left( \frac{e^x}{e^y} \right)</mrow>
+			<mrow> 		&amp;= \ln \left( e^{x-y} \right)</mrow>
+			<mrow> 		&amp;= x-y</mrow>
+			<mrow> 		&amp;= \ln(a) - \ln(b)</mrow>
+		</md>.
+	</p>
 
 	<p>
-		We have thus shown the following general principles.
+		Así hemos demostrado los siguientes principios generales.
 	</p>
 
 	<assemblage xml:id="asm-log-properties-prod-quot">
-		<title>Logarithms of products and quotients</title>
+		<title>Logaritmos de productos y cocientes</title>
 		<idx><h>logarithm</h><h>of a product</h></idx>
 		<idx><h>logarithm</h><h>of a quotient</h></idx>
 		<p>
-			For any positive real numbers <m>a</m> and <m>b</m>,
+			Para cualquier número real positivo <m>a</m> y <m>b</m>,
 			<ul>
 				<li>
 					<m>
@@ -106,25 +106,25 @@
 	</assemblage>
 
 	<p>
-		Because positive integer exponents are a shorthand way to express repeated multiplication, we can use the multiplication rule for logarithms to think about exponents as well.  For example,
+		Dado que los exponentes enteros positivos son una forma abreviada de expresar la multiplicación repetida, podemos usar la regla de multiplicación para logaritmos para pensar también en los exponentes. Por ejemplo,
 		<me>
 			\ln(a^3) = \ln(a \cdot a \cdot a)
 		</me>,
-		and by repeated application of the rule for the natural logarithm of a product, we see
+		y mediante la aplicación repetida de la regla para el logaritmo natural de un producto, vemos
 		<me>
 			\ln(a^3) = \ln(a) + \ln(a) + \ln(a) = 3\ln(a)
 		</me>.
-		A similar argument works to show that for every natural number <m>n</m>,
+		Un argumento similar funciona para demostrar que para cada número natural <m>n</m>,
 		<me>
 			\ln(a^n) = n\ln(a)
 		</me>.  
-		More sophisticated mathematics can be used to prove that the following property holds for every real number exponent <m>t</m>. 
+		Se puede usar matemáticas más sofisticadas para demostrar que la siguiente propiedad se mantiene para cada exponente real <m>t</m>.
 	</p>
 
 	<assemblage xml:id="asm-log-properties-exponents">
-		<title>Logarithms of exponential expressions</title>
+		<title>Logaritmos de expresiones exponenciales</title>
 		<p>
-			For any positive real number <m>a</m> and any real number <m>t</m>,
+			Para cualquier número real positivo <m>a</m> y cualquier número real <m>t</m>,
 			<me>
 				\ln(a^t) = t\ln(a)
 			</me>.
@@ -132,30 +132,30 @@
 	</assemblage>
 
 	<p>
-		The rule that <m>\ln(a^t) = t\ln(a)</m> is extremely powerful:  by working with logarithms appropriately, it enables us to move from having a variable in an exponential expression to the variable being part of a linear expression.  Moreover, it enables us to solve exponential equations exactly, regardless of the base involved.
+		La regla que <m>\ln(a^t) = t\ln(a)</m> es extremadamente poderosa: al trabajar con logaritmos de manera adecuada, nos permite pasar de tener una variable en una expresión exponencial a que la variable sea parte de una expresión lineal. Además, nos permite resolver ecuaciones exponenciales exactamente, independientemente de la base involucrada.
 	</p>
 
 	<example xml:id="ex-log-properties-solve-eqn">
 		<statement>
 			<p>
-				Solve the equation <m>7 \cdot 3^t - 1 = 5</m> exactly for <m>t</m>.
+				Resuelve la ecuación <m>7 \cdot 3^t - 1 = 5</m> exactamente para <m>t</m>.
 			</p>
 		</statement>
 		<solution>
 			<p>
-				To solve for <m>t</m>, we first solve for <m>3^t</m>.  Adding <m>1</m> to both sides and dividing by <m>7</m>, we find that
+				Para resolver para <m>t</m>, primero resolvemos para <m>3^t</m>. Sumando <m>1</m> a ambos lados y dividiendo por <m>7</m>, encontramos que
 				<m>
 					3^t = \frac{6}{7}
 				</m>.
-				Next, we take the natural logarithm of both sides of the equation.  Doing so, we have
+				Luego, tomamos el logaritmo natural de ambos lados de la ecuación. Haciendo esto, tenemos
 				<me>
 					\ln \left( 3^t \right) =  \ln \left( \frac{6}{7} \right)
 				</me>.
-				Applying the rule for the logarithm of an exponential expression on the left, we see that
+				Aplicando la regla para el logaritmo de una expresión exponencial a la izquierda, vemos que
 				<m>
 					t \ln(3) = \ln \left( \frac{6}{7} \right)
 				</m>.
-				Both <m>\ln(3)</m> and <m>\ln \left( \frac{6}{7} \right)</m> are simply numbers, and thus we conclude that
+				Tanto <m>\ln(3)</m> como <m>\ln \left( \frac{6}{7} \right)</m> son simplemente números, y así concluimos que
 				<me>
 					t = \frac{\ln \left( \frac{6}{7} \right)}{\ln(3)}
 				</me>.
@@ -164,7 +164,7 @@
 	</example>
 
 	<p>
-		The approach used in <xref ref="ex-log-properties-solve-eqn">Example</xref> works in a wide range of settings:  any time we have an exponential equation of the form <m>p \cdot q^t + r = s</m>, we can solve for <m>t</m> by first isolating the exponential expression <m>q^t</m> and then by taking the natural logarithm of both sides of the equation.
+		El enfoque utilizado en <xref ref="ex-log-properties-solve-eqn">Example</xref> funciona en una amplia gama de configuraciones: cada vez que tenemos una ecuación exponencial de la forma <m>p \cdot q^t + r = s</m>, podemos resolver para <m>t</m> primero aislando la expresión exponencial <m>q^t</m> y luego tomando el logaritmo natural de ambos lados de la ecuación.
 	</p>
 
   <xi:include href="./activities/act-exp-log-exponential-equations.xml" />
@@ -172,111 +172,111 @@
   </subsection>
 
   <subsection xml:id="subsec-exp-log-properties-graph">
-  	<title>The graph of the natural logarithm</title>
-  	<p>
-  		As the inverse of the natural exponential function <m>E(x) = e^x</m>, we have already established that the natural logarithm <m>N(x) = \ln(x)</m> has the set of all positive real numbers as its domain and the set of all real numbers as its range.  In addition, being the inverse of <m>E(x) = e^x</m>, we know that when we plot the natural logarithm and natural exponential functions on the same coordinate axes, their graphs are reflections of one another across the line <m>y = x</m>, as seen in <xref ref="F-log-natural-graph-1">Figure</xref> and <xref ref="F-log-natural-graph-2">Figure</xref>.
-  	</p>
+	<title>El gráfico del logaritmo natural</title>
+	<p>
+		Como el inverso de la función exponencial natural <m>E(x) = e^x</m>, ya hemos establecido que el logaritmo natural <m>N(x) = \ln(x)</m> tiene el conjunto de todos los números reales positivos como su dominio y el conjunto de todos los números reales como su rango. Además, siendo el inverso de <m>E(x) = e^x</m>, sabemos que cuando graficamos las funciones de logaritmo natural y exponencial natural en los mismos ejes de coordenadas, sus gráficos son reflejos uno del otro a través de la línea <m>y = x</m>, como se ve en <xref ref="F-log-natural-graph-1">Figura</xref> y <xref ref="F-log-natural-graph-2">Figura</xref>.
+	</p>
 
 	<sidebyside>
 		<figure xml:id="F-log-natural-graph-1">
-			<caption>The natural exponential and natural logarithm functions on the interval <m>[-3,3]</m>.</caption>
+			<caption>Las funciones exponencial natural y logaritmo natural en el intervalo <m>[-3,3]</m>.</caption>
 			<image source="images/log-graph-1" />
 		</figure>
 		<figure xml:id="F-log-natural-graph-2">
-			<caption>The natural exponential and natural logarithm functions on the interval <m>[-15,15]</m>.</caption>
+			<caption>Las funciones exponencial natural y logaritmo natural en el intervalo <m>[-15,15]</m>.</caption>
 			<image source="images/log-graph-2" />
 		</figure>
 	</sidebyside>
 
-  	<p>
-  		Indeed, for any point <m>(a,b)</m> that lies on the graph of <m>E(x) = e^x</m>, it follows that the point <m>(b,a)</m> lies on the graph of the inverse <m>N(x) = \ln(x)</m>.  From this, we see several important properties of the graph of the logarithm function.
-  	</p>
+	<p>
+		De hecho, para cualquier punto <m>(a,b)</m> que se encuentra en el gráfico de <m>E(x) = e^x</m>, se sigue que el punto <m>(b,a)</m> se encuentra en el gráfico del inverso <m>N(x) = \ln(x)</m>. A partir de esto, vemos varias propiedades importantes del gráfico de la función logarítmica.
+	</p>
 
   	<assemblage>
-  		<title>The graph of <m>y = \ln(x)</m></title>
-  		<p>
-  			The graph of <m>y = \ln(x)</m>
-  			<ul>
-  				<li>
-  					<p>
-  						passes through the point <m>(1,0)</m>;
-  					</p>
-  				</li>
-  				<li>
-  					<p>
-  						is always increasing;
-  					</p>
-  				</li>
-  				<li>
-  					<p>
-  						is always concave down; and
-  					</p>
-  				</li>
+		<title>El gráfico de <m>y = \ln(x)</m></title>
+		<p>
+			El gráfico de <m>y = \ln(x)</m>
+			<ul>
 				<li>
 					<p>
-						increases without bound.
+						pasa por el punto <m>(1,0)</m>;
 					</p>
 				</li>
-  			</ul>
-  		</p>
+				<li>
+					<p>
+						siempre está aumentando;
+					</p>
+				</li>
+				<li>
+					<p>
+						siempre es cóncavo hacia abajo; y
+					</p>
+				</li>
+				<li>
+					<p>
+						aumenta sin límite.
+					</p>
+				</li>
+			</ul>
+		</p>
   	</assemblage>
 
-  	<p>
-  		Because the graph of <m>E(x) = e^x</m> increases more and more rapidly as <m>x</m> increases, the graph of <m>N(x) = \ln(x)</m> increases more and more slowly as <m>x</m> increases.  Even though the natural logarithm function grows very slowly, it does grow without bound because we can make <m>\ln(x)</m> as large as we want by making <m>x</m> sufficiently large.  For instance, if we want <m>x</m> such that <m>\ln(x) = 100</m>, we choose <m>x = e^{100}</m>, since <m>\ln(e^{100}) = 100</m>.
-  	</p>
+	  <p>
+		Debido a que el gráfico de <m>E(x) = e^x</m> aumenta cada vez más rápidamente a medida que <m>x</m> aumenta, el gráfico de <m>N(x) = \ln(x)</m> aumenta cada vez más lentamente a medida que <m>x</m> aumenta. Aunque la función del logaritmo natural crece muy lentamente, crece sin límite porque podemos hacer <m>\ln(x)</m> tan grande como queramos haciendo <m>x</m> suficientemente grande. Por ejemplo, si queremos <m>x</m> tal que <m>\ln(x) = 100</m>, elegimos <m>x = e^{100}</m>, ya que <m>\ln(e^{100}) = 100</m>.
+	</p>
 
-  	<p>
-  		While the natural exponential function and the natural logarithm (and transformations of these functions) are connected and have certain similar properties, it's also important to be able to distinguish between behavior that is fundamentally exponential and fundamentally logarithmic.
-  	</p>
+	<p>
+		Aunque la función exponencial natural y el logaritmo natural (y las transformaciones de estas funciones) están conectadas y tienen ciertas propiedades similares, también es importante poder distinguir entre el comportamiento que es fundamentalmente exponencial y el que es fundamentalmente logarítmico.
+	</p>
 
 	<xi:include href="./activities/act-exp-log-properties-exp-or-log.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-exp-log-properties-applications">
-  	<title>Putting logarithms to work</title>
-  	<p>
-  		We've seen in several different settings that the function <m>e^{kt}</m> plays a key role in modeling phenomena in the world around us.  We also understand that the value of <m>k</m> controls whether <m>e^{kt}</m> is increasing (<m>k \gt 0</m>) or decreasing (<m>k \lt 0</m>) and how fast the function is increasing or decreasing.  As such, we often need to determine the value of <m>k</m> from data that is presented to us; doing so almost always requires the use of logarithms.
-  	</p>
+	<title>Poniendo los logaritmos a trabajar</title>
+	<p>
+		Hemos visto en varios contextos diferentes que la función <m>e^{kt}</m> juega un papel clave en la modelización de fenómenos en el mundo que nos rodea. También entendemos que el valor de <m>k</m> controla si <m>e^{kt}</m> está aumentando (<m>k \gt 0</m>) o disminuyendo (<m>k \lt 0</m>) y qué tan rápido la función está aumentando o disminuyendo. Como tal, a menudo necesitamos determinar el valor de <m>k</m> a partir de los datos que se nos presentan; hacerlo casi siempre requiere el uso de logaritmos.
+	</p>
 
   	<example xml:id="ex-log-pop-find-k">
   		<statement>
-  			<p>
-  				A population of bacteria cells is growing at a rate proportionate to the number of cells present at a given time <m>t</m> (in hours).  Suppose that the number of cells, <m>P</m>, in the population is measured in millions of cells and we know that <m>P(0) = 2.475</m> and <m>P(10) = 4.298</m>.  Find a model of the form <m>P(t) = Ae^{kt}</m> that fits this data and use it to determine the value of <m>k</m> and how long it will take for the population to reach <m>1</m> billion cells.
-  			</p> 
-  		</statement>
+			<p>
+				Una población de células bacterianas está creciendo a una tasa proporcional al número de células presentes en un momento dado <m>t</m> (en horas). Supón que el número de células, <m>P</m>, en la población se mide en millones de células y sabemos que <m>P(0) = 2.475</m> y <m>P(10) = 4.298</m>. Encuentra un modelo de la forma <m>P(t) = Ae^{kt}</m> que se ajuste a estos datos y úsalo para determinar el valor de <m>k</m> y cuánto tiempo tomará para que la población alcance <m>1</m> mil millones de células.
+			</p> 
+		</statement>
   		<solution>
-  			<p>
-  				Since the model has form <m>P(t) = Ae^{kt}</m>, we know that <m>P(0) = A</m>.  Because we are given that <m>P(0) = 2.475</m>, this shows that <m>A = 2.475</m>.  To find <m>k</m>, we use the fact that <m>P(10) = 4.298</m>.  Applying this information, <m>A = 2.475</m>, and the form of the model, <m>P(t) = Ae^{kt}</m>, we see that
-	  			<me>
-	  				4.298 = 2.475 e^{k \cdot 10}
-	  			</me>.
-  				To solve for <m>k</m>, we first isolate <m>e^{10k}</m> by dividing both sides by <m>2.475</m> to get 
-  				<me>
-  					e^{10k} = \frac{4.298}{2.475} 
-  				</me>.
-  				Taking the natural logarithm of each side, we find
-  				<me>
-  					10k = \ln \left( \frac{4.298}{2.475} \right)
-  				</me>,
-  				and thus <m>k = \frac{1}{10}\ln \left( \frac{4.298}{2.475} \right) \approx 0.05519</m>.
-  			</p>
+			<p>
+				Dado que el modelo tiene la forma <m>P(t) = Ae^{kt}</m>, sabemos que <m>P(0) = A</m>. Debido a que se nos da que <m>P(0) = 2.475</m>, esto muestra que <m>A = 2.475</m>. Para encontrar <m>k</m>, usamos el hecho de que <m>P(10) = 4.298</m>. Aplicando esta información, <m>A = 2.475</m>, y la forma del modelo, <m>P(t) = Ae^{kt}</m>, vemos que
+				<me>
+					4.298 = 2.475 e^{k \cdot 10}
+				</me>.
+				Para resolver <m>k</m>, primero aislamos <m>e^{10k}</m> dividiendo ambos lados por <m>2.475</m> para obtener 
+				<me>
+					e^{10k} = \frac{4.298}{2.475} 
+				</me>.
+				Tomando el logaritmo natural de cada lado, encontramos
+				<me>
+					10k = \ln \left( \frac{4.298}{2.475} \right)
+				</me>,
+				y así <m>k = \frac{1}{10}\ln \left( \frac{4.298}{2.475} \right) \approx 0.05519</m>.
+			</p>
 
-  			<p>
-  				To determine how long it takes for the population to reach <m>1</m> billion cells, we need to solve the equation <m>P(t) = 1000</m>.  Using our preceding work to find <m>A</m> and <m>k</m>, we know that we need to solve the equation
-  				<me>
-  					1000 = 2.475 e^{\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t}
-  				</me>.
-  				We divide both sides by <m>2.475</m> to get <m>e^{\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t} = \frac{1000}{2.475}</m>, and after taking the natural logarithm of each side, we see
-  				<me>
-  					\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t = \ln \left( \frac{1000}{2.475} \right)
-  				</me>,
-  				so that
-  				<me>
-  					t = \frac{10 \ln \left( \frac{1000}{2.475} \right)}{\ln \left( \frac{4.298}{2.475} \right)} \approx 108.741
-  				</me>.
-  			</p>
-  		</solution>
+			<p>
+				Para determinar cuánto tiempo tomará para que la población alcance <m>1</m> mil millones de células, necesitamos resolver la ecuación <m>P(t) = 1000</m>. Usando nuestro trabajo anterior para encontrar <m>A</m> y <m>k</m>, sabemos que necesitamos resolver la ecuación
+				<me>
+					1000 = 2.475 e^{\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t}
+				</me>.
+				Dividimos ambos lados por <m>2.475</m> para obtener <m>e^{\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t} = \frac{1000}{2.475}</m>, y después de tomar el logaritmo natural de cada lado, vemos
+				<me>
+					\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t = \ln \left( \frac{1000}{2.475} \right)
+				</me>,
+				de modo que
+				<me>
+					t = \frac{10 \ln \left( \frac{1000}{2.475} \right)}{\ln \left( \frac{4.298}{2.475} \right)} \approx 108.741
+				</me>.
+			</p>
+		</solution>
   	</example>
 
   	<xi:include href="./activities/act-exp-log-properties-find-k.xml" /> 
@@ -284,38 +284,38 @@
   </subsection>
 
   <subsection xml:id="subsec-exp-log-properties-summary">
-  	<title>Summary</title>
+	<title>Resumen</title>
 
   	<ul>
   		<li>
   			<p>
-  				There are three fundamental rules for exponents given nonzero base <m>a</m> and exponents <m>m</m> and <m>n</m>:
-  				<me>
-  					a^m \cdot a^n = a^{m+n}, \frac{a^m}{a^n} = a^{m-n}, \text{ and } (a^m)^n = a^{mn}
-  				</me>.
-  				For logarithms<fn>We state these rules for the natural logarithm, but they hold for any logarithm of any base.</fn>, we have the following analogous structural rules for positive real numbers <m>a</m> and <m>b</m> and any real number <m>t</m>:
-  				<me>
-  					\ln(a \cdot b) = \ln(a) + \ln(b), \ln \left( \frac{a}{b} \right) = \ln(a) - \ln(b), \text{ and } \ln(a^t) = t \ln(a)
-  				</me>.
-  			</p>
+				Hay tres reglas fundamentales para los exponentes dado un base no cero <m>a</m> y exponentes <m>m</m> y <m>n</m>:
+				<me>
+						a^m \cdot a^n = a^{m+n}, \frac{a^m}{a^n} = a^{m-n}, \text{ y } (a^m)^n = a^{mn}
+				</me>.
+				Para los logaritmos<fn>Estas reglas se enuncian para el logaritmo natural, pero son válidas para cualquier logaritmo de cualquier base.</fn>, tenemos las siguientes reglas estructurales análogas para números reales positivos <m>a</m> y <m>b</m> y cualquier número real <m>t</m>:
+				<me>
+						\ln(a \cdot b) = \ln(a) + \ln(b), \ln \left( \frac{a}{b} \right) = \ln(a) - \ln(b), \text{ y } \ln(a^t) = t \ln(a)
+				</me>.
+			</p>
   		</li>
   		<li>
   			<p>
-  				The natural logarithm's domain is the set of all positive real numbers and its range is the set of all real numbers.  Its graph passes through <m>(1,0)</m>, is always increasing, is always concave down, and increases without bound.
-  			</p>
+				El dominio del logaritmo natural es el conjunto de todos los números reales positivos y su rango es el conjunto de todos los números reales. Su gráfica pasa por <m>(1,0)</m>, siempre está aumentando, siempre es cóncava hacia abajo y aumenta sin límite.
+			</p>
   		</li>
   		<li>
   			<p>
-  				Logarithms are very important in determining values that arise in equations of the form
-			    <me>
-			      a^b = c
-			    </me>,
-			    where <m>a</m> and <m>c</m> are known, but <m>b</m> is not.  In this context, we can take the natural logarithm of both sides of the equation to find that
-			    <me>
-			    	\ln(a^b) = \ln(c)
-			    </me>
-			    and thus <m>b\ln(a) = \ln(c)</m>, so that <m>b = \frac{\ln(c)}{\ln(a)}</m>.
-  			</p>
+				Los logaritmos son muy importantes para determinar valores que surgen en ecuaciones de la forma
+				<me>
+				  a^b = c
+				</me>,
+				donde <m>a</m> y <m>c</m> son conocidos, pero <m>b</m> no lo es. En este contexto, podemos tomar el logaritmo natural de ambos lados de la ecuación para encontrar que
+				<me>
+					\ln(a^b) = \ln(c)
+				</me>
+				y así <m>b\ln(a) = \ln(c)</m>, de modo que <m>b = \frac{\ln(c)}{\ln(a)}</m>.
+			</p>
   		</li>
   	</ul>
 
@@ -326,4 +326,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

@@ -17,42 +17,42 @@
 
 	<statement>
 		<p>
-			A can of soda is initially at room temperature, <m>72.3^\circ</m> Fahrenheit, and at time <m>t = 0</m> is placed in a refrigerator set at <m>37.7^\circ</m>.  In addition, we know that after <m>30</m> minutes, the soda's temperature has dropped to <m>59.5^\circ</m>. Let <m>F(t)</m> represent the temperature of the soda in degrees Fahrenheit at time <m>t</m> in minutes.
+			Una lata de refresco está inicialmente a temperatura ambiente, <m>72.3^\circ</m> Fahrenheit, y en el momento <m>t = 0</m> se coloca en un refrigerador ajustado a <m>37.7^\circ</m>. Además, sabemos que después de <m>30</m> minutos, la temperatura del refresco ha bajado a <m>59.5^\circ</m>. Deja que <m>F(t)</m> represente la temperatura del refresco en grados Fahrenheit en el momento <m>t</m> en minutos.
 		</p>
 
 		<p>
 			<ol marker="a.">
 		        <li>
 		          <p>
-		            Use algebraic reasoning and your understanding of the physical situation to determine the exact values of <m>a</m>,
+		            Usa el razonamiento algebraico y tu comprensión de la situación física para determinar los valores exactos de <m>a</m>,
 		            <m>c</m>,
-		            and <m>k</m> in the model <m>F(t) = ae^{-kt}+c</m>.
-		            Write at least one careful sentence to explain your thinking.
+		            y <m>k</m> en el modelo <m>F(t) = ae^{-kt}+c</m>.
+		            Escribe al menos una oración cuidadosa para explicar tu pensamiento.
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            Determine the exact time the object's temperature is <m>42.4^\circ</m>.
-		            Clearly show your algebraic work and thinking.
+		            Determina el tiempo exacto en que la temperatura del objeto es <m>42.4^\circ</m>.
+		            Muestra claramente tu trabajo y pensamiento algebraico.
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            In <em>Desmos</em>, enter the values you found for <m>a</m>, <m>c</m>, and <m>k</m> in order to define the function <m>F</m>.  Then, use <em>Desmos</em> to find the average rate of change of <m>F</m> on the interval <m>[25,30]</m>.
-		            What is the meaning
-		            (with units)
-		            of this value?
+		            En <em>Desmos</em>, ingresa los valores que encontraste para <m>a</m>, <m>c</m> y <m>k</m> para definir la función <m>F</m>. Luego, usa <em>Desmos</em> para encontrar la tasa promedio de cambio de <m>F</m> en el intervalo <m>[25,30]</m>.
+		            ¿Cuál es el significado
+		            (con unidades)
+		            de este valor?
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            If everything stayed the same except the value of <m>F(0)</m>,
-		            and instead <m>F(0) = 65</m>,
-		            would the value of <m>k</m> be larger or smaller?
-		            Why?
+		            Si todo se mantuviera igual excepto el valor de <m>F(0)</m>,
+		            y en su lugar <m>F(0) = 65</m>,
+		            ¿sería el valor de <m>k</m> mayor o menor?
+		            ¿Por qué?
 		          </p>
 		        </li>
 
@@ -71,4 +71,3 @@
 	</solution>
 
 </activity>
-

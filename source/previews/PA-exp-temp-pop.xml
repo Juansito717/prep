@@ -17,37 +17,37 @@
 
 	<statement>
 		<p>
-			In each of the following situations, determine the exact value of the unknown quantity that is identified.
+			En cada una de las siguientes situaciones, determina el valor exacto de la cantidad desconocida que se identifica.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						The temperature of a warming object in an oven is given by <m>F(t) = 275 - 203e^{-kt}</m>, and we know that the object's  temperature after <m>20</m> minutes is <m>F(20) = 101</m>.  Determine the exact value of <m>k</m>.
+						La temperatura de un objeto que se calienta en un horno está dada por <m>F(t) = 275 - 203e^{-kt}</m>, y sabemos que la temperatura del objeto después de <m>20</m> minutos es <m>F(20) = 101</m>. Determina el valor exacto de <m>k</m>.
 					</p>
 				</li>				
 				<li>
 					<p>
-						The temperature of a cooling object in a refrigerator is modeled by <m>F(t) = a + 37.4e^{-0.05t}</m>, and the temperature of the refrigerator is <m>39.8^\circ</m>.  By thinking about the long-term behavior of <m>e^{-0.05t}</m> and the long-term behavior of the object's temperature, determine the exact value of <m>a</m>.
+						La temperatura de un objeto que se enfría en un refrigerador está modelada por <m>F(t) = a + 37.4e^{-0.05t}</m>, y la temperatura del refrigerador es <m>39.8^\circ</m>. Pensando en el comportamiento a largo plazo de <m>e^{-0.05t}</m> y el comportamiento a largo plazo de la temperatura del objeto, determina el valor exacto de <m>a</m>.
 					</p>
 				</li>
 
 				<li>
 					<p>
-						Later in this section, we'll learn that one model for how a population grows over time can be given by a function of the form 
+						Más adelante en esta sección, aprenderemos que un modelo para cómo una población crece con el tiempo puede estar dado por una función de la forma 
 						<me>
 							P(t) = \frac{A}{1 + Me^{-kt}}
-						</me>.  Models of this form lead naturally to equations that have structure like
+						</me>. Los modelos de esta forma conducen naturalmente a ecuaciones que tienen una estructura como
 						<men xml:id="eq-temp-pop-logistic-structure">
 							3 = \frac{10}{1+x}.
 						</men>
-						Solve <xref ref="eq-temp-pop-logistic-structure">Equation</xref> for the exact value of <m>x</m>.
+						Resuelve <xref ref="eq-temp-pop-logistic-structure">Equation</xref> para el valor exacto de <m>x</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Suppose that <m>y = a + be^{-kt}</m>.  Solve for <m>t</m> in terms of <m>a</m>, <m>b</m>, <m>k</m>, and <m>y</m>.  What does this new equation represent?
+						Supón que <m>y = a + be^{-kt}</m>. Resuelve para <m>t</m> en términos de <m>a</m>, <m>b</m>, <m>k</m>, y <m>y</m>. ¿Qué representa esta nueva ecuación?
 					</p>
 				</li>
 			</ol>

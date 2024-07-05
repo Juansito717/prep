@@ -17,47 +17,38 @@
 
 	<statement>
 		<p>
-			A potato initially at room temperature (<m>68^\circ</m>) is placed in an oven (at <m>350^\circ</m>) at time <m>t = 0</m>.
-      		It is known that the potato's temperature at time <m>t</m> is given by the function
-      		<m>F(t) = a - b(0.98)^t</m> for some positive constants <m>a</m> and <m>b</m>,
-     		where <m>F</m> is measured in degrees Fahrenheit and <m>t</m> is time in minutes.
+			Una papa inicialmente a temperatura ambiente (<m>68^\circ</m>) se coloca en un horno (a <m>350^\circ</m>) en el tiempo <m>t = 0</m>. Se sabe que la temperatura de la papa en el tiempo <m>t</m> está dada por la función <m>F(t) = a - b(0.98)^t</m> para algunas constantes positivas <m>a</m> y <m>b</m>, donde <m>F</m> se mide en grados Fahrenheit y <m>t</m> es el tiempo en minutos.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the numerical value of <m>F(0)</m>?
-            			What does this tell you about the value of <m>a - b</m>?
+						¿Cuál es el valor numérico de <m>F(0)</m>? ¿Qué te dice esto sobre el valor de <m>a - b</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Based on the context of the problem,
-            			what should be the long-range behavior of the function <m>F(t)</m>?
-            			Use this fact along with the behavior of
-            			<m>(0.98)^t</m> to determine the value of <m>a</m>.  Write a sentence to explain your thinking.
+						Con base en el contexto del problema, ¿cuál debería ser el comportamiento a largo plazo de la función <m>F(t)</m>? Usa este hecho junto con el comportamiento de <m>(0.98)^t</m> para determinar el valor de <m>a</m>. Escribe una frase para explicar tu pensamiento.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the value of <m>b</m>?  Why?
+						¿Cuál es el valor de <m>b</m>? ¿Por qué?
 					</p>
 				</li>
 				<li>
 							<p>
-								Check your work above by plotting the function <m>F</m> using graphing technology in an appropriate window.
-								Record your results on the axes provided in <xref ref="F-modeling-act-blank-axes-potato">Figure</xref>, labeling the scale on the axes.
-            					Then, use the graph to estimate the time at which the potato's temperature reaches <m>325</m> degrees.
+								Verifica tu trabajo anterior trazando la función <m>F</m> usando tecnología de gráficos en una ventana apropiada. Registra tus resultados en los ejes proporcionados en <xref ref="F-modeling-act-blank-axes-potato">Figure</xref>, etiquetando la escala en los ejes. Luego, usa el gráfico para estimar el tiempo en que la temperatura de la papa alcanza los <m>325</m> grados.
 							</p>
 							<figure xml:id="F-modeling-act-blank-axes-potato">
-								<caption>Axes for plotting <m>F</m>.</caption>
+								<caption>Ejes para trazar <m>F</m>.</caption>
 								<image width="50%" source="images/modeling-F-t-blank-axes" />
 							</figure>
 				</li>
 				<li>
 					<p>
-						How can we view the function <m>F(t) = a - b(0.98)^t</m> as a transformation of the parent function <m>f(t) = (0.98)^t</m>?  Explain.
+						¿Cómo podemos ver la función <m>F(t) = a - b(0.98)^t</m> como una transformación de la función padre <m>f(t) = (0.98)^t</m>? Explica.
 					</p>
 				</li>
 			</ol>
@@ -75,4 +66,3 @@
 	</solution>
 
 </activity>
-

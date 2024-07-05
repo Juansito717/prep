@@ -17,34 +17,34 @@
 
 	<statement>
 		<p>
-			In <em>Desmos</em>, define <m>P(t) = \frac{A}{1 + Me^{-kt}}</m> and accept sliders for <m>A</m>, <m>M</m>, and <m>k</m>.  Set the slider ranges for these parameters as follows: <m>0.01 \le A \le 10</m>; <m>0.01 \le M \le 10</m>; <m>0.01 \le k \le 5</m>.
+			En <em>Desmos</em>, define <m>P(t) = \frac{A}{1 + Me^{-kt}}</m> y acepta deslizadores para <m>A</m>, <m>M</m>, y <m>k</m>. Establece los rangos de los deslizadores para estos parámetros de la siguiente manera: <m>0.01 \le A \le 10</m>; <m>0.01 \le M \le 10</m>; <m>0.01 \le k \le 5</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 						<p>
-							Sketch a typical graph of <m>P(t)</m> on the axes provided and write several sentences to explain the effects of <m>A</m>, <m>M</m>, and <m>k</m> on the graph of <m>P</m>.
+							Dibuja un gráfico típico de <m>P(t)</m> en los ejes proporcionados y escribe varias oraciones para explicar los efectos de <m>A</m>, <m>M</m>, y <m>k</m> en el gráfico de <m>P</m>.
 						</p>
 						
 						<figure xml:id="F-logistic-act-blank-axes">
-							<caption>Axes for plotting a typical logistic function <m>P</m>.</caption>
+							<caption>Ejes para trazar una función logística típica <m>P</m>.</caption>
 							<image source="images/temp-pop-p-t-blank-axes" width="60%" />
 						</figure>
 				</li>
 				<li>
 					<p>
-						On a typical logistic graph, where does it appear that the population is growing most rapidly?  How is this value connected to the carrying capacity, <m>A</m>?
+						En un gráfico logístico típico, ¿dónde parece que la población está creciendo más rápidamente? ¿Cómo se conecta este valor con la capacidad de carga, <m>A</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						How does the function <m>1 + Me^{-kt}</m> behave as <m>t</m> decreases without bound?  What is the algebraic reason that this occurs?
+						¿Cómo se comporta la función <m>1 + Me^{-kt}</m> a medida que <m>t</m> disminuye sin límite? ¿Cuál es la razón algebraica de que esto ocurra?
 					</p>
 				</li>
 				<li>
 					<p>
-						Use your <em>Desmos</em> worksheet to find a logistic function <m>P</m> that has the following properties:  <m>P(0) = 2</m>, <m>P(2) = 4</m>, and <m>P(t)</m> approaches <m>9</m> as <m>t</m> increases without bound.  What are the approximate values of <m>A</m>, <m>M</m>, and <m>k</m> that make the function <m>P</m> fit these criteria?
+						Usa tu hoja de trabajo de <em>Desmos</em> para encontrar una función logística <m>P</m> que tenga las siguientes propiedades: <m>P(0) = 2</m>, <m>P(2) = 4</m>, y <m>P(t)</m> se aproxima a <m>9</m> a medida que <m>t</m> aumenta sin límite. ¿Cuáles son los valores aproximados de <m>A</m>, <m>M</m>, y <m>k</m> que hacen que la función <m>P</m> cumpla con estos criterios?
 					</p>
 				</li>
 			</ol>
@@ -62,4 +62,3 @@
 	</solution>
 
 </activity>
-

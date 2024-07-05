@@ -17,28 +17,28 @@
 
 	<statement>
 		<p>
-			In the following questions, we investigate how <m>\log_{10}(a \cdot b)</m> can be equivalently written in terms of <m>\log_{10}(a)</m> and  <m>\log_{10}(b)</m>.
+			En las siguientes preguntas, investigamos cómo <m>\log_{10}(a \cdot b)</m> puede escribirse de manera equivalente en términos de <m>\log_{10}(a)</m> y <m>\log_{10}(b)</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Write <m>10^x \cdot 10^y</m> as <m>10</m> raised to a single power.  That is, complete the equation
+						Escribe <m>10^x \cdot 10^y</m> como <m>10</m> elevado a una sola potencia. Es decir, completa la ecuación
 						<me>
 							10^x \cdot 10^y = 10^{\Box}
 						</me>
-						by filling in the box with an appropriate expression involving <m>x</m> and <m>y</m>.
+						llenando el cuadro con una expresión apropiada que involucre <m>x</m> y <m>y</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the simplest possible way to write <m>\log_{10}10^x</m>?  What about the simplest equivalent expression for <m>\log_{10}10^y</m>?
+						¿Cuál es la forma más simple de escribir <m>\log_{10}10^x</m>? ¿Y cuál es la expresión equivalente más simple para <m>\log_{10}10^y</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Explain why each of the following three equal signs is valid in the sequence of equalities:
+						Explica por qué cada uno de los siguientes tres signos de igualdad es válido en la secuencia de igualdades:
 						<md>
 							<mrow>\log_{10}(10^x \cdot 10^y) &amp;= \log_{10}(10^{x+y})</mrow>
 							<mrow>         &amp;= x+y</mrow>
@@ -47,7 +47,7 @@
 					</p>
 				</li>
 				<li>
-					Suppose that <m>a</m> and <m>b</m> are positive real numbers, so we can think of <m>a</m> as <m>10^x</m> for some real number <m>x</m> and <m>b</m> as <m>10^y</m> for some real number <m>y</m>.  That is, say that <m>a = 10^x</m> and <m>b = 10^y</m>.  What does our work in (c) tell us about <m>\log_{10}(ab)</m>?
+					Supón que <m>a</m> y <m>b</m> son números reales positivos, por lo que podemos pensar en <m>a</m> como <m>10^x</m> para algún número real <m>x</m> y en <m>b</m> como <m>10^y</m> para algún número real <m>y</m>. Es decir, di que <m>a = 10^x</m> y <m>b = 10^y</m>. ¿Qué nos dice nuestro trabajo en (c) sobre <m>\log_{10}(ab)</m>?
  				</li>
 			</ol>
 		</p>

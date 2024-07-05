@@ -17,40 +17,40 @@
 
   <statement>
     <p>
-      Let <m>E(t) = e^t</m> and <m>N(y) = \ln(y)</m> be the natural exponential function and the natural logarithm function, respectively.
+      Sea <m>E(t) = e^t</m> y <m>N(y) = \ln(y)</m> la función exponencial natural y la función logarítmica natural, respectivamente.
     </p>
 
     <p>
       <ol marker="a.">
 	<li>
 	  <p>
-	    What are the domain and range of <m>E</m>?
+	    ¿Cuáles son el dominio y el rango de <m>E</m>?
 	  </p>
 	</li>
 	<li>
 	  <p>
-	    What are the domain and range of <m>N</m>?
+	    ¿Cuáles son el dominio y el rango de <m>N</m>?
 	  </p>
 	</li>
 	<li>
 	  <p>
-	    What can you say about <m>\ln(e^t)</m> for every real number <m>t</m>?
+	    ¿Qué puedes decir sobre <m>\ln(e^t)</m> para cada número real <m>t</m>?
 	  </p>
 	</li>
 	<li>
 	  <p>
-	    What can you say about <m>e^{\ln(y)}</m> for every positive real number <m>y</m>?
+	    ¿Qué puedes decir sobre <m>e^{\ln(y)}</m> para cada número real positivo <m>y</m>?
 	  </p>
 	</li>
 	<li>
-	  <p>
-	    Complete <xref ref="T-act-natural-e">Table</xref> and <xref ref="T-act-natural-log">Table</xref> with both exact and approximate values of <m>E</m> and <m>N</m>.  Then, plot the corresponding ordered pairs from each table on the axes provided in <xref ref="F-axes-e-ln">Figure</xref> and connect the points in an intuitive way.  When you plot the ordered pairs on the axes, in both cases view the first line of the table as generating values on the horizontal axis and the second line of the table as producing values on the vertical axis<fn>Note that when we take this perspective for plotting the data in <xref ref="T-act-natural-log">Table</xref>, we are viewing <m>N</m> as a function of <m>t</m>, writing <m>N(t) = \ln(t)</m> in order to plot the function on the <m>t</m>-<m>y</m> axes</fn>; label each ordered pair you plot appropriately.
-	  </p>
-
+		<p>
+			Completa la <xref ref="T-act-natural-e">Tabla</xref> y <xref ref="T-act-natural-log">Tabla</xref> con valores exactos y aproximados de <m>E</m> y <m>N</m>. Luego, grafica los pares ordenados correspondientes de cada tabla en los ejes proporcionados en <xref ref="F-axes-e-ln">Figura</xref> y conecta los puntos de una manera intuitiva. Cuando grafiques los pares ordenados en los ejes, en ambos casos ve la primera línea de la tabla como generando valores en el eje horizontal y la segunda línea de la tabla como produciendo valores en el eje vertical<fn>Nota que cuando tomamos esta perspectiva para graficar los datos en <xref ref="T-act-natural-log">Tabla</xref>, estamos viendo <m>N</m> como una función de <m>t</m>, escribiendo <m>N(t) = \ln(t)</m> para graficar la función en los ejes <m>t</m>-<m>y</m></fn>; etiqueta cada par ordenado que grafiques apropiadamente.
+		  </p>
+	
 <!-- 	  <sidebyside widths="57% 43%"> -->
 	    <p>
 	      <table xml:id="T-act-natural-e">
-		<title>Values of <m>y = E(t)</m>.</title>
+		<title>Valores de <m>y = E(t)</m>.</title>
 		<tabular>
 		  <row bottom="minor" halign="center">
 		    <cell><m>t</m></cell>
@@ -72,7 +72,7 @@
 	      </table>
 
 	      <table xml:id="T-act-natural-log">
-		<title>Values of <m>t = N(y)</m>.</title>
+		<title>Valores de <m>t = N(y)</m>.</title>
 		<tabular>
 		  <row bottom="minor" halign="center">
 		    <cell><m>y</m></cell>
@@ -95,7 +95,7 @@
 	    </p>
 
 	    <figure xml:id="F-axes-e-ln">
-	      <caption>Axes for plotting data from <xref ref="T-act-natural-e">Table</xref> and <xref ref="T-act-natural-log">Table</xref> along with the graphs of the natural exponential and natural logarithm functions.</caption>
+	      <caption>Ejes para graficar datos de <xref ref="T-act-natural-e">Tabla</xref> y <xref ref="T-act-natural-log">Tabla</xref> junto con las gráficas de las funciones exponencial natural y logarítmica natural.</caption>
 	      <image source="images/exp-log-blank-axes" />
 	    </figure>
 
@@ -116,4 +116,3 @@
   </solution>
 
 </activity>
-

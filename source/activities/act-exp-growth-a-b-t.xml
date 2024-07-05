@@ -17,42 +17,42 @@
 
 	<statement>
 		<p>
-			In <em>Desmos</em>, define the function <m>g(t) = ab^t</m> and create sliders for both <m>a</m> and <m>b</m> when prompted.  Click on the sliders to set the minimum value for each to <m>0.1</m> and the maximum value to <m>10</m>.  Note that for <m>g</m> to be an exponential function, we require <m>b \ne 1</m>, even though the slider for <m>b</m> will allow this value.
+			En <em>Desmos</em>, define la función <m>g(t) = ab^t</m> y crea deslizadores para <m>a</m> y <m>b</m> cuando se te pida. Haz clic en los deslizadores para establecer el valor mínimo de cada uno en <m>0.1</m> y el valor máximo en <m>10</m>. Nota que para que <m>g</m> sea una función exponencial, requerimos que <m>b \ne 1</m>, aunque el deslizador para <m>b</m> permitirá este valor.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the domain of <m>g(t) = ab^t</m>?
+						¿Cuál es el dominio de <m>g(t) = ab^t</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the range of <m>g(t) = ab^t</m>?
+						¿Cuál es el rango de <m>g(t) = ab^t</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the <m>y</m>-intercept of <m>g(t) = ab^t</m>?
+						¿Cuál es la intersección con el eje <m>y</m> de <m>g(t) = ab^t</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						How does changing the value of <m>b</m> affect the shape and behavior of the graph of <m>g(t) = ab^t</m>?  Write several sentences to explain.
+						¿Cómo afecta el cambio en el valor de <m>b</m> la forma y el comportamiento del gráfico de <m>g(t) = ab^t</m>? Escribe varias oraciones para explicar.
 					</p>
 				</li>
 				<li>
 					<p>
-						For what values of the growth factor <m>b</m> is the corresponding growth rate positive?  For which <m>b</m>-values is the growth rate negative?
+						¿Para qué valores del factor de crecimiento <m>b</m> la tasa de crecimiento correspondiente es positiva? ¿Para qué valores de <m>b</m> la tasa de crecimiento es negativa?
 					</p>
 				</li>
 				<li>
 						<p>
-							Consider the graphs of the exponential functions <m>p</m> and <m>q</m> provided in <xref ref="F-growth-act-a-b-t">Figure</xref>.  If <m>p(t) = ab^t</m> and <m>q(t) = cd^t</m>, what can you say about the values <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> (beyond the fact that all are positive and <m>b \ne 1</m> and <m>d \ne 1</m>)?  For instance, can you say a certain value is larger than another?  Or that one of the values is less than <m>1</m>?
+							Considera los gráficos de las funciones exponenciales <m>p</m> y <m>q</m> proporcionados en <xref ref="F-growth-act-a-b-t">Figure</xref>. Si <m>p(t) = ab^t</m> y <m>q(t) = cd^t</m>, ¿qué puedes decir sobre los valores <m>a</m>, <m>b</m>, <m>c</m> y <m>d</m> (más allá del hecho de que todos son positivos y <m>b \ne 1</m> y <m>d \ne 1</m>)? Por ejemplo, ¿puedes decir que un cierto valor es mayor que otro? ¿O que uno de los valores es menor que <m>1</m>?
 						</p>
 						<figure xml:id="F-growth-act-a-b-t">
-							<caption>Graphs of exponential functions <m>p</m> and <m>q</m>.</caption>
+							<caption>Gráficos de las funciones exponenciales <m>p</m> y <m>q</m>.</caption>
 							<image width="50%" source="images/growth-act-a-b-t"/>
 						</figure>
 				</li>
@@ -71,4 +71,3 @@
 	</solution>
 
 </activity>
-

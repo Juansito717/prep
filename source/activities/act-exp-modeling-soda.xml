@@ -17,9 +17,7 @@
 
 	<statement>
 		<p>
-			A can of soda (at room temperature) is placed in a refrigerator at time <m>t = 0</m> (in minutes)
-      		and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
-			Based on the data, a model is formulated for the object's temperature, given by
+			Una lata de refresco (a temperatura ambiente) se coloca en un refrigerador en el tiempo <m>t = 0</m> (en minutos) y su temperatura, <m>F(t)</m>, en grados Fahrenheit, se calcula a intervalos regulares. Basado en los datos, se formula un modelo para la temperatura del objeto, dado por
 		      <me>
 		        F(t) = 42 + 30(0.95)^{t}
 		      </me>.
@@ -29,43 +27,31 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Consider the simpler (parent) function <m>p(t) = (0.95)^t</m>.
-            			How do you expect the graph of this function to appear?
-            			How will it behave as time increases?
-            			Without using graphing technology,
-            			sketch a rough graph of <m>p</m> and write a sentence of explanation.
+						Considera la función más simple (padre) <m>p(t) = (0.95)^t</m>. ¿Cómo esperas que aparezca el gráfico de esta función? ¿Cómo se comportará a medida que el tiempo aumente? Sin usar tecnología de gráficos, dibuja un gráfico aproximado de <m>p</m> y escribe una frase de explicación.
 					</p>
 				</li>
 				<li>
 					<p>
-						For the slightly more complicated function <m>r(t) = 30 (0.95)^{t}</m>, how do you expect this function to look in comparison to <m>p</m>?  What is the long-range behavior of this function as <m>t</m> increases?
-            			Without using graphing technology, sketch a rough graph of <m>r</m> and write a sentence of explanation.
+						Para la función ligeramente más complicada <m>r(t) = 30 (0.95)^{t}</m>, ¿cómo esperas que se vea esta función en comparación con <m>p</m>? ¿Cuál es el comportamiento a largo plazo de esta función a medida que <m>t</m> aumenta? Sin usar tecnología de gráficos, dibuja un gráfico aproximado de <m>r</m> y escribe una frase de explicación.
 					</p>
 				</li>
 				<li>
 					<p>
-								Finally, how do you expect the graph of <m>F(t) = 42 + 30(0.95)^{t}</m> to appear?
-            					Why?  First sketch a rough graph without graphing technology, and then use technology to check your thinking
-            					and report an accurate, labeled graph on the axes provided in <xref ref="F-modeling-act-blank-axes-soda">Figure</xref>.
+								Finalmente, ¿cómo esperas que aparezca el gráfico de <m>F(t) = 42 + 30(0.95)^{t}</m>? ¿Por qué? Primero dibuja un gráfico aproximado sin tecnología de gráficos, y luego usa tecnología para verificar tu pensamiento y reporta un gráfico preciso y etiquetado en los ejes proporcionados en <xref ref="F-modeling-act-blank-axes-soda">Figure</xref>.
 							</p>
 							<figure xml:id="F-modeling-act-blank-axes-soda">
-								<caption>Axes for plotting <m>F</m>.</caption>
+								<caption>Ejes para trazar <m>F</m>.</caption>
 								<image width="50%" source="images/modeling-F-t-blank-axes" />
 							</figure>
 				</li>
 				<li>
 					<p>
-						What is the temperature of the refrigerator?
-            			What is the room temperature of the surroundings outside the refrigerator?
-            			Why?
+						¿Cuál es la temperatura del refrigerador? ¿Cuál es la temperatura ambiente de los alrededores fuera del refrigerador? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine the average rate of change of <m>F</m> on the intervals <m>[10,20]</m>,
-            			<m>[20,30]</m>, and <m>[30,40]</m>.
-			            Write at least two careful sentences that explain the meaning of the values you found, including units,
-            			and discuss any overall trend in how the average rate of change is changing.
+						Determina la tasa de cambio promedio de <m>F</m> en los intervalos <m>[10,20]</m>, <m>[20,30]</m>, y <m>[30,40]</m>. Escribe al menos dos frases cuidadosas que expliquen el significado de los valores que encontraste, incluyendo unidades, y discute cualquier tendencia general en cómo está cambiando la tasa de cambio promedio.
 					</p>
 				</li>
 			</ol>
@@ -83,4 +69,3 @@
 	</solution>
 
 </activity>
-

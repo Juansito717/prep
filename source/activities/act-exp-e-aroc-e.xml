@@ -17,19 +17,19 @@
 
 	<statement>
 		<p>
-			Recall from <xref ref="sec-changing-aroc">Section</xref> that the average rate of change of a function <m>f</m> on an interval <m>[a,b]</m> is 
+			Recuerda de <xref ref="sec-changing-aroc">Sección</xref> que la tasa de cambio promedio de una función <m>f</m> en un intervalo <m>[a,b]</m> es 
 			<me>
 				AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
 			</me>.
-			In <xref ref="sec-changing-composite">Section</xref>, we also saw that if we instead think of the average rate of change of <m>f</m> on the interval <m>[a,a+h]</m>, the expression changes to
+			En <xref ref="sec-changing-composite">Sección</xref>, también vimos que si en lugar de eso pensamos en la tasa de cambio promedio de <m>f</m> en el intervalo <m>[a,a+h]</m>, la expresión cambia a
 			<me>
 				AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}
 			</me>.
-			In this activity we explore the average rate of change of <m>f(t) = e^t</m> near the points where <m>t = 1</m> and <m>t = 2</m>.
+			En esta actividad exploramos la tasa de cambio promedio de <m>f(t) = e^t</m> cerca de los puntos donde <m>t = 1</m> y <m>t = 2</m>.
 		</p>
 
 		<p>
-			In a new <em>Desmos</em> worksheet, let <m>f(t) = e^t</m> and define the function <m>A</m> by the rule 
+			En una nueva hoja de trabajo de <em>Desmos</em>, deja que <m>f(t) = e^t</m> y define la función <m>A</m> por la regla 
 			<me>
 				A(h) = \frac{f(1+h)-f(1)}{h}
 			</me>.
@@ -39,31 +39,31 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the meaning of <m>A(0.5)</m> in terms of the function <m>f</m> and its graph?		
+						¿Qué significa <m>A(0.5)</m> en términos de la función <m>f</m> y su gráfico?		
 					</p>
 				</li>
 				<li>
 					<p>
-						Compute the value of <m>A(h)</m> for at least <m>6</m> different small values of <m>h</m>, both positive and negative.  For instance, one value to try might be <m>h = 0.0001</m>.  Record a table of your results.
+						Calcula el valor de <m>A(h)</m> para al menos <m>6</m> valores pequeños diferentes de <m>h</m>, tanto positivos como negativos. Por ejemplo, un valor a probar podría ser <m>h = 0.0001</m>. Registra una tabla de tus resultados.
 					</p>
 				</li>
 				<li>
 					<p>
-						What do you notice about the values you found in (b)?  How do they compare to an important number?
+						¿Qué notas sobre los valores que encontraste en (b)? ¿Cómo se comparan con un número importante?
 					</p>
 				</li>
 				<li>
 					<p>
-						Explain why the following sentence makes sense: <q>The function <m>e^t</m> is increasing at an average rate that is about the same as its value on small intervals near <m>t = 1</m>.</q>
+						Explica por qué la siguiente oración tiene sentido: <q>La función <m>e^t</m> está aumentando a una tasa promedio que es aproximadamente la misma que su valor en intervalos pequeños cerca de <m>t = 1</m>.</q>
 					</p>
 				</li>
 				<li>
 					<p>
-						Adjust your definition of <m>A</m> in <em>Desmos</em> by changing <m>1</m> to <m>2</m> so that 
+						Ajusta tu definición de <m>A</m> en <em>Desmos</em> cambiando <m>1</m> a <m>2</m> de modo que 
 						<me>
 							A(h) = \frac{f(2+h)-f(2)}{h}
 						</me>.
-						How does the value of <m>A(h)</m> compare to <m>f(2)</m> for small values of <m>h</m>?
+						¿Cómo se compara el valor de <m>A(h)</m> con <m>f(2)</m> para valores pequeños de <m>h</m>?
 					</p>
 				</li>
 			</ol>
@@ -81,4 +81,3 @@
 	</solution>
 
 </activity>
-

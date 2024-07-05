@@ -17,18 +17,18 @@
 
 	<statement>
 		<p>
-			Let <m>P(t)</m> be the <q>powers of 10</q> function, which is given by <m>P(t) = 10^t</m>.
+			Sea <m>P(t)</m> la función de <q>potencias de 10</q>, que se da por <m>P(t) = 10^t</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Complete <xref ref="T-PA-exp-log-10s">Table</xref> to generate certain values of <m>P</m>.
+						Completa la <xref ref="T-PA-exp-log-10s">Tabla</xref> para generar ciertos valores de <m>P</m>.
 					</p>
 
 					<table xml:id="T-PA-exp-log-10s">
-					  <title>Select values of the powers of <m>10</m> function.</title>
+					  <title>Valores elegidos de la función de potencias de <m>10</m>.</title>
 					  <tabular>
 					    <row bottom="minor">
 					      <cell><m>t</m></cell>
@@ -55,18 +55,18 @@
 				</li>
 				<li>
 					<p>
-						Why does <m>P</m> have an inverse function?
+						¿Por qué <m>P</m> tiene una función inversa?
 					</p>
 				</li>
 				<li>
 					<p>
-						Since <m>P</m> has an inverse function, we know there exists some other function, say <m>L</m>,
-    					such that writing <q><m>y = P(t)</m></q>
-    					says the exact same thing as writing <q><m>t = L(y)</m></q>.  In words, where <m>P</m> produces the result of raising <m>10</m> to a given power, the function <m>L</m> reverses this process and instead tells us the power to which we need to raise <m>10</m>, given a desired result.  Complete <xref ref="T-PA-exp-log-L">Table</xref> to generate a collection of values of <m>L</m>.
+						Ya que <m>P</m> tiene una función inversa, sabemos que existe alguna otra función, digamos <m>L</m>,
+    					tal que escribir <q><m>y = P(t)</m></q>
+    					dice exactamente lo mismo que escribir <q><m>t = L(y)</m></q>. En palabras, donde <m>P</m> produce el resultado de elevar <m>10</m> a una potencia dada, la función <m>L</m> revierte este proceso y en su lugar nos dice la potencia a la que necesitamos elevar <m>10</m>, dado un resultado deseado. Completa la <xref ref="T-PA-exp-log-L">Tabla</xref> para generar una colección de valores de <m>L</m>.
 					</p>
 
 					<table xml:id="T-PA-exp-log-L">
-					  <title>Select values of the function <m>L</m> that is the inverse of <m>P</m>.</title>
+					  <title>Valores elegidos de la función <m>L</m> que es la inversa de <m>P</m>.</title>
 					  <tabular>
 					    <row>
 					      <cell><m>y</m></cell>
@@ -103,7 +103,7 @@
 				</li>
 				<li>
 					<p>
-						What are the domain and range of the function <m>P</m>?  What are the domain and range of the function <m>L</m>?
+						¿Cuáles son el dominio y el rango de la función <m>P</m>? ¿Cuáles son el dominio y el rango de la función <m>L</m>?
 					</p>
 				</li>
 			</ol>
