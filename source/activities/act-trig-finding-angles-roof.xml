@@ -17,13 +17,13 @@
 
 	<statement>
 		<p>
-			A roof is being built with a <q>7-12 pitch.</q>
-		      This means that the roof rises <m>7</m> inches vertically for every <m>12</m> inches of horizontal span;
-		      in other words, the slope of the roof is <m>\frac{7}{12}</m>.
-		      What is the exact measure (in degrees)
-		      of the angle the roof makes with the horizontal?
-		      What is the approximate measure?
-		      What are the exact and approximate measures of the angle at the peak of the roof (made by the front and back portions of the roof that meet to form the ridge)?
+			Se está construyendo un techo con una <q>inclinación de 7-12.</q>
+		      Esto significa que el techo sube <m>7</m> pulgadas verticalmente por cada <m>12</m> pulgadas de extensión horizontal;
+		      en otras palabras, la pendiente del techo es <m>\frac{7}{12}</m>.
+		      ¿Cuál es la medida exacta (en grados)
+		      del ángulo que el techo forma con la horizontal?
+		      ¿Cuál es la medida aproximada?
+		      ¿Cuáles son las medidas exactas y aproximadas del ángulo en el pico del techo (formado por las partes delantera y trasera del techo que se encuentran para formar la cresta)?
 		</p>
 
 	</statement>
@@ -39,4 +39,3 @@
 	</solution>
 
 </activity>
-

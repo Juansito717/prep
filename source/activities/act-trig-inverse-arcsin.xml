@@ -17,34 +17,34 @@
 
 	<statement>
 		<p>
-			The goal of this activity is to understand key properties of the arcsine function in a way similar to our discussion of the arccosine function in <xref ref="subsec-trig-inverse-arccos">Subsection</xref>.
+			El objetivo de esta actividad es entender las propiedades clave de la función arcseno de manera similar a nuestra discusión de la función arccoseno en <xref ref="subsec-trig-inverse-arccos">Subsection</xref>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Using <xref ref="def-inverse-trig-arcsine">Definition</xref>, what are the domain and range of the arcsine function?
+						Usando <xref ref="def-inverse-trig-arcsine">Definition</xref>, ¿cuáles son el dominio y el rango de la función arcseno?
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine the following values exactly: <m>\arcsin(-1)</m>, <m>\arcsin(-\frac{\sqrt{2}}{2})</m>, <m>\arcsin(0)</m>, <m>\arcsin(\frac{1}{2})</m>, and <m>\arcsin(\frac{\sqrt{3}}{2})</m>.
+						Determina los siguientes valores exactamente: <m>\arcsin(-1)</m>, <m>\arcsin(-\frac{\sqrt{2}}{2})</m>, <m>\arcsin(0)</m>, <m>\arcsin(\frac{1}{2})</m>, y <m>\arcsin(\frac{\sqrt{3}}{2})</m>.
 					</p>
 				</li>
 				<li>
 						<p>
-							On the axes provided in <xref ref="F-inverse-trig-act-arcsine-axes">Figure</xref>, sketch a careful plot of the restricted sine function on the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m> along with its corresponding inverse, the arcsine function.  Label at least three points on each curve so that each point on the sine graph corresponds to a point on the arcsine graph.  In addition, sketch the line <m>y = t</m> to demonstrate how the graphs are reflections of one another across this line.
+							En los ejes proporcionados en <xref ref="F-inverse-trig-act-arcsine-axes">Figure</xref>, dibuja un gráfico cuidadoso de la función seno restringida en el intervalo <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m> junto con su inversa correspondiente, la función arcseno. Etiqueta al menos tres puntos en cada curva de modo que cada punto en el gráfico del seno corresponda a un punto en el gráfico del arcseno. Además, dibuja la línea <m>y = t</m> para demostrar cómo los gráficos son reflejos uno del otro a través de esta línea.
 						</p>
 
 						<figure xml:id="F-inverse-trig-act-arcsine-axes">
-							<caption>Axes for plotting the restricted sine function and its inverse, the arcsine function.</caption>
+							<caption>Ejes para trazar la función seno restringida y su inversa, la función arcseno.</caption>
 							<image width="50%" source="images/inverse-trig-blank-axes-arcsin" />	
 						</figure>
 				</li>
 				<li>
 					<p>
-						True or false:  <m>\arcsin(\sin(5\pi)) = 5\pi</m>.  Write a complete sentence to explain your reasoning.
+						Verdadero o falso:  <m>\arcsin(\sin(5\pi)) = 5\pi</m>. Escribe una oración completa para explicar tu razonamiento.
 					</p>
 				</li>
 			</ol>
@@ -62,4 +62,3 @@
 	</solution>
 
 </activity>
-

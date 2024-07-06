@@ -17,39 +17,39 @@
 
 	<statement>
 		<p>
-			In each of the following scenarios involving a right triangle, determine the exact values of as many of the remaining side lengths and angle measures (in radians) that you can.  If there are quantities that you cannot determine, explain why.  For every prompt, draw a labeled diagram of the situation.
+			En cada uno de los siguientes escenarios que involucran un triángulo rectángulo, determina los valores exactos de tantas longitudes de lados y medidas de ángulos (en radianes) como puedas. Si hay cantidades que no puedes determinar, explica por qué. Para cada enunciado, dibuja un diagrama etiquetado de la situación.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						A right triangle with hypotenuse <m>7</m> and one non-right angle of measure <m>\frac{\pi}{7}</m>.
+						Un triángulo rectángulo con hipotenusa <m>7</m> y un ángulo no recto de medida <m>\frac{\pi}{7}</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						A right triangle with non-right angle <m>\alpha</m> that satisfies <m>\sin(\alpha) = \frac{3}{5}</m>.
+						Un triángulo rectángulo con un ángulo no recto <m>\alpha</m> que satisface <m>\sin(\alpha) = \frac{3}{5}</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						A right triangle where one of the non-right angles has measure <m>1.2</m> and the hypotenuse has length <m>2.7</m>.
+						Un triángulo rectángulo donde uno de los ángulos no rectos tiene medida <m>1.2</m> y la hipotenusa tiene longitud <m>2.7</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						A right triangle with hypotenuse <m>13</m> and one leg of length <m>6.5</m>.
+						Un triángulo rectángulo con hipotenusa <m>13</m> y un cateto de longitud <m>6.5</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						A right triangle with legs of length <m>5</m> and <m>12</m>.
+						Un triángulo rectángulo con catetos de longitud <m>5</m> y <m>12</m>.
 					</p>
 				</li>				
 				<li>
 					<p>
-						A right triangle where one of the non-right angles has measure <m>\frac{\pi}{5}</m> and the leg opposite this angle has length <m>4</m>.
+						Un triángulo rectángulo donde uno de los ángulos no rectos tiene medida <m>\frac{\pi}{5}</m> y el cateto opuesto a este ángulo tiene longitud <m>4</m>.
 					</p>
 				</li>
 			</ol>
@@ -67,4 +67,3 @@
 	</solution>
 
 </activity>
-

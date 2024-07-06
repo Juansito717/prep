@@ -17,39 +17,39 @@
 
 	<statement>
 		<p>
-			For each of the following situations, sketch a right triangle that satisfies the given conditions, and then either determine the requested missing information in the triangle or explain why you don't have enough information to determine it.  Assume that all angles are being considered in radian measure.
+			Para cada una de las siguientes situaciones, dibuja un triángulo rectángulo que satisfaga las condiciones dadas, y luego determina la información faltante solicitada en el triángulo o explica por qué no tienes suficiente información para determinarla. Supón que todos los ángulos se consideran en medida de radianes.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						The length of the other leg of a right triangle with hypotenuse of length <m>1</m> and one leg of length <m>\frac{3}{5}</m>.
+						La longitud del otro cateto de un triángulo rectángulo con hipotenusa de longitud <m>1</m> y un cateto de longitud <m>\frac{3}{5}</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The lengths of the two legs in a right triangle with hypotenuse of length <m>1</m> where one of the non-right angles measures <m>\frac{\pi}{3}</m>.
+						Las longitudes de los dos catetos en un triángulo rectángulo con hipotenusa de longitud <m>1</m> donde uno de los ángulos no rectos mide <m>\frac{\pi}{3}</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The length of the other leg of a right triangle with hypotenuse of length <m>7</m> and one leg of length <m>6</m>.
+						La longitud del otro cateto de un triángulo rectángulo con hipotenusa de longitud <m>7</m> y un cateto de longitud <m>6</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The lengths of the two legs in a right triangle with hypotenuse <m>5</m> and where one of the non-right angles measures <m>\frac{\pi}{4}</m>.
+						Las longitudes de los dos catetos en un triángulo rectángulo con hipotenusa <m>5</m> y donde uno de los ángulos no rectos mide <m>\frac{\pi}{4}</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The length of the other leg of a right triangle with hypotenuse of length <m>1</m> and one leg of length <m>\cos(0.7)</m>.
+						La longitud del otro cateto de un triángulo rectángulo con hipotenusa de longitud <m>1</m> y un cateto de longitud <m>\cos(0.7)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						The measures of the two angles in a right triangle with hypotenuse of length <m>1</m> where the two legs have lengths <m>\cos(1.1)</m> and <m>\sin(1.1)</m>, respectively.
+						Las medidas de los dos ángulos en un triángulo rectángulo con hipotenusa de longitud <m>1</m> donde los dos catetos tienen longitudes <m>\cos(1.1)</m> y <m>\sin(1.1)</m>, respectivamente.
 					</p>
 				</li>
 			</ol>

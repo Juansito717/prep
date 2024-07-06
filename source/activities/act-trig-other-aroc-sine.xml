@@ -17,11 +17,11 @@
 
 	<statement>
 		<p>
-			In this activity, we investigate how a sum of two angles identity for the sine function helps us gain a different perspective on the average rate of change of the sine function.
+			En esta actividad, investigamos cómo una identidad de suma de dos ángulos para la función seno nos ayuda a obtener una perspectiva diferente sobre la tasa de cambio promedio de la función seno.
 		</p>
 
 		<p>
-			Recall that for any function <m>f</m> on an interval <m>[a,a+h]</m>, its average rate of change is
+			Recuerda que para cualquier función <m>f</m> en un intervalo <m>[a,a+h]</m>, su tasa de cambio promedio es
 			<me>
 				AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}
 			</me>.
@@ -31,17 +31,17 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Let <m>f(x) = \sin(x)</m>.  Use the definition of <m>AV_{[a,a+h]}</m> to write an expression for the average rate of change of the sine function on the interval <m>[a,a+h]</m>.
+						Sea <m>f(x) = \sin(x)</m>. Usa la definición de <m>AV_{[a,a+h]}</m> para escribir una expresión para la tasa de cambio promedio de la función seno en el intervalo <m>[a,a+h]</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Apply the sum of two angles identity for the sine function, <m>\sin(\alpha + \beta) = \sin(\alpha) \cos(\beta) + \cos(\alpha) \sin(\beta)</m>, to the expression <m>\sin(a+h)</m>.
+						Aplica la identidad de suma de dos ángulos para la función seno, <m>\sin(\alpha + \beta) = \sin(\alpha) \cos(\beta) + \cos(\alpha) \sin(\beta)</m>, a la expresión <m>\sin(a+h)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Explain why your work in (a) and (b) together with some algebra shows that 
+						Explica por qué tu trabajo en (a) y (b) junto con algo de álgebra muestra que 
 						<me>
 							AV_{[a,a+h]} = \sin(a) \cdot \frac{\cos(h)-1}{h} - \cos(a) \cdot \frac{\sin(h)}{h}
 						</me>.
@@ -49,11 +49,11 @@
 				</li>
 				<li>
 					<p>
-						In calculus, we move from <em>average</em> rate of change to <em>instantaneous</em> rate of change by letting <m>h</m> approach <m>0</m> in the expression for average rate of change.  Using a computational device in radian mode, investigate the behavior of 
+						En cálculo, pasamos de la tasa de cambio <em>promedio</em> a la tasa de cambio <em>instantánea</em> dejando que <m>h</m> se acerque a <m>0</m> en la expresión para la tasa de cambio promedio. Usando un dispositivo computacional en modo radianes, investiga el comportamiento de 
 						<me>
 							\frac{\cos(h)-1}{h}
 						</me>
-						as <m>h</m> gets close to <m>0</m>.  What happens?  Similarly, how does <m>\frac{\sin(h)}{h}</m> behave for small values of <m>h</m>?  What does this tell us about <m>AV_{[a,a+h]}</m> for the sine function as <m>h</m> approaches <m>0</m>?
+						a medida que <m>h</m> se acerca a <m>0</m>. ¿Qué sucede? De manera similar, ¿cómo se comporta <m>\frac{\sin(h)}{h}</m> para valores pequeños de <m>h</m>? ¿Qué nos dice esto sobre <m>AV_{[a,a+h]}</m> para la función seno a medida que <m>h</m> se acerca a <m>0</m>?
 					</p>
 				</li>
 			</ol>
@@ -71,4 +71,3 @@
 	</solution>
 
 </activity>
-

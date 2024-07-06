@@ -14,78 +14,78 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-trig-other">
-  <title>Other Trigonometric Functions and Identities</title>
-  <objectives>
+	<title>Otras Funciones e Identidades Trigonométricas</title>
+	<objectives>
   	<ul>
-  		<li>
-  			<p>
-  				What are the other <m>3</m> trigonometric functions and how are they related to the cosine, sine, and tangent functions?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How do the graphs of the secant, cosecant, and cotangent functions behave and how do these graphs compare to the cosine, sine, and tangent functions' graphs?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What is a trigonometric identity and why are identities important?
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				¿Cuáles son las otras <m>3</m> funciones trigonométricas y cómo se relacionan con las funciones de coseno, seno y tangente?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cómo se comportan las gráficas de las funciones secante, cosecante y cotangente y cómo se comparan estas gráficas con las gráficas de las funciones de coseno, seno y tangente?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Qué es una identidad trigonométrica y por qué son importantes las identidades?
+			</p>
+		</li>
+	</ul>
   </objectives>
 
   <introduction>
-  	<p>
-  		The sine and cosine functions, originally defined in the context of a point traversing the unit circle, are also central in right triangle trigonometry.  They enable us to find missing information in right triangles in a straightforward way when we know one of the non-right angles and one of the three sides of the triangle, or two of the sides where one is the hypotenuse.  In addition, we defined the tangent function in terms of the sine and cosine functions, and the tangent function offers additional options for finding missing information in right triangles.  We've also seen how the inverses of the restricted sine, cosine, and tangent functions enable us to find missing angles in a wide variety of settings involving right triangles.
-  	</p>
+	<p>
+		Las funciones seno y coseno, originalmente definidas en el contexto de un punto que recorre el círculo unitario, también son centrales en la trigonometría de triángulos rectángulos. Nos permiten encontrar información faltante en triángulos rectángulos de una manera sencilla cuando conocemos uno de los ángulos no rectos y uno de los tres lados del triángulo, o dos de los lados donde uno es la hipotenusa. Además, definimos la función tangente en términos de las funciones seno y coseno, y la función tangente ofrece opciones adicionales para encontrar información faltante en triángulos rectángulos. También hemos visto cómo las inversas de las funciones seno, coseno y tangente restringidas nos permiten encontrar ángulos faltantes en una amplia variedad de situaciones que involucran triángulos rectángulos.
+	</p>
 
-  	<p>
-  		One of the powerful aspects of trigonometry is that the subject offers us the opportunity to view the same idea from many different perspectives. As one example, we have observed that the functions <m>f(t) = \cos(t)</m> and <m>g(t) = \sin(t+\frac{\pi}{2})</m> are actually the same function; as another, for <m>t</m> values in the domain <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>, we know that writing <m>y = \tan(t)</m> is the same as writing <m>t = \arctan(y)</m>.  Which perspective we choose to take often depends on context and given information.
-  	</p>
+	<p>
+		Uno de los aspectos poderosos de la trigonometría es que la materia nos ofrece la oportunidad de ver la misma idea desde muchas perspectivas diferentes. Como un ejemplo, hemos observado que las funciones <m>f(t) = \cos(t)</m> y <m>g(t) = \sin(t+\frac{\pi}{2})</m> son en realidad la misma función; como otro, para valores de <m>t</m> en el dominio <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>, sabemos que escribir <m>y = \tan(t)</m> es lo mismo que escribir <m>t = \arctan(y)</m>. La perspectiva que elijamos tomar a menudo depende del contexto y la información dada.
+	</p>
 
-  	<p>
-  		While almost every question involving trigonometry can be answered using the sine, cosine, and tangent functions, sometimes it is convenient to use three related functions that are connected to the other three possible arrangements of ratios of sides in right triangles.
-  	</p>
+	<p>
+		Aunque casi todas las preguntas que involucran trigonometría pueden ser respondidas usando las funciones seno, coseno y tangente, a veces es conveniente usar tres funciones relacionadas que están conectadas a las otras tres posibles disposiciones de razones de lados en triángulos rectángulos.
+	</p>
 
   	<definition xml:id="def-trig-other-3">
   		<idx><h>secant function</h></idx> <idx><h>cosecant function</h></idx> <idx><h>cotangent function</h></idx>
-  		<title>The secant, cosecant, and cotangent functions</title>
+  		<title>Las funciones secante, cosecante y cotangente</title>
   		<statement>
-  			<p>
-  				<ul>
-  					<li>
-  						<p>
-  							For any real number <m>t</m> for which <m>\cos(t) \ne 0</m>, we define the secant of <m>t</m>, denoted <m>\sec(t)</m>, by the rule
-			  				<me>
-			  					\sec(t) = \frac{1}{\cos(t)}
-			  				</me>.  
-  						</p>
-  					</li>
-  					<li>
-  						<p>
-  							For any real number <m>t</m> for which <m>\sin(t) \ne 0</m>, we define the cosecant of <m>t</m>, denoted <m>\csc(t)</m>, by the rule
-			  				<me>
-			  					\csc(t) = \frac{1}{\sin(t)}
-			  				</me>. 
-  						</p>
-  					</li>
-  					<li>
-  						<p>
-  							For any real number <m>t</m> for which <m>\sin(t) \ne 0</m>, we define the cotangent of <m>t</m>, denoted <m>\cot(t)</m>, by the rule
-			  				<me>
-			  					\cot(t) = \frac{\cos(t)}{\sin(t)}
-			  				</me>.
-  						</p>
-  					</li>
-  				</ul>
-  			</p>
-  		</statement>
+			<p>
+				<ul>
+					<li>
+						<p>
+							Para cualquier número real <m>t</m> para el cual <m>\cos(t) \ne 0</m>, definimos la secante de <m>t</m>, denotada <m>\sec(t)</m>, por la regla
+							<me>
+								\sec(t) = \frac{1}{\cos(t)}
+							</me>.  
+						</p>
+					</li>
+					<li>
+						<p>
+							Para cualquier número real <m>t</m> para el cual <m>\sin(t) \ne 0</m>, definimos la cosecante de <m>t</m>, denotada <m>\csc(t)</m>, por la regla
+							<me>
+								\csc(t) = \frac{1}{\sin(t)}
+							</me>. 
+						</p>
+					</li>
+					<li>
+						<p>
+							Para cualquier número real <m>t</m> para el cual <m>\sin(t) \ne 0</m>, definimos la cotangente de <m>t</m>, denotada <m>\cot(t)</m>, por la regla
+							<me>
+								\cot(t) = \frac{\cos(t)}{\sin(t)}
+							</me>.
+						</p>
+					</li>
+				</ul>
+			</p>
+		</statement>
   	</definition>
 
   	<p>
-  		Note particularly that like the tangent function, the secant, cosecant, and cotangent are also defined completely in terms of the sine and cosine functions.  In the context of a right triangle with an angle <m>\theta</m>, we know how to think of <m>\sin(\theta)</m>,  <m>\cos(\theta)</m>, and <m>\tan(\theta)</m> as ratios of sides of the triangle.  We can now do likewise with the other trigonometric functions:
-  	</p>
+		Observa particularmente que, al igual que la función tangente, la secante, cosecante y cotangente también están definidas completamente en términos de las funciones seno y coseno. En el contexto de un triángulo rectángulo con un ángulo <m>\theta</m>, sabemos cómo pensar en <m>\sin(\theta)</m>,  <m>\cos(\theta)</m> y <m>\tan(\theta)</m> como razones de los lados del triángulo. Ahora podemos hacer lo mismo con las otras funciones trigonométricas:
+	</p>
 
   	<sidebyside widths="70% 25%" margins="0%">
   		<p>
@@ -102,54 +102,54 @@
                     </md>
   		</p>
   		<figure xml:id="F-other-trig-SOH-CAH-TOA">
-  			<caption>A right triangle with angle <m>\theta</m>.</caption>
-  			<image source="images/right-triangle-SOH-CAH-TOA" />
+			<caption>Un triángulo rectángulo con ángulo <m>\theta</m>.</caption>
+			<image source="images/right-triangle-SOH-CAH-TOA" />
   		</figure>
   	</sidebyside>
 
   	<p>
-  		With these three additional trigonometric functions, we now have expressions that address all six possible combinations of two sides of a right triangle in a ratio.
-  	</p>
+		Con estas tres funciones trigonométricas adicionales, ahora tenemos expresiones que abordan todas las seis combinaciones posibles de dos lados de un triángulo rectángulo en una razón.
+	</p>
 
 	<xi:include href="./previews/PA-trig-other.xml" />
 
   </introduction>
 
   <subsection xml:id="subsec-trig-other-triangles">
-  	<title>Ratios in right triangles</title>
-  	<p>
-  		Because the sine and cosine functions are used to define each of the other four trigonometric functions, it follows that we can translate information known about the other functions back to information about the sine and cosine functions.  For example, if we know that in a certain triangle <m>\csc(\alpha) = \frac{5}{3}</m>, it follows that <m>\sin(\alpha) = \frac{3}{5}</m>.  From there we can reason in the usual way to determine missing information in the given triangle.
-  	</p>
+	<title>Relaciones en triángulos rectángulos</title>
+	<p>
+		Porque las funciones seno y coseno se usan para definir cada una de las otras cuatro funciones trigonométricas, se sigue que podemos traducir la información conocida sobre las otras funciones de vuelta a información sobre las funciones seno y coseno. Por ejemplo, si sabemos que en cierto triángulo <m>\csc(\alpha) = \frac{5}{3}</m>, se sigue que <m>\sin(\alpha) = \frac{3}{5}</m>. Desde ahí podemos razonar de la manera habitual para determinar la información faltante en el triángulo dado.
+	</p>
 
-  	<p>
-  		It's also often possible to view given information in the context of the unit circle.  With the earlier given information that <m>\csc(\alpha) = \frac{5}{3}</m>, it's natural to view <m>\alpha</m> as being the angle in a right triangle that lies opposite a leg of length <m>3</m> with the hypotenuse being <m>5</m>, since <m>\csc(\alpha) = \frac{\text{hyp}}{\text{opp}}</m>.  The Pythagorean Theorem then tells us the leg adjacent to <m>\alpha</m> has length <m>4</m>, as seen in <m>\triangle OPQ</m> in <xref ref="F-other-3-4-5">Figure</xref>.
-  	</p>
+	<p>
+		También es a menudo posible ver la información dada en el contexto del círculo unitario. Con la información dada anteriormente de que <m>\csc(\alpha) = \frac{5}{3}</m>, es natural ver <m>\alpha</m> como el ángulo en un triángulo rectángulo que se encuentra opuesto a una pierna de longitud <m>3</m> con la hipotenusa siendo <m>5</m>, ya que <m>\csc(\alpha) = \frac{\text{hip}}{\text{opp}}</m>. El Teorema de Pitágoras entonces nos dice que la pierna adyacente a <m>\alpha</m> tiene una longitud de <m>4</m>, como se ve en <m>\triangle OPQ</m> en <xref ref="F-other-3-4-5">Figure</xref>.
+	</p>
 
   	<figure xml:id="F-other-3-4-5">
-  		<caption>A <m>3</m>-<m>4</m>-<m>5</m> right triangle.</caption>
-  		<image source="images/other-right-triangle-3-4-5" width="50%" />
+		<caption>Un triángulo rectángulo <m>3</m>-<m>4</m>-<m>5</m>.</caption>
+		<image source="images/other-right-triangle-3-4-5" width="50%" />
   	</figure>
 
   	<p>
-  		But we could also view <m>\sin(\alpha) = \frac{3}{5}</m> as <m>\sin(\alpha) = \frac{\frac{3}{5}}{1}</m>, and thus think of the right triangle has having hypotenuse <m>1</m> and vertical leg <m>\frac{3}{5}</m>.  This triangle is similar to the originally considered <m>3</m>-<m>4</m>-<m>5</m> right triangle, but can be viewed as lying within the unit circle.  The perspective of the unit circle is particularly valuable when ratios such as <m>\frac{\sqrt{3}}{2}</m>, <m>\frac{\sqrt{2}}{2}</m>, and <m>\frac{1}{2}</m> arise in right triangles.  	
-  	</p>
+		Pero también podríamos ver <m>\sin(\alpha) = \frac{3}{5}</m> como <m>\sin(\alpha) = \frac{\frac{3}{5}}{1}</m>, y así pensar que el triángulo rectángulo tiene una hipotenusa de <m>1</m> y una pierna vertical de <m>\frac{3}{5}</m>. Este triángulo es similar al triángulo rectángulo <m>3</m>-<m>4</m>-<m>5</m> considerado originalmente, pero puede verse como si estuviera dentro del círculo unitario. La perspectiva del círculo unitario es particularmente valiosa cuando surgen razones como <m>\frac{\sqrt{3}}{2}</m>, <m>\frac{\sqrt{2}}{2}</m> y <m>\frac{1}{2}</m> en triángulos rectángulos.
+	</p>
 
 	<xi:include href="./activities/act-trig-other-special.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-trig-other-properties">
-  	<title>Properties of the secant, cosecant, and cotangent functions</title>
-  	<p>
-  		Like the tangent function, the secant, cosecant, and cotangent functions are defined in terms of the sine and cosine functions, so we can determine the exact values of these functions at each of the special points on the unit circle.  In addition, we can use our understanding of the unit circle and the properties of the sine and cosine functions to determine key properties of these other trigonometric functions.  We begin by investigating the secant function.
-  	</p>
-
-  	<p>
-  		Using the fact that <m>\sec(t) = \frac{1}{\cos(t)}</m>, we note that anywhere <m>\cos(t) = 0</m>, the value of <m>\sec(t)</m> is undefined.  We denote such instances in the following table by <q>u</q>.  At all other points, the value of the secant function is simply the reciprocal of the cosine function's value.  Since <m>|\cos(t)| \le 1</m> for all <m>t</m>, it follows that <m>|\sec(t)| \ge 1</m> for all <m>t</m> (for which the secant's value is defined).
+	<title>Propiedades de las funciones secante, cosecante y cotangente</title>
+	<p>
+		Al igual que la función tangente, las funciones secante, cosecante y cotangente se definen en términos de las funciones seno y coseno, por lo que podemos determinar los valores exactos de estas funciones en cada uno de los puntos especiales en el círculo unitario. Además, podemos usar nuestra comprensión del círculo unitario y las propiedades de las funciones seno y coseno para determinar las propiedades clave de estas otras funciones trigonométricas. Comenzamos investigando la función secante.
 	</p>
 
+	<p>
+		Usando el hecho de que <m>\sec(t) = \frac{1}{\cos(t)}</m>, notamos que en cualquier lugar donde <m>\cos(t) = 0</m>, el valor de <m>\sec(t)</m> no está definido. Denotamos tales instancias en la siguiente tabla con <q>u</q>. En todos los demás puntos, el valor de la función secante es simplemente el recíproco del valor de la función coseno. Dado que <m>|\cos(t)| \le 1</m> para todo <m>t</m>, se sigue que <m>|\sec(t)| \ge 1</m> para todo <m>t</m> (para los cuales el valor de la secante está definido).
+  </p>
+
     				<table xml:id="T-secant-values">
-						<title>Values of the cosine and secant functions at special points on the unit circle (Quadrants I and II).</title>
+						<title>Valores de las funciones coseno y secante en puntos especiales del círculo unitario (Cuadrantes I y II).</title>
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>
@@ -191,7 +191,7 @@
 					</table>
 
 					<table xml:id="T-secant-values-2">
-						<title>Values of the cosine and secant functions at special points on the unit circle (Quadrants III and IV).</title>
+						<title>Valores de las funciones coseno y secante en puntos especiales del círculo unitario (Cuadrantes III y IV).</title>
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>		
@@ -230,44 +230,44 @@
 					</table>
 
 		<p>
-			<xref ref="T-secant-values">Table</xref> and <xref ref="T-secant-values-2">Table</xref> help us identify trends in the secant function.  The sign of <m>\sec(t)</m> matches the sign of <m>\cos(t)</m> and thus is positive in Quadrant I, negative in Quadrant II, negative in Quadrant III, and positive in Quadrant IV.    
+			<xref ref="T-secant-values">Tabla</xref> y <xref ref="T-secant-values-2">Tabla</xref> nos ayudan a identificar tendencias en la función secante. El signo de <m>\sec(t)</m> coincide con el signo de <m>\cos(t)</m> y, por lo tanto, es positivo en el Cuadrante I, negativo en el Cuadrante II, negativo en el Cuadrante III y positivo en el Cuadrante IV.    
 		</p>
 
 		<p>
-			In addition, we observe that as <m>t</m>-values in the first quadrant get closer to <m>\frac{\pi}{2}</m>, <m>\cos(t)</m> gets closer to <m>0</m> (while being always positive).  Since the numerator of the secant function is always <m>1</m>, having its denominator approach <m>0</m> (while the denominator remains positive) means that <m>\sec(t)</m> increases without bound as <m>t</m> approaches <m>\frac{\pi}{2}</m> from the left side.  Once <m>t</m> is slightly greater than <m>\frac{\pi}{2}</m> in Quadrant II, the value of <m>\cos(t)</m> is negative (and close to zero).  This makes the value of <m>\sec(t)</m> decrease without bound (negative and getting further away from <m>0</m>) for <m>t</m> approaching <m>\frac{\pi}{2}</m> from the right side.  We therefore see that <m>p(t) = \sec(t)</m> has a vertical asymptote at <m>t = \frac{\pi}{2}</m>; the periodicity and sign behavior of <m>\cos(t)</m> mean this asymptotic behavior of the secant function will repeat.
+			Además, observamos que a medida que los valores de <m>t</m> en el primer cuadrante se acercan a <m>\frac{\pi}{2}</m>, <m>\cos(t)</m> se acerca a <m>0</m> (mientras siempre es positivo). Dado que el numerador de la función secante siempre es <m>1</m>, tener su denominador acercándose a <m>0</m> (mientras el denominador permanece positivo) significa que <m>\sec(t)</m> aumenta sin límite a medida que <m>t</m> se acerca a <m>\frac{\pi}{2}</m> desde el lado izquierdo. Una vez que <m>t</m> es ligeramente mayor que <m>\frac{\pi}{2}</m> en el Cuadrante II, el valor de <m>\cos(t)</m> es negativo (y cercano a cero). Esto hace que el valor de <m>\sec(t)</m> disminuya sin límite (negativo y alejándose más de <m>0</m>) para <m>t</m> acercándose a <m>\frac{\pi}{2}</m> desde el lado derecho. Por lo tanto, vemos que <m>p(t) = \sec(t)</m> tiene una asíntota vertical en <m>t = \frac{\pi}{2}</m>; la periodicidad y el comportamiento del signo de <m>\cos(t)</m> significan que este comportamiento asintótico de la función secante se repetirá.
 		</p>
 
 		<p>	
-			Plotting the data in the table along with the expected asymptotes and connecting the points intuitively, we see the graph of the secant function in <xref ref="F-secant-plot">Figure</xref>.
+			Graficando los datos en la tabla junto con las asíntotas esperadas y conectando los puntos intuitivamente, vemos el gráfico de la función secante en <xref ref="F-secant-plot">Figura</xref>.
 		</p>
 
 		<figure xml:id="F-secant-plot">
-			<caption>A plot of the secant function with special points that come from the unit circle, plus the cosine function (dotted, in light blue).</caption>
+			<caption>Un gráfico de la función secante con puntos especiales que provienen del círculo unitario, además de la función coseno (punteada, en azul claro).</caption>
 			<image source="images/other-sec-definition-graph" width="80%" />
 		</figure>
 
 		<p>
-			We see from both the table and the graph that the secant function has period <m>P = 2\pi</m>.  We summarize our recent work as follows.
+			Vemos tanto en la tabla como en el gráfico que la función secante tiene un período <m>P = 2\pi</m>. Resumimos nuestro trabajo reciente de la siguiente manera.
 		</p>
 
 		<assemblage xml:id="asm-secant-properties">
-			<title>Properties of the secant function</title>
+			<title>Propiedades de la función secante</title>
 			<p>
-				For the function <m>p(t) = \sec(t)</m>, 
+				Para la función <m>p(t) = \sec(t)</m>, 
 				<ul>
 					<li>
 						<p>
-							its domain is the set of all real numbers except <m>t = \frac{\pi}{2} \pm k\pi</m> where <m>k</m> is any whole number;
+							su dominio es el conjunto de todos los números reales excepto <m>t = \frac{\pi}{2} \pm k\pi</m> donde <m>k</m> es cualquier número entero;
 						</p>
 					</li>
 					<li>
 						<p>
-							its range is the set of all real numbers <m>y</m> such that <m>|y| \ge 1</m>;
+							su rango es el conjunto de todos los números reales <m>y</m> tales que <m>|y| \ge 1</m>;
 						</p>
 					</li>
 					<li>
 						<p>
-							its period is <m>P = 2\pi</m>.
+							su período es <m>P = 2\pi</m>.
 						</p>
 					</li>
 				</ul>
@@ -281,26 +281,26 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-other-identities">
-  	<title>A few important identities</title>
-  	<p>
-  		An <em>identity</em> is an equation that is true for all possible values of <m>x</m> for which the involved quantities are defined.  An example of a non-trigonometric identity is
-	    <me>
-	      (x+1)^2 = x^2 + 2x + 1
-	    </me>,
-    	since this equation is true for every value of <m>x</m>,
-    	and the left and right sides of the equation are simply two different-looking but entirely equivalent expressions.
-  	</p>
+	<title>Algunas identidades importantes</title>
+	<p>
+		Una <em>identidad</em> es una ecuación que es verdadera para todos los valores posibles de <m>x</m> para los cuales las cantidades involucradas están definidas. Un ejemplo de una identidad no trigonométrica es
+	  <me>
+		(x+1)^2 = x^2 + 2x + 1
+	  </me>,
+	  ya que esta ecuación es verdadera para cada valor de <m>x</m>,
+	  y los lados izquierdo y derecho de la ecuación son simplemente dos expresiones que se ven diferentes pero son completamente equivalentes.
+	</p>
 
-	  <p>
-	    Trigonometric identities are simply identities that involve trigonometric functions.  While there are a large number of such identities one can study, we choose to focus on those that turn out to be most useful in the study of calculus.  The most important trigonometric identity is the fundamental trigonometric identity,
-	    which is a trigonometric restatement of the Pythagorean Theorem.
+		<p>
+	    Las identidades trigonométricas son simplemente identidades que involucran funciones trigonométricas. Aunque hay un gran número de tales identidades que uno puede estudiar, elegimos enfocarnos en aquellas que resultan ser más útiles en el estudio del cálculo. La identidad trigonométrica más importante es la identidad trigonométrica fundamental,
+	    que es una reformulación trigonométrica del Teorema de Pitágoras.
 	  </p>
 
 	<assemblage xml:id="asm-other-trig-fundamental-identity">
 		<idx><h>fundamental trigonometric identity</h></idx>
-		<title>The fundamental trigonometric identity</title>
+		<title>La identidad trigonométrica fundamental</title>
 		<p>
-			For any real number <m>\theta</m>,
+			Para cualquier número real <m>\theta</m>,
 			<men xml:id="eq-fund-trig-identity">
 				\cos^2(\theta) + \sin^2(\theta) = 1
 			</men>.
@@ -309,48 +309,48 @@
 	</assemblage>
 
 	<p>
-		Identities are important because they enable us to view the same idea from multiple perspectives.  For example, the fundamental trigonometric identity allows us to think of <m>\cos^2(\theta) + \sin^2(\theta)</m> as simply <m>1</m>, or alternatively, to view <m>\cos^2(\theta)</m> as the same quantity as <m>1 - \sin^2(\theta)</m>.
+		Las identidades son importantes porque nos permiten ver la misma idea desde múltiples perspectivas. Por ejemplo, la identidad trigonométrica fundamental nos permite pensar en <m>\cos^2(\theta) + \sin^2(\theta)</m> como simplemente <m>1</m>, o alternativamente, ver <m>\cos^2(\theta)</m> como la misma cantidad que <m>1 - \sin^2(\theta)</m>.
 	</p>
 
-	  <p>
-	    There are two related Pythagorean identities that involve the tangent, secant,
-	    cotangent, and cosecant functions, which we can derive from the fundamental trigonometric identity by dividing both sides by either <m>\cos^2(\theta)</m> or <m>\sin^2(\theta)</m>.  If we divide both sides of <xref ref="eq-fund-trig-identity">Equation</xref> by <m>\cos^2(\theta)</m> (and assume that <m>\cos(\theta) \ne 0</m>), we see that
+	<p>
+	    Hay dos identidades pitagóricas relacionadas que involucran las funciones tangente, secante,
+	    cotangente y cosecante, que podemos derivar de la identidad trigonométrica fundamental dividiendo ambos lados por <m>\cos^2(\theta)</m> o <m>\sin^2(\theta)</m>. Si dividimos ambos lados de <xref ref="eq-fund-trig-identity">Equation</xref> por <m>\cos^2(\theta)</m> (y asumimos que <m>\cos(\theta) \ne 0</m>), vemos que
 	    <me>
 	    	1 + \frac{\sin^2(\theta)}{\cos^2(\theta)} = \frac{1}{\cos^2(\theta)} 
-	    </me>, or equivalently,
+	    </me>, o equivalentemente,
 	    <me>
 	    	1 + \tan^2(\theta) = \sec^2(\theta) 
 	    </me>.
-	    A similar argument dividing by <m>\sin^2(\theta)</m> (while assuming <m>\sin(\theta) \ne 0</m>) shows that
+	    Un argumento similar dividiendo por <m>\sin^2(\theta)</m> (mientras asumimos <m>\sin(\theta) \ne 0</m>) muestra que
 	    <me>
 	    	\cot^2(\theta) + 1 = \csc^2(\theta) 
-	    </me>.  These identities prove useful in calculus when we develop the formulas for the derivatives of the tangent and cotangent functions.
+	    </me>. Estas identidades resultan útiles en cálculo cuando desarrollamos las fórmulas para las derivadas de las funciones tangente y cotangente.
 	  </p>
 
 	  <p>
-	    In calculus, it is also beneficial to know a couple of other standard identities for sums of angles or double angles. <idx><h>sum of two angles identity</h></idx> <idx><h>double angle identity</h></idx>  We simply state these identities without justification.  For more information about them, see Section 10.4 in <url href="http://stitz-zeager.com/szct07042013.pdf/">College Trigonometry</url>, by Stitz and Zeager<fn>More information on Stitz and Zeager's free texts can be found at <url href="http://stitz-zeager.com/"></url>.</fn>.
+	    En cálculo, también es beneficioso conocer un par de otras identidades estándar para sumas de ángulos o ángulos dobles. <idx><h>sum of two angles identity</h></idx> <idx><h>double angle identity</h></idx> Simplemente enunciamos estas identidades sin justificación. Para más información sobre ellas, consulta la Sección 10.4 en <url href="http://stitz-zeager.com/szct07042013.pdf/">College Trigonometry</url>, de Stitz y Zeager<fn>Más información sobre los textos gratuitos de Stitz y Zeager se puede encontrar en <url href="http://stitz-zeager.com/"></url>.</fn>.
 	  </p>
 
 	  <p>
 	  	<ul>
 	  		<li>
 	  			<p>
-	  				For all real numbers <m>\alpha</m> and <m>\beta</m>, <m>\cos(\alpha + \beta) = \cos(\alpha) \cos(\beta) - \sin(\alpha) \sin(\beta)</m>.
+	  				Para todos los números reales <m>\alpha</m> y <m>\beta</m>, <m>\cos(\alpha + \beta) = \cos(\alpha) \cos(\beta) - \sin(\alpha) \sin(\beta)</m>.
 	  			</p>
 	  		</li>
 	  		<li>
 	  			<p>
-	  				For all real numbers <m>\alpha</m> and <m>\beta</m>, <m>\sin(\alpha + \beta) = \sin(\alpha) \cos(\beta) + \cos(\alpha) \sin(\beta)</m>.
+	  				Para todos los números reales <m>\alpha</m> y <m>\beta</m>, <m>\sin(\alpha + \beta) = \sin(\alpha) \cos(\beta) + \cos(\alpha) \sin(\beta)</m>.
 	  			</p>
 	  		</li>
 	  		<li>
 	  			<p>
-	  				For any real number <m>\theta</m>, <m>\cos(2\theta) = \cos^2(\theta) - \sin^2(\theta)</m>.
+	  				Para cualquier número real <m>\theta</m>, <m>\cos(2\theta) = \cos^2(\theta) - \sin^2(\theta)</m>.
 	  			</p>
 	  		</li>
 			<li>
 	  			<p>
-	  				For any real number <m>\theta</m>, <m>\sin(2\theta) = 2\sin(\theta)\cos(\theta)</m>.
+	  				Para cualquier número real <m>\theta</m>, <m>\sin(2\theta) = 2\sin(\theta)\cos(\theta)</m>.
 	  			</p>
 	  		</li>
 	  	</ul>
@@ -361,33 +361,33 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-other-summary">
-      <title>Summary</title>
+      <title>Resumen</title>
       <p>
-  	<ul>
-  		<li>
-  			<p>
-  				The secant, cosecant, and cotangent functions are respectively defined as the reciprocals of the cosine, sine, and tangent functions.  That is, 
-  				<me>
-  					\sec(t) = \frac{1}{\cos(t)}, \csc(t) = \frac{1}{\sin(t)}, \text{ and } \cot(t) = \frac{1}{\tan(t)}
-  				</me>. 
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				The graph of the cotangent function is similar to the graph of the tangent function, except that it is decreasing on every interval on which it is defined and has vertical asymptotes wherever <m>\tan(t) = 0</m> and is zero wherever <m>\tan(t)</m> has a vertical asymptote.
-  			</p>
-
-  			<p>
-  				The graphs of the secant and cosecant functions are different from the cosine and sine functions' graphs in several ways, including that their range is the set of all real numbers <m>y</m> such that <m>|y| \ge 1</m> and they have vertical asymptotes wherever the cosine and sine function, respectively, are zero.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				A trigonometric identity is an equation involving trigonometric functions that is true for every value of the variable for which the trigonometric functions are defined.  For instance, <m>\tan^2(t) + 1 = \sec^2(t)</m> for every real number <m>t</m> except <m>t = \frac{\pi}{2} \pm k\pi</m>.  Identities offer us alternate perspectives on the same function.  For instance, the function <m>f(t) = \sec^2(t) - \tan^2(t)</m> is the same (at all points where <m>f</m> is defined) as the function whose value is always <m>1</m>.
-  			</p>
-  		</li>
-  	</ul>
-      </p>
+		<ul>
+			<li>
+				<p>
+					Las funciones secante, cosecante y cotangente se definen respectivamente como los recíprocos de las funciones coseno, seno y tangente. Es decir, 
+					<me>
+						\sec(t) = \frac{1}{\cos(t)}, \csc(t) = \frac{1}{\sin(t)}, \text{ y } \cot(t) = \frac{1}{\tan(t)}
+					</me>. 
+				</p>
+			</li>
+			<li>
+				<p>
+					El gráfico de la función cotangente es similar al gráfico de la función tangente, excepto que está decreciendo en cada intervalo en el que está definida y tiene asíntotas verticales donde <m>\tan(t) = 0</m> y es cero donde <m>\tan(t)</m> tiene una asíntota vertical.
+				</p>
+  
+				<p>
+					Los gráficos de las funciones secante y cosecante son diferentes de los gráficos de las funciones coseno y seno en varios aspectos, incluyendo que su rango es el conjunto de todos los números reales <m>y</m> tales que <m>|y| \ge 1</m> y tienen asíntotas verticales donde las funciones coseno y seno, respectivamente, son cero.
+				</p>
+			</li>
+			<li>
+				<p>
+					Una identidad trigonométrica es una ecuación que involucra funciones trigonométricas que es verdadera para cada valor de la variable para la cual las funciones trigonométricas están definidas. Por ejemplo, <m>\tan^2(t) + 1 = \sec^2(t)</m> para cada número real <m>t</m> excepto <m>t = \frac{\pi}{2} \pm k\pi</m>. Las identidades nos ofrecen perspectivas alternativas sobre la misma función. Por ejemplo, la función <m>f(t) = \sec^2(t) - \tan^2(t)</m> es la misma (en todos los puntos donde <m>f</m> está definida) que la función cuyo valor es siempre <m>1</m>.
+				</p>
+			</li>
+		</ul>
+		</p>
   </subsection>
 
 	<xi:include href="./exercises/ez-trig-other.xml" />
@@ -395,4 +395,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

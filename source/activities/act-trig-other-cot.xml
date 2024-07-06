@@ -17,7 +17,7 @@
 
 	<statement>
 		<p>
-			In this activity, we develop the standard properties of the cotangent function, <m>r(t) = \cot(t)</m>.
+			En esta actividad, desarrollamos las propiedades estándar de la función cotangente, <m>r(t) = \cot(t)</m>.
 		</p>
 
 
@@ -25,10 +25,10 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Complete <xref ref="T-cotangent-values">Table</xref> and <xref ref="T-cotangent-values-2">Table</xref> to determine the exact values of the cotangent function at the special points on the unit circle.  Enter <q>u</q> for any value at which <m>r(t) = \cot(t)</m> is undefined.
+						Completa <xref ref="T-cotangent-values">Table</xref> y <xref ref="T-cotangent-values-2">Table</xref> para determinar los valores exactos de la función cotangente en los puntos especiales del círculo unitario. Ingresa <q>u</q> para cualquier valor en el que <m>r(t) = \cot(t)</m> no esté definido.
 					</p>						
     				<table xml:id="T-cotangent-values">
-						<title>Values of the sine, cosine, and tangent functions at special points on the unit circle.</title>
+						<title>Valores de las funciones seno, coseno y tangente en puntos especiales del círculo unitario.</title>  
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>
@@ -93,7 +93,7 @@
 						</tabular>
 					</table>
 					<table xml:id="T-cotangent-values-2">
-						<title>Values of the sine, cosine, and tangent functions at special points on the unit circle.</title>
+						<title>Valores de las funciones seno, coseno y tangente en puntos especiales del círculo unitario.</title>  
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>		
@@ -155,45 +155,45 @@
 				</li>
 				<li>
 					<p>
-						In which quadrants is <m>r(t) = \cot(t)</m> positive?  negative?
+							¿En qué cuadrantes es <m>r(t) = \cot(t)</m> positivo? ¿negativo?
 					</p>
 				</li>
 				<li>
 					<p>
-						At what <m>t</m>-values does <m>r(t) = \cot(t)</m> have a vertical asymptote?  Why?
+							¿En qué valores de <m>t</m> tiene <m>r(t) = \cot(t)</m> una asíntota vertical? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the domain of the cotangent function?  What is its range?
+							¿Cuál es el dominio de la función cotangente? ¿Cuál es su rango?
 					</p>
 				</li>
 				<li>
 					<p>
-						Sketch an accurate, labeled graph of <m>r(t) = \cot(t)</m> on the axes provided in <xref ref="F-cotangent-plot">Figure</xref>, including the special points that come from the unit circle.
+						Dibuja un gráfico preciso y etiquetado de <m>r(t) = \cot(t)</m> en los ejes proporcionados en <xref ref="F-cotangent-plot">Figure</xref>, incluyendo los puntos especiales que provienen del círculo unitario.
 					</p>
-                                        <figure xml:id="F-cotangent-plot">
-			<caption>Axes for plotting <m>r(t) = \cot(t)</m>.</caption>
+				<figure xml:id="F-cotangent-plot">
+                <caption>Ejes para graficar <m>r(t) = \cot(t)</m>.</caption>
 			<image source="images/other-cot-definition-graph" width="80%" />
-		</figure>
+			</figure>
 
 				</li>
 				<li>
 					<p>
-						On intervals where the function is defined at every point in the interval, is <m>r(t) = \cot(t)</m> always increasing, always decreasing, or neither?
+							En intervalos donde la función está definida en cada punto del intervalo, ¿es <m>r(t) = \cot(t)</m> siempre creciente, siempre decreciente, o ninguna de las dos?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the period of the cotangent function?
+							¿Cuál es el período de la función cotangente?
 					</p>
 				</li>
 				<li>
 					<p>
-						How would you describe the relationship between the graphs of the tangent and cotangent functions?
+							¿Cómo describirías la relación entre los gráficos de las funciones tangente y cotangente?
 					</p>
 				</li>
-			</ol>
+		</ol>
 		</p>
 	</statement>
 	<answer>
@@ -208,4 +208,3 @@
 	</solution>
 
 </activity>
-

@@ -19,11 +19,11 @@
 
 		<sidebyside>
 			<p>
-				Supertall<fn>See, for instance, <url href="https://www.cnn.com/style/article/new-york-slender-skyscrapers/index.html">this article</url></fn> high rises have changed the Manhattan skyline.  These skyscrapers are known for their small footprint in proportion to their height, with their ratio of width to height at most <m>1:10</m>, and some as extreme as <m>1:24</m>.  Suppose that a relatively short supertall has been built to a height of <m>635</m> feet, as pictured in <xref ref="F-tan-act-two-towers">Figure</xref>, and that a second supertall is built nearby.  Given the two angles that are computed from the new building, how tall, <m>s</m>, is the new building, and how far apart, <m>d</m>, are the two towers?
+				Los rascacielos superaltos<fn>Ver <url href="https://www.cnn.com/style/article/new-york-slender-skyscrapers/index.html">este artículo</url></fn> han cambiado el horizonte de Manhattan. Estos rascacielos son conocidos por su pequeña huella en proporción a su altura, con su relación de ancho a altura de al menos <m>1:10</m>, y algunos tan extremos como <m>1:24</m>. Supón que se ha construido un superalto relativamente corto a una altura de <m>635</m> pies, como se muestra en <xref ref="F-tan-act-two-towers">Figure</xref>, y que se construye un segundo superalto cerca. Dados los dos ángulos que se calculan desde el nuevo edificio, ¿qué altura, <m>s</m>, tiene el nuevo edificio, y a qué distancia, <m>d</m>, están las dos torres?
 			</p>	
 
 			<figure xml:id="F-tan-act-two-towers">
-				<caption>Two supertall skyscrapers.</caption>
+				<caption>Dos rascacielos superaltos.</caption>
 				<image source="images/tan-act-two-towers" />
 			</figure>
 		</sidebyside>
@@ -42,4 +42,3 @@
 	</solution>
 
 </activity>
-

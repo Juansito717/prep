@@ -17,11 +17,11 @@
 
 	<statement>
 		<p>
-			Consider right triangle <m>OPQ</m> given in <xref ref="F-right-OPQ">Figure</xref>, and assume that the length of the hypotenuse is <m>OP = r</m> for some constant <m>r \gt 1</m>.   Let point <m>M</m> lie on <m>\overline{OP}</m> (the line segment between <m>O</m> and <m>P</m>) in such a way that <m>OM = 1</m>, and let point <m>N</m> lie on <m>\overline{OQ}</m> so that <m>\angle ONM</m> is a right angle, as pictured.  In addition, assume that  point <m>O</m> corresponds to <m>(0,0)</m>, point <m>Q</m> to <m>(x,0)</m>, and point <m>P</m> to <m>(x,y)</m> so that <m>OQ = x</m> and <m>PQ = y</m>.  Finally, let <m>\theta</m> be the measure of <m>\angle POQ</m>.
+			Considera el triángulo rectángulo <m>OPQ</m> dado en <xref ref="F-right-OPQ">Figura</xref>, y supón que la longitud de la hipotenusa es <m>OP = r</m> para alguna constante <m>r \gt 1</m>. Deja que el punto <m>M</m> se encuentre en <m>\overline{OP}</m> (el segmento de línea entre <m>O</m> y <m>P</m>) de tal manera que <m>OM = 1</m>, y deja que el punto <m>N</m> se encuentre en <m>\overline{OQ}</m> de modo que <m>\angle ONM</m> sea un ángulo recto, como se muestra en la figura. Además, supón que el punto <m>O</m> corresponde a <m>(0,0)</m>, el punto <m>Q</m> a <m>(x,0)</m>, y el punto <m>P</m> a <m>(x,y)</m> de modo que <m>OQ = x</m> y <m>PQ = y</m>. Finalmente, deja que <m>\theta</m> sea la medida de <m>\angle POQ</m>.
 		</p>
 
 		<figure xml:id="F-right-OPQ">
-			<caption>Two right triangles <m>\triangle OPQ</m> and <m>\triangle OMN</m>.</caption>
+			<caption>Dos triángulos rectángulos <m>\triangle OPQ</m> y <m>\triangle OMN</m>.</caption>
 			<image width="70%" source="images/right-triangle-act-similar"/>
 		</figure>
 
@@ -29,22 +29,22 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Explain why <m>\triangle OPQ</m> and <m>\triangle OMN</m> are similar triangles.
+						Explica por qué <m>\triangle OPQ</m> y <m>\triangle OMN</m> son triángulos similares.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the value of the ratio <m>\frac{OP}{OM}</m>?  What does this tell you about the ratios <m>\frac{OQ}{ON}</m> and <m>\frac{PQ}{MN}</m>?
+						¿Cuál es el valor de la razón <m>\frac{OP}{OM}</m>? ¿Qué te dice esto sobre las razones <m>\frac{OQ}{ON}</m> y <m>\frac{PQ}{MN}</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the value of <m>ON</m> in terms of <m>\theta</m>?  What is the value of <m>MN</m> in terms of <m>\theta</m>?  
+						¿Cuál es el valor de <m>ON</m> en términos de <m>\theta</m>? ¿Cuál es el valor de <m>MN</m> en términos de <m>\theta</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Use your conclusions in (b) and (c) to express the values of <m>x</m> and <m>y</m> in terms of <m>r</m> and <m>\theta</m>.
+						Usa tus conclusiones en (b) y (c) para expresar los valores de <m>x</m> y <m>y</m> en términos de <m>r</m> y <m>\theta</m>.
 					</p>
 				</li>
 			</ol>
@@ -62,4 +62,3 @@
 	</solution>
 
 </activity>
-

@@ -17,15 +17,15 @@
 
 	<statement>
 		<p>
-			Through the following questions, we work to understand the special values and overall behavior of the tangent function.
+			A través de las siguientes preguntas, trabajamos para entender los valores especiales y el comportamiento general de la función tangente.
 		</p>
 
 		<p>
 	      <ol marker="a.">
 	        <li>
 	          <p>
-	            Without using computational device,
-	            find the exact value of <m>\tan(t)</m> at the following values: <m>t = \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{2\pi}{3}, \frac{3\pi}{4}, \frac{5\pi}{6}</m>. 
+	            Sin usar un dispositivo computacional,
+	            encuentra el valor exacto de <m>\tan(t)</m> en los siguientes valores: <m>t = \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{2\pi}{3}, \frac{3\pi}{4}, \frac{5\pi}{6}</m>. 
 <!--	           
 
 				<sidebyside>
@@ -59,56 +59,55 @@
 
 	        <li>
 	          <p>
-	            Why is <m>\tan \left( \frac{\pi}{2} \right)</m> not defined?
-	            What are three other input values <m>x</m> for which <m>\tan(x)</m> is not defined?
+	            ¿Por qué <m>\tan \left( \frac{\pi}{2} \right)</m> no está definida?
+	            ¿Cuáles son otros tres valores de entrada <m>x</m> para los cuales <m>\tan(x)</m> no está definida?
 	          </p>
 	        </li>
 
 	        <li>
 	          <p>
-	            Point your browser to
+	            Dirige tu navegador a
 	            <url href="http://gvsu.edu/s/0yO">http://gvsu.edu/s/0yO</url>
-	            (<q>zero-y-Oh</q>) to find a <em>Desmos</em>
-	            worksheet with data from the tangent function already input, denoted in <em>Desmos</em> by the function <m>T(x) = \tan(x)</m>.  
+	            (<q>zero-y-Oh</q>) para encontrar una hoja de trabajo de <em>Desmos</em>
+	            con datos de la función tangente ya ingresados, denotada en <em>Desmos</em> por la función <m>T(x) = \tan(x)</m>.  
 
-	            Click on several of the orange points to compare your exact values in (a) with the decimal values given by <em>Desmos</em>.  
+	            Haz clic en varios de los puntos naranjas para comparar tus valores exactos en (a) con los valores decimales dados por <em>Desmos</em>.  
 
-	            Add one entry to the table:
+	            Añade una entrada a la tabla:
 	            <m>x = \frac{11\pi}{24}</m>, <m>y = T(\frac{11\pi}{24})</m>.
-	            At about what coordinates does this point lie?
-	            What are the approximate values of
-	            <m>\sin(\frac{11\pi}{24})</m> and <m>\cos(\frac{11\pi}{24})</m>?
-	            Why is the value of <m>\tan(\frac{11\pi}{24})</m> so large relative to the other values of <m>\tan(x)</m> in the table?
+	            ¿En qué coordenadas aproximadamente se encuentra este punto?
+	            ¿Cuáles son los valores aproximados de
+	            <m>\sin(\frac{11\pi}{24})</m> y <m>\cos(\frac{11\pi}{24})</m>?
+	            ¿Por qué el valor de <m>\tan(\frac{11\pi}{24})</m> es tan grande en relación con los otros valores de <m>\tan(x)</m> en la tabla?
 	          </p>
 	        </li>
 
 	        <li>
 	          <p>
-	            At the top of the input lists on the left side of the
-	            <em>Desmos</em> worksheet,
-	            click the circle to highlight the function
-	            <m>T(x) = \tan(x)</m> and thus show its plot along with the data points in orange.
-	            Use the plot and your work above to answer the following important questions about the tangent function:
+	            En la parte superior de las listas de entrada en el lado izquierdo de la
+	            hoja de trabajo de <em>Desmos</em>,
+	            haz clic en el círculo para resaltar la función
+	            <m>T(x) = \tan(x)</m> y así mostrar su gráfico junto con los puntos de datos en naranja.
+	            Usa el gráfico y tu trabajo anterior para responder las siguientes preguntas importantes sobre la función tangente:
 
 	            <ul>
 	              <li>
 	                <p>
-	                  What is the domain of <m>y = \tan(x)</m>?
+	                  ¿Cuál es el dominio de <m>y = \tan(x)</m>?
 	                </p>
 	              </li>
 
 	              <li>
 	                <p>
-	                  What is the period of <m>y = \tan(x)</m>?
+	                  ¿Cuál es el período de <m>y = \tan(x)</m>?
 	                </p>
 	              </li>
 
 	              <li>
 	                <p>
-	                  What is the range of <m>y = \tan(x)</m>?
+	                  ¿Cuál es el rango de <m>y = \tan(x)</m>?
 	                </p>
 	              </li>
-
 <!--
 	              <li>
 	                <p>

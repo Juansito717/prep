@@ -17,11 +17,11 @@
 
 	<statement>
 		<p>
-			Surveyors are trying to determine the height of a hill relative to sea level.  First, they choose a point to take an initial measurement with a sextant that shows the angle of elevation from the ground to the peak of the hill is <m>19^\circ</m>.  Next, they move <m>1000</m> feet closer to the hill, staying at the same elevation relative to sea level, and find that the angle of elevation has increased to <m>25^\circ</m>, as pictured in <xref ref="F-tan-act-mountain">Figure</xref>.  We let <m>h</m> represent the height of the hill relative to the two measurements, and <m>x</m> represent the distance from the second measurement location to the <q>center</q> of the hill that lies directly under the peak.
+			Los topógrafos están tratando de determinar la altura de una colina en relación con el nivel del mar. Primero, eligen un punto para tomar una medición inicial con un sextante que muestra que el ángulo de elevación desde el suelo hasta la cima de la colina es de <m>19^\circ</m>. Luego, se mueven <m>1000</m> pies más cerca de la colina, manteniéndose a la misma elevación en relación con el nivel del mar, y encuentran que el ángulo de elevación ha aumentado a <m>25^\circ</m>, como se muestra en <xref ref="F-tan-act-mountain">Figure</xref>. Dejamos que <m>h</m> represente la altura de la colina en relación con las dos mediciones, y <m>x</m> represente la distancia desde la segunda ubicación de medición hasta el <q>centro</q> de la colina que se encuentra directamente debajo de la cima.
 		</p>
 
 		<figure xml:id="F-tan-act-mountain">
-			<caption>The surveyors' initial measurements.</caption>
+			<caption>Las mediciones iniciales de los topógrafos.</caption>
 			<image source="images/tan-act-mountain" width="70%" />
 		</figure>
 
@@ -29,32 +29,32 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Using the right triangle with the <m>25^\circ</m> angle, find an equation that relates <m>x</m> and <m>h</m>.
+						Usando el triángulo rectángulo con el ángulo de <m>25^\circ</m>, encuentra una ecuación que relacione <m>x</m> y <m>h</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Using the right triangle with the <m>19^\circ</m> angle, find a second equation that relates <m>x</m> and <m>h</m>.
+						Usando el triángulo rectángulo con el ángulo de <m>19^\circ</m>, encuentra una segunda ecuación que relacione <m>x</m> y <m>h</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Our work in (a) and (b) results in a system of two equations in the two unknowns <m>x</m> and <m>h</m>.  Solve each of the two equations for <m>h</m> and then substitute appropriately in order to find a single equation in the variable <m>x</m>.
+						Nuestro trabajo en (a) y (b) resulta en un sistema de dos ecuaciones en las dos incógnitas <m>x</m> y <m>h</m>. Resuelve cada una de las dos ecuaciones para <m>h</m> y luego sustituye adecuadamente para encontrar una sola ecuación en la variable <m>x</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Solve the equation from (c) to find the exact value of <m>x</m> and determine an approximate value accurate to <m>3</m> decimal places.
+						Resuelve la ecuación de (c) para encontrar el valor exacto de <m>x</m> y determina un valor aproximado con una precisión de <m>3</m> decimales.
 					</p>
 				</li>
 				<li>
 					<p>
-						Use your preceding work to solve for <m>h</m> exactly, plus determine an estimate accurate to <m>3</m> decimal places.
+						Usa tu trabajo anterior para resolver <m>h</m> exactamente, además de determinar una estimación precisa a <m>3</m> decimales.
 					</p>
 				</li>
 				<li>
 					<p>
-						If the surveyors' initial measurements were taken from an elevation of <m>78</m> feet above sea level, how high above sea level is the peak of the hill?
+						Si las mediciones iniciales de los topógrafos se tomaron desde una elevación de <m>78</m> pies sobre el nivel del mar, ¿qué altura sobre el nivel del mar tiene la cima de la colina?
 					</p>
 				</li>
 			</ol>
@@ -72,4 +72,3 @@
 	</solution>
 
 </activity>
-

@@ -17,22 +17,22 @@
 
 	<statement>
 	    <p>
-	      A camera is tracking the launch of a SpaceX rocket.
-	      The camera is located <m>4000</m>' from the rocket's launching pad,
-	      and the camera angle changes in order to keep the rocket in focus.
-	      At what angle <m>\theta</m>
-	      (in radians)
-	      is the camera tilted when the rocket is <m>3000</m>' off the ground?
-	      Answer both exactly and approximately.
+	      Una cámara está siguiendo el lanzamiento de un cohete de SpaceX.
+	      La cámara está ubicada a <m>4000</m>' del lugar de lanzamiento del cohete,
+	      y el ángulo de la cámara cambia para mantener el cohete enfocado.
+	      ¿A qué ángulo <m>\theta</m>
+	      (en radianes)
+	      está inclinada la cámara cuando el cohete está a <m>3000</m>' del suelo?
+	      Responde tanto exactamente como aproximadamente.
 	    </p>
 
 	    <p>
-	      Now, rather than considering the rocket at a fixed height of <m>3000</m>', let its height vary and call the rocket's height <m>h</m>.
-	      Determine the camera's angle,
-	      <m>\theta</m> as a function of <m>h</m>,
-	      and compute the average rate of change of <m>\theta</m> on the intervals <m>[3000,3500]</m>,
-	      <m>[5000,5500]</m>, and <m>[7000,7500]</m>.
-	      What do you observe about how the camera angle is changing?
+	      Ahora, en lugar de considerar el cohete a una altura fija de <m>3000</m>', deja que su altura varíe y llama a la altura del cohete <m>h</m>.
+	      Determina el ángulo de la cámara,
+	      <m>\theta</m> como una función de <m>h</m>,
+	      y calcula la tasa promedio de cambio de <m>\theta</m> en los intervalos <m>[3000,3500]</m>,
+	      <m>[5000,5500]</m>, y <m>[7000,7500]</m>.
+	      ¿Qué observas sobre cómo está cambiando el ángulo de la cámara?
 	    </p>
 
 	</statement>
@@ -48,4 +48,3 @@
 	</solution>
 
 </activity>
-

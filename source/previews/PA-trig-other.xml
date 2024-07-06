@@ -17,10 +17,10 @@
 
 	<statement>
 		<p>
-			Consider a right triangle with hypotenuse of length <m>61</m> and one leg of length <m>11</m>.
-      		Let <m>\alpha</m> be the angle opposite the side of length <m>11</m>.
-      		Find the exact length of the other leg and then determine the value of each of the six trigonometric functions evaluated at <m>\alpha</m>.
-      		In addition, what are the exact and approximate measures of the two non-right angles in the triangle?
+			Considera un triángulo rectángulo con hipotenusa de longitud <m>61</m> y un cateto de longitud <m>11</m>.
+      		Sea <m>\alpha</m> el ángulo opuesto al lado de longitud <m>11</m>.
+      		Encuentra la longitud exacta del otro cateto y luego determina el valor de cada una de las seis funciones trigonométricas evaluadas en <m>\alpha</m>.
+      		Además, ¿cuáles son las medidas exactas y aproximadas de los dos ángulos no rectos en el triángulo?
 		</p>
 	</statement>
 

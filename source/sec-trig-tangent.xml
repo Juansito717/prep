@@ -14,55 +14,55 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-trig-tangent">
-  <title>The Tangent Function</title>
+	<title>La Función Tangente</title>
 
-  <objectives>
-  	<ul>
-  		<li>
-  			<p>
-  				How is the tangent function defined in terms of the sine and cosine functions?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Why is the graph of the tangent function so different from the graphs of the sine and cosine functions?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What are important applications of the tangent function?
-  			</p>
-  		</li>
-  	</ul>
-  </objectives>
-
+	<objectives>
+		<ul>
+			<li>
+				<p>
+					¿Cómo se define la función tangente en términos de las funciones seno y coseno?
+				</p>
+			</li>
+			<li>
+				<p>
+					¿Por qué el gráfico de la función tangente es tan diferente de los gráficos de las funciones seno y coseno?
+				</p>
+			</li>
+			<li>
+				<p>
+					¿Cuáles son las aplicaciones importantes de la función tangente?
+				</p>
+			</li>
+		</ul>
+	</objectives>
+  
   <introduction>
   	
 	<sidebyside valign="middle" widths="55% 40%" margins="0%">
 		<p>
-			In <xref ref="act-trig-right-sine-cosine-ratio">Activity</xref>, we determined the distance between two points <m>A</m> and <m>B</m> on opposite sides of a river by knowing a length along one shore of the river and the angle formed between a point downstream and the point on the opposite shore, as pictured in <xref ref="F-right-act-river-rev">Figure</xref>. By first using the cosine of the angle, we determined the value of <m>z</m> and from there were able to use the sine of the angle to find <m>w</m>, the river's width, which turns out to be 
+			En <xref ref="act-trig-right-sine-cosine-ratio">Activity</xref>, determinamos la distancia entre dos puntos <m>A</m> y <m>B</m> en lados opuestos de un río conociendo una longitud a lo largo de una orilla del río y el ángulo formado entre un punto río abajo y el punto en la orilla opuesta, como se muestra en <xref ref="F-right-act-river-rev">Figure</xref>. Primero, usando el coseno del ángulo, determinamos el valor de <m>z</m> y desde allí pudimos usar el seno del ángulo para encontrar <m>w</m>, el ancho del río, que resulta ser 
 			<me>
 				w = 50 \cdot \frac{\sin(56.4)}{\cos(56.4)}
 			</me>.
 		</p>
 
 		<figure xml:id="F-right-act-river-rev">
-			<caption>Finding the width of the river.</caption>
+			<caption>Encontrando el ancho del río.</caption>
 			<image source="images/right-act-river-riv" width="50%" />
 		</figure>
 
 	</sidebyside>
 
 	<p>
-		It turns out that we regularly need to evaluate the ratio of the sine and cosine functions at the same angle, so it is convenient to define a new function to be their ratio.
+		Resulta que regularmente necesitamos evaluar la razón de las funciones seno y coseno en el mismo ángulo, por lo que es conveniente definir una nueva función que sea su razón.
 	</p>
 
 	<definition>
-		<title>The tangent function</title>
+		<title>La función tangente</title>
 		<idx><h>tangent function</h></idx>
 		<statement>
 			<p>
-				For any real number <m>t</m> for which <m>\cos(t) \ne 0</m>, we define the <term>tangent of <m>t</m></term>, denoted <m>\tan(t)</m>, by
+				Para cualquier número real <m>t</m> para el cual <m>\cos(t) \ne 0</m>, definimos la <term>tangente de <m>t</m></term>, denotada <m>\tan(t)</m>, por
 			<me>
 				\tan(t) = \frac{\sin(t)}{\cos(t)}
 			</me>.
@@ -75,53 +75,53 @@
   </introduction>
 
   <subsection xml:id="subsec-trig-tangent-two-persp">
-  	<title>Two perspectives on the tangent function</title>
+	<title>Dos perspectivas sobre la función tangente</title>
 
   	<sidebyside>
   		<figure xml:id="F-tan-defn-unit-circle">
-  			<caption>An angle <m>t</m> in standard position in the unit circle that intercepts an arc from <m>(1,0)</m> to <m>(a,b).</m></caption>
-  			<image source="images/tan-defn-unit-circle" width="45%"/>
+			<caption>Un ángulo <m>t</m> en posición estándar en el círculo unitario que intercepta un arco desde <m>(1,0)</m> hasta <m>(a,b).</m></caption>
+			<image source="images/tan-defn-unit-circle" width="45%"/>
   		</figure>
   		<figure xml:id="F-tan-right-triangle-TOA">
-  			<caption>A right triangle with legs adjacent and opposite angle <m>\theta</m>.</caption>
-  			<image source="images/right-triangle-SOH-CAH-TOA" width="45%" />
+			<caption>Un triángulo rectángulo con catetos adyacente y opuesto al ángulo <m>\theta</m>.</caption>
+			<image source="images/right-triangle-SOH-CAH-TOA" width="45%" />
   		</figure>
   	</sidebyside>
 
   	<p>
-  		Because the tangent function is defined in terms of the two fundamental circular functions by the rule <m>\tan(t) = \frac{\sin(t)}{\cos(t)}</m>, we can use our understanding of the sine and cosine functions to make sense of the tangent function.  In particular, we can think of the tangent of an angle from two different perspectives: as an angle in standard position in the unit circle, or as an angle in a right triangle.
-  	</p>
+		Dado que la función tangente se define en términos de las dos funciones circulares fundamentales por la regla <m>\tan(t) = \frac{\sin(t)}{\cos(t)}</m>, podemos usar nuestro entendimiento de las funciones seno y coseno para entender la función tangente. En particular, podemos pensar en la tangente de un ángulo desde dos perspectivas diferentes: como un ángulo en posición estándar en el círculo unitario, o como un ángulo en un triángulo rectángulo.
+	</p>
+
+	<p>
+		Desde el punto de vista de <xref ref="F-tan-defn-unit-circle">Figura</xref>, a medida que el punto correspondiente al ángulo <m>t</m> recorre el círculo y genera el punto <m>(a,b)</m>, sabemos que <m>\cos(t) = a</m> y <m>\sin(t) = b</m>, y por lo tanto la función tangente sigue la proporción de estas dos cantidades, y se da por
+		<me>
+			\tan(t) = \frac{\sin(t)}{\cos(t)} = \frac{b}{a}
+		</me>.
+		Desde la perspectiva de cualquier triángulo rectángulo (no necesariamente en el círculo unitario) con hipotenusa <q>hyp</q> y catetos
+		<q>adj</q> y <q>opp</q> que son respectivamente adyacente y opuesto al ángulo conocido <m>\theta</m>, como se ve en <xref ref="F-tan-right-triangle-TOA">Figura</xref>, sabemos que <m>\sin(\theta) = \frac{\text{opp}}{\text{hyp}}</m> y <m>\cos(\theta) = \frac{\text{adj}}{\text{hyp}}</m>. Sustituyendo estas expresiones para <m>\sin(\theta)</m> y <m>\cos(\theta)</m> en la regla para la función tangente, vemos que
+		<me>
+			\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{\frac{\text{opp}}{\text{hyp}}}{\frac{\text{adj}}{\text{hyp}}} = \frac{\text{opp}}{\text{adj}}
+		</me>.
+	</p>
 
   	<p>
-  		From the viewpoint of <xref ref="F-tan-defn-unit-circle">Figure</xref>, as the point corresponding to angle <m>t</m> traverses the circle and generates the point <m>(a,b)</m>, we know <m>\cos(t) = a</m> and <m>\sin(t) = b</m>, and therefore the tangent function tracks the ratio of these two quantities, and is given by
-  		<me>
-  			\tan(t) = \frac{\sin(t)}{\cos(t)} = \frac{b}{a}
-  		</me>.
-  		From the perspective of any right triangle (not necessarily in the unit circle) with hypotenuse <q>hyp</q> and legs
-  		<q>adj</q> and <q>opp</q> that are respectively adjacent and opposite the known angle <m>\theta</m>, as seen in <xref ref="F-tan-right-triangle-TOA">Figure</xref>, we know that <m>\sin(\theta) = \frac{\text{opp}}{\text{hyp}}</m> and <m>\cos(\theta) = \frac{\text{adj}}{\text{hyp}}</m>.  Substituting these expressions for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> in the rule for the tangent function, we see that
-  		<me>
-  			\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{\frac{\text{opp}}{\text{hyp}}}{\frac{\text{adj}}{\text{hyp}}} = \frac{\text{opp}}{\text{adj}}
-  		</me>.
-  	</p>
-
-  	<p>
-  		We typically use the first perspective of tracking the ratio of the <m>y</m>-coordinate to the <m>x</m>-coordinate of a point traversing the unit circle in order to think of the overall behavior and graph of the tangent function, and use the second perspective in a right triangle whenever we are working to determine missing values in a triangle.
+  		Normalmente usamos la primera perspectiva de seguir la proporción de la coordenada <m>y</m> a la coordenada <m>x</m> de un punto que recorre el círculo unitario para pensar en el comportamiento general y la gráfica de la función tangente, y usamos la segunda perspectiva en un triángulo rectángulo siempre que estemos trabajando para determinar valores faltantes en un triángulo.
   	</p>
   </subsection>
 
   <subsection xml:id="subsec-trig-tangent-properties">
-  	<title>Properties of the tangent function</title>
+	<title>Propiedades de la función tangente</title>
 
 	  <p>
-	  	Because the tangent function is defined in terms of the sine and cosine functions, its values and behavior are completely determined by those two functions.  To begin, we know the value of <m>\tan(t)</m> for every special angle <m>t</m> on the unit circle that we identified for the sine and cosine functions.  For instance, we know that
+	  	Dado que la función tangente se define en términos de las funciones seno y coseno, sus valores y comportamiento están completamente determinados por esas dos funciones. Para empezar, sabemos el valor de <m>\tan(t)</m> para cada ángulo especial <m>t</m> en el círculo unitario que identificamos para las funciones seno y coseno. Por ejemplo, sabemos que
 	  	<me>
 	  		\tan \left( \frac{\pi}{6} \right) = \frac{ \sin \left( \frac{\pi}{6} \right) }{ \cos \left( \frac{\pi}{6} \right) } = \frac{ \frac{1}{2} }{ \frac{\sqrt{3}}{2} } = \frac{1}{\sqrt{3}}
 	  	</me>.
-	  	Executing similar computations for every familiar special angle on the unit circle, we find the results shown in <xref ref="T-tangent-values">Table</xref> and <xref ref="T-tangent-values-2">Table</xref>.  We also note that anywhere <m>\cos(t) = 0</m>, the value of <m>\tan(t)</m> is undefined.  We record such instances in the table by writing <q>u</q>.
+	  	Ejecutando cálculos similares para cada ángulo especial familiar en el círculo unitario, encontramos los resultados mostrados en <xref ref="T-tangent-values">Tabla</xref> y <xref ref="T-tangent-values-2">Tabla</xref>. También notamos que en cualquier lugar donde <m>\cos(t) = 0</m>, el valor de <m>\tan(t)</m> no está definido. Registramos tales instancias en la tabla escribiendo <q>u</q>.
 	  </p>
 
     				<table xml:id="T-tangent-values">
-						<title>Values of the sine, cosine, and tangent functions at special points on the unit circle.</title>
+						<title>Valores de las funciones seno, coseno y tangente en puntos especiales del círculo unitario.</title>
 						<tabular>
 							<row halign="center" bottom="minor">
 								<cell><m>t</m></cell>
@@ -175,7 +175,7 @@
 					</table>
 
     				<table xml:id="T-tangent-values-2">
-						<title>Additional values of the sine, cosine, and tangent functions at special points on the unit circle.</title>
+						<title>Valores adicionales de las funciones seno, coseno y tangente en puntos especiales del círculo unitario.</title>
 						<tabular>
 							<row halign="center" bottom="minor">
 								<cell><m>t</m></cell>		
@@ -225,57 +225,57 @@
 					</table>					
 
 		<p>
-			<xref ref="T-tangent-values">Table</xref> and <xref ref="T-tangent-values-2">Table</xref> helps us identify trends in the tangent function.  For instance, we observe that the sign of <m>\tan(t)</m> is positive in Quadrant I, negative in Quadrant II, positive in Quadrant III, and negative in Quadrant IV.  This holds because the sine and cosine functions have the same sign in the first and third quadrants, and opposite signs in the other two quadrants.  
+			<xref ref="T-tangent-values">Tabla</xref> y <xref ref="T-tangent-values-2">Tabla</xref> nos ayudan a identificar tendencias en la función tangente. Por ejemplo, observamos que el signo de <m>\tan(t)</m> es positivo en el Cuadrante I, negativo en el Cuadrante II, positivo en el Cuadrante III y negativo en el Cuadrante IV. Esto se debe a que las funciones seno y coseno tienen el mismo signo en el primer y tercer cuadrantes, y signos opuestos en los otros dos cuadrantes.
 		</p>
 
 		<p>
-			In addition, we observe that as <m>t</m>-values in the first quadrant get closer to <m>\frac{\pi}{2}</m>, <m>\sin(t)</m> gets closer to <m>1</m>, while <m>\cos(t)</m> gets closer to <m>0</m> (while being always positive).  Noting that <m>\frac{\pi}{2} \approx 1.57</m>, we observe that
+			Además, observamos que a medida que los valores de <m>t</m> en el primer cuadrante se acercan a <m>\frac{\pi}{2}</m>, <m>\sin(t)</m> se acerca a <m>1</m>, mientras que <m>\cos(t)</m> se acerca a <m>0</m> (siempre siendo positivo). Notando que <m>\frac{\pi}{2} \approx 1.57</m>, observamos que
 			<me>
 				\tan(1.47) = \frac{\sin(1.47)}{\cos(1.47)} \approx \frac{0.995}{0.101} = 9.887
 			</me>
-			and
+			y
 			<me>
 				\tan(1.56) = \frac{\sin(1.56)}{\cos(1.56)} \approx \frac{0.9994}{0.0108} = 92.6205
 			</me>.
-			Because the ratio of numbers closer and closer to <m>1</m> divided by numbers closer and closer to <m>0</m> (but positive) increases without bound, this means that <m>\tan(t)</m> increases without bound as <m>t</m> approaches <m>\frac{\pi}{2}</m> from the left side.  Once <m>t</m> is slightly greater than <m>\frac{\pi}{2}</m> in Quadrant II, the value of <m>\sin(t)</m> stays close to <m>1</m>, but now the value of <m>\cos(t)</m> is negative (and close to zero).  For instance, <m>\cos(1.58) \approx -0.0092</m>.  This makes the value of <m>\tan(t)</m> decrease without bound (negative and getting further away from <m>0</m>) for <m>t</m> approaching <m>\frac{\pi}{2}</m> from the right side, and results in <m>h(t) = \tan(t)</m> having a vertical asymptote at <m>t = \frac{\pi}{2}</m>.  The periodicity and sign behaviors of <m>\sin(t)</m> and <m>\cos(t)</m> mean this asymptotic behavior of the tangent function will repeat.
+			Dado que la proporción de números cada vez más cercanos a <m>1</m> divididos por números cada vez más cercanos a <m>0</m> (pero positivos) aumenta sin límite, esto significa que <m>\tan(t)</m> aumenta sin límite a medida que <m>t</m> se acerca a <m>\frac{\pi}{2}</m> desde el lado izquierdo. Una vez que <m>t</m> es ligeramente mayor que <m>\frac{\pi}{2}</m> en el Cuadrante II, el valor de <m>\sin(t)</m> se mantiene cerca de <m>1</m>, pero ahora el valor de <m>\cos(t)</m> es negativo (y cercano a cero). Por ejemplo, <m>\cos(1.58) \approx -0.0092</m>. Esto hace que el valor de <m>\tan(t)</m> disminuya sin límite (negativo y alejándose más de <m>0</m>) para <m>t</m> acercándose a <m>\frac{\pi}{2}</m> desde el lado derecho, y resulta en que <m>h(t) = \tan(t)</m> tenga una asíntota vertical en <m>t = \frac{\pi}{2}</m>. La periodicidad y los comportamientos de signo de <m>\sin(t)</m> y <m>\cos(t)</m> significan que este comportamiento asintótico de la función tangente se repetirá.
 		</p>
 
 		<p>	
-			Plotting the data in the table along with the expected asymptotes and connecting the points intuitively, we see the graph of the tangent function in <xref ref="F-tangent-plot">Figure</xref>.
+			Graficando los datos en la tabla junto con las asíntotas esperadas y conectando los puntos intuitivamente, vemos la gráfica de la función tangente en <xref ref="F-tangent-plot">Figura</xref>.
 		</p>
 
 		<figure xml:id="F-tangent-plot">
-			<caption>A plot of the tangent function together with special points that come from the unit circle.</caption>
+			<caption>Una gráfica de la función tangente junto con puntos especiales que provienen del círculo unitario.</caption>
 			<image source="images/tan-definition-graph" width="80%" />
 		</figure>
 
 		<p>
-			We see from <xref ref="T-tangent-values">Table</xref> and <xref ref="T-tangent-values-2">Table</xref> as well as from <xref ref="F-tangent-plot">Figure</xref> that the tangent function has period <m>P = \pi</m> and that the function is increasing on any interval on which it is defined.  We summarize our recent work as follows.
+			Vemos en <xref ref="T-tangent-values">Tabla</xref> y <xref ref="T-tangent-values-2">Tabla</xref> así como en <xref ref="F-tangent-plot">Figura</xref> que la función tangente tiene un período <m>P = \pi</m> y que la función está aumentando en cualquier intervalo en el que esté definida. Resumimos nuestro trabajo reciente de la siguiente manera.
 		</p>
 
 		<assemblage xml:id="asm-tangent-properties">
-			<title>Properties of the tangent function</title>
+			<title>Propiedades de la función tangente</title>
 			<p>
-				For the function <m>h(t) = \tan(t)</m>, 
+				Para la función <m>h(t) = \tan(t)</m>, 
 				<ul>
 					<li>
 						<p>
-							its domain is the set of all real numbers except <m>t = \frac{\pi}{2} \pm k\pi</m> where <m>k</m> is any whole number;
+							su dominio es el conjunto de todos los números reales excepto <m>t = \frac{\pi}{2} \pm k\pi</m> donde <m>k</m> es cualquier número entero;
 						</p>
 					</li>
 					<li>
 						<p>
-							its range is the set of all real numbers;
+							su rango es el conjunto de todos los números reales;
 						</p>
 					</li>
 					<li>
 						<p>
-							its period is <m>P = \pi</m>;
+							su período es <m>P = \pi</m>;
 						</p>
 					</li>
 					<li>
 						<p>
-							is increasing on any interval on which the function is defined at every point in the interval.
+							está aumentando en cualquier intervalo en el que la función esté definida en cada punto del intervalo.
 						</p>
 					</li>
 				</ul>
@@ -283,45 +283,45 @@
 		</assemblage>
 
 		<p>
-			While the tangent function is an interesting mathematical function for its own sake, its most important applications arise in the setting of right triangles, and for the remainder of this section we will focus on that perspective.
+			Aunque la función tangente es una función matemática interesante por sí misma, sus aplicaciones más importantes surgen en el contexto de los triángulos rectángulos, y para el resto de esta sección nos enfocaremos en esa perspectiva.
 		</p>
 
   </subsection>
 
   <subsection xml:id="subsec-trig-tangent-applications">
-  	<title>Using the tangent function in right triangles</title>
-  	<p>
-  		The tangent function offers us an additional choice when working in right triangles with limited information.  In the setting where we have a right triangle with one additional known angle, if we know the length of the hypotenuse, we can use either the sine or cosine of the angle to help us easily find the remaining side lengths.  But in the setting where we know only the length of one leg, the tangent function now allows us to determine the value of the remaining leg in a similarly straightforward way, and from there the hypotenuse.
-  	</p>
+	<title>Usando la función tangente en triángulos rectángulos</title>
+	<p>
+		La función tangente nos ofrece una opción adicional cuando trabajamos en triángulos rectángulos con información limitada. En el caso de que tengamos un triángulo rectángulo con un ángulo adicional conocido, si conocemos la longitud de la hipotenusa, podemos usar el seno o el coseno del ángulo para ayudarnos a encontrar fácilmente las longitudes de los lados restantes. Pero en el caso de que solo conozcamos la longitud de un cateto, la función tangente ahora nos permite determinar el valor del cateto restante de una manera igualmente sencilla, y a partir de ahí la hipotenusa.
+	</p>
 
   	<example>
   		<statement>
 				<p>
-  					Use the tangent function to determine the width, <m>w</m>, of the river in <xref ref="F-right-act-river-rev-2">Figure</xref>.  (Note that here we are revisiting the problem in <xref ref="act-trig-right-sine-cosine-ratio">Activity</xref>, which we previously solved without using the tangent function.)  What other information can we now easily determine?
+  					Usa la función tangente para determinar el ancho, <m>w</m>, del río en <xref ref="F-right-act-river-rev-2">Figure</xref>. (Nota que aquí estamos revisitando el problema en <xref ref="act-trig-right-sine-cosine-ratio">Activity</xref>, que previamente resolvimos sin usar la función tangente.) ¿Qué otra información podemos determinar fácilmente ahora?
  	 			</p>
 
   				<figure xml:id="F-right-act-river-rev-2">
-					<caption>A right triangle with one angle and one leg known.</caption>
+					<caption>Un triángulo rectángulo con un ángulo y un cateto conocidos.</caption>
 					<image width="40%" source="images/right-act-river-riv" />
 				</figure>
   		</statement>
   		<solution>
-  			<p>
-  				Using the perspective that <m>\tan(\theta) = \frac{\text{opp}}{\text{adj}}</m> in a right triangle, in this context we have 
-  				<me>
-  					\tan(56.4^\circ) = \frac{w}{50} 
-  				</me>
-  				and thus <m>w = 50\tan(56.4)</m> is the exact width of the river.  Using a computational device, we find that <m>w \approx 75.256</m>.
-  			</p>
-  		  	<p>
-  				Once we know the river's width, we can use the Pythagorean theorem or the sine function to determine the distance from <m>P</m> to <m>A</m>, at which point all <m>6</m> parts of the triangle are known.
- 		 	</p>	
-  		</solution>
+			<p>
+				Usando la perspectiva de que <m>\tan(\theta) = \frac{\text{opp}}{\text{adj}}</m> en un triángulo rectángulo, en este contexto tenemos 
+				<me>
+					\tan(56.4^\circ) = \frac{w}{50} 
+				</me>
+				y así <m>w = 50\tan(56.4)</m> es el ancho exacto del río. Usando un dispositivo de cálculo, encontramos que <m>w \approx 75.256</m>.
+			</p>
+			  <p>
+				Una vez que conocemos el ancho del río, podemos usar el teorema de Pitágoras o la función seno para determinar la distancia desde <m>P</m> hasta <m>A</m>, en cuyo punto todas las <m>6</m> partes del triángulo son conocidas.
+			</p>	
+		</solution>
   	</example>
 
   	<p>
-  		The tangent function finds a wide range of applications in finding missing information in right triangles where information about one or more legs of the triangle is known.
-  	</p>
+		La función tangente encuentra una amplia gama de aplicaciones en la búsqueda de información faltante en triángulos rectángulos donde se conoce la información sobre uno o más catetos del triángulo.
+	</p>
 
   	<xi:include href="./activities/act-trig-tangent-tower.xml" />
 
@@ -332,39 +332,38 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-tangent-summary">
-  	<title>Summary</title>
-        <p>
-  	<ul>
-  		<li>
-  			<p>
-  				The tangent function is defined defined to be the ratio of the sine and cosine functions according to the rule
-  				<me>
-  					\tan(t) = \frac{\sin(t)}{\cos(t)}
-  				</me>
-  				for all values of <m>t</m> for which <m>\cos(t) \ne 0</m>.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				The graph of the tangent function differs substantially from the graphs of the sine and cosine functions, primarily because near values where <m>\cos(t) = 0</m>, the ratio of <m>\frac{\sin(t)}{\cos(t)}</m> increases or decreases without bound, producing vertical asymptotes.  In addition, while the period of the sine and cosine functions is <m>P = 2\pi</m>, the period of the tangent function is <m>P = \pi</m> due to how the sine and cosine functions repeat the same values (with different signs) as a point traverses the unit circle.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				The tangent function finds some of its most important applications in the setting of right triangles where one leg of the triangle is known and one of the non-right angles is known.  Computing the tangent of the known angle, say <m>\alpha</m>, and using the fact that
-  				<me>
-  					\tan(\alpha) = \frac{\text{opp}}{\text{adj}}
-  				</me>
-  				we can then find the missing leg's length in terms of the other and the tangent of the angle.
-  			</p>
-  		</li>
-  	</ul>
-        </p>
-  </subsection>
+	<title>Resumen</title>
+	<p>
+  <ul>
+	  <li>
+		  <p>
+			  La función tangente se define como la razón de las funciones seno y coseno según la regla
+			  <me>
+				  \tan(t) = \frac{\sin(t)}{\cos(t)}
+			  </me>
+			  para todos los valores de <m>t</m> para los cuales <m>\cos(t) \ne 0</m>.
+		  </p>
+	  </li>
+	  <li>
+		  <p>
+			  El gráfico de la función tangente difiere sustancialmente de los gráficos de las funciones seno y coseno, principalmente porque cerca de los valores donde <m>\cos(t) = 0</m>, la razón de <m>\frac{\sin(t)}{\cos(t)}</m> aumenta o disminuye sin límite, produciendo asíntotas verticales. Además, mientras que el período de las funciones seno y coseno es <m>P = 2\pi</m>, el período de la función tangente es <m>P = \pi</m> debido a cómo las funciones seno y coseno repiten los mismos valores (con diferentes signos) a medida que un punto recorre el círculo unitario.
+		  </p>
+	  </li>
+	  <li>
+		  <p>
+			  La función tangente encuentra algunas de sus aplicaciones más importantes en el contexto de los triángulos rectángulos donde se conoce un cateto del triángulo y uno de los ángulos no rectos. Calculando la tangente del ángulo conocido, digamos <m>\alpha</m>, y usando el hecho de que
+			  <me>
+				  \tan(\alpha) = \frac{\text{opp}}{\text{adj}}
+			  </me>
+			  podemos entonces encontrar la longitud del cateto faltante en términos del otro y la tangente del ángulo.
+		  </p>
+	  </li>
+  </ul>
+	</p>
+</subsection>
 
   <xi:include href="./exercises/ez-trig-tangent.xml" />
 
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

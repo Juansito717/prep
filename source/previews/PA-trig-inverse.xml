@@ -17,60 +17,60 @@
 
 	<statement>
 		<p>
-			Consider the plot of the standard cosine function in <xref ref="F-inverse-trig-PA-cos">Figure</xref> along with the emphasized portion of the graph on <m>[0,\pi]</m>.
+			Considera el gráfico de la función coseno estándar en <xref ref="F-inverse-trig-PA-cos">Figura</xref> junto con la parte enfatizada del gráfico en <m>[0,\pi]</m>.
 		</p>
 
 		<figure xml:id="F-inverse-trig-PA-cos">
-			<caption>The cosine function on <m>[-\frac{5\pi}{2},\frac{5\pi}{2}]</m> with the portion on <m>[0,\pi]</m> emphasized.</caption>
+			<caption>La función coseno en <m>[-\frac{5\pi}{2},\frac{5\pi}{2}]</m> con la parte en <m>[0,\pi]</m> enfatizada.</caption>
 			<image source="images/inverse-trig-PA-cosine" />
 		</figure>
 
 		<p>
-			Let <m>g</m> be the function whose domain is <m>0 \le t \le \pi</m> and whose outputs are determined by the rule <m>g(t) = \cos(t)</m>.  <em>Note well</em>: <m>g</m> is defined in terms of the cosine function, but because it has a different domain, it is <em>not</em> the cosine function.
+			Sea <m>g</m> la función cuyo dominio es <m>0 \le t \le \pi</m> y cuyos resultados se determinan por la regla <m>g(t) = \cos(t)</m>.  <em>Nota bien</em>: <m>g</m> está definida en términos de la función coseno, pero debido a que tiene un dominio diferente, <em>no</em> es la función coseno.
 		</p>
 
 		<p>
 			<ol marker="a.">
 		        <li>
 		          <p>
-		            What is the domain of <m>g</m>?
+		            ¿Cuál es el dominio de <m>g</m>?
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            What is the range of <m>g</m>?
+		            ¿Cuál es el rango de <m>g</m>?
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            Does <m>g</m> pass the horizontal line test?
-		            Why or why not?
+		            ¿Pasa <m>g</m> la prueba de la línea horizontal?
+		            ¿Por qué o por qué no?
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            Explain why <m>g</m> has an inverse function,
-		            <m>g^{-1}</m>, and state the domain and range of <m>g^{-1}</m>.
+		            Explica por qué <m>g</m> tiene una función inversa,
+		            <m>g^{-1}</m>, y establece el dominio y rango de <m>g^{-1}</m>.
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            We know that <m>g(\frac{\pi}{4}) = \frac{\sqrt{2}}{2}</m>.
-		            What is the exact value of <m>g^{-1}(\frac{\sqrt{2}}{2})</m>?
-		            How about the exact value of <m>g^{-1}(-\frac{\sqrt{2}}{2})</m>?
+		            Sabemos que <m>g(\frac{\pi}{4}) = \frac{\sqrt{2}}{2}</m>.
+		            ¿Cuál es el valor exacto de <m>g^{-1}(\frac{\sqrt{2}}{2})</m>?
+		            ¿Y el valor exacto de <m>g^{-1}(-\frac{\sqrt{2}}{2})</m>?
 		          </p>
 		        </li>
 
 		        <li>
 		          <p>
-		            Determine the exact values of <m>g^{-1}(-\frac{1}{2})</m>,
+		            Determina los valores exactos de <m>g^{-1}(-\frac{1}{2})</m>,
 		            <m>g^{-1}(\frac{\sqrt{3}}{2})</m>,
-		            <m>g^{-1}(0)</m>, and <m>g^{-1}(-1)</m>.
-		            Use proper notation to label your results.
+		            <m>g^{-1}(0)</m>, y <m>g^{-1}(-1)</m>.
+		            Usa la notación adecuada para etiquetar tus resultados.
 		          </p>
 		        </li>
 	      	</ol>

@@ -17,11 +17,11 @@
 
 	<statement>
 		<p>
-			In this activity, we develop the standard properties of the cosecant function, <m>q(t) = \csc(t)</m>.
+			En esta actividad, desarrollamos las propiedades estándar de la función cosecante, <m>q(t) = \csc(t)</m>.
 		</p>
 
 		<figure xml:id="F-cosecant-plot">
-			<caption>Axes for plotting <m>q(t) = \csc(t)</m>.</caption>
+			<caption>Ejes para graficar <m>q(t) = \csc(t)</m>.</caption>
 			<image source="images/other-csc-activity-graph" width="80%" />
 		</figure>
 
@@ -29,11 +29,11 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Complete <xref ref="T-cosecant-values">Table</xref> and <xref ref="T-cosecant-values-2">Table</xref> to determine the exact values of the cosecant function at the special points on the unit circle.  Enter <q><m>u</m></q> for any value at which <m>q(t) = \csc(t)</m> is undefined.
+						Completa <xref ref="T-cosecant-values">Tabla</xref> y <xref ref="T-cosecant-values-2">Tabla</xref> para determinar los valores exactos de la función cosecante en los puntos especiales del círculo unitario. Ingresa <q><m>u</m></q> para cualquier valor en el que <m>q(t) = \csc(t)</m> no esté definido.
 					</p>
 
     				<table xml:id="T-cosecant-values">
-						<title>Values of the sine function at special points on the unit circle (Quadrants I and II).</title>
+						<title>Valores de la función seno en puntos especiales del círculo unitario (Cuadrantes I y II).</title>
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>
@@ -75,7 +75,7 @@
 					</table>
 
     				<table xml:id="T-cosecant-values-2">
-						<title>Values of the sine function at special points on the unit circle (Quadrants III and IV).</title>
+						<title>Valores de la función seno en puntos especiales del círculo unitario (Cuadrantes III y IV).</title>
 						<tabular>
 							<row bottom="minor" halign="center">
 								<cell><m>t</m></cell>		
@@ -115,27 +115,27 @@
 				</li>
 				<li>
 					<p>
-						In which quadrants is <m>q(t) = \csc(t)</m> positive?  negative?
+						¿En qué cuadrantes es <m>q(t) = \csc(t)</m> positivo? ¿negativo?
 					</p>
 				</li>
 				<li>
 					<p>
-						At what <m>t</m>-values does <m>q(t) = \csc(t)</m> have a vertical asymptote?  Why?
+						¿En qué valores de <m>t</m> tiene <m>q(t) = \csc(t)</m> una asíntota vertical? ¿Por qué?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the domain of the cosecant function?  What is its range?
+						¿Cuál es el dominio de la función cosecante? ¿Cuál es su rango?
 					</p>
 				</li>
 				<li>
 					<p>
-						Sketch an accurate, labeled graph of <m>q(t) = \csc(t)</m> on the axes provided in <xref ref="F-cosecant-plot">Figure</xref>, including the special points that come from the unit circle.
+						Dibuja un gráfico preciso y etiquetado de <m>q(t) = \csc(t)</m> en los ejes proporcionados en <xref ref="F-cosecant-plot">Figura</xref>, incluyendo los puntos especiales que provienen del círculo unitario.
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the period of the cosecant function?
+						¿Cuál es el período de la función cosecante?
 					</p>
 				</li>
 			</ol>
@@ -153,4 +153,3 @@
 	</solution>
 
 </activity>
-

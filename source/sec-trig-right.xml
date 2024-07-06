@@ -14,51 +14,51 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-trig-right">
-  <title>Right triangles</title>
+	<title>Triángulos rectángulos</title>
 
   <objectives>
   	<ul>
-  		<li>
-  			<p>
-  				How can we view <m>\cos(\theta)</m> and <m>\sin(\theta)</m> as side lengths in right triangles with hypotenuse <m>1</m>?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Why can both <m>\cos(\theta)</m> and <m>\sin(\theta)</m> be thought of as ratios of certain side lengths in any right triangle?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What is the minimum amount of information we need about a right triangle in order to completely determine all of its sides and angles?
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				¿Cómo podemos ver <m>\cos(\theta)</m> y <m>\sin(\theta)</m> como longitudes de los lados en triángulos rectángulos con hipotenusa <m>1</m>?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Por qué se puede pensar que tanto <m>\cos(\theta)</m> como <m>\sin(\theta)</m> son razones de ciertas longitudes de los lados en cualquier triángulo rectángulo?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cuál es la cantidad mínima de información que necesitamos sobre un triángulo rectángulo para determinar completamente todos sus lados y ángulos?
+			</p>
+		</li>
+	</ul>
   </objectives>
 
   <introduction>
 
 	<p>
-		In <xref ref="sec-circular-sine-cosine">Section</xref>, we defined the cosine and sine functions as the functions that track the location of a point traversing the unit circle counterclockwise from <m>(1,0)</m>.  In particular, for a central angle of radian measure <m>t</m> that passes through the point <m>(1,0)</m>, we define <m>\cos(t)</m> as the <m>x</m>-coordinate of the point where the other side of the angle intersects the unit circle, and <m>\sin(t)</m> as the <m>y</m>-coordinate of that same point, as pictured in <xref ref="F-right-sine-cosine-unit">Figure</xref>.
+		En <xref ref="sec-circular-sine-cosine">Sección</xref>, definimos las funciones coseno y seno como las funciones que rastrean la ubicación de un punto que recorre el círculo unitario en sentido antihorario desde <m>(1,0)</m>. En particular, para un ángulo central con medida en radianes <m>t</m> que pasa por el punto <m>(1,0)</m>, definimos <m>\cos(t)</m> como la coordenada <m>x</m> del punto donde el otro lado del ángulo intersecta el círculo unitario, y <m>\sin(t)</m> como la coordenada <m>y</m> de ese mismo punto, como se muestra en <xref ref="F-right-sine-cosine-unit">Figura</xref>.
 	</p>
 
 	<p>
-		By changing our perspective slightly, we can see that it is equivalent to think of the values of the sine and cosine function as representing the lengths of legs in right triangles.  Specifically, given a central angle<fn>In our work with right triangles, we'll often represent the angle by <m>\theta</m> and think of this angle as fixed, as opposed to our previous use of <m>t</m> where we frequently think of <m>t</m> as changing.</fn> <m>\theta</m> in standard position <idx><h>standard position</h></idx> (vertex at the origin, and one side on the positive <m>x</m>-axis), if we think of the right triangle with vertices <m>(\cos(\theta),0)</m>, <m>(0,0)</m>, and <m>(\cos(\theta), \sin(\theta))</m>, then the length of the horizontal leg is <m>\cos(\theta)</m> and the length of the vertical leg is <m>\sin(\theta)</m>, as seen in <xref ref="F-right-sine-cosine-right">Figure</xref>.  
+		Cambiando nuestra perspectiva ligeramente, podemos ver que es equivalente pensar en los valores de las funciones seno y coseno como representaciones de las longitudes de los catetos en triángulos rectángulos. Específicamente, dado un ángulo central<fn>En nuestro trabajo con triángulos rectángulos, a menudo representaremos el ángulo por <m>\theta</m> y pensaremos en este ángulo como fijo, a diferencia de nuestro uso anterior de <m>t</m> donde frecuentemente pensamos en <m>t</m> como variable.</fn> <m>\theta</m> en posición estándar <idx><h>posición estándar</h></idx> (vértice en el origen, y un lado en el eje <m>x</m> positivo), si pensamos en el triángulo rectángulo con vértices <m>(\cos(\theta),0)</m>, <m>(0,0)</m>, y <m>(\cos(\theta), \sin(\theta))</m>, entonces la longitud del cateto horizontal es <m>\cos(\theta)</m> y la longitud del cateto vertical es <m>\sin(\theta)</m>, como se ve en <xref ref="F-right-sine-cosine-right">Figura</xref>.
 	</p>
 
 	<sidebyside width="45%">
 		<figure xml:id="F-right-sine-cosine-unit">
-			<caption>The values of <m>\cos(t)</m> and <m>\sin(t)</m> as coordinates on the unit circle.</caption>
+			<caption>Los valores de <m>\cos(t)</m> y <m>\sin(t)</m> como coordenadas en el círculo unitario.</caption>
 			<image source="images/sine-cosine-unit-circle" width="45%"/>
 		</figure>
 		<figure xml:id="F-right-sine-cosine-right">
-			<caption>The values of <m>\cos(\theta)</m> and <m>\sin(\theta)</m> as the lengths of the legs of a right triangle.</caption>
+			<caption>Los valores de <m>\cos(\theta)</m> y <m>\sin(\theta)</m> como las longitudes de los catetos de un triángulo rectángulo.</caption>
 			<image source="images/sine-cosine-right-triangle" width="45%"/>
 		</figure>
 	</sidebyside>
 
 	<p>
-		This right triangle perspective enables us to use the sine and cosine functions to determine missing information in certain right triangles.  The field of mathematics that studies relationships among the angles and sides of triangles is called <em>trigonometry</em>. <idx><h>trigonometry</h></idx>  In addition, it's important to recall both the Pythagorean Theorem and the Fundamental Trigonometric Identity.  <idx><h>Pythagorean Theorem</h></idx> <idx><h>fundamental trigonometric identity</h></idx>  The former states that in any right triangle with legs of length <m>a</m> and <m>b</m> and hypotenuse of length <m>c</m>, it follows <m>a^2 + b^2 = c^2</m>.  The latter, which is a special case of the Pythagorean Theorem, says that for any angle <m>\theta</m>, <m>\cos^2(\theta) + \sin^2(\theta) = 1</m>.
+		Esta perspectiva del triángulo rectángulo nos permite usar las funciones seno y coseno para determinar información faltante en ciertos triángulos rectángulos. El campo de las matemáticas que estudia las relaciones entre los ángulos y los lados de los triángulos se llama <em>trigonometría</em>. <idx><h>trigonometría</h></idx> Además, es importante recordar tanto el Teorema de Pitágoras como la Identidad Trigonométrica Fundamental. <idx><h>Teorema de Pitágoras</h></idx> <idx><h>identidad trigonométrica fundamental</h></idx> El primero establece que en cualquier triángulo rectángulo con catetos de longitud <m>a</m> y <m>b</m> y una hipotenusa de longitud <m>c</m>, se cumple que <m>a^2 + b^2 = c^2</m>. La segunda, que es un caso especial del Teorema de Pitágoras, dice que para cualquier ángulo <m>\theta</m>, <m>\cos^2(\theta) + \sin^2(\theta) = 1</m>.
 	</p>
 
   	<xi:include href="./previews/PA-trig-right.xml" />
@@ -66,44 +66,43 @@
   </introduction>
 
   <subsection xml:id="subsec-trig-right-similar">
-  	<title>The geometry of triangles</title>
-
-  	<p>
-  		In the study of functions, linear functions are the simplest of all and form a foundation for our understanding of functions that have other shapes.  In the study of geometric shapes (polygons, circles, and more), the simplest figure of all is the triangle, and understanding triangles is foundational to understanding many other geometric ideas.  To begin, we list some familiar and important facts about triangles.
-  	</p>
-
-  	<p>
-  		<ul>
-  			<li>
-  				<p>
-  					Any triangle has <m>6</m> important features:  <m>3</m> sides and <m>3</m> angles.
-  				</p>
-  			</li>
-  			<li>
-  				<p>
-  					In any triangle in the Cartesian plane, the sum of the measures of the interior angles is <m>\pi</m> radians (or equivalently, <m>180^\circ</m>).
-  				</p>
-  			</li>
-  			<li>
-  				<p>
-  					In any triangle in the plane, knowing three of the six features of a triangle is often enough information to determine the missing three features.<fn>Formally, this idea relies on what are called <em>congruence criteria</em>.  For instance, if we know the lengths of all three sides, then the angle measures of the triangle are uniquely determined.  This is called the Side-Side-Side Criterion (SSS).  You are likely familiar with SSS, as well as SAS (Side-Angle-Side), ASA, and AAS, which are the four standard criteria.</fn>
-  				</p>
-  			</li>
-  		</ul>
-  	</p>
+	<title>La geometría de los triángulos</title>
 
 	<p>
-		The situation is especially nice for right triangles, because then we only have five unknown features since one of the angles is <m>\frac{\pi}{2}</m> radians (or <m>90^\circ</m>), as demonstrated in <xref ref="F-right-triangle-5">Figure</xref>.  If we know one of the two non-right angles,
-		then we know the other as well.  Moreover, if we know any two sides, we can immediately deduce the third, because of the Pythagorean Theorem.  As we saw in <xref ref="PA-trig-right">Preview Activity</xref>, the cosine and sine functions offer additional help in determining missing information in right triangles.  Indeed, while the functions <m>\cos(t)</m> and <m>\sin(t)</m> have many important applications in modeling periodic phenomena such as osciallating masses on springs, they also find powerful application in settings involving right triangles, such as in navigation and surveying.
+		En el estudio de las funciones, las funciones lineales son las más simples de todas y forman una base para nuestra comprensión de funciones que tienen otras formas. En el estudio de las formas geométricas (polígonos, círculos y más), la figura más simple de todas es el triángulo, y entender los triángulos es fundamental para entender muchas otras ideas geométricas. Para empezar, enumeramos algunos hechos familiares e importantes sobre los triángulos.
+	</p>
+
+	<p>
+		<ul>
+			<li>
+				<p>
+					Cualquier triángulo tiene <m>6</m> características importantes: <m>3</m> lados y <m>3</m> ángulos.
+				</p>
+			</li>
+			<li>
+				<p>
+					En cualquier triángulo en el plano cartesiano, la suma de las medidas de los ángulos interiores es <m>\pi</m> radianes (o equivalentemente, <m>180^\circ</m>).
+				</p>
+			</li>
+			<li>
+				<p>
+					En cualquier triángulo en el plano, conocer tres de las seis características de un triángulo a menudo es suficiente información para determinar las tres características faltantes.<fn>Formalmente, esta idea se basa en lo que se llaman <em>criterios de congruencia</em>. Por ejemplo, si conocemos las longitudes de los tres lados, entonces las medidas de los ángulos del triángulo están determinadas de manera única. Esto se llama el Criterio Lado-Lado-Lado (LLL). Probablemente estés familiarizado con LLL, así como con LAL (Lado-Ángulo-Lado), ALA y AAL, que son los cuatro criterios estándar.</fn>
+				</p>
+			</li>
+		</ul>
+	</p>
+
+	<p>
+		La situación es especialmente agradable para los triángulos rectángulos, porque entonces solo tenemos cinco características desconocidas ya que uno de los ángulos es <m>\frac{\pi}{2}</m> radianes (o <m>90^\circ</m>), como se demuestra en <xref ref="F-right-triangle-5">Figura</xref>. Si conocemos uno de los dos ángulos no rectos, entonces también conocemos el otro. Además, si conocemos dos lados, podemos deducir inmediatamente el tercero, debido al Teorema de Pitágoras. Como vimos en <xref ref="PA-trig-right">Actividad de Previsualización</xref>, las funciones coseno y seno ofrecen ayuda adicional para determinar información faltante en triángulos rectángulos. De hecho, mientras que las funciones <m>\cos(t)</m> y <m>\sin(t)</m> tienen muchas aplicaciones importantes en la modelización de fenómenos periódicos como masas oscilantes en resortes, también encuentran una aplicación poderosa en contextos que involucran triángulos rectángulos, como en la navegación y la topografía.
 	</p>
 
 		<figure xml:id="F-right-triangle-5">
-			<caption>The <m>5</m> potential unknowns in a right triangle.</caption>
+			<caption>Las <m>5</m> posibles incógnitas en un triángulo rectángulo.</caption>
 			<image source="images/right-triangle-5" width="70%"/>
 		</figure>
 
 	<p>
-		Because we know the values of the cosine and sine functions from the unit circle, right triangles with hypotentuse <m>1</m> are the easiest ones in which to determine missing information.  In addition, we can relate any other right triangle to a right triangle with hypotenuse <m>1</m> through the concept of <em>similarity</em>.  Recall that two triangles are <term>similar</term> <idx><h>similar triangles</h></idx> provided that one is a magnification of the other.  More precisely, two triangles are similar whenever there is some constant <m>k</m> such that every side in one triangle is <m>k</m> times as long as the corresponding side in the other and the corresponding angles in the two triangles are equal.  An important result from geometry tells us that if two triangles are known to have all three of their corresponding angles equal, then it follows that the two triangles are similar, and therefore their corresponding sides must be proportionate to one another.
+		Dado que conocemos los valores de las funciones coseno y seno del círculo unitario, los triángulos rectángulos con hipotenusa <m>1</m> son los más fáciles en los que determinar información faltante. Además, podemos relacionar cualquier otro triángulo rectángulo con un triángulo rectángulo con hipotenusa <m>1</m> a través del concepto de <em>similitud</em>. Recuerda que dos triángulos son <term>similares</term> <idx><h>triángulos similares</h></idx> siempre que uno sea una ampliación del otro. Más precisamente, dos triángulos son similares siempre que haya alguna constante <m>k</m> tal que cada lado en un triángulo sea <m>k</m> veces más largo que el lado correspondiente en el otro y los ángulos correspondientes en los dos triángulos sean iguales. Un resultado importante de la geometría nos dice que si se sabe que dos triángulos tienen sus tres ángulos correspondientes iguales, entonces se deduce que los dos triángulos son similares, y por lo tanto sus lados correspondientes deben ser proporcionales entre sí.
 	</p>
 
 	<xi:include href="./activities/act-trig-right-similar.xml" />
@@ -111,44 +110,44 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-right-ratios">
-  	<title>Ratios of sides in right triangles</title>
+	<title>Relaciones de lados en triángulos rectángulos</title>
 
-  	<p>
-  		A right triangle with a hypotenuse of length <m>1</m> can be viewed as lying in standard position in the unit circle, with one vertex at the origin and one leg along the positive <m>x</m>-axis.  If we let the angle formed by the hypotenuse and the horizontal leg be represented by <m>\theta</m>, then the right triangle with hypotenuse <m>1</m> has horizontal leg of length <m>\cos(\theta)</m> and vertical leg of length <m>\sin(\theta)</m>.  If we now consider a similar right triangle with hypotenuse of length <m>r \ne 1</m>, we can view that triangle as a magnification of a triangle with hypotenuse <m>1</m>.  These observations, combined with our work in <xref ref="act-trig-right-similar">Activity</xref>, show us that the horizontal legs of the right triangle with hypotenuse <m>r</m> have lengths <m>r\cos(\theta)</m> and <m>r\sin(\theta)</m>, as pictured in <xref ref="F-right-triangle-r-theta">Figure</xref>.
-  	</p>
+	<p>
+		Un triángulo rectángulo con una hipotenusa de longitud <m>1</m> puede ser visto como situado en posición estándar en el círculo unitario, con un vértice en el origen y un cateto a lo largo del eje <m>x</m> positivo. Si dejamos que el ángulo formado por la hipotenusa y el cateto horizontal sea representado por <m>\theta</m>, entonces el triángulo rectángulo con hipotenusa <m>1</m> tiene un cateto horizontal de longitud <m>\cos(\theta)</m> y un cateto vertical de longitud <m>\sin(\theta)</m>. Si ahora consideramos un triángulo rectángulo similar con hipotenusa de longitud <m>r \ne 1</m>, podemos ver ese triángulo como una ampliación de un triángulo con hipotenusa <m>1</m>. Estas observaciones, combinadas con nuestro trabajo en <xref ref="act-trig-right-similar">Activity</xref>, nos muestran que los catetos horizontales del triángulo rectángulo con hipotenusa <m>r</m> tienen longitudes <m>r\cos(\theta)</m> y <m>r\sin(\theta)</m>, como se muestra en <xref ref="F-right-triangle-r-theta">Figure</xref>.
+	</p>
 
 		<figure xml:id="F-right-triangle-r-theta">
-			<caption>The roles of <m>r</m> and <m>\theta</m> in a right triangle.</caption>
+			<caption>Los roles de <m>r</m> y <m>\theta</m> en un triángulo rectángulo.</caption>
 			<image width="70%" source="images/right-triangle-r-theta"/>
 		</figure>
 
-	<p>
-		From the similar triangles in <xref ref="F-right-triangle-r-theta">Figure</xref>, we can make an important observation about ratios in right triangles.  Because the triangles are similar, the ratios of corresponding sides must be equal, so if we consider the two hypotenuses and the two horizontal legs, we have
-		<men xml:id="eq-right-COH">
-			\frac{r}{1} = \frac{r\cos(\theta)}{\cos(\theta)}
-		</men>.
-		If we rearrange <xref ref="eq-right-COH">Equation</xref> by dividing both sides by <m>r</m> and multiplying both sides by <m>\cos(\theta)</m>, we see that
-		<men xml:id="eq-right-COH-2">
-			\frac{\cos(\theta)}{1} = \frac{r\cos(\theta)}{r}
-		</men>.
-		From a geometric perspective, <xref ref="eq-right-COH-2">Equation</xref> tells us that the ratio of the length of the horizontal leg of a right triangle to the length of the hypotenuse of the triangle is always the same (regardless of <m>r</m>) and that the value of that ratio is <m>\cos(\theta)</m>, where <m>\theta</m> is the angle adjacent to the horizontal leg.  In an analogous way, the equation involving the hypotenuses and vertical legs of the similar triangles is
-		<men xml:id="eq-right-SOH">
-			\frac{r}{1} = \frac{r\sin(\theta)}{\sin(\theta)}
-		</men>,
-		which can be rearranged to
-		<men xml:id="eq-right-SOH-2">
-			\frac{\sin(\theta)}{1} = \frac{r\sin(\theta)}{r}
-		</men>.
-		<xref ref="eq-right-SOH-2">Equation</xref> shows that the ratio of the length of the vertical leg of a right triangle to the length of the hypotenuse of the triangle is always the same (regardless of <m>r</m>) and that the value of that ratio is <m>\sin(\theta)</m>, where <m>\theta</m> is the angle opposite the vertical leg.  We summarize these recent observations as follows.
-	</p>
-
+		<p>
+			De los triángulos similares en <xref ref="F-right-triangle-r-theta">Figure</xref>, podemos hacer una observación importante sobre las relaciones en triángulos rectángulos. Debido a que los triángulos son similares, las relaciones de los lados correspondientes deben ser iguales, así que si consideramos las dos hipotenusas y los dos catetos horizontales, tenemos
+			<men xml:id="eq-right-COH">
+				\frac{r}{1} = \frac{r\cos(\theta)}{\cos(\theta)}
+			</men>.
+			Si reorganizamos <xref ref="eq-right-COH">Equation</xref> dividiendo ambos lados por <m>r</m> y multiplicando ambos lados por <m>\cos(\theta)</m>, vemos que
+			<men xml:id="eq-right-COH-2">
+				\frac{\cos(\theta)}{1} = \frac{r\cos(\theta)}{r}
+			</men>.
+			Desde una perspectiva geométrica, <xref ref="eq-right-COH-2">Equation</xref> nos dice que la relación de la longitud del cateto horizontal de un triángulo rectángulo a la longitud de la hipotenusa del triángulo es siempre la misma (independientemente de <m>r</m>) y que el valor de esa relación es <m>\cos(\theta)</m>, donde <m>\theta</m> es el ángulo adyacente al cateto horizontal. De manera análoga, la ecuación que involucra las hipotenusas y los catetos verticales de los triángulos similares es
+			<men xml:id="eq-right-SOH">
+				\frac{r}{1} = \frac{r\sin(\theta)}{\sin(\theta)}
+			</men>,
+			que puede ser reorganizada a
+			<men xml:id="eq-right-SOH-2">
+				\frac{\sin(\theta)}{1} = \frac{r\sin(\theta)}{r}
+			</men>.
+			<xref ref="eq-right-SOH-2">Ecuación</xref> muestra que la relación de la longitud del cateto vertical de un triángulo rectángulo a la longitud de la hipotenusa del triángulo es siempre la misma (independientemente de <m>r</m>) y que el valor de esa relación es <m>\sin(\theta)</m>, donde <m>\theta</m> es el ángulo opuesto al cateto vertical. Resumimos estas observaciones recientes de la siguiente manera.
+		</p>
+	
 	<assemblage xml:id="asm-trig-right-SOH-CAH">
-		<title>Ratios in right triangles</title>
+		<title>Relaciones en triángulos rectángulos</title>
 			<sidebyside widths="60% 40%">
 				<p>
-					In a right triangle where one of the non-right angles is <m>\theta</m>, and <q>adj</q> denotes the length of the leg adjacent to <m>\theta</m>, <q>opp</q> the length the side opposite <m>\theta</m>, and <q>hyp</q> the length of the hypotenuse,
+					En un triángulo rectángulo donde uno de los ángulos no rectos es <m>\theta</m>, y <q>adj</q> denota la longitud del cateto adyacente a <m>\theta</m>, <q>opp</q> la longitud del lado opuesto a <m>\theta</m>, y <q>hyp</q> la longitud de la hipotenusa,
 					<me>
-						\cos(\theta) = \frac{\text{adj}}{\text{hyp}} \text{ and } \sin(\theta) = \frac{\text{opp}}{\text{hyp}}
+						\cos(\theta) = \frac{\text{adj}}{\text{hyp}} \text{ y } \sin(\theta) = \frac{\text{opp}}{\text{hyp}}
 					</me>.
 				</p>
 
@@ -162,46 +161,46 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-right-ratios-sin-cos">
-  	<title>Using a ratio involving sine and cosine</title>
+	<title>Usando una razón que involucra seno y coseno</title>
 
-  	<p>
-  		In <xref ref="act-trig-right-SOH-CAH">Activity</xref>, we found that in many cases where we have a right triangle, knowing two additional pieces of information enables us to find the remaining three unknown quantities in the triangle.  At this point in our studies, the following general principles hold.  
+	<p>
+		En <xref ref="act-trig-right-SOH-CAH">Activity</xref>, encontramos que en muchos casos donde tenemos un triángulo rectángulo, conocer dos piezas adicionales de información nos permite encontrar las tres cantidades desconocidas restantes en el triángulo. En este punto de nuestros estudios, los siguientes principios generales se mantienen.
 	</p>
 
 	<assemblage xml:id="asm-trig-right-missing-info">
-		<title>Missing information in right triangles</title>
-			<p>
-					In any right triangle,
-			</p>
+		<title>Información faltante en triángulos rectángulos</title>
+		<p>
+			En cualquier triángulo rectángulo,
+		</p>
 
-			<p>
-		  		<ol>
-		  			<li>
-		  				<p>
-		  					if we know one of the non-right angles and the length of the hypotenuse, we can find both the remaining non-right angle and the lengths of the two legs;
-		  				</p>
-		  			</li>
-		  			<li>
-		  				<p>
-		  					if we know the length of two sides of the triangle, then we can find the length of the other side;
-		  				</p>
-		  			</li>
-		  			<li>
-		  				<p>
-		  					if we know the measure of one non-right angle, then we can find the measure of the remaining angle.
-		  				</p>
-		  			</li>
-		  		</ol>
-			</p>
+		<p>
+			<ol>
+				<li>
+					<p>
+						si conocemos uno de los ángulos no rectos y la longitud de la hipotenusa, podemos encontrar tanto el ángulo no recto restante como las longitudes de los dos catetos;
+					</p>
+				</li>
+				<li>
+					<p>
+						si conocemos la longitud de dos lados del triángulo, entonces podemos encontrar la longitud del otro lado;
+					</p>
+				</li>
+				<li>
+					<p>
+						si conocemos la medida de un ángulo no recto, entonces podemos encontrar la medida del ángulo restante.
+					</p>
+				</li>
+			</ol>
+		</p>
 	</assemblage>
 
-  	<p>
-  		In scenario (1.), all <m>6</m> features of the triangle are not only determined, but we are able to find their values.  In (2.), the triangle is uniquely determined by the given information, but as in <xref ref="act-trig-right-SOH-CAH">Activity</xref> parts (d) and (e), while we know the values of the sine and cosine of the angles in the triangle, we haven't yet developed a way to determine the measures of those angles.  Finally, in scenario (3.), the triangle is not uniquely determined, since any magnified version of the triangle will have the same three angles as the given one, and thus we need more information to determine side length.
-  	</p>
+	<p>
+		En el escenario (1.), todas las <m>6</m> características del triángulo no solo están determinadas, sino que somos capaces de encontrar sus valores. En (2.), el triángulo está determinado de manera única por la información dada, pero como en <xref ref="act-trig-right-SOH-CAH">Activity</xref> partes (d) y (e), aunque conocemos los valores del seno y el coseno de los ángulos en el triángulo, aún no hemos desarrollado una manera de determinar las medidas de esos ángulos. Finalmente, en el escenario (3.), el triángulo no está determinado de manera única, ya que cualquier versión ampliada del triángulo tendrá los mismos tres ángulos que el dado, y por lo tanto necesitamos más información para determinar la longitud del lado.
+	</p>
 
-  	<p>
-  		We will revisit scenario (2) in our future work.  Now, however, we want to consider a situation that is similar to (1), but where it is one leg of the triangle instead of the hypotenuse that is known.  We encountered this in <xref ref="act-trig-right-SOH-CAH">Activity</xref> part (f): a right triangle where one of the non-right angles is <m>\beta = \frac{\pi}{5}</m> and the leg opposite this angle has length <m>4</m>.
-  	</p>
+	<p>
+		Revisaremos el escenario (2) en nuestro trabajo futuro. Ahora, sin embargo, queremos considerar una situación que es similar a (1), pero donde es uno de los catetos del triángulo en lugar de la hipotenusa lo que se conoce. Nos encontramos con esto en <xref ref="act-trig-right-SOH-CAH">Activity</xref> parte (f): un triángulo rectángulo donde uno de los ángulos no rectos es <m>\beta = \frac{\pi}{5}</m> y el cateto opuesto a este ángulo tiene una longitud de <m>4</m>.
+	</p>
 
 	<example xml:id="ex-right-sin-cos-ratio">  
 		<statement>
@@ -209,16 +208,16 @@
 		<sidebyside widths="55% 40%" margins="0% 0%">
                     <stack>
 		    <p>
-					Consider a right triangle in which one of the non-right angles is <m>\beta = \frac{\pi}{5}</m> and the leg opposite <m>\beta</m> has length <m>4</m>.  
+					Considera un triángulo rectángulo en el que uno de los ángulos no rectos es <m>\beta = \frac{\pi}{5}</m> y el cateto opuesto a <m>\beta</m> tiene una longitud de <m>4</m>.  
 				</p>
 
 				<p>
-					Determine (both exactly and approximately) the measures of all of the remaining sides and angles in the triangle.
+					Determina (tanto exactamente como aproximadamente) las medidas de todos los lados y ángulos restantes en el triángulo.
 				</p>
 			</stack>
 
 				<figure xml:id="F-right-triangle-ex-ratio">
-					<caption>The given right triangle.</caption>
+					<caption>El triángulo rectángulo dado.</caption>
 					<image source="images/right-triangle-ex-ratio" width="35%"/>
 				</figure>
 		</sidebyside>
@@ -226,37 +225,37 @@
 
 		</statement>
 		<solution>
-				<p>
-					From the fact that <m>\beta = \frac{\pi}{5}</m>, it follows that <m>\alpha = \frac{\pi}{2} - \frac{\pi}{5} = \frac{3\pi}{10}</m>.  In addition, we know that
-					<men xml:id="eq-right-sin-ratio">
-						\sin\left(\frac{\pi}{5}\right) = \frac{4}{h}
-					</men>
-					and
-					<men xml:id="eq-right-cos-ratio">
-						\cos\left(\frac{\pi}{5}\right) = \frac{x}{h}
-					</men>
-				</p>
+			<p>
+				Del hecho de que <m>\beta = \frac{\pi}{5}</m>, se sigue que <m>\alpha = \frac{\pi}{2} - \frac{\pi}{5} = \frac{3\pi}{10}</m>. Además, sabemos que
+				<men xml:id="eq-right-sin-ratio">
+					\sin\left(\frac{\pi}{5}\right) = \frac{4}{h}
+				</men>
+				y
+				<men xml:id="eq-right-cos-ratio">
+					\cos\left(\frac{\pi}{5}\right) = \frac{x}{h}
+				</men>
+			</p>
 
 			<p>
-				Solving <xref ref="eq-right-sin-ratio">Equation</xref> for <m>h</m>, we see that
+				Resolviendo <xref ref="eq-right-sin-ratio">Equation</xref> para <m>h</m>, vemos que
 				<men xml:id="eq-right-sin-ratio-2">
 						h = \frac{4}{\sin\left(\frac{\pi}{5}\right)}
-				</men>, which is the exact numerical value of <m>h</m>.  Substituting this result in 
-				<xref ref="eq-right-cos-ratio">Equation</xref>, we find that
+				</men>, que es el valor numérico exacto de <m>h</m>. Sustituyendo este resultado en 
+				<xref ref="eq-right-cos-ratio">Equation</xref>, encontramos que
 				<men xml:id="eq-right-cos-ratio-2">
 						\cos\left(\frac{\pi}{5}\right) = \frac{x}{\frac{4}{\sin\left(\frac{\pi}{5}\right)}}
 				</men>.
-				Solving this equation for the single unknown <m>x</m> shows that
+				Resolver esta ecuación para la única incógnita <m>x</m> muestra que
 				<me>
 					x = \frac{4 \cos\left(\frac{\pi}{5}\right)}{\sin\left(\frac{\pi}{5}\right)}
 				</me>.
-				The approximate values of <m>x</m> and <m>h</m> are <m>x \approx 5.506</m> and <m>h \approx  6.805</m>.
+				Los valores aproximados de <m>x</m> y <m>h</m> son <m>x \approx 5.506</m> y <m>h \approx  6.805</m>.
 			</p>
 		</solution>
 	</example>
 
 	<p>
-		<xref ref="ex-right-sin-cos-ratio">Example</xref> demonstrates that a ratio of values of the sine and cosine function can be needed in order to determine the value of one of the missing sides of a right triangle, and also that we may need to work with two unknown quantities simultaneously in order to determine both of their values.
+		<xref ref="ex-right-sin-cos-ratio">Example</xref> demuestra que una razón de los valores de la función seno y coseno puede ser necesaria para determinar el valor de uno de los lados faltantes de un triángulo rectángulo, y también que puede ser necesario trabajar con dos cantidades desconocidas simultáneamente para determinar ambos valores.
 	</p>
 
 	<xi:include href="./activities/act-trig-right-sine-cosine-ratio.xml" />
@@ -264,28 +263,28 @@
   </subsection>
 
   <subsection>
-  	<title>Summary</title>
+	<title>Resumen</title>
 
-  	<ul>
-  		<li>
-  			<p>
-  				In a right triangle with hypotenuse <m>1</m>, we can view <m>\cos(\theta)</m> as the length of the leg adjacent to <m>\theta</m> and <m>\sin(\theta)</m> as the length of the leg opposite <m>\theta</m>, as seen in <xref ref="F-right-sine-cosine-right">Figure</xref>.  This is simply a change in perspective achieved by focusing on the triangle as opposed to the unit circle.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				Because a right triangle with hypotenuse of length <m>r</m> can be thought of as a scaled version of a right triangle with hypotenuse of length <m>1</m>, we can conclude that in a right triangle with hypotenuse of length <m>r</m>, the leg adjacent to angle <m>\theta</m> has length <m>r\cos(\theta)</m>, and the leg opposite <m>\theta</m> has length <m>r\sin(\theta)</m>, as seen in <xref ref="F-right-triangle-r-theta">Figure</xref>.  Moreover, in any right triangle with angle <m>\theta</m>, we know that
-  				<me>
-					\cos(\theta) = \frac{\text{adj}}{\text{hyp}} \text{ and } \sin(\theta) = \frac{\text{opp}}{\text{hyp}}
-				</me>.
+	<ul>
+		<li>
+			<p>
+				En un triángulo rectángulo con hipotenusa <m>1</m>, podemos ver <m>\cos(\theta)</m> como la longitud del cateto adyacente a <m>\theta</m> y <m>\sin(\theta)</m> como la longitud del cateto opuesto a <m>\theta</m>, como se ve en <xref ref="F-right-sine-cosine-right">Figure</xref>. Esto es simplemente un cambio de perspectiva logrado al enfocarse en el triángulo en lugar del círculo unitario.
 			</p>
-  		</li>
-  		<li>
-  			<p>
-  				In a right triangle, there are five additional characteristics:  the measures of the two non-right angles and the lengths of the three sides.  In general, if we know one of those two angles and one of the three sides, we can determine all of the remaining pieces.
-  			</p>
-  		</li>
-  	</ul>
+		</li>
+		<li>
+			<p>
+				Debido a que un triángulo rectángulo con hipotenusa de longitud <m>r</m> puede considerarse una versión escalada de un triángulo rectángulo con hipotenusa de longitud <m>1</m>, podemos concluir que en un triángulo rectángulo con hipotenusa de longitud <m>r</m>, el cateto adyacente al ángulo <m>\theta</m> tiene una longitud de <m>r\cos(\theta)</m>, y el cateto opuesto a <m>\theta</m> tiene una longitud de <m>r\sin(\theta)</m>, como se ve en <xref ref="F-right-triangle-r-theta">Figure</xref>. Además, en cualquier triángulo rectángulo con ángulo <m>\theta</m>, sabemos que
+				<me>
+				  \cos(\theta) = \frac{\text{adj}}{\text{hyp}} \text{ y } \sin(\theta) = \frac{\text{opp}}{\text{hyp}}
+			  </me>.
+		  </p>
+		</li>
+		<li>
+			<p>
+				En un triángulo rectángulo, hay cinco características adicionales: las medidas de los dos ángulos no rectos y las longitudes de los tres lados. En general, si conocemos uno de esos dos ángulos y uno de los tres lados, podemos determinar todas las piezas restantes.
+			</p>
+		</li>
+	</ul>
 
   </subsection>
 
@@ -294,4 +293,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

@@ -17,7 +17,7 @@
 
 	<statement>
 		<p>
-			Suppose that <m>\beta</m> is an angle in standard position with its terminal side in quadrant II and you know that <m>\sec(\beta) = -2</m>.  Without using a computational device in any way, determine the exact values of the other five trigonometric functions evaluated at <m>\beta</m>.
+			Supón que <m>\beta</m> es un ángulo en posición estándar con su lado terminal en el cuadrante II y sabes que <m>\sec(\beta) = -2</m>. Sin usar un dispositivo de cálculo de ninguna manera, determina los valores exactos de las otras cinco funciones trigonométricas evaluadas en <m>\beta</m>.
 		</p>
 
 	</statement>
@@ -33,4 +33,3 @@
 	</solution>
 
 </activity>
-

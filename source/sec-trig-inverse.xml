@@ -14,90 +14,90 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-trig-inverse">
-  <title>Inverses of trigonometric functions</title>
+	<title>Inversas de funciones trigonométricas</title>
 
   <objectives>
   	<ul>
-  		<li>
-  			<p>
-  				Is it possible for a periodic function that fails the Horizontal Line Test to have an inverse?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				For the restricted cosine, sine, and tangent functions, how do we define the corresponding arccosine, arcsine, and arctangent functions?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What are the key properties of the arccosine, arcsine, and arctangent functions?
-  			</p>
-  		</li>
-  	</ul>
+		<li>
+			<p>
+				¿Es posible que una función periódica que no pasa la Prueba de la Línea Horizontal tenga una inversa?
+			</p>
+		</li>
+		<li>
+			<p>
+				Para las funciones coseno, seno y tangente restringidas, ¿cómo definimos las funciones arccoseno, arcseno y arctangente correspondientes?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cuáles son las propiedades clave de las funciones arccoseno, arcseno y arctangente?
+			</p>
+		</li>
+	</ul>
   </objectives>
 
   <introduction>
   	  <p>
-  		In our prior work with inverse functions, we have seen several important principles, including
+  		En nuestro trabajo previo con funciones inversas, hemos visto varios principios importantes, incluyendo
 	    <ul>
 	      <li>
 	        <p>
-	          A function <m>f</m> has an inverse function
-	          if and only if there exists a function <m>g</m> that undoes the work of <m>f</m>. Such
-	          a function <m>g</m> has the properties that
-	          <m>g(f(x)) = x</m> for each <m>x</m> in the domain of <m>f</m>,
-	          and <m>f(g(y)) = y</m> for each <m>y</m> in the range of <m>f</m>.
-	          We call <m>g</m> the inverse of <m>f</m>,
-	          and write <m>g = f^{-1}</m>.
+	          Una función <m>f</m> tiene una función inversa
+	          si y solo si existe una función <m>g</m> que deshace el trabajo de <m>f</m>. Tal
+	          función <m>g</m> tiene las propiedades de que
+	          <m>g(f(x)) = x</m> para cada <m>x</m> en el dominio de <m>f</m>,
+	          y <m>f(g(y)) = y</m> para cada <m>y</m> en el rango de <m>f</m>.
+	          Llamamos a <m>g</m> la inversa de <m>f</m>,
+	          y escribimos <m>g = f^{-1}</m>.
 	        </p>
 	      </li>
 
 	      <li>
 	        <p>
-	          A function <m>f</m> has an inverse function if and only if the graph of <m>f</m> passes the
+	          Una función <m>f</m> tiene una función inversa si y solo si el gráfico de <m>f</m> pasa la
 	          <xref ref="asm-inverse-H-L-test" text="title"/>.
 	        </p>
 	      </li>
 
 	      <li>
 	        <p>
-	          When <m>f</m> has an inverse,
-	          we know that writing <q><m>y = f(t)</m></q>
-	          and <q><m>t = f^{-1}(y)</m></q>
-	          say the exact same thing,
-	          but from two different perspectives.
+	          Cuando <m>f</m> tiene una inversa,
+	          sabemos que escribir <q><m>y = f(t)</m></q>
+	          y <q><m>t = f^{-1}(y)</m></q>
+	          dicen exactamente lo mismo,
+	          pero desde dos perspectivas diferentes.
 	        </p>
 	      </li>
 	    </ul>
   	  </p>
 
 	  <p>
-	    The trigonometric functions <m>f(t) = \sin(t)</m>,
-	    <m>g(t) = \cos(t)</m>, and <m>h(t) = \tan(t)</m> are periodic, so each fails the horizontal line test,
-	    and thus these functions on their full domains do not have inverse functions.
-	    At the same time, it is reasonable to think about changing perspective and viewing angles as outputs in certain restricted settings.
-	    For instance, we may want to say both
+	    Las funciones trigonométricas <m>f(t) = \sin(t)</m>,
+	    <m>g(t) = \cos(t)</m>, y <m>h(t) = \tan(t)</m> son periódicas, por lo que cada una no pasa la prueba de la línea horizontal,
+	    y por lo tanto estas funciones en sus dominios completos no tienen funciones inversas.
+	    Al mismo tiempo, es razonable pensar en cambiar de perspectiva y ver los ángulos como salidas en ciertos contextos restringidos.
+	    Por ejemplo, podemos querer decir tanto
 	    <me>
-	      \frac{\sqrt{3}}{2} = \cos\left(\frac{\pi}{6}\right) \ \ \ \mbox{and}  \ \ \ \frac{\pi}{6} = \cos^{-1}\left(\frac{\sqrt{3}}{2}\right)
+	      \frac{\sqrt{3}}{2} = \cos\left(\frac{\pi}{6}\right) \ \ \ \mbox{y}  \ \ \ \frac{\pi}{6} = \cos^{-1}\left(\frac{\sqrt{3}}{2}\right)
 	    </me>
-	    depending on the context in which we are considering the relationship between the angle and side length.
+	    dependiendo del contexto en el que estemos considerando la relación entre el ángulo y la longitud del lado.
 	  </p>
 
 	  <p>
-	    It's also important to understand why the issue of finding an angle in terms of a known value of a trigonometric function is important.
-	    Suppose we know the following information about a right triangle:
-	    one leg has length <m>2.5</m>, and the hypotenuse has length <m>4</m>.
-	    If we let <m>\theta</m> be the angle opposite the side of length <m>2.5</m>, it follows that <m>\sin(\theta) = \frac{2.5}{4}</m>.
-	    We naturally want to use the inverse of the sine function to solve the most recent equation for <m>\theta</m>.  But the sine function does not have an inverse function, so how can we address this situation?
+	    También es importante entender por qué el problema de encontrar un ángulo en términos de un valor conocido de una función trigonométrica es importante.
+	    Supón que sabemos la siguiente información sobre un triángulo rectángulo:
+	    un cateto tiene una longitud de <m>2.5</m>, y la hipotenusa tiene una longitud de <m>4</m>.
+	    Si dejamos que <m>\theta</m> sea el ángulo opuesto al lado de longitud <m>2.5</m>, se sigue que <m>\sin(\theta) = \frac{2.5}{4}</m>.
+	    Naturalmente queremos usar la inversa de la función seno para resolver la ecuación más reciente para <m>\theta</m>. Pero la función seno no tiene una función inversa, entonces ¿cómo podemos abordar esta situación?
 	  </p>
 
 	  <p>
-	    While the original trigonometric functions <m>f(t) = \sin(t)</m>,
-	    <m>g(t) = \cos(t)</m>, and
-	    <m>h(t) = \tan(t)</m> do not have inverse functions,
-	    it turns out that we can consider restricted versions of them that do
-	    have corresponding inverse functions.  We thus investigate how we can think differently about the 
-	    trigonometric functions so that we can discuss inverses in a meaningful way.
+	    Mientras que las funciones trigonométricas originales <m>f(t) = \sin(t)</m>,
+	    <m>g(t) = \cos(t)</m>, y
+	    <m>h(t) = \tan(t)</m> no tienen funciones inversas,
+	    resulta que podemos considerar versiones restringidas de ellas que sí
+	    tienen funciones inversas correspondientes. Así que investigamos cómo podemos pensar de manera diferente sobre las 
+	    funciones trigonométricas para que podamos discutir las inversas de una manera significativa.
 	  </p>
 
 	  <xi:include href="./previews/PA-trig-inverse.xml" />
@@ -105,59 +105,59 @@
   </introduction>
 
   <subsection xml:id="subsec-trig-inverse-arccos">
-  	<title>The arccosine function</title>
-  	<p>
-  		For the cosine function restricted to the domain <m>[0,\pi]</m> that we considered in <xref ref="PA-trig-inverse">Preview Activity</xref>, the function is strictly decreasing on its domain and thus passes the Horizontal Line Test.  Therefore, this restricted version of the cosine function has an inverse function; we will call this inverse function the <term>arccosine</term> function.
-  	</p>
+	<title>La función arccoseno</title>
+	<p>
+		Para la función coseno restringida al dominio <m>[0,\pi]</m> que consideramos en <xref ref="PA-trig-inverse">Preview Activity</xref>, la función es estrictamente decreciente en su dominio y por lo tanto pasa la Prueba de la Línea Horizontal. Por lo tanto, esta versión restringida de la función coseno tiene una función inversa; llamaremos a esta función inversa la función de <term>arccoseno</term>.
+	</p>
 
   	<definition xml:id="def-inverse-trig-arccosine">
   		<idx><h>inverse trigonometric functions</h><h>arccosine</h></idx>
   		<statement>
-  			<p>
-  				Let <m>y = g(t) = \cos(t)</m> be defined on the domain <m>[0,\pi]</m>, and observe <m>g : [0,\pi] \to [-1,1]</m>.  For any real number <m>y</m> that satisfies <m>-1 \le y \le 1</m>, the <term>arccosine of <m>y</m></term>, denoted 
-  				<me>
-  					\arccos(y)
-  				</me>
-  				is the angle <m>t</m> satisfying <m>0 \le t \le \pi</m> such that <m>\cos(t) = y</m>.
-  			</p>
-  		</statement>
+			<p>
+				Supón que <m>y = g(t) = \cos(t)</m> está definida en el dominio <m>[0,\pi]</m>, y observa <m>g : [0,\pi] \to [-1,1]</m>. Para cualquier número real <m>y</m> que satisfaga <m>-1 \le y \le 1</m>, el <term>arccoseno de <m>y</m></term>, denotado 
+				<me>
+					\arccos(y)
+				</me>
+				es el ángulo <m>t</m> que satisface <m>0 \le t \le \pi</m> tal que <m>\cos(t) = y</m>.
+			</p>
+		</statement>
   	</definition>
 
 	<p>
-		Note particularly that the output of the arccosine function is an angle.  In addition, recall that in the context of the unit circle, an angle measured in radians and the corresponding arc length along the unit circle are numerically equal.  This is why we use the <q>arc</q> in <q>arccosine</q>: given a value <m>-1 \le y \le 1</m>, the arccosine function produces the corresponding <em>arc</em> (measured counterclockwise from <m>(1,0)</m>) such that the cosine of that arc is <m>y</m>.
+		Nota particularmente que la salida de la función arccoseno es un ángulo. Además, recuerda que en el contexto del círculo unitario, un ángulo medido en radianes y la longitud del arco correspondiente a lo largo del círculo unitario son numéricamente iguales. Por eso usamos el término <q>arc</q> en <q>arccoseno</q>: dado un valor <m>-1 \le y \le 1</m>, la función arccoseno produce el <em>arco</em> correspondiente (medido en sentido antihorario desde <m>(1,0)</m>) tal que el coseno de ese arco es <m>y</m>.
 	</p>
 
 	<p>
-		We recall that for any function with an inverse function, the inverse function reverses the process of the original function.  We know that <q><m>y = \cos(t)</m></q> can be read as saying <q><m>y</m> is the cosine of the angle <m>t</m></q>.  Changing perspective and writing the equivalent statement <q><m>t = \arccos(y)</m></q>, we read this statement as <q><m>t</m> is the angle whose cosine is <m>y</m></q>.  Just as <m>y = f(t)</m> and <m>t = f^{-1}(y)</m> say the same thing for a function and its inverse in general,
+		Recordamos que para cualquier función con una función inversa, la función inversa revierte el proceso de la función original. Sabemos que <q><m>y = \cos(t)</m></q> puede leerse como decir <q><m>y</m> es el coseno del ángulo <m>t</m></q>. Cambiando de perspectiva y escribiendo la declaración equivalente <q><m>t = \arccos(y)</m></q>, leemos esta declaración como <q><m>t</m> es el ángulo cuyo coseno es <m>y</m></q>. Así como <m>y = f(t)</m> y <m>t = f^{-1}(y)</m> dicen lo mismo para una función y su inversa en general,
 		<me>
-			y = \cos(t) \ \text{ and } \ t = \arccos(y)
+			y = \cos(t) \ \text{ y } \ t = \arccos(y)
 		</me>
-		say the same thing for any angle <m>t</m> that satisfies <m>0 \le t \le \pi</m>.  We also use the equivalent notation <m>t = \cos^{-1}(y)</m> interchangeably with <m>t = \arccos(y)</m>.  We read <q><m>t = \cos^{-1}(y)</m></q> as <q><m>t</m> is the angle whose cosine is <m>y</m></q> or <q><m>t</m> is the inverse cosine of <m>y</m></q>.  Key properties of the arccosine function can be summarized as follows.
+		dicen lo mismo para cualquier ángulo <m>t</m> que satisfaga <m>0 \le t \le \pi</m>. También usamos la notación equivalente <m>t = \cos^{-1}(y)</m> indistintamente con <m>t = \arccos(y)</m>. Leemos <q><m>t = \cos^{-1}(y)</m></q> como <q><m>t</m> es el ángulo cuyo coseno es <m>y</m></q> o <q><m>t</m> es el coseno inverso de <m>y</m></q>. Las propiedades clave de la función arccoseno se pueden resumir de la siguiente manera.
 	</p>
 
 	<assemblage xml:id="asm-trig-inverse-arccos-props">
-		<title>Properties of the arccosine function</title>
+		<title>Propiedades de la función arccoseno</title>
 		<sidebyside valign="middle">
 			<p>
 				<ul>
 					<li>
 						<p>
-							The restricted cosine function, <m>y = g(t) = \cos(t)</m>, is defined on the domain <m>[0,\pi]</m> with range <m>[-1,1]</m>.  This function has an inverse function that we call the arccosine function, denoted <m>t = g^{-1}(y) = \arccos(y)</m>.		
+							La función coseno restringida, <m>y = g(t) = \cos(t)</m>, está definida en el dominio <m>[0,\pi]</m> con rango <m>[-1,1]</m>. Esta función tiene una función inversa que llamamos la función arccoseno, denotada <m>t = g^{-1}(y) = \arccos(y)</m>.		
 						</p>
 					</li>
 					<li>
 						<p>
-							The domain of <m>y = g^{-1}(t) = \arccos(t)</m> is <m>[-1,1]</m> with range <m>[0,\pi]</m>.
+							El dominio de <m>y = g^{-1}(t) = \arccos(t)</m> es <m>[-1,1]</m> con rango <m>[0,\pi]</m>.
 						</p>
 					</li>
 					<li>
 						<p>
-							The arccosine function is always decreasing on its domain.
+							La función arccoseno siempre es decreciente en su dominio.
 						</p>
 					</li>
 					<li>
 						<p>
-							At right, a plot of the restricted cosine function (in light blue) and its corresponding inverse, the arccosine function (in dark blue).
+							A la derecha, un gráfico de la función coseno restringida (en azul claro) y su inversa correspondiente, la función arccoseno (en azul oscuro).
 						</p>
 					</li>
 				</ul>
@@ -169,7 +169,7 @@
 	</assemblage>
 
 	<p>
-		Just as the natural logarithm function allowed us to rewrite exponential equations in an equivalent way (for instance, <m>y = e^t</m> and <m>t = \ln(y)</m> say the exact same thing), the arccosine function allows us to do likewise for certain angles and cosine outputs.  For instance, saying <m>\cos(\frac{\pi}{2}) = 0</m> is the same as writing <m>\frac{\pi}{2} = \arccos(0)</m>, which reads <q><m>\frac{\pi}{2}</m> is the angle whose cosine is <m>0</m></q>.  Indeed, these relationships are reflected in the plot above, where we see that any point <m>(a,b)</m> that lies on the graph of <m>y = \cos(t)</m> corresponds to the point <m>(b,a)</m> that lies on the graph of <m>y = \arccos(t)</m>.
+		Así como la función logaritmo natural nos permitió reescribir ecuaciones exponenciales de una manera equivalente (por ejemplo, <m>y = e^t</m> y <m>t = \ln(y)</m> dicen exactamente lo mismo), la función arccoseno nos permite hacer lo mismo para ciertos ángulos y salidas de coseno. Por ejemplo, decir <m>\cos(\frac{\pi}{2}) = 0</m> es lo mismo que escribir <m>\frac{\pi}{2} = \arccos(0)</m>, que se lee <q><m>\frac{\pi}{2}</m> es el ángulo cuyo coseno es <m>0</m></q>. De hecho, estas relaciones se reflejan en el gráfico anterior, donde vemos que cualquier punto <m>(a,b)</m> que se encuentra en el gráfico de <m>y = \cos(t)</m> corresponde al punto <m>(b,a)</m> que se encuentra en el gráfico de <m>y = \arccos(t)</m>.
 	</p>
 
 	<xi:include href="./activities/act-trig-inverse-arccos.xml" />
@@ -177,22 +177,22 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-inverse-arcsin">
-  	<title>The arcsine function</title>
-  	<p>
-  		We can develop an inverse function for a restricted version of the sine function in a similar way.  As with the cosine function, we need to choose an interval on which the sine function is always increasing or always decreasing in order to have the function pass the horizontal line test.  The standard choice is the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> on which <m>f(t) = \sin(t)</m> is increasing and attains all of the values in the range of the sine function.  Thus, we consider <m>f(t) = \sin(t)</m> so that <m>f : [-\frac{\pi}{2}, \frac{\pi}{2}] \to [-1,1]</m> and hence define the corresponding arcsine function.
-  	</p>
+	<title>La función arcseno</title>
+	<p>
+		Podemos desarrollar una función inversa para una versión restringida de la función seno de manera similar. Al igual que con la función coseno, necesitamos elegir un intervalo en el cual la función seno esté siempre aumentando o siempre disminuyendo para que la función pase la prueba de la línea horizontal. La elección estándar es el dominio <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> en el cual <m>f(t) = \sin(t)</m> está aumentando y alcanza todos los valores en el rango de la función seno. Así, consideramos <m>f(t) = \sin(t)</m> de modo que <m>f : [-\frac{\pi}{2}, \frac{\pi}{2}] \to [-1,1]</m> y por lo tanto definimos la correspondiente función arcseno.
+	</p>
 
 	<definition  xml:id="def-inverse-trig-arcsine">
   		<idx><h>inverse trigonometric functions</h><h>arcsine</h></idx>
   		<statement>
-  			<p>
-  				Let <m>y = f(t) = \sin(t)</m> be defined on the domain <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, and observe <m>f : [-\frac{\pi}{2},\frac{\pi}{2}] \to [-1,1]</m>.  For any real number <m>y</m> that satisfies <m>-1 \le y \le 1</m>, the <term>arcsine of <m>y</m></term>, denoted 
-  				<me>
-  					\arcsin(y)
-  				</me>
-  				is the angle <m>t</m> satisfying <m>-\frac{\pi}{2} \le t \le \frac{\pi}{2}</m> such that <m>\sin(t) = y</m>.
-  			</p>
-  		</statement>
+			<p>
+				Sea <m>y = f(t) = \sin(t)</m> definida en el dominio <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, y observa <m>f : [-\frac{\pi}{2},\frac{\pi}{2}] \to [-1,1]</m>. Para cualquier número real <m>y</m> que satisfaga <m>-1 \le y \le 1</m>, el <term>arcseno de <m>y</m></term>, denotado 
+				<me>
+					\arcsin(y)
+				</me>
+				es el ángulo <m>t</m> que satisface <m>-\frac{\pi}{2} \le t \le \frac{\pi}{2}</m> tal que <m>\sin(t) = y</m>.
+			</p>
+		</statement>
   	</definition>
 
 	<xi:include href="./activities/act-trig-inverse-arcsin.xml" />
@@ -200,23 +200,23 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-inverse-arctan">
-  	<title>The arctangent function</title>
+	<title>La función arcotangente</title>
 
-  	<p>
-  		Finally, we develop an inverse function for a restricted version of the tangent function.  We choose the domain <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> on which <m>h(t) = \tan(t)</m> is increasing and attains all of the values in the range of the tangent function.  
-  	</p>
+	<p>
+		Finalmente, desarrollamos una función inversa para una versión restringida de la función tangente. Elegimos el dominio <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> en el cual <m>h(t) = \tan(t)</m> está aumentando y alcanza todos los valores en el rango de la función tangente.  
+	</p>
 
 	<definition  xml:id="def-inverse-trig-arctan">
   		<idx><h>inverse trigonometric functions</h><h>arctangent</h></idx>
   		<statement>
-  			<p>
-  				Let <m>y = h(t) = \tan(t)</m> be defined on the domain <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>, and observe <m>h : (-\frac{\pi}{2},\frac{\pi}{2}) \to (-\infty,\infty)</m>.  For any real number <m>y</m>, the <term>arctangent of <m>y</m></term>, denoted 
-  				<me>
-  					\arctan(y)
-  				</me>
-  				is the angle <m>t</m> satisfying <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m> such that <m>\tan(t) = y</m>.
-  			</p>
-  		</statement>
+			<p>
+				Sea <m>y = h(t) = \tan(t)</m> definida en el dominio <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>, y observa <m>h : (-\frac{\pi}{2},\frac{\pi}{2}) \to (-\infin,\infin)</m>. Para cualquier número real <m>y</m>, el <term>arcotangente de <m>y</m></term>, denotado 
+				<me>
+					\arctan(y)
+				</me>
+				es el ángulo <m>t</m> que satisface <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m> tal que <m>\tan(t) = y</m>.
+			</p>
+		</statement>
   	</definition>
 
 	<xi:include href="./activities/act-trig-inverse-arctan.xml" />
@@ -224,34 +224,34 @@
   </subsection>
 
   <subsection xml:id="subsec-trig-inverse-summary">
-  	<title>Summary</title>
+  	<title>Resumen</title>
         <p>
   	<ul>
   		<li>
   			<p>
-  				Any function that fails the Horizontal Line Test cannot have an inverse function.  However, for a periodic function that fails the horizontal line test, if we restrict the domain of the function to an interval with no repeated outputs, we then determine a related function that does, in fact, have an inverse function.  By choosing such an interval carefully, it is possible for us to develop the inverse functions of the restricted cosine, sine, and tangent functions.
+  				Cualquier función que no pase la prueba de la línea horizontal no puede tener una función inversa. Sin embargo, para una función periódica que no pasa la prueba de la línea horizontal, si restringimos el dominio de la función a un intervalo sin salidas repetidas, entonces determinamos una función relacionada que, de hecho, tiene una función inversa. Al elegir dicho intervalo cuidadosamente, es posible que desarrollemos las funciones inversas de las funciones coseno, seno y tangente restringidas.
   			</p>
   		</li>
   		<li>
   			<p>
-  				We choose to define the restricted cosine, sine, and tangent functions on the respective domains <m>[0,\pi]</m>, <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, and <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>.  On each such interval, the restricted function is strictly decreasing (cosine) or strictly increasing (sine and tangent), and thus has an inverse function.  The restricted sine and cosine functions each have range <m>[-1,1]</m>, while the restricted tangent's range is the set of all real numbers.  We thus define the inverse function of each as follows:
+  				Elegimos definir las funciones coseno, seno y tangente restringidas en los dominios respectivos <m>[0,\pi]</m>, <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, y <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>. En cada uno de estos intervalos, la función restringida es estrictamente decreciente (coseno) o estrictamente creciente (seno y tangente), y por lo tanto tiene una función inversa. Las funciones seno y coseno restringidas tienen cada una un rango de <m>[-1,1]</m>, mientras que el rango de la tangente restringida es el conjunto de todos los números reales. Así, definimos la función inversa de cada una de la siguiente manera:
   			</p>
 
   			<p>
   				<ol marker="i.">
   					<li>
   						<p>
-  							For any <m>y</m> such that <m>-1 \le y \le 1</m>, the arccosine of <m>y</m> (denoted <m>\arccos(y)</m>) is the angle <m>t</m> in the interval <m>[0,\pi]</m> such that <m>\cos(t) = y</m>.  That is, <m>t</m> is the angle whose cosine is <m>y</m>. 
+  							Para cualquier <m>y</m> tal que <m>-1 \le y \le 1</m>, el arcocoseno de <m>y</m> (denotado <m>\arccos(y)</m>) es el ángulo <m>t</m> en el intervalo <m>[0,\pi]</m> tal que <m>\cos(t) = y</m>. Es decir, <m>t</m> es el ángulo cuyo coseno es <m>y</m>. 
   						</p>
   					</li>
   					<li>
   						<p>
-  							For any <m>y</m> such that <m>-1 \le y \le 1</m>, the arcsine of <m>y</m> (denoted <m>\arcsin(y)</m>) is the angle <m>t</m> in the interval <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> such that <m>\sin(t) = y</m>.  That is, <m>t</m> is the angle whose sine is <m>y</m>. 
+  							Para cualquier <m>y</m> tal que <m>-1 \le y \le 1</m>, el arcseno de <m>y</m> (denotado <m>\arcsin(y)</m>) es el ángulo <m>t</m> en el intervalo <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> tal que <m>\sin(t) = y</m>. Es decir, <m>t</m> es el ángulo cuyo seno es <m>y</m>. 
   						</p>
   					</li>
   					<li>
   						<p>
-  							For any real number <m>y</m>, the arctangent of <m>y</m> (denoted <m>\arctan(y)</m>) is the angle <m>t</m> in the interval <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> such that <m>\tan(t) = y</m>.  That is, <m>t</m> is the angle whose tangent is <m>y</m>. 
+  							Para cualquier número real <m>y</m>, el arcotangente de <m>y</m> (denotado <m>\arctan(y)</m>) es el ángulo <m>t</m> en el intervalo <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> tal que <m>\tan(t) = y</m>. Es decir, <m>t</m> es el ángulo cuyo tangente es <m>y</m>. 
   						</p>
   					</li>
   				</ol>
@@ -259,38 +259,38 @@
   		</li>
   		<li>
   			<p>
-  				To discuss the properties of the three inverse trigonometric functions, we plot them on the same axes as their corresponding restricted trigonometric functions.  When we do so, we use <m>t</m> as the input variable for both functions simultaneously so that we can plot them on the same coordinate axes.
+  				Para discutir las propiedades de las tres funciones trigonométricas inversas, las graficamos en los mismos ejes que sus correspondientes funciones trigonométricas restringidas. Cuando lo hacemos, usamos <m>t</m> como la variable de entrada para ambas funciones simultáneamente para que podamos graficarlas en los mismos ejes de coordenadas.
   			</p>
 
           <p>
-            The domain of <m>y = g^{-1}(t) = \arccos(t)</m> is <m>[-1,1]</m> with corresponding range <m>[0,\pi]</m>, and the arccosine function is always decreasing.  These facts correspond to the domain and range of the restricted cosine function and the fact that the restricted cosine function is decreasing on <m>[0,\pi]</m>.
+            El dominio de <m>y = g^{-1}(t) = \arccos(t)</m> es <m>[-1,1]</m> con el rango correspondiente <m>[0,\pi]</m>, y la función arcocoseno está siempre decreciendo. Estos hechos corresponden al dominio y rango de la función coseno restringida y al hecho de que la función coseno restringida está decreciendo en <m>[0,\pi]</m>.
           </p>
 
   			<sidebyside valign="middle" widths="48% 48%" margins="0%">
 
   				<figure xml:id="F-inverse-trig-arccosine-graph">
-  					<caption>The restricted cosine function (in light blue) and its inverse, <m>y = g^{-1}(t) = \arccos(t)</m> (in dark blue).</caption>
-  					<image source="images/inverse-trig-arccos-graph" width="50%" />
+					<caption>La función coseno restringida (en azul claro) y su inversa, <m>y = g^{-1}(t) = \arccos(t)</m> (en azul oscuro).</caption>
+					<image source="images/inverse-trig-arccos-graph" width="50%" />
   				</figure>
 
           <figure xml:id="F-inverse-trig-arcsine-graph">
-            <caption>The restricted sine function (in light blue) and its inverse, <m>y = f^{-1}(t) = \arcsin(t)</m> (in dark blue).</caption>
+            <caption>La función seno restringida (en azul claro) y su inversa, <m>y = f^{-1}(t) = \arcsin(t)</m> (en azul oscuro).</caption>
             <image source="images/inverse-trig-arcsin-graph" width="50%" />
           </figure>
 
  			</sidebyside>
 
   				<p>
-  					The domain of <m>y = f^{-1}(t) = \arcsin(t)</m> is <m>[-1,1]</m> with corresponding range <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, and the arcsine function is always increasing.  These facts correspond to the domain and range of the restricted sine function and the fact that the restricted sine function is increasing on <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>.
+  					El dominio de <m>y = f^{-1}(t) = \arcsin(t)</m> es <m>[-1,1]</m> con el rango correspondiente <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, y la función arcseno está siempre aumentando. Estos hechos corresponden al dominio y rango de la función seno restringida y al hecho de que la función seno restringida está aumentando en <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>.
   				</p>
   				
   				<p>
-  					The domain of <m>y = f^{-1}(t) = \arctan(t)</m> is the set of all real numbers with corresponding range <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>, and the arctangent function is always increasing.  These facts correspond to the domain and range of the restricted tangent function and the fact that the restricted tangent function is increasing on <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>.
+  					El dominio de <m>y = f^{-1}(t) = \arctan(t)</m> es el conjunto de todos los números reales con el rango correspondiente <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>, y la función arcotangente está siempre aumentando. Estos hechos corresponden al dominio y rango de la función tangente restringida y al hecho de que la función tangente restringida está aumentando en <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>.
   				</p>
 
   				<figure xml:id="F-inverse-trig-arctangent-graph">
-  					<caption>The restricted tangent function (in light blue) and its inverse, <m>y = h^{-1}(t) = \arctan(t)</m> (in dark blue).</caption>
-  					<image source="images/inverse-trig-arctan-graph" width="50%" />
+					<caption>La función tangente restringida (en azul claro) y su inversa, <m>y = h^{-1}(t) = \arctan(t)</m> (en azul oscuro).</caption>
+					<image source="images/inverse-trig-arctan-graph" width="50%" />
   				</figure>
 
   		</li>
@@ -303,4 +303,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-
