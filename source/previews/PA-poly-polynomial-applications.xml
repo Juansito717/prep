@@ -17,34 +17,34 @@
 
 	<statement>
 		<p>
-			A piece of cardboard that is <m>12 \times 18</m> (each measured in inches) is being made into a box without a top.  To do so, squares are cut from each corner of the cardboard and the remaining sides are folded up.
+			Un pedazo de cartón que mide <m>12 \times 18</m> (cada medida en pulgadas) se está convirtiendo en una caja sin tapa. Para hacerlo, se cortan cuadrados de cada esquina del cartón y los lados restantes se pliegan hacia arriba.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Let <m>x</m> be the side length of the squares being cut from the corners of the cardboard.  Draw a labeled diagram that shows the given information and the variable being used.
+						Deja que <m>x</m> sea la longitud del lado de los cuadrados que se cortan de las esquinas del cartón. Dibuja un diagrama etiquetado que muestre la información dada y la variable que se está utilizando.
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine a formula for the function <m>V</m> whose output is the volume of the box that results from a square of size <m>x \times x</m> being cut from each corner of the cardboard.
+						Determina una fórmula para la función <m>V</m> cuyo resultado es el volumen de la caja que resulta de un cuadrado de tamaño <m>x \times x</m> cortado de cada esquina del cartón.
 					</p>
 				</li>
 				<li>
 					<p>
-						What familiar kind of function is <m>V</m>?
+						¿Qué tipo familiar de función es <m>V</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						If we start with a small positive value for <m>x</m> and let that value get larger and larger, what is the first value of <m>x</m>we encounter that makes it impossible to remove <m>x \times x</m> squares from the cardboard and still form a box?
+						Si comenzamos con un valor positivo pequeño para <m>x</m> y dejamos que ese valor se haga más y más grande, ¿cuál es el primer valor de <m>x</m> que encontramos que hace imposible quitar cuadrados de <m>x \times x</m> del cartón y aún formar una caja?
 					</p>
 				</li>
 				<li>
 					<p>
-						What are the zeros of <m>V</m>?  What is the domain of the model <m>V</m> in the context of the rectangular box?
+						¿Cuáles son los ceros de <m>V</m>? ¿Cuál es el dominio del modelo <m>V</m> en el contexto de la caja rectangular?
 					</p>
 				</li>
 			</ol>

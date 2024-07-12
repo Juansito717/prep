@@ -17,53 +17,53 @@
 
 	<statement>
 		<p>
-			Point your browser to the <em>Desmos</em> worksheet at <url href="http://gvsu.edu/s/0zu">http://gvsu.edu/s/0zu</url>.
-			In what follows, we explore the behavior of power functions of the form <m>y = x^n</m> where <m>n \ge 1</m>.
+			Dirige tu navegador a la hoja de trabajo de <em>Desmos</em> en <url href="http://gvsu.edu/s/0zu">http://gvsu.edu/s/0zu</url>.
+			En lo que sigue, exploramos el comportamiento de las funciones de potencia de la forma <m>y = x^n</m> donde <m>n \ge 1</m>.
 		</p>
-
+		
 		<p>
 			<ol marker="a.">
-		        <li>
-		          <p>
-		            Press the <q>play</q> button next to the slider labeled <q><m>n</m>.</q>
-		            Watch at least two loops of the animation and then discuss the trends that you observe.
-		            Write a careful sentence each for at least two different trends.
-		          </p>
-		        </li>
-
-		        <li>
-		          <p>
-		            Click the icons next to each of the following 8 functions so that you can see all of <m>y = x</m>,
-		            <m>y = x^2</m>, <m>\ldots</m>,
-		            <m>y = x^8</m> graphed at once.
-		            On the interval <m>0 \lt x \lt 1</m>,
-		            how do the graphs of <m>x^a</m> and <m>x^b</m> compare if <m>a \lt b</m>?
-		          </p>
-		        </li>
-
-		        <li>
-		          <p>
-		            Uncheck the icons on each of the 8 functions to hide their graphs.
-		            Click the settings icon to change the domain settings for the axes,
-		            and change them to <m>-10 \le x \le 10</m> and <m>-10,000 \le y \le 10,000</m>.
-		            Play the animation through twice and then discuss the trends that you observe.
-		            Write a careful sentence each for at least two different trends.
-		          </p>
-		        </li>
-
-		        <li>
-		          <p>
-		            Click the icons next to each of the following 8 functions so that you can see all of <m>y = x</m>,
-		            <m>y = x^2</m>, <m>\ldots</m>,
-		            <m>y = x^8</m> graphed at once.
-		            On the interval <m>x \gt 1</m>,
-		            how do the graphs of <m>x^a</m> and <m>x^b</m> compare if <m>a \lt b</m>?
-		          </p>
-		        </li>
-
-		    </ol>
+				<li>
+				  <p>
+					Presiona el botón <q>play</q> junto al deslizador etiquetado <q><m>n</m>.</q>
+					Observa al menos dos bucles de la animación y luego discute las tendencias que observas.
+					Escribe una oración cuidadosa para al menos dos tendencias diferentes.
+				  </p>
+				</li>
+		
+				<li>
+				  <p>
+					Haz clic en los íconos junto a cada una de las siguientes 8 funciones para que puedas ver todas <m>y = x</m>,
+					<m>y = x^2</m>, <m>\ldots</m>,
+					<m>y = x^8</m> graficadas a la vez.
+					En el intervalo <m>0 \lt x \lt 1</m>,
+					¿cómo se comparan las gráficas de <m>x^a</m> y <m>x^b</m> si <m>a \lt b</m>?
+				  </p>
+				</li>
+		
+				<li>
+				  <p>
+					Desmarca los íconos en cada una de las 8 funciones para ocultar sus gráficas.
+					Haz clic en el ícono de configuración para cambiar la configuración del dominio de los ejes,
+					y cámbialos a <m>-10 \le x \le 10</m> y <m>-10,000 \le y \le 10,000</m>.
+					Reproduce la animación dos veces y luego discute las tendencias que observas.
+					Escribe una oración cuidadosa para al menos dos tendencias diferentes.
+				  </p>
+				</li>
+		
+				<li>
+				  <p>
+					Haz clic en los íconos junto a cada una de las siguientes 8 funciones para que puedas ver todas <m>y = x</m>,
+					<m>y = x^2</m>, <m>\ldots</m>,
+					<m>y = x^8</m> graficadas a la vez.
+					En el intervalo <m>x \gt 1</m>,
+					¿cómo se comparan las gráficas de <m>x^a</m> y <m>x^b</m> si <m>a \lt b</m>?
+				  </p>
+				</li>
+		
+			</ol>
 		</p>
-
+		
 	</statement>
 	<answer>
 		<p>
@@ -77,4 +77,3 @@
 	</solution>
 
 </activity>
-

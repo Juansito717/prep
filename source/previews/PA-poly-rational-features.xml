@@ -17,7 +17,7 @@
 
 	<statement>
 		<p>
-			Consider the rational function <m>r(x) = \frac{x^2 - 1}{x^2 - 3x - 4}</m>, and let <m>p(x) = x^2 - 1</m> (the numerator of <m>r(x)</m>) and <m>q(x) = x^2 - 3x - 4</m> (the denominator of <m>r(x)</m>).
+			Considera la función racional <m>r(x) = \frac{x^2 - 1}{x^2 - 3x - 4}</m>, y sea <m>p(x) = x^2 - 1</m> (el numerador de <m>r(x)</m>) y <m>q(x) = x^2 - 3x - 4</m> (el denominador de <m>r(x)</m>).
 		</p>
 
 <!--
@@ -31,17 +31,17 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						Reasoning algebraically, for what values of <m>x</m> is <m>p(x) = 0</m>?
+						Razonando algebraicamente, ¿para qué valores de <m>x</m> es <m>p(x) = 0</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Again reasoning algebraically, for what values of <m>x</m> is <m>q(x) = 0</m>?
+						Nuevamente razonando algebraicamente, ¿para qué valores de <m>x</m> es <m>q(x) = 0</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Define <m>r(x)</m> in <em>Desmos</em>, and evaluate the function appropriately to find numerical values for the output of <m>r</m> and hence complete the following tables.
+						Define <m>r(x)</m> en <em>Desmos</em>, y evalúa la función apropiadamente para encontrar valores numéricos para la salida de <m>r</m> y así completar las siguientes tablas.
 					</p>
 
 					<sidebyside>
@@ -141,22 +141,22 @@
 				</li>
 				<li>
 					<p>
-						Why does <m>r</m> behave the way it does near <m>x = 4</m>?  Explain by describing the behavior of the numerator and denominator.
+						¿Por qué <m>r</m> se comporta de la manera en que lo hace cerca de <m>x = 4</m>? Explica describiendo el comportamiento del numerador y el denominador.
 					</p>
 				</li>
 				<li>
 					<p>
-						Why does <m>r</m> behave the way it does near <m>x = 1</m>?  Explain by describing the behavior of the numerator and denominator.
+						¿Por qué <m>r</m> se comporta de la manera en que lo hace cerca de <m>x = 1</m>? Explica describiendo el comportamiento del numerador y el denominador.
 					</p>
 				</li>
 				<li>
 					<p>
-						Why does <m>r</m> behave the way it does near <m>x = -1</m>?  Explain by describing the behavior of the numerator and denominator.
+						¿Por qué <m>r</m> se comporta de la manera en que lo hace cerca de <m>x = -1</m>? Explica describiendo el comportamiento del numerador y el denominador.
 					</p>
 				</li>
 				<li>
 					<p>
-						Plot <m>r</m> in <em>Desmos</em>.  Is there anything surprising or misleading about the graph that <em>Desmos</em> generates?
+						Grafica <m>r</m> en <em>Desmos</em>. ¿Hay algo sorprendente o engañoso sobre el gráfico que <em>Desmos</em> genera?
 					</p>
 				</li>				
 			</ol>

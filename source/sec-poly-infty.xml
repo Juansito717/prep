@@ -14,155 +14,155 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-poly-infty">
-  <title>Infinity, limits, and power functions</title>
+<title>Infinito, límites y funciones de potencia</title>
 
-  <objectives>
-  	<ul>
-  		<li>
-  			<p>
-  				How can we use limit notation to succinctly express a function's behavior as the input increases without bound or as the function's value increases without bound?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What are some important limits and trends involving <m>\infty</m> that we can observe for familiar functions such as <m>e^x</m>, <m>\ln(x)</m>, <m>x^2</m>, and <m>\frac{1}{x}</m>?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What is a power function and how does the value of the power determine the function's overall behavior?
-  			</p>
-  		</li>
-  	</ul>
-  </objectives>
-
+<objectives>
+	<ul>
+		<li>
+			<p>
+				¿Cómo podemos usar la notación de límite para expresar sucintamente el comportamiento de una función a medida que la entrada aumenta sin límite o a medida que el valor de la función aumenta sin límite?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Cuáles son algunos límites y tendencias importantes que involucran <m>\infty</m> que podemos observar en funciones familiares como <m>e^x</m>, <m>\ln(x)</m>, <m>x^2</m> y <m>\frac{1}{x}</m>?
+			</p>
+		</li>
+		<li>
+			<p>
+				¿Qué es una función de potencia y cómo determina el valor de la potencia el comportamiento general de la función?
+			</p>
+		</li>
+	</ul>
+</objectives>
+	
   <introduction>
-  	<p>
-  		In <xref ref="sec-exp-modeling">Section</xref>, we compared the behavior of the exponential functions <m>p(t) = 2^t</m> and <m>q(t) = (\frac{1}{2})^t</m>, and observed in <xref ref="F-modeling-exp-reflection">Figure</xref> that as <m>t</m> increases without bound, <m>p(t)</m> also increases without bound, while <m>q(t)</m> approaches <m>0</m> (while having its value be always positive).  We also introduced shorthand notation for describing these phenomena, writing 
-  		<me>
-  			p(t) \to \infty \text{ as } t \to \infty
-  		</me>
-  		and 
-  		<me>
-  			q(t) \to 0 \text{ as } t \to \infty
-  		</me>.
-  		It's important to remember that infinity is not itself a number.  We use the <q><m>\infty</m></q> symbol to represent a quantity that gets larger and larger with no bound on its growth.
-  	</p>
+	<p>
+		En <xref ref="sec-exp-modeling">Sección</xref>, comparamos el comportamiento de las funciones exponenciales <m>p(t) = 2^t</m> y <m>q(t) = (\frac{1}{2})^t</m>, y observamos en <xref ref="F-modeling-exp-reflection">Figura</xref> que a medida que <m>t</m> aumenta sin límite, <m>p(t)</m> también aumenta sin límite, mientras que <m>q(t)</m> se aproxima a <m>0</m> (aunque su valor siempre sea positivo). También introdujimos una notación abreviada para describir estos fenómenos, escribiendo 
+		<me>
+			p(t) \to \infty \text{ as } t \to \infty
+		</me>
+		y 
+		<me>
+			q(t) \to 0 \text{ as } t \to \infty
+		</me>.
+		Es importante recordar que el infinito no es en sí mismo un número. Usamos el símbolo <q><m>\infty</m></q> para representar una cantidad que se hace cada vez más grande sin límite en su crecimiento.
+	</p>
 
-  	<p>
-  		We also know that the concept of infinity plays a key role in understanding the graphical behavior of functions.  For instance, we've seen that for a function such as <m>F(t) = 72 - 45e^{-0.05t}</m>, <m>F(t) \to 72</m> as <m>t \to \infty</m>, since <m>e^{-0.05t} \to 0</m> as <m>t</m> increases without bound.  The function <m>F</m> can be viewed as modeling the temperature of an object that is initially <m>F(0) = 72-45 = 27</m> degrees that eventually warms to <m>72</m> degrees.  The line <m>y = 72</m> is thus a horizontal asymptote of the function <m>F</m>.
-  	</p>
+	<p>
+		También sabemos que el concepto de infinito juega un papel clave en la comprensión del comportamiento gráfico de las funciones. Por ejemplo, hemos visto que para una función como <m>F(t) = 72 - 45e^{-0.05t}</m>, <m>F(t) \to 72</m> a medida que <m>t \to \infty</m>, ya que <m>e^{-0.05t} \to 0</m> a medida que <m>t</m> aumenta sin límite. La función <m>F</m> puede verse como un modelo de la temperatura de un objeto que inicialmente es <m>F(0) = 72-45 = 27</m> grados y que eventualmente se calienta a <m>72</m> grados. La línea <m>y = 72</m> es asíntota horizontal de la función <m>F</m>.
+	</p>
 
-  	<p>
-  		In <xref ref="PA-poly-infty">Preview</xref>, we review some familiar functions and portions of their behavior that involve <m>\infty</m>.
-  	</p>
+	<p>
+		En <xref ref="PA-poly-infty">Vista previa</xref>, revisamos algunas funciones familiares y partes de su comportamiento que involucran <m>\infty</m>.
+	</p>
 
   	<xi:include href="./previews/PA-poly-infty.xml" />
 
   </introduction>
 
   <subsection xml:id="subsec-poly-infty-limit">
-  	<title>Limit notation</title>
-  	<p>
-  		When observing a pattern in the values of a function that correspond to letting the inputs get closer and closer to a fixed value or letting the inputs increase or decrease without bound, we are often interested in the behavior of the function <q>in the limit</q>.  In either case, we are considering an infinite collection of inputs that are themselves following a pattern, and we ask the question <q>how can we expect the function's output to behave if we continue?</q>  
-  	</p>
-
-  	<p>
-  		For instance, we have regularly observed that <q>as <m>t \to \infty</m>, <m>e^{-t} \to 0</m>,</q> which means that by allowing <m>t</m> to get bigger and bigger without bound, we can make <m>e^{-t}</m> get as close to <m>0</m> as we'd like (without <m>e^{-t}</m> ever equalling <m>0</m>, since <m>e^{-t}</m> is always positive).
-  	</p>
-
-  	<sidebyside width="50%">
-  		<figure xml:id="F-exp-reflection">
-  			<caption>Plots of <m>y = e^t</m> and <m>y = e^{-t}</m>.</caption>
-  			<image source="images/infty-exp-reflection" />
-  		</figure>
-  		<figure xml:id="F-exp-log">
-  			<caption>Plots of <m>y = e^t</m> and <m>y = \ln(t)</m>.</caption>
-  			<image source="images/infty-log-graph" />
-  		</figure>
-  	</sidebyside>
-
-  	<p>
-  		Similarly, as seen in <xref ref="F-exp-reflection">Figure</xref> and <xref ref="F-exp-log">Figure</xref>, we can make such observations as <m>e^t \to \infty</m> as <m>t \to \infty</m>, <m>\ln(t) \to \infty</m> as <m>t \to \infty</m>, and <m>\ln(t) \to -\infty</m> as <m>t \to 0^+</m>.  We introduce formal <em>limit notation</em> in order to be able to express these patterns even more succinctly.
-  	</p>
-
+	<title>Notación de límites</title>
+	<p>
+		Cuando observamos un patrón en los valores de una función que corresponden a dejar que las entradas se acerquen cada vez más a un valor fijo o dejar que las entradas aumenten o disminuyan sin límite, a menudo nos interesa el comportamiento de la función <q>en el límite</q>. En cualquier caso, estamos considerando una colección infinita de entradas que siguen un patrón, y nos preguntamos <q>¿cómo podemos esperar que se comporte la salida de la función si continuamos?</q>
+	</p>
+	
+	<p>
+		Por ejemplo, hemos observado regularmente que <q>cuando <m>t \to \infty</m>, <m>e^{-t} \to 0</m>,</q> lo que significa que al permitir que <m>t</m> se haga cada vez más grande sin límite, podemos hacer que <m>e^{-t}</m> se acerque tanto a <m>0</m> como queramos (sin que <m>e^{-t}</m> llegue a ser igual a <m>0</m>, ya que <m>e^{-t}</m> siempre es positivo).
+	</p>
+	
+	<sidebyside width="50%">
+		<figure xml:id="F-exp-reflection">
+			<caption>Gráficas de <m>y = e^t</m> y <m>y = e^{-t}</m>.</caption>
+			<image source="images/infty-exp-reflection" />
+		</figure>
+		<figure xml:id="F-exp-log">
+			<caption>Gráficas de <m>y = e^t</m> y <m>y = \ln(t)</m>.</caption>
+			<image source="images/infty-log-graph" />
+		</figure>
+	</sidebyside>
+	
+	<p>
+		De manera similar, como se ve en <xref ref="F-exp-reflection">Figura</xref> y <xref ref="F-exp-log">Figura</xref>, podemos hacer observaciones como <m>e^t \to \infty</m> cuando <m>t \to \infty</m>, <m>\ln(t) \to \infty</m> cuando <m>t \to \infty</m>, y <m>\ln(t) \to -\infty</m> cuando <m>t \to 0^+</m>. Introducimos la <em>notación de límites</em> formal para poder expresar estos patrones de manera aún más concisa.
+	</p>
+	
   	<definition xml:id="def-infty-limit">
   		<idx><h>limit</h><h>involving infinity</h></idx>
   		<idx><h>increasing without bound</h></idx>
   		<statement>
-  			<p>
-  				Let <m>L</m> be a real number and <m>f</m> be a function.  If we can make the value of <m>f(t)</m> as close to <m>L</m> as we want by letting <m>t</m> increase without bound, we write
-	  			<me>
-	  				\lim_{t \to \infty} f(t) = L
-	  			</me>
-	  			and say that the <term>limit of <m>f</m> as <m>t</m> increases without bound is <m>L</m></term>.  
-  			</p> 
-
-  			<p>
-  				If the value of <m>f(t)</m> increases without bound as <m>t</m> increases without bound, we instead write
-	  			<me>
-	  				\lim_{t \to \infty} f(t) = \infty
-	  			</me>.
-  			</p>
-
-  			<p>
-  				Finally, if <m>f</m> doesn't increase without bound, doesn't decrease without bound, and doesn't approach a single value <m>L</m> as <m>t \to \infty</m>, we say that <term><m>f</m> does not have a limit as <m>t \to \infty</m></term>.
-  			</p>
-  		</statement>
+			<p>
+				Sea <m>L</m> un número real y <m>f</m> una función. Si podemos hacer que el valor de <m>f(t)</m> se acerque tanto a <m>L</m> como queramos dejando que <m>t</m> aumente sin límite, escribimos
+				<me>
+					\lim_{t \to \infty} f(t) = L
+				</me>
+				y decimos que el <term>límite de <m>f</m> cuando <m>t</m> aumenta sin límite es <m>L</m></term>.
+			</p> 
+	
+			<p>
+				Si el valor de <m>f(t)</m> aumenta sin límite cuando <m>t</m> aumenta sin límite, en su lugar escribimos
+				<me>
+					\lim_{t \to \infty} f(t) = \infty
+				</me>.
+			</p>
+	
+			<p>
+				Finalmente, si <m>f</m> no aumenta sin límite, no disminuye sin límite y no se acerca a un solo valor <m>L</m> cuando <m>t \to \infty</m>, decimos que <term><m>f</m> no tiene un límite cuando <m>t \to \infty</m></term>.
+			</p>
+		</statement>
   	</definition>
 
-  	<p>
-  		We use limit notation in related, natural ways to express patterns we see in function behavior.  For instance, we write <m>t \to -\infty</m> when we let <m>t</m> decrease without bound, and <m>f(t) \to -\infty</m> if <m>f</m> decreases without bound.  We can also think about an input value <m>t</m> approaching a value <m>a</m> at which the function <m>f</m> is not defined.  As one example, we write
-  		<me>
-  			\lim_{t \to 0^+} \ln(t) = -\infty
-  		</me>
-  		because the natural logarithm function decreases without bound as input values get closer and closer to <m>0</m> (while always being positive), as seen in <xref ref="F-exp-log">Figure</xref>.
-  	</p>
-
-  	<p>
-  		In the situation where <m>\lim_{t \to \infty} f(t) = L</m>, this tells us that <m>f</m> has a horizontal asymptote <idx><h>horizontal asymptote</h></idx> at <m>y = L</m> since the function's value approaches this fixed number as <m>t</m> increases without bound.  Similarly, if we can say that <m>\lim_{t \to a} f(t) = \infty</m>, this shows that <m>f</m> has a vertical asymptote <idx><h>vertical asymptote</h></idx> at <m>x = a</m> since the function's value increases without bound as inputs approach the fixed number <m>a</m>.
-  	</p>
-
-  	<p>
-  		For now, we are going to focus on the long-range behavior of certain basic, familiar functions and work to understand how they behave as the input increases or decreases without bound.  Above we've used the input variable <m>t</m> in most of our previous work; going forward, we'll regularly use <m>x</m> as well.
-  	</p>
-
+	<p>
+		Usamos la notación de límites de maneras relacionadas y naturales para expresar los patrones que vemos en el comportamiento de las funciones. Por ejemplo, escribimos <m>t \to -\infty</m> cuando dejamos que <m>t</m> disminuya sin límite, y <m>f(t) \to -\infty</m> si <m>f</m> disminuye sin límite. También podemos pensar en un valor de entrada <m>t</m> acercándose a un valor <m>a</m> en el cual la función <m>f</m> no está definida. Como un ejemplo, escribimos
+		<me>
+			\lim_{t \to 0^+} \ln(t) = -\infty
+		</me>
+		porque la función del logaritmo natural disminuye sin límite a medida que los valores de entrada se acercan cada vez más a <m>0</m> (mientras siempre son positivos), como se ve en <xref ref="F-exp-log">Figura</xref>.
+	</p>
+	
+	<p>
+		En la situación donde <m>\lim_{t \to \infty} f(t) = L</m>, esto nos dice que <m>f</m> tiene una asíntota horizontal <idx><h>asíntota horizontal</h></idx> en <m>y = L</m> ya que el valor de la función se acerca a este número fijo cuando <m>t</m> aumenta sin límite. De manera similar, si podemos decir que <m>\lim_{t \to a} f(t) = \infty</m>, esto muestra que <m>f</m> tiene una asíntota vertical <idx><h>asíntota vertical</h></idx> en <m>x = a</m> ya que el valor de la función aumenta sin límite a medida que las entradas se acercan al número fijo <m>a</m>.
+	</p>
+	
+	<p>
+		Por ahora, vamos a centrarnos en el comportamiento a largo plazo de ciertas funciones básicas y familiares y trabajaremos para entender cómo se comportan a medida que la entrada aumenta o disminuye sin límite. Arriba hemos usado la variable de entrada <m>t</m> en la mayoría de nuestro trabajo anterior; en adelante, también usaremos regularmente <m>x</m>.
+	</p>
+	
   	<xi:include href="./activities/act-poly-infty-limit.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-poly-infty-power">
-  	<title>Power functions</title>
-  	<p>
-  		To date, we have worked with several families of functions:
-	    linear functions of form <m>y = mx + b</m>,
-	    quadratic functions in standard form, <m>y = ax^2 + bx + c</m>,
-	    the sinusoidal (trigonometric) functions <m>y = a\sin(k(x-b))+c</m> or <m>y = a\cos(k(x-b))+c</m>,
-	    transformed exponential functions such as <m>y = ae^{kx} + c</m>,
-	    and transformed logarithmic functions of form <m>y = a\ln(x) + c</m>.  For trigonometric, exponential, and logarithmic functions, it was essential that we first understood the behavior of the basic parent functions <m>\sin(x)</m>, <m>\cos(x)</m>, <m>e^x</m>, and <m>\ln(x)</m>.  In order to build on our prior work with linear and quadratic functions, we now consider basic functions such as <m>x</m>, <m>x^2</m>, and additional powers of <m>x</m>.
-  	</p>
-
+	<title>Funciones de potencia</title>
+	<p>
+		Hasta la fecha, hemos trabajado con varias familias de funciones:
+		funciones lineales de la forma <m>y = mx + b</m>,
+		funciones cuadráticas en forma estándar, <m>y = ax^2 + bx + c</m>,
+		las funciones sinusoidales (trigonométricas) <m>y = a\sin(k(x-b))+c</m> o <m>y = a\cos(k(x-b))+c</m>,
+		funciones exponenciales transformadas como <m>y = ae^{kx} + c</m>,
+		y funciones logarítmicas transformadas de la forma <m>y = a\ln(x) + c</m>. Para las funciones trigonométricas, exponenciales y logarítmicas, fue esencial que primero entendiéramos el comportamiento de las funciones básicas parentales <m>\sin(x)</m>, <m>\cos(x)</m>, <m>e^x</m>, y <m>\ln(x)</m>. Para construir sobre nuestro trabajo previo con funciones lineales y cuadráticas, ahora consideramos funciones básicas como <m>x</m>, <m>x^2</m>, y potencias adicionales de <m>x</m>.
+	</p>
+	
 	<definition xml:id="def-poly-power-function">
 		<idx><h>power function</h></idx>
 		<statement>
-			<p>A function of the form <m>f(x) = x^p</m> where <m>p</m> is any real number is called a <term>power function</term>.</p>
+			<p>Una función de la forma <m>f(x) = x^p</m> donde <m>p</m> es cualquier número real se llama <term>función de potencia</term>.</p>
 		</statement>
 	</definition>
 
 	<p>
-		We first focus on the case where <m>p</m> is a natural number (that is, a positive whole number).
+		Primero nos enfocamos en el caso donde <m>p</m> es un número natural (es decir, un número entero positivo).
 	</p>
-
+	
 	<xi:include href="./activities/act-poly-infty-natural-powers.xml" />
 
 	<p>
-		In the situation where the power <m>p</m> is a negative integer (i.e., a negative whole number), power functions behave very differently.  This is because of the property of exponents that states
+		En la situación donde la potencia <m>p</m> es un número entero negativo (es decir, un número entero negativo), las funciones de potencia se comportan de manera muy diferente. Esto se debe a la propiedad de los exponentes que dice
 		<me>
 			x^{-n} = \frac{1}{x^n}
 		</me>
-		so for a power function such as <m>p(x) = x^{-2}</m>, we can equivalently consider <m>p(x) = \frac{1}{x^2}</m>.  Note well that for these functions, their domain is the set of all real numbers except <m>x = 0</m>.  Like with power functions with positive whole number powers, we want to know how power functions with negative whole number powers behave as <m>x</m> increases without bound, as well as how the functions behave near <m>x = 0</m>.  
+		por lo que para una función de potencia como <m>p(x) = x^{-2}</m>, podemos considerar de manera equivalente <m>p(x) = \frac{1}{x^2}</m>. Nota bien que para estas funciones, su dominio es el conjunto de todos los números reales excepto <m>x = 0</m>. Al igual que con las funciones de potencia con potencias de números enteros positivos, queremos saber cómo se comportan las funciones de potencia con potencias de números enteros negativos a medida que <m>x</m> aumenta sin límite, así como cómo se comportan las funciones cerca de <m>x = 0</m>.
 	</p>
-
+	
 	<xi:include href="./activities/act-poly-infty-negative-powers.xml" />
 
   </subsection>
@@ -171,30 +171,30 @@
   	<title>Summary</title>
 	<ul>
   		<li>
-  			<p>
-  				The notation
-  				<me>
-  					\lim_{x \to \infty} f(x) = L
-  				</me>
-  				means that we can make the value of <m>f(x)</m> as close to <m>L</m> as we'd like by letting <m>x</m> be sufficiently large.  This indicates that the value of <m>f</m> eventually stops changing much and tends to a single value, and thus <m>y = L</m> is a horizontal asymptote of the function <m>f</m>.
-  			</p>
-
-  			<p>
-  				Similarly, the notation
-  				<me>
-  					\lim_{x \to a} f(x) = \infty
-  				</me>
-  				means that we can make the value of <m>f(x)</m> as large as we'd like by letting <m>x</m> be sufficiently close, but not equal, to <m>a</m>.  This unbounded behavior of <m>f</m> near a finite value <m>a</m> indicates that <m>f</m> has a vertical asymptote at <m>x = a</m>.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				We summarize some key behavior of familiar basic functions with limits as <m>x</m> increases without bound in <xref ref="T-familiar-infty-limits-summary">Table</xref>.
-  			</p>
-
+			<p>
+				La notación
+				<me>
+				  \lim_{x \to \infty} f(x) = L
+				</me>
+				significa que podemos hacer el valor de <m>f(x)</m> tan cercano a <m>L</m> como queramos dejando que <m>x</m> sea suficientemente grande. Esto indica que el valor de <m>f</m> eventualmente deja de cambiar mucho y tiende a un solo valor, y por lo tanto <m>y = L</m> es una asíntota horizontal de la función <m>f</m>.
+			  </p>
+		  
+			  <p>
+				De manera similar, la notación
+				<me>
+				  \lim_{x \to a} f(x) = \infty
+				</me>
+				significa que podemos hacer el valor de <m>f(x)</m> tan grande como queramos dejando que <m>x</m> esté suficientemente cerca, pero no igual, a <m>a</m>. Este comportamiento ilimitado de <m>f</m> cerca de un valor finito <m>a</m> indica que <m>f</m> tiene una asíntota vertical en <m>x = a</m>.
+			  </p>
+			</li>
+			<li>
+			  <p>
+				Resumimos algunos comportamientos clave de funciones básicas conocidas con límites a medida que <m>x</m> aumenta sin límite en <xref ref="T-familiar-infty-limits-summary">Tabla</xref>.
+			  </p>
+		  
   		<table xml:id="T-familiar-infty-limits-summary">
-			<title>Some familiar functions and their limits as <m>x \to \infty</m> or <m>x \to -\infty</m>.</title>
-			  <tabular>
+			<title>Algunas funciones conocidas y sus límites cuando <m>x \to \infty</m> o <m>x \to -\infty</m>.</title>
+			<tabular>
 			    <row bottom="medium" halign="center">
 			      <cell><m>f(x)</m></cell>
 			      <cell><m>\lim_{x \to \infty} f(x)</m></cell>
@@ -213,7 +213,7 @@
 			    <row bottom="minor" halign="center">
 			      <cell><m>\ln(x)</m></cell>
 			      <cell><m>\infty</m></cell>
-			      <cell>NA<fn>Because the domain of the natural logarithm function is only positive real numbers, it doesn't make sense to even consider this limit.</fn></cell>
+				  <cell>NA<fn>Porque el dominio de la función logaritmo natural son solo números reales positivos, no tiene sentido considerar este límite.</fn></cell>
 			    </row>
 			    <row bottom="minor" halign="center">
 			      <cell><m>x</m></cell>
@@ -247,19 +247,19 @@
 			    </row>
 			    <row halign="center">
 			      <cell><m>\sin(x)</m></cell>
-			      <cell>no limit<fn>Because the sine function neither increases without bound nor approaches a single value, but rather keeps oscillating through every value between <m>-1</m> and <m>1</m> repeatedly, the sine function does not have a limit as <m>x \to \infty</m>.</fn></cell>
-			      <cell>no limit</cell>
-			    </row>
+				  <cell>sin límite<fn>Porque la función seno ni aumenta sin límite ni se aproxima a un solo valor, sino que sigue oscilando a través de cada valor entre <m>-1</m> y <m>1</m> repetidamente, la función seno no tiene un límite cuando <m>x \to \infty</m>.</fn></cell>
+				  <cell>sin límite</cell>
+				</row>
 			  </tabular>
 			</table>
 
 			<p>
-				Additionally, <xref ref="T-familiar-infty-limits-summary-2">Table</xref> summarizes some key familiar function behavior where the function's output increases or decreases without bound as <m>x</m> approaches a fixed number not in the function's domain.
+				Además, <xref ref="T-familiar-infty-limits-summary-2">Tabla</xref> resume algunos comportamientos clave de funciones conocidas donde la salida de la función aumenta o disminuye sin límite a medida que <m>x</m> se aproxima a un número fijo que no está en el dominio de la función.
 			</p>
-
+		  
   		<table xml:id="T-familiar-infty-limits-summary-2">
-			<title>Some familiar functions and their limits involving <m>\infty</m> as <m>x \to a</m> where <m>a</m> is not in the function's domain.</title>
-			  <tabular>
+			<title>Algunas funciones conocidas y sus límites que involucran <m>\infty</m> cuando <m>x \to a</m> donde <m>a</m> no está en el dominio de la función.</title>
+			<tabular>
 			    <row bottom="medium" halign="center">
 			      <cell><m>f(x)</m></cell>
 			      <cell><m>\lim_{x \to a^-} f(x)</m></cell>
@@ -298,33 +298,32 @@
 			  </tabular>
 			</table>
 
-  		</li>
-  		<li>
-  			<p>
-  				A power function is a function of the form <m>f(x) = x^p</m> where <m>p</m> is any real number.  For the two cases where <m>p</m> is a positive whole number or a negative whole number, it is straightforward to summarize key trends in power functions' behavior.
-  			</p>
-
-  			<p>
-  				<ul>
-  					<li>
-  						<p>
-  							If <m>p = 1, 2, 3, \ldots</m>, then the domain of <m>f(x) = x^p</m> is the set of all real numbers, and as <m>x \to \infty</m>, <m>f(x) \to \infty</m>.  For the limit as <m>x \to -\infty</m>, it matters whether <m>p</m> is even or odd:  if <m>p</m> is even, <m>f(x) \to \infty</m> as <m>x \to -\infty</m>; if <m>p</m> is odd, <m>f(x) \to -\infty</m> as <m>x \to -\infty</m>.  Informally, all power functions of form <m>f(x) = x^p</m> where <m>p</m> is a positive even number are <q>U-shaped</q>, while all power functions of form <m>f(x) = x^p</m> where <m>p</m> is a positive odd number are <q>chair-shaped</q>.
-  						</p>
-  					</li>
-  					<li>
-  						<p>
-  							If <m>p = -1, -2, -3, \ldots</m>, then the domain of <m>f(x) = x^p</m> is the set of all real numbers <em>except</em> <m>x=0</m>, and as <m>x \to \pm \infty</m>, <m>f(x) \to 0</m>.  This means that each such power function with a negative whole number exponent has a horizontal asymptote of <m>y = 0</m>.  Regardless of the value of <m>p</m> (<m>p = -1, -2, -3, \ldots</m>), <m>\lim_{x \to 0^+} f(x) = \infty</m>.  But when we approach <m>0</m> from the negative side, it matters whether <m>p</m> is even or odd:  if <m>p</m> is even, <m>f(x) \to \infty</m> as <m>x \to 0^-</m>; if <m>p</m> is odd, <m>f(x) \to -\infty</m> as <m>x \to 0^-</m>.  Informally, all power functions of form <m>f(x) = x^p</m> where <m>p</m> is a negative odd number look similar to <m>\frac{1}{x}</m>, while all power functions of form <m>f(x) = x^p</m> where <m>p</m> is a negative even number look similar to <m>\frac{1}{x^2}</m>.
-  						</p>
-  					</li>
-  				</ul>
-  			</p>
-  		</li>
-  	</ul>
-  </subsection>
-
+		</li>
+		<li>
+		  <p>
+			Una función de potencia es una función de la forma <m>f(x) = x^p</m> donde <m>p</m> es cualquier número real. Para los dos casos donde <m>p</m> es un número entero positivo o un número entero negativo, es sencillo resumir las tendencias clave en el comportamiento de las funciones de potencia.
+		  </p>
+	  
+		  <p>
+			<ul>
+			  <li>
+				<p>
+				  Si <m>p = 1, 2, 3, \ldots</m>, entonces el dominio de <m>f(x) = x^p</m> es el conjunto de todos los números reales, y a medida que <m>x \to \infty</m>, <m>f(x) \to \infty</m>. Para el límite cuando <m>x \to -\infty</m>, importa si <m>p</m> es par o impar: si <m>p</m> es par, <m>f(x) \to \infty</m> cuando <m>x \to -\infty</m>; si <m>p</m> es impar, <m>f(x) \to -\infty</m> cuando <m>x \to -\infty</m>. Informalmente, todas las funciones de potencia de la forma <m>f(x) = x^p</m> donde <m>p</m> es un número par positivo tienen forma de <q>U</q>, mientras que todas las funciones de potencia de la forma <m>f(x) = x^p</m> donde <m>p</m> es un número impar positivo tienen forma de <q>silla</q>.
+				</p>
+			  </li>
+			  <li>
+				<p>
+				  Si <m>p = -1, -2, -3, \ldots</m>, entonces el dominio de <m>f(x) = x^p</m> es el conjunto de todos los números reales <em>excepto</em> <m>x=0</m>, y a medida que <m>x \to \pm \infty</m>, <m>f(x) \to 0</m>. Esto significa que cada función de potencia con un exponente entero negativo tiene una asíntota horizontal de <m>y = 0</m>. Independientemente del valor de <m>p</m> (<m>p = -1, -2, -3, \ldots</m>), <m>\lim_{x \to 0^+} f(x) = \infty</m>. Pero cuando nos acercamos a <m>0</m> desde el lado negativo, importa si <m>p</m> es par o impar: si <m>p</m> es par, <m>f(x) \to \infty</m> cuando <m>x \to 0^-</m>; si <m>p</m> es impar, <m>f(x) \to -\infty</m> cuando <m>x \to 0^-</m>. Informalmente, todas las funciones de potencia de la forma <m>f(x) = x^p</m> donde <m>p</m> es un número impar negativo se parecen a <m>\frac{1}{x}</m>, mientras que todas las funciones de potencia de la forma <m>f(x) = x^p</m> donde <m>p</m> es un número par negativo se parecen a <m>\frac{1}{x^2}</m>.
+				</p>
+			  </li>
+			</ul>
+		  </p>
+		</li>
+	  </ul>
+	</subsection>
+	  
   <xi:include href="./exercises/ez-poly-infty.xml" />
 
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-

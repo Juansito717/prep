@@ -17,37 +17,37 @@
 
 	<statement>
 		<p>
-			Let <m>s(x) = \frac{3x - 5}{7x^2 + 2x - 11}</m> and <m>u(x) = \frac{3x^2 - 5x + 1}{7x + 2}</m>.  Note that both the numerator and denominator of each of these rational functions increases without bound as <m>x \to \infty</m>, and in addition that <m>x^2</m> is the highest order term present in each of <m>s</m> and <m>u</m>.
+			Sea <m>s(x) = \frac{3x - 5}{7x^2 + 2x - 11}</m> y <m>u(x) = \frac{3x^2 - 5x + 1}{7x + 2}</m>. Nota que tanto el numerador como el denominador de cada una de estas funciones racionales aumentan sin límite a medida que <m>x \to \infty</m>, y además que <m>x^2</m> es el término de mayor orden presente en cada una de <m>s</m> y <m>u</m>.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Using a similar algebraic approach to our work in <xref ref="act-poly-rational-long-term-1">Activity</xref>, multiply <m>s(x)</m> by <m>1 = \frac{\frac{1}{x^2}}{\frac{1}{x^2}}</m> and hence evaluate
+						Usando un enfoque algebraico similar a nuestro trabajo en <xref ref="act-poly-rational-long-term-1">Activity</xref>, multiplica <m>s(x)</m> por <m>1 = \frac{\frac{1}{x^2}}{\frac{1}{x^2}}</m> y así evalúa
 						<me>
 							\lim_{x \to \infty} \frac{3x - 5}{7x^2 + 2x - 11}
 						</me>.
-						What value do you find?
+						¿Qué valor encuentras?
 					</p>
 				</li>
 				<li>
 					<p>
-						Plot the function <m>y = s(x)</m> on the interval <m>[-10,10]</m>.  What is the graphical meaning of the limit you found in (a)?
+						Grafica la función <m>y = s(x)</m> en el intervalo <m>[-10,10]</m>. ¿Cuál es el significado gráfico del límite que encontraste en (a)?
 					</p>
 				</li>
 				<li>
 					<p>
-						Next, use appropriate algebraic work to consider <m>u(x)</m> and evaluate
+						A continuación, usa el trabajo algebraico apropiado para considerar <m>u(x)</m> y evalúa
 						<me>
 							\lim_{x \to \infty} \frac{3x^2 - 5x + 1}{7x + 2}
 						</me>.
-						What do you find?
+						¿Qué encuentras?
 					</p>
 				</li>
 				<li>
 					<p>
-						Plot the function <m>y = u(x)</m> on the interval <m>[-10,10]</m>.  What is the graphical meaning of the limit you computed in (c)?
+						Grafica la función <m>y = u(x)</m> en el intervalo <m>[-10,10]</m>. ¿Cuál es el significado gráfico del límite que calculaste en (c)?
 					</p>
 				</li>
 			</ol>
@@ -65,4 +65,3 @@
 	</solution>
 
 </activity>
-

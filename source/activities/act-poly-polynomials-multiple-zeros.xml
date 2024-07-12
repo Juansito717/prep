@@ -17,37 +17,37 @@
 
 	<statement>
 		<p>
-			For each of the following prompts, try to determine a formula for a polynomial that satisfies the given criteria.  If no such polynomial exists, explain why. 
+			Para cada una de las siguientes indicaciones, intenta determinar una fórmula para un polinomio que satisfaga los criterios dados. Si no existe tal polinomio, explica por qué. 
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						A polynomial <m>f</m> of degree <m>10</m> whose zeros are <m>x = -12</m> (multiplicity <m>3</m>), <m>x = -9</m> (multiplicity <m>2</m>), <m>x = 4</m> (multiplicity <m>4</m>), and <m>x = 10</m> (multiplicity <m>1</m>), and <m>f</m> satisfies <m>f(0) = 21</m>.  What can you say about the values of <m>\lim_{x \to -\infty} f(x)</m> and <m>\lim_{x \to \infty} f(x)</m>?
+						Un polinomio <m>f</m> de grado <m>10</m> cuyos ceros son <m>x = -12</m> (multiplicidad <m>3</m>), <m>x = -9</m> (multiplicidad <m>2</m>), <m>x = 4</m> (multiplicidad <m>4</m>), y <m>x = 10</m> (multiplicidad <m>1</m>), y <m>f</m> satisface <m>f(0) = 21</m>. ¿Qué puedes decir sobre los valores de <m>\lim_{x \to -\infty} f(x)</m> y <m>\lim_{x \to \infty} f(x)</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						A polynomial <m>p</m> of degree <m>9</m> that satisfies <m>p(0) = -2</m> and has the graph shown in <xref ref="F-polynomial-degree-9">Figure</xref>.  Assume that all of the zeros of <m>p</m> are shown in the figure.
+						Un polinomio <m>p</m> de grado <m>9</m> que satisface <m>p(0) = -2</m> y tiene el gráfico mostrado en <xref ref="F-polynomial-degree-9">Figure</xref>. Asume que todos los ceros de <m>p</m> se muestran en la figura.
 					</p>
 
 					
 				</li>
 				<li>
 					<p>
-						A polynomial <m>q</m> of degree <m>8</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> has the sign chart in <xref ref="F-polynomial-sign-chart-2">Figure</xref> and satisfies <m>q(0) = -10</m>. 
+						Un polinomio <m>q</m> de grado <m>8</m> con <m>3</m> ceros reales distintos (posiblemente de diferentes multiplicidades) tal que <m>q</m> tiene el gráfico de signos en <xref ref="F-polynomial-sign-chart-2">Figure</xref> y satisface <m>q(0) = -10</m>. 
 					</p>
 
 					<sidebyside valign="middle">
 						<figure xml:id="F-polynomial-degree-9">
 							<caption>
-								A polynomial <m>p</m>.
+								Un polinomio <m>p</m>.
 							</caption>
 							<image source="images/poly-degree-9" width="50%" />
 						</figure>
 						<figure xml:id="F-polynomial-sign-chart-2">
-							<caption>A sign chart for the polynomial <m>q</m>.</caption>
+							<caption>Un gráfico de signos para el polinomio <m>q</m>.</caption>
 							<image source="images/poly-sign-chart-2" width="50%" />
 						</figure>
 					</sidebyside>
@@ -55,12 +55,12 @@
 				</li>
 				<li>
 					<p>
-						A polynomial <m>q</m> of degree <m>9</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> satisfies the sign chart in <xref ref="F-polynomial-sign-chart-2">Figure</xref> and satisfies <m>q(0) = -10</m>. 
+						Un polinomio <m>q</m> de grado <m>9</m> con <m>3</m> ceros reales distintos (posiblemente de diferentes multiplicidades) tal que <m>q</m> satisface el gráfico de signos en <xref ref="F-polynomial-sign-chart-2">Figure</xref> y satisface <m>q(0) = -10</m>. 
 					</p>
 				</li>
 				<li>
 					<p>
-						A polynomial <m>p</m> of degree <m>11</m> that satisfies <m>p(0) = -2</m> and <m>p</m> has the graph shown in <xref ref="F-polynomial-degree-9">Figure</xref>.  Assume that all of the zeros of <m>p</m> are shown in the figure.
+						Un polinomio <m>p</m> de grado <m>11</m> que satisface <m>p(0) = -2</m> y <m>p</m> tiene el gráfico mostrado en <xref ref="F-polynomial-degree-9">Figure</xref>. Asume que todos los ceros de <m>p</m> se muestran en la figura.
 					</p>
 				</li>
 			</ol>
@@ -78,4 +78,3 @@
 	</solution>
 
 </activity>
-

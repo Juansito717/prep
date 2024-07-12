@@ -14,190 +14,190 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-poly-polynomials">
-  <title>Polynomials</title>
+	<title>Polinomios</title>
 
-  <objectives>
-  	<ul>
-  		<li>
-  			<p>
-  				What properties of a polynomial function can we deduce from its algebraic structure?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				What is a sign chart and how does it help us understand a polynomial function's behavior?
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				How do zeros of multiplicity other than <m>1</m> impact the graph of a polynomial function?
-  			</p>
-  		</li>
-  	</ul>
-  </objectives>
-
+	<objectives>
+		<ul>
+			<li>
+				<p>
+					¿Qué propiedades de una función polinómica podemos deducir de su estructura algebraica?
+				</p>
+			</li>
+			<li>
+				<p>
+					¿Qué es un gráfico de signos y cómo nos ayuda a entender el comportamiento de una función polinómica?
+				</p>
+			</li>
+			<li>
+				<p>
+					¿Cómo afectan los ceros de multiplicidad distinta de <m>1</m> al gráfico de una función polinómica?
+				</p>
+			</li>
+		</ul>
+	</objectives>
+	
   <introduction>
-  	<p>
-  		We know that linear functions are the simplest of all functions we can consider:  their graphs have the simplest shape, their average rate of change is always constant (regardless of the interval chosen), and their formula is elementary.  Moreover, computing the value of a linear function only requires multiplication and addition.
-  	</p>
-
 	<p>
-		If we think of a linear function as having formula <m>L(x) = b + mx</m>, and the next-simplest functions, quadratic functions, as having form <m>Q(x) = c + bx + ax^2</m>, we can see immediate parallels between their respective forms and realize that it's natural to consider slightly more complicated functions by adding additional power functions.
+		Sabemos que las funciones lineales son las más simples de todas las funciones que podemos considerar: sus gráficos tienen la forma más simple, su tasa de cambio promedio es siempre constante (independientemente del intervalo elegido) y su fórmula es elemental. Además, calcular el valor de una función lineal solo requiere multiplicación y suma.
 	</p>
 
 	<p>
-		Indeed, if we instead view linear functions as having form
+		Si pensamos en una función lineal como teniendo la fórmula <m>L(x) = b + mx</m>, y las siguientes funciones más simples, las funciones cuadráticas, como teniendo la forma <m>Q(x) = c + bx + ax^2</m>, podemos ver paralelismos inmediatos entre sus respectivas formas y darnos cuenta de que es natural considerar funciones ligeramente más complicadas añadiendo funciones de potencia adicionales.
+	</p>
+
+	<p>
+		De hecho, si en cambio vemos las funciones lineales como teniendo la forma
 	    <me>
 	      L(x) = a_0 + a_1 x
 	    </me>
-	    (for some constants <m>a_0</m> and <m>a_1</m>) and quadratic functions as having form
+	    (para algunas constantes <m>a_0</m> y <m>a_1</m>) y las funciones cuadráticas como teniendo la forma
 	    <me>
 	      Q(x) = a_0 + a_1 x + a_2 x^2
 	    </me>
-      (for some constants <m>a_0</m>, <m>a_1</m>, and <m>a_2</m>),
-	    then it's natural to think about more general functions of this same form,
-	    but with additional power functions included.
+      (para algunas constantes <m>a_0</m>, <m>a_1</m> y <m>a_2</m>),
+	    entonces es natural pensar en funciones más generales de esta misma forma,
+	    pero con funciones de potencia adicionales incluidas.
 	</p>
 
 	<definition xml:id="def-polynomial-function">
 		<idx><h>polynomial function</h></idx>
 		<statement>
 			<p>
-        Given real numbers <m>a_0, a_1, \ldots, a_n</m> where <m>a_n \ne 0</m>, we say that the function
-        <me>
-          P(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n 
-        </me>
-        is a <term>polynomial of degree <m>n</m></term>. <idx><h>polynomial</h><h>degree</h></idx> In addition, we say that the values of <m>a_i</m> are the <term>coefficients</term> of the polynomial and the individual power functions <m>a_i x^i</m> are the <term>terms</term> of the polynomial.  <idx><h>polynomial</h><h>coefficients</h></idx> <idx><h>polynomial</h><h>terms</h></idx>  Any value of <m>x</m> for which <m>P(x) = 0</m> is called a <term>zero</term> of the polynomial.  <idx><h>polynomial</h><h>zero</h></idx>   
-      </p>
+				Dados los números reales <m>a_0, a_1, \ldots, a_n</m> donde <m>a_n \ne 0</m>, decimos que la función
+				<me>
+				  P(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n 
+				</me>
+				es un <term>polinomio de grado <m>n</m></term>. <idx><h>polynomial</h><h>degree</h></idx> Además, decimos que los valores de <m>a_i</m> son los <term>coeficientes</term> del polinomio y las funciones de potencia individuales <m>a_i x^i</m> son los <term>términos</term> del polinomio. <idx><h>polynomial</h><h>coefficients</h></idx> <idx><h>polynomial</h><h>terms</h></idx> Cualquier valor de <m>x</m> para el cual <m>P(x) = 0</m> se llama un <term>cero</term> del polinomio. <idx><h>polynomial</h><h>zero</h></idx>   
+			</p>
 		</statement>
 	</definition>
 
     <example xml:id="ex-polynomial-terms">
     	<statement>
     		<p>
-    			The polyomial function <m>P(x) = 3 - 7x + 4x^2 - 2x^3 + 9x^5</m> has degree <m>5</m>, its constant term is <m>3</m>, and its linear term is <m>-7x</m>.
+    			La función polinómica <m>P(x) = 3 - 7x + 4x^2 - 2x^3 + 9x^5</m> tiene grado <m>5</m>, su término constante es <m>3</m> y su término lineal es <m>-7x</m>.
     		</p>
     	</statement>
     </example>
 
-	  <p>
-	    Since a polynomial is simply a sum of constant multiples of various power functions with positive integer powers, we often refer to those individual terms by referring to their individual degrees:  the linear term, the quadratic term, and so on.  In addition, since the domain of any power function of the form <m>p(x) = x^n</m> where <m>n</m> is a positive whole number is the set of all real numbers, it's also true the the domain of any polynomial function is the set of all real numbers.
-	  </p>
+	<p>
+	    Dado que un polinomio es simplemente una suma de múltiplos constantes de varias funciones de potencia con potencias enteras positivas, a menudo nos referimos a esos términos individuales refiriéndonos a sus grados individuales: el término lineal, el término cuadrático, etc. Además, dado que el dominio de cualquier función de potencia de la forma <m>p(x) = x^n</m> donde <m>n</m> es un número entero positivo es el conjunto de todos los números reales, también es cierto que el dominio de cualquier función polinómica es el conjunto de todos los números reales.
+	</p>
 
 	<xi:include href="./previews/PA-poly-polynomials.xml" />
 
   </introduction>
 
   <subsection xml:id="subsec-poly-polynomials-results">
-  	<title>Key results about polynomial functions</title>
-  	<p>
-  		Our observations in <xref ref="PA-poly-polynomials">Preview Activity</xref> generalize to polynomials of any degree.  In particular, it is possible to prove the following general conclusions regarding the number of zeros, the long-range behavior, and the number of turning points for any polynomial of degree <m>n</m>.
-  	</p>
-
+	<title>Resultados clave sobre funciones polinómicas</title>
+	<p>
+		Nuestras observaciones en <xref ref="PA-poly-polynomials">Preview Activity</xref> se generalizan a polinomios de cualquier grado. En particular, es posible probar las siguientes conclusiones generales sobre el número de ceros, el comportamiento a largo plazo y el número de puntos de inflexión para cualquier polinomio de grado <m>n</m>.
+	</p>
+	
   	<assemblage xml:id="asm-polynomials-fundamental-theorem">
-  	  <title>The number of real zeros of a polynomial</title>
- 		<p>
- 			For any degree <m>n</m> polynomial <m>p(x) = a_0 + a_1 x + \cdots + a_{n-1}x^{n-1} + a_n x^n</m>, has at most <m>n</m> real zeros.<fn>We can actually say even more:  if we allow the zeros to be complex numbers, then every degree <m>n</m> polynomial has <em>exactly</em> <m>n</m> zeros, provided we count zeros according to their multiplicity.  For example, the polynomial <m>p(x) = (x-1)^2 = x^2 - 2x + 1</m> has a zero of multiplicity two at <m>x = 1</m>.</fn>
- 		</p>
-  	</assemblage>
+		<title>El número de ceros reales de un polinomio</title>
+		<p>
+			Para cualquier polinomio de grado <m>n</m> <m>p(x) = a_0 + a_1 x + \cdots + a_{n-1}x^{n-1} + a_n x^n</m>, tiene como máximo <m>n</m> ceros reales.<fn>En realidad, podemos decir aún más: si permitimos que los ceros sean números complejos, entonces cada polinomio de grado <m>n</m> tiene <em>exactamente</em> <m>n</m> ceros, siempre que contemos los ceros según su multiplicidad. Por ejemplo, el polinomio <m>p(x) = (x-1)^2 = x^2 - 2x + 1</m> tiene un cero de multiplicidad dos en <m>x = 1</m>.</fn>
+		</p>
+	</assemblage>
 
-  	<p>
-  		We know that each of the power functions <m>x</m>, <m>x^2</m>, <m>\ldots</m>, <m>x^n</m> grow without bound as <m>x \to \infty</m>.  Intuitively, we sense that <m>x^5</m> grows faster than <m>x^4</m> (and likewise for any comparison of a higher power to a lower one).  This means that for large values of <m>x</m>, the most important term in any polynomial is its highest order term, as we saw in <xref ref="PA-poly-polynomials">Preview Activity</xref> when we compared <m>p(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4</m> and <m>y = a_4 x^4</m>.  
-  	</p>
-
+	<p>
+		Sabemos que cada una de las funciones de potencia <m>x</m>, <m>x^2</m>, <m>\ldots</m>, <m>x^n</m> crecen sin límite cuando <m>x \to \infty</m>. Intuitivamente, sentimos que <m>x^5</m> crece más rápido que <m>x^4</m> (y lo mismo para cualquier comparación de una potencia mayor con una menor). Esto significa que para valores grandes de <m>x</m>, el término más importante en cualquier polinomio es su término de mayor orden, como vimos en <xref ref="PA-poly-polynomials">Preview Activity</xref> cuando comparamos <m>p(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4</m> y <m>y = a_4 x^4</m>.
+	</p>
+	
   	<assemblage xml:id="asm-polynomials-long-range">
   		<idx><h>polynomial</h><h>long-range behavior</h></idx>
-  		<title>The long-range behavior of a polynomial</title>
- 		<p>
- 			For any degree <m>n</m> polynomial <m>p(x) = a_0 + a_1 x + \cdots + a_{n-1}x^{n-1} + a_n x^n</m>, its long-range behavior is the same as its highest-order term <m>q(x) = a_n x^n</m>.  Thus, any polynomial of even degree appears <q>U-shaped</q> (<m>\cup</m> or <m>\cap</m>, like <m>x^2</m> or <m>-x^2</m>) when we zoom way out, and any polynomial of odd degree appears <q>chair-shaped</q> (like <m>x^3</m> or <m>-x^3</m>) when we zoom way out.
- 		</p>
-  	</assemblage>
+		  <title>El comportamiento a largo plazo de un polinomio</title>
+		  <p>
+			  Para cualquier polinomio de grado <m>n</m> <m>p(x) = a_0 + a_1 x + \cdots + a_{n-1}x^{n-1} + a_n x^n</m>, su comportamiento a largo plazo es el mismo que su término de mayor orden <m>q(x) = a_n x^n</m>. Así, cualquier polinomio de grado par parece en forma de <q>U</q> (<m>\cup</m> o <m>\cap</m>, como <m>x^2</m> o <m>-x^2</m>) cuando hacemos zoom hacia afuera, y cualquier polinomio de grado impar parece en forma de <q>silla</q> (como <m>x^3</m> o <m>-x^3</m>) cuando hacemos zoom hacia afuera.
+		  </p>
+	</assemblage>
 
-  	<p>
-  		In <xref ref="F-poly-degree-7-far">Figure</xref>, we see how the degree <m>7</m> polynomial pictured there (and in <xref ref="F-poly-degree-7-near">Figure</xref> as well) appears to look like <m>q(x) = -x^7</m> as we zoom out.
-  	</p>
-
+	<p>
+		En <xref ref="F-poly-degree-7-far">Figure</xref>, vemos cómo el polinomio de grado <m>7</m> representado allí (y también en <xref ref="F-poly-degree-7-near">Figure</xref>) parece parecerse a <m>q(x) = -x^7</m> cuando hacemos zoom hacia afuera.
+	</p>
+	
 	<sidebyside width="50%">
 		<figure xml:id="F-poly-degree-7-near">
-			<caption>Plot of a degree <m>7</m> polynomial function <m>p</m>.</caption>
+			<caption>Gráfico de una función polinómica de grado <m>7</m> <m>p</m>.</caption>
 			<image source="images/poly-degree-7-near" />
 		</figure>
 		<figure xml:id="F-poly-degree-7-far">
-			<caption>Plot of the same degree <m>7</m> polynomial function <m>p</m>, but zoomed out.</caption>
+			<caption>Gráfico de la misma función polinómica de grado <m>7</m> <m>p</m>, pero con zoom hacia afuera.</caption>
 			<image source="images/poly-degree-7-far" />
 		</figure>
 	</sidebyside>
 
 	<p>
-		Finally, a key idea from calculus justifies the fact that the maximum number of turning points of a degree <m>n</m> polynomial is <m>n-1</m>, as we conjectured in the degree <m>4</m> case in <xref ref="PA-poly-polynomials">Preview Activity</xref>.  Moreover, the only possible numbers of turning points must have the same parity as <m>n-1</m>; that is, if <m>n-1</m> is even, then the number of turning points must be even, and if instead <m>n-1</m> is odd, the number of turning points must also be odd.  For instance, for the degree <m>7</m> polynomial in <xref ref="F-poly-degree-7-near">Figure</xref>, we know that it is chair-shaped, with one end up and one end down.  There could be zero turning points and the function could always decrease.  But if there is at least one, then there must be a second, since if there were only one the function would decrease and then increase without turning back, which would force the graph to appear U-shaped.
+		Finalmente, una idea clave del cálculo justifica el hecho de que el número máximo de puntos de inflexión de un polinomio de grado <m>n</m> es <m>n-1</m>, como conjeturamos en el caso de grado <m>4</m> en <xref ref="PA-poly-polynomials">Preview Activity</xref>. Además, los únicos números posibles de puntos de inflexión deben tener la misma paridad que <m>n-1</m>; es decir, si <m>n-1</m> es par, entonces el número de puntos de inflexión debe ser par, y si en cambio <m>n-1</m> es impar, el número de puntos de inflexión también debe ser impar. Por ejemplo, para el polinomio de grado <m>7</m> en <xref ref="F-poly-degree-7-near">Figure</xref>, sabemos que tiene forma de silla, con un extremo hacia arriba y otro hacia abajo. Podría haber cero puntos de inflexión y la función podría siempre disminuir. Pero si hay al menos uno, entonces debe haber un segundo, ya que si solo hubiera uno, la función disminuiría y luego aumentaría sin volver a girar, lo que obligaría a que el gráfico pareciera en forma de U.
 	</p>
-
+	
   	<assemblage xml:id="asm-polynomials-turning-points">
   		<idx><h>polynomial</h><h>number of turning points</h></idx>
-  		<title>The turning points of a polynomial</title>
- 		<p>
- 			For any degree <m>n</m> polynomial <m>p(x) = a_0 + a_1 x + \cdots + a_{n-1}x^{n-1} + a_n x^n</m>, if <m>n</m> is even, its number of turning points is exactly one of <m>n-1</m>, <m>n-3</m>, <m>\ldots</m>, <m>1</m>, and if <m>n</m> is odd, its number of turning points is exactly one of <m>n-1</m>, <m>n-3</m>, <m>\ldots</m>, <m>0</m>.
- 		</p>
-  	</assemblage>
+		  <title>Los puntos de inflexión de un polinomio</title>
+		  <p>
+			  Para cualquier polinomio de grado <m>n</m> <m>p(x) = a_0 + a_1 x + \cdots + a_{n-1}x^{n-1} + a_n x^n</m>, si <m>n</m> es par, su número de puntos de inflexión es exactamente uno de <m>n-1</m>, <m>n-3</m>, <m>\ldots</m>, <m>1</m>, y si <m>n</m> es impar, su número de puntos de inflexión es exactamente uno de <m>n-1</m>, <m>n-3</m>, <m>\ldots</m>, <m>0</m>.
+		  </p>
+</assemblage>
 
   	<xi:include href="./activities/act-poly-polynomials-find.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-poly-polynomials-zeros-signs">
-  	<title>Using zeros and signs to understand polynomial behavior</title>
+	<title>Usando ceros y signos para entender el comportamiento de los polinomios</title>
 
-  	<p>
-  		Just like a quadratic function can be written in different forms (standard: <m>q(x) = ax^2 + bx + c</m>, vertex: <m>q(x) = a(x-h)^2 + k</m>, and factored: <m>q(x) = a(x-r_1)(x-r_2)</m>), it's possible to write a polynomial function in different forms and to gain information about its behavior from those different forms.  In particular, if we know all of the zeros of a polynomial function, we can write its formula in factored form, which gives us a deeper understanding of its graph.
-  	</p>
-
-  	<p>
-  		The Zero Product Property <idx><h>Zero Product Property</h></idx> states that if two or more numbers are multiplied together and the result is <m>0</m>, then at least one of the numbers must be <m>0</m>.  We use the Zero Product Property regularly with polynomial functions.  If we can determine all <m>n</m> zeros of a degree <m>n</m> polynomial, and we call those zeros <m>r_1</m>, <m>r_2</m>, <m>\ldots</m>, <m>r_n</m>, we can write 
-  		<me>
-  			p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)
-  		</me>.  
-  		Moreover, if we are given a polynomial in this factored form, we can quickly determine its zeros.  For instance, if <m>p(x) = 2(x+7)(x+1)(x-2)(x-5)</m>, we know that the only way <m>p(x) = 0</m> is if at least one of the factors <m>(x+7)</m>, <m>(x+1)</m>, <m>(x-2)</m>, or <m>(x-5)</m> equals <m>0</m>, which implies that <m>x = -7</m>, <m>x = -1</m>, <m>x = 2</m>, or <m>x = 5</m>.  Hence, from the factored form of a polynomial, it is straightforward to identify the polynomial's zeros, the <m>x</m>-values at which its graph crosses the <m>x</m>-axis.  We can also use the factored form of a polynomial to develop what we call a <em>sign chart</em>, which we demonstrate in <xref ref="ex-polynomial-signs">Example</xref>. <idx><h>sign chart</h></idx> 
-  	</p>
-
+	<p>
+		Así como una función cuadrática puede escribirse en diferentes formas (estándar: <m>q(x) = ax^2 + bx + c</m>, vértice: <m>q(x) = a(x-h)^2 + k</m>, y factorizada: <m>q(x) = a(x-r_1)(x-r_2)</m>), es posible escribir una función polinómica en diferentes formas y obtener información sobre su comportamiento a partir de esas diferentes formas. En particular, si conocemos todos los ceros de una función polinómica, podemos escribir su fórmula en forma factorizada, lo que nos da una comprensión más profunda de su gráfica.
+	</p>
+	
+	<p>
+		La Propiedad del Producto Cero <idx><h>Zero Product Property</h></idx> establece que si dos o más números se multiplican y el resultado es <m>0</m>, entonces al menos uno de los números debe ser <m>0</m>. Usamos la Propiedad del Producto Cero regularmente con funciones polinómicas. Si podemos determinar todos los <m>n</m> ceros de un polinomio de grado <m>n</m>, y llamamos a esos ceros <m>r_1</m>, <m>r_2</m>, <m>\ldots</m>, <m>r_n</m>, podemos escribir 
+		<me>
+			p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)
+		</me>.  
+		Además, si se nos da un polinomio en esta forma factorizada, podemos determinar rápidamente sus ceros. Por ejemplo, si <m>p(x) = 2(x+7)(x+1)(x-2)(x-5)</m>, sabemos que la única forma en que <m>p(x) = 0</m> es si al menos uno de los factores <m>(x+7)</m>, <m>(x+1)</m>, <m>(x-2)</m>, o <m>(x-5)</m> es igual a <m>0</m>, lo que implica que <m>x = -7</m>, <m>x = -1</m>, <m>x = 2</m>, o <m>x = 5</m>. Por lo tanto, a partir de la forma factorizada de un polinomio, es sencillo identificar los ceros del polinomio, los valores de <m>x</m> en los que su gráfica cruza el eje <m>x</m>. También podemos usar la forma factorizada de un polinomio para desarrollar lo que llamamos un <em>diagrama de signos</em>, que demostramos en <xref ref="ex-polynomial-signs">Ejemplo</xref>. <idx><h>sign chart</h></idx> 
+	</p>
+	
   	<example xml:id="ex-polynomial-signs">
   		<statement>
-  			<p>
-  				Consider the polynomial function <m>p(x) = k(x-1)(x-a)(x-b)</m>.  Suppose we know that <m>1 \lt a \lt b</m> and that <m>k \lt 0</m>.  Fully describe the graph of <m>p</m> without the aid of a graphing utility.
-  			</p>
-  		</statement>
+			<p>
+				Considera la función polinómica <m>p(x) = k(x-1)(x-a)(x-b)</m>. Supón que sabemos que <m>1 \lt a \lt b</m> y que <m>k \lt 0</m>. Describe completamente la gráfica de <m>p</m> sin la ayuda de una utilidad de graficación.
+			</p>
+		</statement>
   		<solution>
-  			<p>
-  				Since <m>p(x) = k(x-1)(x-a)(x-b)</m>, we immediately know that <m>p</m> is a degree <m>3</m> polynomial with <m>3</m> real zeros:  <m>x = 1, a, b</m>.  We are given that <m>1 \lt a \lt b</m> and in addition that <m>k \lt 0</m>.  If we expand the factored form of <m>p(x)</m>, it has form <m>p(x) = kx^3 + \cdots</m>, and since we know that when we zoom out, <m>p(x)</m> behaves like <m>kx^3</m>, we know that with <m>k \lt 0</m> it follows <m>\lim_{x \to -\infty} p(x) = +\infty</m> and <m>\lim_{x \to \infty} p(x) = -\infty</m>.
-  			</p>
+			<p>
+				Dado que <m>p(x) = k(x-1)(x-a)(x-b)</m>, sabemos inmediatamente que <m>p</m> es un polinomio de grado <m>3</m> con <m>3</m> ceros reales: <m>x = 1, a, b</m>. Se nos da que <m>1 \lt a \lt b</m> y además que <m>k \lt 0</m>. Si expandimos la forma factorizada de <m>p(x)</m>, tiene la forma <m>p(x) = kx^3 + \cdots</m>, y dado que sabemos que cuando hacemos zoom out, <m>p(x)</m> se comporta como <m>kx^3</m>, sabemos que con <m>k \lt 0</m> se sigue que <m>\lim_{x \to -\infty} p(x) = +\infty</m> y <m>\lim_{x \to \infty} p(x) = -\infty</m>.
+			</p>
+	
+			<p>
+				Dado que <m>p</m> es de grado <m>3</m> y sabemos que tiene ceros en <m>x = 1, a, b,</m> sabemos que no hay otras ubicaciones donde <m>p(x) = 0</m>. Por lo tanto, en cualquier intervalo entre dos ceros (o a la izquierda del menor o a la derecha del mayor), el polinomio no puede cambiar de signo. Ahora investigamos, intervalo por intervalo, el signo de la función.
+			</p>
+	
+			<p>
+				Cuando <m>x \lt 1</m>, se sigue que <m>x - 1 \lt 0</m>. Además, dado que <m>1 \lt a \lt b</m>, cuando <m>x \lt 1</m>, <m>x</m> se encuentra a la izquierda de <m>1</m>, <m>a</m>, y <m>b</m>, lo que también hace que <m>x-a</m> y <m>x-b</m> sean negativos. Además, sabemos que la constante <m>k \lt 0</m>. Por lo tanto, en el intervalo <m>x \lt 1</m>, los cuatro términos en <m>p(x) = k(x-1)(x-a)(x-b)</m> son negativos, lo que indicamos escribiendo <q><m>----</m></q> en esa ubicación en el diagrama de signos mostrado en <xref ref="F-polynomial-sign-chart-1">Figura</xref>.
+			</p>
+	
+			<p>
+				Además, dado que hay un número par de términos negativos en el producto, el signo del producto total es positivo, lo que indicamos con el signo <q><m>+</m></q> debajo de <q><m>----</m></q>, y escribiendo <q>POS</q> debajo del eje de coordenadas.
+			</p>
 
-  			<p>
-  				Since <m>p</m> is degree <m>3</m> and we know it has zeros at <m>x = 1, a, b,</m> we know there are no other locations where <m>p(x) = 0</m>.  Thus, on any interval between two zeros (or to the left of the least or the right of the greatest), the polynomial cannot change sign.  We now investigate, interval by interval, the sign of the function.
-  			</p>
-
-  			<p>
-  				When <m>x \lt 1</m>, it follows that <m>x - 1 \lt 0</m>.  In addition, since <m>1 \lt a \lt b</m>, when <m>x \lt 1</m>, <m>x</m> lies to the left of <m>1</m>, <m>a</m>, and <m>b</m>, which also makes <m>x-a</m> and <m>x-b</m> negative.  Moreover, we know that the constant <m>k \lt 0</m>.  Hence, on the interval <m>x \lt 1</m>, all four terms in <m>p(x) = k(x-1)(x-a)(x-b)</m> are negative, which we indicate by writing <q><m>----</m></q> in that location on the sign chart pictured in <xref ref="F-polynomial-sign-chart-1">Figure</xref>.
-  			</p>
-
-  			<p>
-  				In addition, since there are an even number of negative terms in the product, the overall product's sign is positive, which we indicate by the single <q><m>+</m></q> beneath <q><m>----</m></q>, and by writing <q>POS</q> below the coordinate axis.
-  			</p>
-
-        <figure xml:id="F-polynomial-sign-chart-1">
-          <caption>A sign chart for the polynomial function <m>p(x) = k(x-1)(x-a)(x-b)</m>.</caption>
+			<figure xml:id="F-polynomial-sign-chart-1">
+			<caption>Un diagrama de signos para la función polinómica <m>p(x) = k(x-1)(x-a)(x-b)</m>.</caption>
           <image source="images/polynomial-sign-chart-1" width="80%" />
         </figure>
 
-  			<p>
-  				We now proceed to the other intervals created by the zeros.  On <m>1 \lt x \lt a</m>, the term <m>(x-1)</m> has become positive, since <m>x \gt 1</m>.  But both <m>x-a</m> and <m>x-b</m> are negative, as is the constant <m>k</m>, and thus we write <q><m>-+--</m></q> for this interval, which has overall sign <q><m>-</m></q>, as noted in the figure.  Similar reasoning completes the diagram.
-  			</p>
+		<p>
+			Ahora procedemos a los otros intervalos creados por los ceros. En <m>1 \lt x \lt a</m>, el término <m>(x-1)</m> se ha vuelto positivo, ya que <m>x \gt 1</m>. Pero tanto <m>x-a</m> como <m>x-b</m> son negativos, al igual que la constante <m>k</m>, y por lo tanto escribimos <q><m>-+--</m></q> para este intervalo, que tiene un signo general <q><m>-</m></q>, como se indica en la figura. Un razonamiento similar completa el diagrama.
+		</p>
 
-  			<p>
-  				From all of the information we have deduced about <m>p</m>, we conclude that regardless of the locations of <m>a</m> and <m>b</m>, the graph of <m>p</m> must look like the curve shown in <xref ref="F-polynomial-sign-chart-1-graph">Figure</xref>.
-  			</p>
+		<p>
+			De toda la información que hemos deducido sobre <m>p</m>, concluimos que independientemente de las ubicaciones de <m>a</m> y <m>b</m>, la gráfica de <m>p</m> debe parecerse a la curva mostrada en <xref ref="F-polynomial-sign-chart-1-graph">Figura</xref>.
+		</p>
 
   			<figure xml:id="F-polynomial-sign-chart-1-graph">
-  				<caption>The graph of the polynomial function <m>p(x) = k(x-1)(x-a)(x-b)</m>.</caption>
-  				<image source="images/polynomial-sign-chart-1-graph" width="50%" />
+				<caption>La gráfica de la función polinómica <m>p(x) = k(x-1)(x-a)(x-b)</m>.</caption>
+				<image source="images/polynomial-sign-chart-1-graph" width="50%" />
   			</figure>
   		</solution>
   	</example>
@@ -207,115 +207,115 @@
   </subsection>
 
   <subsection xml:id="subsec-poly-polynomials-multiplicity">
-  	<title>Multiplicity of polynomial zeros</title>
-  	<p>
-  		In <xref ref="act-poly-polynomials-sign-chart">Activity</xref>, we found that one of the zeros of the polynomial <m>p(x) = 4692(x + 1520)(x^2 + 10000)(x - 3471)^2 (x - 9738)</m> leads to different behavior of the function near that zero than we've seen in other situations.  We now consider the more general situation where a polynomial has a repeated factor of the form <m>(x-r)^n</m>.  When <m>(x-r)^n</m> is a factor of a polynomial <m>p</m>, we say that <m>p</m> has a <term>zero of multiplicity <m>n</m></term> at <m>x = r</m>.  <idx><h>polynomial</h><h>zero of multiplicity <m>n</m></h></idx>
-  	</p>
+	<title>Multiplicidad de ceros polinomiales</title>
+	<p>
+		En <xref ref="act-poly-polynomials-sign-chart">Activity</xref>, encontramos que uno de los ceros del polinomio <m>p(x) = 4692(x + 1520)(x^2 + 10000)(x - 3471)^2 (x - 9738)</m> lleva a un comportamiento diferente de la función cerca de ese cero en comparación con otras situaciones que hemos visto. Ahora consideramos la situación más general donde un polinomio tiene un factor repetido de la forma <m>(x-r)^n</m>. Cuando <m>(x-r)^n</m> es un factor de un polinomio <m>p</m>, decimos que <m>p</m> tiene un <term>cero de multiplicidad <m>n</m></term> en <m>x = r</m>. <idx><h>polinomio</h><h>cero de multiplicidad <m>n</m></h></idx>
+	</p>
 
-  	<p>
-  		To see the impact of repeated factors, we examine a collection of degree <m>4</m> polynomials that each have <m>4</m> real zeros.  We start with the simplest of all, the function <m>f(x) = x^4</m>, whose zeros are <m>x = 0, 0, 0, 0</m>.  Because the factor <q><m>x-0</m></q> is repeated <m>4</m> times, the zero <m>x = 0</m> has multiplicity <m>4</m>. 
-  	</p>
+	<p>
+		Para ver el impacto de los factores repetidos, examinamos una colección de polinomios de grado <m>4</m> que tienen cada uno <m>4</m> ceros reales. Comenzamos con el más simple de todos, la función <m>f(x) = x^4</m>, cuyos ceros son <m>x = 0, 0, 0, 0</m>. Debido a que el factor <q><m>x-0</m></q> se repite <m>4</m> veces, el cero <m>x = 0</m> tiene multiplicidad <m>4</m>. 
+	</p>
 
-  	<p>
-  		Next we consider the degree <m>4</m> polynomial <m>g(x) = x^3 (x-1)</m>, which has a zero of multiplicity <m>3</m> at <m>x = 0</m> and a zero of multiplicity <m>1</m> at <m>x = 1</m>.
-  	</p>
+	<p>
+		A continuación consideramos el polinomio de grado <m>4</m> <m>g(x) = x^3 (x-1)</m>, que tiene un cero de multiplicidad <m>3</m> en <m>x = 0</m> y un cero de multiplicidad <m>1</m> en <m>x = 1</m>.
+	</p>
 
       <figure xml:id="F-polynomial-4A">
-        <caption>A plot of <m>g(x) = x^3(x-1)</m> with zero <m>x = 0</m> of multiplicity <m>3</m> and <m>x = 1</m> of multiplicity <m>1</m>.</caption>
+        <caption>Un gráfico de <m>g(x) = x^3(x-1)</m> con cero <m>x = 0</m> de multiplicidad <m>3</m> y <m>x = 1</m> de multiplicidad <m>1</m>.</caption>
         <image source="images/polynomial-3-1" width="50%" />
       </figure>
 
 
 	<p>
-		Observe that in <xref ref="F-polynomial-4A-mult-3">Figure</xref>, the up-close plot near the zero <m>x = 0</m> of multiplicity <m>3</m>, the polynomial function <m>g</m> looks similar to the basic cubic polynomial <m>-x^3</m>.  In addition, in <xref ref="F-polynomial-4A-mult-1">Figure</xref>, we observe that if we zoom in even futher on the zero of multiplicity <m>1</m>, the function <m>g</m> looks roughly linear, like a degree <m>1</m> polynomial.  This type of behavior near repeated zeros turns out to hold in other cases as well.
+		Observa que en <xref ref="F-polynomial-4A-mult-3">Figure</xref>, el gráfico de cerca cerca del cero <m>x = 0</m> de multiplicidad <m>3</m>, la función polinómica <m>g</m> se parece al polinomio cúbico básico <m>-x^3</m>. Además, en <xref ref="F-polynomial-4A-mult-1">Figure</xref>, observamos que si hacemos un zoom aún mayor en el cero de multiplicidad <m>1</m>, la función <m>g</m> se ve aproximadamente lineal, como un polinomio de grado <m>1</m>. Este tipo de comportamiento cerca de ceros repetidos resulta ser válido en otros casos también.
 	</p>
 
     <sidebyside width="45%">
       <figure xml:id="F-polynomial-4A-mult-3">
-        <caption>A plot of <m>g(x) = x^3(x-1)</m> zoomed in on the zero <m>x = 0</m> of multiplicity <m>3</m>.</caption>
+        <caption>Un gráfico de <m>g(x) = x^3(x-1)</m> ampliado en el cero <m>x = 0</m> de multiplicidad <m>3</m>.</caption>
         <image source="images/polynomial-3-1-3" width="50%" />
       </figure>
       <figure  xml:id="F-polynomial-4A-mult-1">
-        <caption>A plot of <m>g(x) = x^3(x-1)</m> zoomed in on the zero <m>x = 1</m> of multiplicity <m>1</m>.</caption>
+        <caption>Un gráfico de <m>g(x) = x^3(x-1)</m> ampliado en el cero <m>x = 1</m> de multiplicidad <m>1</m>.</caption>
         <image source="images/polynomial-3-1-1" width="50%" />
       </figure>
     </sidebyside>
 
 	<p>
-		If we next let <m>h(x) = x^2 (x-1)^2</m>, we see that <m>h</m> has two distinct real zeros, each of multiplicity <m>2</m>.  The graph of <m>h</m> in <xref ref="F-polynomial-4B">Figure</xref> shows that <m>h</m> behaves similar to a basic quadratic function near each of those zeros and thus shows U-shaped behavior nearby.  If instead we let <m>k(x) = x^2(x-1)(x+1)</m>, we see approximately linear behavior near <m>x = -1</m> and <m>x = 1</m> (the zeros of multiplicity <m>1</m>), and quadratic (U-shaped) behavior near <m>x = 0</m> (the zero of multiplicity <m>2</m>), as seen in <xref ref="F-polynomial-4C">Figure</xref>.  
+		Si a continuación dejamos que <m>h(x) = x^2 (x-1)^2</m>, vemos que <m>h</m> tiene dos ceros reales distintos, cada uno de multiplicidad <m>2</m>. El gráfico de <m>h</m> en <xref ref="F-polynomial-4B">Figure</xref> muestra que <m>h</m> se comporta de manera similar a una función cuadrática básica cerca de cada uno de esos ceros y, por lo tanto, muestra un comportamiento en forma de U cerca. Si en cambio dejamos que <m>k(x) = x^2(x-1)(x+1)</m>, vemos un comportamiento aproximadamente lineal cerca de <m>x = -1</m> y <m>x = 1</m> (los ceros de multiplicidad <m>1</m>), y un comportamiento cuadrático (en forma de U) cerca de <m>x = 0</m> (el cero de multiplicidad <m>2</m>), como se ve en <xref ref="F-polynomial-4C">Figure</xref>.  
   </p>  
 
   	<sidebyside width="45%">
   		<figure xml:id="F-polynomial-4B">
-  			<caption>Plot of <m>h(x) = x^2 (x-1)^2</m> with zeros <m>x = 0</m> and <m>x = 1</m> of multiplicity <m>2</m>.</caption>
-  			<image source="images/polynomial-2-2" width="50%" />
+			<caption>Gráfico de <m>h(x) = x^2 (x-1)^2</m> con ceros <m>x = 0</m> y <m>x = 1</m> de multiplicidad <m>2</m>.</caption>
+			<image source="images/polynomial-2-2" width="50%" />
   		</figure>
   		<figure xml:id="F-polynomial-4C">
-  			<caption>Plot of <m>k(x) = x^2(x-1)(x+1)</m> with zeros <m>x = 0</m> of multiplicity <m>2</m> and <m>x = -1</m> and <m>x = 1</m> of multiplicity <m>1</m>.</caption>
-  			<image source="images/polynomial-2-1-1" width="50%" />
+			<caption>Gráfico de <m>k(x) = x^2(x-1)(x+1)</m> con ceros <m>x = 0</m> de multiplicidad <m>2</m> y <m>x = -1</m> y <m>x = 1</m> de multiplicidad <m>1</m>.</caption>
+			<image source="images/polynomial-2-1-1" width="50%" />
   		</figure>
   	</sidebyside>
 
-  <p>
-    Finally, if we consider <m>m(x) = (x+1)x(x-1)(x-2)</m>, which has <m>4</m> distinct real zeros each of multiplicity <m>1</m>, we observe in <xref ref="F-polynomial-4D">Figure</xref> that zooming in on each zero individually, the function demonstrates approximately linear behavior as it passes through the <m>x</m>-axis.
-  </p>
-
+	  <p>
+		Finalmente, si consideramos <m>m(x) = (x+1)x(x-1)(x-2)</m>, que tiene <m>4</m> ceros reales distintos cada uno de multiplicidad <m>1</m>, observamos en <xref ref="F-polynomial-4D">Figure</xref> que al hacer zoom en cada cero individualmente, la función demuestra un comportamiento aproximadamente lineal al pasar por el eje <m>x</m>.
+	  </p>
+	
       <figure  xml:id="F-polynomial-4D">
-        <caption>Plot of <m>m(x) = (x+1)x(x-1)(x-2)</m> with <m>4</m> distinct zeros of multiplicity <m>1</m>.</caption>
+        <caption>Gráfico de <m>m(x) = (x+1)x(x-1)(x-2)</m> con <m>4</m> ceros distintos de multiplicidad <m>1</m>.</caption>
         <image source="images/polynomial-1-1-1-1" width="50%" />
       </figure>
 
   	<p>
-  		Our observations with polynomials of degree <m>4</m> in the various figures above generalize to polynomials of any degree.
-  	</p>
+		Nuestras observaciones con polinomios de grado <m>4</m> en las diversas figuras anteriores se generalizan a polinomios de cualquier grado.
+	</p>
 
   	<assemblage xml:id="asm-polynomials-multiple-zeros">
   		<idx><h>polynomial</h><h>multiple zeros</h></idx>
-  		<title>Polynomial zeros of multiplicity <m>n</m></title>
- 		<p>
- 			If <m>(x-r)^n</m> is a factor of a polynomial <m>p</m>, then <m>x = r</m> is a zero of <m>p</m> of multiplicity <m>n</m>, and near <m>x = r</m> the graph of <m>p</m> looks like either <m>-x^n</m> or <m>x^n</m> does near <m>x = 0</m>.  That is, the shape of the graph near the zero is determined by the multiplicity of the zero.
- 		</p>
-  	</assemblage>
+  		<title>Ceros polinomiales de multiplicidad <m>n</m></title>
+		  <p>
+			Si <m>(x-r)^n</m> es un factor de un polinomio <m>p</m>, entonces <m>x = r</m> es un cero de <m>p</m> de multiplicidad <m>n</m>, y cerca de <m>x = r</m> el gráfico de <m>p</m> se parece a como lo hace <m>-x^n</m> o <m>x^n</m> cerca de <m>x = 0</m>. Es decir, la forma del gráfico cerca del cero está determinada por la multiplicidad del cero.
+		</p>
+	 </assemblage>
 
   	<xi:include href="./activities/act-poly-polynomials-multiple-zeros.xml" />
 
   </subsection>
 
   <subsection xml:id="subsec-poly-polynomials-summary">
-  	<title>Summary</title>
-        <p>
+	<title>Resumen</title>
+	<p>
   	<ul>
-  		<li>
-  			<p>
-  				From a polynomial function's algebraic structure, we can deduce several key traits of the function.
-  			</p>
-                        <p>
-  			<ul>
-  				<li>
-  					<p>
-  						If the function is in standard form, say <me>p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n</me>, we know that its degree is <m>n</m> and that when we zoom out, <m>p</m> looks like <m>a_n x^n</m> and thus has the same long-range behavior as <m>a_n x^n</m>.  Thus, <m>p</m> is chair-shaped if <m>n</m> is odd and U-shaped if <m>n</m> is even.  Whether <m>\lim_{n \to \infty} p(x)</m> is <m>+\infty</m> or <m>-\infty</m> depends on the sign of <m>a_n</m>.
-  					</p>
-  				</li>
+		<li>
+			<p>
+				De la estructura algebraica de una función polinómica, podemos deducir varios rasgos clave de la función.
+			</p>
+					  <p>
+			<ul>
+				<li>
+					<p>
+						Si la función está en forma estándar, digamos <me>p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n</me>, sabemos que su grado es <m>n</m> y que cuando hacemos zoom hacia afuera, <m>p</m> se parece a <m>a_n x^n</m> y, por lo tanto, tiene el mismo comportamiento a largo plazo que <m>a_n x^n</m>. Así, <m>p</m> tiene forma de silla si <m>n</m> es impar y forma de U si <m>n</m> es par. Si <m>\lim_{n \to \infty} p(x)</m> es <m>+\infty</m> o <m>-\infty</m> depende del signo de <m>a_n</m>.
+					</p>
+				</li>
 
-  				<li>
-  					<p>
-  						If the function is in factored form, say <me>p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)</me> (where the <m>r_i</m>'s are possibly not distinct and possibly complex), we can quickly determine both the degree of the polynomial (<m>n</m>) and the locations of its zeros, as well as their multiplicities.
-  					</p>
-  				</li>
-  			</ul>
-                        </p>
-  		</li>
-  		<li>
-  			<p>
-  				A sign chart is a visual way to identify all of the locations where a function is zero along with the sign of the function on the various intervals the zeros create.  A sign chart gives us an overall sense of the graph of the function, but without concerning ourselves with any specific values of the function besides the zeros.  For a sample sign chart, see <xref ref="F-polynomial-sign-chart-1">Figure</xref>.
-  			</p>
-  		</li>
-  		<li>
-  			<p>
-  				When a polynomial <m>p</m> has a repeated factor such as <me>p(x) = (x-5)(x-5)(x-5) = (x-5)^3</me>, we say that <m>x = 5</m> is a zero of multiplicity <m>3</m>.  At the point <m>x = 5</m> where <m>p</m> will cross the <m>x</m>-axis, up close it will look like a cubic polynomial and thus be chair-shaped.  In general, if <m>(x-r)^n</m> is a factor of a polynomial <m>p</m> so that <m>x = r</m> is a zero of multiplicity <m>n</m>, the polynomial will behave near <m>x = r</m> like the polynomial <m>x^n</m> behaves near <m>x = 0</m>.
-  			</p>
-  		</li>
-  	</ul>
+				<li>
+					<p>
+						Si la función está en forma factorizada, digamos <me>p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)</me> (donde los <m>r_i</m> posiblemente no son distintos y posiblemente complejos), podemos determinar rápidamente tanto el grado del polinomio (<m>n</m>) como las ubicaciones de sus ceros, así como sus multiplicidades.
+					</p>
+				</li>
+			</ul>
+					  </p>
+		</li>
+		<li>
+			<p>
+				Un gráfico de signos es una forma visual de identificar todas las ubicaciones donde una función es cero junto con el signo de la función en los varios intervalos que crean los ceros. Un gráfico de signos nos da una idea general del gráfico de la función, pero sin preocuparnos por ningún valor específico de la función además de los ceros. Para un ejemplo de gráfico de signos, ve <xref ref="F-polynomial-sign-chart-1">Figure</xref>.
+			</p>
+		</li>
+		<li>
+			<p>
+				Cuando un polinomio <m>p</m> tiene un factor repetido como <me>p(x) = (x-5)(x-5)(x-5) = (x-5)^3</me>, decimos que <m>x = 5</m> es un cero de multiplicidad <m>3</m>. En el punto <m>x = 5</m> donde <m>p</m> cruzará el eje <m>x</m>, de cerca se verá como un polinomio cúbico y, por lo tanto, tendrá forma de silla. En general, si <m>(x-r)^n</m> es un factor de un polinomio <m>p</m> de modo que <m>x = r</m> es un cero de multiplicidad <m>n</m>, el polinomio se comportará cerca de <m>x = r</m> como el polinomio <m>x^n</m> se comporta cerca de <m>x = 0</m>.
+			</p>
+		</li>
+	</ul>
         </p>
   </subsection>
 

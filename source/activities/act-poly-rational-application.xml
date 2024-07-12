@@ -17,39 +17,39 @@
 
 	<statement>
 		<p>
-			Suppose that we want to build an open rectangular box (that is, without a top) that holds <m>15</m> cubic feet of volume.  If we want one side of the base to be twice as long as the other, how does the amount of material required depend on the shorter side of the base?  We investigate this question through the following sequence of prompts.
+			Supón que queremos construir una caja rectangular abierta (es decir, sin tapa) que contenga <m>15</m> pies cúbicos de volumen. Si queremos que un lado de la base sea el doble de largo que el otro, ¿cómo depende la cantidad de material requerido del lado más corto de la base? Investigamos esta pregunta a través de la siguiente secuencia de indicaciones.
 		</p>
 
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						Draw a labeled picture of the box.  Let <m>x</m> represent the shorter side of the base and <m>h</m> the height of the box.  What is the length of the longer side of the base in terms of <m>x</m>?
+						Dibuja una imagen etiquetada de la caja. Deja que <m>x</m> represente el lado más corto de la base y <m>h</m> la altura de la caja. ¿Cuál es la longitud del lado más largo de la base en términos de <m>x</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Use the given volume constraint to write an equation that relates <m>x</m> and <m>h</m>, and solve the equation for <m>h</m> in terms of <m>x</m>.
+						Usa la restricción de volumen dada para escribir una ecuación que relacione <m>x</m> y <m>h</m>, y resuelve la ecuación para <m>h</m> en términos de <m>x</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine a formula for the surface area, <m>S</m>, of the box in terms of <m>x</m> and <m>h</m>.
+						Determina una fórmula para el área de superficie, <m>S</m>, de la caja en términos de <m>x</m> y <m>h</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Using the constraint equation from (b) together with your work in (c), write surface area, <m>S</m>, as a function of the single variable <m>x</m>.
+						Usando la ecuación de restricción de (b) junto con tu trabajo en (c), escribe el área de superficie, <m>S</m>, como una función de la variable única <m>x</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						What type of function is <m>S</m>?  What is its domain?
+						¿Qué tipo de función es <m>S</m>? ¿Cuál es su dominio?
 					</p>
 				</li>
 				<li>
 					<p>
-						Plot the function <m>S</m> using <em>Desmos</em>.  What appears to be the least amount of material that can be used to construct the desired box that holds <m>15</m> cubic feet of volume?
+						Grafica la función <m>S</m> usando <em>Desmos</em>. ¿Cuál parece ser la menor cantidad de material que se puede usar para construir la caja deseada que contenga <m>15</m> pies cúbicos de volumen?
 					</p>
 				</li>
 			</ol>

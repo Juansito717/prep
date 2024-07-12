@@ -17,51 +17,51 @@
 
 	<statement>
 		<p>
-			Point your browser to the <em>Desmos</em> worksheet at <url href="http://gvsu.edu/s/0zy">http://gvsu.edu/s/0zy</url>.  There you'll find a degree <m>4</m> polynomial of the form <m>p(x) = a_0 + a_1x + a_2x^2 + a_3x^3 + a_4x^4</m>, where <m>a_0, \ldots, a_4</m> are set up as sliders.  In the questions that follow, you'll experiment with different values of <m>a_0, \ldots, a_4</m> to investigate different possible behaviors in a degree <m>4</m> polynomial.  Note that we require <m>a_4 \ne 0</m> in order to ensure <m>p</m> is a degree <m>4</m> polynomial.
+			Pon tu navegador en la hoja de trabajo de <em>Desmos</em> en <url href="http://gvsu.edu/s/0zy">http://gvsu.edu/s/0zy</url>. Allí encontrarás un polinomio de grado <m>4</m> de la forma <m>p(x) = a_0 + a_1x + a_2x^2 + a_3x^3 + a_4x^4</m>, donde <m>a_0, \ldots, a_4</m> están configurados como deslizadores. En las preguntas que siguen, experimentarás con diferentes valores de <m>a_0, \ldots, a_4</m> para investigar diferentes comportamientos posibles en un polinomio de grado <m>4</m>. Ten en cuenta que requerimos <m>a_4 \ne 0</m> para asegurar que <m>p</m> sea un polinomio de grado <m>4</m>.
 		</p>
-
+		
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the largest number of distinct points at which <m>p(x)</m> can cross the <m>x</m>-axis? 
+						¿Cuál es el mayor número de puntos distintos en los que <m>p(x)</m> puede cruzar el eje <m>x</m>? 
 					</p>
-
+		
 					<p>
-						Recall from <xref ref="def-polynomial-function">Definition</xref>what we mean by a <term>zero</term> of the polynomial.  Give examples of values for <m>a_0, \ldots, a_4</m> that lead to that largest number of zeros for <m>p(x)</m>.
-					</p>
-				</li>
-				<li>
-					<p>
-						What other numbers of zeros are possible for <m>p(x)</m>?  Said differently, can you get each possible number of fewer zeros than the largest number that you found in (a)? Why or why not?
+						Recuerda de la <xref ref="def-polynomial-function">Definición</xref> lo que queremos decir con un <term>cero</term> del polinomio. Da ejemplos de valores para <m>a_0, \ldots, a_4</m> que lleven a ese mayor número de ceros para <m>p(x)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						We say that a function has a <term>turning point</term> <idx><h>turning point</h></idx> if the function changes from decreasing to increasing or increasing to decreasing at the point.  For example, any quadratic function has a turning point at its vertex.
-					</p>
-
-					<p>
-						What is the largest number of turning points that <m>p(x)</m> (the function in the <em>Desmos</em> worksheet) can have?  Experiment with the sliders, and give examples of values for <m>a_0, \ldots, a_4</m> that lead to that largest number of turning points for <m>p(x)</m>.
+						¿Qué otros números de ceros son posibles para <m>p(x)</m>? Dicho de otra manera, ¿puedes obtener cada número posible de ceros menores que el mayor número que encontraste en (a)? ¿Por qué o por qué no?
 					</p>
 				</li>
 				<li>
 					<p>
-						What other numbers of turning points are possible for <m>p(x)</m>? Can it have no turning points?  Just one?  Exactly two? Experiment and explain.
+						Decimos que una función tiene un <term>punto de inflexión</term> <idx><h>turning point</h></idx> si la función cambia de decreciente a creciente o de creciente a decreciente en ese punto. Por ejemplo, cualquier función cuadrática tiene un punto de inflexión en su vértice.
+					</p>
+		
+					<p>
+						¿Cuál es el mayor número de puntos de inflexión que <m>p(x)</m> (la función en la hoja de trabajo de <em>Desmos</em>) puede tener? Experimenta con los deslizadores y da ejemplos de valores para <m>a_0, \ldots, a_4</m> que lleven a ese mayor número de puntos de inflexión para <m>p(x)</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						What long-range behavior is possible for <m>p(x)</m>?  Said differently, what are the possible results for <m>\displaystyle \lim_{x \to -\infty} p(x)</m> and <m>\displaystyle \lim_{x \to \infty} p(x)</m>?
+						¿Qué otros números de puntos de inflexión son posibles para <m>p(x)</m>? ¿Puede no tener puntos de inflexión? ¿Solo uno? ¿Exactamente dos? Experimenta y explica.
 					</p>
 				</li>
 				<li>
 					<p>
-						What happens when we plot <m>y = a_4 x^4</m> in <em>Desmos</em> and compare <m>p(x)</m> and <m>a_4 x^4</m>?  How do they look when we zoom out? (Experiment with different values of each of the sliders, too.)
+						¿Qué comportamiento a largo plazo es posible para <m>p(x)</m>? Dicho de otra manera, ¿cuáles son los posibles resultados para <m>\displaystyle \lim_{x \to -\infty} p(x)</m> y <m>\displaystyle \lim_{x \to \infty} p(x)</m>?
+					</p>
+				</li>
+				<li>
+					<p>
+						¿Qué pasa cuando graficamos <m>y = a_4 x^4</m> en <em>Desmos</em> y comparamos <m>p(x)</m> y <m>a_4 x^4</m>? ¿Cómo se ven cuando hacemos zoom out? (Experimenta también con diferentes valores de cada uno de los deslizadores.)
 					</p>
 				</li>
 			</ol>
 		</p>
 	</statement>
-
+		
 </exploration>

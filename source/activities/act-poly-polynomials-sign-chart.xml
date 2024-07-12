@@ -17,42 +17,42 @@
 
 	<statement>
 		<p>
-			Consider the polynomial function given by 
+			Considera la función polinómica dada por 
 			<me>
 				p(x) = 4692(x+1520)(x^2+10000)(x-3471)^2(x-9738)
 			</me>.
 		</p>
-
+	
 		<p>
 			<ol marker="a.">
 				<li>
 					<p>
-						What is the degree of <m>p</m>?  How can you tell <em>without</em> fully expanding the factored form of the function?
+						¿Cuál es el grado de <m>p</m>? ¿Cómo puedes saberlo <em>sin</em> expandir completamente la forma factorizada de la función?
 					</p>
 				</li>
 				<li>
 					<p>
-						What can you say about the sign of the factor <m>(x^2 + 10000)</m>?
+						¿Qué puedes decir sobre el signo del factor <m>(x^2 + 10000)</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						What are the zeros of the polynomial <m>p</m>?
+						¿Cuáles son los ceros del polinomio <m>p</m>?
 					</p>
 				</li>
 				<li>
 					<p>
-						Construct a sign chart for <m>p</m> by using the zeros you identified in (c) and then analyzing the sign of each factor of <m>p</m>.
+						Construye un diagrama de signos para <m>p</m> usando los ceros que identificaste en (c) y luego analizando el signo de cada factor de <m>p</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Without using a graphing utility, construct an approximate graph of <m>p</m> that has the zeros of <m>p</m> carefully labeled on the <m>x</m>-axis.  
+						Sin usar una utilidad de graficación, construye una gráfica aproximada de <m>p</m> que tenga los ceros de <m>p</m> cuidadosamente etiquetados en el eje <m>x</m>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Use a graphing utility to check your earlier work.  What is challenging or misleading when using technology to graph <m>p</m>?
+						Usa una utilidad de graficación para verificar tu trabajo anterior. ¿Qué es desafiante o engañoso al usar tecnología para graficar <m>p</m>?
 					</p>
 				</li>
 			</ol>
@@ -68,6 +68,5 @@
 			
 		</p>
 	</solution>
-
+	
 </activity>
-

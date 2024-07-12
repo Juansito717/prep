@@ -14,35 +14,35 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-poly-rational">
-  <title>Rational Functions</title>
+	<title>Funciones Racionales</title>
 
 	<objectives>
 		<ul>
 			<li>
 				<p>
-					What is a rational function?
+					¿Qué es una función racional?
 				</p>
 			</li>
 			<li>
 				<p>
-					How can we determine key information about a rational function from its algebraic structure?
+					¿Cómo podemos determinar información clave sobre una función racional a partir de su estructura algebraica?
 				</p>
 			</li>
 			<li>
 				<p>
-					Why are rational functions important?
+					¿Por qué son importantes las funciones racionales?
 				</p>
 			</li>
 		</ul>
 	</objectives>
-
+	
 	<introduction>
 		<p>
-			The average rate of change of a function on an interval always involves a ratio.  Indeed, for a given function <m>f</m> that interests us near <m>t = 2</m>, we can investigate its average rate of change on intervals near this value by considering
+			La tasa de cambio promedio de una función en un intervalo siempre implica una razón. De hecho, para una función dada <m>f</m> que nos interesa cerca de <m>t = 2</m>, podemos investigar su tasa de cambio promedio en intervalos cercanos a este valor considerando
 			<me>
 				AV_{[2,2+h]} = \frac{f(2+h)-f(2)}{h}
 			</me>.
-			Suppose, for instance, that <m>f</m> meausures the height of a falling ball at time <m>t</m> and is given by <m>f(t) = -16t^2 + 32t + 48</m>, which happens to be a polynomial function of degree <m>2</m>.  For this particular function, its average rate of change on <m>[2,2+h]</m> is
+			Supón, por ejemplo, que <m>f</m> mide la altura de una pelota en caída en el tiempo <m>t</m> y está dada por <m>f(t) = -16t^2 + 32t + 48</m>, que resulta ser una función polinómica de grado <m>2</m>. Para esta función en particular, su tasa de cambio promedio en <m>[2,2+h]</m> es
 			<md>
 				<mrow>
 					AV_{[2,2+h]} &amp;= \frac{f(2+h)-f(2)}{h}
@@ -57,213 +57,213 @@
 						 &amp;= \frac{-32h - 16h^2}{h}
 				</mrow>
 			</md>.
-			Structurally, we observe that <m>AV_{[2,2+h]}</m> is a ratio of the two functions <m>-32h - 16h^2</m> and <m>h</m>.  Moreover, both the numerator and the denominator of the expression are themselves polynomial functions of the variable <m>h</m>.  Note that we may be especially interested in what occurs as <m>h \to 0</m>, as these values will tell us the average velocity of the moving ball on shorter and shorter time intervals starting at <m>t = 2</m>.  At the same time, <m>AV_{[2,2+h]}</m> is not defined for <m>h = 0</m>.
+			Estructuralmente, observamos que <m>AV_{[2,2+h]}</m> es una razón de las dos funciones <m>-32h - 16h^2</m> y <m>h</m>. Además, tanto el numerador como el denominador de la expresión son en sí mismos funciones polinómicas de la variable <m>h</m>. Nota que podemos estar especialmente interesados en lo que ocurre cuando <m>h \to 0</m>, ya que estos valores nos dirán la velocidad promedio de la pelota en movimiento en intervalos de tiempo cada vez más cortos comenzando en <m>t = 2</m>. Al mismo tiempo, <m>AV_{[2,2+h]}</m> no está definido para <m>h = 0</m>.
 		</p>
-
+	
 		<p>
-			Ratios of polynomial functions arise in several different important circumstances.  Sometimes we are interested in what happens when the denominator approaches <m>0</m>, which makes the overall ratio undefined.  In other situations, we may want to know what happens in the long term and thus consider what happens when the input variable increases without bound.
+			Las razones de funciones polinómicas surgen en varias circunstancias importantes. A veces nos interesa lo que ocurre cuando el denominador se aproxima a <m>0</m>, lo que hace que la razón total no esté definida. En otras situaciones, podemos querer saber qué ocurre a largo plazo y, por lo tanto, considerar lo que ocurre cuando la variable de entrada aumenta sin límite.
 		</p>
-
+	
 		<xi:include href="./previews/PA-poly-rational.xml" />
 
 	</introduction>
 
 	<subsection xml:id="subsec-poly-rational-long-term">
 		<title>
-			Long-range behavior of rational functions
+			Comportamiento a largo plazo de funciones racionales
 		</title>
 		<p>
-			The functions <m>AV_{[2,2+h]} = \frac{-32h - 16h^2}{h}</m> and <m>A(q) = \frac{5000000 + 2500q}{q}</m> are both examples of rational functions, since each is a ratio of polynomial functions.  Formally, we have the following definition.
+			Las funciones <m>AV_{[2,2+h]} = \frac{-32h - 16h^2}{h}</m> y <m>A(q) = \frac{5000000 + 2500q}{q}</m> son ambos ejemplos de funciones racionales, ya que cada una es una razón de funciones polinomiales. Formalmente, tenemos la siguiente definición.
 		</p>
-
+	
 		<definition xml:id="def-rational-function">
 			<idx><h>rational function</h></idx>
 			<statement>
 				<p>
-					A function <m>r</m> is <term>rational</term> provided that it is possible to write <m>r</m> as the ratio of two polynomials, <m>p</m> and <m>q</m>. That is, <m>r</m> is rational provided that for some polynomial functions <m>p</m> and <m>q</m>, we have
-				    <me>
-				      r(x) = \frac{p(x)}{q(x)}
-				    </me>.
- 				</p>
+					Una función <m>r</m> es <term>racional</term> siempre que sea posible escribir <m>r</m> como la razón de dos polinomios, <m>p</m> y <m>q</m>. Es decir, <m>r</m> es racional siempre que para algunas funciones polinomiales <m>p</m> y <m>q</m>, tengamos
+					<me>
+					  r(x) = \frac{p(x)}{q(x)}
+					</me>.
+				</p>
 			</statement>
 		</definition>
-
+	
 		<p>
-			Like with polynomial functions, we are interested in such natural questions as 
+			Al igual que con las funciones polinomiales, nos interesan preguntas naturales como
 			<ul>
 				<li>
 					<p>
-						What is the long range behavior of a given rational function?
+						¿Cuál es el comportamiento a largo plazo de una función racional dada?
 					</p>
 				</li>
 				<li>
 					<p>
-						What is the domain of a given rational function?
+						¿Cuál es el dominio de una función racional dada?
 					</p>
 				</li>
 				<li>
 					<p>
-						How can we determine where a given rational function's value is <m>0</m>?
+						¿Cómo podemos determinar dónde el valor de una función racional dada es <m>0</m>?
 					</p>
 				</li>
 			</ul>
 		</p>
-
+	
 		<p>
-			We begin by focusing on the long-range behavior of rational functions.  It's important first to recall our earlier work with power functions of the form <m>p(x) = x^{-n}</m> where <m>n = 1, 2, \ldots</m>.  For such functions, we know that <m>p(x) = \frac{1}{x^n}</m> where <m>n \gt 0</m> and that
+			Comenzamos enfocándonos en el comportamiento a largo plazo de las funciones racionales. Es importante primero recordar nuestro trabajo anterior con funciones de potencia de la forma <m>p(x) = x^{-n}</m> donde <m>n = 1, 2, \ldots</m>. Para tales funciones, sabemos que <m>p(x) = \frac{1}{x^n}</m> donde <m>n \gt 0</m> y que
 			<me>
 				\lim_{x \to \infty} \frac{1}{x^n} = 0
 			</me>
-			since <m>x^n</m> increases without bound as <m>x \to \infty</m>.  The same is true when <m>x \to -\infty</m>:  <m>\lim_{x \to -\infty} \frac{1}{x^n} = 0</m>. Thus, any time we encounter a quantity such as <m>\frac{1}{x^3}</m>, this quantity will approach <m>0</m> as <m>x</m> increases without bound, and this will also occur for any constant numerator.  For instance,
+			ya que <m>x^n</m> aumenta sin límite a medida que <m>x \to \infty</m>. Lo mismo es cierto cuando <m>x \to -\infty</m>: <m>\lim_{x \to -\infty} \frac{1}{x^n} = 0</m>. Por lo tanto, cada vez que encontramos una cantidad como <m>\frac{1}{x^3}</m>, esta cantidad se acercará a <m>0</m> a medida que <m>x</m> aumente sin límite, y esto también ocurrirá para cualquier numerador constante. Por ejemplo,
 			<me>
 				\lim_{x \to \infty} \frac{2500}{x^2} = 0
 			</me>
-			since <m>2500</m> times a quantity approaching <m>0</m> will still approach <m>0</m> as <m>x</m> increases.  
+			ya que <m>2500</m> veces una cantidad que se acerca a <m>0</m> seguirá acercándose a <m>0</m> a medida que <m>x</m> aumente.
 		</p>
-
+	
 		<xi:include href="./activities/act-poly-rational-long-term-1.xml" />
 
 		<xi:include href="./activities/act-poly-rational-long-term-2.xml" />
 
 		<p>
-			We summarize and generalize the results of <xref ref="act-poly-rational-long-term-1">Activity</xref> and <xref ref="act-poly-rational-long-term-2">Activity</xref> as follows.
+			Resumimos y generalizamos los resultados de <xref ref="act-poly-rational-long-term-1">Activity</xref> y <xref ref="act-poly-rational-long-term-2">Activity</xref> de la siguiente manera.
 		</p>
-
+		
 	  	<assemblage xml:id="asm-rational-functions-long-term">
 	  		<idx><h>rational function</h><h>long-term behavior</h></idx>
-	  		<title>The long-term behavior of a rational function</title>
-	 		<p>
-	 			Let <m>p</m> and <m>q</m> be polynomial functions so that <m>r(x) = \frac{p(x)}{q(x)}</m> is a rational function.  Suppose that <m>p</m> has degree <m>n</m> with leading term <m>a_n x^n</m> and <m>q</m> has degree <m>m</m> with leading term <m>b_m x^m</m> for some nonzero constants <m>a_n</m> and <m>b_m</m>.  There are three possibilities (<m>n \lt m</m>, <m>n = m</m>, and <m>n \gt m</m>) that result in three different behaviors of <m>r</m>:
-			</p>
-
-	 			<p>
-	 				<ol marker="a.">
-		 				<li>
-		 					<p>
-		 						if <m>n \lt m</m>, then the degree of the numerator is less than the degree of the denominator, and thus
-		 						<me>
-		 							\lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0} = 0
-		 						</me>,
-		 						which tells us that <m>y = 0</m> is a horizontal asymptote of <m>r</m>;
-		 					</p>
-		 				</li>
-		 				<li>
-		 					<p>
-		 						if <m>n = m</m>, then the degree of the numerator equals the degree of the denominator, and thus
-		 						<me>
-		 							\lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_n x^n + \cdots + b_0} = \frac{a_n}{b_n}
-		 						</me>,
-		 						which tells us that <m>y = \frac{a_n}{b_n}</m> (the ratio of the coefficients of the highest order terms in <m>p</m> and <m>q</m>) is a horizontal asymptote of <m>r</m>;
-		 					</p>
-		 				</li>
-		 				<li>
-		 					<p>
-		 						if <m>n \gt m</m>, then the degree of the numerator is greater than the degree of the denominator, and thus
-		 						<me>
-		 							\lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0} = \pm \infty
-		 						</me>,
-		 						(where the sign of the limit depends on the signs of <m>a_n</m> and <m>b_m</m>) which tells us that <m>r</m> is does not have a horizontal asymptote.
-		 					</p>
-		 				</li>
-		 			</ol> 
-	 			</p>
-			<p>
-				In both situations (a) and (b), the value of <m>\lim_{x \to -\infty} r(x)</m> is identical to <m>\lim_{x \to \infty} r(x)</m>.
-	 		</p>
-	  	</assemblage>
+			  <title>El comportamiento a largo plazo de una función racional</title>
+			  <p>
+				  Sea <m>p</m> y <m>q</m> funciones polinómicas de modo que <m>r(x) = \frac{p(x)}{q(x)}</m> es una función racional. Supón que <m>p</m> tiene grado <m>n</m> con término principal <m>a_n x^n</m> y <m>q</m> tiene grado <m>m</m> con término principal <m>b_m x^m</m> para algunas constantes no nulas <m>a_n</m> y <m>b_m</m>. Hay tres posibilidades (<m>n \lt m</m>, <m>n = m</m>, y <m>n \gt m</m>) que resultan en tres comportamientos diferentes de <m>r</m>:
+			  </p>
+		  
+			  <p>
+				  <ol marker="a.">
+					  <li>
+						  <p>
+							  si <m>n \lt m</m>, entonces el grado del numerador es menor que el grado del denominador, y por lo tanto
+							  <me>
+								  \lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0} = 0
+							  </me>,
+							  lo que nos dice que <m>y = 0</m> es una asíntota horizontal de <m>r</m>;
+						  </p>
+					  </li>
+					  <li>
+						  <p>
+							  si <m>n = m</m>, entonces el grado del numerador es igual al grado del denominador, y por lo tanto
+							  <me>
+								  \lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_n x^n + \cdots + b_0} = \frac{a_n}{b_n}
+							  </me>,
+							  lo que nos dice que <m>y = \frac{a_n}{b_n}</m> (la razón de los coeficientes de los términos de mayor orden en <m>p</m> y <m>q</m>) es una asíntota horizontal de <m>r</m>;
+						  </p>
+					  </li>
+					  <li>
+						  <p>
+							  si <m>n \gt m</m>, entonces el grado del numerador es mayor que el grado del denominador, y por lo tanto
+							  <me>
+								  \lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0} = \pm \infty
+							  </me>,
+							  (donde el signo del límite depende de los signos de <m>a_n</m> y <m>b_m</m>) lo que nos dice que <m>r</m> no tiene una asíntota horizontal.
+						  </p>
+					  </li>
+				  </ol> 
+			  </p>
+			  <p>
+				  En ambas situaciones (a) y (b), el valor de <m>\lim_{x \to -\infty} r(x)</m> es idéntico a <m>\lim_{x \to \infty} r(x)</m>.
+			  </p>
+		</assemblage>
 
 	</subsection>
 
 	<subsection xml:id="subsec-poly-rational-domain">
-		<title>The domain of a rational function</title>
+		<title>El dominio de una función racional</title>
 		<p>
-			Because a rational function can be written in the form <m>r(x) = \frac{p(x)}{q(x)}</m> for some polynomial functions <m>p</m> and <m>q</m>, we have to be concerned about the possibility that a rational function's denominator is zero.  Since polynomial functions always have their domain as the set of all real numbers, it follows that any rational function is only undefined at points where its denominator is zero.
+			Dado que una función racional se puede escribir en la forma <m>r(x) = \frac{p(x)}{q(x)}</m> para algunas funciones polinómicas <m>p</m> y <m>q</m>, tenemos que preocuparnos por la posibilidad de que el denominador de una función racional sea cero. Dado que las funciones polinómicas siempre tienen su dominio como el conjunto de todos los números reales, se sigue que cualquier función racional solo está indefinida en los puntos donde su denominador es cero.
 		</p>
-
+	
 	  	<assemblage xml:id="asm-rational-functions-domain">
 	  		<idx><h>rational function</h><h>domain</h></idx>
-	  		<title>The domain of a rational function</title>
-	 		<p>
-	 			Let <m>p</m> and <m>q</m> be polynomial functions so that <m>r(x) = \frac{p(x)}{q(x)}</m> is a rational function.  The domain of <m>r</m> is the set of all real numbers except those for which <m>q(x) = 0</m>.
-	 		</p>
-	  	</assemblage>
+			  <title>El dominio de una función racional</title>
+			  <p>
+				Sea <m>p</m> y <m>q</m> funciones polinómicas de modo que <m>r(x) = \frac{p(x)}{q(x)}</m> es una función racional. El dominio de <m>r</m> es el conjunto de todos los números reales excepto aquellos para los cuales <m>q(x) = 0</m>.
+			</p>
+		</assemblage>
 
 	  	<example xml:id="ex-rational-function-domain">
 	  		<statement>
-	  			<p>
-	  				Determine the domain of the function <m>r(x) = \frac{5x^3 + 17x^2 - 9x + 4}{2x^3 - 6x^2 - 8x}</m>.
-	  			</p>
-	  		</statement>
+				<p>
+					Determina el dominio de la función <m>r(x) = \frac{5x^3 + 17x^2 - 9x + 4}{2x^3 - 6x^2 - 8x}</m>.
+				</p>
+			</statement>
 	  		<solution>
 	  			<p>
-	  				To find the domain of any rational function, we need to determine where the denominator is zero.  The best way to find these values exactly is to factor the denominator.  Thus, we observe that
-	  				<me>
-	  					2x^3 - 6x^2 - 8x = 2x(x^2 - 3x - 4) = 2x(x+1)(x-4)
-	  				</me>.
-	  				By the Zero Product Property, it follows that the denominator of <m>r</m> is zero at <m>x = 0</m>, <m>x = -1</m>, and <m>x = 4</m>.  Hence, the domain of <m>r</m> is the set of all real numbers except <m>-1</m>, <m>0</m>, and <m>4</m>.
-	  			</p>
-	  		</solution>
+					Para encontrar el dominio de cualquier función racional, necesitamos determinar dónde el denominador es cero. La mejor manera de encontrar estos valores exactamente es factorizar el denominador. Así, observamos que
+					<me>
+						2x^3 - 6x^2 - 8x = 2x(x^2 - 3x - 4) = 2x(x+1)(x-4)
+					</me>.
+					Por la Propiedad del Producto Cero, se sigue que el denominador de <m>r</m> es cero en <m>x = 0</m>, <m>x = -1</m>, y <m>x = 4</m>. Por lo tanto, el dominio de <m>r</m> es el conjunto de todos los números reales excepto <m>-1</m>, <m>0</m>, y <m>4</m>.
+				</p>
+			</solution>
 	  	</example>
 
-	  	<p>
-	  		We note that when it comes to determining the domain of a rational function, the numerator is irrelevant: all that matters is where the denominator is <m>0</m>.
-	  	</p>
-
+		<p>
+			Notamos que cuando se trata de determinar el dominio de una función racional, el numerador es irrelevante: lo único que importa es dónde el denominador es <m>0</m>.
+		</p>
+	
 	  	<xi:include href="./activities/act-poly-rational-domain.xml" />
 
 	</subsection>
 
 	<subsection xml:id="subsec-poly-rational-applications">
-		<title>Applications of rational functions</title>
+		<title>Aplicaciones de funciones racionales</title>
 		<p>
-			Rational functions arise naturally in the study of the average rate of change of a polynomial function, leading to expressions such as
+			Las funciones racionales surgen naturalmente en el estudio de la tasa promedio de cambio de una función polinómica, llevando a expresiones como
 			<me>
 				AV_{[2,2+h]} = \frac{-32h - 16h^2}{h}
 			</me>.  
-			We will study several subtle issues that correspond to such functions further in <xref ref="sec-poly-rational-features">Section</xref>.  For now, we will focus on a different setting in which rational functions play a key role.
+			Estudiaremos varios temas sutiles que corresponden a tales funciones más adelante en <xref ref="sec-poly-rational-features">Section</xref>. Por ahora, nos enfocaremos en un contexto diferente en el cual las funciones racionales juegan un papel clave.
 		</p>
-
+	
 		<p>
-			In <xref ref="sec-poly-polynomial-applications">Section</xref>, we encountered a class of problems where a key quantity was modeled by a polynomial function.  We found that if we considered a container such as a cylinder with fixed surface area, then the volume of the container could be written as a polynomial of a single variable.  For instance, if we consider a circular cylinder with surface area <m>10</m> square feet, then we know that
+			En <xref ref="sec-poly-polynomial-applications">Section</xref>, encontramos una clase de problemas donde una cantidad clave se modelaba mediante una función polinómica. Descubrimos que si consideramos un contenedor como un cilindro con área de superficie fija, entonces el volumen del contenedor se puede escribir como un polinomio de una sola variable. Por ejemplo, si consideramos un cilindro circular con un área de superficie de <m>10</m> pies cuadrados, entonces sabemos que
 			<me>
 				S = 10 = 2\pi r^2 + 2\pi r h
 			</me>
-			and therefore <m>h = \frac{10 - 2\pi r^2}{2 \pi r}</m>.  Since the cylinder's volume is <m>V = \pi r^2 h</m>, it follows that
+			y por lo tanto <m>h = \frac{10 - 2\pi r^2}{2 \pi r}</m>. Dado que el volumen del cilindro es <m>V = \pi r^2 h</m>, se sigue que
 			<me>
 				V = \pi r^2 h = \pi r^2 \left( \frac{10 - 2\pi r^2}{2 \pi r} \right) = r(5 - \pi r^2)
 			</me>,
-			which is a polynomial function of <m>r</m>.
+			lo cual es una función polinómica de <m>r</m>.
 		</p>
-
+	
 		<p>
-			What happens if we instead fix the volume of the container and ask about how surface area can be written as a function of a single variable?
+			¿Qué pasa si en lugar de eso fijamos el volumen del contenedor y preguntamos cómo se puede escribir el área de superficie como una función de una sola variable?
 		</p>
-
+	
 		<example xml:id="ex-rational-application-cylinder">
 			<statement>
 				<p>
-					Suppose we want to construct a circular cylinder that holds <m>20</m> cubic feet of volume.  How much material does it take to build the container?  How can we state the amount of material as a function of a single variable?
+					Supón que queremos construir un cilindro circular que contenga <m>20</m> pies cúbicos de volumen. ¿Cuánto material se necesita para construir el contenedor? ¿Cómo podemos expresar la cantidad de material como una función de una sola variable?
 				</p>
 			</statement>
 			<solution>
 				<p>
-					Neglecting any scrap, the amount of material it takes to construct the container is its surface area, which we know to be 
+					Descartando cualquier desperdicio, la cantidad de material que se necesita para construir el contenedor es su área de superficie, que sabemos que es 
 					<me>
 						S = 2\pi r^2 + 2\pi r h
 					</me>.
-					Because we want the volume to be fixed, this results in a constraint equation that enables us to relate <m>r</m> and <m>h</m>.  In particular, since
+					Dado que queremos que el volumen sea fijo, esto resulta en una ecuación de restricción que nos permite relacionar <m>r</m> y <m>h</m>. En particular, dado que
 					<me>
 						V = 20 = \pi r^2 h
 					</me>,
-					it follows that we can solve for <m>h</m> and get <m>h = \frac{20}{\pi r^2}</m>.  Substituting this expression for <m>h</m> in the equation for surface area, we find that
+					se sigue que podemos resolver para <m>h</m> y obtener <m>h = \frac{20}{\pi r^2}</m>. Sustituyendo esta expresión para <m>h</m> en la ecuación para el área de superficie, encontramos que
 					<me>
 						S = 2\pi r^2 + 2\pi r \cdot \frac{20}{\pi r^2} = 2 \pi r^2 + \frac{40}{r}
 					</me>.
-					Getting a common denominator, we can also write <m>S</m> in the form
+					Obteniendo un denominador común, también podemos escribir <m>S</m> en la forma
 					<me>
 						S(r) = \frac{2 \pi r^3 + 40}{r}
 					</me>
-					and thus we see that <m>S</m> is a rational function of <m>r</m>.  Because of the physical context of the problem and the fact that the denominator of <m>S</m> is <m>r</m>, the domain of <m>S</m> is the set of all positive real numbers. 
+					y así vemos que <m>S</m> es una función racional de <m>r</m>. Debido al contexto físico del problema y al hecho de que el denominador de <m>S</m> es <m>r</m>, el dominio de <m>S</m> es el conjunto de todos los números reales positivos. 
 				</p>
 			</solution>
 		</example>
@@ -273,32 +273,32 @@
 	</subsection>
 
 	<subsection xml:id="subsec-poly-rational-summary">
-		<title>Summary</title>
+		<title>Resumen</title>
 
 		<ul>
 			<li>
 				<p>
-					A rational function is a function whose formula can be written as the ratio of two polynomial functions.  For instance, <m>r(x) = \frac{7x^3 - 5x + 16}{-4x^4 + 2x^3 - 11x + 3}</m> is a rational function.
+					Una función racional es una función cuya fórmula se puede escribir como la razón de dos funciones polinómicas. Por ejemplo, <m>r(x) = \frac{7x^3 - 5x + 16}{-4x^4 + 2x^3 - 11x + 3}</m> es una función racional.
 				</p>
 			</li>
 			<li>
 				<p>
-					Two aspects of rational functions are straightforward to determine for any rational function.  Given <m>r(x) = \frac{p(x)}{q(x)}</m> where <m>p</m> and <m>q</m> are polynomials, the domain of <m>r</m> is the set of all real numbers except any values of <m>x</m> for which <m>q(x) = 0</m>.  In addition, we can determine the long-range behavior of <m>r</m> by examining the highest order terms in <m>p</m> and <m>q</m>:
-
+					Dos aspectos de las funciones racionales son fáciles de determinar para cualquier función racional. Dado <m>r(x) = \frac{p(x)}{q(x)}</m> donde <m>p</m> y <m>q</m> son polinomios, el dominio de <m>r</m> es el conjunto de todos los números reales excepto cualquier valor de <m>x</m> para el cual <m>q(x) = 0</m>. Además, podemos determinar el comportamiento a largo plazo de <m>r</m> examinando los términos de mayor orden en <m>p</m> y <m>q</m>:
+	
 					<ul>
 						<li>
 							<p>
-								if the degree of <m>p</m> is less than the degree of <m>q</m>, then <m>r</m> has a horizontal asymptote at <m>y = 0</m>;
+								si el grado de <m>p</m> es menor que el grado de <m>q</m>, entonces <m>r</m> tiene una asíntota horizontal en <m>y = 0</m>;
 							</p>
 						</li>
 						<li>
 							<p>
-								if the degree of <m>p</m> equals the degree of <m>q</m>, then <m>r</m> has a horizontal asymptote at <m>y = \frac{a_n}{b_n}</m>, where <m>a_n</m> and <m>b_n</m> are the leading coefficients of <m>p</m> and <m>q</m> respectively;
+								si el grado de <m>p</m> es igual al grado de <m>q</m>, entonces <m>r</m> tiene una asíntota horizontal en <m>y = \frac{a_n}{b_n}</m>, donde <m>a_n</m> y <m>b_n</m> son los coeficientes principales de <m>p</m> y <m>q</m> respectivamente;
 							</p>
 						</li>
 						<li>
 							<p>
-								and if the degree of <m>p</m> is greater than the degree of <m>q</m>, then <m>r</m> does not have a horizontal asymptote.
+								y si el grado de <m>p</m> es mayor que el grado de <m>q</m>, entonces <m>r</m> no tiene una asíntota horizontal.
 							</p>
 						</li>
 					</ul>
@@ -306,11 +306,11 @@
 			</li>
 			<li>
 				<p>
-					Two reasons that rational functions are important are that they arise naturally when we consider the average rate of change on an interval whose length varies and when we consider problems that relate the volume and surface area of three-dimensional containers when one of those two quantities is constrained. 
+					Dos razones por las que las funciones racionales son importantes son que surgen naturalmente cuando consideramos la tasa promedio de cambio en un intervalo cuya longitud varía y cuando consideramos problemas que relacionan el volumen y el área de superficie de contenedores tridimensionales cuando una de esas dos cantidades está restringida. 
 				</p>
 			</li>
 		</ul>
-
+	
 	</subsection>
 
 	<xi:include href="./exercises/ez-poly-rational.xml" />
@@ -318,4 +318,3 @@
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>
-
