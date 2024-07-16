@@ -31,11 +31,11 @@
   <exercise xml:id="ez-exp-log-WW5">
     <webwork source="Library/Michigan/skills_questions/topic_solving_exp_log/prob01.pg" />
   </exercise>
--->  
+
   <exercise xml:id="ez-exp-log-WW6">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_41.pg" />
   </exercise>
-
+-->  
   <exercise xml:id="ez-exp-log-find-inverse">
     <statement>
       <p>
