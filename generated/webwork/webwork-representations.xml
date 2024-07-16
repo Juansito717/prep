@@ -349,46 +349,29 @@ where <m>T</m> is the temperature of the food.</p>
     <pg source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_6.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-20" ww-id="webwork-20">
-    <static seed="20" source="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_41.pg">
-      <statement><p>Find the solution of the logarithmic equation
-<me>7 - \ln(2-x)=0</me>
-correct to four decimal places.</p>
-<p>Your answer is</p>
-<p><m>x=</m> <fillin name="AnSwEr0001" characters="25"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>-1094.63315842846</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_41.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_41.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-21" ww-id="webwork-21">
-    <static seed="21" source="Library/Rochester/setAlgebra31LogExpApplications/infection1.pg">
-      <statement><p>The town of Sickville, with a population of 6748 is exposed to the Blue Moon 
+    <static seed="20" source="Library/Rochester/setAlgebra31LogExpApplications/infection1.pg">
+      <statement><p>The town of Sickville, with a population of 7856 is exposed to the Blue Moon 
 Virus, against which there is no immunity.  The number of people infected when
-the virus is detected is 85.  Suppose the number of infections grows 
-logistically, with <m>k = 0.45</m>.</p>
+the virus is detected is 20.  Suppose the number of infections grows 
+logistically, with <m>k = 0.09</m>.</p>
 <p>Find <m>A</m>.  <fillin name="AnSwEr0001" characters="10"/></p>
 <p>Find the formula for the number of people infected after <m>t</m> days.</p>
 <p><m>N(t) =</m> <fillin name="AnSwEr0002" characters="20"/></p>
-<p>Find the number of people infected after 17 days.  <fillin name="AnSwEr0003" characters="10"/></p>
+<p>Find the number of people infected after 23 days.  <fillin name="AnSwEr0003" characters="10"/></p>
 </statement>
       <answer>
         <p>
-          <m>78.3882352941176</m>
+          <m>391.8</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{6748}{1+78.3882\cdot 2.71828^{-0.45t}}</m>
+          <m>\frac{7856}{1+391.8\cdot 2.71828^{-0.09t}}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>6505.24846224723</m>
+          <m>155.750673496378</m>
         </p>
       </answer>
     </static>
