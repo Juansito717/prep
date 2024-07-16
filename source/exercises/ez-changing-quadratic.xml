@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-changing-quadratic">
-
+<!--
   <exercise xml:id="ez-changing-quadratic-WW1">
     <webwork source="Library/Rochester/setAlgebra20QuadraticFun/lh3-1_19-20.pg" />
   </exercise>
@@ -30,8 +30,7 @@
     <webwork source="Library/ASU-topics/setRateChange/s1_1_5.pg" />
   </exercise>
 
-
-<!--  THESE ONES DON'T
+  THESE ONES DON'T
   <exercise xml:id="ez-changing-quadratic-WW5">
     <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec6/Q10.pg" />
   </exercise>
@@ -42,18 +41,16 @@
 
   <exercise xml:id="ez-changing-quadratic-WW7">
     <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec1/Q34.pg" />
-  </exercise>
 -->
-
 
   <exercise xml:id="ez-quadratic-find-formula">
     <statement>
       <p>
-        Two quadratic functions, <m>f</m> and <m>g</m>, are determined by their respective graphs in <xref ref="F-ez-quadratic-find-formula">Figure</xref>. 
+        Dos funciones cuadráticas, <m>f</m> y <m>g</m>, están determinadas por sus respectivos gráficos en <xref ref="F-ez-quadratic-find-formula">Figura</xref>. 
       </p>
 
       <figure xml:id="F-ez-quadratic-find-formula">
-        <caption>Two quadratic functions, <m>f</m> and <m>g</m>.</caption>
+        <caption>Dos funciones cuadráticas, <m>f</m> y <m>g</m>.</caption>
         <image width="50%" source="images/quadratic-ez-find-formula" />
       </figure>
 
@@ -61,22 +58,22 @@
         <ol marker="a.">
           <li>
             <p>
-              How does the information provided enable you to find a formula for <m>f</m>?  Explain, and determine the formula.
+              ¿Cómo te permite la información proporcionada encontrar una fórmula para <m>f</m>? Explica y determina la fórmula.
             </p>
           </li>
           <li>
             <p>
-              How does the information provided enable you to find a formula for <m>g</m>?  Explain, and determine the formula.
+              ¿Cómo te permite la información proporcionada encontrar una fórmula para <m>g</m>? Explica y determina la fórmula.
             </p>
           </li>
           <li>
             <p>
-              Consider an additional quadratic function <m>h</m> given by <m>h(x) = 2x^2 - 8x + 6</m>.  Does the graph of <m>h</m> intersect the graph of <m>f</m>?  If yes, determine the exact points of intersection, with justification.  If not, explain why.
+              Considera una función cuadrática adicional <m>h</m> dada por <m>h(x) = 2x^2 - 8x + 6</m>. ¿El gráfico de <m>h</m> intersecta el gráfico de <m>f</m>? Si es así, determina los puntos exactos de intersección, con justificación. Si no, explica por qué.
             </p>
           </li>
           <li>
             <p>
-              Does the graph of <m>h</m> intersect the graph of <m>g</m>?  If yes, determine the exact points of intersection, with justification.  If not, explain why.
+              ¿El gráfico de <m>h</m> intersecta el gráfico de <m>g</m>? Si es así, determina los puntos exactos de intersección, con justificación. Si no, explica por qué.
             </p>
           </li>
         </ol>
@@ -84,12 +81,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -97,29 +94,29 @@
   <exercise xml:id="ez-quadratic-aroc-patterns">
     <statement>
       <p>
-        Consider the quadratic function <m>f</m> given by <m>f(x) = \frac{1}{2}(x-2)^2 + 1</m>.
+        Considera la función cuadrática <m>f</m> dada por <m>f(x) = \frac{1}{2}(x-2)^2 + 1</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Determine the exact location of the vertex of <m>f</m>.
+              Determina la ubicación exacta del vértice de <m>f</m>.
             </p>
           </li>
           <li>
             <p>
-              Does <m>f</m> have <m>0</m>, <m>1</m>, or <m>2</m> <m>x</m>-intercepts?  Explain, and determine the location(s) of any <m>x</m>-intercept(s) that exist. 
+              ¿Tiene <m>f</m> <m>0</m>, <m>1</m> o <m>2</m> intersecciones con el eje <m>x</m>? Explica y determina la(s) ubicación(es) de cualquier intersección con el eje <m>x</m> que exista(n).
             </p>
           </li>
           <li>
             <p>
-              Complete the following tables of function values and average rates of change of <m>f</m> at the stated inputs and intervals.
+              Completa las siguientes tablas de valores de la función y tasas promedio de cambio de <m>f</m> en las entradas e intervalos indicados.
             </p>
 
               <sidebyside width="50%">
                 <table xml:id="T-ez-quadratic-heights">
-                  <title>Function values for <m>f</m> at select inputs.</title>
+                  <title>Valores de la función para <m>f</m> en entradas seleccionadas.</title>
                   <tabular>
                     <row bottom="minor">
                       <cell><m>x</m></cell>
@@ -152,7 +149,7 @@
                   </tabular>
                 </table>  
                 <table xml:id="T-ez-quadratic-AVs">
-                  <title>Average rates of change for <m>f</m> on select intervals.</title>
+                  <title>Tasas promedio de cambio para <m>f</m> en intervalos seleccionados.</title>
                   <tabular>
                     <row bottom="minor">
                       <cell><m>[a,b]</m></cell>
@@ -184,7 +181,7 @@
           </li>
           <li>
             <p>
-              What pattern(s) do you observe in <xref ref="T-ez-quadratic-heights">Table</xref> and <xref ref="T-ez-quadratic-AVs"/>?
+              ¿Qué patrón(es) observas en <xref ref="T-ez-quadratic-heights">Tabla</xref> y <xref ref="T-ez-quadratic-AVs"/>?
             </p>
           </li>
         </ol>
@@ -192,12 +189,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -205,29 +202,29 @@
   <exercise xml:id="ez-quadratic-water-balloon">
     <statement>
       <p>
-        A water balloon is tossed vertically from a window on the fourth floor of a dormitory from an initial height of <m>56.3</m> feet.  A person two floors above observes the balloon reach its highest point <m>1.2</m> seconds after being launched.  
+        Un globo de agua es lanzado verticalmente desde una ventana en el cuarto piso de un dormitorio desde una altura inicial de <m>56.3</m> pies. Una persona dos pisos arriba observa que el globo alcanza su punto más alto <m>1.2</m> segundos después de ser lanzado.  
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              What is the balloon's exact height at <m>t = 2.4</m>?  Why?
+              ¿Cuál es la altura exacta del globo en <m>t = 2.4</m>? ¿Por qué?
             </p>
           </li>
           <li>
             <p>
-              What is the exact maximum height the balloon reaches at <m>t = 1.2</m>?
+              ¿Cuál es la altura máxima exacta que alcanza el globo en <m>t = 1.2</m>?
             </p>
           </li>
           <li>
             <p>
-              What exact time did the balloon land?
+              ¿A qué hora exacta aterrizó el globo?
             </p>
           </li>
           <li>
             <p>
-              At what initial velocity was the balloon launched?
+              ¿A qué velocidad inicial fue lanzado el globo?
             </p>
           </li>
         </ol>
@@ -235,12 +232,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>  

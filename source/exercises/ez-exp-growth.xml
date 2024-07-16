@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-exp-growth">
-
+<!--
   <exercise xml:id="ez-exp-growth-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec1/Connally3-3-1-12-Exponential-functions.pg" />
   </exercise>
@@ -38,7 +38,7 @@
   <exercise xml:id="ez-exp-growth-WW10">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec2/Q02.pg" />
   </exercise>
-
+-->
 <!--
   <exercise xml:id="ez-exp-growth-WW5">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec1/Q15.pg" />
@@ -54,41 +54,41 @@
   <exercise xml:id="ez-exp-growth-glacier">
     <statement>
       <p>
-        Grinnell Glacier in Glacier National Park in Montana covered about <m>142</m> acres in 2007 and was found to be shrinking at about <m>4.4</m>% per year.<fn>See Exercise 34 on p. 146 of Connally's <em>Functions Modeling Change</em>.</fn>
+        El glaciar Grinnell en el Parque Nacional Glacier en Montana cubría alrededor de <m>142</m> acres en 2007 y se encontró que estaba disminuyendo a aproximadamente <m>4.4</m>% por año.<fn>Ver Ejercicio 34 en la p. 146 de <em>Functions Modeling Change</em> de Connally.</fn>
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Let <m>G(t)</m> denote the area of Grinnell Glacier in acres in year <m>t</m>,
-              where <m>t</m> is the number of years since 2007.
-              Find a formula for <m>G(t)</m> and define the function in <em>Desmos</em>.
+              Deja que <m>G(t)</m> denote el área del glaciar Grinnell en acres en el año <m>t</m>,
+              donde <m>t</m> es el número de años desde 2007.
+              Encuentra una fórmula para <m>G(t)</m> y define la función en <em>Desmos</em>.
             </p>
           </li>
           <li>
             <p>
-              How many acres of ice were in the glacier in 1997?
-              In 2012?
-              What does the model predict for 2022?
+              ¿Cuántos acres de hielo había en el glaciar en 1997?
+              ¿En 2012?
+              ¿Qué predice el modelo para 2022?
             </p>
           </li>
           <li>
             <p>
-              How many total acres of ice were lost from 2007 to 2012?
+              ¿Cuántos acres de hielo se perdieron en total de 2007 a 2012?
             </p>
           </li>
           <li>
             <p>
-              What was the average rate of change of <m>G</m> from 2007 to 2012?
-              Write a sentence to explain the meaning of this number and include units on your answer.
-              In addition,
-              how does this compare to the average rate of change of <m>G</m> from 2012 to 2017?
+              ¿Cuál fue la tasa de cambio promedio de <m>G</m> de 2007 a 2012?
+              Escribe una oración para explicar el significado de este número e incluye unidades en tu respuesta.
+              Además,
+              ¿cómo se compara esto con la tasa de cambio promedio de <m>G</m> de 2012 a 2017?
             </p>
           </li>
           <li>
             <p>
-              How would you you describe the overall behavior of <m>G</m>, and thus what is happening to the Grinnell Glacier?
+              ¿Cómo describirías el comportamiento general de <m>G</m>, y por lo tanto, qué está pasando con el glaciar Grinnell?
             </p>
           </li>
         </ol>
@@ -96,12 +96,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -109,11 +109,11 @@
   <exercise xml:id="ez-exp-growth-find-f">
     <statement>
       <p>
-        Consider the exponential function <m>f</m> whose graph is given by <xref ref="F-growth-ez-find-a-b">Figure</xref>.  Note that <m>f</m> passes through the two noted points exactly.
+        Considera la función exponencial <m>f</m> cuyo gráfico se muestra en <xref ref="F-growth-ez-find-a-b">Figure</xref>. Nota que <m>f</m> pasa exactamente por los dos puntos indicados.
       </p>
 
       <figure xml:id="F-growth-ez-find-a-b">
-        <caption>A plot of the exponential function <m>f</m>.</caption>
+        <caption>Un gráfico de la función exponencial <m>f</m>.</caption>
         <image source="images/growth-ez-find-a-b" width="50%" />
       </figure>
 
@@ -121,22 +121,22 @@
         <ol marker="a.">
           <li>
             <p>
-              Determine the values of <m>a</m> and <m>b</m> exactly.
+              Determina los valores de <m>a</m> y <m>b</m> exactamente.
             </p>
           </li>
           <li>
             <p>
-              Determine the average rate of change of <m>f</m> on the intervals <m>[2,7]</m> and <m>[7,12]</m>.  Which average rate is greater?
+              Determina la tasa de cambio promedio de <m>f</m> en los intervalos <m>[2,7]</m> y <m>[7,12]</m>. ¿Cuál tasa de cambio promedio es mayor?
             </p>
           </li>
           <li>
             <p>
-              Find the equation of the linear function <m>L</m> that passes through the points <m>(2,20)</m> and <m>(7,5)</m>.
+              Encuentra la ecuación de la función lineal <m>L</m> que pasa por los puntos <m>(2,20)</m> y <m>(7,5)</m>.
             </p>
           </li>
           <li>
             <p>
-              Which average rate of change is greater?  The average rate of change of <m>f</m> on <m>[0,2]</m> or the average rate of change of <m>L</m> on <m>[0,2]</m>?
+              ¿Cuál tasa de cambio promedio es mayor? ¿La tasa de cambio promedio de <m>f</m> en <m>[0,2]</m> o la tasa de cambio promedio de <m>L</m> en <m>[0,2]</m>?
             </p>
           </li>
         </ol>
@@ -145,12 +145,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -158,11 +158,11 @@
   <exercise xml:id="ez-exp-growth-data">
     <statement>
       <p>
-        A cup of hot coffee is brought outside on a cold winter morning in Winnipeg, Manitoba, where the surrounding temperature is <m>0</m> degrees Fahrenheit.  A temperature probe records the coffee's temperature (in degrees Fahrenheit) every minute and generates the data shown in <xref ref="T-ez-exp-growth-data">Table</xref>.
+        Una taza de café caliente se lleva afuera en una fría mañana de invierno en Winnipeg, Manitoba, donde la temperatura ambiente es de <m>0</m> grados Fahrenheit. Una sonda de temperatura registra la temperatura del café (en grados Fahrenheit) cada minuto y genera los datos mostrados en <xref ref="T-ez-exp-growth-data">Table</xref>.
       </p>
 
       <table xml:id="T-ez-exp-growth-data">
-        <title>The temperature, <m>F</m>, of the coffee at time <m>t</m>.</title>
+        <title>La temperatura, <m>F</m>, del café en el tiempo <m>t</m>.</title>
         <tabular halign="center">
           <row bottom="minor">
             <cell><m>t</m></cell>
@@ -189,22 +189,22 @@
         <ol marker="a.">
           <li>
             <p>
-              Assume that the data in the table represents the overall trend of the behavior of <m>F</m>.  Is <m>F</m> linear, exponential, or neither?  Why?
+              Supón que los datos en la tabla representan la tendencia general del comportamiento de <m>F</m>. ¿Es <m>F</m> lineal, exponencial o ninguno? ¿Por qué?
             </p>
           </li>
           <li>
             <p>
-              Is it possible to determine an exact formula for <m>F</m>?  If yes, do so and justify your formula; if not, explain why not.
+              ¿Es posible determinar una fórmula exacta para <m>F</m>? Si es así, hazlo y justifica tu fórmula; si no, explica por qué no.
             </p>
           </li>
           <li>
             <p>
-              What is the average rate of change of <m>F</m> on <m>[4,6]</m>?  Write a sentence that explains the practical meaning of this value in the context of the overall exercise.
+              ¿Cuál es la tasa de cambio promedio de <m>F</m> en <m>[4,6]</m>? Escribe una oración que explique el significado práctico de este valor en el contexto del ejercicio general.
             </p>
           </li>
           <li>
             <p>
-              How do you think the data would appear if instead of being in a regular coffee cup, the coffee was contained in an insulated mug?
+              ¿Cómo crees que aparecerían los datos si en lugar de estar en una taza de café regular, el café estuviera contenido en una taza aislada?
             </p>
           </li>
         </ol>
@@ -213,12 +213,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -226,39 +226,39 @@
   <exercise xml:id="ez-exp-growth-drug">
     <statement>
       <p>
-        The amount (in milligrams) of a drug in a person's body following one dose is given by an exponential decay function.  Let <m>A(t)</m> denote the amount of drug in the body at time <m>t</m> in hours after the dose was taken.  In addition, suppose you know that <m>A(3) = 22.7</m> and <m>A(6) = 15.2</m>.
+        La cantidad (en miligramos) de un medicamento en el cuerpo de una persona después de una dosis se da por una función de decaimiento exponencial. Deja que <m>A(t)</m> denote la cantidad de medicamento en el cuerpo en el tiempo <m>t</m> en horas después de que se tomó la dosis. Además, supón que sabes que <m>A(3) = 22.7</m> y <m>A(6) = 15.2</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Find a formula for <m>A</m> in the form <m>A(t) = ab^t</m>, where you determine the values of <m>a</m> and <m>b</m> exactly.
+              Encuentra una fórmula para <m>A</m> en la forma <m>A(t) = ab^t</m>, donde determines los valores de <m>a</m> y <m>b</m> exactamente.
             </p>
           </li>
           <li>
             <p>
-              What is the size of the initial dose the person was given?
+              ¿Cuál es el tamaño de la dosis inicial que se le dio a la persona?
             </p>
           </li>
           <li>
             <p>
-              How much of the drug remains in the person's body <m>8</m> hours after the dose was taken?
+              ¿Cuánto del medicamento permanece en el cuerpo de la persona <m>8</m> horas después de que se tomó la dosis?
             </p>
           </li>
           <li>
             <p>
-              Estimate how long it will take until there is less than <m>1</m> mg of the drug remaining in the body.
+              Estima cuánto tiempo tomará hasta que quede menos de <m>1</m> mg del medicamento en el cuerpo.
             </p>
           </li>
           <li>
             <p>
-              Compute the average rate of change of <m>A</m> on the intervals <m>[3,5]</m>, <m>[5,7]</m>, and <m>[7,9]</m>.  Write at least one careful sentence to explain the meaning of the values you found, including appropriate units.  Then write at least one additional sentence to explain any overall trend(s) you observe in the average rate of change.
+              Calcula la tasa de cambio promedio de <m>A</m> en los intervalos <m>[3,5]</m>, <m>[5,7]</m> y <m>[7,9]</m>. Escribe al menos una oración cuidadosa para explicar el significado de los valores que encontraste, incluyendo unidades apropiadas. Luego escribe al menos una oración adicional para explicar cualquier tendencia general que observes en la tasa de cambio promedio.
             </p>
           </li>
           <li>
             <p>
-              Plot <m>A(t)</m> on an appropriate interval and label important points and features of the graph to highlight graphical interpretations of  your answers in (b), (c), (d), and (e).
+              Grafica <m>A(t)</m> en un intervalo apropiado y etiqueta puntos y características importantes del gráfico para resaltar interpretaciones gráficas de tus respuestas en (b), (c), (d) y (e).
             </p>
           </li>
         </ol>
@@ -266,12 +266,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

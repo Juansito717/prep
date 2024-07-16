@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C-exp">
-  	<title>Exponential and Logarithmic Functions</title>
+  	<title>Funciones Exponenciales y Logarítmicas</title>
   
   	<xi:include  href="./sec-exp-growth.xml" />
   	<xi:include  href="./sec-exp-modeling.xml" />
@@ -24,4 +24,3 @@
   	<xi:include  href="./sec-exp-temp-pop.xml" />
 
 </chapter>
-

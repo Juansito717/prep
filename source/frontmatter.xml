@@ -202,7 +202,7 @@
 
 
   <preface xml:id="preface-for-students">
-    <title>Estudiantes!  Lean esto!</title>
+    <title>Estudiantes,  ¡lean esto!</title>
     <p>
       Este libro es diferente.
     </p> 
@@ -240,9 +240,9 @@
   </preface>
 
   <preface xml:id="preface-for-instructors">
-    <title>Instructores!  Lean esto!</title>
+    <title>Instructores, ¡lean esto!</title>
     <p>
-      Este libro es diferente. Antes de seguir leyendo, primero lee <xref ref="preface-for-students" text="custom"><q>¡Estudiantes! ¡Lean esto!</q></xref> así como <xref ref="preface-our-goals" text="custom"><q>Nuestros Objetivos</q></xref>.
+      Este libro es diferente. Antes de seguir leyendo, primero lee <xref ref="preface-for-students" text="custom"><q>Estudiantes, ¡lean esto!</q></xref> así como <xref ref="preface-our-goals" text="custom"><q>Nuestros Objetivos</q></xref>.
     </p>
 
     <p>

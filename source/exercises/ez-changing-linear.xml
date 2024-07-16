@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-changing-linear">
-
+<!--
   <exercise xml:id="ez-changing-linear-WW1">
     <webwork source="Library/Michigan/Chap1Sec2/Q05.pg" />
   </exercise>
@@ -35,7 +35,7 @@
   </exercise>
 
 
-<!-- THIS ONE DOESN'T
+ THIS ONE DOESN'T
   <exercise xml:id="ez-changing-linear-WW6">
     <webwork source="Library/Michigan/skills_questions/topic_point_slope_line/prob02.pg" />
   </exercise>
@@ -44,13 +44,13 @@
   <exercise xml:id="ez-linear-apartment">
     <statement>
       <p>
-        An apartment manager keeps careful record of how the rent charged per unit corresponds to the number of occupied units in a large complex.  The collected data is shown in <xref ref="T-ez-linear-apartment">Table</xref>.<fn>This problem is a slightly modified version of one found in <url href="http://mathquest.carroll.edu/CarrollActiveCalculus/C_0.html">Carroll College's Chapter Zero resource for Active Calculus</url>.</fn>
+        Un administrador de apartamentos lleva un registro cuidadoso de cómo el alquiler cobrado por unidad corresponde al número de unidades ocupadas en un gran complejo. Los datos recopilados se muestran en <xref ref="T-ez-linear-apartment">Table</xref>.<fn>Este problema es una versión ligeramente modificada de uno encontrado en <url href="http://mathquest.carroll.edu/CarrollActiveCalculus/C_0.html">Carroll College's Chapter Zero resource for Active Calculus</url>.</fn>
       </p>
       <table xml:id="T-ez-linear-apartment">
-        <title>Data relating occupied apartments to monthly rent.</title>
+        <title>Datos que relacionan apartamentos ocupados con el alquiler mensual.</title>
           <tabular>
             <row bottom="minor">
-              <cell>Monthly Rent</cell>
+              <cell>Alquiler Mensual</cell>
               <cell>$650</cell>
               <cell>$700</cell>
               <cell>$750</cell>
@@ -59,7 +59,7 @@
               <cell>$900</cell>
             </row>
             <row>
-              <cell>Occupied Apartments</cell>
+              <cell>Apartamentos Ocupados</cell>
               <cell>203</cell>
               <cell>196</cell>
               <cell>189</cell>
@@ -74,32 +74,31 @@
         <ol marker="a.">
           <li>
             <p>
-              Why is it reasonable to say that the number of occupied apartments is a linear function of rent?
+              ¿Por qué es razonable decir que el número de apartamentos ocupados es una función lineal del alquiler?
             </p>
           </li>
 
           <li>
             <p>
-              Let <m>A</m> be the number of occupied apartments and <m>R</m> the monthly rent charged (in dollars).  If we let <m>A = f(R)</m>, what is the slope of the linear function <m>f</m>?  What is the meaning of the slope in the context of this question?
+              Sea <m>A</m> el número de apartamentos ocupados y <m>R</m> el alquiler mensual cobrado (en dólares). Si dejamos que <m>A = f(R)</m>, ¿cuál es la pendiente de la función lineal <m>f</m>? ¿Cuál es el significado de la pendiente en el contexto de esta pregunta?
             </p>
           </li>
 
           <li>
             <p>
-              Determine a formula for <m>A = f(R)</m>.  What do you think is a reasonable domain for the function?  Why?
+              Determina una fórmula para <m>A = f(R)</m>. ¿Qué crees que es un dominio razonable para la función? ¿Por qué?
             </p>
           </li>
 
           <li>
             <p>
-              If the rent were to be increased to $1000, how many occupied apartments should the
-              apartment manager expect?  How much total revenue would the manager collect in a given month when rent is set at $1000?
+              Si el alquiler se aumentara a $1000, ¿cuántos apartamentos ocupados debería esperar el administrador del apartamento? ¿Cuánto ingreso total recaudaría el administrador en un mes dado cuando el alquiler se fija en $1000?
             </p>
           </li>
 
           <li>
             <p>
-              Why do you think the apartment manager is interested in the data that has been collected?
+              ¿Por qué crees que el administrador del apartamento está interesado en los datos que se han recopilado?
             </p>
           </li>
         </ol>
@@ -107,12 +106,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -120,11 +119,11 @@
   <exercise xml:id="ez-linear-walkers">
     <statement>
       <p>
-        Alicia and Dexter are each walking on a straight path.  For a particular <m>10</m>-second window of time, each has their velocity (in feet per second) measured and recorded as a function of time.  Their respective velocity functions are plotted in <xref ref="F-ez-linear-walkers">Figure</xref>.
+        Alicia y Dexter están caminando cada uno por un camino recto. Durante una ventana de tiempo particular de <m>10</m> segundos, se mide y registra su velocidad (en pies por segundo) como una función del tiempo. Sus respectivas funciones de velocidad se trazan en <xref ref="F-ez-linear-walkers">Figure</xref>.
       </p>
 
       <figure xml:id="F-ez-linear-walkers">
-        <caption>The velocity functions <m>A = f(t)</m> and <m>D = g(t)</m> for Alicia and Damon, respectively.</caption>
+        <caption>Las funciones de velocidad <m>A = f(t)</m> y <m>D = g(t)</m> para Alicia y Damon, respectivamente.</caption>
         <image width="50%" source="images/linear-ez-walkers" />
       </figure>
 
@@ -132,27 +131,27 @@
         <ol marker="a.">
           <li>
             <p>
-              Determine formulas for both <m>A = f(t)</m> and <m>D = g(t)</m>.
+              Determina fórmulas para ambas <m>A = f(t)</m> y <m>D = g(t)</m>.
             </p>
           </li>
           <li>
             <p>
-              What is the value and meaning of the slope of <m>A</m>?  Write a complete sentence to explain and be sure to include units in your response.
+              ¿Cuál es el valor y el significado de la pendiente de <m>A</m>? Escribe una oración completa para explicar y asegúrate de incluir unidades en tu respuesta.
             </p>
           </li>
           <li>
             <p>
-              What is the value and meaning of the average rate of change of <m>D</m> on the interval <m>[4,8]</m>?  Write a complete sentence to explain and be sure to include units in your response.
+              ¿Cuál es el valor y el significado de la tasa de cambio promedio de <m>D</m> en el intervalo <m>[4,8]</m>? Escribe una oración completa para explicar y asegúrate de incluir unidades en tu respuesta.
             </p>
           </li>
           <li>
             <p>
-              Is there ever a time when Alicia and Damon are walking at the same velocity?  If yes, determine both the time and velocity; if not, explain why.
+              ¿Hay algún momento en que Alicia y Damon caminen a la misma velocidad? Si es así, determina tanto el tiempo como la velocidad; si no, explica por qué.
             </p>
           </li>
           <li>
             <p>
-              Is is possible to determine if there is ever a time when Alicia and Damon are located at the same place on the path?  If yes, determine the time and location; if not, explain why not enough information is provided.
+              ¿Es posible determinar si hay algún momento en que Alicia y Damon se encuentren en el mismo lugar del camino? Si es así, determina el tiempo y la ubicación; si no, explica por qué no se proporciona suficiente información.
             </p>
           </li>
         </ol>
@@ -160,12 +159,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -173,11 +172,11 @@
   <exercise xml:id="ez-linear-draining-conical-tank">
     <statement>
       <p>
-        An inverted conical tank with depth <m>4</m> feet and radius <m>2</m> feet is completely full of water.  The tank is being drained by a pump in such a way that the amount of water in the tank is decreasing at a constant rate of <m>1.5</m> cubic feet per minute.  Let <m>V = f(t)</m> denote the volume of water in the tank at time <m>t</m> and <m>h = g(t)</m> the depth of the water in the tank at time <m>t</m>, where <m>t</m> is measured in minutes.
+        Un tanque cónico invertido con una profundidad de <m>4</m> pies y un radio de <m>2</m> pies está completamente lleno de agua. El tanque se está vaciando con una bomba de tal manera que la cantidad de agua en el tanque disminuye a una tasa constante de <m>1.5</m> pies cúbicos por minuto. Sea <m>V = f(t)</m> el volumen de agua en el tanque en el tiempo <m>t</m> y <m>h = g(t)</m> la profundidad del agua en el tanque en el tiempo <m>t</m>, donde <m>t</m> se mide en minutos.
       </p>
 
       <figure>
-        <caption>The inverted conical tank.</caption>
+        <caption>El tanque cónico invertido.</caption>
         <image width="50%" source="images/tandem-filled-conical-tank"/>
       </figure>
 
@@ -185,27 +184,27 @@
         <ol marker="a.">
            <li>
              <p>
-               How much water is in the tank at <m>t = 0</m> when the tank is completely full?
+               ¿Cuánta agua hay en el tanque en <m>t = 0</m> cuando el tanque está completamente lleno?
              </p>
            </li>
            <li>
              <p>
-               Explain why volume, <m>V</m>, when viewed as a function of time, <m>t</m>, is a linear function.
+               Explica por qué el volumen, <m>V</m>, cuando se ve como una función del tiempo, <m>t</m>, es una función lineal.
              </p>
            </li>
            <li>
              <p>
-               Determine a formula for <m>V = f(t)</m>.
+               Determina una fórmula para <m>V = f(t)</m>.
              </p>
            </li>
            <li>
              <p>
-               At what exact time will the tank be empty?
+               ¿En qué momento exacto estará el tanque vacío?
              </p>
            </li>
            <li>
              <p>
-               What is a reasonable domain to use for the model <m>f</m>?  What is its corresponding range?
+               ¿Cuál es un dominio razonable para usar en el modelo <m>f</m>? ¿Cuál es su rango correspondiente?
              </p>
            </li>
         </ol>
@@ -214,12 +213,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

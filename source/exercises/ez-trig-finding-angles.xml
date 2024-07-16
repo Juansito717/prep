@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-trig-finding-angles">
-  
+ <!-- 
   <exercise xml:id="ez-trig-finding-angles-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec6/Q24a.pg" />
   </exercise>
@@ -25,7 +25,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec7/Q37.pg" />
   </exercise>   
 
-<!--  most of the following fail to have statement tags
+  most of the following fail to have statement tags
 
   <exercise xml:id="ez-trig-finding-angles-WW3">
     <webwork source="Library/Rochester/setTrig06Inverses/srw7_6_25.pg" />
@@ -57,29 +57,29 @@
   <exercise xml:id="ez-finding-angles-plane">
     <statement>
       <p>
-        At an airshow, a pilot is flying low over a runway while maintaining a constant altitude of <m>2000</m> feet and a constant speed.  On a straight path over the runway, the pilot observes on her laser range-finder that the distance from the plane to a fixed building adjacent to the runway is <m>7500</m> feet.  Five seconds later, she observes that distance to the same building is now <m>6000</m> feet.
+        En un espectáculo aéreo, una piloto está volando bajo sobre una pista mientras mantiene una altitud constante de <m>2000</m> pies y una velocidad constante. En un camino recto sobre la pista, la piloto observa en su telémetro láser que la distancia desde el avión hasta un edificio fijo adyacente a la pista es de <m>7500</m> pies. Cinco segundos después, observa que la distancia al mismo edificio es ahora de <m>6000</m> pies.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              What is the angle of depression from the plane to the building when the plane is <m>7500</m> feet away from the building?  (The angle of depression is the angle that the pilot's line of sight makes with the horizontal.)
+              ¿Cuál es el ángulo de depresión desde el avión hasta el edificio cuando el avión está a <m>7500</m> pies del edificio? (El ángulo de depresión es el ángulo que la línea de visión de la piloto forma con la horizontal).
             </p>
           </li>
           <li>
             <p>
-              What is the angle of depression when the plane is <m>6000</m> feet from the building?
+              ¿Cuál es el ángulo de depresión cuando el avión está a <m>6000</m> pies del edificio?
             </p>
           </li>
           <li>
             <p>
-              How far did the plane travel during the time between the two different observations?
+              ¿Qué distancia recorrió el avión durante el tiempo entre las dos observaciones diferentes?
             </p>
           </li>
           <li>
             <p>
-              What is the plane's velocity (in miles per hour)?
+              ¿Cuál es la velocidad del avión (en millas por hora)?
             </p>
           </li>
         </ol>
@@ -87,12 +87,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -100,29 +100,29 @@
     <exercise xml:id="ez-finding-angles-balloon">
     <statement>
       <p>
-        On a calm day, a photographer is filming a hot air balloon.  When the balloon launches, the photographer is stationed <m>850</m> feet away from the balloon.
+        En un día tranquilo, un fotógrafo está filmando un globo aerostático. Cuando el globo se lanza, el fotógrafo está ubicado a <m>850</m> pies del globo.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              When the balloon is <m>200</m> feet off the ground, what is the angle of elevation of the camera?
+              Cuando el globo está a <m>200</m> pies del suelo, ¿cuál es el ángulo de elevación de la cámara?
             </p>
           </li>
           <li>
               <p>
-                When the balloon is <m>275</m> feet off the ground, what is the angle of elevation of the camera?
+                Cuando el globo está a <m>275</m> pies del suelo, ¿cuál es el ángulo de elevación de la cámara?
               </p>
           </li>
           <li>
             <p>
-              Let <m>\theta</m> represent the camera's angle of elevation when the balloon is at an arbitrary height <m>h</m> above the ground.  Express <m>\theta</m> as a function of <m>h</m>.
+              Sea <m>\theta</m> el ángulo de elevación de la cámara cuando el globo está a una altura arbitraria <m>h</m> sobre el suelo. Expresa <m>\theta</m> como una función de <m>h</m>.
             </p>
           </li>
           <li>
             <p>
-              Determine <m>AV_{[200,275]}</m> for <m>\theta</m> (as a function of <m>h</m>) and write at least one sentence to carefully explain the meaning of the value you find, including units.
+              Determina <m>AV_{[200,275]}</m> para <m>\theta</m> (como una función de <m>h</m>) y escribe al menos una oración para explicar cuidadosamente el significado del valor que encuentres, incluyendo unidades.
             </p>
           </li>
         </ol>
@@ -130,12 +130,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -143,39 +143,39 @@
     <exercise xml:id="ez-finding-angles-triangle">
     <statement>
       <p>
-        Consider a right triangle where the two legs measure <m>5</m> and <m>12</m> respectively and <m>\alpha</m> is the angle opposite the shorter leg and <m>\beta</m> is the angle opposite the longer leg.
+        Considera un triángulo rectángulo donde los dos catetos miden <m>5</m> y <m>12</m> respectivamente y <m>\alpha</m> es el ángulo opuesto al cateto más corto y <m>\beta</m> es el ángulo opuesto al cateto más largo.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              What is the exact value of <m>\cos(\alpha)</m>?
+              ¿Cuál es el valor exacto de <m>\cos(\alpha)</m>?
             </p>
           </li>
           <li>
             <p>
-              What is the exact value of <m>\sin(\beta)</m>?
+              ¿Cuál es el valor exacto de <m>\sin(\beta)</m>?
             </p>
           </li>
           <li>
             <p>
-              What is the exact value of <m>\tan(\beta)</m>?  of <m>\tan(\alpha)</m>?
+              ¿Cuál es el valor exacto de <m>\tan(\beta)</m>? ¿y de <m>\tan(\alpha)</m>?
             </p>
           </li>
           <li>
             <p>
-              What is the exact radian measure of <m>\alpha</m>?  approximate measure?
+              ¿Cuál es la medida exacta en radianes de <m>\alpha</m>? ¿medida aproximada?
             </p>
           </li>
           <li>
             <p>
-              What is the exact radian measure of <m>\beta</m>?  approximate measure?
+              ¿Cuál es la medida exacta en radianes de <m>\beta</m>? ¿medida aproximada?
             </p>
           </li>
           <li>
             <p>
-              True or false:  for any two angles <m>\theta</m> and <m>\gamma</m> such that <m>\theta + \gamma = \frac{\pi}{2}</m> (radians), it follows that <m>\cos(\theta) = \sin(\gamma)</m>.
+              Verdadero o falso: para cualquier par de ángulos <m>\theta</m> y <m>\gamma</m> tales que <m>\theta + \gamma = \frac{\pi}{2}</m> (radianes), se sigue que <m>\cos(\theta) = \sin(\gamma)</m>.
             </p>
           </li>
         </ol>
@@ -183,12 +183,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

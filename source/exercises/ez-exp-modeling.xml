@@ -17,7 +17,7 @@
   <exercise xml:id="ez-exp-modeling-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec1/Q15.pg" />
   </exercise>
--->  
+  
   <exercise xml:id="ez-exp-modeling-WW2">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec3/Q14.pg" />
   </exercise>
@@ -27,33 +27,33 @@
   <exercise xml:id="ez-exp-modeling-WW4">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec3/Q22.pg" />
   </exercise>
-
+-->
   <exercise xml:id="ez-exp-modeling-soda">
     <statement>
       <p>
-        A can of soda has been in a refrigerator for several days; the refrigerator has temperature <m>41^\circ</m> Fahrenheit.  Upon removal, the soda is placed on a kitchen table in a room with surrounding temperature <m>72^\circ</m>.  Let <m>F(t)</m> represent the soda's temperature in degrees Fahrenheit at time <m>t</m> in minutes, where <m>t = 0</m> corresponds to the time the can is removed from the refrigerator.  We know from Newton's Law of Cooling that <m>F</m> has form <m>F(t) = ab^t + c</m> for some constants <m>a</m>, <m>b</m>, and <m>c</m>, where <m>0 \lt b \lt 1</m>.
+        Una lata de refresco ha estado en un refrigerador por varios días; el refrigerador tiene una temperatura de <m>41^\circ</m> Fahrenheit. Al sacarla, la lata se coloca en una mesa de cocina en una habitación con una temperatura ambiente de <m>72^\circ</m>. Deja que <m>F(t)</m> represente la temperatura del refresco en grados Fahrenheit en el tiempo <m>t</m> en minutos, donde <m>t = 0</m> corresponde al momento en que la lata se saca del refrigerador. Sabemos por la Ley de Enfriamiento de Newton que <m>F</m> tiene la forma <m>F(t) = ab^t + c</m> para algunas constantes <m>a</m>, <m>b</m> y <m>c</m>, donde <m>0 \lt b \lt 1</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              What is the numerical value of the soda's initial temperature?  What is the value of <m>F(0)</m> in terms of <m>a</m>, <m>b</m>, and <m>c</m>?  What do these two observations tell us?
+              ¿Cuál es el valor numérico de la temperatura inicial del refresco? ¿Cuál es el valor de <m>F(0)</m> en términos de <m>a</m>, <m>b</m> y <m>c</m>? ¿Qué nos dicen estas dos observaciones?
             </p>
           </li>
           <li>
             <p>
-              What is the numerical value of the soda's long-term temperature?  What is the long-term value of <m>F(t)</m> in terms of <m>a</m>, <m>b</m>, and <m>c</m>?  What do these two observations tell us?
+              ¿Cuál es el valor numérico de la temperatura a largo plazo del refresco? ¿Cuál es el valor a largo plazo de <m>F(t)</m> en términos de <m>a</m>, <m>b</m> y <m>c</m>? ¿Qué nos dicen estas dos observaciones?
             </p>
           </li>
           <li>
             <p>
-              Using your work in (a) and (b), determine the numerical values of <m>a</m> and <m>c</m>.
+              Usando tu trabajo en (a) y (b), determina los valores numéricos de <m>a</m> y <m>c</m>.
             </p>
           </li>
           <li>
             <p>
-              Suppose it can be determined that <m>b = 0.931</m>.  What is the soda's temperature after <m>10</m> minutes?
+              Supón que se puede determinar que <m>b = 0.931</m>. ¿Cuál es la temperatura del refresco después de <m>10</m> minutos?
             </p>
           </li>
         </ol>
@@ -61,12 +61,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -74,7 +74,7 @@
   <exercise xml:id="ez-exp-modeling-4-graphs">
     <statement>
       <p>
-        Consider the graphs of the following four functions <m>p</m>, <m>q</m>, <m>r</m>, and <m>s</m>.  Each is a shifted exponential function of the form <m>ab^t + c</m>.
+        Considera los gráficos de las siguientes cuatro funciones <m>p</m>, <m>q</m>, <m>r</m> y <m>s</m>. Cada una es una función exponencial desplazada de la forma <m>ab^t + c</m>.
       </p>
 
       <sidebyside>
@@ -87,26 +87,26 @@
       </sidebyside>
 
       <p>
-        For each function <m>p</m>, <m>q</m>, <m>r</m>, and <m>s</m>, determine
+        Para cada función <m>p</m>, <m>q</m>, <m>r</m> y <m>s</m>, determina
         <ul>
           <li>
             <p>
-              whether <m>a \gt 0</m> or <m>a \lt 0</m>;
+              si <m>a \gt 0</m> o <m>a \lt 0</m>;
             </p>
           </li>
           <li>
             <p>
-              whether <m>0 \lt b \lt 1</m> or <m>b \gt 1</m>;
+              si <m>0 \lt b \lt 1</m> o <m>b \gt 1</m>;
             </p>
           </li>
           <li>
             <p>
-              whether <m>c \gt 0</m>, <m>c = 0</m>, or <m>c \lt 0</m>; and
+              si <m>c \gt 0</m>, <m>c = 0</m> o <m>c \lt 0</m>; y
             </p>
           </li>
           <li>
             <p>
-              the range of the function in terms of <m>c</m>.
+              el rango de la función en términos de <m>c</m>.
             </p>
           </li>
         </ul>
@@ -114,12 +114,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -127,21 +127,21 @@
   <exercise xml:id="ez-exp-modeling-coffee">
     <statement>
       <p>
-        A cup of coffee has its temperature, <m>C(t)</m>, measured in degrees Celsius.  When poured outdoors on a cold morning, its temperature is <m>C(0) = 95</m>.  Ten minutes later, <m>C(10) = 80</m>.  If the surrounding temperature outside is <m>0^\circ</m> Celsius, find a formula for a function <m>C(t)</m> that models the coffee's temperature at time <m>t</m>.
+        Una taza de café tiene su temperatura, <m>C(t)</m>, medida en grados Celsius. Cuando se vierte al aire libre en una mañana fría, su temperatura es <m>C(0) = 95</m>. Diez minutos después, <m>C(10) = 80</m>. Si la temperatura ambiente afuera es <m>0^\circ</m> Celsius, encuentra una fórmula para una función <m>C(t)</m> que modele la temperatura del café en el tiempo <m>t</m>.
       </p>
 
       <p>
-        In addition, recall that we can convert between Celsius and Fahrenheit according to the equations <m>F = \frac{9}{5}C + 32</m> and <m>C = \frac{5}{9}(F-32)</m>.  Use this information to also find a formula for <m>F(t)</m>, the coffee's Fahrenheit temperature at time <m>t</m>.  What is similar and what is different regarding the functions <m>C(t)</m> and <m>F(t)</m>?
+        Además, recuerda que podemos convertir entre Celsius y Fahrenheit según las ecuaciones <m>F = \frac{9}{5}C + 32</m> y <m>C = \frac{5}{9}(F-32)</m>. Usa esta información para encontrar también una fórmula para <m>F(t)</m>, la temperatura del café en Fahrenheit en el tiempo <m>t</m>. ¿Qué es similar y qué es diferente respecto a las funciones <m>C(t)</m> y <m>F(t)</m>?
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

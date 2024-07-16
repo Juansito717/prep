@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C-poly">
-  	<title>Polynomial and Rational Functions</title>
+  	<title>Funciones Polinómicas y Racionales</title>
   
   	<xi:include  href="./sec-poly-infty.xml" />
   	<xi:include  href="./sec-poly-polynomials.xml" />
@@ -23,4 +23,3 @@
   	<xi:include  href="./sec-poly-rational-features.xml" />
 
 </chapter>
-

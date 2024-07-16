@@ -15,7 +15,7 @@
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-circular-sinusoidal">
   
-
+<!--
   <exercise xml:id="ez-circular-sinusoidal-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Review/Q18.pg" />
   </exercise>
@@ -34,15 +34,16 @@
   <exercise xml:id="ez-circular-sinusoidal-WW6">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec5/Q28.pg" />
   </exercise>
+-->
 
   <exercise xml:id="ez-circular-sinusoidal-data">
     <statement>
       <p>
-        Find a possible formula for the circular function whose values are in the following table.
+        Encuentra una posible fórmula para la función circular cuyos valores están en la siguiente tabla.
       </p>
 
       <table>
-        <title>Data for a circular function.</title>
+        <title>Datos para una función circular.</title>
         <tabular>
           <row bottom="minor" halign="center">
             <cell><m>x</m></cell>
@@ -76,19 +77,19 @@
       </table>
 
       <p>
-        <em>Hint:</em> Plot the points first;
-        doing so in <em>Desmos</em> is ideal.
+        <em>Pista:</em> Traza los puntos primero;
+        hacerlo en <em>Desmos</em> es ideal.
       </p>
 
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -96,21 +97,21 @@
 <exercise xml:id="ez-circular-sinusoidal-daylight">
     <statement>
       <p>
-        In 2018, on the summer solstice, June 21, Grand Rapids, MI, experiences <m>15</m> hours, <m>21</m> minutes, and <m>25</m> seconds of daylight.  Said differently, on the <m>172</m>nd day of the year, people on earth at the latitude of Grand Rapids experience <m>15.3569</m> hours of daylight.  On the winter solstice, December 21, 2018, the same latitude has <m>9</m> hours, <m>0</m> minutes, and <m>31</m> seconds of daylight; equivalently, on  day <m>355</m>, there are <m>9.0086</m> hours of daylight.  This data is essentially identical every year as the patterns of the earth's rotation repeat.
+        En 2018, en el solsticio de verano, el 21 de junio, Grand Rapids, MI, experimenta <m>15</m> horas, <m>21</m> minutos y <m>25</m> segundos de luz diurna. Dicho de otra manera, en el <m>172</m>º día del año, las personas en la tierra a la latitud de Grand Rapids experimentan <m>15.3569</m> horas de luz diurna. En el solsticio de invierno, el 21 de diciembre de 2018, la misma latitud tiene <m>9</m> horas, <m>0</m> minutos y <m>31</m> segundos de luz diurna; de manera equivalente, en el día <m>355</m>, hay <m>9.0086</m> horas de luz diurna. Estos datos son esencialmente idénticos cada año ya que los patrones de rotación de la tierra se repiten.
       </p>
 
       <p>
-        Let <m>t</m> be the day of the year starting with <m>t = 0</m> on December 31, 2017.  In addition, let <m>s(t)</m> be the number of hours of daylight on day <m>t</m> in Grand Rapids, MI.  Find a formula for a circular function <m>s(t)</m> that fits this data.  What is the function's midline, amplitude, and period?  What are you using as an anchor point?  Explain fully, and then graph your function to check your conclusions.
+        Sea <m>t</m> el día del año comenzando con <m>t = 0</m> el 31 de diciembre de 2017. Además, sea <m>s(t)</m> el número de horas de luz diurna en el día <m>t</m> en Grand Rapids, MI. Encuentra una fórmula para una función circular <m>s(t)</m> que se ajuste a estos datos. ¿Cuál es la línea media, amplitud y período de la función? ¿Qué estás usando como punto de anclaje? Explica completamente, y luego grafica tu función para verificar tus conclusiones.
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -118,39 +119,39 @@
 <exercise xml:id="ez-circular-sinusoidal-horiz-reflection">
     <statement>
       <p>
-        We now understand the effects of the transformation <m>h(t) = f(kt)</m> where <m>k \gt 0</m> for a given function <m>f</m>.  Our goal is to understand what happens when <m>k \lt 0</m>.  
+        Ahora entendemos los efectos de la transformación <m>h(t) = f(kt)</m> donde <m>k \gt 0</m> para una función dada <m>f</m>. Nuestro objetivo es entender qué pasa cuando <m>k \lt 0</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              We first consider the special case where <m>k = -1</m>.  Let <m>f(t) = 2t - 1</m>, and let <m>g(t) = f(-1 \cdot t) = f(-t) = -2t - 1</m>.  Plot <m>f</m> and <m>g</m> on the same coordinate axes.  How are their graphs related to one another?
+              Primero consideramos el caso especial donde <m>k = -1</m>. Sea <m>f(t) = 2t - 1</m>, y sea <m>g(t) = f(-1 \cdot t) = f(-t) = -2t - 1</m>. Traza <m>f</m> y <m>g</m> en los mismos ejes de coordenadas. ¿Cómo están relacionadas sus gráficas?
             </p>
           </li>
           <li>
             <p>
-              Given any function <m>p</m>, how do you expect the graph of <m>y = q(t) = p(-t)</m> to be related to the graph of <m>p</m>?
+              Dada cualquier función <m>p</m>, ¿cómo esperas que la gráfica de <m>y = q(t) = p(-t)</m> esté relacionada con la gráfica de <m>p</m>?
             </p>
           </li>
           <li>
             <p>
-              How is the graph of <m>y = \sin(-3t)</m> related to the graph of <m>y = \sin(t)</m>?
+              ¿Cómo está relacionada la gráfica de <m>y = \sin(-3t)</m> con la gráfica de <m>y = \sin(t)</m>?
             </p>
           </li>
           <li>
             <p>
-              How is the graph of <m>y = \cos(-3t)</m> related to the graph of <m>y = \cos(t)</m>?
+              ¿Cómo está relacionada la gráfica de <m>y = \cos(-3t)</m> con la gráfica de <m>y = \cos(t)</m>?
             </p>
           </li>
           <li>
             <p>
-              Given any function <m>p</m> and a constant <m>k \lt 0</m>, how do you expect the graph of <m>y = q(t) = p(kt)</m> to be related to the graph of <m>p</m>?
+              Dada cualquier función <m>p</m> y una constante <m>k \lt 0</m>, ¿cómo esperas que la gráfica de <m>y = q(t) = p(kt)</m> esté relacionada con la gráfica de <m>p</m>?
             </p>
           </li>
           <li>
             <p>
-              How are <m>\sin(-t)</m> and <m>\sin(t)</m> related?  How are <m>\cos(t)</m> and <m>\cos(-t)</m> related?
+              ¿Cómo están relacionadas <m>\sin(-t)</m> y <m>\sin(t)</m>? ¿Cómo están relacionadas <m>\cos(t)</m> y <m>\cos(-t)</m>?
             </p>
           </li>
         </ol>
@@ -158,12 +159,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

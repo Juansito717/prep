@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-changing-combining">
-
+<!--
   <exercise xml:id="ez-changing-combining-WW1">
     <webwork source="Library/CollegeOfIdaho/setAlgebra_02_02_AlgebraOfFunctions/22IntAlg_05_functOperation.pg" />
   </exercise>
@@ -39,7 +39,7 @@
   </exercise>
 
 
-<!--
+
 
   <exercise xml:id="ez-changing-combining-WW8">
     <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec3/Q10.pg" />
@@ -50,8 +50,8 @@
   <exercise>
     <statement>
       <p>
-        Let <m>r(t) = 2t - 3</m> and <m>s(t) = 5 - 3t</m>.
-        Determine a formula for each of the following new functions and simplify your result as much as possible.
+        Sea <m>r(t) = 2t - 3</m> y <m>s(t) = 5 - 3t</m>.
+        Determina una fórmula para cada una de las siguientes nuevas funciones y simplifica tu resultado tanto como sea posible.
       </p>
 
       <p>
@@ -90,12 +90,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -103,16 +103,16 @@
   <exercise>
     <statement>
       <p>
-        Consider the functions <m>s</m> and <m>g</m> defined by the graphs in <xref ref="F-combining-ez-piecewise-s">Figure</xref> and <xref ref="F-combining-ez-piecewise-g">Figure</xref>.  Assume that to the left and right of the pictured domains, each function continues behaving according to the trends seen in the figures.
+        Considera las funciones <m>s</m> y <m>g</m> definidas por los gráficos en <xref ref="F-combining-ez-piecewise-s">Figura</xref> y <xref ref="F-combining-ez-piecewise-g">Figura</xref>. Supón que a la izquierda y derecha de los dominios mostrados, cada función continúa comportándose según las tendencias vistas en las figuras.
       </p>
 
       <sidebyside width="50%">
         <figure xml:id="F-combining-ez-piecewise-s">
-          <caption>The graph of a piecewise function, <m>s</m>.</caption>
+          <caption>El gráfico de una función por partes, <m>s</m>.</caption>
           <image source="images/inverse-act-does-it-2"/>
         </figure>
         <figure xml:id="F-combining-ez-piecewise-g">
-          <caption>The graph of a piecewise function, <m>g</m>.</caption>
+          <caption>El gráfico de una función por partes, <m>g</m>.</caption>
           <image source="images/functions-act-is-it-2"/>
         </figure>
       </sidebyside>
@@ -121,17 +121,17 @@
         <ol marker="a.">
           <li>
             <p>
-              Determine a piecewise formula for the function <m>y = s(t)</m> that is valid for all real numbers <m>t</m>.
+              Determina una fórmula por partes para la función <m>y = s(t)</m> que sea válida para todos los números reales <m>t</m>.
             </p>
           </li>
           <li>
             <p>
-              Determine a piecewise formula for the function <m>y = g(x)</m> that is valid for all real numbers <m>x</m>.
+              Determina una fórmula por partes para la función <m>y = g(x)</m> que sea válida para todos los números reales <m>x</m>.
             </p>
           </li>
           <li>
             <p>
-              Determine each of the following quantities or explain why they are not defined.
+              Determina cada una de las siguientes cantidades o explica por qué no están definidas.
             </p>
             <p>
             <ol marker="i." cols="2">
@@ -165,12 +165,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>    
   </exercise>
@@ -179,62 +179,62 @@
     <statement>
 
       <p>
-        One of the most important principles in the study of changing quantities is found in the relationship between distance,
-        average velocity, and time.
-        For a moving body traveling on a straight-line path at an average rate of <m>v</m> for a period of time <m>t</m>,
-        the distance traveled, <m>d</m>, is given by
+        Uno de los principios más importantes en el estudio de las cantidades cambiantes se encuentra en la relación entre distancia,
+        velocidad promedio y tiempo.
+        Para un cuerpo en movimiento que viaja en una trayectoria recta a una velocidad promedio de <m>v</m> durante un período de tiempo <m>t</m>,
+        la distancia recorrida, <m>d</m>, se da por
         <me>
           d = v \cdot t
         </me>
       </p>
       
       <p>
-          In the Ironman Triathlon,
-          competitors swim <m>2.4</m> miles, bike <m>112</m> miles,
-          and then run a <m>26.2</m> mile marathon.
-          In the following sequence of questions,
-          we build a piecewise function that models a competitor's location in the race at a given time <m>t</m>.
-          To start, we have the following known information.
+          En el Ironman Triathlon,
+          los competidores nadan <m>2.4</m> millas, andan en bicicleta <m>112</m> millas,
+          y luego corren un maratón de <m>26.2</m> millas.
+          En la siguiente secuencia de preguntas,
+          construimos una función por partes que modela la ubicación de un competidor en la carrera en un momento dado <m>t</m>.
+          Para empezar, tenemos la siguiente información conocida.
 
           <ul>
             <li>
               <p>
-                She swims at an average rate of <m>2.5</m> miles per hour throughout the <m>2.4</m> miles in the water.
+                Ella nada a una velocidad promedio de <m>2.5</m> millas por hora durante las <m>2.4</m> millas en el agua.
               </p>
             </li>
 
             <li>
               <p>
-                Her transition from swim to bike takes <m>3</m> minutes (<m>0.05</m> hours),
-                during which time she doesn't travel any additional distance.
+                Su transición de nadar a andar en bicicleta toma <m>3</m> minutos (<m>0.05</m> horas),
+                durante los cuales no recorre ninguna distancia adicional.
               </p>
             </li>
 
             <li>
               <p>
-                She bikes at an average rate of <m>21</m> miles per hour throughout the <m>112</m> miles of biking.
+                Ella anda en bicicleta a una velocidad promedio de <m>21</m> millas por hora durante las <m>112</m> millas de ciclismo.
               </p>
             </li>
 
             <li>
               <p>
-                Her transition from bike to run takes just over <m>2</m> minutes (<m>0.03</m> hours),
-                during which time she doesn't travel any additional distance.
+                Su transición de andar en bicicleta a correr toma poco más de <m>2</m> minutos (<m>0.03</m> horas),
+                durante los cuales no recorre ninguna distancia adicional.
               </p>
             </li>
 
             <li>
               <p>
-                She runs at an average rate of <m>8.5</m> miles per hour throughout the marathon.
+                Ella corre a una velocidad promedio de <m>8.5</m> millas por hora durante el maratón.
               </p>
             </li>
 
             <li>
               <p>
-                In the questions that follow,
-                assume for the purposes of the model that the triathlete swims, bikes,
-                and runs at essentially constant rates
-                (given by the average rates stated above).
+                En las preguntas que siguen,
+                supón para los propósitos del modelo que la triatleta nada, anda en bicicleta,
+                y corre a velocidades esencialmente constantes
+                (dadas por las velocidades promedio indicadas anteriormente).
               </p>
             </li>
           </ul>
@@ -242,46 +242,46 @@
           <ol marker="a.">
             <li>
               <p>
-                Determine the time the swimmer exits the water.
-                Report your result in hours.
+                Determina el tiempo en que la nadadora sale del agua.
+                Reporta tu resultado en horas.
               </p>
             </li>
 
             <li>
               <p>
-                Likewise, determine the time the athlete gets off her bike,
-                as well as the time she finishes the race.
+                Asimismo, determina el tiempo en que la atleta se baja de su bicicleta,
+                así como el tiempo en que termina la carrera.
               </p>
             </li>
 
             <li>
               <p>
-                List 5 key points in the form (time, distance):
-                when exiting the water, when starting the bike,
-                when finishing the bike, when starting the run,
-                and when finishing the run.
+                Enumera 5 puntos clave en la forma (tiempo, distancia):
+                al salir del agua, al comenzar a andar en bicicleta,
+                al terminar de andar en bicicleta, al comenzar a correr,
+                y al terminar de correr.
               </p>
             </li>
 
             <li>
               <p>
-                What is the triathlete's average velocity over the course of the entire race?
-                Is this velocity the average of her swim velocity, bike velocity, and run velocity?  Why or why not?
+                ¿Cuál es la velocidad promedio de la triatleta durante toda la carrera?
+                ¿Es esta velocidad el promedio de su velocidad al nadar, andar en bicicleta y correr? ¿Por qué o por qué no?
               </p>
             </li>
 
             <li>
               <p>
-                Determine a piecewise function <m>s(t)</m> whose value at any given time
-                (in hours)
-                is the triathlete's total distance traveled.
+                Determina una función por partes <m>s(t)</m> cuyo valor en cualquier momento
+                (en horas)
+                sea la distancia total recorrida por la triatleta.
               </p>
             </li>
 
             <li>
               <p>
-                Sketch a carefully labeled graph of the triathlete's distance traveled as a function of time on the axes provided.
-                Provide clear scale and note key points on the graph.
+                Dibuja un gráfico cuidadosamente etiquetado de la distancia recorrida por la triatleta en función del tiempo en los ejes proporcionados.
+                Proporciona una escala clara y señala puntos clave en el gráfico.
               </p>
 
               <sidebyside width="50%">
@@ -292,9 +292,9 @@
 
             <li>
               <p>
-                Sketch a possible graph of the triathete's <em>velocity</em>, <m>V</m>,
-                as a function of time on the righthand axes.
-                Here, too, label key points and provide clear scale.  Write several sentences to explain and justify your graph.
+                Dibuja un posible gráfico de la <em>velocidad</em> de la triatleta, <m>V</m>,
+                en función del tiempo en los ejes de la derecha.
+                Aquí también, etiqueta puntos clave y proporciona una escala clara. Escribe varias oraciones para explicar y justificar tu gráfico.
               </p>
             </li>
           </ol>

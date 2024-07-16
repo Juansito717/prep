@@ -13,188 +13,188 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-changing-inverse">
-
-  <exercise xml:id="ez-changing-inverse-WW1">
-    <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-13-Composition-inverse.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-WW2">
-    <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-15-Composition-inverse.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-WW3">
-    <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-28-Composition-inverse.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-WW4">
-    <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-31-Composition-inverse.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-WW5">
-    <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Q16.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-WW7">
-    <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Q32.pg" />
-  </exercise>
-
-
-  <exercise xml:id="ez-changing-inverse-p-q">
-    <statement>
-      <p>
-        Consider the functions <m>p</m> and <m>q</m> whose graphs are given by <xref ref="F-inverse-ez-p-q">Figure</xref>
-      </p>
-
-      <figure xml:id="F-inverse-ez-p-q">
-        <caption>Plots of the graphs of <m>p</m> and <m>q</m>.</caption>
-        <image width="50%" source="images/inverse-ez-p-q" />
-      </figure>
-
-      <p>
-        <ol marker="a.">
-          <li>
-            <p>
-              Compute each of the following values exactly, or explain why they are not defined:  <m>p^{-1}(2.5)</m>, <m>p^{-1}(-2)</m>, <m>p^{-1}(0)</m>, and <m>q^{-1}(2)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              From your work in (a), you know that the point <m>(2.5, -3.5)</m> lies on the graph of <m>p^{-1}</m>.  In addition to the other two points you know from <m>(a)</m>, find three additional points that lie on the graph of <m>p^{-1}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              On <xref ref="F-inverse-ez-p-q">Figure</xref>, plot the <m>6</m> points you have determined in (a) and (b) that lie on the graph of <m>y = p^{-1}(x)</m>.  Then, sketch the complete graph of <m>y = p^{-1}(x)</m>.  How are the graphs of <m>p</m> and <m>p^{-1}</m> related to each other?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        Exercise Answer
-      </p>
-    </answer>
-    <solution>
-      <p>
-        Exercise Solution
-      </p>
-    </solution>
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-conical-tank">
-    <statement>
-      <p>
-        Consider an inverted conical tank that is being filled with water.  The tank's radius is <m>2</m> m and its depth is <m>4</m> m.  Suppose the tank is initially empty and is being filled in such a way that the height of the water is always rising at a rate of <m>0.25</m> meters per minute.
-      </p>
-
-          <sidebyside width="50%">
-            <figure xml:id="F-inverse-ez-conical-tank">
-              <caption>The conical tank.</caption>
-              <image source="images/tandem-filled-conical-tank" />
-            </figure>
-            <figure xml:id="F-inverse-ez-blank-axes-V-t">
-              <caption>Axes to plot <m>V = g(t)</m>.</caption>
-              <image source="images/tandem-V-t-blank-axes" />
-            </figure>
-          </sidebyside>
-
-      <p>
-        <ol marker="a.">
-          <li>
-            <p>
-              Explain why the height, <m>h</m>, of the water can be viewed as a function of <m>t</m> according to the formula <m>h= f(t) = 0.25t</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              At what time is the water in the tank <m>2.5</m> m deep?  At what time is the tank completely full?
-            </p>
-          </li>
-          <li>
-            <p>
-              Suppose we think of the volume, <m>V</m>, of water in the tank as a function of <m>t</m> and name the function <m>V = g(t)</m>.  Do you expect that the function <m>g</m> has an inverse function?  Why or why not?
-            </p>
-          </li>
-          <li>
-            <p>
-              Recall that the volume of a cone of radius <m>r</m> and height <m>h</m> is <m>V = \frac{\pi}{3} r^2 h</m>.  Due to the shape of the tank, similar triangles tell us that <m>r</m> and <m>h</m> satisfy the proportion <m>r = \frac{1}{2}h</m>, and thus 
-              <men xml:id="E-ez-changing-inverse-V-h">
-                V = \frac{\pi}{3} \left( \frac{1}{2}h \right)^2 h = \frac{\pi}{12}h^3 
-              </men>.
-            </p>
-
-            <p>
-              Use the fact that <m>h = f(t) = 0.25t</m> along with <xref ref="E-ez-changing-inverse-V-h">Equation</xref> to find a formula for <m>V = g(t)</m>.  Sketch a plot of <m>V = g(t)</m> on the blank axes provided in <xref ref="F-inverse-ez-blank-axes-V-t">Figure</xref>.  Write at least one sentence to explain why <m>V = g(t)</m> has the shape that it does.
-            </p>
-
-
-            
-          </li>
-          <li>
-            <p>
-              Take the formula for <m>V = g(t)</m> that you determined in (d) and solve for <m>t</m> to determine a formula for <m>t = g^{-1}(V)</m>.  What is the meaning of the formula you find?
-            </p>
-          </li>
-          <li>
-            <p>
-              Find the exact time that there is <m>\frac{8}{3}\pi</m> cubic meters of volume in the tank.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        Exercise Answer
-      </p>
-    </answer>
-    <solution>
-      <p>
-        Exercise Solution
-      </p>
-    </solution>
-  </exercise>
-
-  <exercise xml:id="ez-changing-inverse-Dolbear-C">
-    <statement>
-      <p>
-        Recall that in <xref ref="act-changing-composite-crickets-celcius">Activity</xref>, we showed that Celsius temperature is a function of the number of chirps per minute from a snowy tree cricket according to the formula 
-        <men xml:id="E-ez-changing-inverse-Dolbear-C">
-          C = H(N) = \frac{40}{9} + \frac{5}{36}N
-        </men>.
-      </p>
-
-      <p>
-        <ol marker="a.">
-          <li>
-            <p>
-              What familiar type of function is <m>H</m>?  Why must <m>H</m> have an inverse function?
-            </p>
-          </li>
-          <li>
-            <p>
-              Determine an algebraic formula for <m>N = H^{-1}(C)</m>.  Clearly show your work and thinking.
-            </p>
-          </li>
-          <li>
-            <p>
-              What is the meaning of the statement <m>72 = H^{-1}\left(\frac{130}{9}\right)</m>?
-            </p>
-          </li>
-          <li>
-            <p>
-              Determine the average rate of change of <m>H</m> on the interval <m>[40,50]</m>.  Write a complete sentence to explain the meaning of the value you find, including units on the value.  Explain clearly how this number describes how the temperature is changing.
-            </p>
-          </li>
-          <li>
-            <p>
-              Determine the average rate of change of <m>H^{-1}</m> on the interval <m>[15,20]</m>.  Write a complete sentence to explain the meaning of the value you find, including units on the value.  Explain clearly how this number describes how the number of chirps per minute is changing.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-
-</exercises>
+  <!--
+    <exercise xml:id="ez-changing-inverse-WW1">
+      <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-13-Composition-inverse.pg" />
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-WW2">
+      <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-15-Composition-inverse.pg" />
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-WW3">
+      <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-28-Composition-inverse.pg" />
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-WW4">
+      <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-31-Composition-inverse.pg" />
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-WW5">
+      <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Q16.pg" />
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-WW7">
+      <webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Q32.pg" />
+    </exercise>
+  -->
+  
+    <exercise xml:id="ez-changing-inverse-p-q">
+      <statement>
+        <p>
+          Considera las funciones <m>p</m> y <m>q</m> cuyos gráficos se dan en la <xref ref="F-inverse-ez-p-q">Figura</xref>
+        </p>
+  
+        <figure xml:id="F-inverse-ez-p-q">
+          <caption>Gráficos de las funciones <m>p</m> y <m>q</m>.</caption>
+          <image width="50%" source="images/inverse-ez-p-q" />
+        </figure>
+  
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Calcula cada uno de los siguientes valores exactamente, o explica por qué no están definidos: <m>p^{-1}(2.5)</m>, <m>p^{-1}(-2)</m>, <m>p^{-1}(0)</m>, y <m>q^{-1}(2)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                A partir de tu trabajo en (a), sabes que el punto <m>(2.5, -3.5)</m> se encuentra en el gráfico de <m>p^{-1}</m>. Además de los otros dos puntos que conoces de <m>(a)</m>, encuentra tres puntos adicionales que se encuentren en el gráfico de <m>p^{-1}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                En la <xref ref="F-inverse-ez-p-q">Figura</xref>, traza los <m>6</m> puntos que has determinado en (a) y (b) que se encuentran en el gráfico de <m>y = p^{-1}(x)</m>. Luego, dibuja el gráfico completo de <m>y = p^{-1}(x)</m>. ¿Cómo se relacionan los gráficos de <m>p</m> y <m>p^{-1}</m> entre sí?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Respuesta del Ejercicio
+        </p>
+      </answer>
+      <solution>
+        <p>
+          Solución del Ejercicio
+        </p>
+      </solution>
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-conical-tank">
+      <statement>
+        <p>
+          Considera un tanque cónico invertido que se está llenando con agua. El radio del tanque es de <m>2</m> m y su profundidad es de <m>4</m> m. Supón que el tanque está inicialmente vacío y se está llenando de tal manera que la altura del agua siempre está subiendo a una tasa de <m>0.25</m> metros por minuto.
+        </p>
+  
+            <sidebyside width="50%">
+              <figure xml:id="F-inverse-ez-conical-tank">
+                <caption>El tanque cónico.</caption>
+                <image source="images/tandem-filled-conical-tank" />
+              </figure>
+              <figure xml:id="F-inverse-ez-blank-axes-V-t">
+                <caption>Ejes para trazar <m>V = g(t)</m>.</caption>
+                <image source="images/tandem-V-t-blank-axes" />
+              </figure>
+            </sidebyside>
+  
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Explica por qué la altura, <m>h</m>, del agua puede verse como una función de <m>t</m> según la fórmula <m>h= f(t) = 0.25t</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                ¿En qué momento el agua en el tanque tiene una profundidad de <m>2.5</m> m? ¿En qué momento el tanque está completamente lleno?
+              </p>
+            </li>
+            <li>
+              <p>
+                Supón que pensamos en el volumen, <m>V</m>, de agua en el tanque como una función de <m>t</m> y llamamos a la función <m>V = g(t)</m>. ¿Esperas que la función <m>g</m> tenga una función inversa? ¿Por qué o por qué no?
+              </p>
+            </li>
+            <li>
+              <p>
+                Recuerda que el volumen de un cono de radio <m>r</m> y altura <m>h</m> es <m>V = \frac{\pi}{3} r^2 h</m>. Debido a la forma del tanque, los triángulos similares nos dicen que <m>r</m> y <m>h</m> satisfacen la proporción <m>r = \frac{1}{2}h</m>, y así 
+                <men xml:id="E-ez-changing-inverse-V-h">
+                  V = \frac{\pi}{3} \left( \frac{1}{2}h \right)^2 h = \frac{\pi}{12}h^3 
+                </men>.
+              </p>
+  
+              <p>
+                Usa el hecho de que <m>h = f(t) = 0.25t</m> junto con la <xref ref="E-ez-changing-inverse-V-h">Ecuación</xref> para encontrar una fórmula para <m>V = g(t)</m>. Dibuja un gráfico de <m>V = g(t)</m> en los ejes en blanco proporcionados en la <xref ref="F-inverse-ez-blank-axes-V-t">Figura</xref>. Escribe al menos una oración para explicar por qué <m>V = g(t)</m> tiene la forma que tiene.
+              </p>
+  
+  
+              
+            </li>
+            <li>
+              <p>
+                Toma la fórmula para <m>V = g(t)</m> que determinaste en (d) y resuelve para <m>t</m> para determinar una fórmula para <m>t = g^{-1}(V)</m>. ¿Cuál es el significado de la fórmula que encuentras?
+              </p>
+            </li>
+            <li>
+              <p>
+                Encuentra el tiempo exacto en que hay <m>\frac{8}{3}\pi</m> metros cúbicos de volumen en el tanque.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Respuesta del Ejercicio
+        </p>
+      </answer>
+      <solution>
+        <p>
+          Solución del Ejercicio
+        </p>
+      </solution>
+    </exercise>
+  
+    <exercise xml:id="ez-changing-inverse-Dolbear-C">
+      <statement>
+        <p>
+          Recuerda que en la <xref ref="act-changing-composite-crickets-celcius">Actividad</xref>, mostramos que la temperatura en Celsius es una función del número de chirridos por minuto de un grillo de árbol nevado según la fórmula 
+          <men xml:id="E-ez-changing-inverse-Dolbear-C">
+            C = H(N) = \frac{40}{9} + \frac{5}{36}N
+          </men>.
+        </p>
+  
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                ¿Qué tipo de función familiar es <m>H</m>? ¿Por qué debe <m>H</m> tener una función inversa?
+              </p>
+            </li>
+            <li>
+              <p>
+                Determina una fórmula algebraica para <m>N = H^{-1}(C)</m>. Muestra claramente tu trabajo y pensamiento.
+              </p>
+            </li>
+            <li>
+              <p>
+                ¿Cuál es el significado de la afirmación <m>72 = H^{-1}\left(\frac{130}{9}\right)</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Determina la tasa de cambio promedio de <m>H</m> en el intervalo <m>[40,50]</m>. Escribe una oración completa para explicar el significado del valor que encuentras, incluyendo las unidades del valor. Explica claramente cómo este número describe cómo está cambiando la temperatura.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determina la tasa de cambio promedio de <m>H^{-1}</m> en el intervalo <m>[15,20]</m>. Escribe una oración completa para explicar el significado del valor que encuentras, incluyendo las unidades del valor. Explica claramente cómo este número describe cómo está cambiando el número de chirridos por minuto.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+  
+  </exercises>

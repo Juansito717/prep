@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-rational-features">
-  
+ <!-- 
   <exercise xml:id="ez-poly-rational-features-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec5/Q24.pg" />
   </exercise>
@@ -31,7 +31,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec4/Q16.pg" />
   </exercise>
 
-<!--  
+  
   <exercise xml:id="ez-poly-rational-features-WW6">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec5/Q17.pg" />
   </exercise>  
@@ -43,7 +43,7 @@
   <exercise xml:id="ez-poly-rational-features-1">
     <statement>
       <p>
-        For each of the following rational functions, determine, with justification, the exact locations of all (i) horizontal asymptotes, (ii) vertical asymptotes, (iii) zeros, and (iv) holes of the function.  Clearly show your work and thinking.
+        Para cada una de las siguientes funciones racionales, determina, con justificación, las ubicaciones exactas de todas (i) las asíntotas horizontales, (ii) las asíntotas verticales, (iii) los ceros y (iv) los huecos de la función. Muestra claramente tu trabajo y pensamiento.
       </p>
 
       <p>
@@ -68,12 +68,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -81,33 +81,33 @@
   <exercise xml:id="ez-poly-rational-features-2">
     <statement>
       <p>
-        Find a formula for a rational function that meets the stated criteria, with justification.  If no such formula is possible, explain why.
+        Encuentra una fórmula para una función racional que cumpla con los criterios indicados, con justificación. Si no es posible tal fórmula, explica por qué.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              A rational function <m>r(x)</m> in the form <m>r(x) = \frac{k}{x-a} + b</m> so that <m>r</m> has a horizontal asymptote of <m>y = -\frac{3}{7}</m>, a vertical asymptote of <m>x = \frac{5}{2}</m>, and <m>r(0) = 4</m>.
+              Una función racional <m>r(x)</m> en la forma <m>r(x) = \frac{k}{x-a} + b</m> de modo que <m>r</m> tenga una asíntota horizontal de <m>y = -\frac{3}{7}</m>, una asíntota vertical de <m>x = \frac{5}{2}</m>, y <m>r(0) = 4</m>.
             </p>
           </li>
           <li>
             <p>
-              A rational function <m>s(x)</m> that has no horizontal asymptote, has zeros at <m>x = -5</m> and <m>x = 3</m>, has a single vertical asymptote at <m>x = -1</m>, and satisfies <m>\lim_{x \to \infty} s(x) = -\infty</m> and <m>\lim_{x \to -\infty} s(x) = +\infty</m>.
+              Una función racional <m>s(x)</m> que no tenga asíntota horizontal, tenga ceros en <m>x = -5</m> y <m>x = 3</m>, tenga una única asíntota vertical en <m>x = -1</m>, y satisfaga <m>\lim_{x \to \infty} s(x) = -\infty</m> y <m>\lim_{x \to -\infty} s(x) = +\infty</m>.
             </p>
           </li>
           <li>
             <p>
-              A rational function <m>u(x)</m> that is positive for <m>x \lt -4</m>, negative for <m>-4 \lt x \lt -2</m>, negative for <m>-2 \lt x \lt 1</m>, positive for <m>1 \lt x \lt 5</m>, and negative for <m>x \gt 5</m>.  The only zeros of <m>u</m> are located at <m>x = -4</m> and <m>x = -2</m>.  In addition, <m>u</m> has a hole at <m>x = 4</m>.
+              Una función racional <m>u(x)</m> que sea positiva para <m>x \lt -4</m>, negativa para <m>-4 \lt x \lt -2</m>, negativa para <m>-2 \lt x \lt 1</m>, positiva para <m>1 \lt x \lt 5</m>, y negativa para <m>x \gt 5</m>. Los únicos ceros de <m>u</m> están ubicados en <m>x = -4</m> y <m>x = -2</m>. Además, <m>u</m> tiene un hueco en <m>x = 4</m>.
             </p>
           </li>
           <li>
             <p>
-              A rational function <m>w(x)</m> whose graph is shown in <xref ref="F-rational-ez-plot">Figure</xref>.
+              Una función racional <m>w(x)</m> cuyo gráfico se muestra en <xref ref="F-rational-ez-plot">Figure</xref>.
             </p>
 
             <figure xml:id="F-rational-ez-plot">
-              <caption>A plot of the rational function <m>w</m>.</caption>
+              <caption>Un gráfico de la función racional <m>w</m>.</caption>
               <image source="images/rational-ez-plot" width="60%" />
             </figure>
           </li>
@@ -116,12 +116,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -129,7 +129,7 @@
   <exercise xml:id="ez-poly-rational-features-inverse">
     <statement>
       <p>
-        Graph each of the following rational functions and decide whether or not each function has an inverse function.  If an inverse function exists, find its formula.  In addition, state the domain and range of each function you consider (the original function as well as its inverse function, if the inverse function exists).
+        Grafica cada una de las siguientes funciones racionales y decide si cada función tiene una función inversa. Si existe una función inversa, encuentra su fórmula. Además, indica el dominio y el rango de cada función que consideres (la función original así como su función inversa, si existe la función inversa).
       </p>
 
       <p>
@@ -159,12 +159,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -172,7 +172,7 @@
   <exercise xml:id="ez-poly-rational-features-multiplicities">
     <statement>
       <p>
-        For each of the following rational functions, identify the location of any potential hole in the graph.  Then, create a table of function values for input values near where the hole should be located.  Use your work to decide whether or not the graph indeed has a hole, with written justification.
+        Para cada una de las siguientes funciones racionales, identifica la ubicación de cualquier posible hueco en el gráfico. Luego, crea una tabla de valores de la función para valores de entrada cercanos a donde debería estar el hueco. Usa tu trabajo para decidir si el gráfico realmente tiene un hueco, con justificación escrita.
       </p>
 
       <p>
@@ -199,7 +199,7 @@
           </li>
           <li>
             <p>
-              True or false:  given <m>r(x) = \frac{p(x)}{q(x)}</m>, if <m>p(a) = 0</m> and <m>q(a) = 0</m>, then <m>r</m> has a hole at <m>x = a</m>.
+              Verdadero o falso: dado <m>r(x) = \frac{p(x)}{q(x)}</m>, si <m>p(a) = 0</m> y <m>q(a) = 0</m>, entonces <m>r</m> tiene un hueco en <m>x = a</m>.
             </p>
           </li>
         </ol>
@@ -207,12 +207,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -220,39 +220,39 @@
   <exercise xml:id="ez-poly-rational-features-4">
     <statement>
       <p>
-        In the questions that follow, we explore the average rate of change of power functions on the interval <m>[1,x]</m>.  To begin, let <m>f(x) = x^2</m> and let <m>A(x)</m> be the average rate of change of <m>f</m> on <m>[1,x]</m>.
+        En las preguntas que siguen, exploramos la tasa de cambio promedio de las funciones de potencia en el intervalo <m>[1,x]</m>. Para comenzar, sea <m>f(x) = x^2</m> y sea <m>A(x)</m> la tasa de cambio promedio de <m>f</m> en <m>[1,x]</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-                Explain why  <m>A</m> is a rational function of <m>x</m>.
+                Explica por qué <m>A</m> es una función racional de <m>x</m>.
             </p>
           </li>
           <li>
             <p>
-              What is the domain of <m>A</m>?
+              ¿Cuál es el dominio de <m>A</m>?
             </p>
           </li>
           <li>
             <p>
-              At the point where <m>A</m> is undefined, does <m>A</m> have a vertical asymptote or a hole?  Justify your thinking clearly.
+              En el punto donde <m>A</m> no está definida, ¿tiene <m>A</m> una asíntota vertical o un hueco? Justifica tu pensamiento claramente.
             </p>
           </li>
           <li>
             <p>
-              What can you say about the average rate of change of <m>f</m> on <m>[1,x]</m> as <m>x</m> gets closer and closer (but not equal) to <m>1</m>?
+              ¿Qué puedes decir sobre la tasa de cambio promedio de <m>f</m> en <m>[1,x]</m> a medida que <m>x</m> se acerca cada vez más (pero no igual) a <m>1</m>?
             </p>
           </li>
           <li>
             <p>
-              Now let <m>g(x) = x^3</m> and <m>B(x)</m> be the average rate of change of <m>B</m> on <m>[1,x]</m>.  Respond to prompts (a) - (d) but this time for the function <m>B</m> instead of <m>A</m>.
+              Ahora sea <m>g(x) = x^3</m> y <m>B(x)</m> la tasa de cambio promedio de <m>B</m> en <m>[1,x]</m>. Responde a las indicaciones (a) - (d) pero esta vez para la función <m>B</m> en lugar de <m>A</m>.
             </p>
           </li>
           <li>
             <p>
-              Finally, let <m>h(x) = x^4</m> and <m>C(x)</m> be the average rate of change of <m>C</m> on <m>[1,x]</m>.  Respond to prompts (a) - (d) but this time for the function <m>C</m> instead of <m>A</m>.
+              Finalmente, sea <m>h(x) = x^4</m> y <m>C(x)</m> la tasa de cambio promedio de <m>C</m> en <m>[1,x]</m>. Responde a las indicaciones (a) - (d) pero esta vez para la función <m>C</m> en lugar de <m>A</m>.
             </p>
           </li>
         </ol>
@@ -260,12 +260,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

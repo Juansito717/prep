@@ -14,14 +14,14 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-exp-log-properties">
-  
+ <!-- 
   <exercise xml:id="ez-exp-log-properties-WW1">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/problem9.pg" />
   </exercise>
   <exercise xml:id="ez-exp-log-properties-WW2">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/problem11.pg" />
   </exercise>
-<!--  
+  
   <exercise xml:id="ez-exp-log-properties-WW3">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/srw4_3_48.pg" />
   </exercise>
@@ -34,7 +34,7 @@
   <exercise xml:id="ez-exp-log-properties-WW9">
     <webwork source="Library/Rochester/setAlgebra31LogExpEqns/ur_le_2_12.pg" />
   </exercise>  
--->  
+  
   <exercise xml:id="ez-exp-log-properties-WW4">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_11.pg" />
   </exercise>
@@ -44,34 +44,34 @@
   <exercise xml:id="ez-exp-log-properties-WW6">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_41.pg" />
   </exercise>
-
+-->
 
   <exercise xml:id="ez-exp-log-properties-doubling-time">
     <statement>
       <p>
-        For a population that is growing exponentially according to a model of the form <m>P(t) = Ae^{kt}</m>, the <term>doubling time</term> <idx><h>exponential function</h><h>doubling time</h></idx> is the amount of time that it takes the population to double.  For each population described below, assume the function is growing exponentially according to a model <m>P(t) = Ae^{kt}</m>, where <m>t</m> is measured in years.
+        Para una población que está creciendo exponencialmente según un modelo de la forma <m>P(t) = Ae^{kt}</m>, el <term>tiempo de duplicación</term> <idx><h>exponential function</h><h>doubling time</h></idx> es la cantidad de tiempo que tarda la población en duplicarse. Para cada población descrita a continuación, supón que la función está creciendo exponencialmente según un modelo <m>P(t) = Ae^{kt}</m>, donde <m>t</m> se mide en años.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Suppose that a certain population initially has <m>100</m> members and doubles after <m>3</m> years.  What are the values of <m>A</m> and <m>k</m> in the model?
+              Supón que una cierta población tiene inicialmente <m>100</m> miembros y se duplica después de <m>3</m> años. ¿Cuáles son los valores de <m>A</m> y <m>k</m> en el modelo?
             </p>
           </li>
           <li>
             <p>
-              A different population is observed to satisfy <m>P(4) = 250</m> and <m>P(11) = 500</m>.  What is the population's doubling time?  When will <m>2000</m> members of the population be present?
+              Se observa que una población diferente satisface <m>P(4) = 250</m> y <m>P(11) = 500</m>. ¿Cuál es el tiempo de duplicación de la población? ¿Cuándo habrá <m>2000</m> miembros de la población?
             </p>
           </li>
           <li>
             <p>
-              Another population is observed to have doubling time <m>t = 21</m>.  What is the value of <m>k</m> in the model?
+              Se observa que otra población tiene un tiempo de duplicación <m>t = 21</m>. ¿Cuál es el valor de <m>k</m> en el modelo?
             </p>
           </li>
           <li>
             <p>
-              How is <m>k</m> related to a population's doubling time, regardless of how long the doubling time is?
+              ¿Cómo se relaciona <m>k</m> con el tiempo de duplicación de una población, independientemente de cuánto tiempo sea el tiempo de duplicación?
             </p>
           </li>
         </ol>
@@ -79,12 +79,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -92,29 +92,29 @@
   <exercise xml:id="ez-exp-log-properties-car-value">
     <statement>
       <p>
-        A new car is purchased for $<m>28000</m>.  Exactly <m>1</m> year later, the value of the car is $<m>23200</m>.  Assume that the car's value in dollars, <m>V</m>, <m>t</m> years after purchase decays exponentially according to a model of form <m>V(t) = Ae^{-kt}</m>.
+        Se compra un coche nuevo por $<m>28000</m>. Exactamente <m>1</m> año después, el valor del coche es $<m>23200</m>. Supón que el valor del coche en dólares, <m>V</m>, <m>t</m> años después de la compra decae exponencialmente según un modelo de la forma <m>V(t) = Ae^{-kt}</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Determine the exact values of <m>A</m> and <m>k</m> in the model.
+              Determina los valores exactos de <m>A</m> y <m>k</m> en el modelo.
             </p>
           </li>
           <li>
             <p>
-              How many years will it take until the car's value is $<m>10000</m>?
+              ¿Cuántos años tardará hasta que el valor del coche sea $<m>10000</m>?
             </p>
           </li>
           <li>
             <p>
-              Suppose that rather than having the car's value decay all the way to $<m>0</m>, the lowest dollar amount its value ever approaches is $<m>500</m>.  Explain why a model of the form <m>V(t) = Ae^{-kt} + c</m> is more appropriate.
+              Supón que en lugar de que el valor del coche decaiga hasta $<m>0</m>, la cantidad mínima en dólares que su valor se aproxima es $<m>500</m>. Explica por qué un modelo de la forma <m>V(t) = Ae^{-kt} + c</m> es más apropiado.
             </p>
           </li>
           <li>
             <p>
-              Under the original assumptions (<m>V(0) = 28000</m> and <m>V(1) = 23200</m>) along with the condition in (c) that the car's value will approach $<m>500</m> in the long-term, determine the exact values of <m>A</m>, <m>k</m>, and <m>c</m> in the model <m>V(t) = Ae^{-kt} + c</m>.  Are the values of <m>A</m> and <m>k</m> the same or different from the model explored in (a)?  Why?
+              Bajo las suposiciones originales (<m>V(0) = 28000</m> y <m>V(1) = 23200</m>) junto con la condición en (c) de que el valor del coche se aproximará a $<m>500</m> a largo plazo, determina los valores exactos de <m>A</m>, <m>k</m> y <m>c</m> en el modelo <m>V(t) = Ae^{-kt} + c</m>. ¿Son los valores de <m>A</m> y <m>k</m> los mismos o diferentes del modelo explorado en (a)? ¿Por qué?
             </p>
           </li>
         </ol>
@@ -122,12 +122,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise> 
@@ -135,33 +135,33 @@
   <exercise xml:id="ez-exp-log-properties-Golden-Rule">
     <statement>
       <p>
-        In <xref ref="ez-exp-log-base-b">Exercise</xref>, we explored graphically how the function <m>y = \log_b(x)</m> can be thought of as a vertical stretch of the nautral logarithm, <m>y = \ln(x)</m>.  In this exercise, we determine the exact value of the vertical stretch that is needed.
+        En <xref ref="ez-exp-log-base-b">Exercise</xref>, exploramos gráficamente cómo la función <m>y = \log_b(x)</m> puede ser vista como un estiramiento vertical del logaritmo natural, <m>y = \ln(x)</m>. En este ejercicio, determinamos el valor exacto del estiramiento vertical que se necesita.
       </p>
 
       <p>
-        Recall that <m>\log_b(x)</m> is the power to which we raise <m>b</m> to get <m>x</m>.
+        Recuerda que <m>\log_b(x)</m> es la potencia a la que elevamos <m>b</m> para obtener <m>x</m>.
       </p>
 
       <p>
         <ol>
           <li>
             <p>
-              Write the equation <m>y = \log_b(x)</m> as an equivalent equation involving exponents with no logarithms present.
+              Escribe la ecuación <m>y = \log_b(x)</m> como una ecuación equivalente que involucre exponentes sin logaritmos presentes.
             </p>
           </li>
           <li>
             <p>
-              Take the equation you found in (a) and take the natural logarithm of each side.
+              Toma la ecuación que encontraste en (a) y toma el logaritmo natural de cada lado.
             </p>
           </li>
           <li>
             <p>
-              Use rules and properties of logarithms appropriately to solve the equation from (b) for <m>y</m>.  Your result here should express <m>y</m> in terms of <m>\ln(x)</m> and <m>\ln(b)</m>.
+              Usa reglas y propiedades de los logaritmos apropiadamente para resolver la ecuación de (b) para <m>y</m>. Tu resultado aquí debería expresar <m>y</m> en términos de <m>\ln(x)</m> y <m>\ln(b)</m>.
             </p>
           </li>
           <li>
             <p>
-              Recall that <m>y = \log_b(x)</m>.  Explain why the following equation (often called the Golden Rule for Logarithms) is true:
+              Recuerda que <m>y = \log_b(x)</m>. Explica por qué la siguiente ecuación (a menudo llamada la Regla de Oro para Logaritmos) es verdadera:
               <me>
                 \log_b(x) = \frac{\ln(x)}{\ln(b)}
               </me>.
@@ -169,7 +169,7 @@
           </li>
           <li>
             <p>
-              What is the value of <m>k</m> that allows us to express the function <m>y = \log_b(x)</m> as a vertical stretch of the function <m>y = \ln(x)</m>?
+              ¿Cuál es el valor de <m>k</m> que nos permite expresar la función <m>y = \log_b(x)</m> como un estiramiento vertical de la función <m>y = \ln(x)</m>?
             </p>
           </li>
         </ol>
@@ -177,12 +177,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

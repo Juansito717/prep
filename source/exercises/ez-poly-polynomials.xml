@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-polynomials">
-  
+  <!--
   <exercise xml:id="ez-poly-polynomials-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/Q02.pg" />
   </exercise>
@@ -31,11 +31,11 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/Q12.pg" />
   </exercise>
 
-<!--  
+  
   <exercise xml:id="ez-poly-polynomials-WW6">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/Q15.pg" />
   </exercise>
--->
+
 
   <exercise xml:id="ez-poly-polynomials-WW7">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/polynomial-02.pg" />
@@ -43,11 +43,12 @@
   <exercise xml:id="ez-poly-polynomials-WW8">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/polynomial-04.pg" />
   </exercise>
-
+-->
+  
   <exercise xml:id="ez-poly-polynomials-1">
     <statement>
       <p>
-        Consider the polynomial function given by
+        Considera la función polinómica dada por
         <me>
           p(x) = 0.0005(x+21.7)^3 (x-20.9)^2 (x-31.4)(x^2+100)
         </me>.
@@ -57,41 +58,41 @@
         <ol>
           <li>
             <p>
-              What is the degree of <m>p</m>?
+              ¿Cuál es el grado de <m>p</m>?
             </p>
           </li>
 
           <li>
             <p>
-              What are the real zeros of <m>p</m>?
-              State them with multiplicity.
+              ¿Cuáles son los ceros reales de <m>p</m>?
+              Indícalos con su multiplicidad.
             </p>
           </li>
 
           <li>
             <p>
-              Construct a carefully labeled sign chart for <m>p(x)</m>.
+              Construye un gráfico de signos cuidadosamente etiquetado para <m>p(x)</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Plot the function <m>p</m> in <em>Desmos</em>.
-              Are the zeros obvious from the graph?
-              How do you have to adjust the window in order to tell?
-              Even in an adjusted window, can you tell them exactly from the graph?
+              Grafica la función <m>p</m> en <em>Desmos</em>.
+              ¿Son obvios los ceros en el gráfico?
+              ¿Cómo tienes que ajustar la ventana para poder verlos?
+              Incluso en una ventana ajustada, ¿puedes identificarlos exactamente desde el gráfico?
             </p>
           </li>
 
           <li>
             <p>
-              Now consider the related but different polynomial
+              Ahora considera el polinomio relacionado pero diferente
               <me>
                 q(x) = -0.0005(x+21.7)^3 (x-20.9)^2 (x-31.4)(x^2+100)(x-92.3)
               </me>.
-              What is the degree of <m>q</m>?
-              What are the zeros of <m>q</m>?
-              What is obvious from its graph and what is not?
+              ¿Cuál es el grado de <m>q</m>?
+              ¿Cuáles son los ceros de <m>q</m>?
+              ¿Qué es obvio en su gráfico y qué no lo es?
             </p>
           </li>
         </ol>
@@ -99,12 +100,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -112,38 +113,38 @@
 <exercise xml:id="ez-poly-polynomials-2">
     <statement>
       <p>
-        Consider the (non-polynomial) function <m>r(x) = e^{-x^2}(x^2+1)(x-2)(x-3)</m>.
+        Considera la función (no polinómica) <m>r(x) = e^{-x^2}(x^2+1)(x-2)(x-3)</m>.
       </p>
 
       <p>
         <ol>
           <li>
             <p>
-              What are the zeros of <m>r(x)</m>? (Hint:
-              is <m>e^{\Box}</m> ever equal to zero?)
+              ¿Cuáles son los ceros de <m>r(x)</m>? (Pista:
+              ¿es <m>e^{\Box}</m> alguna vez igual a cero?)
             </p>
           </li>
 
           <li>
             <p>
-              Construct a sign chart for <m>r(x)</m>.
+              Construye un gráfico de signos para <m>r(x)</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Plot <m>r(x)</m> in <em>Desmos</em>.
-              Is the sign and overall behavior of <m>r</m> obvious from the plot?
-              Why or why not?
+              Grafica <m>r(x)</m> en <em>Desmos</em>.
+              ¿Es obvio el signo y el comportamiento general de <m>r</m> en el gráfico?
+              ¿Por qué o por qué no?
             </p>
           </li>
 
           <li>
             <p>
-              From the graph,
-              what appears to be the value of <m>\lim_{x \to \infty} r(x)</m>?
-              Why is this surprising in light of the behavior of
-              <m>f(x)=(x^2+1)(x-2)(x-3)</m> as <m>x \to \infty</m>?
+              A partir del gráfico,
+              ¿cuál parece ser el valor de <m>\lim_{x \to \infty} r(x)</m>?
+              ¿Por qué es esto sorprendente a la luz del comportamiento de
+              <m>f(x)=(x^2+1)(x-2)(x-3)</m> cuando <m>x \to \infty</m>?
             </p>
           </li>
         </ol>
@@ -151,12 +152,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -164,33 +165,33 @@
   <exercise xml:id="ez-poly-polynomials-3">
     <statement>
       <p>
-        In each following question, find a formula for a polynomial with certain properties, generate a plot that demonstrates you’ve found a function with the given specifications, and write several sentences to explain your thinking.
+        En cada una de las siguientes preguntas, encuentra una fórmula para un polinomio con ciertas propiedades, genera un gráfico que demuestre que has encontrado una función con las especificaciones dadas y escribe varias oraciones para explicar tu razonamiento.
       </p>
 
       <p>
         <ol>
           <li>
             <p>
-              A quadratic function <m>q</m> has zeros at <m>x = −7</m> and <m>x = 11</m> and its <m>y</m>-value at its vertex is <m>42</m>. 
+              Una función cuadrática <m>q</m> tiene ceros en <m>x = −7</m> y <m>x = 11</m> y su valor de <m>y</m> en su vértice es <m>42</m>. 
             </p>
           </li>
           <li>
               <p>
-                A polynomial <m>r</m> of degree <m>4</m> has zeros at <m>x = −3</m> and <m>x = 5</m>, both of multiplicity <m>2</m>, and the function has a <m>y</m>-intercept at the point <m>(0, 28)</m>. 
+                Un polinomio <m>r</m> de grado <m>4</m> tiene ceros en <m>x = −3</m> y <m>x = 5</m>, ambos de multiplicidad <m>2</m>, y la función tiene una intersección con el eje <m>y</m> en el punto <m>(0, 28)</m>. 
               </p>
           </li>
           <li>
             <p>
-              A polynomial <m>f</m> has degree <m>11</m> and the following zeros: zeros of multiplicity <m>1</m> at <m>x = −3</m> and <m>x = 5</m>, zeros of multiplicity <m>2</m> at <m>x = −2</m> and <m>x = 3</m>, and a zero of multiplicity <m>3</m> at <m>x = 1</m>. In addition, <m>\lim_{x \to \infty} f(x) = -\infty</m>.
+              Un polinomio <m>f</m> tiene grado <m>11</m> y los siguientes ceros: ceros de multiplicidad <m>1</m> en <m>x = −3</m> y <m>x = 5</m>, ceros de multiplicidad <m>2</m> en <m>x = −2</m> y <m>x = 3</m>, y un cero de multiplicidad <m>3</m> en <m>x = 1</m>. Además, <m>\lim_{x \to \infty} f(x) = -\infty</m>.
             </p>
           </li>
           <li>
             <p>
-              A polynomial <m>g</m> has its graph given in <xref ref="F-poly-ez-g">Figure</xref> below. Determine a possible formula for <m>g(x)</m> where the polynomial you find has the lowest possible degree to match the graph. What is the degree of the function you find?
+              Un polinomio <m>g</m> tiene su gráfico dado en <xref ref="F-poly-ez-g">Figura</xref> abajo. Determina una posible fórmula para <m>g(x)</m> donde el polinomio que encuentres tenga el grado más bajo posible para coincidir con el gráfico. ¿Cuál es el grado de la función que encuentras?
             </p>
 
             <figure xml:id="F-poly-ez-g">
-              <caption>A polynomial function <m>g</m>.</caption>
+              <caption>Una función polinómica <m>g</m>.</caption>
               <image source="images/poly-ez-g" width="50%" />
             </figure>
           </li>
@@ -199,12 +200,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -212,41 +213,41 @@
   <exercise xml:id="ez-poly-polynomials-4">
     <statement>
       <p>
-        Like we have worked to understand families of functions that involve parameters such as
-        <m>p(t) = a\cos(k(t-b)) + c</m> and <m>F(t) = a + be^{-kt}</m>,
-        we are often interested in polynomials that involve one or more parameters and understanding how those parameters affect the function's behavior.
+        Así como hemos trabajado para entender familias de funciones que involucran parámetros como
+        <m>p(t) = a\cos(k(t-b)) + c</m> y <m>F(t) = a + be^{-kt}</m>,
+        a menudo estamos interesados en polinomios que involucran uno o más parámetros y en entender cómo esos parámetros afectan el comportamiento de la función.
       </p>
 
       <p>
-        For example, let <m>a \gt 0</m> be a positive constant,
-        and consider <m>p(x) = x^3 - a^2x</m>.
+        Por ejemplo, sea <m>a \gt 0</m> una constante positiva,
+        y considera <m>p(x) = x^3 - a^2x</m>.
       </p>
 
       <p>
         <ol>
           <li>
             <p>
-              What is the degree of <m>p</m>?
+              ¿Cuál es el grado de <m>p</m>?
             </p>
           </li>
           <li>
             <p>
-              What is the long-term behavior of <m>p</m>?  State your responses using limit notation.
+              ¿Cuál es el comportamiento a largo plazo de <m>p</m>?  Indica tus respuestas usando notación de límites.
             </p>
           </li>
           <li>
             <p>
-              In terms of the constant <m>a</m>, what are the zeros of <m>p</m>?
+              En términos de la constante <m>a</m>, ¿cuáles son los ceros de <m>p</m>?
             </p>
           </li>
           <li>
             <p>
-              Construct a carefully labeled sign chart for <m>p</m>.
+              Construye un gráfico de signos cuidadosamente etiquetado para <m>p</m>.
             </p>
           </li>
           <li>
             <p>
-              How does changing the value of <m>a</m> affect the graph of <m>p</m>?
+              ¿Cómo afecta el cambio del valor de <m>a</m> al gráfico de <m>p</m>?
             </p>
           </li>
         </ol>
@@ -254,12 +255,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

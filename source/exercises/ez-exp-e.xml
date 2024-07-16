@@ -21,7 +21,7 @@
   <exercise xml:id="ez-exp-e-WW2">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec4/Q06.pg" />
   </exercise>
--->
+
 
   <exercise xml:id="ez-exp-e-WW0">
     <webwork source="Library/Rochester/setAlgebra28ExpFunctions/sw6_2_27.pg" />
@@ -38,7 +38,7 @@
   <exercise xml:id="ez-exp-e-WW4">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec4/Q13.pg" />
   </exercise>
-
+-->
 <!--  
   <exercise xml:id="ez-exp-e-WW5">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec4/Q24.pg" />
@@ -49,43 +49,43 @@
   <exercise xml:id="ez-exp-e-continously-compounded">
     <statement>
       <p>
-        When a single investment of principal, $<m>P</m>, is invested in an account that returns interest at an annual rate of <m>r</m> (a decimal that corresponds to the percentage rate, such as <m>r = 0.05</m> corresponding to <m>5</m>%) that is compounded <m>n</m> times per year, the amount of money in the account after <m>t</m> years is given by <m>A(t) = P(1 + \frac{r}{n})^{nt}</m>.
+        Cuando una inversión única de principal, $<m>P</m>, se invierte en una cuenta que devuelve intereses a una tasa anual de <m>r</m> (un decimal que corresponde a la tasa porcentual, como <m>r = 0.05</m> correspondiente a <m>5</m>%) que se capitaliza <m>n</m> veces al año, la cantidad de dinero en la cuenta después de <m>t</m> años se da por <m>A(t) = P(1 + \frac{r}{n})^{nt}</m>.
       </p>
 
       <p>
-        Suppose we invest $<m>100</m> in an account that earns <m>8</m>% annual interest.  We investigate the effects of different rates of compounding.  
+        Supón que invertimos $<m>100</m> en una cuenta que gana <m>8</m>% de interés anual. Investigamos los efectos de diferentes tasas de capitalización.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Compute <m>A(1)</m> if interest is compounded quarterly (<m>n = 4</m>).
+              Calcula <m>A(1)</m> si el interés se capitaliza trimestralmente (<m>n = 4</m>).
             </p>
           </li>
           <li>
             <p>
-              Compute <m>A(1)</m> if interest is compounded monthly.
+              Calcula <m>A(1)</m> si el interés se capitaliza mensualmente.
             </p>
           </li>
           <li>
             <p>
-              Compute <m>A(1)</m> if interest is compounded weekly.
+              Calcula <m>A(1)</m> si el interés se capitaliza semanalmente.
             </p>
           </li>
           <li>
             <p>
-              Compute <m>A(1)</m> if interest is compounded daily.
+              Calcula <m>A(1)</m> si el interés se capitaliza diariamente.
             </p>
           </li>
           <li>
             <p>
-              If we let the number of times that interest is compounded increase without bound, we say that the interest is <q>compounded continuously</q>.  <idx><h>continuously compounded interest</h></idx>  When interest is compounded continuously, it turns out that the amount of money an account with initial investment $<m>P</m> after <m>t</m> years at an annual interest rate of <m>r</m> is <m>A(t) = Pe^{rt}</m>, where <m>e</m> is the natural base.  Compute <m>A(1)</m> in the same context as the preceding questions but where interest is compounded continuously.
+              Si dejamos que el número de veces que se capitaliza el interés aumente sin límite, decimos que el interés se <q>capitaliza continuamente</q>. <idx><h>interés capitalizado continuamente</h></idx> Cuando el interés se capitaliza continuamente, resulta que la cantidad de dinero en una cuenta con inversión inicial $<m>P</m> después de <m>t</m> años a una tasa de interés anual de <m>r</m> es <m>A(t) = Pe^{rt}</m>, donde <m>e</m> es la base natural. Calcula <m>A(1)</m> en el mismo contexto que las preguntas anteriores pero donde el interés se capitaliza continuamente.
             </p>
           </li>
           <li>
             <p>
-              How much of a difference does continuously compounded interest make over interest compounded quarterly in one year's time?  How does your answer change over <m>25</m> years' time?
+              ¿Cuánta diferencia hace el interés capitalizado continuamente sobre el interés capitalizado trimestralmente en un año? ¿Cómo cambia tu respuesta en un período de <m>25</m> años?
             </p>
           </li>
         </ol>
@@ -93,12 +93,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -106,29 +106,29 @@
   <exercise xml:id="ez-exp-e-k-t">
     <statement>
       <p>
-        In <em>Desmos</em>, define the function <m>g(t) = e^{kt}</m> and accept the slider for <m>k</m>.  Set the range of the slider to <m>-2 \le k \le 2</m>, and assume that <m>k \ne 0</m>.  Experiment with a wide range of values of <m>k</m> to see the effects of changing <m>k</m>.
+        En <em>Desmos</em>, define la función <m>g(t) = e^{kt}</m> y acepta el deslizador para <m>k</m>. Establece el rango del deslizador a <m>-2 \le k \le 2</m>, y supón que <m>k \ne 0</m>. Experimenta con una amplia gama de valores de <m>k</m> para ver los efectos de cambiar <m>k</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              For what values of <m>k</m> is <m>g</m> always increasing?  For what values of <m>k</m> is <m>g</m> always decreasing?
+              ¿Para qué valores de <m>k</m> es <m>g</m> siempre creciente? ¿Para qué valores de <m>k</m> es <m>g</m> siempre decreciente?
             </p>
           </li>
           <li>
             <p>
-              For which value of <m>k</m> is the average rate of change of <m>g</m> on <m>[0,1]</m> greater:  when <m>k = -0.1</m> or when <m>k = -0.05</m>?
+              ¿Para qué valor de <m>k</m> es mayor la tasa de cambio promedio de <m>g</m> en <m>[0,1]</m>: cuando <m>k = -0.1</m> o cuando <m>k = -0.05</m>?
             </p>
           </li>
           <li>
             <p>
-              What is the long-term behavior of <m>g</m> when <m>k \lt 0</m>?  Why does this occur?
+              ¿Cuál es el comportamiento a largo plazo de <m>g</m> cuando <m>k \lt 0</m>? ¿Por qué ocurre esto?
             </p>
           </li>
           <li>
             <p>
-              Experiment with the slider to find a value of <m>k</m> for which <m>g(2) = \frac{1}{2}</m>.  Test your estimate by computing <m>e^{2k}</m>.  How accurate is your estimate? 
+              Experimenta con el deslizador para encontrar un valor de <m>k</m> para el cual <m>g(2) = \frac{1}{2}</m>. Prueba tu estimación calculando <m>e^{2k}</m>. ¿Qué tan precisa es tu estimación?
             </p>
           </li>
         </ol>
@@ -136,12 +136,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -149,9 +149,7 @@
   <exercise xml:id="ez-exp-e-soda">
     <statement>
       <p>
-        A can of soda is removed from a refrigerator at time <m>t = 0</m> (in minutes)
-        and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
-        Based on the data, a model is formulated for the object's temperature, given by
+        Una lata de refresco se saca de un refrigerador en el momento <m>t = 0</m> (en minutos) y su temperatura, <m>F(t)</m>, en grados Fahrenheit, se calcula a intervalos regulares. Basado en los datos, se formula un modelo para la temperatura del objeto, dado por
           <me>
             F(t) = 74.4 - 38.8e^{-0.05t}
           </me>.
@@ -161,22 +159,22 @@
         <ol marker="a.">
           <li>
             <p>
-              What is the long-term behavior of the function <m>g(t) = e^{-0.05t}</m>?  Why?
+              ¿Cuál es el comportamiento a largo plazo de la función <m>g(t) = e^{-0.05t}</m>? ¿Por qué?
             </p>
           </li>
           <li>
             <p>
-              What is the long-term behavior of the function <m>F(t) = 74.4 - 38.8e^{-0.05t}</m>?  What is the meaning of this value in the physical context of the problem?
+              ¿Cuál es el comportamiento a largo plazo de la función <m>F(t) = 74.4 - 38.8e^{-0.05t}</m>? ¿Cuál es el significado de este valor en el contexto físico del problema?
             </p>
           </li>
           <li>
             <p>
-              What is the temperature of the refrigerator?  Why?
+              ¿Cuál es la temperatura del refrigerador? ¿Por qué?
             </p>
           </li>
           <li>
             <p>
-              Compute the average rate of change of <m>F</m> on the intervals <m>[10,20]</m>, <m>[20,30]</m>, and <m>[30,40]</m>.  Write a careful sentence, with units, to explain the meaning of each, and write an additional sentence to describe any overall trends in how the average rate of change of <m>F</m> is changing.
+              Calcula la tasa de cambio promedio de <m>F</m> en los intervalos <m>[10,20]</m>, <m>[20,30]</m>, y <m>[30,40]</m>. Escribe una oración cuidadosa, con unidades, para explicar el significado de cada una, y escribe una oración adicional para describir cualquier tendencia general en cómo está cambiando la tasa de cambio promedio de <m>F</m>.
             </p>
           </li>
         </ol>
@@ -184,12 +182,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

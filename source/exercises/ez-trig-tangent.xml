@@ -15,7 +15,7 @@
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-trig-tangent">
   
-
+<!--
   <exercise xml:id="ez-trig-tangent-WW1">
     <webwork source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg" />
   </exercise>
@@ -36,7 +36,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec7/Q14.pg" />
   </exercise>    
 
-<!--  
+  
   <exercise xml:id="ez-trig-tangent-WW4">
     <webwork source="Library/Rochester/setTrig03FunctionsRightAngle/p2.pg" />
   </exercise>
@@ -51,21 +51,21 @@
   <exercise xml:id="ez-trig-tangent-ramp">
     <statement>
       <p>
-        A wheelchair ramp is to be built so that the angle it forms with level ground is <m>4^{\circ}</m>.
-        If the ramp is going to rise from a level sidewalk up to a front porch that is <m>3</m> feet above the ground,
-        how long does the ramp have to be?
-        How far from the front porch will it meet the sidewalk?
-        What is the slope of the ramp?
+        Una rampa para sillas de ruedas se va a construir de manera que el ángulo que forma con el suelo sea de <m>4^{\circ}</m>.
+        Si la rampa va a elevarse desde una acera nivelada hasta un porche que está a <m>3</m> pies sobre el suelo,
+        ¿cuánto debe medir la rampa?
+        ¿A qué distancia del porche se encontrará con la acera?
+        ¿Cuál es la pendiente de la rampa?
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>
@@ -73,28 +73,28 @@
   <exercise xml:id="ez-trig-tangent-kite">
     <statement>
       <p>
-        A person is flying a kite and at the end of a fixed length of string.  Assume there is no slack in the string.
+        Una persona está volando una cometa y al final de una longitud fija de cuerda. Supón que no hay holgura en la cuerda.
       </p>
 
       <p>
-        At a certain moment, the kite is <m>170</m> feet off the ground, and the angle of elevation the string makes with the ground is <m>40^\circ</m>.
+        En un cierto momento, la cometa está a <m>170</m> pies del suelo, y el ángulo de elevación que la cuerda forma con el suelo es de <m>40^\circ</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              How far is it from the person flying the kite to another person who is standing directly beneath the kite?
+              ¿Qué distancia hay entre la persona que vuela la cometa y otra persona que está directamente debajo de la cometa?
             </p>
           </li>
           <li>
             <p>
-              How much string is out between the person flying the kite and the kite itself?
+              ¿Cuánta cuerda hay entre la persona que vuela la cometa y la cometa misma?
             </p>
           </li>
           <li>
             <p>
-              With the same amount of string out, the angle of elevation increases to <m>50^\circ</m>.  How high is the kite at this time?
+              Con la misma cantidad de cuerda, el ángulo de elevación aumenta a <m>50^\circ</m>. ¿Qué altura tiene la cometa en ese momento?
             </p>
           </li>
         </ol>
@@ -102,12 +102,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>
@@ -115,21 +115,21 @@
   <exercise xml:id="ez-trig-tangent-plane">
     <statement>
       <p>
-        An airplane is flying at a constant speed along a straight path above a straight road at a constant elevation of <m>2400</m> feet.  A person on the road observes the plane flying directly at them and uses a sextant to measure the angle of elevation from them to the plane.  The first measurement they take records an angle of <m>36^\circ</m>; a second measurement taken <m>2</m> seconds later is <m>41^\circ</m>.
+        Un avión está volando a una velocidad constante a lo largo de un camino recto sobre una carretera recta a una elevación constante de <m>2400</m> pies. Una persona en la carretera observa el avión volando directamente hacia ella y usa un sextante para medir el ángulo de elevación desde ella hasta el avión. La primera medición que toma registra un ángulo de <m>36^\circ</m>; una segunda medición tomada <m>2</m> segundos después es de <m>41^\circ</m>.
       </p>
 
       <p>
-        How far did the plane travel during the two seconds between the two angle measurements?  How fast was the plane flying?
+        ¿Qué distancia recorrió el avión durante los dos segundos entre las dos mediciones de ángulo? ¿A qué velocidad volaba el avión?
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>

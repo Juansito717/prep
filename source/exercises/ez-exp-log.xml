@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-exp-log">
-
+<!--
   <exercise xml:id="ez-exp-log-WW1">
     <webwork source="Library/Rochester/setAlgebra29LogFunctions/srw4_2_5.pg" />
   </exercise>
@@ -27,7 +27,7 @@
   <exercise xml:id="ez-exp-log-WW4">
     <webwork source="Library/Rochester/setAlgebra30LogExpEqns/srw4_4_17.pg" />
   </exercise>
-<!--  
+ 
   <exercise xml:id="ez-exp-log-WW5">
     <webwork source="Library/Michigan/skills_questions/topic_solving_exp_log/prob01.pg" />
   </exercise>
@@ -39,11 +39,11 @@
   <exercise xml:id="ez-exp-log-find-inverse">
     <statement>
       <p>
-        Recall that when a function <m>y = f(x)</m> has an inverse function, the two equations <m>y = f(x)</m> and <m>x = f^{-1}(y)</m> say the same thing from different perspectives: the first equation expresses <m>y</m> in terms of <m>x</m>, while the second expresses <m>x</m> in terms of <m>y</m>.  When <m>y = f(x) = e^x</m>, we know its inverse is <m>x = f^{-1}(y) = \ln(y)</m>.  Through logarithms, we now have the ability to find the inverse of many different exponential functions.  In particular, because exponential functions and their transformations are either always increasing or always decreasing, any function of the form <m>y = f(x) = ae^{-kx} + c</m> will have an inverse function.
+        Recuerda que cuando una función <m>y = f(x)</m> tiene una función inversa, las dos ecuaciones <m>y = f(x)</m> y <m>x = f^{-1}(y)</m> dicen lo mismo desde diferentes perspectivas: la primera ecuación expresa <m>y</m> en términos de <m>x</m>, mientras que la segunda expresa <m>x</m> en términos de <m>y</m>. Cuando <m>y = f(x) = e^x</m>, sabemos que su inversa es <m>x = f^{-1}(y) = \ln(y)</m>. A través de los logaritmos, ahora tenemos la capacidad de encontrar la inversa de muchas funciones exponenciales diferentes. En particular, debido a que las funciones exponenciales y sus transformaciones siempre están aumentando o siempre están disminuyendo, cualquier función de la forma <m>y = f(x) = ae^{-kx} + c</m> tendrá una función inversa.
       </p>
 
       <p>
-        Find the inverse function for each given function by solving algebraically for <m>x</m> as a function of <m>y</m>.  In addition, state the domain and range of the given function and the domain and range of the inverse function.
+        Encuentra la función inversa para cada función dada resolviendo algebraicamente para <m>x</m> como una función de <m>y</m>. Además, indica el dominio y el rango de la función dada y el dominio y el rango de la función inversa.
       </p>
 
       <p>
@@ -92,12 +92,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -105,41 +105,41 @@
   <exercise xml:id="ez-exp-log-base-b">
     <statement>
       <p>
-        We've seen that any exponential function <m>f(t) = b^t</m> (<m>b \gt 0</m>, <m>b \ne 1</m>) can be written in the form <m>f(t) = e^{kt}</m> for some real number <m>k</m>, and this is because <m>f(t) = b^t</m> is a horizontal scaling of the function <m>E(t) = e^{t}</m>.  In this exercise, we explore how the natural logarithm can be scaled to achieve a logarithm of any base.
+        Hemos visto que cualquier función exponencial <m>f(t) = b^t</m> (<m>b \gt 0</m>, <m>b \ne 1</m>) se puede escribir en la forma <m>f(t) = e^{kt}</m> para algún número real <m>k</m>, y esto es porque <m>f(t) = b^t</m> es una escala horizontal de la función <m>E(t) = e^{t}</m>. En este ejercicio, exploramos cómo el logaritmo natural se puede escalar para lograr un logaritmo de cualquier base.
       </p>
 
       <p>
-        Let <m>b \gt 1</m>.  Because the function <m>y = f(t) = b^t</m> has an inverse function, it makes sense to define its inverse like we did when <m>b = 10</m> or <m>b = e</m>.  The <term>base-<m>b</m> logarithm</term>, <idx><h>logarithm</h><h>base-<m>b</m></h><h>definition</h></idx> denoted <m>\log_b(y)</m> is defined to be the power to which we raise <m>b</m> to get <m>y</m>.  Thus, writing <m>y = f(t) = b^t</m> is the same as writing <m>t = f^{-1}(y) = \log_b(y)</m>.
+        Sea <m>b \gt 1</m>. Debido a que la función <m>y = f(t) = b^t</m> tiene una función inversa, tiene sentido definir su inversa como lo hicimos cuando <m>b = 10</m> o <m>b = e</m>. El <term>logaritmo en base <m>b</m></term>, <idx><h>logaritmo</h><h>base-<m>b</m></h><h>definición</h></idx> denotado <m>\log_b(y)</m> se define como la potencia a la que elevamos <m>b</m> para obtener <m>y</m>. Así, escribir <m>y = f(t) = b^t</m> es lo mismo que escribir <m>t = f^{-1}(y) = \log_b(y)</m>.
       </p>
 
       <p>
-        In <em>Desmos</em>, the natural logarithm function is given by <c>ln(t)</c>, while the base-<m>10</m> logarithm by <c>log(t)</c>.  To get a logarithm of a different base, such as a base-<m>2</m> logarithm, type <c>log_2(t)</c> (the underscore will generate a subscript; then use the right arrow to get out of subscript mode).
+        En <em>Desmos</em>, la función del logaritmo natural se da por <c>ln(t)</c>, mientras que el logaritmo en base <m>10</m> por <c>log(t)</c>. Para obtener un logaritmo de una base diferente, como un logaritmo en base <m>2</m>, escribe <c>log_2(t)</c> (el guion bajo generará un subíndice; luego usa la flecha derecha para salir del modo subíndice).
       </p>
 
       <p>
-        In a new <em>Desmos</em> worksheet, enter <c>V(t) = k * ln(t)</c> and accept the slider for <m>k</m>.  Set the lower and upper bounds for the slider to <m>0.01</m> and <m>15</m>, respectively.
+        En una nueva hoja de trabajo de <em>Desmos</em>, ingresa <c>V(t) = k * ln(t)</c> y acepta el deslizador para <m>k</m>. Establece los límites inferior y superior para el deslizador en <m>0.01</m> y <m>15</m>, respectivamente.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Define <m>f(t) = \log_2(t)</m> in <em>Desmos</em>.  Can you find a value of <m>k</m> for which <m>\log_2(t) = k\ln(t)</m>?  If yes, what is the value?  If not, why not?
+              Define <m>f(t) = \log_2(t)</m> en <em>Desmos</em>. ¿Puedes encontrar un valor de <m>k</m> para el cual <m>\log_2(t) = k\ln(t)</m>? Si es así, ¿cuál es el valor? Si no, ¿por qué no?
             </p>
           </li>
           <li>
             <p>
-              Repeat (a) for the functions <m>g(t) = \log_3(t)</m>, <m>h(t) = \log_5(t)</m>, and <m>p(t) = \log_{1.25}(t)</m>.  What pattern(s) do you observe?
+              Repite (a) para las funciones <m>g(t) = \log_3(t)</m>, <m>h(t) = \log_5(t)</m>, y <m>p(t) = \log_{1.25}(t)</m>. ¿Qué patrón(es) observas?
             </p>
           </li>
           <li>
             <p>
-              True or false: for any value of <m>b \gt 1</m>, the function <m>\log_b(t)</m> can be viewed as a vertical scaling of <m>\ln(t)</m>.
+              Verdadero o falso: para cualquier valor de <m>b \gt 1</m>, la función <m>\log_b(t)</m> se puede ver como una escala vertical de <m>\ln(t)</m>.
             </p>
           </li>
           <li>
             <p>
-              Compute the following values:  <m>\frac{1}{\ln(2)}</m>, <m>\frac{1}{\ln(3)}</m>, <m>\frac{1}{\ln(5)}</m>, and <m>\frac{1}{\ln(1.25)}</m>.  What do you notice about these values compared to those of <m>k</m> you found in (a) and (b)?
+              Calcula los siguientes valores: <m>\frac{1}{\ln(2)}</m>, <m>\frac{1}{\ln(3)}</m>, <m>\frac{1}{\ln(5)}</m>, y <m>\frac{1}{\ln(1.25)}</m>. ¿Qué notas sobre estos valores en comparación con los de <m>k</m> que encontraste en (a) y (b)?
             </p>
           </li>
         </ol>
@@ -147,12 +147,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -160,9 +160,9 @@
   <exercise xml:id="ez-exp-log-soda-revisited">
     <statement>
       <p>
-        A can of soda is removed from a refrigerator at time <m>t = 0</m> (in minutes)
-        and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
-        Based on the data, a model is formulated for the object's temperature, given by
+        Una lata de refresco se saca del refrigerador en el momento <m>t = 0</m> (en minutos)
+        y su temperatura, <m>F(t)</m>, en grados Fahrenheit, se calcula a intervalos regulares.
+        Basado en los datos, se formula un modelo para la temperatura del objeto, dado por
           <me>
             F(t) = 74.4 - 38.8e^{-0.05t}
           </me>.
@@ -172,22 +172,22 @@
         <ol marker="a.">
           <li>
             <p>
-              Determine the exact time when the soda's temperature is <m>50^\circ</m>.
+              Determina el tiempo exacto cuando la temperatura del refresco es <m>50^\circ</m>.
             </p>
           </li>
           <li>
             <p>
-              Is there ever a time when the soda's temperature is <m>36^\circ</m>?  Why or why not?
+              ¿Hay algún momento en que la temperatura del refresco sea <m>36^\circ</m>? ¿Por qué o por qué no?
             </p>
           </li>
           <li>
             <p>
-              For the model, its domain is the set of all positive real numbers, <m>t \gt 0</m>.  What is its range?
+              Para el modelo, su dominio es el conjunto de todos los números reales positivos, <m>t \gt 0</m>. ¿Cuál es su rango?
             </p>
           </li>
           <li>
             <p>
-              Find a formula for the inverse of the function <m>y = F(t)</m>.  What is the meaning of this function?
+              Encuentra una fórmula para la inversa de la función <m>y = F(t)</m>. ¿Cuál es el significado de esta función?
             </p>
           </li>
         </ol>
@@ -195,12 +195,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

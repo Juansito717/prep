@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-circular-sine-cosine">
-
+<!--
   <exercise xml:id="ez-circular-sine-cosine-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec4/Q14.pg" />
   </exercise>
@@ -30,7 +30,7 @@
   </exercise>
 
 
-<!--
+
   <exercise xml:id="ez-circular-sine-cosine-WW2">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec4/Q18.pg" />
   </exercise>
@@ -48,7 +48,7 @@
   <exercise>
     <statement>
       <p>
-        Without using a computational device, determine the exact value of each of the following quantities.
+        Sin usar un dispositivo computacional, determina el valor exacto de cada una de las siguientes cantidades.
       </p>
 
       <p>
@@ -81,12 +81,12 @@
           </li>
           <li>
             <p>
-              <m>t</m> in quadrant III such that <m>\cos(t) = -\frac{\sqrt{3}}{2}</m>
+              <m>t</m> en el cuadrante III tal que <m>\cos(t) = -\frac{\sqrt{3}}{2}</m>
             </p>
           </li>
           <li>
             <p>
-              <m>t</m> in quadrant IV such that <m>\sin(t) = -\frac{\sqrt{3}}{2}</m>
+              <m>t</m> en el cuadrante IV tal que <m>\sin(t) = -\frac{\sqrt{3}}{2}</m>
             </p>
           </li>          
         </ol>
@@ -95,12 +95,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -108,7 +108,7 @@
   <exercise>
     <statement>
       <p>
-        We now know three different identities involving the sine and cosine functions: <m>\sin(t+\frac{\pi}{2}) = \cos(t)</m>, <m>\cos(t-\frac{\pi}{2}) = \sin(t)</m>, and <m>\cos^2(t) + \sin^2(t) = 1</m>.  Following are several proposed identities.  For each, your task is to decide whether the identity is true or false.  If true, give a convincing argument for why it is true; if false, give an example of a <m>t</m>-value for which the equation fails to hold.
+        Ahora conocemos tres identidades diferentes que involucran las funciones seno y coseno: <m>\sin(t+\frac{\pi}{2}) = \cos(t)</m>, <m>\cos(t-\frac{\pi}{2}) = \sin(t)</m>, y <m>\cos^2(t) + \sin^2(t) = 1</m>. A continuación se presentan varias identidades propuestas. Para cada una, tu tarea es decidir si la identidad es verdadera o falsa. Si es verdadera, da un argumento convincente de por qué es verdadera; si es falsa, da un ejemplo de un valor de <m>t</m> para el cual la ecuación no se cumple.
       </p>
 
       <p>
@@ -149,12 +149,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

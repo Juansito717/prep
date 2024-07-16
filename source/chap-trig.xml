@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C-trig">
-  	<title>Trigonometry</title>
+  	<title>Trigonometría</title>
   
   	<xi:include  href="./sec-trig-right.xml" />
   	<xi:include  href="./sec-trig-tangent.xml" />
@@ -23,4 +23,3 @@
   	<xi:include  href="./sec-trig-other.xml" />
 
 </chapter>
-

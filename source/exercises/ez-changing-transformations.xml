@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-changing-transformations">
-
+<!--
   <exercise xml:id="ez-changing-transformations-WW1">
     <webwork source="Library/Rochester/setAlgebra19FunTransforms/p1.pg" />
   </exercise>
@@ -34,7 +34,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap5Sec1/Q09.pg" />
   </exercise>  
 
-<!--  THESE ONES DON'T
+  THESE ONES DON'T
   <exercise xml:id="ez-changing-transformations-WW5">
     <webwork source="Library/LoyolaChicago/Precalc/Chap5Sec1/Q18.pg" />
   </exercise>
@@ -48,35 +48,32 @@
   </exercise>
 -->
 
-
-
-
   <exercise xml:id="ez-changing-transformations-aroc">
     <statement>
       <p>
-        Let <m>f(x) = x^2</m>.
+        Sea <m>f(x) = x^2</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Let <m>g(x) = f(x) + 5</m>.  Determine <m>AV_{[-3,-1]}</m> and <m>AV_{[2,5]}</m> for both <m>f</m> and <m>g</m>.  What do you observe?  Why does this phenomenon occur?
+              Sea <m>g(x) = f(x) + 5</m>. Determina <m>AV_{[-3,-1]}</m> y <m>AV_{[2,5]}</m> para ambos <m>f</m> y <m>g</m>. ¿Qué observas? ¿Por qué ocurre este fenómeno?
             </p>
           </li>
           <li>
             <p>
-              Let <m>h(x) = f(x-2)</m>.  For <m>f</m>, recall that you determined <m>AV_{[-3,-1]}</m> and <m>AV_{[2,5]}</m> in (a).  In addition, determine <m>AV_{[-1,1]}</m> and <m>AV_{[4,7]}</m> for <m>h</m>.  What do you observe?  Why does this phenomenon occur?
+              Sea <m>h(x) = f(x-2)</m>. Para <m>f</m>, recuerda que determinaste <m>AV_{[-3,-1]}</m> y <m>AV_{[2,5]}</m> en (a). Además, determina <m>AV_{[-1,1]}</m> y <m>AV_{[4,7]}</m> para <m>h</m>. ¿Qué observas? ¿Por qué ocurre este fenómeno?
             </p>
           </li>
           <li>
             <p>
-              Let <m>k(x) = 3f(x)</m>.  Determine <m>AV_{[-3,-1]}</m> and <m>AV_{[2,5]}</m> for <m>k</m>, and compare the results to your earlier computations of <m>AV_{[-3,-1]}</m> and <m>AV_{[2,5]}</m> for <m>f</m>.  What do you observe?  Why does this phenomenon occur?
+              Sea <m>k(x) = 3f(x)</m>. Determina <m>AV_{[-3,-1]}</m> y <m>AV_{[2,5]}</m> para <m>k</m>, y compara los resultados con tus cálculos anteriores de <m>AV_{[-3,-1]}</m> y <m>AV_{[2,5]}</m> para <m>f</m>. ¿Qué observas? ¿Por qué ocurre este fenómeno?
             </p>
           </li>
           <li>
             <p>
-               Finally, let <m>m(x) = 3f(x-2) + 5</m>.  Without doing any computations, what do you think will be true about the relationship between <m>AV_{[-3,-1]}</m> for <m>f</m> and <m>AV_{[-1,1]}</m> for <m>m</m>?  Why?  After making your conjecture, execute appropriate computations to see if your intuition is correct.
+               Finalmente, sea <m>m(x) = 3f(x-2) + 5</m>. Sin hacer ningún cálculo, ¿qué crees que será cierto sobre la relación entre <m>AV_{[-3,-1]}</m> para <m>f</m> y <m>AV_{[-1,1]}</m> para <m>m</m>? ¿Por qué? Después de hacer tu conjetura, realiza los cálculos apropiados para ver si tu intuición es correcta.
             </p>
           </li>
         </ol>
@@ -84,12 +81,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -97,29 +94,29 @@
   <exercise xml:id="ez-changing-transformations-linear">
     <statement>
       <p>
-        Consider the parent function <m>y = f(x) = x</m>.
+        Considera la función madre <m>y = f(x) = x</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Consider the linear function in point-slope form given by <m>y = L(x) = -4(x-3) + 5</m>.  What is the slope of this line?  What is the most obvious point that lies on the line?
+              Considera la función lineal en forma punto-pendiente dada por <m>y = L(x) = -4(x-3) + 5</m>. ¿Cuál es la pendiente de esta línea? ¿Cuál es el punto más obvio que se encuentra en la línea?
             </p>
           </li>
           <li>
             <p>
-              How can the function <m>L</m> given in (a) be viewed as a transformation of the parent function <m>f</m>?  Explain the roles of <m>3</m>, <m>-4</m>, and <m>5</m>, respectively.
+              ¿Cómo puede verse la función <m>L</m> dada en (a) como una transformación de la función madre <m>f</m>? Explica los roles de <m>3</m>, <m>-4</m> y <m>5</m>, respectivamente.
             </p>
           </li>
           <li>
             <p>
-              Explain why any non-vertical line of the form <m>P(x) = m(x-x_0) + y_0</m> can be thought of as a transformation of the parent function <m>f(x) = x</m>.  Specifically discuss the transformation(s) involved.
+              Explica por qué cualquier línea no vertical de la forma <m>P(x) = m(x-x_0) + y_0</m> puede considerarse como una transformación de la función madre <m>f(x) = x</m>. Discute específicamente la(s) transformación(es) involucrada(s).
             </p>
           </li>
           <li>
             <p>
-              Find a formula for the transformation of <m>f(x) = x</m> that corresponds to a horizontal shift of <m>7</m> units left, a reflection across <m>y = 0</m> and vertical stretch of <m>3</m> units away from the <m>x</m>-axis, and a vertical shift of <m>-11</m> units.
+              Encuentra una fórmula para la transformación de <m>f(x) = x</m> que corresponde a un desplazamiento horizontal de <m>7</m> unidades a la izquierda, una reflexión a través de <m>y = 0</m> y un estiramiento vertical de <m>3</m> unidades alejándose del eje <m>x</m>, y un desplazamiento vertical de <m>-11</m> unidades.
             </p>
           </li>
         </ol>
@@ -127,12 +124,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -140,44 +137,44 @@
   <exercise xml:id="ez-changing-transformations-horiz-scaling">
     <statement>
       <p>
-        We have explored the effects of adding a constant to the output of a function, <m>y = f(x) + a</m>, adding a constant to the input, <m>y = f(x+a)</m>, and multiplying the output of a function by a constant, <m>y = af(x)</m>.  There is one remaining natural transformation to explore:  multiplying the input to a function by a constant.  In this exercise, we consider the effects of the constant <m>a</m> in transforming a parent function <m>f</m> by the rule <m>y = f(ax)</m>.
+        Hemos explorado los efectos de añadir una constante a la salida de una función, <m>y = f(x) + a</m>, añadir una constante a la entrada, <m>y = f(x+a)</m>, y multiplicar la salida de una función por una constante, <m>y = af(x)</m>. Queda una transformación natural por explorar: multiplicar la entrada de una función por una constante. En este ejercicio, consideramos los efectos de la constante <m>a</m> en la transformación de una función madre <m>f</m> por la regla <m>y = f(ax)</m>.
       </p>
 
       <p>
-        Let <m>f(x) = (x-2)^2 + 1</m>.
+        Sea <m>f(x) = (x-2)^2 + 1</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Let <m>g(x) = f(4x)</m>, <m>h(x) = f(2x)</m>, <m>k(x) = f(0.5x)</m>, and <m>m(x) = f(0.25x)</m>.  Use <em>Desmos</em> to plot these functions.  Then, sketch and label <m>g</m>, <m>h</m>, <m>k</m>, and <m>m</m> on the provided axes in <xref ref="F-ez-transformations-blank-axes">Figure</xref> along with the graph of <m>f</m>.  For each of the functions, label and identify its vertex, its <m>y</m>-intercept, and its <m>x</m>-intercepts.
+              Sea <m>g(x) = f(4x)</m>, <m>h(x) = f(2x)</m>, <m>k(x) = f(0.5x)</m>, y <m>m(x) = f(0.25x)</m>. Usa <em>Desmos</em> para graficar estas funciones. Luego, dibuja y etiqueta <m>g</m>, <m>h</m>, <m>k</m> y <m>m</m> en los ejes proporcionados en <xref ref="F-ez-transformations-blank-axes">Figura</xref> junto con la gráfica de <m>f</m>. Para cada una de las funciones, etiqueta e identifica su vértice, su intersección con el eje <m>y</m> y sus intersecciones con el eje <m>x</m>.
             </p>
 
             <sidebyside width="50%">
               <figure xml:id="F-ez-transformations-blank-axes">
-                <caption>Axes for plotting <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>m</m> in part (a).</caption>
+                <caption>Ejes para graficar <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m> y <m>m</m> en la parte (a).</caption>
                 <image source="images/functions-y-x-blank-axes" />
               </figure>
               <figure xml:id="F-ez-transformations-blank-axes-2">
-                <caption>Axes for plotting <m>f</m>, <m>r</m>, and <m>s</m> from parts (c) and (d).</caption>
+                <caption>Ejes para graficar <m>f</m>, <m>r</m> y <m>s</m> de las partes (c) y (d).</caption>
                 <image source="images/functions-y-x-blank-axes-centered-low" />
               </figure>
             </sidebyside>
           </li>
           <li>
             <p>
-              Based on your work in (a), how would you describe the effect(s) of the transformation <m>y = f(ax)</m> where <m>a \gt 0</m>?  What is the impact on the graph of <m>f</m>?  Are any parts of the graph of <m>f</m> unchanged?
+              Basado en tu trabajo en (a), ¿cómo describirías los efectos de la transformación <m>y = f(ax)</m> donde <m>a \gt 0</m>? ¿Cuál es el impacto en la gráfica de <m>f</m>? ¿Hay alguna parte de la gráfica de <m>f</m> que no cambie?
             </p>
           </li>
           <li>
             <p>
-              Now consider the function <m>r(x) = f(-x)</m>.  Observe that <m>r(-1) = f(1)</m>, <m>r(2) = f(-2)</m>, and so on.  Without using a graphing utility, how do you expect the graph of <m>y = r(x)</m> to compare to the graph of <m>y = f(x)</m>?  Explain.  Then test your conjecture by using a graphing utility and record the plots of <m>f</m> and <m>r</m> on the axes in <xref ref="F-ez-transformations-blank-axes-2">Figure</xref>.
+              Ahora considera la función <m>r(x) = f(-x)</m>. Observa que <m>r(-1) = f(1)</m>, <m>r(2) = f(-2)</m>, y así sucesivamente. Sin usar una herramienta de graficación, ¿cómo esperas que la gráfica de <m>y = r(x)</m> se compare con la gráfica de <m>y = f(x)</m>? Explica. Luego prueba tu conjetura usando una herramienta de graficación y registra las gráficas de <m>f</m> y <m>r</m> en los ejes en <xref ref="F-ez-transformations-blank-axes-2">Figura</xref>.
             </p>
           </li>
           <li>
             <p>
-              How do you expect the graph of <m>s(x) = f(-2x)</m> to appear?  Why?  More generally, how does the graph of <m>y = f(ax)</m> compare to the graph of <m>y = f(x)</m> in the situation where <m>a \lt 0</m>?
+              ¿Cómo esperas que se vea la gráfica de <m>s(x) = f(-2x)</m>? ¿Por qué? Más generalmente, ¿cómo se compara la gráfica de <m>y = f(ax)</m> con la gráfica de <m>y = f(x)</m> en la situación donde <m>a \lt 0</m>?
             </p>
           </li>
         </ol>
@@ -185,12 +182,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

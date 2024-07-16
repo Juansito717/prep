@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-rational">
-  
+  <!--
   <exercise xml:id="ez-poly-rational-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec4/Q10.pg" />
   </exercise>
@@ -34,11 +34,11 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec5/Q15.pg" />
   </exercise>
 
-<!--  
+  
   <exercise xml:id="ez-poly-rational-WW7">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec5/Q19.pg" />
   </exercise>
--->
+
 
   <exercise xml:id="ez-poly-rational-WW8">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec5/Q24.pg" />
@@ -46,11 +46,12 @@
   <exercise xml:id="ez-poly-rational-WW9">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec5/Q06.pg" />
   </exercise>
+  -->
 
   <exercise xml:id="ez-poly-rational-domain-asymptote">
     <statement>
       <p>
-        For each rational function below, determine the function's domain as well as any horizontal asymptotes.
+        Para cada función racional a continuación, determina el dominio de la función así como cualquier asíntota horizontal.
       </p>
 
       <p>
@@ -80,12 +81,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -93,39 +94,39 @@
   <exercise xml:id="ez-poly-rational-applications-box">
     <statement>
       <p>
-        A rectangular box is being constructed so that its base is <m>1.5</m> times as long as it is wide.  In addition, suppose that material for the base and top of the box costs $<m>3.75</m> per square foot, while material for the sides costs $<m>2.50</m> per square foot.  Finally, we want the box to hold <m>8</m> cubic feet of volume.
+        Se está construyendo una caja rectangular de manera que su base sea <m>1.5</m> veces más larga que ancha. Además, supón que el material para la base y la parte superior de la caja cuesta $<m>3.75</m> por pie cuadrado, mientras que el material para los lados cuesta $<m>2.50</m> por pie cuadrado. Finalmente, queremos que la caja tenga <m>8</m> pies cúbicos de volumen.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Draw a labeled picture of the box with <m>x</m> as the length of the shorter side of the box's base and <m>h</m> as its height.
+              Dibuja una imagen etiquetada de la caja con <m>x</m> como la longitud del lado más corto de la base de la caja y <m>h</m> como su altura.
             </p>
           </li>
           <li>
             <p>
-              Determine a formula involving <m>x</m> and <m>h</m> for the total surface area, <m>S</m>, of the box.
+              Determina una fórmula que involucre <m>x</m> y <m>h</m> para el área total de la superficie, <m>S</m>, de la caja.
             </p>
           </li>
           <li>
             <p>
-              Use your work from (b) along with the given information about cost to determine a formula for the total cost, <m>C</m>, oif the box in terms of <m>x</m> and <m>h</m>.
+              Usa tu trabajo de (b) junto con la información dada sobre el costo para determinar una fórmula para el costo total, <m>C</m>, de la caja en términos de <m>x</m> y <m>h</m>.
             </p>
           </li>
           <li>
             <p>
-              Use the volume constraint given in the problem to write an equation that relates <m>x</m> and <m>h</m>, and solve that equation for <m>h</m> in terms of <m>x</m>.
+              Usa la restricción de volumen dada en el problema para escribir una ecuación que relacione <m>x</m> y <m>h</m>, y resuelve esa ecuación para <m>h</m> en términos de <m>x</m>.
             </p>
           </li>
           <li>
             <p>
-              Combine your work in (c) and (d) to write the cost, <m>C</m>, of the box as a function solely of <m>x</m>.
+              Combina tu trabajo en (c) y (d) para escribir el costo, <m>C</m>, de la caja como una función únicamente de <m>x</m>.
             </p>
           </li>
           <li>
             <p>
-              What is the domain of the cost function?  How does a graph of the cost function appear?  What does this suggest about the ideal box for the given constraints?
+              ¿Cuál es el dominio de la función de costo? ¿Cómo se ve un gráfico de la función de costo? ¿Qué sugiere esto sobre la caja ideal para las restricciones dadas?
             </p>
           </li>
         </ol>
@@ -133,12 +134,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise> 
@@ -146,22 +147,22 @@
   <exercise xml:id="ez-poly-rational-applications-can">
     <statement>
       <p>
-        A cylindrical can is being constructed so that its volume is <m>16</m> cubic inches.  Suppose that material for the lids (the top and bottom) cost $<m>0.11</m> per square inch and material for the <q>side</q> of the can costs $<m>0.07</m> per square inch.  Determine a formula for the total cost of the can as a function of the can's radius.  What is the domain of the function and why?  
+        Se está construyendo una lata cilíndrica de manera que su volumen sea <m>16</m> pulgadas cúbicas. Supón que el material para las tapas (la parte superior e inferior) cuesta $<m>0.11</m> por pulgada cuadrada y el material para el <q>lado</q> de la lata cuesta $<m>0.07</m> por pulgada cuadrada. Determina una fórmula para el costo total de la lata como una función del radio de la lata. ¿Cuál es el dominio de la función y por qué?
       </p>
     </statement>
     <hint>
         <p>
-            You may find it helpful to ask yourself a sequence of questions like those stated in <xref ref="ez-poly-rational-applications-box" text="local">Exercise</xref>).
+            Puede que te resulte útil hacerte una serie de preguntas como las indicadas en <xref ref="ez-poly-rational-applications-box" text="local">Exercise</xref>).
         </p>
     </hint>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>   

@@ -15,7 +15,7 @@
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-trig-other">
   
-
+<!--
   <exercise xml:id="ez-trig-other-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec6/Q08-old.pg" />
   </exercise>
@@ -25,26 +25,27 @@
   <exercise xml:id="ez-trig-other-WW3">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec6/Qtangent4.pg" />
   </exercise>
+-->
 
   <exercise xml:id="ez-trig-other-5">
     <statement>
       <p>
-        Let <m>\beta</m> be an angle in quadrant II that satisfies <m>\cos(\beta) = -\frac{12}{13}</m>.
-        Determine the values of the other five trigonometric functions evaluated at <m>\beta</m> exactly and without evaluating any trigonometric function on a computational device.
+        Sea <m>\beta</m> un ángulo en el cuadrante II que satisface <m>\cos(\beta) = -\frac{12}{13}</m>.
+        Determina los valores de las otras cinco funciones trigonométricas evaluadas en <m>\beta</m> exactamente y sin evaluar ninguna función trigonométrica en un dispositivo computacional.
       </p>
 
       <p>
-        How do your answers change if <m>\beta</m> lies in quadrant III?
+        ¿Cómo cambian tus respuestas si <m>\beta</m> se encuentra en el cuadrante III?
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -53,7 +54,7 @@
   <exercise xml:id="ez-trig-other-transformations">
     <statement>
       <p>
-        For each of the following transformations of standard trigonometric functions, use your understanding of transformations to determine the domain, range, asymptotes, and period of the function, with careful justification.  Then, check your results using <em>Desmos</em> or another graphing utility.
+        Para cada una de las siguientes transformaciones de funciones trigonométricas estándar, usa tu comprensión de las transformaciones para determinar el dominio, rango, asíntotas y período de la función, con una justificación cuidadosa. Luego, verifica tus resultados usando <em>Desmos</em> u otra utilidad de graficación.
       </p>
 
       <p>
@@ -83,12 +84,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -96,9 +97,9 @@
   <exercise xml:id="ez-trig-other-x">
     <statement>
       <p>
-        In a right triangle with hypotenuse 1 and vertical leg <m>x</m>,
-        with angle <m>\theta</m> opposite <m>x</m>,
-        determine the simplest expression you can for each of the following quantities in terms of <m>x</m>.
+        En un triángulo rectángulo con hipotenusa 1 y cateto vertical <m>x</m>,
+        con ángulo <m>\theta</m> opuesto a <m>x</m>,
+        determina la expresión más simple que puedas para cada una de las siguientes cantidades en términos de <m>x</m>.
       </p>
 
       <p>
@@ -143,12 +144,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

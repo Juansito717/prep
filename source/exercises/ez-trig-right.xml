@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-trig-right">
-  
+ <!-- 
   <exercise xml:id="ez-trig-right-WW1">
     <webwork source="Library/Rochester/setTrig03FunctionsRightAngle/p8.pg" />
   </exercise>
@@ -22,7 +22,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Tools/Connally3-6-Tools-20.pg" />
   </exercise>
 
-<!--
+
   <exercise xml:id="ez-trig-right-WW5">
     <webwork source="Library/Rochester/setTrig03FunctionsRightAngle/p6.pg" />
   </exercise>
@@ -37,17 +37,17 @@
   <exercise xml:id="ez-trig-right-lamppost">
     <statement>
       <p>
-        A person standing <m>50</m> feet away from a streetlight observes that they cast a shadow that is <m>14</m> feet long.  If a ray of light from the streetlight to the tip of the person's shadow forms an angle of <m>27.5^\circ</m> with the ground, how tall is the person and how tall is the streetlight?  What other information about the situation can you determine?
+        Una persona de pie a <m>50</m> pies de un farol observa que proyecta una sombra de <m>14</m> pies de largo. Si un rayo de luz desde el farol hasta la punta de la sombra de la persona forma un ángulo de <m>27.5^\circ</m> con el suelo, ¿cuánto mide la persona y cuánto mide el farol? ¿Qué otra información sobre la situación puedes determinar?
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>
@@ -55,17 +55,17 @@
   <exercise xml:id="ez-trig-right-rocket">
     <statement>
       <p>
-        A person watching a rocket launch uses a laser range-finder to measure the distance from themselves to the rocket.  The range-finder also reports the angle at which the finder is being elevated from horizontal.  At a certain instant, the range-finder reports that it is elevated at an angle of <m>17.4^\circ</m> from horizontal and that the distance to the rocket is <m>1650</m> meters.  How high off the ground is the rocket?  Assuming a straight-line vertical path for the rocket that is perpendicular to the earth, how far away was the rocket from the range-finder at the moment it was launched? 
+        Una persona viendo el lanzamiento de un cohete usa un telémetro láser para medir la distancia desde sí misma hasta el cohete. El telémetro también informa el ángulo al que se está elevando desde la horizontal. En un cierto instante, el telémetro informa que está elevado a un ángulo de <m>17.4^\circ</m> desde la horizontal y que la distancia al cohete es de <m>1650</m> metros. ¿A qué altura del suelo está el cohete? Suponiendo una trayectoria vertical en línea recta para el cohete que es perpendicular a la tierra, ¿a qué distancia estaba el cohete del telémetro en el momento del lanzamiento?
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>
@@ -73,27 +73,27 @@
   <exercise xml:id="ez-trig-right-trough">
     <statement>
       <p>
-        A trough is constructed by bending a <m>4' \times 24'</m> rectangular sheet of metal.  Two symmetric folds <m>2</m> feet apart are made parallel to the longest side of the rectangle so that the trough has cross-sections in the shape of a trapezoid, as pictured in <xref ref="F-right-triangle-trough">Figure</xref>.  Determine a formula for <m>V(\theta)</m>, the volume of the trough as a function of <m>\theta</m>.
+        Un canalón se construye doblando una hoja rectangular de metal de <m>4' \times 24'</m>. Se hacen dos pliegues simétricos a <m>2</m> pies de distancia paralelos al lado más largo del rectángulo para que el canalón tenga secciones transversales en forma de trapezoide, como se muestra en <xref ref="F-right-triangle-trough">Figura</xref>. Determina una fórmula para <m>V(\theta)</m>, el volumen del canalón en función de <m>\theta</m>.
       </p>
 
       <figure xml:id="F-right-triangle-trough">
-        <caption>A cross-section of the trough.</caption>
+        <caption>Una sección transversal del canalón.</caption>
         <image width="50%" source="images/right-triangle-trough" />
       </figure>
     </statement>
     <hint>
         <p>
-              The volume of the trough is the area of a cross-section times the length of the trough.
+              El volumen del canalón es el área de una sección transversal multiplicada por la longitud del canalón.
         </p>
     </hint>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>

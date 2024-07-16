@@ -12,8 +12,9 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-circular-unit-circle">
 
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-circular-unit-circle">
+<!--
   <exercise xml:id="ez-circular-unit-circle-WW8">
     <webwork source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_11.pg" />
   </exercise>
@@ -36,36 +37,33 @@
   <exercise xml:id="ez-circular-unit-circle-WW6">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec3/Q09.pg" />
   </exercise>
-
-
-
-
+-->
   <exercise xml:id="ez-circular-unit-circle-find-points">
     <statement>
       <p>
-        Let <m>(x,y)</m> be a point on the unit circle.  In each of the following situations, determine the requested value exactly.
+        Sea <m>(x,y)</m> un punto en el círculo unitario. En cada una de las siguientes situaciones, determina el valor solicitado exactamente.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Suppose that <m>x = -0.3</m> and <m>y</m> is negative.  Find the value of <m>y</m>.
+              Supón que <m>x = -0.3</m> y <m>y</m> es negativo. Encuentra el valor de <m>y</m>.
             </p>
           </li>
           <li>
             <p>
-              Suppose that <m>(x,y)</m> lies in Quadrant II and <m>x = -2y</m>.  Find the values of <m>x</m> and <m>y</m>.
+              Supón que <m>(x,y)</m> está en el Cuadrante II y <m>x = -2y</m>. Encuentra los valores de <m>x</m> y <m>y</m>.
             </p>
           </li>
           <li>
             <p>
-              Suppose that <m>(x,y)</m> lies a distance of <m>\frac{29\pi}{6}</m> units clockwise around the circle from <m>(1,0)</m>.  Find the values of <m>x</m> and <m>y</m>.
+              Supón que <m>(x,y)</m> está a una distancia de <m>\frac{29\pi}{6}</m> unidades en sentido horario alrededor del círculo desde <m>(1,0)</m>. Encuentra los valores de <m>x</m> y <m>y</m>.
             </p>
           </li>
           <li>
             <p>
-              At what exact point(s) does the line <m>y = \frac{1}{2}x + \frac{1}{2}</m> intersect the unit circle?
+              ¿En qué punto(s) exacto(s) intersecta la línea <m>y = \frac{1}{2}x + \frac{1}{2}</m> el círculo unitario?
             </p>
           </li>
         </ol>
@@ -73,12 +71,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -86,34 +84,34 @@
   <exercise xml:id="ez-circular-unit-circle-non-unit-circles">
     <statement>
       <p>
-        The unit circle is centered at <m>(0,0)</m> and radius <m>r = 1</m>, from which the Pythagorean Theorem tells us that any point <m>(x,y)</m> on the unit circle satisfies the equation <m>x^2 + y^2 = 1</m>.
+        El círculo unitario está centrado en <m>(0,0)</m> y tiene un radio <m>r = 1</m>, del cual el Teorema de Pitágoras nos dice que cualquier punto <m>(x,y)</m> en el círculo unitario satisface la ecuación <m>x^2 + y^2 = 1</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Explain why any point <m>(x,y)</m> on a circle of radius <m>r</m> centered at <m>(h,k)</m> satisfies the equation <m>(x-h)^2 + (y-k)^2 = r^2</m>.
+              Explica por qué cualquier punto <m>(x,y)</m> en un círculo de radio <m>r</m> centrado en <m>(h,k)</m> satisface la ecuación <m>(x-h)^2 + (y-k)^2 = r^2</m>.
             </p>
           </li>
           <li>
             <p>
-              Determine the equation of a circle centered at <m>(-3,5)</m> with radius <m>r = 2</m>.
+              Determina la ecuación de un círculo centrado en <m>(-3,5)</m> con radio <m>r = 2</m>.
             </p>
           </li>
           <li>
             <p>
-              Suppose that the unit circle is magnified by a factor of <m>5</m> and then shifted <m>4</m> units right and <m>7</m> units down.  What is the equation of the resulting circle?
+              Supón que el círculo unitario se magnifica por un factor de <m>5</m> y luego se desplaza <m>4</m> unidades a la derecha y <m>7</m> unidades hacia abajo. ¿Cuál es la ecuación del círculo resultante?
             </p>
           </li>
           <li>
             <p>
-              What is the length of the arc intercepted by a central angle of <m>\frac{2\pi}{3}</m> radians in the circle <m>(x-1)^2 + (y-3)^2 = 16</m>?
+              ¿Cuál es la longitud del arco interceptado por un ángulo central de <m>\frac{2\pi}{3}</m> radianes en el círculo <m>(x-1)^2 + (y-3)^2 = 16</m>?
             </p>
           </li>
           <li>
             <p>
-              Suppose that the line segment from <m>(-2,-1)</m> to <m>(4,2)</m> is a diameter of a circle.  What is the circle's center, radius, and equation?
+              Supón que el segmento de línea desde <m>(-2,-1)</m> hasta <m>(4,2)</m> es un diámetro de un círculo. ¿Cuál es el centro, radio y ecuación del círculo?
             </p>
           </li>
         </ol>
@@ -121,12 +119,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>  
@@ -134,29 +132,29 @@
   <exercise xml:id="ez-circular-unit-circle-larger-radius">
     <statement>
       <p>
-        Consider the circle whose center is <m>(0,0)</m> and whose radius is <m>r = 5</m>.  Let a point <m>(x,y)</m> traverse the circle counterclockwise from <m>(5,0)</m>, and say the distance along the circle from <m>(5,0)</m> is represented by <m>d</m>.
+        Considera el círculo cuyo centro es <m>(0,0)</m> y cuyo radio es <m>r = 5</m>. Deja que un punto <m>(x,y)</m> recorra el círculo en sentido antihorario desde <m>(5,0)</m>, y di que la distancia a lo largo del círculo desde <m>(5,0)</m> está representada por <m>d</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Consider the point <m>(a,b)</m> that is generated by the central angle <m>\theta</m> with vertices <m>(5,0)</m>, <m>(0,0)</m>, and <m>(a,b)</m>.  If <m>\theta = \frac{\pi}{6}</m>, what are the exact values of <m>a</m> and <m>b</m>?
+              Considera el punto <m>(a,b)</m> que se genera por el ángulo central <m>\theta</m> con vértices <m>(5,0)</m>, <m>(0,0)</m> y <m>(a,b)</m>. Si <m>\theta = \frac{\pi}{6}</m>, ¿cuáles son los valores exactos de <m>a</m> y <m>b</m>?
             </p>
           </li>
           <li>
             <p>
-              Answer the same question as in (a) except with <m>\theta = \frac{\pi}{4}</m> and <m>\theta = \frac{\pi}{3}</m>.
+              Responde la misma pregunta que en (a) excepto con <m>\theta = \frac{\pi}{4}</m> y <m>\theta = \frac{\pi}{3}</m>.
             </p>
           </li>
           <li>
             <p>
-              How far has the point <m>(x,y)</m> traveled after it has traversed the circle one full revolution?
+              ¿Qué distancia ha recorrido el punto <m>(x,y)</m> después de haber recorrido el círculo una revolución completa?
             </p>
           </li>
           <li>
             <p>
-              Let <m>h = f(d)</m> be the circular function that tracks the height of the point <m>(x,y)</m> as a function of distance, <m>d</m>, traversed counterclockwise from <m>(5,0)</m>.  Sketch an accurate graph of <m>f</m> through two full periods, labeling several special points on the graph as well as the horizontal and vertical scale of the axes.
+              Sea <m>h = f(d)</m> la función circular que rastrea la altura del punto <m>(x,y)</m> como una función de la distancia, <m>d</m>, recorrida en sentido antihorario desde <m>(5,0)</m>. Dibuja un gráfico preciso de <m>f</m> a través de dos períodos completos, etiquetando varios puntos especiales en el gráfico así como la escala horizontal y vertical de los ejes.
             </p>
           </li>
         </ol>
@@ -164,12 +162,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>

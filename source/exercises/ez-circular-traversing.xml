@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-circular-traversing">
-
+<!--
   <exercise xml:id="ez-circular-traversing-WW2">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec1/Q12.pg" />
   </exercise>
@@ -31,7 +31,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec1/Q28.pg" />
   </exercise>
 
-<!-- did not generate valid XML
+ did not generate valid XML
   <exercise xml:id="ez-circular-traversing-WW1">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec1/Q10.pg" />
   </exercise>
@@ -43,38 +43,38 @@
   <exercise xml:id="ez-circular-traversing-x-coord">
     <statement>
     <p>
-      Consider the circle pictured in <xref ref="F-act-circular-traversing-circle-horiz">Figure</xref> that is centered at the point <m>(2,2)</m> and that has circumference <m>8</m>.  Suppose that we track the <m>x</m>-coordinate (that is, the horizontal location, which we will call <m>k</m>) of a point that is traversing the circle counterclockwise and that it starts at <m>P_0</m> as pictured.
+      Considera el círculo representado en <xref ref="F-act-circular-traversing-circle-horiz">Figura</xref> que está centrado en el punto <m>(2,2)</m> y que tiene una circunferencia de <m>8</m>. Supón que seguimos la coordenada <m>x</m> (es decir, la ubicación horizontal, que llamaremos <m>k</m>) de un punto que recorre el círculo en sentido antihorario y que comienza en <m>P_0</m> como se muestra.
     </p>
 
     <sidebyside widths="33% 66%">
       <figure xml:id="F-act-circular-traversing-circle-horiz">
-        <caption>A point traversing the circle.</caption>
+        <caption>Un punto recorriendo el círculo.</caption>
         <image source="images/traversing-act-circle"/>
       </figure>
       <figure xml:id="F-act-circular-traversing-grid-horiz">
-        <caption>Axes for plotting <m>k</m> as a function of <m>d</m>.</caption>
+        <caption>Ejes para graficar <m>k</m> como una función de <m>d</m>.</caption>
         <image source="images/traversing-act-circular-grid-horiz"/>
       </figure>
     </sidebyside>
 
     <p>
-      Recall that in <xref ref="act-circular-traversing-2nd-ex">Activity</xref> we identified the exact and approximate vertical coordinates of all <m>8</m> noted points on the circle.  In addition, recall that the radius of the circle is <m>r = \frac{8}{2\pi} \approx 1.2732</m>.
+      Recuerda que en <xref ref="act-circular-traversing-2nd-ex">Actividad</xref> identificamos las coordenadas verticales exactas y aproximadas de todos los <m>8</m> puntos señalados en el círculo. Además, recuerda que el radio del círculo es <m>r = \frac{8}{2\pi} \approx 1.2732</m>.
     </p>
 
     <p>
       <ol marker="a.">
         <li>
           <p>
-            What is the exact horizontal coordinate of <m>P_0</m>?  Why?
+            ¿Cuál es la coordenada horizontal exacta de <m>P_0</m>? ¿Por qué?
           </p>
         </li>
         <li>
           <p>
-            Complete the entries in <xref ref="T-act-circular-traversing-2nd-ex-horiz">Table</xref> that track the horizontal location, <m>k</m>, of the point traversing the circle as a function of distance traveled, <m>d</m>.
+            Completa las entradas en <xref ref="T-act-circular-traversing-2nd-ex-horiz">Tabla</xref> que siguen la ubicación horizontal, <m>k</m>, del punto que recorre el círculo como una función de la distancia recorrida, <m>d</m>.
           </p>
 
           <table xml:id="T-act-circular-traversing-2nd-ex-horiz">
-            <title>Data for <m>k</m> as a function of <m>d</m>.</title>
+            <title>Datos para <m>k</m> como una función de <m>d</m>.</title>
             <tabular halign="center">
               <row bottom="minor">
                 <cell><m>d</m></cell>
@@ -113,7 +113,6 @@
                   <cell><m></m></cell>
                   <cell><m></m></cell>
                   <cell><m></m></cell>
-                  <cell><m></m></cell>
                   <cell><m></m></cell>                  
                 </row>                      
             </tabular>
@@ -121,17 +120,17 @@
         </li>
         <li>
           <p>
-            By plotting the points in <xref ref="T-act-circular-traversing-2nd-ex-horiz">Table</xref> and connecting them in an intuitive way, sketch a graph of <m>k</m> as a function of <m>d</m> on the axes provided in <xref ref="F-act-circular-traversing-grid-horiz">Figure</xref> over the interval <m>0 \le d \le 16</m>.  Clearly label the scale of your axes and the coordinates of several important points on the curve.
+            Al graficar los puntos en <xref ref="T-act-circular-traversing-2nd-ex-horiz">Tabla</xref> y conectarlos de una manera intuitiva, dibuja un gráfico de <m>k</m> como una función de <m>d</m> en los ejes proporcionados en <xref ref="F-act-circular-traversing-grid-horiz">Figura</xref> sobre el intervalo <m>0 \le d \le 16</m>. Etiqueta claramente la escala de tus ejes y las coordenadas de varios puntos importantes en la curva.
           </p>
         </li>
         <li>
           <p>
-            What is similar about your graph in comparison to the one in <xref ref="F-act-circular-traversing-grid">Figure</xref>?  What is different?
+            ¿Qué es similar en tu gráfico en comparación con el de <xref ref="F-act-circular-traversing-grid">Figura</xref>? ¿Qué es diferente?
           </p>
         </li>
         <li>
           <p>
-            What will be the value of <m>k</m> when <m>d = 51</m>?  How about when <m>d = 102</m>?
+            ¿Cuál será el valor de <m>k</m> cuando <m>d = 51</m>? ¿Y cuando <m>d = 102</m>?
           </p>
         </li>
       </ol>
@@ -139,12 +138,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -152,16 +151,16 @@
   <exercise xml:id="ez-circular-traversing-graph-to-circle">
     <statement>
       <p>
-        Two circular functions, <m>f</m> and <m>g</m>, are generated by tracking the <m>y</m>-coordinate of a point traversing two different circles.  The resulting graphs are shown in <xref ref="F-circular-traversing-fxn-1">Figure</xref> and <xref ref="F-circular-traversing-fxn-2">Figure</xref>.  Assuming the horizontal scale matches the vertical scale, answer the following questions for each of the functions <m>f</m> and <m>g</m>.
+        Dos funciones circulares, <m>f</m> y <m>g</m>, se generan siguiendo la coordenada <m>y</m> de un punto que recorre dos círculos diferentes. Los gráficos resultantes se muestran en <xref ref="F-circular-traversing-fxn-1">Figura</xref> y <xref ref="F-circular-traversing-fxn-2">Figura</xref>. Suponiendo que la escala horizontal coincide con la escala vertical, responde las siguientes preguntas para cada una de las funciones <m>f</m> y <m>g</m>.
       </p>
 
       <sidebyside>
         <figure xml:id="F-circular-traversing-fxn-1">
-          <caption>A plot of the circular function <m>f</m>.</caption>
+          <caption>Un gráfico de la función circular <m>f</m>.</caption>
           <image source="images/traversing-ez-fxn-1" />
         </figure>
         <figure xml:id="F-circular-traversing-fxn-2">
-          <caption>A plot of the circular function <m>g</m>.</caption>
+          <caption>Un gráfico de la función circular <m>g</m>.</caption>
           <image source="images/traversing-ez-fxn-2" />
         </figure>
       </sidebyside>
@@ -170,22 +169,22 @@
         <ol marker="a.">
           <li>
             <p>
-              Assume that the circle used to generate the circular function is centered at the point <m>(0,m)</m> and has radius <m>r</m>.  What are the numerical values of <m>m</m> and <m>r</m>?  Why?
+              Supón que el círculo utilizado para generar la función circular está centrado en el punto <m>(0,m)</m> y tiene un radio <m>r</m>. ¿Cuáles son los valores numéricos de <m>m</m> y <m>r</m>? ¿Por qué?
             </p>
           </li>
           <li>
             <p>
-              What are the coordinates of the location on the circle at which the point begins its traverse?  Said differently, what point on the circle corresponds to <m>t = 0</m> on the function's graph?
+              ¿Cuáles son las coordenadas de la ubicación en el círculo en la que el punto comienza su recorrido? Dicho de otra manera, ¿qué punto en el círculo corresponde a <m>t = 0</m> en el gráfico de la función?
             </p>
           </li>
           <li>
             <p>
-              What is the period of the function?  How is this connected to the circle and to the scale on the horizontal axes on which the function is graphed?
+              ¿Cuál es el período de la función? ¿Cómo se conecta esto con el círculo y con la escala en los ejes horizontales en los que se grafica la función?
             </p>
           </li>
           <li>
             <p>
-              How would the graph look if the circle's radius was <m>1</m> unit larger?  <m>1</m> unit smaller?
+              ¿Cómo se vería el gráfico si el radio del círculo fuera <m>1</m> unidad más grande? ¿<m>1</m> unidad más pequeño?
             </p>
           </li>
         </ol>
@@ -193,12 +192,12 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
@@ -206,29 +205,29 @@
   <exercise xml:id="ez-circular-traversing-ferris-wheel">
     <statement>
       <p>
-        A person goes for a ride on a ferris wheel.  They enter one of the cars at the lowest possible point on the wheel from a platform <m>7</m> feet off the ground.  When they are at the very top of the wheel, they are <m>92</m> feet off the ground.  Let <m>h</m> represent the height of the car (in feet) and <m>d</m> (in feet) the distance the car has traveled along the wheel's circumference from its starting location at the bottom of the wheel.  We'll use the notation <m>h = f(d)</m> for how height is a function of distance traveled.
+        Una persona se sube a una rueda de la fortuna. Entra en uno de los carros en el punto más bajo posible de la rueda desde una plataforma a <m>7</m> pies del suelo. Cuando está en la parte más alta de la rueda, está a <m>92</m> pies del suelo. Deja que <m>h</m> represente la altura del carro (en pies) y <m>d</m> (en pies) la distancia que el carro ha recorrido a lo largo de la circunferencia de la rueda desde su ubicación inicial en la parte inferior de la rueda. Usaremos la notación <m>h = f(d)</m> para cómo la altura es una función de la distancia recorrida.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              How high above the ground is the center of the ferris wheel?
+              ¿A qué altura sobre el suelo está el centro de la rueda de la fortuna?
             </p>
           </li>
           <li>
             <p>
-              How far does the car travel in one complete trip around the wheel?
+              ¿Qué distancia recorre el carro en un viaje completo alrededor de la rueda?
             </p>
           </li>
           <li>
             <p>
-              For the circular function <m>h = f(d)</m>, what is its amplitude?  midline?  period?
+              Para la función circular <m>h = f(d)</m>, ¿cuál es su amplitud? ¿línea media? ¿período?
             </p>
           </li>
           <li>
             <p>
-              Sketch an accurate graph of <m>h</m> through at least two full periods.  Clearly label the scale on the horizontal and vertical axes along with several important points.
+              Dibuja un gráfico preciso de <m>h</m> a lo largo de al menos dos períodos completos. Etiqueta claramente la escala en los ejes horizontal y vertical junto con varios puntos importantes.
             </p>
           </li>
         </ol>
@@ -236,16 +235,14 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
-
-
 
 </exercises>

@@ -56,43 +56,43 @@
   <exercise xml:id="ez-composite-tables-graphs-formulas">
     <statement>
       <p>
-        Use the given information about various functions to answer the following questions involving composition.
+        Usa la información dada sobre varias funciones para responder las siguientes preguntas que involucran composición.
       </p>
-
+  
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Let functions <m>f</m> and <m>g</m> be given by the graphs in <xref ref="F-composite-ez-f">Figure</xref> and <xref ref="F-composite-ez-g"/>.  An open circle means there is not a point at that location on the graph.  For instance, <m>f(-1) = 1</m>, but <m>f(3)</m> is not defined.
+              Sean las funciones <m>f</m> y <m>g</m> dadas por los gráficos en <xref ref="F-composite-ez-f">Figura</xref> y <xref ref="F-composite-ez-g"/>. Un círculo abierto significa que no hay un punto en esa ubicación en el gráfico. Por ejemplo, <m>f(-1) = 1</m>, pero <m>f(3)</m> no está definido.
             </p>
-
+  
             <sidebyside width="50%">
               <figure xml:id="F-composite-ez-f">
-                <caption>Plot of <m>y = f(x)</m>.</caption>
+                <caption>Gráfico de <m>y = f(x)</m>.</caption>
                 <image source="images/composite-ez-f" />
               </figure>
               <figure xml:id="F-composite-ez-g">
-                <caption>Plot of <m>y = g(x)</m>.</caption>
+                <caption>Gráfico de <m>y = g(x)</m>.</caption>
                 <image source="images/composite-ez-g" />
               </figure>
             </sidebyside>
-
+  
             <p>
-              Determine <m>f(g(1))</m> and <m>g(f(-2))</m>.
+              Determina <m>f(g(1))</m> y <m>g(f(-2))</m>.
             </p>
           </li>
           <li>
             <p>
-              Again using the functions given in (a), can you determine a value of <m>x</m> for which <m>g(f(x))</m> is not defined?  Why or why not?
+              Nuevamente usando las funciones dadas en (a), ¿puedes determinar un valor de <m>x</m> para el cual <m>g(f(x))</m> no está definido? ¿Por qué o por qué no?
             </p>
           </li>
           <li>
             <p>
-              Let functions <m>r</m> and <m>s</m> be defined by <xref ref="T-ez-composite-tables">Table</xref>.
+              Sean las funciones <m>r</m> y <m>s</m> definidas por <xref ref="T-ez-composite-tables">Tabla</xref>.
             </p>
-
+  
             <table xml:id="T-ez-composite-tables">
-              <title>Table that defines <m>r</m> and <m>s</m>.</title>
+              <title>Tabla que define <m>r</m> y <m>s</m>.</title>
                 <tabular halign="right">
                   <row bottom="minor">
                     <cell><m>t</m></cell>
@@ -132,24 +132,24 @@
                   </row>
                 </tabular>
             </table>
-
+  
             <p>
-              Determine <m>(s \circ r)(3)</m>, <m>(s \circ r)(-4)</m>, and <m>(s \circ r)(a)</m> for one additional value of <m>a</m> of your choice.
+              Determina <m>(s \circ r)(3)</m>, <m>(s \circ r)(-4)</m>, y <m>(s \circ r)(a)</m> para un valor adicional de <m>a</m> de tu elección.
             </p>
           </li>
           <li>
             <p>
-              For the functions <m>r</m> and <m>s</m> defined in (c), state the domain and range of each function.  For how many different values of <m>b</m> is it possible to determine <m>(r \circ s)(b)</m>?  Explain.
+              Para las funciones <m>r</m> y <m>s</m> definidas en (c), indica el dominio y el rango de cada función. ¿Para cuántos valores diferentes de <m>b</m> es posible determinar <m>(r \circ s)(b)</m>? Explica.
             </p>
           </li>
           <li>
             <p>
-              Let <m>m(u) = u^3 + 4u^2 - 5u + 1</m>.  Determine expressions for <m>m(x^2)</m>, <m>m(2+h)</m>, and <m>m(a+h)</m>.
+              Sea <m>m(u) = u^3 + 4u^2 - 5u + 1</m>. Determina expresiones para <m>m(x^2)</m>, <m>m(2+h)</m>, y <m>m(a+h)</m>.
             </p>
           </li>
           <li>
             <p>
-              For the function <m>F(x) = 4 - 3x - x^2</m>, determine the most simplified expression you can find for <m>AV_{[2,2+h]}</m>.  Show your algebraic work and thinking fully.
+              Para la función <m>F(x) = 4 - 3x - x^2</m>, determina la expresión más simplificada que puedas encontrar para <m>AV_{[2,2+h]}</m>. Muestra tu trabajo algebraico y pensamiento completamente.
             </p>
           </li>
         </ol>
@@ -157,57 +157,57 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
-
+  
   <exercise xml:id="ez-composite-Dolbear-revisited">
     <statement>
       <p>
-        Recall Dolbear's function that defines temperature,
-        <m>F</m>, in Fahrenheit degrees,
-        as a function of the number of chirps per minute, <m>N</m>,
-        is <m>F = D(N) = 40 + \frac{1}{4}N</m>.
+        Recuerda la función de Dolbear que define la temperatura,
+        <m>F</m>, en grados Fahrenheit,
+        como una función del número de chirridos por minuto, <m>N</m>,
+        es <m>F = D(N) = 40 + \frac{1}{4}N</m>.
       </p>
       <p>
-
+  
         <ol marker="a.">
           <li>
             <p>
-              Solve the equation <m>F = 40 + \frac{1}{4}N</m> for <m>N</m> in terms of <m>F</m>.
+              Resuelve la ecuación <m>F = 40 + \frac{1}{4}N</m> para <m>N</m> en términos de <m>F</m>.
             </p>
           </li>
-
+  
           <li>
             <p>
-              Say that <m>N = g(F)</m> is the function you just found in (a).  What is the meaning of this function?
-              What does it take as inputs and what does it produce as outputs?
+              Supón que <m>N = g(F)</m> es la función que acabas de encontrar en (a). ¿Cuál es el significado de esta función?
+              ¿Qué toma como entradas y qué produce como salidas?
             </p>
           </li>
           <li>
             <p>
-              How many chirps per minute do we expect when the outsidet temperature is <m>82</m> degrees F?  How can we express this in the notation of the function <m>g</m>?
+              ¿Cuántos chirridos por minuto esperamos cuando la temperatura exterior es de <m>82</m> grados F? ¿Cómo podemos expresar esto en la notación de la función <m>g</m>?
             </p>
           </li>
-
+  
           <li>
             <p>
-              Recall that the function that converts Fahrenheit to Celsius is
+              Recuerda que la función que convierte Fahrenheit a Celsius es
               <m>C = G(F) = \frac{5}{9}(F-32)</m>.
-              Solve the equation <m>C = \frac{5}{9}(F-32)</m> for <m>F</m> in terms of <m>C</m>.  Call the resulting function <m>F = p(C)</m>.  What is the meaning of this function?
+              Resuelve la ecuación <m>C = \frac{5}{9}(F-32)</m> para <m>F</m> en términos de <m>C</m>. Llama a la función resultante <m>F = p(C)</m>. ¿Cuál es el significado de esta función?
             </p>
           </li>
           <li>
             <p>
-              Is it possible to write the chirp-rate <m>N</m> as a function of temperature <m>C</m> in Celsius?
-              That is, can we produce a function whose input is in degrees Celsius and whose output is the number of chirps per minute?
-              If yes, do so and explain your thinking.  If not, explain why it's not possible.
+              ¿Es posible escribir la tasa de chirridos <m>N</m> como una función de la temperatura <m>C</m> en Celsius?
+              Es decir, ¿podemos producir una función cuya entrada esté en grados Celsius y cuya salida sea el número de chirridos por minuto?
+              Si es así, hazlo y explica tu razonamiento. Si no, explica por qué no es posible.
             </p>
           </li>
         </ol>
@@ -215,20 +215,20 @@
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>
-
+  
   <exercise xml:id="ez-composite-undo">
     <statement>
       <p>
-        For each of the following functions, find two simpler functions <m>f</m> and <m>g</m> such that the given function can be written as the composite function <m>g \circ f</m>.
+        Para cada una de las siguientes funciones, encuentra dos funciones más simples <m>f</m> y <m>g</m> de manera que la función dada pueda ser escrita como la función compuesta <m>g \circ f</m>.
       </p>
       <p>
         <ol marker="a." cols="2">
@@ -237,19 +237,19 @@
               <m>h(x) = (x^2 + 7)^3</m>
             </p>
           </li>
-
+  
           <li>
             <p>
               <m>r(x) = \sqrt{5-x^3}</m>
             </p>
           </li>
-
+  
           <li>
             <p>
               <m>m(x) = \frac{1}{x^4 + 2x^2 + 1}</m>
             </p>
           </li>
-
+  
           <li>
             <p>
               <m>w(x) = 2^{3-x^2}</m>
@@ -259,69 +259,69 @@
       </p>
     </statement>
   </exercise>  
-
+  
   <exercise xml:id="ez-composite-spherical-tank">
     <statement>
       <p>
-        A spherical tank has radius <m>4</m> feet.  The tank is initially empty and then begins to be filled in such a way that the height of the water rises at a constant rate of <m>0.4</m> feet per minute.  Let <m>V</m> be the volume of water in the tank at a given instant, and <m>h</m> the depth of the water at the same instant; let <m>t</m> denote the time elapsed in minutes since the tank started being filled.
+        Un tanque esférico tiene un radio de <m>4</m> pies. El tanque está inicialmente vacío y luego comienza a llenarse de tal manera que la altura del agua sube a una tasa constante de <m>0.4</m> pies por minuto. Sea <m>V</m> el volumen de agua en el tanque en un momento dado, y <m>h</m> la profundidad del agua en el mismo momento; sea <m>t</m> el tiempo transcurrido en minutos desde que el tanque comenzó a llenarse.
       </p>
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Calculus can be used to show that the volume, <m>V</m>, is a function of the depth, <m>h</m>, of the water in the tank according to the function 
+              El cálculo puede usarse para mostrar que el volumen, <m>V</m>, es una función de la profundidad, <m>h</m>, del agua en el tanque según la función 
               <men xml:id="E-ez-composite-spherical-tank-V-h">
                 V = f(h) = \frac{\pi}{3} h^2(12-h)
               </men>.
-              What is the domain of this model?  Why?  What is the corresponding range?
+              ¿Cuál es el dominio de este modelo? ¿Por qué? ¿Cuál es el rango correspondiente?
             </p>
           </li>
           <li>
             <p>
-              We are given the fact that the tank is being filled in such a way that the height of the water rises at a constant rate of <m>0.4</m> feet per minute.  Said differently, <m>h</m> is a function of <m>t</m> whose average rate of change is constant.  What kind of function does this make <m>h = p(t)</m>?  Determine a formula for <m>p(t)</m>.
+              Se nos da el hecho de que el tanque se está llenando de tal manera que la altura del agua sube a una tasa constante de <m>0.4</m> pies por minuto. Dicho de otra manera, <m>h</m> es una función de <m>t</m> cuya tasa de cambio promedio es constante. ¿Qué tipo de función hace esto <m>h = p(t)</m>? Determina una fórmula para <m>p(t)</m>.
             </p>
           </li>
           <li>
             <p>
-              What are the domain and range of the function <m>h = p(t)</m>?  How is this tied to the dimensions of the tank?
+              ¿Cuáles son el dominio y el rango de la función <m>h = p(t)</m>? ¿Cómo está esto relacionado con las dimensiones del tanque?
             </p>
           </li>
           <li>
             <p>
-              In (a) we observed that <m>V</m> is a function of <m>h</m>, and in (b) we found that <m>h</m> is a function of <m>t</m>.  Use these two facts and function composition appropriately to write <m>V</m> as a function of <m>t</m>.  Call the resulting function <m>V = q(t)</m>.
+              En (a) observamos que <m>V</m> es una función de <m>h</m>, y en (b) encontramos que <m>h</m> es una función de <m>t</m>. Usa estos dos hechos y la composición de funciones apropiadamente para escribir <m>V</m> como una función de <m>t</m>. Llama a la función resultante <m>V = q(t)</m>.
             </p>
           </li>
           <li>
             <p>
-              What are the domain and range of the function <m>q</m>?  Why?
+              ¿Cuáles son el dominio y el rango de la función <m>q</m>? ¿Por qué?
             </p>
           </li>
           <li>
             <p>
-              On the provided axes, sketch accurate graphs of <m>h = p(t)</m> and <m>V = q(t)</m>, labeling the vertical and horizontal scale on each graph appropriately.  Make your graphs as precise as you can; use a computing device to assist as needed.
+              En los ejes proporcionados, dibuja gráficos precisos de <m>h = p(t)</m> y <m>V = q(t)</m>, etiquetando la escala vertical y horizontal en cada gráfico apropiadamente. Haz tus gráficos lo más precisos posible; usa un dispositivo de computación para asistir según sea necesario.
             </p>
-
+  
             <sidebyside width="50%">
               <image source="images/tandem-h-t-blank-axes" />
               <image source="images/tandem-V-t-blank-axes" />
             </sidebyside>      
-
+  
             <p>
-              Why do each of the two graphs have their respective shapes?  Write at least one sentence to explain each graph; refer explicitly to the shape of the tank and other information given in the problem.
+              ¿Por qué cada uno de los dos gráficos tiene sus respectivas formas? Escribe al menos una oración para explicar cada gráfico; refiérete explícitamente a la forma del tanque y otra información dada en el problema.
             </p>
-
+  
           </li>
         </ol>
       </p>
     </statement>
     <answer>
       <p>
-        Exercise Answer
+        Respuesta del Ejercicio
       </p>
     </answer>
     <solution>
       <p>
-        Exercise Solution
+        Solución del Ejercicio
       </p>
     </solution>
   </exercise>    

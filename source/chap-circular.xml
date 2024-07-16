@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C-circular">
-  	<title>Circular Functions</title>
+  	<title>Funciones Circulares</title>
   
   	<xi:include  href="./sec-circular-traversing.xml" />
     <xi:include  href="./sec-circular-unit-circle.xml" />
@@ -22,4 +22,3 @@
     <xi:include  href="./sec-circular-sinusoidal.xml" />
 
 </chapter>
-
