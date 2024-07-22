@@ -14,10 +14,12 @@
 <!-- **********************************************************************-->
 
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introducción</title>
     <xi:include href="./titlepage.xml" />
     <xi:include href="./colophon.xml" />
 
   <acknowledgement>
+    <title>Agradecimientos</title>
     <p>
       Este texto comenzó como mi proyecto sabático en el semestre de otoño de 2018, 
       durante el cual escribí la mayor parte del material. Expreso mi profundo agradecimiento a Grand Valley State University 
