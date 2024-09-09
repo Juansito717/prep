@@ -1,27 +1,27 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "frontmatter-2",
-  "level": "1",
-  "url": "frontmatter-2.html",
-  "type": "Colophon",
-  "number": "",
-  "title": "Colophon",
-  "body": "  Cover Photo  Noah Wyn Photography   2019     copyright  "
-},
-{
   "id": "frontmatter-3",
   "level": "1",
   "url": "frontmatter-3.html",
-  "type": "Acknowledgements",
+  "type": "Colophon",
   "number": "",
-  "title": "Acknowledgements",
-  "body": " Este texto comenzó como mi proyecto sabático en el semestre de otoño de 2018, durante el cual escribí la mayor parte del material. Expreso mi profundo agradecimiento a Grand Valley State University por su apoyo al proyecto durante mi licencia sabática, así como a mis colegas del Departamento de Matemáticas y del Colegio de Artes Liberales y Ciencias por su respaldo al proyecto.   Las fantásticas gráficas a todo color .eps, así como las ocasionales gráficas interactivas en JavaScript, utilizan la biblioteca de Python de David Austin que emplea PiScript de Bill Casselman. La versión .html del texto es el resultado del increíble trabajo de Rob Beezer para desarrollar el lenguaje de publicación PreTeXt (anteriormente conocido como Mathbook XML); conozca más en pretextbook.org . Estoy agradecido al Instituto Americano de Matemáticas por organizar y financiar un taller de una semana en Mathbook XML en San José, CA, en abril de 2016, lo que me permitió comenzar en PreTeXt . El apoyo continuo del grupo de usuarios es invaluable, y David Farmer de AIM también ha sido una fuente importante de apoyo y promoción. Mitch Keller de Morningside College es el editor de producción tanto de Active Calculus: Single Variable como de este texto; su experiencia técnica es un regalo.  Esta primera oferta pública del texto en 2019 se beneficiará enormemente de la retroalimentación y las sugerencias de los usuarios. Sus comentarios serán bienvenidos.   "
+  "title": "Colofón",
+  "body": " Colofón   Cover Photo  Noah Wyn Photography   2019     copyright  "
 },
 {
   "id": "frontmatter-4",
   "level": "1",
   "url": "frontmatter-4.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Agradecimientos",
+  "body": " Agradecimientos  Este texto comenzó como mi proyecto sabático en el semestre de otoño de 2018, durante el cual escribí la mayor parte del material. Expreso mi profundo agradecimiento a Grand Valley State University por su apoyo al proyecto durante mi licencia sabática, así como a mis colegas del Departamento de Matemáticas y del Colegio de Artes Liberales y Ciencias por su respaldo al proyecto.   Las fantásticas gráficas a todo color .eps, así como las ocasionales gráficas interactivas en JavaScript, utilizan la biblioteca de Python de David Austin que emplea PiScript de Bill Casselman. La versión .html del texto es el resultado del increíble trabajo de Rob Beezer para desarrollar el lenguaje de publicación PreTeXt (anteriormente conocido como Mathbook XML); conozca más en pretextbook.org . Estoy agradecido al Instituto Americano de Matemáticas por organizar y financiar un taller de una semana en Mathbook XML en San José, CA, en abril de 2016, lo que me permitió comenzar en PreTeXt . El apoyo continuo del grupo de usuarios es invaluable, y David Farmer de AIM también ha sido una fuente importante de apoyo y promoción. Mitch Keller de Morningside College es el editor de producción tanto de Active Calculus: Single Variable como de este texto; su experiencia técnica es un regalo.  Esta primera oferta pública del texto en 2019 se beneficiará enormemente de la retroalimentación y las sugerencias de los usuarios. Sus comentarios serán bienvenidos.   "
+},
+{
+  "id": "frontmatter-5",
+  "level": "1",
+  "url": "frontmatter-5.html",
   "type": "Preface",
   "number": "",
   "title": "Contribuciones",
@@ -37,9 +37,9 @@ var ptx_lunr_docs = [
   "body": " Nuestros Objetivos  Este texto está diseñado para estudiantes universitarios que aspiran a tomar cálculo y que necesitan tomar un curso para prepararse para cálculo o desean hacer un estudio adicional por su cuenta. Muchos de los temas centrales del curso serán familiares para los estudiantes que han completado la escuela secundaria. Al mismo tiempo, tomamos una perspectiva sobre cada tema que enfatiza su importancia en el cálculo. Este texto está escrito en el espíritu de Active Calculus y es especialmente ideal para los estudiantes que eventualmente estudiarán cálculo con ese texto. El lector encontrará que el texto requiere que se involucre activamente con el material, que vea los temas desde múltiples perspectivas y que desarrolle una comprensión conceptual profunda de las ideas.  Muchos cursos a nivel de escuela secundaria y universidad con títulos como álgebra universitaria , precálculo y trigonometría sirven a otras disciplinas y cursos distintos al cálculo. Como tal, estas clases frecuentemente contienen material variado que, aunque matemáticamente interesante e importante, no es necesario para el cálculo. Tal vez debido a estos temas adicionales, ciertas ideas que son esenciales en cálculo están subestimadas o ignoradas. En Preludio Activo al Cálculo , uno de nuestros principales objetivos es mantener el enfoque en las siguientes ideas más importantes.      Funciones como procesos . El concepto matemático de función es sofisticado. Comprender cómo una función es un proceso matemático especial que convierte una colección de entradas en una colección de salidas es crucial para el éxito en cálculo, ya que el cálculo es el estudio de cómo cambian las funciones.     Tasa de cambio promedio . La idea central en el cálculo diferencial es la tasa de cambio instantánea de una función, que mide qué tan rápido cambia la salida de una función con respecto a los cambios en la entrada en una ubicación particular. Dado que la tasa de cambio instantánea se define en términos de la tasa de cambio promedio, es esencial que los estudiantes se sientan cómodos y familiarizados con la idea, el significado y las aplicaciones de la tasa de cambio promedio.     Biblioteca de funciones básicas . La gran mayoría de las funciones en cálculo provienen de una combinación algebraica de una colección de funciones básicas familiares que incluyen funciones de potencia, circulares, exponenciales y logarítmicas. Al desarrollar la comprensión de una familia relativamente pequeña de funciones básicas y usar estas junto con transformaciones para considerar colecciones más grandes de funciones, trabajamos para hacer que los objetos centrales del cálculo sean más intuitivos y accesibles.     Familias de funciones que modelan fenómenos importantes . Las matemáticas son el lenguaje de la ciencia, y es notable lo efectivas que son las matemáticas para representar fenómenos físicos observables. Desde funciones cuadráticas que modelan cómo un objeto cae bajo la influencia de la gravedad, hasta funciones exponenciales desplazadas que modelan cómo se enfría el café, pasando por funciones sinusoidales que modelan cómo oscila un sistema de masa-resorte, las funciones básicas familiares encuentran muchas aplicaciones importantes en el mundo que nos rodea. Utilizamos regularmente estas situaciones físicas para ayudarnos a ver la importancia de las funciones y a entender cómo se necesitan familias de funciones que dependen de diferentes parámetros para representar estas situaciones.     El seno y el coseno son funciones circulares . Muchos estudiantes son introducidos por primera vez a las funciones seno y coseno a través de triángulos rectángulos. Aunque esta perspectiva es importante, es más importante en cálculo y otros cursos avanzados entender cómo las funciones seno y coseno surgen de un punto que recorre una circunferencia. Adoptamos esta perspectiva de funciones circulares desde el principio para desarrollar una comprensión profunda de cómo se generan las conocidas ondas de seno y coseno.     Inversas de funciones . Cuando una función tiene una función inversa, la función inversa nos brinda la oportunidad de ver una idea desde una nueva perspectiva. Las inversas también juegan un papel crucial en la resolución de ecuaciones algebraicas y en la determinación de parámetros desconocidos en modelos. Enfatizamos la perspectiva de que una función inversa es un proceso que invierte el proceso de la función original, así como las importantes funciones básicas que surgen como inversas de otras funciones, especialmente los logaritmos y las funciones trigonométricas inversas.     Valores exactos versus aproximados . La capacidad de representar números exactamente es una herramienta poderosa en matemáticas. Regularmente y de manera consistente distinguimos entre el valor exacto de un número, como , y su aproximación, digamos . Esta idea también está estrechamente relacionada con las funciones y la notación funcional: , y son todas representaciones simbólicas de números exactos que solo pueden ser aproximados por una computadora.     Encontrar fórmulas de funciones en contextos aplicados . En contextos aplicados con variables desconocidas, es especialmente útil poder representar relaciones entre variables, ya que tales relaciones a menudo conducen a funciones cuyo comportamiento podemos estudiar. Trabajamos a lo largo de Preludio Activo al Cálculo para preparar a los estudiantes para problemas en cálculo que les piden desarrollar fórmulas de funciones mediante la observación de relaciones.     Tendencias a largo plazo, comportamiento ilimitado y límites . Al trabajar para estudiar las funciones como objetos en sí mismos, a menudo nos centramos en las tendencias y el comportamiento general. Además de introducir las ideas de una función que crece o decrece, o que es cóncava hacia arriba o hacia abajo, también nos enfocamos en utilizar enfoques algebraicos para comprender el comportamiento de las funciones cuando la entrada y\/o la salida aumentan sin límite. En anticipación al cálculo, usamos la notación de límites y trabajamos para entender cómo esta abreviatura resume características clave de las funciones.     "
 },
 {
-  "id": "frontmatter-6",
+  "id": "frontmatter-7",
   "level": "1",
-  "url": "frontmatter-6.html",
+  "url": "frontmatter-7.html",
   "type": "Preface",
   "number": "",
   "title": "Características del Texto",
